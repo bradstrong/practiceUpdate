@@ -1,0 +1,22 @@
+<section class="{{section-id}} research section-widget">
+<header class="section-header">
+		<h2>{{section-title}}</h2>
+		<p>{{section-description}}</p>
+	</header><!--/.section-header-->
+	<div class="section-content">
+	{{#items}}
+				<ul>
+					<li class="entry">
+						<a href="#">
+							<p class="meta title">{{title}}</p>
+							<p class="meta author">{{#source}}{{source.name.firstName}} {{source.name.lastName}}{{/source}}</p>
+							{{> _articles}}
+						</a>
+					</li>
+				</ul>
+	{{/items}}
+			<footer class="section-footer">
+				<p><a href="#" class="view-more">view more</a></p>
+			</footer><!--.section-footer-->
+	</div><!--/.section-content-->
+	</section><!--/.section-content-->

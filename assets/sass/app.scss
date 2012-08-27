@@ -1,0 +1,203 @@
+// You custom settings file to override Foundation defaults
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// ----------------------------------------
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "compass/css3";
+// @import "foundation/settings";
+// @import "foundation/functions/all";
+// @import "foundation/common/globals";
+// @import "foundation/mixins/clearfix";
+// @import "modular-scale";
+
+// Control which mixins you have access too
+
+// @import "foundation/mixins/css-triangle";
+// @import "foundation/mixins/font-size";
+
+// Must include next two for semantic grid to work
+
+// @import "foundation/mixins/respond-to";
+// @import "foundation/mixins/semantic-grid";
+
+// Must include the grid for any responsiveness
+
+// @import "foundation/components/grid";
+
+// Control which common styles get compiled
+
+// @import "foundation/common/typography";
+// @import "foundation/common/forms";
+
+// Control which components you get if customizing
+
+// @import "foundation/components/modules/buttons";
+// @import "foundation/components/modules/tabs";
+// @import "foundation/components/modules/ui";
+// @import "foundation/components/modules/navbar";
+// @import "foundation/components/modules/orbit";
+// @import "foundation/components/modules/reveal";
+// @import "foundation/components/modules/offcanvas";
+
+/* Brad's Styles */
+
+/* !variables */
+$grey: #ededed;
+
+//html {font-family:"Skolar Bold", Georgia, serif; font-size-adjust:0.49; font-weight:bold; font-style:normal;}
+
+/* structure */
+
+body{
+	//background: url("../img/body.jpg");
+}
+
+.container{
+	@include outerRow();
+	min-width:320px !important;
+}
+
+.page-content{
+	@include innerRow();
+	padding-top:$navBarHeight;
+	padding-bottom:$navBarHeight*2;
+}
+
+/* !main-nav */
+
+.page-header{
+	@include outerRow();
+	width: 100%;
+	z-index: 500;
+
+}
+.page-header-fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.site-branding{
+	@include column(4);
+	@include mobileColumn(2);
+}
+
+@media all and (max-width: $screenSmall){
+	.page-header{position: static;}
+}
+
+/* !dashboard */
+.dashboard .component{
+	@include innerRow();
+	nav{
+	@include column(12)
+	}
+}
+
+/* Page Layouts */
+
+/* !Update Layout */
+
+body.update{
+	.dashboard{@include column(12);}
+	.stream-container{@include column(8); @include mobileRow();}
+	.recommended{@include column(4); @include mobileColumn(4);}
+}
+
+/* !Explore Layout */
+
+body.explore{
+	.sidebar{@include column(2);}
+	//.main{@include column(7);}
+	.dynamic-sidebar{@include column(3);}
+}
+
+/* !Learn Layout */
+
+body.learn{
+	.sidebar{@include column(2);}
+	//.main{@include column(12);}
+	//.recommended{@include column(3);}
+}
+body.story-of-the-week{
+	.item-container{@include column(8); @include mobileRow();}
+}
+
+/* !stream */
+.stream-container{
+
+}
+.stream-item-container{
+	@include innerRow();
+	box-shadow: 0px 2px 2px rgba(0,0,0,.2);
+	border-radius: 5px;
+	border:1px solid;
+	border-color:$grey;
+	margin: $columnGutter/3;
+	.stream-item{
+		@include column(12);
+		//margin: $columnGutter/3;
+		background: white;
+		.source-container{
+			@include innerRow();
+			display: none;
+		}
+		.item-container{@include innerRow();
+			.item-header{@include column(12);}//@include mobileColumn(#);
+			.item-content{@include column(12);}
+			.item-title{font-size:ms(1);}
+			.source-title{font-size:ms(0);}
+		}
+		.item-footer{
+			@include innerRow();
+			.portal-meta{
+				@include column(6);
+			}
+			.item-actions{
+				@include column(6);
+			}
+		}
+	}
+}
+
+/* !Explore */
+body.explore{
+	.explore-feature .feature-item{background: #CCC;}
+	.explore-feature { background: url(spinner.gif) center center #f4f4f4; height: 300px;}
+	.explore-feature img { display: none; }
+
+	.explore-feature.orbit { background: none; }
+	.explore-feature.orbit img { display: block; }
+
+	.explore-sections{
+		@include innerRow();
+	}
+	.section-widget{
+		@include column(12);
+		li{list-style: none;}
+		.meta.title{
+			font-weight: bold;
+		}
+		.section-header{
+			@include column(4);
+		}
+		.section-content{
+			@include column(8);
+		}
+	}
+}
+
+/* !AD Slots */
+#page-leaderboard{
+	@include innerRow();
+}
+
+.footnotes a {
+	word-break: break-all;
+	word-break: break-word;
+	hyphens: auto;
+}
