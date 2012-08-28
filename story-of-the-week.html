@@ -48,9 +48,9 @@
 		</div><!--/#page-leaderboard-->
 		<header id="header" class="page-header">
 		  <div class="site-branding">
-		    <h1 id="site-title"><a href="http://zurb.com/playground/">OncologySTAT</a></h1>
+		    <h1 id="site-title"><a href="#">OncologySTAT</a></h1>
 		  </div><!--/.site-branding-->
-		  <div class="eight columns">
+
 		    <nav id="menu" role="navigation" class="hide-for-small main-nav">
     			<ul id="mainNav" class="nav-bar">
 						<li class="active"><a href="update.html">update</a></li>
@@ -58,7 +58,7 @@
 						<li><a href="learn.html">Learn</a></li>
     			</ul>
     		</nav><!--/#menu-->
-		  </div><!--/.eight columns-->
+
 		</header><!--/.page-header-->
 
 	<div class="page-content">
@@ -69,7 +69,15 @@
 			</div><!--/.show-for-small-->
 		</div><!--/.row-->
 	<section role="main">
-<div class="item-container">
+
+	<ul class="breadcrumbs">
+		<li><i class="icon-chevron-left"></i></li>
+	  <li><a href="#">Explore</a></li>
+	  <li><a href="#">Prostate</a></li>
+	  <li class="current"><a href="#">Article Title</a></li>
+</ul>
+
+<div class="single-item-container">
 <article class="type-blog item-id">
 	<header class="item-header">
 		<hgroup>
@@ -80,8 +88,7 @@
 			<time class="meta pub-pubdate" datetime="2012-03-05">March 5th, 2012</time>
 			<span class="meta pub-attribution">Howard Scher, MD</span>
 		</div>
-		<div class="row-fluid">
-		<div class="author-meta span6"><!-- Note: cleanup author meta vcard markup-->
+		<div class="author-meta"><!-- Note: cleanup author meta vcard markup-->
 			<div class="author vcard">
 				<p class="meta author-role role">Expert</p>
 				<figure class="author-photo">
@@ -93,37 +100,14 @@
 				</figure>
 			</div><!--/.author-->
 		</div><!--/.author-meta-->
-		<div class="item-description span4">
+		<div class="item-description">
 			<p>In this commentary, Dr. Scher discusses his research on a novel androgen receptor signaling inhibitor, MDV3100, which was shown to improve survival in a post-chemotherapy population of men with progressive castration-resistant prostate cancer (CRPC).</p>
 		</div>
-		</div><!--/.row-fluid-->
-			<div class="meta taxonomy-meta"><i class="icon-tags"></i>
-			<p>Find more items about these cancer types:</p>
+			<div class="meta taxonomy-meta">
+			<p>Find more items about these topics:</p>
 			<ul class="tag-list">
-			<li class="">cancer types:</li>
-				<li class="list-header">
-					<a class="label label-tag" href="#">Prostate</a>
-				</li>
-			</ul>
-			
-			<ul class="tag-list">
-			<li class="">Secondary Term:</li>
 				<li>
-					<a class="label label-tag" href="#">tag</a>
-				</li>
-			</ul>
-			
-			<ul class="tag-list">
-			<li class="">supportive Care:</li>
-				<li>
-					<a class="label label-tag" href="#">tag</a>
-				</li>
-			</ul>
-			
-			<ul class="tag-list">
-			<li class="">Cancer Therapy:</li>
-				<li>
-					<a class="label label-tag" href="#">tag</a>
+					<i class="icon-tags"></i><a class="label label-tag" href="#">Prostate</a>
 				</li>
 			</ul>
 		</div>
@@ -150,7 +134,7 @@
 <p>Molecular pattern recognition of exhaled breath can correctly distinguish patients with MPM from subjects with similar occupational asbestos exposure without MPM and from healthy controls. This suggests that breathprints obtained by electronic nose have diagnostic potential for MPM.</p>
 
 
-<a href="#" class="btn">Access this article ></a>
+<a href="#" class="button">Access this article ></a>
 <hr />
 	</div>
 	<footer class="footnotes panel">
@@ -168,6 +152,13 @@
 </footer>
 </article>
 </div><!--/.item-container-->
+				<div class="recommended">
+				<div class="ad">
+					<img src="http://placehold.it/300x250" align="ad" title="ad" />
+				</div>
+				<div class="recent">
+				</div><!--/.recent-->
+				</div><!--/.recommended-->
 
 	</section><!--/[role="main"]-->
 	<section id="sidebar" role="complementary">
@@ -215,16 +206,24 @@
 
 	<!-- Included JS Files -->
 	<script src="assets/js/libs/jquery.min.js"></script>
-	<script src="assets/js/foundation/jquery.reveal.js"></script>
-	<script src="assets/js/foundation/jquery.orbit-1.4.0.js"></script>
-	<script src="assets/js/foundation/jquery.customforms.js"></script>
-	<script src="assets/js/foundation/jquery.placeholder.min.js"></script>
-	<script src="assets/js/foundation/jquery.tooltips.js"></script>
+				<!-- Included JS Files (Uncompressed) -->
+	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>	
+	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.forms.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.navigation.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.tooltips.js"></script>
+	<script src="assets/js/foundation/jquery.placeholder.js"></script>
 
-	<!-- <script src="javascripts/app.js"></script> -->
-		<script src="assets/js/app.js"></script>
-	  <script src="assets/js/foundation/jquery.offcanvas.js"></script>
-		<script src="assets/js/mustache.js"></script>
+
+	<script src="assets/js/foundation/app.js"></script>
+	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
+
+	<script src="assets/js/mustache.js"></script>
 
 	<!-- Mustache - homepage feed template -->
 	<script>
