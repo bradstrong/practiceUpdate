@@ -1,31 +1,31 @@
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_semantic-grid.scss */
-.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .sidebar, body.explore .dynamic-sidebar, body.learn .sidebar, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .item-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
+.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .sidebar, body.explore .dynamic-sidebar, body.learn .sidebar, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .item-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
   float: left;
 }
 
 /* line 55, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_semantic-grid.scss */
-.container, .page-content, .page-header, .dashboard .component, body.story-of-the-week .single-item-container .taxonomy-meta, .stream-item-container, .stream-item-container .stream-item .source-container, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-footer, body.explore .explore-sections, #page-leaderboard {
+.container, .page-content, .page-header, .dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .source-container, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-footer, body.explore .explore-sections, #page-leaderboard {
   *zoom: 1;
 }
 /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_clearfix.scss */
-.container:before, .page-content:before, .page-header:before, .dashboard .component:before, body.story-of-the-week .single-item-container .taxonomy-meta:before, .stream-item-container:before, .stream-item-container .stream-item .source-container:before, .stream-item-container .stream-item .item-container:before, .stream-item-container .stream-item .item-footer:before, body.explore .explore-sections:before, #page-leaderboard:before, .container:after, .page-content:after, .page-header:after, .dashboard .component:after, body.story-of-the-week .single-item-container .taxonomy-meta:after, .stream-item-container:after, .stream-item-container .stream-item .source-container:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections:after, #page-leaderboard:after {
+.container:before, .page-content:before, .page-header:before, .dashboard .component:before, body.story-of-the-week .single-item-container article:before, body.story-of-the-week .single-item-container article .item-content .item-content-section:before, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:before, .stream-item-container:before, .stream-item-container .stream-item .source-container:before, .stream-item-container .stream-item .item-container:before, .stream-item-container .stream-item .item-footer:before, body.explore .explore-sections:before, #page-leaderboard:before, .container:after, .page-content:after, .page-header:after, .dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .source-container:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections:after, #page-leaderboard:after {
   content: "";
   display: table;
 }
 /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_clearfix.scss */
-.container:after, .page-content:after, .page-header:after, .dashboard .component:after, body.story-of-the-week .single-item-container .taxonomy-meta:after, .stream-item-container:after, .stream-item-container .stream-item .source-container:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections:after, #page-leaderboard:after {
+.container:after, .page-content:after, .page-header:after, .dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .source-container:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections:after, #page-leaderboard:after {
   clear: both;
 }
 
 /* line 59, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_semantic-grid.scss */
-.page-content, .dashboard .component, body.story-of-the-week .single-item-container .taxonomy-meta, .stream-item-container, .stream-item-container .stream-item .source-container, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-footer, body.explore .explore-sections, #page-leaderboard {
+.page-content, .dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .source-container, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-footer, body.explore .explore-sections, #page-leaderboard {
   width: auto;
   max-width: none;
   min-width: 0;
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_semantic-grid.scss */
-.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .sidebar, body.explore .dynamic-sidebar, body.learn .sidebar, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .item-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
+.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .sidebar, body.explore .dynamic-sidebar, body.learn .sidebar, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .item-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -4566,24 +4566,57 @@ body.story-of-the-week .single-item-container {
   }
 }
 /* line 128, ../sass/app.scss */
-body.story-of-the-week .single-item-container .taxonomy-meta {
+body.story-of-the-week .single-item-container article {
+  margin: 0 -15px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+/* line 131, ../sass/app.scss */
+body.story-of-the-week .single-item-container article .item-header {
+  width: 100%;
+}
+/* line 134, ../sass/app.scss */
+body.story-of-the-week .single-item-container article .item-content {
+  width: 100%;
+}
+/* line 136, ../sass/app.scss */
+body.story-of-the-week .single-item-container article .item-content .item-content-section {
   margin: 0 -15px;
 }
-/* line 130, ../sass/app.scss */
+/* line 139, ../sass/app.scss */
+body.story-of-the-week .single-item-container article .item-content .take-home-message {
+  width: 100%;
+}
+/* line 141, ../sass/app.scss */
+body.story-of-the-week .single-item-container article .item-content .take-home-message h3 {
+  font-size: 14px;
+}
+/* line 143, ../sass/app.scss */
+body.story-of-the-week .single-item-container article .item-content .abstract {
+  width: 100%;
+}
+/* line 147, ../sass/app.scss */
+body.story-of-the-week .single-item-container article .item-footer {
+  width: 100%;
+}
+/* line 152, ../sass/app.scss */
 body.story-of-the-week .single-item-container .taxonomy-meta ul {
   width: 25%;
   list-style: none;
 }
-/* line 135, ../sass/app.scss */
-body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .vcard {
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+/* line 156, ../sass/app.scss */
+body.story-of-the-week .single-item-container .taxonomy-meta .author-meta {
+  margin: 0 -15px;
 }
-/* line 141, ../sass/app.scss */
+/* line 158, ../sass/app.scss */
+body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author {
+  width: 50%;
+}
+/* line 164, ../sass/app.scss */
 body.story-of-the-week .recommended {
   width: 33.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 141, ../sass/app.scss */
+  /* line 164, ../sass/app.scss */
   body.story-of-the-week .recommended {
     float: left;
     width: 100%;
@@ -4592,7 +4625,7 @@ body.story-of-the-week .recommended {
 }
 
 /* !stream */
-/* line 148, ../sass/app.scss */
+/* line 171, ../sass/app.scss */
 .stream-item-container {
   margin: 0 -15px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
@@ -4601,103 +4634,109 @@ body.story-of-the-week .recommended {
   border-color: #ededed;
   margin: 10px;
 }
-/* line 155, ../sass/app.scss */
+/* line 178, ../sass/app.scss */
 .stream-item-container .stream-item {
   width: 100%;
   background: white;
 }
-/* line 159, ../sass/app.scss */
+/* line 182, ../sass/app.scss */
 .stream-item-container .stream-item .source-container {
   margin: 0 -15px;
   display: none;
 }
-/* line 163, ../sass/app.scss */
+/* line 186, ../sass/app.scss */
 .stream-item-container .stream-item .item-container {
   margin: 0 -15px;
 }
-/* line 164, ../sass/app.scss */
+/* line 187, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-header {
   width: 100%;
 }
-/* line 165, ../sass/app.scss */
+/* line 188, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-content {
   width: 100%;
 }
-/* line 166, ../sass/app.scss */
+/* line 189, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-title {
   font-size: 17px;
 }
-/* line 167, ../sass/app.scss */
+/* line 190, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .source-title {
   font-size: 14px;
 }
-/* line 169, ../sass/app.scss */
+/* line 192, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer {
   margin: 0 -15px;
 }
-/* line 171, ../sass/app.scss */
+/* line 194, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .portal-meta {
   width: 50%;
 }
-/* line 174, ../sass/app.scss */
+/* line 197, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .item-actions {
-  width: 50%;
+  width: 16.66667%;
 }
 
 /* !Explore */
-/* line 183, ../sass/app.scss */
+/* line 206, ../sass/app.scss */
 body.explore .explore-feature .feature-item {
   background: #CCC;
 }
-/* line 184, ../sass/app.scss */
+/* line 207, ../sass/app.scss */
 body.explore .explore-feature {
   background: url(spinner.gif) center center #f4f4f4;
   height: 300px;
 }
-/* line 185, ../sass/app.scss */
+/* line 208, ../sass/app.scss */
 body.explore .explore-feature img {
   display: none;
 }
-/* line 187, ../sass/app.scss */
+/* line 210, ../sass/app.scss */
 body.explore .explore-feature.orbit {
   background: none;
 }
-/* line 188, ../sass/app.scss */
+/* line 211, ../sass/app.scss */
 body.explore .explore-feature.orbit img {
   display: block;
 }
-/* line 190, ../sass/app.scss */
+/* line 213, ../sass/app.scss */
 body.explore .explore-sections {
   margin: 0 -15px;
 }
-/* line 193, ../sass/app.scss */
+/* line 216, ../sass/app.scss */
 body.explore .section-widget {
   width: 100%;
 }
-/* line 195, ../sass/app.scss */
+/* line 218, ../sass/app.scss */
 body.explore .section-widget li {
   list-style: none;
 }
-/* line 196, ../sass/app.scss */
+/* line 219, ../sass/app.scss */
 body.explore .section-widget .meta.title {
   font-weight: bold;
 }
-/* line 199, ../sass/app.scss */
+/* line 222, ../sass/app.scss */
 body.explore .section-widget .section-header {
   width: 33.33333%;
 }
-/* line 202, ../sass/app.scss */
+/* line 225, ../sass/app.scss */
 body.explore .section-widget .section-content {
   width: 66.66667%;
 }
 
+/* line 232, ../sass/app.scss */
+.recommended ul {
+  list-style: none;
+  border-top: 1px solid #ededed;
+}
+
 /* !AD Slots */
-/* line 209, ../sass/app.scss */
+/* line 239, ../sass/app.scss */
 #page-leaderboard {
   margin: 0 -15px;
 }
 
-/* line 213, ../sass/app.scss */
+/* line 243, ../sass/app.scss */
 .footnotes a {
   word-break: break-all;
   word-break: break-word;
