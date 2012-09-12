@@ -1,30 +1,49 @@
-(function ($) {  
+// (function ($) {  
 
-  $(function(){
-    $(document).foundationAlerts();
-    $(document).foundationButtons();
-    $(document).foundationAccordion();
-    $(document).foundationNavigation();
-    $(document).foundationCustomForms();
-    $(document).foundationMediaQueryViewer();
-    $(document).foundationTabs({callback:$.foundation.customForms.appendCustomMarkup});
+//   $(function(){
+//     $(document).foundationAlerts();
+//     $(document).foundationButtons();
+//     $(document).foundationAccordion();
+//     $(document).foundationNavigation();
+//     $(document).foundationCustomForms();
+//     $(document).foundationMediaQueryViewer();
+//     $(document).foundationTabs({callback:$.foundation.customForms.appendCustomMarkup});
     
-    $(document).tooltips();
-    $('input, textarea').placeholder();
+//     $(document).tooltips();
+//     $('input, textarea').placeholder();
     
-    // UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
-    // $('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'both'});
-    // $('.block-grid.three-up>li:nth-child(3n+1)').css({clear: 'both'});
-    // $('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'both'});
-    // $('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'both'});
-  });
+//     // UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
+//     // $('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'both'});
+//     // $('.block-grid.three-up>li:nth-child(3n+1)').css({clear: 'both'});
+//     // $('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'both'});
+//     // $('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'both'});
+//   });
   
-})(jQuery);
+// })(jQuery);
 
-jQuery(document).ready(function ($) {
+ jQuery(document).ready(function ($) {
 
-
+// function activePage(){
+//   var curPage = $('body').attr('id');
+//   //alert(curPage);
+//   $('.top-bar .nav-bar li[class*=' + curPage + ']').addClass('active');
+// };
   /* Use this js doc for all application specific JS */
+/*-- Mustache - Top-bar --*/
+  $.getJSON('content/json/top-bar.json', function(data) {
+    $.get('assets/mustache/top-bar.mustache', function(template) {
+      //alert('Load was performed.');
+      var html = Mustache.to_html(template, data);
+      $('.top-bar').html(html);
+    });
+  });
+
+  /*-- Mustache - Main Search Panel --*/
+
+    $.get('assets/mustache/main-search.mustache', function(template) {
+      var html = Mustache.to_html(template);
+      $('.main-search').html(html);
+    });
 
   /* TABS --------------------------------- */
   /* Remove if you don't need :) */
@@ -103,21 +122,21 @@ jQuery(document).ready(function ($) {
 
   /* FIX PAGE HEADER ON SCROLL ------------- */
     // fix sub nav on scroll
-    var $win = $(window), $nav = $('.page-header'), navTop = $('.page-header').length && $('.page-header').offset().top + 80, isFixed = 0;
+    // var $win = $(window), $nav = $('.page-header'), navTop = $('.page-header').length && $('.page-header').offset().top + 80, isFixed = 0;
 
-    function processScroll() {
-      var i, scrollTop = $win.scrollTop();
-      if (scrollTop >= navTop && !isFixed) {
-        isFixed = 1;
-        $nav.addClass('page-header-fixed');
-      } else if (scrollTop <= navTop && isFixed) {
-        isFixed = 0;
-        $nav.removeClass('page-header-fixed');
-      }
-    }// end processScroll
-    processScroll();
+    // function processScroll() {
+    //   var i, scrollTop = $win.scrollTop();
+    //   if (scrollTop >= navTop && !isFixed) {
+    //     isFixed = 1;
+    //     $nav.addClass('page-header-fixed');
+    //   } else if (scrollTop <= navTop && isFixed) {
+    //     isFixed = 0;
+    //     $nav.removeClass('page-header-fixed');
+    //   }
+    // }// end processScroll
+    // processScroll();
 
-    $win.on('scroll', processScroll);
+    // $win.on('scroll', processScroll);
 
   /* DISABLED BUTTONS ------------- */
   /* Gives elements with a class of 'disabled' a return: false; */
@@ -230,8 +249,7 @@ function buildFromTemplate(jsonContent, mustacheTpl, destination){
     //});
 
 */
-   $('.explore-feature').orbit({pauseOnHover: false, directionalNav: true, bullets: true, fluid: '16x6'});
-   console.log("explore slider initialized");
+   $('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
+//   console.log("explore slider initialized");
 
 });
-

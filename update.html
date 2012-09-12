@@ -14,9 +14,10 @@
 	<title>Practice Network : Update</title>
 
 	<!-- Included CSS Files -->
-<!-- FontDeck
+<!--  FontDeck -->
 <link rel="stylesheet" href="http://f.fontdeck.com/s/css/l4MsFun30OJhB9DTDGcb8JQSAOQ/practicenetwork-foundation/22889.css" type="text/css" /> 
--->
+<link rel="stylesheet" href="http://f.fontdeck.com/s/css/zH28mslJNSfrEtk/N8vkA5GMvEQ/practicenetwork-foundation/22889.css" type="text/css" />
+
 
 	<link rel="stylesheet" href="assets/css/app.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.css">
@@ -28,39 +29,21 @@
 	<!-- IE Fix for HTML5 Tags -->
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<![endif]-->   
 
 </head>
-	<body id="page" class="update off-canvas slide-nav">
-	<div class="container">
-		<nav id="topMenu" role="navigation">
-			<ul id="nav" class="nav-bar">
-				<li class="active"><a href="update.html">update</a></li>
-				<li><a href="explore.html">Explore</a></li>
-				<li><a href="learn.html">Learn</a></li>
-			</ul>
-		</nav>
-
+	<body id="update" class="update off-canvas slide-nav">
 		<div id="page-leaderboard">
+			<div class="row">
 			<div class="ad centered eight columns hide-for-small">
 				<img src="http://placehold.it/728x90" class="ad" title="ad" />
 			</div><!--/.ad-->
+		</div><!--/.row-->
 		</div><!--/#page-leaderboard-->
-		<header id="header" class="page-header">
-		  <div class="site-branding">
-		    <h1 id="site-title"><a href="#">OncologySTAT</a></h1>
-		  </div><!--/.site-branding-->
-		  <div class="eight columns">
-		    <nav id="menu" role="navigation" class="hide-for-small main-nav">
-    			<ul id="mainNav" class="nav-bar">
-						<li class="active"><a href="update.html">update</a></li>
-						<li><a href="explore.html">Explore</a></li>
-						<li><a href="learn.html">Learn</a></li>
-    			</ul>
-    		</nav><!--/#menu-->
-		  </div><!--/.eight columns-->
-		</header><!--/.page-header-->
+		<div class="container top-bar">
+		</div><!--/.container.top-bar-->
 
+	<div>
 	<div class="page-content">
 		<div class="row">
 			<div class="show-for-small">
@@ -78,23 +61,36 @@
 				</div>
 				<div class="recent">
 				</div><!--/.recent-->
+				<div class="ad">
+					<img src="http://placehold.it/300x250" align="ad" title="ad" />
+				</div>
 				</div><!--/.recommended-->
 
 	</section><!--/[role="main"]-->
 	<section id="sidebar" role="complementary">
 		<div class="dashboard">
+			<div class="component user-console">
+
+						<div class="six columns">
+							<img src="http://placehold.it/100x100" />
+						</div><!--/.two.columns-->
+						<div class="six columns">
+						<a href="#" ><i class="icon-cog has-tip" data-width="210" title="Change the specialties shown here."></i></a>
+					</div><!--/.two.columns-->
+			</div><!--/.component.user-console-->
+
 			<div class="component user-specialties">
 				<nav role="navigation">
 					<ul class="side-nav">
 						<li class="nav-header">Specialties
-							<a href="#" ><i class="icon-cog"></i></a>
+							<div class="right"><a href="#" ><i class="icon-cog has-tip" data-width="210" title="Change the specialties shown here."></i></a></div>
 						<li class="active"><a href="#">All</a></li>
 						<li><a href="#">Hemotology</a></li>
 						<li><a href="#">Urology</a></li>
 					</ul>
 				</nav>
 			</div><!--/.component.user-specialties-->
-			<div class="component user-topics">
+<!-- 			<div class="component user-topics">
 				<nav role="navigation">
 					<ul class="side-nav">
 						<li class="nav-header">My Topics
@@ -105,8 +101,8 @@
 						<li><a href="#">Urology</a></li>
 					</ul>
 				</nav>
-			</div><!--/.component.user-topics-->
-			<div class="component user-lists">
+			</div> --><!--/.component.user-topics-->
+<!-- 			<div class="component user-lists">
 				<nav role="navigation">
 					<ul class="side-nav">
 						<li class="nav-header">My Lists<a href="#" ><i class="icon-cog"></i></a></li>
@@ -115,9 +111,17 @@
 					<li><a href="#">Custom List #3</a></li>
 					</ul>
 				</nav>
-			</div><!--/.component.user-lists-->
-			<div>
-				<img src="http://placehold.it/200x200" /><p>Meet Our Experts Meet our Advisory and Editorial Boards comprised of physician editors and world-renowned experts.<p>
+			</div> --><!--/.component.user-lists-->
+			<div class="component topic-spotlight">
+				<nav role="navigation">
+					<ul class="side-nav">
+						<li class="nav-header">Topic Spotlight
+						<li><a href="#">Breast ER-Positive</a></li>
+					</ul>
+				</nav>
+			</div><!--/.component.user-specialties-->
+			<div class="panel">
+				<img src="http://placehold.it/200x200" /><p><!-- Meet Our Experts --> Meet our Advisory and Editorial Boards comprised of physician editors and world-renowned experts.<p>
 			</div>
 		</div><!--/.sidebar-->
 	</section><!--/.[role="complimentary"]-->
@@ -131,6 +135,7 @@
 	<!-- Included JS Files -->
 	<script src="assets/js/libs/jquery.min.js"></script>
 				<!-- Included JS Files (Uncompressed) -->
+<!-- 
 	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>	
 	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
@@ -142,15 +147,17 @@
 	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.tooltips.js"></script>
 	<script src="assets/js/foundation/jquery.placeholder.js"></script>
-
+-->
 
 	<script src="assets/js/foundation/app.js"></script>
-	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
 
+	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
 	<script src="assets/js/mustache.js"></script>
 
 	<!-- Mustache - homepage feed template -->
 	<script>
+
+
 	<!-- Mustache - homepage feed template -->
 	$.getJSON('content/json/feed.json', function(data) {
 		$.get('assets/mustache/feed-item.mustache', function(template) {
@@ -179,6 +186,33 @@
 		});
 
 	});
+function activePage(){
+  var curPage = $('body').attr('id');
+  console.log(curPage);
+  	//$('.top-bar .nav-bar li[class*="' + curPage + '"]');
+  	
+	switch (day)
+	{
+	case 'update':
+	  $.addClass('update');
+	  break;
+	case 'explore':
+	  x="Today it's Monday";
+	  break;
+	case 'learn':
+	  x="Today it's Tuesday";
+	  break;
+	}
+};
+activePage();
+
+// $.getJSON('content/json/feed.json', function(data) {
+// 	$.get('assets/mustache/feed-item.mustache', function(template) {
+// 		$.each({'articles': 'assets/mustache/_articles.mustache'}, function(key, value) {console.log(key, value);
+// })​var html = Mustache.to_html(template, data, partials);
+//   $('.stream-container').html(html);
+// 	})
+// });
 
 	</script>
 

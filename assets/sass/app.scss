@@ -48,6 +48,8 @@
 
 /* !variables */
 $grey: #ededed;
+$bodyBackground: #e6e3de;
+$itemBackground: #fcfcfa;
 
 //html {font-family:"Skolar Bold", Georgia, serif; font-size-adjust:0.49; font-weight:bold; font-style:normal;}
 
@@ -55,23 +57,31 @@ $grey: #ededed;
 
 body{
 	//background: url("../img/body.jpg");
+	background: $bodyBackground;
 }
 
 .container{
-	@include outerRow();
-	min-width:320px !important;
+	//@include outerRow();
+	//min-width:320px !important;
 }
 
 .page-content{
-	@include innerRow();
+	//@include outerRow();
 	padding-top:$navBarHeight;
 	padding-bottom:$navBarHeight*2;
 }
 
 /* !main-nav */
+.top-bar{
+	background-color: #5f5f61;
+	@include filter-gradient(#5f5f61, #020202, vertical);
+	@include background-image(linear-gradient(top, #5f5f61 0%,#020202 100%));
+	width: 100%;
+}
 
 .page-header{
-	@include outerRow();
+	@include clearfix();
+	background: linear-gradient(top bottom, #5f5f61 0%,#020202 100%);
 	width: 100%;
 	z-index: 500;
 
@@ -84,6 +94,9 @@ body{
 .site-branding{
 	@include column(4);
 	@include mobileColumn(2);
+}
+.nav-bar{
+	background: inherit;
 }
 
 @media all and (max-width: $screenSmall){
@@ -98,6 +111,14 @@ body{
 	}
 }
 
+/* global elements */
+article{
+	background: $itemBackground;
+}
+
+.ad{
+	text-align: center;
+}
 /* Page Layouts */
 
 /* !Update Layout */
@@ -111,15 +132,18 @@ body.update{
 /* !Explore Layout */
 
 body.explore{
-	.sidebar{@include column(2);}
-	//.main{@include column(7);}
-	.dynamic-sidebar{@include column(3);}
+	.dashboard{@include column(12);}
+	//.sidebar{@include column(2);}
+	.explore-container{@include column(8); @include mobileRow();}
+	.recommended{@include column(4); @include mobileColumn(4);}
 }
 
 /* !Learn Layout */
 
 body.learn{
-	.sidebar{@include column(2);}
+	.dashboard{@include column(12);}
+	.cme-container{@include column(12); @include mobileRow();}
+	//.sidebar{@include column(2);}
 	//.main{@include column(12);}
 	//.recommended{@include column(3);}
 }
@@ -165,20 +189,15 @@ body.story-of-the-week{
 }
 
 /* !stream */
-.stream-container{
-
-}
 .stream-item-container{
 	@include innerRow();
 	box-shadow: 0px 2px 2px rgba(0,0,0,.2);
 	border-radius: 5px;
 	border:1px solid;
 	border-color:$grey;
-	margin: $columnGutter/3;
+	margin-bottom: $columnGutter/3;
 	.stream-item{
 		@include column(12);
-		//margin: $columnGutter/3;
-		background: white;
 		.source-container{
 			@include innerRow();
 			display: none;
@@ -196,6 +215,7 @@ body.story-of-the-week{
 			}
 			.item-actions{
 				@include column(2);
+				@include push(4);
 			}
 		}
 	}
@@ -203,15 +223,24 @@ body.story-of-the-week{
 
 /* !Explore */
 body.explore{
-	.explore-feature .feature-item{background: #CCC;}
+	.explore-feature .feature-item{background: $white;}
 	.explore-feature { background: url(spinner.gif) center center #f4f4f4; height: 300px;}
 	.explore-feature img { display: none; }
 
 	.explore-feature.orbit { background: none; }
 	.explore-feature.orbit img { display: block; }
+	.explore-feature.orbit {
+		section{ padding:$columnGutter/3;}
+		article{ padding:$columnGutter/3;}
+	}
 
 	.explore-sections{
-		@include innerRow();
+		@include column(12);
+		section{
+			@include innerRow();
+			margin-bottom:$columnGutter/3;
+			background: $itemBackground;
+		}
 	}
 	.section-widget{
 		@include column(12);
@@ -228,6 +257,21 @@ body.explore{
 	}
 }
 
+/* !COMPONENTS */
+.component{@include innerRow();}
+.side-nav{
+	li{
+		&.active{
+			pointer-events: none;
+			cursor: default;
+		}
+		a{
+			&:hover{
+				background:$grey;
+			}
+		}
+	}
+}
 .recommended{
 	ul{
 		list-style:none;
@@ -237,7 +281,7 @@ body.explore{
 
 /* !AD Slots */
 #page-leaderboard{
-	@include innerRow();
+	//@include outerRow();
 }
 
 .footnotes a {

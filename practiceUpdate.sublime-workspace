@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"di",
+				"display"
+			],
+			[
 				"hea",
 				"header	Tag"
 			]
@@ -11,15 +15,142 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+			"settings":
+			{
+				"buffer_size": 7477,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/json/top-bar.json",
+			"settings":
+			{
+				"buffer_size": 112,
+				"line_ending": "Unix",
+				"name": "top-bar.json"
+			}
+		},
+		{
+			"file": "assets/mustache/top-bar.mustache",
+			"settings":
+			{
+				"buffer_size": 656,
+				"line_ending": "Unix",
+				"name": "top-bar.mustache"
+			}
+		},
+		{
+			"contents": "<script>\n\n//partials example\nvar data = {\n    firstName: \"Christophe\",\n    lastName: \"Coenraets\",\n    address: \"1 Main street\",\n    city: \"Boston\",\n    state: \"MA\",\n    zip: \"02106\"\n};\n \nvar template = \"<h1>{{firstName}} {{lastName}}</h1>{{>address}}\";\nvar partials = {address: \"<p>{{address}}</p>{{city}}, {{state}} {{zip}}\"};\nvar html = Mustache.to_html(template, data, partials);\n\n$('#sampleArea').html(html);\n\n//external example\n\n\n$.getJSON('json/data2.json', function(data) {\n    var template = $('#personTpl').html();\n    var html = Mustache.to_html(template, data);\n    $('#sampleArea').html(html);\n});\n\n//current update example\n\n	$.getJSON('content/json/feed.json', function(data) {\n		$.get('assets/mustache/feed-item.mustache', function(template) {\n			//alert('Load was performed.');\n	    var html = Mustache.to_html(template, data);\n	    $('.stream-container').html(html);\n		});\n\n//Experiment\n\n	$.getJSON('content/json/feed.json', function(data) {\n		$.get('assets/mustache/feed-item.mustache', function(template) {\n			$get({'articles': 'assets/mustache/_articles.mustache'}, function(partials){\n	    var html = Mustache.to_html(template, data, partials);\n	    $('.stream-container').html(html);\n			})\n		});\n\n//Experiment 2\n		$.getJSON('content/json/feed.json', function(data) {\n			$.get('assets/mustache/feed-item.mustache', function(template) {\n				var partials = $.each({\n					'articles': 'assets/mustache/_articles.mustache'\n				}, function(key, value){\n					console.log(key log);\n				})\n			})\n	\n			    var html = Mustache.to_html(template, data, partials);\n			    $('.stream-container').html(html);\n				})\n			})\n		});\n		</script>",
+			"settings":
+			{
+				"buffer_size": 1643,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
+			"settings":
+			{
+				"buffer_size": 12619,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
+			"settings":
+			{
+				"buffer_size": 5483,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
+			"settings":
+			{
+				"buffer_size": 2033,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/_articles.mustache",
+			"settings":
+			{
+				"buffer_size": 575,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
+			"settings":
+			{
+				"buffer_size": 13265,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
+			"settings":
+			{
+				"buffer_size": 1981,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/newsletter-daily.html",
+			"settings":
+			{
+				"buffer_size": 11175,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "register.html",
+			"settings":
+			{
+				"buffer_size": 63543,
+				"line_ending": "Unix",
+				"name": "register.html"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
+			"settings":
+			{
+				"buffer_size": 8501,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.offcanvas.js",
+			"settings":
+			{
+				"buffer_size": 1701,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_news.json",
+			"settings":
+			{
+				"buffer_size": 5319,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 360.0,
+		"height": 327.0,
 		"selected_items":
 		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
 		],
-		"width": 392.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -36,6 +167,9 @@
 	},
 	"file_history":
 	[
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/feed.json",
+		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/index.html",
 		"/Users/brad/Sites/pn-foundation/practice-network/story-of-the-week.html",
 		"/Users/brad/Sites/pn-foundation/practice-network/update.html",
 		"/Users/brad/Sites/pn-foundation/practice-network/assets/js/app.js",
@@ -56,7 +190,6 @@
 		"/Users/brad/Sites/pn-foundation/practice-network/assets/sass/data-meta.html",
 		"/Users/brad/Sites/pn-foundation/practice-network/offcanvas-4.html",
 		"/Users/brad/Sites/pn-foundation/practice-network/update-offcanvas.html",
-		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/brad/Dropbox/Elsevier/_reference/MailingLists/US-Physicians_OncologyStat.csv"
 	],
 	"find":
@@ -75,6 +208,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"scher",
+			"stream-item",
+			"background",
+			"back",
+			"first",
+			"class=\"help-block\"",
+			"class=\"control-label\"",
+			"class=\"input-xlarge\"",
+			"side",
+			"side-nav",
+			"dash",
+			"invisible",
+			"eigh",
 			"innerRow",
 			"page-content\n",
 			"}\n",
@@ -106,8 +252,414 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+					"settings":
+					{
+						"buffer_size": 7477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1766,
+								1766
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 511.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "content/json/top-bar.json",
+					"settings":
+					{
+						"buffer_size": 112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								102,
+								102
+							]
+						],
+						"settings":
+						{
+							"auto_name": "top-bar.json",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/mustache/top-bar.mustache",
+					"settings":
+					{
+						"buffer_size": 656,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								564,
+								493
+							]
+						],
+						"settings":
+						{
+							"auto_name": "top-bar.mustache",
+							"syntax": "Packages/Mustache/mustache.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"settings":
+					{
+						"buffer_size": 1643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1631,
+								1233
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
+					"settings":
+					{
+						"buffer_size": 12619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7038,
+								7038
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
+					"settings":
+					{
+						"buffer_size": 5483,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2146,
+								2146
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 854.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
+					"settings":
+					{
+						"buffer_size": 2033,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Mustache/mustache.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/_articles.mustache",
+					"settings":
+					{
+						"buffer_size": 575,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								575,
+								575
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Mustache/mustache.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
+					"settings":
+					{
+						"buffer_size": 13265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3801,
+								3801
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1374.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
+					"settings":
+					{
+						"buffer_size": 1981,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/newsletter-daily.html",
+					"settings":
+					{
+						"buffer_size": 11175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1499,
+								1499
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "register.html",
+					"settings":
+					{
+						"buffer_size": 63543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2493,
+								2493
+							]
+						],
+						"settings":
+						{
+							"auto_name": "register.html",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5145.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
+					"settings":
+					{
+						"buffer_size": 8501,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								900,
+								900
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2958.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.offcanvas.js",
+					"settings":
+					{
+						"buffer_size": 1701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								716,
+								716
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_news.json",
+					"settings":
+					{
+						"buffer_size": 5319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

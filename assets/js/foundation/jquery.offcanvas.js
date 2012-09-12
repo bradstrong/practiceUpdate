@@ -22,12 +22,12 @@
     });
   }
 
-  // // Adjust sidebars and sizes when resized
-  // $(window).resize(function() {
-  //   // if (!navigator.userAgent.match(/Android/i)) $('body').removeClass('active');
-  //   var $selector4 = $('#topMenu');
-  //   if ($selector4.length > 0) $selector4.css("margin-top", $selector4.height() * -1);
-  // });
+  // Adjust sidebars and sizes when resized
+  $(window).resize(function() {
+    // if (!navigator.userAgent.match(/Android/i)) $('body').removeClass('active');
+    var $selector4 = $('#topMenu');
+    if ($selector4.length > 0) $selector4.css("margin-top", $selector4.height() * -1);
+  });
 
   // Switch panels for the paneled nav on mobile
   var $selector5 = $('#switchPanels');

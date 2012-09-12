@@ -4,13 +4,13 @@
 
 // Grid Settings
 
-// $rowWidth: 1000px;
+ $rowWidth: 100%;
 // $columnGutter: 30px;
 // $totalColumns: 12;
 // $mobileTotalColumns: 4;
 
 // Colors Settings
-
+ $mainColor: #2398c9;
 // $mainColor: #2ba6cb;
 // $secondaryColor: #e9e9e9;
 // $alertColor: #c60f13;
@@ -18,6 +18,7 @@
 // $txtColor: #222;
 // $highlightColor: #ffff99;
 // $black: #000;
+ $white: #f0efec;
 // $white: #fff;
 // $shinyEdge: rgba(#fff, .5);
 // $darkEdge: rgba(#000, .2);
@@ -25,10 +26,14 @@
 // Typography Settings
 
 // $headerFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ $headerFontFamily: "Skolar Bold", Georgia, serif;
 // $headerFontWeight: bold;
+ $headerFontColor: #444;
 // $headerFontColor: #222;
+ $bodyFontFamily:"Skolar Regular", Georgia, serif;
 // $bodyFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $bodyFontWeight: normal;
+ $bodyFontColor: #444;
 // $bodyFontColor: #222;
 
 // Button Settings
