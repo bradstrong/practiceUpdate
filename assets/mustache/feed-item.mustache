@@ -1,8 +1,9 @@
 {{#items}}
 {{>articles}}
 <div class="stream-item-container">
-<article class="stream-item {{type}} {{section}} {{#story-of-the-week}}story-of-the-week{{/story-of-the-week}} row-fluid">
+<article class="stream-item {{type}} {{section}} {{#featured}}featured{{/featured}} row-fluid">
 					{{#source}}
+					{{#featured}}<div class="flag"><span class="featured"><i class="icon-bolt"></i> featured</span></div>{{/featured}}
 					<div class="source-container">
 						<div class="{{source.type}}-photo">
 							<img class="photo" src="{{{photo.url}}}"/>
@@ -12,7 +13,7 @@
 					<div class="item-container">
 						<header class="item-header">
 							<hgroup class="pub-meta">
-								<p><span class="item-type"><a href="#">{{section}}</a></span> <span class="item-pub-date">{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</span></p>
+								<p><span class="item-type"><a href="#">{{type}}</a></span> <span class="item-pub-date">{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</span></p>
 								<h3 class="item-title"><a href="{{url}}">{{title}}</a></h3>
 							</hgroup><!--/.pub-meta-->
 						</header>
@@ -30,11 +31,13 @@
 					</div><!--/.item-container-->
 						<footer class="item-footer">
 						<div class="portal-meta">
-							<p>Practice Relevance: {{practice-relevance}}</p>
+							<dl class="rating"><dt class="practice-relevance">Practice Relevance:</dt> <dd class="value">{{practice-relevance}}</dd></dl>
 						</div>
 							<div class="item-actions">
-										<a href="#" ><i class="icon-star-empty"></i></a>
-										<a href="#" ><i class="icon-share-alt"></i></a>
+								<ul class="link-list">
+									<li><a href="#" ><i class="icon-star-empty"></i></a></li>
+									<li><a href="#" ><i class="icon-share-alt"></i></a></li>
+								</ul><!--/.link-list-->
 			        </div><!--/.item-actions-->
 						</footer>
 				</article></div><!--/.stream-item-->

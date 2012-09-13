@@ -1,31 +1,32 @@
+/* !variables */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_semantic-grid.scss */
-.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .dashboard, body.explore .explore-container, body.explore .recommended, body.learn .dashboard, body.learn .cme-container, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .item-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .explore-sections, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
+.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .dashboard, body.explore .explore-container, body.explore .recommended, body.learn .dashboard, body.learn .cme-container, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .flag .featured, .stream-item-container .stream-item .item-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .explore-sections, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
   float: left;
 }
 
 /* line 55, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_semantic-grid.scss */
-.dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .source-container, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-footer, body.explore .explore-sections section, .component {
+.dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .flag, .stream-item-container .stream-item .source-container, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-footer, body.explore .explore-sections section, .component {
   *zoom: 1;
 }
 /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_clearfix.scss */
-.dashboard .component:before, body.story-of-the-week .single-item-container article:before, body.story-of-the-week .single-item-container article .item-content .item-content-section:before, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:before, .stream-item-container:before, .stream-item-container .stream-item .source-container:before, .stream-item-container .stream-item .item-container:before, .stream-item-container .stream-item .item-footer:before, body.explore .explore-sections section:before, .component:before, .dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .source-container:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections section:after, .component:after {
+.dashboard .component:before, body.story-of-the-week .single-item-container article:before, body.story-of-the-week .single-item-container article .item-content .item-content-section:before, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:before, .stream-item-container:before, .stream-item-container .stream-item .flag:before, .stream-item-container .stream-item .source-container:before, .stream-item-container .stream-item .item-container:before, .stream-item-container .stream-item .item-footer:before, body.explore .explore-sections section:before, .component:before, .dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .flag:after, .stream-item-container .stream-item .source-container:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections section:after, .component:after {
   content: "";
   display: table;
 }
 /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_clearfix.scss */
-.dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .source-container:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections section:after, .component:after {
+.dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .flag:after, .stream-item-container .stream-item .source-container:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections section:after, .component:after {
   clear: both;
 }
 
 /* line 59, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_semantic-grid.scss */
-.dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .source-container, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-footer, body.explore .explore-sections section, .component {
+.dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .flag, .stream-item-container .stream-item .source-container, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-footer, body.explore .explore-sections section, .component {
   width: auto;
   max-width: none;
   min-width: 0;
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_semantic-grid.scss */
-.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .dashboard, body.explore .explore-container, body.explore .recommended, body.learn .dashboard, body.learn .cme-container, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .item-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .explore-sections, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
+.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .dashboard, body.explore .explore-container, body.explore .recommended, body.learn .dashboard, body.learn .cme-container, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .flag .featured, .stream-item-container .stream-item .item-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .explore-sections, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -119,19 +120,19 @@ body {
 /* Links ---------------------- */
 /* line 11, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/common/_globals.scss */
 a {
-  color: #2398c9;
+  color: #009de6;
   text-decoration: none;
   line-height: inherit;
 }
 
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/common/_globals.scss */
 a:hover {
-  color: #1f88b3;
+  color: #008bcc;
 }
 
 /* line 13, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/common/_globals.scss */
 a:focus {
-  color: #2398c9;
+  color: #009de6;
   outline: none;
 }
 
@@ -946,7 +947,7 @@ form.custom div.custom.dropdown ul li {
 }
 /* line 106, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/common/_forms.scss */
 form.custom div.custom.dropdown ul li.selected {
-  background: #c3e6f5;
+  background: #b3e7ff;
   color: #000;
 }
 /* line 107, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/common/_forms.scss */
@@ -957,7 +958,7 @@ form.custom div.custom.dropdown ul li.selected:after {
 }
 /* line 109, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/common/_forms.scss */
 form.custom div.custom.dropdown ul li:hover {
-  background-color: #d9eff8;
+  background-color: #ccefff;
   color: #222;
 }
 /* line 110, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/common/_forms.scss */
@@ -965,11 +966,11 @@ form.custom div.custom.dropdown ul li:hover:after {
   content: "\2013";
   position: absolute;
   right: 10px;
-  color: #82cbe9;
+  color: #66ceff;
 }
 /* line 112, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/common/_forms.scss */
 form.custom div.custom.dropdown ul li.selected:hover {
-  background: #c3e6f5;
+  background: #b3e7ff;
   cursor: default;
   color: #000;
 }
@@ -1577,8 +1578,8 @@ that IE7/8 do not support :nth-child.
 /* line 6, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button {
   width: auto;
-  background: #2398c9;
-  border: 1px solid #186788;
+  background: #009de6;
+  border: 1px solid #006899;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -1609,7 +1610,7 @@ that IE7/8 do not support :nth-child.
 /* line 9, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button:hover {
   color: #f0efec;
-  background-color: #1b779e;
+  background-color: #007ab3;
 }
 /* line 10, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button:active {
@@ -1619,9 +1620,9 @@ that IE7/8 do not support :nth-child.
 }
 /* line 11, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button:focus {
-  -webkit-box-shadow: 0 0 4px #2398c9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -moz-box-shadow: 0 0 4px #2398c9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  box-shadow: 0 0 4px #2398c9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -webkit-box-shadow: 0 0 4px #009de6, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 0 4px #009de6, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 0 4px #009de6, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   color: #f0efec;
 }
 /* line 14, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
@@ -1650,18 +1651,18 @@ that IE7/8 do not support :nth-child.
 }
 /* line 21, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.primary {
-  background-color: #2398c9;
-  border: 1px solid #186788;
+  background-color: #009de6;
+  border: 1px solid #006899;
 }
 /* line 22, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.primary:hover {
-  background-color: #1b779e;
+  background-color: #007ab3;
 }
 /* line 23, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.primary:focus {
-  -webkit-box-shadow: 0 0 4px #2398c9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -moz-box-shadow: 0 0 4px #2398c9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  box-shadow: 0 0 4px #2398c9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -webkit-box-shadow: 0 0 4px #009de6, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 0 4px #009de6, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 0 4px #009de6, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 /* line 25, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.success {
@@ -1741,14 +1742,14 @@ that IE7/8 do not support :nth-child.
 .button.disabled, .button[disabled] {
   opacity: 0.6;
   cursor: default;
-  background: #2398c9;
+  background: #009de6;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 /* line 48, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.disabled :hover, .button[disabled] :hover {
-  background: #2398c9;
+  background: #009de6;
 }
 /* line 50, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.disabled.success, .button[disabled].success {
@@ -1931,7 +1932,7 @@ input[type=submit].button, button.button {
 }
 /* line 99, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown > ul li:hover {
-  background-color: #d9eff8;
+  background-color: #ccefff;
   color: #222;
 }
 /* line 100, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
@@ -1969,7 +1970,7 @@ input[type=submit].button, button.button {
 }
 /* line 117, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split:hover {
-  background-color: #2398c9;
+  background-color: #009de6;
 }
 /* line 118, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split.alert:hover {
@@ -1995,7 +1996,7 @@ input[type=submit].button, button.button {
 }
 /* line 124, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > a:hover {
-  background-color: #1b779e;
+  background-color: #007ab3;
 }
 /* line 126, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split.large > a {
@@ -2011,13 +2012,13 @@ input[type=submit].button, button.button {
 }
 /* line 131, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > span {
-  background-color: #2398c9;
+  background-color: #009de6;
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
   width: 30px;
-  border-left: 1px solid #186788;
+  border-left: 1px solid #006899;
   -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -2028,7 +2029,7 @@ input[type=submit].button, button.button {
 }
 /* line 132, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > span:hover {
-  background-color: #1b779e;
+  background-color: #007ab3;
 }
 /* line 133, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > span:after {
@@ -2307,8 +2308,8 @@ div.button-bar ul.button-group:last-child {
 }
 /* line 11, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li.active {
-  background: #2398c9;
-  border-color: #1b779e;
+  background: #009de6;
+  border-color: #007ab3;
 }
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li.active > a {
@@ -2317,7 +2318,7 @@ div.button-bar ul.button-group:last-child {
 }
 /* line 13, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li.active:hover {
-  background: #2398c9;
+  background: #009de6;
   cursor: default;
 }
 /* line 15, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_navbar.scss */
@@ -3279,11 +3280,11 @@ dl.tabs dd a {
 /* line 16, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_tabs.scss */
 dl.tabs dd a:focus {
   font-weight: bold;
-  color: #2398c9;
+  color: #009de6;
 }
 /* line 18, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_tabs.scss */
 dl.tabs dd.active {
-  border-top: 3px solid #2398c9;
+  border-top: 3px solid #009de6;
   margin-top: -3px;
 }
 /* line 19, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_tabs.scss */
@@ -3384,7 +3385,7 @@ dl.tabs.pill dd.active {
 }
 /* line 43, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_tabs.scss */
 dl.tabs.pill dd.active a {
-  background-color: #2398c9;
+  background-color: #009de6;
   border: none;
   color: #fff;
 }
@@ -3504,7 +3505,7 @@ ul.tabs-content.contained.vertical > li {
   /* line 81, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_tabs.scss */
   .tabs.mobile dd a.active {
     border: none;
-    background: #2398c9;
+    background: #009de6;
     color: #fff;
     margin: 0;
     position: static;
@@ -3738,7 +3739,7 @@ div.alert-box {
   font-weight: bold;
   font-size: 14px;
   color: #f0efec;
-  background-color: #2398c9;
+  background-color: #009de6;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 12px;
   -webkit-border-radius: 3px;
@@ -3796,7 +3797,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   position: relative;
   bottom: 1px;
   color: #fff;
-  background: #2398c9;
+  background: #009de6;
 }
 /* line 158, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_ui.scss */
 .label.radius {
@@ -3839,8 +3840,8 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 }
 /* line 171, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_ui.scss */
 .has-tip:hover {
-  border-bottom: dotted 1px #145672;
-  color: #2398c9;
+  border-bottom: dotted 1px #005780;
+  color: #009de6;
 }
 /* line 172, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_ui.scss */
 .has-tip.tip-left, .has-tip.tip-right {
@@ -3917,8 +3918,8 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 }
 /* line 188, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_ui.scss */
 .tooltip.opened {
-  color: #2398c9 !important;
-  border-bottom: dotted 1px #145672 !important;
+  color: #009de6 !important;
+  border-bottom: dotted 1px #005780 !important;
 }
 
 /* line 192, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_ui.scss */
@@ -3965,9 +3966,9 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 }
 /* line 215, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_ui.scss */
 .panel.callout {
-  background: #2398c9;
+  background: #009de6;
   color: #fff;
-  border-color: #1b779e;
+  border-color: #007ab3;
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
@@ -3980,7 +3981,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 .panel.callout .button {
   background: #f0efec;
   border: none;
-  color: #2398c9;
+  color: #009de6;
   text-shadow: none;
 }
 /* line 219, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_ui.scss */
@@ -4046,7 +4047,7 @@ ul.accordion > li .content {
 }
 /* line 241, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_ui.scss */
 ul.accordion > li.active {
-  border-top: 3px solid #2398c9;
+  border-top: 3px solid #009de6;
 }
 /* line 243, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_ui.scss */
 ul.accordion > li.active .title {
@@ -4133,7 +4134,7 @@ dl.sub-nav dd a {
 /* line 273, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_ui.scss */
 dl.sub-nav dd.active a {
   font-weight: bold;
-  background: #2398c9;
+  background: #009de6;
   color: #fff;
   padding: 3px 9px;
   cursor: default;
@@ -4176,14 +4177,14 @@ ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
 }
 /* line 287, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_ui.scss */
 ul.pagination li.current a {
-  background: #2398c9;
+  background: #009de6;
   color: #f0efec;
   font-weight: bold;
   cursor: default;
 }
 /* line 288, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/components/modules/_ui.scss */
 ul.pagination li.current a:hover {
-  background: #2398c9;
+  background: #009de6;
 }
 
 /* Breadcrums ---------------------- */
@@ -4419,21 +4420,20 @@ p.vevent abbr {
 }
 
 /* Brad's Styles */
-/* !variables */
 /* structure */
-/* line 58, ../sass/app.scss */
+/* line 63, ../sass/app.scss */
 body {
-  background: #e6e3de;
+  background: #f1efed;
 }
 
-/* line 68, ../sass/app.scss */
+/* line 73, ../sass/app.scss */
 .page-content {
   padding-top: 40px;
   padding-bottom: 80px;
 }
 
 /* !main-nav */
-/* line 75, ../sass/app.scss */
+/* line 80, ../sass/app.scss */
 .top-bar {
   background-color: #5f5f61;
   *zoom: 1;
@@ -4446,7 +4446,7 @@ body {
   width: 100%;
 }
 
-/* line 82, ../sass/app.scss */
+/* line 87, ../sass/app.scss */
 .page-header {
   *zoom: 1;
   background: linear-gradient(top bottom, #5f5f61 0%, #020202 100%);
@@ -4463,19 +4463,19 @@ body {
   clear: both;
 }
 
-/* line 89, ../sass/app.scss */
+/* line 94, ../sass/app.scss */
 .page-header-fixed {
   position: fixed;
   top: 0;
   left: 0;
 }
 
-/* line 94, ../sass/app.scss */
+/* line 99, ../sass/app.scss */
 .site-branding {
   width: 33.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 94, ../sass/app.scss */
+  /* line 99, ../sass/app.scss */
   .site-branding {
     float: left;
     width: 50%;
@@ -4483,50 +4483,50 @@ body {
   }
 }
 
-/* line 98, ../sass/app.scss */
+/* line 103, ../sass/app.scss */
 .nav-bar {
   background: inherit;
 }
 
 @media all and (max-width: 768px) {
-  /* line 103, ../sass/app.scss */
+  /* line 108, ../sass/app.scss */
   .page-header {
     position: static;
   }
 }
 /* !dashboard */
-/* line 107, ../sass/app.scss */
+/* line 112, ../sass/app.scss */
 .dashboard .component {
   margin: 0 -15px;
 }
-/* line 109, ../sass/app.scss */
+/* line 114, ../sass/app.scss */
 .dashboard .component nav {
   width: 100%;
 }
 
 /* global elements */
-/* line 115, ../sass/app.scss */
+/* line 120, ../sass/app.scss */
 article {
   background: #fcfcfa;
 }
 
-/* line 119, ../sass/app.scss */
+/* line 124, ../sass/app.scss */
 .ad {
   text-align: center;
 }
 
 /* Page Layouts */
 /* !Update Layout */
-/* line 127, ../sass/app.scss */
+/* line 132, ../sass/app.scss */
 body.update .dashboard {
   width: 100%;
 }
-/* line 128, ../sass/app.scss */
+/* line 133, ../sass/app.scss */
 body.update .stream-container {
   width: 66.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 128, ../sass/app.scss */
+  /* line 133, ../sass/app.scss */
   body.update .stream-container {
     width: auto;
     min-width: 0;
@@ -4544,12 +4544,12 @@ body.update .stream-container {
     clear: both;
   }
 }
-/* line 129, ../sass/app.scss */
+/* line 134, ../sass/app.scss */
 body.update .recommended {
   width: 33.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 129, ../sass/app.scss */
+  /* line 134, ../sass/app.scss */
   body.update .recommended {
     float: left;
     width: 100%;
@@ -4558,16 +4558,16 @@ body.update .recommended {
 }
 
 /* !Explore Layout */
-/* line 135, ../sass/app.scss */
+/* line 140, ../sass/app.scss */
 body.explore .dashboard {
   width: 100%;
 }
-/* line 137, ../sass/app.scss */
+/* line 142, ../sass/app.scss */
 body.explore .explore-container {
   width: 66.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 137, ../sass/app.scss */
+  /* line 142, ../sass/app.scss */
   body.explore .explore-container {
     width: auto;
     min-width: 0;
@@ -4585,12 +4585,12 @@ body.explore .explore-container {
     clear: both;
   }
 }
-/* line 138, ../sass/app.scss */
+/* line 143, ../sass/app.scss */
 body.explore .recommended {
   width: 33.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 138, ../sass/app.scss */
+  /* line 143, ../sass/app.scss */
   body.explore .recommended {
     float: left;
     width: 100%;
@@ -4599,16 +4599,16 @@ body.explore .recommended {
 }
 
 /* !Learn Layout */
-/* line 144, ../sass/app.scss */
+/* line 149, ../sass/app.scss */
 body.learn .dashboard {
   width: 100%;
 }
-/* line 145, ../sass/app.scss */
+/* line 150, ../sass/app.scss */
 body.learn .cme-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 145, ../sass/app.scss */
+  /* line 150, ../sass/app.scss */
   body.learn .cme-container {
     width: auto;
     min-width: 0;
@@ -4627,12 +4627,12 @@ body.learn .cme-container {
   }
 }
 
-/* line 151, ../sass/app.scss */
+/* line 156, ../sass/app.scss */
 body.story-of-the-week .single-item-container {
   width: 66.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 151, ../sass/app.scss */
+  /* line 156, ../sass/app.scss */
   body.story-of-the-week .single-item-container {
     width: auto;
     min-width: 0;
@@ -4650,58 +4650,58 @@ body.story-of-the-week .single-item-container {
     clear: both;
   }
 }
-/* line 152, ../sass/app.scss */
+/* line 157, ../sass/app.scss */
 body.story-of-the-week .single-item-container article {
   margin: 0 -15px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 155, ../sass/app.scss */
+/* line 160, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-header {
   width: 100%;
 }
-/* line 158, ../sass/app.scss */
+/* line 163, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-content {
   width: 100%;
 }
-/* line 160, ../sass/app.scss */
+/* line 165, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-content .item-content-section {
   margin: 0 -15px;
 }
-/* line 163, ../sass/app.scss */
+/* line 168, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-content .take-home-message {
   width: 100%;
 }
-/* line 165, ../sass/app.scss */
+/* line 170, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-content .take-home-message h3 {
   font-size: 14px;
 }
-/* line 167, ../sass/app.scss */
+/* line 172, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-content .abstract {
   width: 100%;
 }
-/* line 171, ../sass/app.scss */
+/* line 176, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-footer {
   width: 100%;
 }
-/* line 176, ../sass/app.scss */
+/* line 181, ../sass/app.scss */
 body.story-of-the-week .single-item-container .taxonomy-meta ul {
   width: 25%;
   list-style: none;
 }
-/* line 180, ../sass/app.scss */
+/* line 185, ../sass/app.scss */
 body.story-of-the-week .single-item-container .taxonomy-meta .author-meta {
   margin: 0 -15px;
 }
-/* line 182, ../sass/app.scss */
+/* line 187, ../sass/app.scss */
 body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author {
   width: 50%;
 }
-/* line 188, ../sass/app.scss */
+/* line 193, ../sass/app.scss */
 body.story-of-the-week .recommended {
   width: 33.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 188, ../sass/app.scss */
+  /* line 193, ../sass/app.scss */
   body.story-of-the-week .recommended {
     float: left;
     width: 100%;
@@ -4710,143 +4710,229 @@ body.story-of-the-week .recommended {
 }
 
 /* !stream */
-/* line 192, ../sass/app.scss */
+/* line 197, ../sass/app.scss */
 .stream-item-container {
   margin: 0 -15px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
   border: 1px solid;
   border-color: #ededed;
   margin-bottom: 10px;
 }
-/* line 199, ../sass/app.scss */
+/* line 204, ../sass/app.scss */
 .stream-item-container .stream-item {
   width: 100%;
 }
-/* line 201, ../sass/app.scss */
+/* line 206, ../sass/app.scss */
+.stream-item-container .stream-item:not([class*="featured"]) {
+  padding-top: 1em;
+}
+/* line 209, ../sass/app.scss */
+.stream-item-container .stream-item.featured {
+  border-top: 3px solid #dae348;
+}
+/* line 211, ../sass/app.scss */
+.stream-item-container .stream-item.featured .source-container {
+  padding-top: .25em;
+}
+/* line 215, ../sass/app.scss */
+.stream-item-container .stream-item .flag {
+  margin: 0 -15px;
+  font-family: "Skolar Bold", Georgia, serif;
+  line-height: 1.5;
+}
+/* line 220, ../sass/app.scss */
+.stream-item-container .stream-item .flag .featured {
+  width: 25%;
+  left: 75%;
+  color: #787f13;
+  background: #dae348;
+  text-align: right;
+}
+@media only screen and (max-width: 767px) {
+  /* line 220, ../sass/app.scss */
+  .stream-item-container .stream-item .flag .featured {
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 220, ../sass/app.scss */
+  .stream-item-container .stream-item .flag .featured {
+    left: 50%;
+  }
+}
+/* line 233, ../sass/app.scss */
 .stream-item-container .stream-item .source-container {
   margin: 0 -15px;
   display: none;
 }
-/* line 205, ../sass/app.scss */
+/* line 237, ../sass/app.scss */
 .stream-item-container .stream-item .item-container {
   margin: 0 -15px;
 }
-/* line 206, ../sass/app.scss */
+/* line 238, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-header {
   width: 100%;
 }
-/* line 207, ../sass/app.scss */
+/* line 239, ../sass/app.scss */
+.stream-item-container .stream-item .item-container .item-header .item-type {
+  text-transform: capitalize;
+}
+/* line 242, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-content {
   width: 100%;
 }
-/* line 208, ../sass/app.scss */
+/* line 243, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-title {
   font-size: 17px;
 }
-/* line 209, ../sass/app.scss */
+/* line 244, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .source-title {
   font-size: 14px;
 }
-/* line 211, ../sass/app.scss */
+/* line 246, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer {
   margin: 0 -15px;
+  margin-bottom: 2em;
 }
-/* line 213, ../sass/app.scss */
+/* line 249, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .portal-meta {
-  width: 50%;
+  width: 33.33333%;
 }
-/* line 216, ../sass/app.scss */
+@media only screen and (max-width: 767px) {
+  /* line 249, ../sass/app.scss */
+  .stream-item-container .stream-item .item-footer .portal-meta {
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+  }
+}
+/* line 252, ../sass/app.scss */
+.stream-item-container .stream-item .item-footer .portal-meta .rating {
+  background: #e6e3de;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px white;
+  text-align: center;
+}
+/* line 257, ../sass/app.scss */
+.stream-item-container .stream-item .item-footer .portal-meta .rating dt, .stream-item-container .stream-item .item-footer .portal-meta .rating dd {
+  display: inline-block;
+  line-height: 1.5;
+}
+/* line 261, ../sass/app.scss */
+.stream-item-container .stream-item .item-footer .portal-meta .rating .value {
+  font-weight: bold;
+}
+/* line 264, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .item-actions {
-  width: 16.66667%;
+  width: 33.33333%;
   left: 33.33333%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 264, ../sass/app.scss */
+  .stream-item-container .stream-item .item-footer .item-actions {
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 264, ../sass/app.scss */
+  .stream-item-container .stream-item .item-footer .item-actions {
+    left: 0%;
+  }
+}
+/* line 269, ../sass/app.scss */
+.stream-item-container .stream-item .item-footer .item-actions .link-list {
+  margin-bottom: 0;
 }
 
 /* !Explore */
-/* line 226, ../sass/app.scss */
+/* line 279, ../sass/app.scss */
 body.explore .explore-feature .feature-item {
   background: #f0efec;
 }
-/* line 227, ../sass/app.scss */
+/* line 280, ../sass/app.scss */
 body.explore .explore-feature {
   background: url(spinner.gif) center center #f4f4f4;
   height: 300px;
 }
-/* line 228, ../sass/app.scss */
+/* line 281, ../sass/app.scss */
 body.explore .explore-feature img {
   display: none;
 }
-/* line 230, ../sass/app.scss */
+/* line 283, ../sass/app.scss */
 body.explore .explore-feature.orbit {
   background: none;
 }
-/* line 231, ../sass/app.scss */
+/* line 284, ../sass/app.scss */
 body.explore .explore-feature.orbit img {
   display: block;
 }
-/* line 233, ../sass/app.scss */
+/* line 286, ../sass/app.scss */
 body.explore .explore-feature.orbit section {
   padding: 10px;
 }
-/* line 234, ../sass/app.scss */
+/* line 287, ../sass/app.scss */
 body.explore .explore-feature.orbit article {
   padding: 10px;
 }
-/* line 237, ../sass/app.scss */
+/* line 290, ../sass/app.scss */
 body.explore .explore-sections {
   width: 100%;
 }
-/* line 239, ../sass/app.scss */
+/* line 292, ../sass/app.scss */
 body.explore .explore-sections section {
   margin: 0 -15px;
   margin-bottom: 10px;
   background: #fcfcfa;
 }
-/* line 245, ../sass/app.scss */
+/* line 298, ../sass/app.scss */
 body.explore .section-widget {
   width: 100%;
 }
-/* line 247, ../sass/app.scss */
+/* line 300, ../sass/app.scss */
 body.explore .section-widget li {
   list-style: none;
 }
-/* line 248, ../sass/app.scss */
+/* line 301, ../sass/app.scss */
 body.explore .section-widget .meta.title {
   font-weight: bold;
 }
-/* line 251, ../sass/app.scss */
+/* line 304, ../sass/app.scss */
 body.explore .section-widget .section-header {
   width: 33.33333%;
 }
-/* line 254, ../sass/app.scss */
+/* line 307, ../sass/app.scss */
 body.explore .section-widget .section-content {
   width: 66.66667%;
 }
 
 /* !COMPONENTS */
-/* line 261, ../sass/app.scss */
+/* line 314, ../sass/app.scss */
 .component {
   margin: 0 -15px;
 }
 
-/* line 264, ../sass/app.scss */
+/* line 321, ../sass/app.scss */
 .side-nav li.active {
   pointer-events: none;
   cursor: default;
 }
-/* line 269, ../sass/app.scss */
+/* line 326, ../sass/app.scss */
 .side-nav li a:hover {
   background: #ededed;
 }
 
-/* line 276, ../sass/app.scss */
+/* line 333, ../sass/app.scss */
 .recommended ul {
   list-style: none;
   border-top: 1px solid #ededed;
 }
 
 /* !AD Slots */
-/* line 287, ../sass/app.scss */
+/* line 344, ../sass/app.scss */
 .footnotes a {
   word-break: break-all;
   word-break: break-word;

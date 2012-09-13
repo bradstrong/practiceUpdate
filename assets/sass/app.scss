@@ -1,3 +1,13 @@
+/* !variables */
+
+// Colors
+$grey: #ededed;
+$blue:#00aeff;
+$green:#dae348;
+$bodyBackground: #e6e3de;
+$itemBackground: #fcfcfa;
+
+
 // You custom settings file to override Foundation defaults
 @import "settings";
 
@@ -46,18 +56,13 @@
 
 /* Brad's Styles */
 
-/* !variables */
-$grey: #ededed;
-$bodyBackground: #e6e3de;
-$itemBackground: #fcfcfa;
-
 //html {font-family:"Skolar Bold", Georgia, serif; font-size-adjust:0.49; font-weight:bold; font-style:normal;}
 
 /* structure */
 
 body{
 	//background: url("../img/body.jpg");
-	background: $bodyBackground;
+	background: lighten($bodyBackground, 5);
 }
 
 .container{
@@ -191,31 +196,79 @@ body.story-of-the-week{
 /* !stream */
 .stream-item-container{
 	@include innerRow();
-	box-shadow: 0px 2px 2px rgba(0,0,0,.2);
-	border-radius: 5px;
+	box-shadow: 0px 2px 5px rgba(0,0,0,.15);
+	//border-radius: 5px;
 	border:1px solid;
 	border-color:$grey;
 	margin-bottom: $columnGutter/3;
 	.stream-item{
 		@include column(12);
+		&:not([class*="featured"]){
+			padding-top:1em;
+		}
+		&.featured{
+			border-top:3px solid $green;
+			.source-container{
+				padding-top:.25em;
+			}
+		}
+		.flag{
+			@include innerRow();
+			font-family: $headerFontFamily;
+			line-height:1.5;
+			//text-transform: uppercase;
+			.featured{
+				@include column(3);
+				@include push(9);
+				@include mobileColumn(2);
+				@include mobilePush(2);
+				color: darken($green, 30);
+				background:$green;
+				text-align: right;
+				span{
+					
+				}
+			}
+		}
 		.source-container{
 			@include innerRow();
 			display: none;
 		}
 		.item-container{@include innerRow();
-			.item-header{@include column(12);}//@include mobileColumn(#);
+			.item-header{@include column(12);
+				.item-type{ text-transform:capitalize;
+				}//@include mobileColumn(#);
+			}
 			.item-content{@include column(12);}
 			.item-title{font-size:ms(1);}
 			.source-title{font-size:ms(0);}
 		}
 		.item-footer{
 			@include innerRow();
+			margin-bottom:2em;
 			.portal-meta{
-				@include column(6);
+				@include column(4);
+				@include mobileColumn(2);
+				.rating{
+					background:$bodyBackground;
+					border-radius:10px;
+					box-shadow: 0 1px 1px lighten($itemBackground, 10);
+					text-align: center;
+					dt, dd{
+						display: inline-block;
+						line-height:1.5;
+					}
+					.value{font-weight: bold;}
+				}
 			}
 			.item-actions{
-				@include column(2);
+				@include column(4);
 				@include push(4);
+				@include mobileColumn(2);
+				@include mobilePush(0);
+				.link-list{
+					margin-bottom:0;
+				}
 			}
 		}
 	}
@@ -259,6 +312,10 @@ body.explore{
 
 /* !COMPONENTS */
 .component{@include innerRow();}
+.component.user-console{
+
+}
+
 .side-nav{
 	li{
 		&.active{
