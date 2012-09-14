@@ -12,8 +12,8 @@
 					{{/source}}
 					<div class="item-container">
 						<header class="item-header">
-							<hgroup class="pub-meta">
-								<p><span class="item-type"><a href="#">{{type}}</a></span> <span class="item-pub-date">{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</span></p>
+							<hgroup class="pub-meta meta">
+								<p><span class="item-pub-date">{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</span> <span class="item-type"><a href="#">{{type}}</a></span></p>
 								<h3 class="item-title"><a href="{{url}}">{{title}}</a></h3>
 							</hgroup><!--/.pub-meta-->
 						</header>
@@ -30,7 +30,7 @@
 
 					</div><!--/.item-container-->
 						<footer class="item-footer">
-						<div class="portal-meta">
+						<div class="portal-meta meta">
 							<dl class="rating"><dt class="practice-relevance">Practice Relevance:</dt> <dd class="value">{{practice-relevance}}</dd></dl>
 						</div>
 							<div class="item-actions">
