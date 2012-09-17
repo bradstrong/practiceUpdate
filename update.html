@@ -32,7 +32,7 @@
 	<![endif]-->   
 
 </head>
-	<body id="update" class="update off-canvas slide-nav">
+	<body id="update" class="update off-canvas slide-nav logged-out">
 		<div id="page-leaderboard">
 			<div class="row">
 			<div class="ad centered eight columns hide-for-small">
@@ -69,16 +69,25 @@
 	</section><!--/[role="main"]-->
 	<section id="sidebar" role="complementary">
 		<div class="dashboard">
+			<div class="panel cta register">
+				<p><!-- Meet Our Experts --> Become a member to customize this page.<p>
+				<a class="button" href="#action-register">Register for free</a>
+			</div><!--/.panel.cta.register-->
 			<div class="component user-console">
-
-						<div class="six columns">
-							<img src="http://placehold.it/100x100" />
-						</div><!--/.two.columns-->
-						<div class="six columns">
-						<a href="#" ><i class="icon-cog has-tip" data-width="210" title="Change the specialties shown here."></i></a>
-					</div><!--/.two.columns-->
+						<div class="twelve columns">
+							<div href="#" class="button split dropdown">
+							  <a>Current User</a>
+							  <span></span>
+							  <ul>
+							    <li><a href="#">Dropdown Item</a></li>
+							    <li><a href="#">Another Dropdown Item</a></li>
+							    <li class="divider"></li>
+							    <li><a href="#action-sign-out">Sign Out</a></li>
+							  </ul>
+							</div>
+					</div><!--/.twelve.columns-->
 			</div><!--/.component.user-console-->
-
+								<hr />
 			<div class="component user-specialties">
 				<nav role="navigation">
 					<ul class="side-nav">
@@ -120,7 +129,7 @@
 					</ul>
 				</nav>
 			</div><!--/.component.user-specialties-->
-			<div class="panel">
+			<div class="panel cta meet-experts">
 				<img src="http://placehold.it/200x200" /><p><!-- Meet Our Experts --> Meet our Advisory and Editorial Boards comprised of physician editors and world-renowned experts.<p>
 			</div>
 		</div><!--/.sidebar-->
@@ -133,9 +142,9 @@
 	<!-- Mustache - homepage feed template -->
 
 	<!-- Included JS Files -->
-	<script src="assets/js/libs/jquery.min.js"></script>
+	<script src="assets/js/foundation/jquery.js"></script>
 				<!-- Included JS Files (Uncompressed) -->
-<!-- 
+ 
 	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>	
 	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
@@ -147,7 +156,7 @@
 	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.tooltips.js"></script>
 	<script src="assets/js/foundation/jquery.placeholder.js"></script>
--->
+
 
 	<script src="assets/js/foundation/app.js"></script>
 
@@ -186,25 +195,25 @@
 		});
 
 	});
-function activePage(){
-  var curPage = $('body').attr('id');
-  console.log(curPage);
-  	//$('.top-bar .nav-bar li[class*="' + curPage + '"]');
+// function activePage(){
+//   var curPage = $('body').attr('id');
+//   console.log(curPage);
+//   	//$('.top-bar .nav-bar li[class*="' + curPage + '"]');
   	
-	switch (day)
-	{
-	case 'update':
-	  $.addClass('update');
-	  break;
-	case 'explore':
-	  x="Today it's Monday";
-	  break;
-	case 'learn':
-	  x="Today it's Tuesday";
-	  break;
-	}
-};
-activePage();
+// 	switch (day)
+// 	{
+// 	case 'update':
+// 	  $.addClass('update');
+// 	  break;
+// 	case 'explore':
+// 	  x="Today it's Monday";
+// 	  break;
+// 	case 'learn':
+// 	  x="Today it's Tuesday";
+// 	  break;
+// 	}
+// };
+// activePage();
 
 // $.getJSON('content/json/feed.json', function(data) {
 // 	$.get('assets/mustache/feed-item.mustache', function(template) {
@@ -215,6 +224,14 @@ activePage();
 // });
 
 	</script>
-
+<script>
+//User-status
+$('a[href="#action-register"]').click(function(){
+	$('body').removeClass('logged-out').addClass('logged-in');
+});
+$('a[href="#action-sign-out"]').click(function(){
+	$('body').removeClass('logged-in').addClass('logged-out');
+});
+</script>
 </body>
 </html>

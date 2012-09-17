@@ -2,43 +2,89 @@
 {{>articles}}
 <div class="stream-item-container">
 <article class="stream-item {{type}} {{section}} {{#featured}}featured{{/featured}} row-fluid">
-					{{#source}}
-					{{#featured}}<div class="flag"><span class="featured"><i class="icon-bolt"></i> featured</span></div>{{/featured}}
-					<div class="source-container">
-						<div class="{{source.type}}-photo">
-							<img class="photo" src="{{{photo.url}}}"/>
-						</div>
-					</div><!--/.source-container-->
-					{{/source}}
+	{{#featured}}<div class="flag"><span class="featured"><i class="icon-bolt"></i> featured</span></div>{{/featured}}
 					<div class="item-container">
-						<header class="item-header">
-							<hgroup class="pub-meta meta">
-								<p><span class="item-pub-date">{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</span> <span class="item-type"><a href="#">{{type}}</a></span></p>
-								<h3 class="item-title"><a href="{{url}}">{{title}}</a></h3>
-							</hgroup><!--/.pub-meta-->
-						</header>
+						<div class="item-header-container">
+							<header class="item-header">
+								<div>
+									<span class="item-type">{{type}}</span>
+									<span class="item-pub-date">{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</span>
+								</div>
+								<hgroup class="pub-meta meta">
+									<h3 class="item-title"><a href="{{url}}">{{title}}</a></h3>
+									<cite class="subheader">{{source.citation}}</cite>
+								</hgroup><!--/.pub-meta-->
+							</header>
+						</div><!--/.item-header-container-->
 						{{#item-content}}
 						<div class="item-content-container">
 							<div class="item-content">
-							<div class="take-home-message"><p>{{{take-home-message}}}</p></div><!--/.take-home-message-->
-							<div class="item-teaser"><p>{{{item-teaser}}}</p></div><!--/.item-teaser-->
+							<!-- <div class="take-home-message"><p>{{{take-home-message}}}</p></div> --><!--/.take-home-message-->
+							<!-- <div class="item-teaser"><p>{{{item-teaser}}}</p></div> --><!--/.item-teaser-->
 
 							</div><!--/.item-content-->
 						</div><!--/.item-content-container-->
 						{{/item-content}}
-
-
 					</div><!--/.item-container-->
+					{{#source}}
+					<div class="source-container">
+						<div class="vcard">
+						{{#expert}}
+						<div class="{{source.type}}-photo">
+							<img class="photo" src="{{{img.url}}}"/>
+						</div>
+
+						{{#name}}
+						<div class="{{source.type}}-name">
+							<h6 class="subheader">Expert</h6>
+							<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
+							<a class="fn" href="#">
+								<span class="n">
+									<!-- <span class="honorific-prefix">Dr.</span> -->
+									<span class="given-name">{{firstName}}</span>
+									<abbr class="additional-name">{{middleName}}</abbr>
+									<span class="family-name">{{lastName}}</span>
+									<span class="honorific-suffix">{{honorific}}</span>
+								</span>
+							</a><!--/.fn-->
+
+						</div>
+						{{/name}}<!--/.{{source.type}}-name-->
+						{{/expert}}
+						{{#journal}}
+						<div class="{{source.type}}-photo">
+							<img class="photo" src="{{{journal.img.url}}}"/>
+						</div>
+						<div class="journal">
+
+							<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
+							<a class="fn" href="#">
+								<span class="n">
+									<!-- <span class="honorific-prefix">Dr.</span> -->
+									<span class="given-name">{{title}}</span>
+									<abbr class="additional-name">{{middleName}}</abbr>
+									<span class="family-name">{{lastName}}</span>
+									<span class="honorific-suffix">{{honorific}}</span>
+								</span>
+							</a><!--/.fn-->
+
+						</div>
+						{{/journal}}<!--/.journal-->
+						</div><!--/.vcard-->
+					</div><!--/.source-container-->
+					{{/source}}
+
 						<footer class="item-footer">
 						<div class="portal-meta meta">
 							<dl class="rating"><dt class="practice-relevance">Practice Relevance:</dt> <dd class="value">{{practice-relevance}}</dd></dl>
 						</div>
+							<!--
 							<div class="item-actions">
 								<ul class="link-list">
 									<li><a href="#" ><i class="icon-star-empty"></i></a></li>
 									<li><a href="#" ><i class="icon-share-alt"></i></a></li>
-								</ul><!--/.link-list-->
-			        </div><!--/.item-actions-->
+								</ul>--><!--/.link-list-->
+			        <!-- </div> --><!--/.item-actions-->
 						</footer>
 				</article></div><!--/.stream-item-->
 			</div><!--/.stream-item-container-->

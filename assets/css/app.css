@@ -1,33 +1,33 @@
 /* !variables */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_semantic-grid.scss */
-.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .dashboard, body.explore .explore-container, body.explore .recommended, body.learn .dashboard, body.learn .cme-container, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .flag .featured, .stream-item-container .stream-item .item-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .explore-sections, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
+.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .dashboard, body.explore .explore-container, body.explore .recommended, body.learn .dashboard, body.learn .cme-container, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .flag .featured, .stream-item-container .stream-item .source-container div[class$="-photo"], .stream-item-container .stream-item .source-container div[class$="-name"], .stream-item-container .stream-item .item-container .item-header-container, .stream-item-container .stream-item .item-container .item-header-container .item-header .item-type, .stream-item-container .stream-item .item-container .item-header-container .item-header .item-pub-date, .stream-item-container .stream-item .item-container .item-header-container .item-header .pub-meta, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .explore-sections, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
   float: left;
 }
 
 /* line 55, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_semantic-grid.scss */
-.dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .flag, .stream-item-container .stream-item .source-container, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-footer, body.explore .explore-sections section, .component {
+.dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .flag, .stream-item-container .stream-item .source-container, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-container .item-header-container .item-header, .stream-item-container .stream-item .item-footer, body.explore .explore-sections section, .component {
   *zoom: 1;
 }
 /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_clearfix.scss */
-.dashboard .component:before, body.story-of-the-week .single-item-container article:before, body.story-of-the-week .single-item-container article .item-content .item-content-section:before, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:before, .stream-item-container:before, .stream-item-container .stream-item .flag:before, .stream-item-container .stream-item .source-container:before, .stream-item-container .stream-item .item-container:before, .stream-item-container .stream-item .item-footer:before, body.explore .explore-sections section:before, .component:before, .dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .flag:after, .stream-item-container .stream-item .source-container:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections section:after, .component:after {
+.dashboard .component:before, body.story-of-the-week .single-item-container article:before, body.story-of-the-week .single-item-container article .item-content .item-content-section:before, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:before, .stream-item-container:before, .stream-item-container .stream-item .flag:before, .stream-item-container .stream-item .source-container:before, .stream-item-container .stream-item .item-container:before, .stream-item-container .stream-item .item-container .item-header-container .item-header:before, .stream-item-container .stream-item .item-footer:before, body.explore .explore-sections section:before, .component:before, .dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .flag:after, .stream-item-container .stream-item .source-container:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-container .item-header-container .item-header:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections section:after, .component:after {
   content: "";
   display: table;
 }
 /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_clearfix.scss */
-.dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .flag:after, .stream-item-container .stream-item .source-container:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections section:after, .component:after {
+.dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .flag:after, .stream-item-container .stream-item .source-container:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-container .item-header-container .item-header:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections section:after, .component:after {
   clear: both;
 }
 
 /* line 59, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_semantic-grid.scss */
-.dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .flag, .stream-item-container .stream-item .source-container, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-footer, body.explore .explore-sections section, .component {
+.dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .flag, .stream-item-container .stream-item .source-container, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-container .item-header-container .item-header, .stream-item-container .stream-item .item-footer, body.explore .explore-sections section, .component {
   width: auto;
   max-width: none;
   min-width: 0;
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.0.9/scss/foundation/mixins/_semantic-grid.scss */
-.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .dashboard, body.explore .explore-container, body.explore .recommended, body.learn .dashboard, body.learn .cme-container, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .flag .featured, .stream-item-container .stream-item .item-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .explore-sections, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
+.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .dashboard, body.explore .explore-container, body.explore .recommended, body.learn .dashboard, body.learn .cme-container, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .flag .featured, .stream-item-container .stream-item .source-container div[class$="-photo"], .stream-item-container .stream-item .source-container div[class$="-name"], .stream-item-container .stream-item .item-container .item-header-container, .stream-item-container .stream-item .item-container .item-header-container .item-header .item-type, .stream-item-container .stream-item .item-container .item-header-container .item-header .item-pub-date, .stream-item-container .stream-item .item-container .item-header-container .item-header .pub-meta, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .explore-sections, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -4748,8 +4748,8 @@ body.story-of-the-week .recommended {
   border-top: 3px solid #dae348;
 }
 /* line 228, ../sass/app.scss */
-.stream-item-container .stream-item.featured .source-container {
-  padding-top: .25em;
+.stream-item-container .stream-item.featured .item-header-container {
+  padding-top: .75em;
 }
 /* line 232, ../sass/app.scss */
 .stream-item-container .stream-item .flag {
@@ -4782,72 +4782,98 @@ body.story-of-the-week .recommended {
 /* line 250, ../sass/app.scss */
 .stream-item-container .stream-item .source-container {
   margin: 0 -15px;
-  display: none;
 }
-/* line 254, ../sass/app.scss */
+/* line 252, ../sass/app.scss */
+.stream-item-container .stream-item .source-container div[class$="-photo"] {
+  width: 16.66667%;
+}
+/* line 255, ../sass/app.scss */
+.stream-item-container .stream-item .source-container div[class$="-name"] {
+  width: 50%;
+}
+/* line 259, ../sass/app.scss */
 .stream-item-container .stream-item .item-container {
   margin: 0 -15px;
 }
-/* line 255, ../sass/app.scss */
-.stream-item-container .stream-item .item-container .item-header {
+/* line 260, ../sass/app.scss */
+.stream-item-container .stream-item .item-container .item-header-container {
   width: 100%;
 }
-/* line 256, ../sass/app.scss */
-.stream-item-container .stream-item .item-container .item-header .item-type {
+/* line 261, ../sass/app.scss */
+.stream-item-container .stream-item .item-container .item-header-container .item-header {
+  margin: 0 -15px;
+}
+/* line 262, ../sass/app.scss */
+.stream-item-container .stream-item .item-container .item-header-container .item-header .item-type {
+  width: 50%;
+}
+/* line 263, ../sass/app.scss */
+.stream-item-container .stream-item .item-container .item-header-container .item-header .item-pub-date {
+  width: 33.33333%;
+  left: 16.66667%;
+  text-align: right;
+}
+/* line 264, ../sass/app.scss */
+.stream-item-container .stream-item .item-container .item-header-container .item-header .pub-meta {
+  width: 100%;
+}
+/* line 267, ../sass/app.scss */
+.stream-item-container .stream-item .item-container .item-header-container .item-type {
   text-transform: capitalize;
 }
-/* line 259, ../sass/app.scss */
+/* line 270, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-content {
   width: 100%;
 }
-/* line 260, ../sass/app.scss */
+/* line 271, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-title {
   font-size: 17px;
 }
-/* line 261, ../sass/app.scss */
+/* line 272, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .source-title {
   font-size: 14px;
 }
-/* line 263, ../sass/app.scss */
+/* line 274, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer {
   margin: 0 -15px;
+  margin-top: 2em;
   margin-bottom: 2em;
 }
-/* line 266, ../sass/app.scss */
+/* line 278, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .portal-meta {
   width: 33.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 266, ../sass/app.scss */
+  /* line 278, ../sass/app.scss */
   .stream-item-container .stream-item .item-footer .portal-meta {
     float: left;
     width: 50%;
     padding: 0 15px;
   }
 }
-/* line 269, ../sass/app.scss */
+/* line 281, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .portal-meta .rating {
   background: #e6e3de;
   border-radius: 10px;
   box-shadow: 0 1px 1px white;
   text-align: center;
 }
-/* line 274, ../sass/app.scss */
+/* line 286, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .portal-meta .rating dt, .stream-item-container .stream-item .item-footer .portal-meta .rating dd {
   display: inline-block;
   line-height: 1.5;
 }
-/* line 278, ../sass/app.scss */
+/* line 290, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .portal-meta .rating .value {
   font-weight: bold;
 }
-/* line 281, ../sass/app.scss */
+/* line 293, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .item-actions {
   width: 33.33333%;
   left: 33.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 281, ../sass/app.scss */
+  /* line 293, ../sass/app.scss */
   .stream-item-container .stream-item .item-footer .item-actions {
     float: left;
     width: 50%;
@@ -4855,124 +4881,135 @@ body.story-of-the-week .recommended {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 281, ../sass/app.scss */
+  /* line 293, ../sass/app.scss */
   .stream-item-container .stream-item .item-footer .item-actions {
     left: 0%;
   }
 }
-/* line 286, ../sass/app.scss */
+/* line 298, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .item-actions .link-list {
   margin-bottom: 0;
 }
 
 /* !Explore */
-/* line 296, ../sass/app.scss */
+/* line 308, ../sass/app.scss */
 body.explore .explore-feature .feature-item {
   background: #f0efec;
 }
-/* line 297, ../sass/app.scss */
+/* line 309, ../sass/app.scss */
 body.explore .explore-feature {
   background: url(spinner.gif) center center #f4f4f4;
   height: 300px;
 }
-/* line 298, ../sass/app.scss */
+/* line 310, ../sass/app.scss */
 body.explore .explore-feature img {
   display: none;
 }
-/* line 300, ../sass/app.scss */
+/* line 312, ../sass/app.scss */
 body.explore .explore-feature.orbit {
   background: none;
 }
-/* line 301, ../sass/app.scss */
+/* line 313, ../sass/app.scss */
 body.explore .explore-feature.orbit img {
   display: block;
 }
-/* line 303, ../sass/app.scss */
+/* line 315, ../sass/app.scss */
 body.explore .explore-feature.orbit section {
   padding: 10px;
 }
-/* line 304, ../sass/app.scss */
+/* line 316, ../sass/app.scss */
 body.explore .explore-feature.orbit article {
   padding: 10px;
 }
-/* line 307, ../sass/app.scss */
+/* line 319, ../sass/app.scss */
 body.explore .explore-sections {
   width: 100%;
 }
-/* line 309, ../sass/app.scss */
+/* line 321, ../sass/app.scss */
 body.explore .explore-sections section {
   margin: 0 -15px;
   background: #fcfcfa;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
 }
-/* line 316, ../sass/app.scss */
+/* line 328, ../sass/app.scss */
 body.explore .section-widget {
   width: 100%;
 }
-/* line 318, ../sass/app.scss */
+/* line 330, ../sass/app.scss */
 body.explore .section-widget li {
   list-style: none;
 }
-/* line 319, ../sass/app.scss */
+/* line 331, ../sass/app.scss */
 body.explore .section-widget .meta.title {
   font-weight: bold;
 }
-/* line 322, ../sass/app.scss */
+/* line 334, ../sass/app.scss */
 body.explore .section-widget .section-header {
   width: 33.33333%;
 }
-/* line 325, ../sass/app.scss */
+/* line 337, ../sass/app.scss */
 body.explore .section-widget .section-content {
   width: 66.66667%;
 }
-/* line 327, ../sass/app.scss */
+/* line 339, ../sass/app.scss */
 body.explore .section-widget .section-content ul {
   margin-top: 2em;
 }
-/* line 328, ../sass/app.scss */
+/* line 340, ../sass/app.scss */
 body.explore .section-widget .section-content .entry {
   border-bottom: 1px solid #d0d0d0;
 }
-/* line 330, ../sass/app.scss */
+/* line 342, ../sass/app.scss */
 body.explore .section-widget .section-content .entry p {
   margin-bottom: .5em;
 }
-/* line 331, ../sass/app.scss */
+/* line 343, ../sass/app.scss */
 body.explore .section-widget .section-content .entry .meta.title {
   margin-bottom: .25em;
 }
 
 /* !COMPONENTS */
-/* line 338, ../sass/app.scss */
+/* line 350, ../sass/app.scss */
 .component {
   margin: 0 -15px;
 }
 
-/* line 345, ../sass/app.scss */
+/* line 357, ../sass/app.scss */
 .side-nav li.active {
   pointer-events: none;
   cursor: default;
 }
-/* line 350, ../sass/app.scss */
+/* line 362, ../sass/app.scss */
 .side-nav li a:hover {
   background: #ededed;
 }
 
-/* line 357, ../sass/app.scss */
+/* line 369, ../sass/app.scss */
 .recommended ul {
   list-style: none;
 }
-/* line 360, ../sass/app.scss */
+/* line 372, ../sass/app.scss */
 .recommended p {
   border-top: 1px solid #d0d0d0;
   font-size: 14px -1;
 }
 
 /* !AD Slots */
-/* line 371, ../sass/app.scss */
+/* line 383, ../sass/app.scss */
 .footnotes a {
   word-break: break-all;
   word-break: break-word;
   hyphens: auto;
+}
+
+/* !Utilities */
+/* line 390, ../sass/app.scss */
+body.logged-out .user-console {
+  display: none;
+}
+
+/* line 394, ../sass/app.scss */
+body.logged-in .cta.register {
+  display: none;
 }

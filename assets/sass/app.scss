@@ -225,8 +225,8 @@ body.story-of-the-week{
 		}
 		&.featured{
 			border-top:3px solid $green;
-			.source-container{
-				padding-top:.25em;
+			.item-header-container{
+				padding-top:.75em;
 			}
 		}
 		.flag{
@@ -249,10 +249,21 @@ body.story-of-the-week{
 		}
 		.source-container{
 			@include innerRow();
-			display: none;
+			div[class$="-photo"]{
+				@include column(2);
+			}
+			div[class$="-name"]{
+				@include column(6);
+			}
 		}
 		.item-container{@include innerRow();
-			.item-header{@include column(12);
+			.item-header-container{@include column(12);
+				.item-header{@include innerRow();
+					.item-type{@include column(6);}
+					.item-pub-date{@include column(4); @include push(2); text-align: right;}
+					.pub-meta{@include column(12);
+					}
+				}
 				.item-type{ text-transform:capitalize;
 				}//@include mobileColumn(#);
 			}
@@ -262,6 +273,7 @@ body.story-of-the-week{
 		}
 		.item-footer{
 			@include innerRow();
+			margin-top:2em;
 			margin-bottom:2em;
 			.portal-meta{
 				@include column(4);
@@ -372,4 +384,13 @@ body.explore{
 	word-break: break-all;
 	word-break: break-word;
 	hyphens: auto;
+}
+
+/* !Utilities */
+body.logged-out .user-console{
+	display: none;
+}
+
+body.logged-in .cta.register{
+	display: none;
 }
