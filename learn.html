@@ -32,7 +32,7 @@
 	<![endif]-->   
 
 </head>
-	<body id="learn" class="learn off-canvas slide-nav">
+	<body id="learn" class="learn off-canvas slide-nav logged-out">
 		<div id="page-leaderboard">
 			<div class="row">
 			<div class="ad centered eight columns hide-for-small">
@@ -136,15 +136,25 @@
 	</section><!--/[role="main"]-->
 	<section id="sidebar" role="complementary">
 		<div class="dashboard">
+			<div class="panel cta register">
+				<p><!-- Meet Our Experts --> Become a member to customize this page.<p>
+				<a class="button" href="#action-register">Register for free</a>
+			</div><!--/.panel.cta.register-->
 			<div class="component user-console">
-
-						<div class="six columns">
-							<img src="http://placehold.it/100x100" />
-						</div><!--/.two.columns-->
-						<div class="six columns">
-						<a href="#" ><i class="icon-cog has-tip" data-width="210" title="Change the specialties shown here."></i></a>
-					</div><!--/.two.columns-->
+						<div class="twelve columns">
+							<div href="#" class="button split dropdown">
+							  <a>Current User</a>
+							  <span></span>
+							  <ul>
+							    <li><a href="#">Dropdown Item</a></li>
+							    <li><a href="#">Another Dropdown Item</a></li>
+							    <li class="divider"></li>
+							    <li><a href="#action-sign-out">Sign Out</a></li>
+							  </ul>
+							</div>
+					</div><!--/.twelve.columns-->
 			</div><!--/.component.user-console-->
+								<hr />
 
 			<div class="component user-specialties">
 				<nav role="navigation">
@@ -198,7 +208,7 @@
 	<!-- Included JS Files -->
 	<script src="assets/js/libs/jquery.min.js"></script>
 				<!-- Included JS Files (Uncompressed) -->
-<!-- 
+ 
 	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>	
 	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
@@ -210,7 +220,7 @@
 	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.tooltips.js"></script>
 	<script src="assets/js/foundation/jquery.placeholder.js"></script>
--->
+
 
 	<script src="assets/js/foundation/app.js"></script>
 

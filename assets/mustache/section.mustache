@@ -7,11 +7,9 @@
 				<ul>
 	{{#items}}
 					<li class="entry">
-						<a href="#">
-							<p class="meta title">{{title}}</p>
+							<p class="meta title"><a href="#">{{title}}</a></p>
 							<p class="meta author">{{#source}}{{source.name.firstName}} {{source.name.lastName}}{{/source}}</p>
 							{{> _articles}}
-						</a>
 					</li>
 	{{/items}}
 				</ul>

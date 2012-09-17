@@ -252,5 +252,11 @@ function buildFromTemplate(jsonContent, mustacheTpl, destination){
    $('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
 //   console.log("explore slider initialized");
 
-
+//User-status
+$('a[href="#action-register"]').click(function(){
+  $('body').removeClass('logged-out').addClass('logged-in');
+});
+$('a[href="#action-sign-out"]').click(function(){
+  $('body').removeClass('logged-in').addClass('logged-out');
+});
 });

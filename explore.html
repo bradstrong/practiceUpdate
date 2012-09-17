@@ -14,9 +14,9 @@
 	<title>Practice Network : Explore</title>
 
 	<!-- Included CSS Files -->
-<!-- FontDeck
+<!--  FontDeck -->
 <link rel="stylesheet" href="http://f.fontdeck.com/s/css/l4MsFun30OJhB9DTDGcb8JQSAOQ/practicenetwork-foundation/22889.css" type="text/css" /> 
--->
+<link rel="stylesheet" href="http://f.fontdeck.com/s/css/zH28mslJNSfrEtk/N8vkA5GMvEQ/practicenetwork-foundation/22889.css" type="text/css" />
 
 	<link rel="stylesheet" href="assets/css/app.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.css">
@@ -31,7 +31,7 @@
 	<![endif]--> 
 
 </head>
-	<body id="page" class="explore off-canvas slide-nav">
+	<body id="page" class="explore off-canvas slide-nav logged-out">
 		<div id="page-leaderboard">
 			<div class="row">
 			<div class="ad centered eight columns hide-for-small">
@@ -150,15 +150,25 @@
 	</section><!--/[role="main"]-->
 	<section id="sidebar" role="complementary">
 		<div class="dashboard">
+			<div class="panel cta register">
+				<p><!-- Meet Our Experts --> Become a member to customize this page.<p>
+				<a class="button" href="#action-register">Register for free</a>
+			</div><!--/.panel.cta.register-->
 			<div class="component user-console">
-
-						<div class="six columns">
-							<img src="http://placehold.it/100x100" />
-						</div><!--/.two.columns-->
-						<div class="six columns">
-						<a href="#" ><i class="icon-cog has-tip" data-width="210" title="Change the specialties shown here."></i></a>
-					</div><!--/.two.columns-->
+						<div class="twelve columns">
+							<div href="#" class="button split dropdown">
+							  <a>Current User</a>
+							  <span></span>
+							  <ul>
+							    <li><a href="#">Dropdown Item</a></li>
+							    <li><a href="#">Another Dropdown Item</a></li>
+							    <li class="divider"></li>
+							    <li><a href="#action-sign-out">Sign Out</a></li>
+							  </ul>
+							</div>
+					</div><!--/.twelve.columns-->
 			</div><!--/.component.user-console-->
+								<hr />
 
 			<div class="component user-specialties">
 				<nav role="navigation">
@@ -254,6 +264,16 @@
 
 	//<!-- Mustache - Explore Research template -->
 	$.getJSON('content/json/explore_review.json', function(data) {
+		$.get('assets/mustache/section.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.explore-sections').prepend(html);
+		});
+
+	});
+
+	//<!-- Mustache - Explore Expert Opinion template -->
+	$.getJSON('content/json/explore_expert-opinion.json', function(data) {
 		$.get('assets/mustache/section.mustache', function(template) {
 			//alert('Load was performed.');
 	    var html = Mustache.to_html(template, data);
