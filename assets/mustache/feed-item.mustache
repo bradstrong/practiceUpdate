@@ -19,61 +19,97 @@
 						{{#item-content}}
 						<div class="item-content-container">
 							<div class="item-content">
+							{{#commentary}}
+							<div class="commentary-container">
+							<h5 class="subheader">Commentary by</h5>
+							{{#source}}
+							<div class="source-container">
+								<div class="vcard">
+								{{#expert}}
+								<div class="{{source.type}}-photo">
+									<img class="photo" src="{{{img.url}}}"/>
+									<p class="label">Expert</p>
+								</div>
+
+								{{#name}}
+								<div class="{{source.type}}-name">
+									<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
+									<a class="fn" href="#">
+										<span class="n">
+											<!-- <span class="honorific-prefix">Dr.</span> -->
+											<span class="given-name">{{firstName}}</span>
+											<abbr class="additional-name">{{middleName}}</abbr>
+											<span class="family-name">{{lastName}}</span>
+											<span class="honorific-suffix">{{honorific}}</span>
+										</span>
+									</a><!--/.fn-->
+
+								</div><!--/.{{source.type}}-name-->
+								{{/name}}
+								</div><!--/.vcard-->
+								</div><!--/.source-container-->
+								
+								{{/expert}}
+							{{/source}}
+							</div><!--/.commentary-container-->
+							{{/commentary}}
 							<!-- <div class="take-home-message"><p>{{{take-home-message}}}</p></div> --><!--/.take-home-message-->
 							<!-- <div class="item-teaser"><p>{{{item-teaser}}}</p></div> --><!--/.item-teaser-->
 
 							</div><!--/.item-content-->
 						</div><!--/.item-content-container-->
 						{{/item-content}}
+							{{#source}}
+							<div class="item-source-container">
+								<div class="item-source">
+									<div class="vcard">
+									{{#expert}}
+									<div class="{{source.type}}-photo">
+										<img class="photo" src="{{{img.url}}}"/>
+									</div>
+
+									{{#name}}
+									<div class="{{source.type}}-name">
+										<h6 class="subheader">Expert</h6>
+										<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
+										<a class="fn" href="#">
+											<span class="n">
+												<!-- <span class="honorific-prefix">Dr.</span> -->
+												<span class="given-name">{{firstName}}</span>
+												<abbr class="additional-name">{{middleName}}</abbr>
+												<span class="family-name">{{lastName}}</span>
+												<span class="honorific-suffix">{{honorific}}</span>
+											</span>
+										</a><!--/.fn-->
+
+									</div>
+									{{/name}}<!--/.{{source.type}}-name-->
+									{{/expert}}
+									{{#journal}}
+									<div class="{{source.type}}-photo">
+										<img class="photo" src="{{{journal.img.url}}}"/>
+									</div>
+									<div class="journal">
+
+										<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
+										<a class="fn" href="#">
+											<span class="n">
+												<!-- <span class="honorific-prefix">Dr.</span> -->
+												<span class="given-name">{{title}}</span>
+												<abbr class="additional-name">{{middleName}}</abbr>
+												<span class="family-name">{{lastName}}</span>
+												<span class="honorific-suffix">{{honorific}}</span>
+											</span>
+										</a><!--/.fn-->
+
+									</div>
+									{{/journal}}<!--/.journal-->
+									</div><!--/.vcard-->
+								</div><!--/.item-source -->
+							</div><!--/.item-source-container-->
+							{{/source}}
+
 					</div><!--/.item-container-->
-					{{#source}}
-					<div class="source-container">
-						<div class="vcard">
-						{{#expert}}
-						<div class="{{source.type}}-photo">
-							<img class="photo" src="{{{img.url}}}"/>
-						</div>
-
-						{{#name}}
-						<div class="{{source.type}}-name">
-							<h6 class="subheader">Expert</h6>
-							<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
-							<a class="fn" href="#">
-								<span class="n">
-									<!-- <span class="honorific-prefix">Dr.</span> -->
-									<span class="given-name">{{firstName}}</span>
-									<abbr class="additional-name">{{middleName}}</abbr>
-									<span class="family-name">{{lastName}}</span>
-									<span class="honorific-suffix">{{honorific}}</span>
-								</span>
-							</a><!--/.fn-->
-
-						</div>
-						{{/name}}<!--/.{{source.type}}-name-->
-						{{/expert}}
-						{{#journal}}
-						<div class="{{source.type}}-photo">
-							<img class="photo" src="{{{journal.img.url}}}"/>
-						</div>
-						<div class="journal">
-
-							<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
-							<a class="fn" href="#">
-								<span class="n">
-									<!-- <span class="honorific-prefix">Dr.</span> -->
-									<span class="given-name">{{title}}</span>
-									<abbr class="additional-name">{{middleName}}</abbr>
-									<span class="family-name">{{lastName}}</span>
-									<span class="honorific-suffix">{{honorific}}</span>
-								</span>
-							</a><!--/.fn-->
-
-						</div>
-						{{/journal}}<!--/.journal-->
-						</div><!--/.vcard-->
-					</div><!--/.source-container-->
-					{{/source}}
-
 						<footer class="item-footer">
 						<div class="portal-meta meta">
 							<dl class="rating"><dt class="practice-relevance">Practice Relevance:</dt> <dd class="value">{{practice-relevance}}</dd></dl>
