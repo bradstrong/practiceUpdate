@@ -12,7 +12,7 @@
 					"hour": "2012", "minute": "March"}
 			},
 			"practice-relevance" : 3,
-			"title": "Addition of Aflibercept to Fluorouracil, Leucovorin, and Irinotecan Improves Survival in a Phase III Randomized Trial in Patients With Metastatic Colorectal Cancer",
+			"title": "Second-Line FOLFIRI/Aflibercept Ups Survival in Metastatic Colorectal Cancer",
 			"url": "story-of-the-week.html",
 			"source": {
 				"type": "journal",
@@ -26,6 +26,7 @@
 							"year": "2012", "month": "March", "day": "19"}
 						}
 					},
+				"title": "Addition of Aflibercept to Fluorouracil, Leucovorin, and Irinotecan Improves Survival in a Phase III Randomized Trial in Patients With Metastatic Colorectal Cancer",
 				"citation": "Clin Cancer Res. 2012 Mar 29;[Epub Ahead of Print], DN Finegold, CJ Baty, KZ Knickelbein, S Perschke, SE Noon, D Campbell, JM Karlsson, D Huang, MA Kimak, EC Lawrence, E Feingold, SD Meriney, AM Brufsky, RE Ferrell"
 			},
 			"item-content": {
@@ -62,218 +63,160 @@
 		{
 			"id": "0002",
 			"featured": false,
-			"type": "commentary",
+			"type": "News",
+			"section": "News",
 			"pub-date": {
 				"date": {
-					"year": "2012", "month": "March", "day": "19"},
+					"year": "2012", "month": "September", "day": "18"},
 				"time":{
 					"hour": "2012", "minute": "March"}
 			},
 			"practice-relevance" : 2,
-			"section": "commentary",
-			"title": "PCI-32765 Is One of the Most Exciting Drugs Around",
-			"url": "",
+			"title": "FDA Approves Ultrasound Screening of Dense Breasts",
+			"url": "#",
+			"source": {
+				"type": "feed",
+				"feed":{
+					"title": "IMNG",
+					"url": "",
+					"img": {
+						"url":"content/img/journal/jco.gif"},
+					"pub-date": {
+						"date": {
+							"year": "2012", "month": "September", "day": "18"}
+						}
+					},
+				"citation": "JS MacNeil"
+			},
+			"item-content": {
+			}
+		},
+		{
+			"id": "0003",
+			"featured": false,
+			"type": "Journal Scan: Research",
+			"section": "Journal Scan",
+			"pub-date": {
+				"date": {
+					"year": "2012", "month": "September", "day": "18"},
+				"time":{
+					"hour": "2012", "minute": "March"}
+			},
+			"practice-relevance" : 2,
+			"title": "Adjuvant Therapy in Stage I–II Uterine Carcinosarcoma",
+			"url": "story-of-the-week.html",
 			"source": {
 				"type": "journal",
 				"journal":{
 					"title": "Journal of Clinical Oncology",
 					"url": "",
 					"img": {
-						"url": "content/img/journal/jco.gif"},
+						"url":"content/img/journal/gynecologic_oncology_tcm8-3404.GIF"},
 					"pub-date": {
 						"date": {
 							"year": "2012", "month": "March", "day": "19"}
-					}
-				}
+						}
+					},
+				"title": "A Multi-Institutional Cohort Study of Adjuvant Therapy in Stage I–II Uterine Carcinosarcoma",
+				"citation": "Gynecol Oncol. 2012 Oct 1;127(1):22-26, LA Cantrell, L Havrilesky, DT Moore"
 			},
-			"item-content": {
-				"item-teaser": "In this interview, Dr. O&#8217;Brien discusses the highly successful results of studies evaluating PCI-32765, a novel Bruton&#8217;s tyrosine kinase (BTK) inhibitor, in chronic lymphocytic leukemia (CLL) and mantle cell lymphoma (MCL)."
-			}
+			"item-content": {}
 		},
 		{
+			"id": "0004",
 			"featured": false,
-			"type": "Ask the Expert",
-			"section": "Ask the Expert",
+			"type": "Journal Scan: Research",
+			"section": "Journal Scan",
 			"pub-date": {
 				"date": {
-					"year": "2012", "month": "January", "day": "30"},
-				"time":{
-					"hour": "2012", "minute": "March"}
-			},
-			"practice-relevance" : 1,
-			"title": "Ask the Expert: Should I Use Adjuvant Therapy in DCIS?",
-			"url": "",
-			"source": {
-				"type": "expert",
-				"name": {
-					"firstName": "Patrick", "middleName": "W.", "lastName": "Cobb", "honorific": "MD, FACP"},
-				"position": {
-				"title":"placeholder"},
-				"img": {
-					"url":"content/img/users/clifford_hudis_tcm8-5788.jpg"}
-			},
-			"item-content": {
-			}
-		},
-		{
-			"id": "0003",
-			"featured": false,
-			"type": "Cancer Policy Forum",
-			"section": "Cancer Policy Forum",
-			"pub-date": {
-				"date": {
-					"year": "2012", "month": "March", "day": "14"},
+					"year": "2012", "month": "September", "day": "18"},
 				"time":{
 					"hour": "2012", "minute": "March"}
 			},
 			"practice-relevance" : 3,
-			"title": "How to Fix Cancer Drug Shortages",
-			"url": "",
+			"title": "Risk of Ovarian Cancer Increased With Long-Term Hormone Therapy",
+			"url": "story-of-the-week.html",
+			"source": {
+				"type": "journal",
+				"journal":{
+					"title": "British Journal of Cancer",
+					"img": {
+						"url":"content/img/journal/bjc.jpg"},
+					"pub-date": {
+						"date": {
+							"year": "2012", "month": "september", "day": "18"}
+						}
+					},
+				"title": "Ovarian Cancer and Menopausal Hormone Therapy in the NIH-AARP Diet and Health Study",
+				"citation": "Br J Cancer. 2012 Aug 28;[Epub Ahead of Print], B Trabert, N Wentzensen, HP Yang"
+			},
+			"item-content": {}
+		},
+		{
+			"id": "0005",
+			"featured": false,
+			"type": "Journal Scan: Review",
+			"section": "Journal Scan",
+			"pub-date": {
+				"date": {
+					"year": "2012", "month": "September", "day": "18"},
+				"time":{
+					"hour": "2012", "minute": "March"}
+			},
+			"practice-relevance" : 1,
+			"title": "Intensity-Modulated Radiotherapy in the Treatment of Breast Cancer",
+			"url": "#",
+			"source": {
+				"type": "journal",
+				"journal":{
+					"title": "",
+					"url": "",
+					"img": {
+						"url":""},
+					"pub-date": {
+						"date": {
+							"year": "2012", "month": "March", "day": "19"}
+						}
+					},
+				"title": "",
+				"citation": "Clin Oncol. 2012 Sept 1;24(7):488-498, I Dayes, RB Rumble, J Bowen"
+			},
+			"item-content": {}
+		},
+		{
+			"id": "0006",
+			"featured": true,
+			"type": "Expert Opinion",
+			"section": "Expert Opinion",
+			"pub-date": {
+				"date": {
+					"year": "2012", "month": "March", "day": "19"},
+				"time":{
+					"hour": "2012", "minute": "March"}
+			},
+			"practice-relevance" : 3,
+			"title": "My Approach to Endocrine Therapy in Breast Cancer—Part I",
+			"url": "story-of-the-week.html",
 			"source": {
 				"type": "expert",
-				"expert":{
+				"expert": {
 					"name": {
-						"firstName": "Clifford", "middleName": "", "lastName": "Hudis", "honorific": "MD"},
+						"firstName": "Daniel", "middleName":"F.", "lastName": "Hayes", "honorific": "MD"},
 					"position": {
 					"title":"placeholder"},
 					"img": {
-						"url":"content/img/section/CancerPolicyForum_143x90_tcm8-243574.jpg"}
-				}
-			},
-			"item-content": {
-			}
-		},
-		{
-			"id": "0004",
-			"featured": false,
-			"type": "Cancer Policy Forum",
-			"section": "Cancer Policy Forum",
-			"pub-date": {
-				"date": {
-					"year": "2012", "month": "March", "day": "14"},
-				"time":{
-					"hour": "2012", "minute": "March"}
-			},
-			"practice-relevance" : 3,
-			"title": "How to Fix Cancer Drug Shortages",
-			"url": "",
-			"source": {
-				"type": "expert",
-				"name": {
-					"firstName": "Clifford", "middleName": "", "lastName": "Hudis", "honorific": "MD"},
-				"position": {
-				"title":"placeholder"},
-				"img": {
-					"url":"content/img/section/CancerPolicyForum_143x90_tcm8-243574.jpg"}
-			},
-			"item-content": {
-			}
-		},
-		{
-			"id": "0001",
-			"featured": true,
-			"type": "Journal Scan: Research",
-			"section": "Story of the week",
-			"pub-date": {
-				"date": {
-					"year": "2012", "month": "March", "day": "19"},
-				"time":{
-					"hour": "2012", "minute": "March"}
-			},
-			"practice-relevance" : 3,
-			"title": "New Induction Standard for Acute Myeloid Leukemia",
-			"abbreviated-title": "New Induction Standard for Acute Myeloid Leukemia",
-			"url": "",
-			"source": {
-				"type": "expert",
-				"name": {
-					"firstName": "Lee", "middleName": "S.", "lastName": "Schwartzberg", "honorific": "MD, FACP"},
-				"position": {
-				"title":"placeholder"},
-				"img": {
-					"url":"content/img/users/Bonnie_Cunningham_2009_REVI_tcm8-199718.jpg"}
-			},
-			"item-content": {
-				"take-home-message": "<p>In a phase III trial of patients with acute myeloid leukemia, adding cladribine, but not fludarabine, to induction with daunorubicin/cytarabine significantly increased overall survival and can be considered a new standard of care.</p>",
-				"referenced-item": {
-					"featured": true,
-					"type": "commentary",
-					"section": "commentary",
-					"title": "Cladribine, But Not Fludarabine, Added to Daunorubicin and Cytarabine During Induction Prolongs Survival of Patients With Acute Myeloid Leukemia: A Multicenter, Randomized Phase III Study",
-					"source": {
-						"type": "journal",
-						"journal":{
-							"title": "Journal of Clinical Oncology",
-							"url": "",
-							"img": "content/img/journal/jco.gif",
-							"pub-date": {
-								"date": {
-									"year": "2012", "month": "March", "day": "19"}
-								}
-							}
-						}
-					}
-				}
-		},
-		{
-			"id": "0002",
-			"featured": false,
-			"type": "commentary",
-			"pub-date": {
-				"date": {
-					"year": "2012", "month": "March", "day": "19"},
-				"time":{
-					"hour": "2012", "minute": "March"}
-			},
-			"practice-relevance" : 2,
-			"section": "commentary",
-			"title": "PCI-32765 Is One of the Most Exciting Drugs Around",
-			"url": "",
-			"source": {
-				"type": "journal",
-				"journal": {
-					"firstName": "Susan", "middleName": "M.", "lastName": "O'Brien", "honorific": "MD"},
-				"position": {
-				"title": "placeholder"},
-				"img": {
-					"url": "http://oncologystat.com/Images/susan_obrien_tcm8-277885.jpg"
+						"url":"content/img/users/Dan_Hayes_tcm8-283548.jpg"}
 				},
+				"title": "Addition of Aflibercept to Fluorouracil, Leucovorin, and Irinotecan Improves Survival in a Phase III Randomized Trial in Patients With Metastatic Colorectal Cancer",
 				"citation": "Clin Cancer Res. 2012 Mar 29;[Epub Ahead of Print], DN Finegold, CJ Baty, KZ Knickelbein, S Perschke, SE Noon, D Campbell, JM Karlsson, D Huang, MA Kimak, EC Lawrence, E Feingold, SD Meriney, AM Brufsky, RE Ferrell"
 			},
-			"item-content": {
-				"item-teaser": "In this interview, Dr. O&#8217;Brien discusses the highly successful results of studies evaluating PCI-32765, a novel Bruton&#8217;s tyrosine kinase (BTK) inhibitor, in chronic lymphocytic leukemia (CLL) and mantle cell lymphoma (MCL)."
-			}
-		},
+			"item-content": {}
+		},		
 		{
+			"id": "0007",
 			"featured": false,
-			"type": "Ask the Expert",
-			"section": "Ask the Expert",
-			"pub-date": {
-				"date": {
-					"year": "2012", "month": "January", "day": "30"},
-				"time":{
-					"hour": "2012", "minute": "March"}
-			},
-			"practice-relevance" : 1,
-			"title": "Ask the Expert: Should I Use Adjuvant Therapy in DCIS?",
-			"url": "",
-			"source": {
-				"type": "expert",
-				"name": {
-					"firstName": "Patrick", "middleName": "W.", "lastName": "Cobb", "honorific": "MD, FACP"},
-				"position": {
-				"title":"placeholder"},
-				"img": {
-					"url":"content/img/users/clifford_hudis_tcm8-5788.jpg"}
-			},
-			"item-content": {
-			}
-		},
-		{
-			"id": "0003",
-			"featured": false,
-			"type": "Cancer Policy Forum",
-			"section": "Cancer Policy Forum",
+			"type": "CME",
+			"section": "CME",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "March", "day": "14"},
@@ -281,34 +224,8 @@
 					"hour": "2012", "minute": "March"}
 			},
 			"practice-relevance" : 3,
-			"title": "How to Fix Cancer Drug Shortages",
-			"url": "",
-			"source": {
-				"type": "expert",
-				"name": {
-					"firstName": "Clifford", "middleName": "", "lastName": "Hudis", "honorific": "MD"},
-				"position": {
-				"title":"placeholder"},
-				"img": {
-					"url":"content/img/section/CancerPolicyForum_143x90_tcm8-243574.jpg"}
-			},
-			"item-content": {
-			}
-		},
-		{
-			"id": "0004",
-			"featured": false,
-			"type": "Cancer Policy Forum",
-			"section": "Cancer Policy Forum",
-			"pub-date": {
-				"date": {
-					"year": "2012", "month": "March", "day": "14"},
-				"time":{
-					"hour": "2012", "minute": "March"}
-			},
-			"practice-relevance" : 3,
-			"title": "How to Fix Cancer Drug Shortages",
-			"url": "",
+			"title": "Chemotherapy for Women With Heavily Pre-treated Metastatic Breast Cancer. A Review of the Evidence Base.",
+			"url": "#",
 			"source": {
 				"type": "expert",
 				"name": {
@@ -321,6 +238,5 @@
 			"item-content": {
 			}
 		}
-
 	]
 }

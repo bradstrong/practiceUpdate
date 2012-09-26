@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"backgro",
+				"background-color"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"remo",
+				"removeClass"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"col",
+				"columnGutter"
+			],
+			[
+				"clear",
+				"clearfix"
+			],
+			[
+				"al",
+				"alert"
+			],
+			[
 				"di",
 				"display"
 			],
@@ -16,32 +64,6 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
-			"settings":
-			{
-				"buffer_size": 7477,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "content/json/top-bar.json",
-			"settings":
-			{
-				"buffer_size": 112,
-				"line_ending": "Unix",
-				"name": "top-bar.json"
-			}
-		},
-		{
-			"file": "assets/mustache/top-bar.mustache",
-			"settings":
-			{
-				"buffer_size": 656,
-				"line_ending": "Unix",
-				"name": "top-bar.mustache"
-			}
-		},
-		{
 			"contents": "<script>\n\n//partials example\nvar data = {\n    firstName: \"Christophe\",\n    lastName: \"Coenraets\",\n    address: \"1 Main street\",\n    city: \"Boston\",\n    state: \"MA\",\n    zip: \"02106\"\n};\n \nvar template = \"<h1>{{firstName}} {{lastName}}</h1>{{>address}}\";\nvar partials = {address: \"<p>{{address}}</p>{{city}}, {{state}} {{zip}}\"};\nvar html = Mustache.to_html(template, data, partials);\n\n$('#sampleArea').html(html);\n\n//external example\n\n\n$.getJSON('json/data2.json', function(data) {\n    var template = $('#personTpl').html();\n    var html = Mustache.to_html(template, data);\n    $('#sampleArea').html(html);\n});\n\n//current update example\n\n	$.getJSON('content/json/feed.json', function(data) {\n		$.get('assets/mustache/feed-item.mustache', function(template) {\n			//alert('Load was performed.');\n	    var html = Mustache.to_html(template, data);\n	    $('.stream-container').html(html);\n		});\n\n//Experiment\n\n	$.getJSON('content/json/feed.json', function(data) {\n		$.get('assets/mustache/feed-item.mustache', function(template) {\n			$get({'articles': 'assets/mustache/_articles.mustache'}, function(partials){\n	    var html = Mustache.to_html(template, data, partials);\n	    $('.stream-container').html(html);\n			})\n		});\n\n//Experiment 2\n		$.getJSON('content/json/feed.json', function(data) {\n			$.get('assets/mustache/feed-item.mustache', function(template) {\n				var partials = $.each({\n					'articles': 'assets/mustache/_articles.mustache'\n				}, function(key, value){\n					console.log(key log);\n				})\n			})\n	\n			    var html = Mustache.to_html(template, data, partials);\n			    $('.stream-container').html(html);\n				})\n			})\n		});\n		</script>",
 			"settings":
 			{
@@ -50,18 +72,18 @@
 			}
 		},
 		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
 			"settings":
 			{
-				"buffer_size": 12619,
+				"buffer_size": 4525,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/feed.json",
 			"settings":
 			{
-				"buffer_size": 5483,
+				"buffer_size": 10646,
 				"line_ending": "Unix"
 			}
 		},
@@ -69,72 +91,47 @@
 			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
 			"settings":
 			{
-				"buffer_size": 2033,
+				"buffer_size": 5713,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/_articles.mustache",
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
 			"settings":
 			{
-				"buffer_size": 575,
+				"buffer_size": 9228,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
 			"settings":
 			{
-				"buffer_size": 13265,
+				"buffer_size": 8393,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/learn.html",
 			"settings":
 			{
-				"buffer_size": 1981,
+				"buffer_size": 9063,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/newsletter-daily.html",
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
 			"settings":
 			{
-				"buffer_size": 11175,
+				"buffer_size": 22197,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "register.html",
+			"contents": "\n\n\n\n\n<!-- ================================================================================================= -->\n\n<article class=\"type-blog item-id\">\n					<div class=\"item-container\">\n						<div class=\"item-header-container\">\n							<header class=\"item-header\">\n								<div>\n									<span class=\"item-type\">Journal Scan: Research</span>\n									<span class=\"item-pub-date\">March 19, 2012</span>\n								</div>\n								<hgroup class=\"pub-meta meta\">\n									<h3 class=\"item-title\"><a href=\"story-of-the-week.html\">Second-Line FOLFIRI/Aflibercept Ups Survival in Metastatic Colorectal Cancer</a></h3>\n									<!-- <cite class=\"subheader\">Clin Cancer Res. 2012 Mar 29;[Epub Ahead of Print], DN Finegold, CJ Baty, KZ Knickelbein, S Perschke, SE Noon, D Campbell, JM Karlsson, D Huang, MA Kimak, EC Lawrence, E Feingold, SD Meriney, AM Brufsky, RE Ferrell</cite> -->\n								</hgroup><!--/.pub-meta-->\n							</header>\n						</div><!--/.item-header-container-->\n						<div class=\"item-content-container\">\n							<div class=\"item-content\">\n							<div class=\"commentary-container\">\n							<p>Commentary by</p>\n							<div class=\"source-container\">\n								<div class=\"vcard\">\n								<div class=\"expert-photo\">\n									<img class=\"photo\" src=\"content/img/users/Axel_Grothey_2009_REVISED_tcm8-199717.jpg\">\n									<p class=\"label\">Expert</p>\n								</div>\n\n								<div class=\"expert-name\">\n									<!-- Axel  Grothey MD -->\n									<a class=\"fn\" href=\"#\">\n										<span class=\"n\">\n											<!-- <span class=\"honorific-prefix\">Dr.</span> -->\n											<span class=\"given-name\">Axel</span>\n											<abbr class=\"additional-name\"></abbr>\n											<span class=\"family-name\">Grothey</span>\n											<span class=\"honorific-suffix\">MD</span>\n										</span>\n									</a><!--/.fn-->\n\n								</div><!--/.expert-name-->\n								</div><!--/.vcard-->\n								</div><!--/.source-container-->\n								\n							</div><!--/.commentary-container-->\n							<!-- <div class=\"take-home-message\"><p>[object Object]</p></div> --><!--/.take-home-message-->\n							<!-- <div class=\"item-teaser\"><p></p></div> --><!--/.item-teaser-->\n\n							</div><!--/.item-content-->\n						</div><!--/.item-content-container-->\n							<div class=\"item-source-container\">\n								<div class=\"item-source\">\n									<div class=\"vcard\">\n									<div class=\"journal-photo\">\n										<img class=\"photo\" src=\"content/img/journal/jco.gif\">\n									</div>\n									<div class=\"journal\">\n\n										<!--     -->\n										<a class=\"fn\" href=\"#\">\n											<span class=\"n\">\n												<!-- <span class=\"honorific-prefix\">Dr.</span> -->\n												<span class=\"given-name\">Journal of Clinical Oncology</span>\n												<abbr class=\"additional-name\"></abbr>\n												<span class=\"family-name\"></span>\n												<span class=\"honorific-suffix\"></span>\n											</span>\n										</a><!--/.fn-->\n									<h6 class=\"item-title\"><a href=\"\">Addition of Aflibercept to Fluorouracil, Leucovorin, and Irinotecan Improves Survival in a Phase III Randomized Trial in Patients With Metastatic Colorectal Cancer</a></h6>\n									<cite class=\"subheader\">Clin Cancer Res. 2012 Mar 29;[Epub Ahead of Print], DN Finegold, CJ Baty, KZ Knickelbein, S Perschke, SE Noon, D Campbell, JM Karlsson, D Huang, MA Kimak, EC Lawrence, E Feingold, SD Meriney, AM Brufsky, RE Ferrell</cite>\n									</div>\n									<!--/.journal-->\n<!--/.journal-->\n									</div><!--/.vcard-->\n								</div><!--/.item-source -->\n							</div><!--/.item-source-container-->\n\n					</div><!--/.item-container-->\n						<footer class=\"item-footer\">\n						<div class=\"portal-meta meta\">\n							<dl class=\"rating\"><dt class=\"practice-relevance\">Practice Relevance:</dt> <dd class=\"value\">3</dd></dl>\n						</div>\n							<!--\n							<div class=\"item-actions\">\n								<ul class=\"link-list\">\n									<li><a href=\"#\" ><i class=\"icon-star-empty\"></i></a></li>\n									<li><a href=\"#\" ><i class=\"icon-share-alt\"></i></a></li>\n								</ul>--><!--/.link-list-->\n			        <!-- </div> --><!--/.item-actions-->\n						</footer>\n				</article>",
 			"settings":
 			{
-				"buffer_size": 63543,
-				"line_ending": "Unix",
-				"name": "register.html"
-			}
-		},
-		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
-			"settings":
-			{
-				"buffer_size": 8501,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.offcanvas.js",
-			"settings":
-			{
-				"buffer_size": 1701,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_news.json",
-			"settings":
-			{
-				"buffer_size": 5319,
+				"buffer_size": 4070,
 				"line_ending": "Unix"
 			}
 		}
@@ -167,6 +164,34 @@
 	},
 	"file_history":
 	[
+		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/author-meta.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/recommended.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/learn.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/top-bar.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/explore_articles.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/section.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_expert-opinion.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/plugins.js",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/resource-center.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_review.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/main-search.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/recent.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/_articles.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/newsletter-daily.html",
+		"/Users/brad/Sites/pn-foundation/practiceUpdate/register.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.offcanvas.js",
+		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/top-bar.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/top-bar.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_news.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/feed.json",
 		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/index.html",
@@ -208,6 +233,74 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"top-bar",
+			"page-content",
+			"nav",
+			"#sidebar",
+			"recommended",
+			"side",
+			"complimentary",
+			"#sidebar",
+			"sidebar",
+			"item-content",
+			"item-content-section",
+			"commentary",
+			"take",
+			"nav-bar",
+			"mainNav",
+			"item-footer",
+			"border",
+			"clear",
+			"clear-fix",
+			"item-source",
+			"item-content-container",
+			"commentary-container",
+			"source-container",
+			"citation",
+			"-name",
+			"journal",
+			"\"photo\"",
+			"item-footer",
+			"source",
+			"\"story-of-the-week\"",
+			"border",
+			"section-cont",
+			"recommended",
+			"meta",
+			"item-pub-date",
+			"pub-meta",
+			"rating",
+			"box-shadow",
+			"flag",
+			"story-of-the-week",
+			"console",
+			"user console",
+			"round",
+			"stream-container",
+			"row",
+			"outer",
+			"page",
+			"search",
+			"outer",
+			"clear",
+			"body",
+			"outer",
+			"media",
+			"page-content",
+			"page-header",
+			"outerRow",
+			"explore-container",
+			"section",
+			"stream-item-container",
+			"main",
+			"ad",
+			".ad",
+			"header",
+			"page-header",
+			"pad",
+			"padding",
+			"user-s",
+			"article",
 			"scher",
 			"stream-item",
 			"background",
@@ -242,6 +335,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\"img\""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -252,92 +346,11 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
-					"settings":
-					{
-						"buffer_size": 7477,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1766,
-								1766
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 511.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "content/json/top-bar.json",
-					"settings":
-					{
-						"buffer_size": 112,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								102,
-								102
-							]
-						],
-						"settings":
-						{
-							"auto_name": "top-bar.json",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "assets/mustache/top-bar.mustache",
-					"settings":
-					{
-						"buffer_size": 656,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								564,
-								493
-							]
-						],
-						"settings":
-						{
-							"auto_name": "top-bar.mustache",
-							"syntax": "Packages/Mustache/mustache.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"settings":
 					{
 						"buffer_size": 1643,
@@ -347,8 +360,8 @@
 						"selection":
 						[
 							[
-								1631,
-								1233
+								1216,
+								1216
 							]
 						],
 						"settings":
@@ -362,24 +375,77 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
+					"buffer": 1,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
 					"settings":
 					{
-						"buffer_size": 12619,
+						"buffer_size": 4525,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7038,
-								7038
+								1146,
+								1146
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2373.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/feed.json",
+					"settings":
+					{
+						"buffer_size": 10646,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1784,
+								5271
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 23719.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
+					"settings":
+					{
+						"buffer_size": 5713,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								144,
+								144
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Mustache/mustache.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -389,19 +455,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
 					"settings":
 					{
-						"buffer_size": 5483,
+						"buffer_size": 9228,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2146,
-								2146
+								3570,
+								3570
 							]
 						],
 						"settings":
@@ -410,79 +476,105 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 854.0,
+						"translation.y": 1951.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+					"settings":
+					{
+						"buffer_size": 8393,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3397,
+								2678
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 867.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/learn.html",
 					"settings":
 					{
-						"buffer_size": 2033,
+						"buffer_size": 9063,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10,
-								0
+								7799,
+								7799
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Mustache/mustache.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2913.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/_articles.mustache",
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
 					"settings":
 					{
-						"buffer_size": 575,
+						"buffer_size": 22197,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								575,
-								575
+								11093,
+								11093
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Mustache/mustache.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 137.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 8,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
 					"settings":
 					{
-						"buffer_size": 13265,
+						"buffer_size": 4070,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3801,
-								3801
+								3469,
+								2249
 							]
 						],
 						"settings":
@@ -491,171 +583,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1374.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
-					"settings":
-					{
-						"buffer_size": 1981,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								120,
-								120
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/newsletter-daily.html",
-					"settings":
-					{
-						"buffer_size": 11175,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1499,
-								1499
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "register.html",
-					"settings":
-					{
-						"buffer_size": 63543,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2493,
-								2493
-							]
-						],
-						"settings":
-						{
-							"auto_name": "register.html",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 5145.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
-					"settings":
-					{
-						"buffer_size": 8501,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								900,
-								900
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2958.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.offcanvas.js",
-					"settings":
-					{
-						"buffer_size": 1701,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								716,
-								716
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_news.json",
-					"settings":
-					{
-						"buffer_size": 5319,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 796.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -696,7 +624,7 @@
 	"menu_visible": true,
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -719,6 +647,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 328.0,
+	"side_bar_width": 272.0,
 	"status_bar_visible": true
 }

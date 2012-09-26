@@ -1,7 +1,7 @@
 {{#items}}
 {{>articles}}
 <div class="stream-item-container">
-<article class="stream-item {{type}} {{section}} {{#featured}}featured{{/featured}} row-fluid">
+<article class="stream-item {{type}} {{section}} {{#featured}}featured{{/featured}}">
 	{{#featured}}<div class="flag"><span class="featured"><i class="icon-bolt"></i> featured</span></div>{{/featured}}
 					<div class="item-container">
 						<div class="item-header-container">
@@ -12,7 +12,7 @@
 								</div>
 								<hgroup class="pub-meta meta">
 									<h3 class="item-title"><a href="{{url}}">{{title}}</a></h3>
-									<cite class="subheader">{{source.citation}}</cite>
+									<!-- <cite class="subheader">{{source.citation}}</cite> -->
 								</hgroup><!--/.pub-meta-->
 							</header>
 						</div><!--/.item-header-container-->
@@ -21,7 +21,7 @@
 							<div class="item-content">
 							{{#commentary}}
 							<div class="commentary-container">
-							<h5 class="subheader">Commentary by</h5>
+							<p>Commentary by</p>
 							{{#source}}
 							<div class="source-container">
 								<div class="vcard">
@@ -101,9 +101,18 @@
 												<span class="honorific-suffix">{{honorific}}</span>
 											</span>
 										</a><!--/.fn-->
-
+									<h6 class="item-title"><a href="{{url}}">{{source.title}}</a></h6>
+									<cite class="subheader">{{source.citation}}</cite>
 									</div>
 									{{/journal}}<!--/.journal-->
+									{{#feed}}
+									<div class="feed">
+										<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
+										<a class="fn" href="#">
+											<p><a href="{{url}}">{{title}}</a> <cite>{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}} {{source.citation}}</cite></p>
+										</a><!--/.fn-->
+									</div>
+									{{/feed}}<!--/.journal-->
 									</div><!--/.vcard-->
 								</div><!--/.item-source -->
 							</div><!--/.item-source-container-->
