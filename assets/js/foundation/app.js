@@ -42,12 +42,11 @@
     });
   });
 
-  /*-- Mustache - Main Search Panel --*/
-
-    $.get('assets/mustache/main-search.mustache', function(template) {
-      var html = Mustache.to_html(template);
-      $('.main-search').html(html);
-    });
+/*-- Mustache - Main Search Panel --*/
+$.get('assets/mustache/main-search.mustache', function(template) {
+  var html = Mustache.to_html(template);
+  $('.main-search').html(html);
+});
     
 $('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
 //   console.log("explore slider initialized");
@@ -59,3 +58,17 @@ $('a[href="#action-register"]').click(function(){
 $('a[href="#action-sign-out"]').click(function(){
   $('body').removeClass('logged-in').addClass('logged-out');
 });
+
+//Modals
+//Import Modals
+$.get('assets/mustache/modals.mustache', function(template) {
+  var html = Mustache.to_html(template);
+  $('body').append(html);
+});
+
+//Modal Events
+  $(document).ready(function() {
+    $('.control-settings a').click(function() {
+      $('#modal-feature-disabled').reveal();
+    });
+  });

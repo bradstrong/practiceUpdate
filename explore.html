@@ -138,9 +138,6 @@
 			</div><!--/.explore-sections-->
 		</div><!--/.explore-container-->
 				<div class="recommended">
-				<div class="ad">
-					<img src="http://placehold.it/300x250" align="ad" title="ad" />
-				</div>
 				<div class="recent">
 				</div><!--/.recent-->
 				<div class="ad">
@@ -171,47 +168,9 @@
 								<hr />
 
 			<div class="component user-specialties">
-				<nav role="navigation">
-					<ul class="side-nav">
-						<li class="nav-header">Specialties
-							<div class="right"><a href="#" ><i class="icon-cog has-tip" data-width="210" title="Change the specialties shown here."></i></a></div>
-						<li class="active"><a href="#">All</a></li>
-						<li><a href="#">Hemotology</a></li>
-						<li><a href="#">Breast</a></li>
-						<li><a href="#">Gynecologic</a></li>
-					</ul>
-				</nav>
 			</div><!--/.component.user-specialties-->
-<!-- 			<div class="component user-topics">
-				<nav role="navigation">
-					<ul class="side-nav">
-						<li class="nav-header">My Topics
-							<a href="#" ><i class="icon-cog"></i></a>
-						</li>
-						<li class="active"><a href="#">All</a></li>
-						<li><a href="#">Hemotology</a></li>
-						<li><a href="#">Urology</a></li>
-					</ul>
-				</nav>
-			</div> --><!--/.component.user-topics-->
-<!-- 			<div class="component user-lists">
-				<nav role="navigation">
-					<ul class="side-nav">
-						<li class="nav-header">My Lists<a href="#" ><i class="icon-cog"></i></a></li>
-					<li><a href="#">Custom List #1</a></li>
-					<li><a href="#">Custom List #2</a></li>
-					<li><a href="#">Custom List #3</a></li>
-					</ul>
-				</nav>
-			</div> --><!--/.component.user-lists-->
 			<div class="component topic-spotlight">
-				<nav role="navigation">
-					<ul class="side-nav">
-						<li class="nav-header">Topic Spotlight
-						<li><a href="#">Breast ER-Positive</a></li>
-					</ul>
-				</nav>
-			</div><!--/.component.user-specialties-->
+			</div><!--/.component.topic-spotlight-->
 			<div class="panel">
 				<img src="http://placehold.it/200x200" /><p><!-- Meet Our Experts --> Meet our Advisory and Editorial Boards comprised of physician editors and world-renowned experts.<p>
 			</div>
@@ -250,7 +209,6 @@
 	    var html = Mustache.to_html(template, data);
 	    $('.explore-sections').prepend(html);
 		});
-
 	});
 
 	//<!-- Mustache - Explore Research template -->
@@ -260,7 +218,6 @@
 	    var html = Mustache.to_html(template, data);
 	    $('.explore-sections').prepend(html);
 		});
-
 	});
 
 	//<!-- Mustache - Explore Research template -->
@@ -270,7 +227,6 @@
 	    var html = Mustache.to_html(template, data);
 	    $('.explore-sections').prepend(html);
 		});
-
 	});
 
 	//<!-- Mustache - Explore Expert Opinion template -->
@@ -280,28 +236,34 @@
 	    var html = Mustache.to_html(template, data);
 	    $('.explore-sections').prepend(html);
 		});
-
 	});
 
-//	<!-- Mustache - homepage recommended template -->
-	$.getJSON('content/json/recommended.json', function(data) {
-		$.get('assets/mustache/recommended.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.recommended').prepend(html);
-		});
-
-	});
-
-	//<!-- Mustache - homepage recommended template -->
+	//<!-- Mustache - homepage recent template -->
 	$.getJSON('content/json/recent.json', function(data) {
 		$.get('assets/mustache/recent.mustache', function(template) {
 			//alert('Load was performed.');
 	    var html = Mustache.to_html(template, data);
 	    $('.recent').html(html);
 		});
-
 	});
+
+	<!-- Mustache - homepage user-specialties template -->
+	$.getJSON('content/json/user-specialties.json', function(data) {
+		$.get('assets/mustache/user-specialties.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.user-specialties').html(html);
+		});
+	});
+
+	<!-- Mustache - homepage topic-spotlight template -->
+	$.getJSON('content/json/topic-spotlight.json', function(data) {
+		$.get('assets/mustache/topic-spotlight.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.topic-spotlight').html(html);
+		});
+	});	
 
 	</script>
 
