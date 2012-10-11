@@ -66,23 +66,7 @@
 	</section><!--/[role="main"]-->
 	<section id="sidebar" role="complementary">
 		<div class="dashboard">
-			<div class="panel cta register">
-				<p><!-- Meet Our Experts --> Become a member to customize this page.<p>
-				<a class="button" href="#action-register">Register for free</a>
-			</div><!--/.panel.cta.register-->
 			<div class="component user-console">
-						<div class="twelve columns">
-							<div href="#" class="button split dropdown">
-							  <a>Current User</a>
-							  <span></span>
-							  <ul>
-							    <li><a href="#">Dropdown Item</a></li>
-							    <li><a href="#">Another Dropdown Item</a></li>
-							    <li class="divider"></li>
-							    <li><a href="#action-sign-out">Sign Out</a></li>
-							  </ul>
-							</div>
-					</div><!--/.twelve.columns-->
 			</div><!--/.component.user-console-->
 			<div class="component user-specialties">
 			</div><!--/.component.user-specialties-->
@@ -146,6 +130,15 @@
 	    $('.recent').html(html);
 		});
 
+	});
+
+	<!-- Mustache - homepage user-console template -->
+	$.getJSON('content/json/user-console.json', function(data) {
+		$.get('assets/mustache/user-console.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.user-console').html(html);
+		});
 	});
 
 	<!-- Mustache - homepage user-specialties template -->
