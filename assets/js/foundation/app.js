@@ -65,10 +65,3 @@ $.get('assets/mustache/modals.mustache', function(template) {
   var html = Mustache.to_html(template);
   $('body').append(html);
 });
-
-//Modal Events
-  $(document).ready(function() {
-    $('.control-settings a').click(function() {
-      $('#modal-feature-disabled').reveal();
-    });
-  });
