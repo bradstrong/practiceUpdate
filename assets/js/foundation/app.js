@@ -1,3 +1,38 @@
+/*-- Mustache - Top-bar --*/
+  $.getJSON('content/json/top-bar.json', function(data) {
+    $.get('assets/mustache/top-bar.mustache', function(template) {
+      //alert('Load was performed.');
+      var html = Mustache.to_html(template, data);
+      $('.top-bar').html(html);
+    });
+  });
+
+/*-- Mustache - Main Search Panel --*/
+$.get('assets/mustache/main-search.mustache', function(template) {
+  var html = Mustache.to_html(template);
+  $('.main-search').html(html);
+});
+    
+$('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
+//   console.log("explore slider initialized");
+
+//User-status
+// $('a[href="#action-register"]').click(function(){
+//   $('body').removeClass('logged-out').addClass('logged-in');
+// });
+// $('a[href="#action-sign-out"]').click(function(){
+//   $('body').removeClass('logged-in').addClass('logged-out');
+// });
+$('body').removeClass('logged-out').addClass('logged-in');
+
+//Modals
+//Import Modals
+$.get('assets/mustache/modals.mustache', function(template) {
+  var html = Mustache.to_html(template);
+  $('body').append(html);
+});
+
+/* ----- foundation.min.js --*/
 ;(function ($, window, undefined) {
   'use strict';
 
@@ -32,37 +67,3 @@
   }
 
 })(jQuery, this);
-
-/*-- Mustache - Top-bar --*/
-  $.getJSON('content/json/top-bar.json', function(data) {
-    $.get('assets/mustache/top-bar.mustache', function(template) {
-      //alert('Load was performed.');
-      var html = Mustache.to_html(template, data);
-      $('.top-bar').html(html);
-    });
-  });
-
-/*-- Mustache - Main Search Panel --*/
-$.get('assets/mustache/main-search.mustache', function(template) {
-  var html = Mustache.to_html(template);
-  $('.main-search').html(html);
-});
-    
-$('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
-//   console.log("explore slider initialized");
-
-//User-status
-// $('a[href="#action-register"]').click(function(){
-//   $('body').removeClass('logged-out').addClass('logged-in');
-// });
-// $('a[href="#action-sign-out"]').click(function(){
-//   $('body').removeClass('logged-in').addClass('logged-out');
-// });
-$('body').removeClass('logged-out').addClass('logged-in');
-
-//Modals
-//Import Modals
-$.get('assets/mustache/modals.mustache', function(template) {
-  var html = Mustache.to_html(template);
-  $('body').append(html);
-});
