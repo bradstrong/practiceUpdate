@@ -1,12 +1,40 @@
 <div class="">
 	<h5>Recently Updated</h5>
-	{{#items}}
+	
 		<ul>
-			<div class="stream-item {{type}} {{section}} {{#story-of-the-week}}story-of-the-week{{/story-of-the-week}} row-fluid">
-				<li class="item-container">
-							<p class="item-title"><a href="{{url}}">{{title}}</a></p>
-				</li>
-			</div><!--/.item-container-->
+		{{#items}}
+			<li class="stream-item">
+				<article class="item-container">
+					<hgroup class="pub-meta meta">
+						<h6 class="item-title"><a href="{{url}}">{{title}}</a></h6>
+						{{#source}}
+								<div class="vcard">
+								{{#expert}}
+								{{#name}}
+								<div class="{{source.type}}-name">
+									<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
+									<cite class="fn n" href="#">
+											<!-- <span class="honorific-prefix">Dr.</span> -->
+											<span class="given-name">{{firstName}}</span>
+											<abbr class="additional-name">{{middleName}}</abbr>
+											<span class="family-name">{{lastName}}</span>
+											<span class="honorific-suffix">{{honorific}}</span>
+									</cite><!--/.fn-->
+								</div><!--/.{{source.type}}-name-->
+								{{/name}}
+								{{/expert}}
+						{{#journal}}
+							<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
+							<cite class="fn org">{{title}}</cite><!--/.fn.org-->
+						<h6 class="item-title"><a href="{{url}}">{{source.title}}</a></h6>
+						<cite class="subheader">{{source.citation}}</cite>
+						</div>
+						{{/journal}}<!--/.journal-->
+						</div><!--/.vcard-->
+						{{/source}}
+					</hgroup><!--/.pub-meta-->
+				</article>
+			</li><!--/.item-container-->
+		{{/items}}
 		</ul>
-	{{/items}}
 </div>

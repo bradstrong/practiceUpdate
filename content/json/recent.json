@@ -2,9 +2,8 @@
 	"items": [
 		{
 			"id": "0001",
-			"story-of-the-week": true,
+			"featured": true,
 			"type": "Journal Scan: Research",
-			"section": "Story of the week",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "March", "day": "19"},
@@ -16,19 +15,20 @@
 			"url": "",
 			"source": {
 				"type": "expert",
-				"name": {
+				"expert":{
+					"name": {
 					"firstName": "Lee", "middleName": "S.", "lastName": "Schwartzberg", "honorific": "MD, FACP"},
-				"position": {
-				"title":"placeholder"},
-				"photo": {
-					"url":"content/img/users/Bonnie_Cunningham_2009_REVI_tcm8-199718.jpg"}
+					"position": {
+						"title":"placeholder"},
+					"photo": {
+						"url":"content/img/users/Bonnie_Cunningham_2009_REVI_tcm8-199718.jpg"}
+				}
 			},
 			"item-content": {
 				"take-home-message": "<p>In a phase III trial of patients with acute myeloid leukemia, adding cladribine, but not fludarabine, to induction with daunorubicin/cytarabine significantly increased overall survival and can be considered a new standard of care.</p>",
 				"referenced-item": {
-					"story-of-the-week": true,
+					"featured": true,
 					"type": "commentary",
-					"section": "commentary",
 					"title": "Cladribine, But Not Fludarabine, Added to Daunorubicin and Cytarabine During Induction Prolongs Survival of Patients With Acute Myeloid Leukemia: A Multicenter, Randomized Phase III Study",
 					"source": {
 						"type": "journal",
@@ -47,8 +47,9 @@
 		},
 		{
 			"id": "0002",
-			"story-of-the-week": false,
-			"type": "commentary",
+			"featured": false,
+			"type": "expert opinion",
+			"section": "commentary",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "March", "day": "19"},
@@ -56,17 +57,17 @@
 					"hour": "2012", "minute": "March"}
 			},
 			"practice-relevance" : 2,
-			"section": "commentary",
 			"title": "PCI-32765 Is One of the Most Exciting Drugs Around",
 			"url": "",
 			"source": {
 				"type": "expert",
-				"name": {
-					"firstName": "Susan", "middleName": "M.", "lastName": "O'Brien", "honorific": "MD"},
-				"position": {
-				"title": "placeholder"},
-				"photo": {
-					"url": "http://oncologystat.com/Images/susan_obrien_tcm8-277885.jpg"
+				"expert": {
+					"name": {
+						"firstName": "Susan", "middleName": "M.", "lastName": "O'Brien", "honorific": "MD"},
+					"position": {
+						"title": "placeholder"},
+					"photo": {
+						"url": "http://oncologystat.com/Images/susan_obrien_tcm8-277885.jpg"}
 				},
 				"citation": "Clin Cancer Res. 2012 Mar 29;[Epub Ahead of Print], DN Finegold, CJ Baty, KZ Knickelbein, S Perschke, SE Noon, D Campbell, JM Karlsson, D Huang, MA Kimak, EC Lawrence, E Feingold, SD Meriney, AM Brufsky, RE Ferrell"
 			},
@@ -75,8 +76,8 @@
 			}
 		},
 		{
-			"story-of-the-week": false,
-			"type": "Ask the Expert",
+			"featured": false,
+			"type": "expert opinion",
 			"section": "Ask the Expert",
 			"pub-date": {
 				"date": {
@@ -89,20 +90,22 @@
 			"url": "",
 			"source": {
 				"type": "expert",
-				"name": {
-					"firstName": "Patrick", "middleName": "W.", "lastName": "Cobb", "honorific": "MD, FACP"},
-				"position": {
-				"title":"placeholder"},
-				"photo": {
-					"url":"content/img/users/clifford_hudis_tcm8-5788.jpg"}
+				"expert": {
+					"name": {
+						"firstName": "Patrick", "middleName": "W.", "lastName": "Cobb", "honorific": "MD, FACP"},
+					"position": {
+						"title":"placeholder"},
+					"photo": {
+						"url":"content/img/users/clifford_hudis_tcm8-5788.jpg"}
+				}
 			},
 			"item-content": {
 			}
 		},
 		{
 			"id": "0003",
-			"story-of-the-week": false,
-			"type": "Cancer Policy Forum",
+			"featured": false,
+			"type": "expert opinion",
 			"section": "Cancer Policy Forum",
 			"pub-date": {
 				"date": {
@@ -115,19 +118,21 @@
 			"url": "",
 			"source": {
 				"type": "expert",
-				"name": {
-					"firstName": "Clifford", "middleName": "", "lastName": "Hudis", "honorific": "MD"},
-				"position": {
-				"title":"placeholder"},
-				"photo": {
-					"url":"content/img/section/CancerPolicyForum_143x90_tcm8-243574.jpg"}
+				"expert": {
+					"name": {
+						"firstName": "Clifford", "middleName": "", "lastName": "Hudis", "honorific": "MD"},
+					"position": {
+						"title":"placeholder"},
+					"photo": {
+						"url":"content/img/section/CancerPolicyForum_143x90_tcm8-243574.jpg"}
+				}
 			},
 			"item-content": {
 			}
 		},
 		{
 			"id": "0004",
-			"story-of-the-week": false,
+			"featured": false,
 			"type": "Cancer Policy Forum",
 			"section": "Cancer Policy Forum",
 			"pub-date": {
@@ -140,14 +145,17 @@
 			"title": "How to Fix Cancer Drug Shortages",
 			"url": "",
 			"source": {
-				"type": "expert",
-				"name": {
-					"firstName": "Clifford", "middleName": "", "lastName": "Hudis", "honorific": "MD"},
-				"position": {
-				"title":"placeholder"},
-				"photo": {
-					"url":"content/img/section/CancerPolicyForum_143x90_tcm8-243574.jpg"}
-			},
+				"type": "journal",
+				"journal":{
+					"title": "Journal of Clinical Oncology",
+					"url": "",
+					"img": "content/img/journal/jco.gif",
+					"pub-date": {
+						"date": {
+							"year": "2012", "month": "March", "day": "19"}
+						}
+					}
+				},
 			"item-content": {
 			}
 		}

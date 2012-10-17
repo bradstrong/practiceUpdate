@@ -4,7 +4,6 @@
 			"id": "0001",
 			"featured": true,
 			"type": "Journal Scan: Research",
-			"section": "Story of the week",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "March", "day": "19"},
@@ -64,7 +63,6 @@
 			"id": "0002",
 			"featured": false,
 			"type": "News",
-			"section": "News",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "September", "day": "18"},
@@ -95,7 +93,6 @@
 			"id": "0003",
 			"featured": false,
 			"type": "Journal Scan: Research",
-			"section": "Journal Scan",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "September", "day": "18"},
@@ -126,7 +123,6 @@
 			"id": "0004",
 			"featured": false,
 			"type": "Journal Scan: Research",
-			"section": "Journal Scan",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "September", "day": "18"},
@@ -156,7 +152,6 @@
 			"id": "0005",
 			"featured": false,
 			"type": "Journal Scan: Review",
-			"section": "Journal Scan",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "September", "day": "18"},
@@ -187,7 +182,6 @@
 			"id": "0006",
 			"featured": true,
 			"type": "Expert Opinion",
-			"section": "Expert Opinion",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "March", "day": "19"},
@@ -216,7 +210,6 @@
 			"id": "0007",
 			"featured": false,
 			"type": "CME",
-			"section": "CME",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "March", "day": "14"},

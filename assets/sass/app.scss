@@ -17,23 +17,23 @@ $itemBackground: #fcfcfa;
 @import "settings";
 
 // Comment out this import if you are customizing you imports below
-//@import "foundation";
+@import "foundation";
 
 // ----------------------------------------
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
 
-@import "compass/css3";
-@import "modular-scale";
+//@import "compass/css3";
+//@import "modular-scale";
 
-@import "foundation/functions/all";
+//@import "foundation/functions/all";
 //@import "foundation/functions/_convert-number-to-word.scss";
 //@import "foundation/functions/_grid-calc.scss";
 
-@import "foundation/settings";
+//@import "foundation/settings";
 
 // Control which mixins you have access too
-@import "foundation/mixins/all";
+//@import "foundation/mixins/all";
 
 //@import "foundation/mixins/font-size";
 //@import "foundation/mixins/css-triangle";
@@ -42,7 +42,7 @@ $itemBackground: #fcfcfa;
 //@import "foundation/mixins/semantic-grid";
 
 // Control which common styles get compiled
-@import "foundation/common/base";
+//@import "foundation/common/base";
 
 //@import "foundation/common/ratios";
 //@import "foundation/common/globals";
@@ -53,16 +53,16 @@ $itemBackground: #fcfcfa;
 
 // Control which components you get if customizing
 
-@import "foundation/components/grid";
+//@import "foundation/components/grid";
 //@import "foundation/components/grid", "foundation/components/modules/all";
 
-@import "foundation/components/modules/buttons";
-@import "foundation/components/modules/tabs";
-@import "foundation/components/modules/ui";
-@import "foundation/components/modules/topbar";
-@import "foundation/components/modules/navbar";
-@import "foundation/components/modules/orbit";
-@import "foundation/components/modules/reveal";
+//@import "foundation/components/modules/buttons";
+//@import "foundation/components/modules/tabs";
+//@import "foundation/components/modules/ui";
+//@import "foundation/components/modules/topbar";
+//@import "foundation/components/modules/navbar";
+//@import "foundation/components/modules/orbit";
+//@import "foundation/components/modules/reveal";
 @import "foundation/components/modules/offcanvas";
 
 /* Brad's Styles */
@@ -79,6 +79,16 @@ h1, h2, h3, h4, h5, h6{
 
 .recommended a{
 	color:$bodyFontColor;
+}
+
+abbr{
+	color: inherit;
+	&.additional-name{
+		border-bottom: none;
+		&:hover{
+			cursor: text;
+		}
+}
 }
 
 /* structure */
@@ -102,12 +112,12 @@ body{
 /* !main-nav */
 .top-bar{
 	//background-color: #5f5f61;
-	background-color: transparent;
-	border-top:5px solid darken($blue, 30);
+	//background-color: transparent;
+	//border-top:5px solid darken($blue, 30);
 	//@include filter-gradient(#5f5f61, #020202, vertical);
 	//@include background-image(linear-gradient(top, #5f5f61 0%,#020202 100%));
-	width: 100%;
-	.nav-bar{margin-top:-1px;}
+	//width: 100%;
+	//.nav-bar{margin-top:-1px;}
 }
 
 .page-header{
@@ -349,7 +359,7 @@ body.story-of-the-week{
 /* !Explore */
 body.explore{
 	.explore-feature .feature-item{background: $white;}
-	.explore-feature { background: url(spinner.gif) center center #f4f4f4; height: 300px;}
+	.explore-feature { background: url(loading.gif) center center #f4f4f4; height: 300px;}
 	.explore-feature img { display: none; }
 
 	.explore-feature.orbit { background: none; }
@@ -411,6 +421,9 @@ body.explore{
 .recommended{
 	ul{
 		list-style:none;
+	}
+	article{
+		background: transparent;
 	}
 	p{
 		border-top:1px dotted lighten($bodyFontColor, 55);
