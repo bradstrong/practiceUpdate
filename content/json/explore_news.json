@@ -5,7 +5,7 @@
 	"items": [
 		{
 			"id": "0001",
-			"story-of-the-week": true,
+			"featured": true,
 			"type": "Journal Scan: Research",
 			"section": "Story of the week",
 			"pub-date": {
@@ -40,7 +40,7 @@
 					}
 				},
 				"referenced-item": {
-					"story-of-the-week": true,
+					"featured": true,
 					"type": "commentary",
 					"section": "commentary",
 					"title": "Cladribine, But Not Fludarabine, Added to Daunorubicin and Cytarabine During Induction Prolongs Survival of Patients With Acute Myeloid Leukemia: A Multicenter, Randomized Phase III Study",
@@ -61,7 +61,7 @@
 		},
 		{
 			"id": "0002",
-			"story-of-the-week": false,
+			"featured": false,
 			"type": "commentary",
 			"pub-date": {
 				"date": {
@@ -89,7 +89,7 @@
 			}
 		},
 		{
-			"story-of-the-week": false,
+			"featured": false,
 			"type": "Ask the Expert",
 			"section": "Ask the Expert",
 			"pub-date": {
@@ -115,7 +115,7 @@
 		},
 		{
 			"id": "0003",
-			"story-of-the-week": false,
+			"featured": false,
 			"type": "Cancer Policy Forum",
 			"section": "Cancer Policy Forum",
 			"pub-date": {
@@ -141,7 +141,7 @@
 		},
 		{
 			"id": "0004",
-			"story-of-the-week": false,
+			"featured": false,
 			"type": "Cancer Policy Forum",
 			"section": "Cancer Policy Forum",
 			"pub-date": {

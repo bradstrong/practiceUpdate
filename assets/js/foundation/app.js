@@ -4,6 +4,8 @@
       //alert('Load was performed.');
       var html = Mustache.to_html(template, data);
       $('.top-bar').html(html);
+      //Disable "Learn" during beta phase -- Remove once Learn/CME goes live
+      $('.top-bar a.learn').attr('data-reveal-id', 'modal-feature-disabled');
     });
   });
 
@@ -65,5 +67,6 @@ $.get('assets/mustache/modals.mustache', function(template) {
       }, 0);
     });
   }
+
 
 })(jQuery, this);

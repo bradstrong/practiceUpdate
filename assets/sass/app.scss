@@ -7,6 +7,8 @@ $green:#dae348;
 $bodyBackground: #e6e3de;
 $itemBackground: #fcfcfa;
 
+$juneoblue: #43A1DA;
+
 /* !mixins */
 
 @mixin elementBoxShadow {
@@ -313,7 +315,7 @@ body.story-of-the-week{
 					padding-top:.5em;
 					padding-bottom:.5em;
 				}
-				div[class$="-photo"]{
+				figure[class$="-photo"]{
 					@include column(2);
 				}
 				div[class$="-name"]{
@@ -354,6 +356,10 @@ body.story-of-the-week{
 			}
 		}
 	}
+}
+.load-more{
+	@include column(6, center);
+	text-align: center;
 }
 
 /* !Explore */
@@ -450,4 +456,12 @@ body.logged-out .user-console{
 
 body.logged-in .cta.register{
 	display: none;
+}
+
+
+/* !CTAs */
+
+/*  !UI ELEMENTS */
+.load-more-button{
+	@extend .button;
 }

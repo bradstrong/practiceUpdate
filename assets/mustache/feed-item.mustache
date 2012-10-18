@@ -20,35 +20,32 @@
 							<div class="item-content">
 							{{#commentary}}
 							<div class="commentary-container">
-							<p>Commentary by</p>
+							<p>Commentary by:</p>
 							{{#source}}
 							<div class="source-container">
-								<div class="vcard">
 								{{#expert}}
-								<div class="{{source.type}}-photo">
-									<img class="photo" src="{{{img.url}}}"/>
-									<p class="label">Expert</p>
-								</div>
-
-								{{#name}}
-								<div class="{{source.type}}-name">
-									<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
-									<a class="fn" href="#">
-										<span class="n">
-											<!-- <span class="honorific-prefix">Dr.</span> -->
-											<span class="given-name">{{firstName}}</span>
-											<abbr class="additional-name">{{middleName}}</abbr>
-											<span class="family-name">{{lastName}}</span>
-											<span class="honorific-suffix">{{honorific}}</span>
-										</span>
-									</a><!--/.fn-->
-
-								</div><!--/.{{source.type}}-name-->
-								{{/name}}
-								</div><!--/.vcard-->
-								</div><!--/.source-container-->
-								
+								<dl class="vcard">
+									{{#name}}
+									<dt class="{{source.type}}-name">
+										<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
+										<a class="fn n" href="#">
+												<!-- <span class="honorific-prefix">Dr.</span> -->
+												<span class="given-name">{{firstName}}</span>
+												<abbr class="additional-name">{{middleName}}</abbr>
+												<span class="family-name">{{lastName}}</span>
+												<span class="honorific-suffix">{{honorific}}</span>
+										</a><!--/.fn-->
+									</dt><!--/.{{source.type}}-name-->
+									{{/name}}
+								<dd class="source-photo">
+									<figure class="{{source.type}}-photo">
+										<img class="photo" src="{{{img.url}}}"/>
+										<figcaption class="label">Expert</figcaption>
+									</figure><!--/.{{source.type}}-photo-->
+								</dd>
+								</dl><!--/.vcard-->
 								{{/expert}}
+							</div><!--/.source-container-->
 							{{/source}}
 							</div><!--/.commentary-container-->
 							{{/commentary}}
@@ -61,58 +58,27 @@
 							{{#source}}
 							<div class="item-source-container">
 								<div class="item-source">
-									<div class="vcard">
 									{{#expert}}
-									<div class="{{source.type}}-photo">
-										<img class="photo" src="{{{img.url}}}"/>
-									</div>
-
-									{{#name}}
-									<div class="{{source.type}}-name">
-										<h6 class="subheader">Expert</h6>
-										<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
-										<a class="fn" href="#">
-											<span class="n">
-												<!-- <span class="honorific-prefix">Dr.</span> -->
-												<span class="given-name">{{firstName}}</span>
-												<abbr class="additional-name">{{middleName}}</abbr>
-												<span class="family-name">{{lastName}}</span>
-												<span class="honorific-suffix">{{honorific}}</span>
-											</span>
-										</a><!--/.fn-->
-
-									</div>
-									{{/name}}<!--/.{{source.type}}-name-->
+										{{! expert opoinion source removed from template. will add once expert opinion has been implemented in juneo }}
 									{{/expert}}
 									{{#journal}}
-									<!-- <div class="{{source.type}}-photo">
-										<img class="photo" src="{{{journal.img.url}}}"/>
-									</div> -->
 									<div class="journal">
-
-										<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
-										<a class="fn" href="#">
-											<span class="n">
-												<!-- <span class="honorific-prefix">Dr.</span> -->
-												<span class="given-name">{{title}}</span>
-												<abbr class="additional-name">{{middleName}}</abbr>
-												<span class="family-name">{{lastName}}</span>
-												<span class="honorific-suffix">{{honorific}}</span>
-											</span>
-										</a><!--/.fn-->
-									<h6 class="item-title"><a href="{{url}}">{{source.title}}</a></h6>
-									<cite class="subheader">{{source.citation}}</cite>
-									</div>
-									{{/journal}}<!--/.journal-->
+									<dl class="source-citation">
+										<dt class="journal-title">{{title}}</dt>
+										<dt class="item-title"><cite>{{source.title}}</cite></dt>
+										<dt class="item-citation">{{source.citation}}</dt>
+									</dl>
+									</div><!--/.journal-->
+									{{/journal}}
 									{{#feed}}
 									<div class="feed">
-										<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
-										<a class="fn" href="#">
-											<p><a href="{{url}}">{{title}}</a> <cite>{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}} {{source.citation}}</cite></p>
-										</a><!--/.fn-->
-									</div>
+										<dl class="source-citation">
+											<dt class="feed-title">{{title}}</dt>
+											<dd class="pub-date"><date>{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</date></dt>
+											<dt class="item-citation">{{source.citation}}</dt>
+										</dl><!--/.source-citation-->
+									</div><!--/.feed-->
 									{{/feed}}<!--/.journal-->
-									</div><!--/.vcard-->
 								</div><!--/.item-source -->
 							</div><!--/.item-source-container-->
 							{{/source}}
@@ -133,14 +99,7 @@
 				</article></div><!--/.stream-item-->
 			</div><!--/.stream-item-container-->
 {{/items}}
-<ul class="pagination">
-  <li class="arrow unavailable"><a href="">&laquo;</a></li>
-  <li class="current"><a href="">1</a></li>
-  <li><a href="">2</a></li>
-  <li><a href="">3</a></li>
-  <li><a href="">4</a></li>
-  <li class="unavailable"><a href="">&hellip;</a></li>
-  <li><a href="">12</a></li>
-  <li><a href="">13</a></li>
-  <li class="arrow"><a href="">&raquo;</a></li>
-</ul>
+
+	<div class="load-more">
+		<a href="#" class="load-more-button">Load More</a>
+	</div><!--/.load-more-->
