@@ -34,12 +34,16 @@
 </head>
 	<body id="update" class="update off-canvas logged-out">
 		 <div id="page-leaderboard">
+			<div class="row">
 			<div class="ad centered eight columns hide-for-small">
 				<img src="http://placehold.it/728x90" class="ad" title="ad" />
 			</div> <!--/.ad -->
+		 </div> <!--/.row -->
 		 </div> <!--/#page-leaderboard -->
-		<div class="page-header">
-		</div><!--/.page-header-->
+		<div class="contain-to-grid">
+		<nav class="top-bar">
+		</nav><!--/.container.top-bar-->
+		</div>
 
 	<div class="page-content">
 		<div class="row">
@@ -49,16 +53,17 @@
 			</div><!--/.show-for-small-->
 		</div><!--/.row-->
 	<section role="main">
-				<div class="stream-container">
-				</div><!--/.stream-container-->
+		<!-- /*==========================================*/
+MEET OUR EXPERTS
+OncologySTAT is guided by a world-renowned Advisory Board that represents community practitioners and academic specialists with cross-disciplinary expertise.  
 
-				<div class="recommended">
-				<div class="widget recent">
-				</div><!--/.widget recent-->
-					<div class="widget ad">
-					</div><!--/.widget.ad-->
-				</div><!--/.recommended-->
 
+
+/*==========================================*/
+-->
+<div class="user-directory">
+
+</div><!--/.user-directory -->
 	</section><!--/[role="main"]-->
 	<section id="sidebar" role="complementary">
 		<div class="dashboard">
@@ -68,13 +73,14 @@
 			</div><!--/.component.user-specialties-->
 			<div class="component topic-spotlight">
 			</div><!--/.component.topic-spotlight-->
-			<div class="cta meet-experts">
-			</div><!--/.cta/meet-experts-->
+			<div class="panel cta meet-experts">
+				<img src="http://placehold.it/200x200" /><p><!-- Meet Our Experts --> Meet our Advisory and Editorial Boards comprised of physician editors and world-renowned experts.<p>
+			</div>
 		</div><!--/.sidebar-->
 	</section><!--/.[role="complimentary"]-->
 	</div><!--/.page-content-->
-	<footer class="page-footer">
-	</footer><!-- /.page-footer -->
+
+
 	<!-- Included JS Files (Uncompressed) -->
   <script src="assets/js/foundation/jquery.js"></script>
 <!--   <script src="assets/js/plugins-ck.js"></script> -->
@@ -85,7 +91,6 @@
 	<script src="assets/js/foundation/jquery.foundation.forms.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.navigation.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>	
 	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
@@ -141,34 +146,13 @@
 	});
 
 	<!-- Mustache - homepage topic-spotlight template -->
-	$.getJSON('content/json/topic-spotlight.json', function(data) {
-		$.get('assets/mustache/topic-spotlight.mustache', function(template) {
+	$.getJSON('content/json/experts.json', function(data) {
+		$.get('assets/mustache/experts.mustache', function(template) {
 			//alert('Load was performed.');
 	    var html = Mustache.to_html(template, data);
-	    $('.topic-spotlight').html(html);
+	    $('.user-directory').html(html);
 		});
-	});
-
-		<!-- Mustache - homepage ad template -->
-		$.get('assets/mustache/ad.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.ad').html(html);
-		});
-
-	<!-- Mustache - homepage footer template -->
-	$.get('assets/mustache/page-footer.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.page-footer').html(html);
-		});
-
-	<!-- Mustache - homepage meet-experts -->
-	$.get('assets/mustache/cta-meet-experts.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.cta.meet-experts').html(html);
-		});
+	});		
 
 	</script>
 </body>

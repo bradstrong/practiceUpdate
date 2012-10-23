@@ -1,0 +1,30 @@
+
+{{#user-group}}
+	{{#users}}
+		{{#user}}
+			{{#name}}
+			<dt class="{{source.type}}-name">
+				<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
+				<a class="fn n" href="#">
+						<!-- <span class="honorific-prefix">Dr.</span> -->
+						<span class="given-name">{{firstName}}</span>
+						<abbr class="additional-name">{{middleName}}</abbr>
+						<span class="family-name">{{lastName}}</span>
+						<span class="honorific-suffix">{{honorific}}</span>
+				</a><!--/.fn-->
+			</dt><!--/.{{source.type}}-name-->
+			<dd class="user-photo">
+				<figure class="{{source.type}}-photo">
+					<img class="photo" src="{{{img.url}}}"/>
+					<figcaption class="label">{{source.type}}</figcaption>
+				</figure><!--/.{{source.type}}-photo-->
+			</dd>
+				<dt>Profession</dt>
+				</dd>{{profession}}</dd>
+				<dt>Member Since:</dt>
+				<dd><date>{{date-joined}}</date></dd>
+				</dd>
+			{{/name}}
+		{{/user}}
+	{{/users}}
+{{/user-group}}

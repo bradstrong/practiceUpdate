@@ -7,34 +7,37 @@
 				<article class="item-container">
 					<hgroup class="pub-meta meta">
 						<h6 class="item-title"><a href="{{url}}">{{title}}</a></h6>
+					</hgroup><!--/.pub-meta-->
 						{{#source}}
-								<div class="vcard">
-								{{#expert}}
+					<div class="item-source">
+						<dl class="source-citation">
+						{{! show expert name if commentary exists}}
+							{{#expert}}
 								{{#name}}
-								<div class="{{source.type}}-name">
-									<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
-									<cite class="fn n" href="#">
-											<!-- <span class="honorific-prefix">Dr.</span> -->
+									<dt class="fn n {{source.type}}-name">
 											<span class="given-name">{{firstName}}</span>
 											<abbr class="additional-name">{{middleName}}</abbr>
 											<span class="family-name">{{lastName}}</span>
 											<span class="honorific-suffix">{{honorific}}</span>
-									</cite><!--/.fn-->
-								</div><!--/.{{source.type}}-name-->
+									</dt><!--/.fn-->
 								{{/name}}
-								{{/expert}}
+							{{/expert}}
+						{{! if no commentary commentary, show feed or journal citation}}
 						{{#journal}}
-							<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
-							<cite class="fn org">{{title}}</cite><!--/.fn.org-->
-						<h6 class="item-title"><a href="{{url}}">{{source.title}}</a></h6>
-						<cite class="subheader">{{source.citation}}</cite>
-						</div>
-						{{/journal}}<!--/.journal-->
-						</div><!--/.vcard-->
+								<dt class="item-citation">{{source.citation}}</dt>					
+						{{/journal}}
+						{{#feed}}
+								<dd class="item-citation">{{source.citation}}</dd>
+						{{/feed}}
 						{{/source}}
-					</hgroup><!--/.pub-meta-->
+						</dl><!-- /.source-citation -->
+					</div><!-- /.item-source -->
 				</article>
 			</li><!--/.item-container-->
 		{{/items}}
 		</ul>
 </div>
+
+
+
+<!-- update

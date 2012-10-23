@@ -1,7 +1,7 @@
 /* !variables */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_semantic-grid.scss */
-.site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .dashboard, body.explore .explore-container, body.explore .recommended, body.learn .dashboard, body.learn .cme-container, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .commentary, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-content .summary, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .flag .featured, .stream-item-container .stream-item .item-container .item-header-container, .stream-item-container .stream-item .item-container .item-header-container .item-header .item-type, .stream-item-container .stream-item .item-container .item-header-container .item-header .item-pub-date, .stream-item-container .stream-item .item-container .item-header-container .item-header .pub-meta, .stream-item-container .stream-item .item-container .item-content-container, .stream-item-container .stream-item .item-container .commentary-container div[class$="-photo"], .stream-item-container .stream-item .item-container .commentary-container div[class$="-name"], .stream-item-container .stream-item .item-container .item-source-container, .stream-item-container .stream-item .item-container .item-source-container figure[class$="-photo"], .stream-item-container .stream-item .item-container .item-source-container div[class$="-name"], .stream-item-container .stream-item .item-container .commentary-container, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .explore-sections, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
+.footer-section-container, .footer-section-container .footer-section .widget.els-branding, .footer-section-container .footer-section .widget.els-description, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .dashboard, body.explore .explore-container, body.explore .recommended, body.learn .dashboard, body.learn .cme-container, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .commentary, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-content .summary, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .flag .featured, .stream-item-container .stream-item .item-container .item-header-container, .stream-item-container .stream-item .item-container .item-header-container .item-header .item-type, .stream-item-container .stream-item .item-container .item-header-container .item-header .item-pub-date, .stream-item-container .stream-item .item-container .item-header-container .item-header .pub-meta, .stream-item-container .stream-item .item-container .item-content-container, .stream-item-container .stream-item .item-container .commentary-container div[class$="-photo"], .stream-item-container .stream-item .item-container .commentary-container div[class$="-name"], .stream-item-container .stream-item .item-container .item-source-container, .stream-item-container .stream-item .item-container .item-source-container figure[class$="-photo"], .stream-item-container .stream-item .item-container .item-source-container div[class$="-name"], .stream-item-container .stream-item .item-container .commentary-container, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, body.explore .explore-sections, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
   float: left;
 }
 
@@ -11,28 +11,28 @@
 }
 
 /* line 55, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_semantic-grid.scss */
-.dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .flag, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-container .item-header-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer, body.explore .explore-sections section, .component {
+.page-footer, .footer-section-container .footer-section, .dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .flag, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-container .item-header-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer, body.explore .explore-sections section, .component {
   *zoom: 1;
 }
 /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
-.dashboard .component:before, body.story-of-the-week .single-item-container article:before, body.story-of-the-week .single-item-container article .item-content .item-content-section:before, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:before, .stream-item-container:before, .stream-item-container .stream-item .flag:before, .stream-item-container .stream-item .item-container:before, .stream-item-container .stream-item .item-container .item-header-container .item-header:before, .stream-item-container .stream-item .item-container .item-content:before, .stream-item-container .stream-item .item-footer:before, body.explore .explore-sections section:before, .component:before, .dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .flag:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-container .item-header-container .item-header:after, .stream-item-container .stream-item .item-container .item-content:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections section:after, .component:after {
+.page-footer:before, .footer-section-container .footer-section:before, .dashboard .component:before, body.story-of-the-week .single-item-container article:before, body.story-of-the-week .single-item-container article .item-content .item-content-section:before, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:before, .stream-item-container:before, .stream-item-container .stream-item .flag:before, .stream-item-container .stream-item .item-container:before, .stream-item-container .stream-item .item-container .item-header-container .item-header:before, .stream-item-container .stream-item .item-container .item-content:before, .stream-item-container .stream-item .item-footer:before, body.explore .explore-sections section:before, .component:before, .page-footer:after, .footer-section-container .footer-section:after, .dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .flag:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-container .item-header-container .item-header:after, .stream-item-container .stream-item .item-container .item-content:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections section:after, .component:after {
   content: "";
   display: table;
 }
 /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_clearfix.scss */
-.dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .flag:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-container .item-header-container .item-header:after, .stream-item-container .stream-item .item-container .item-content:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections section:after, .component:after {
+.page-footer:after, .footer-section-container .footer-section:after, .dashboard .component:after, body.story-of-the-week .single-item-container article:after, body.story-of-the-week .single-item-container article .item-content .item-content-section:after, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta:after, .stream-item-container:after, .stream-item-container .stream-item .flag:after, .stream-item-container .stream-item .item-container:after, .stream-item-container .stream-item .item-container .item-header-container .item-header:after, .stream-item-container .stream-item .item-container .item-content:after, .stream-item-container .stream-item .item-footer:after, body.explore .explore-sections section:after, .component:after {
   clear: both;
 }
 
 /* line 59, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_semantic-grid.scss */
-.dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .flag, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-container .item-header-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer, body.explore .explore-sections section, .component {
+.footer-section-container .footer-section, .dashboard .component, body.story-of-the-week .single-item-container article, body.story-of-the-week .single-item-container article .item-content .item-content-section, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta, .stream-item-container, .stream-item-container .stream-item .flag, .stream-item-container .stream-item .item-container, .stream-item-container .stream-item .item-container .item-header-container .item-header, .stream-item-container .stream-item .item-container .item-content, .stream-item-container .stream-item .item-footer, body.explore .explore-sections section, .component {
   width: auto;
   max-width: none;
   min-width: 0;
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.1.1/scss/foundation/mixins/_semantic-grid.scss */
-.site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .dashboard, body.explore .explore-container, body.explore .recommended, body.learn .dashboard, body.learn .cme-container, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .commentary, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-content .summary, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .flag .featured, .stream-item-container .stream-item .item-container .item-header-container, .stream-item-container .stream-item .item-container .item-header-container .item-header .item-type, .stream-item-container .stream-item .item-container .item-header-container .item-header .item-pub-date, .stream-item-container .stream-item .item-container .item-header-container .item-header .pub-meta, .stream-item-container .stream-item .item-container .item-content-container, .stream-item-container .stream-item .item-container .commentary-container div[class$="-photo"], .stream-item-container .stream-item .item-container .commentary-container div[class$="-name"], .stream-item-container .stream-item .item-container .item-source-container, .stream-item-container .stream-item .item-container .item-source-container figure[class$="-photo"], .stream-item-container .stream-item .item-container .item-source-container div[class$="-name"], .stream-item-container .stream-item .item-container .commentary-container, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, .load-more, body.explore .explore-sections, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
+.footer-section-container, .footer-section-container .footer-section .widget.els-branding, .footer-section-container .footer-section .widget.els-description, .site-branding, .dashboard .component nav, body.update .dashboard, body.update .stream-container, body.update .recommended, body.explore .dashboard, body.explore .explore-container, body.explore .recommended, body.learn .dashboard, body.learn .cme-container, body.story-of-the-week .single-item-container, body.story-of-the-week .single-item-container article .item-header, body.story-of-the-week .single-item-container article .item-content, body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .commentary, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-content .summary, body.story-of-the-week .single-item-container article .item-footer, body.story-of-the-week .single-item-container .taxonomy-meta ul, body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author, body.story-of-the-week .recommended, .stream-item-container .stream-item, .stream-item-container .stream-item .flag .featured, .stream-item-container .stream-item .item-container .item-header-container, .stream-item-container .stream-item .item-container .item-header-container .item-header .item-type, .stream-item-container .stream-item .item-container .item-header-container .item-header .item-pub-date, .stream-item-container .stream-item .item-container .item-header-container .item-header .pub-meta, .stream-item-container .stream-item .item-container .item-content-container, .stream-item-container .stream-item .item-container .commentary-container div[class$="-photo"], .stream-item-container .stream-item .item-container .commentary-container div[class$="-name"], .stream-item-container .stream-item .item-container .item-source-container, .stream-item-container .stream-item .item-container .item-source-container figure[class$="-photo"], .stream-item-container .stream-item .item-container .item-source-container div[class$="-name"], .stream-item-container .stream-item .item-container .commentary-container, .stream-item-container .stream-item .item-footer .portal-meta, .stream-item-container .stream-item .item-footer .item-actions, .load-more, body.explore .explore-sections, body.explore .section-widget, body.explore .section-widget .section-header, body.explore .section-widget .section-content {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -5250,13 +5250,13 @@ body {
   background: #f1efed;
 }
 
-/* line 108, ../sass/app.scss */
+/* line 105, ../sass/app.scss */
 .page-content {
   padding-bottom: 80px;
 }
 
 /* !main-nav */
-/* line 125, ../sass/app.scss */
+/* line 112, ../sass/app.scss */
 .page-header {
   *zoom: 1;
   width: 100%;
@@ -5272,65 +5272,98 @@ body {
   clear: both;
 }
 
-/* line 132, ../sass/app.scss */
+/* line 119, ../sass/app.scss */
+.page-footer {
+  width: 100%;
+  max-width: 100%;
+  min-width: 768px;
+  margin: 0 auto;
+}
+
+/* line 124, ../sass/app.scss */
+.footer-section-container {
+  width: 100%;
+}
+/* line 126, ../sass/app.scss */
+.footer-section-container .footer-section {
+  margin: 0 -15px;
+}
+/* line 128, ../sass/app.scss */
+.footer-section-container .footer-section .widget.els-branding {
+  width: 33.33333%;
+}
+/* line 129, ../sass/app.scss */
+.footer-section-container .footer-section .widget.els-description {
+  width: 66.66667%;
+}
+
+/* line 133, ../sass/app.scss */
 .page-header-fixed {
   position: fixed;
   top: 0;
   left: 0;
 }
 
-/* line 137, ../sass/app.scss */
+/* line 138, ../sass/app.scss */
 .site-branding {
   width: 33.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 137, ../sass/app.scss */
+  /* line 138, ../sass/app.scss */
   .site-branding {
     float: left;
     width: 50%;
     padding: 0 15px;
   }
 }
-/* line 140, ../sass/app.scss */
+/* line 141, ../sass/app.scss */
 .site-branding #site-title {
   font-size: 27px;
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-/* line 146, ../sass/app.scss */
-.nav-bar {
-  background: inherit;
-}
-
-@media all and (max-width: 768px) {
-  /* line 151, ../sass/app.scss */
-  .page-header {
-    position: static;
-  }
-}
 /* !dashboard */
-/* line 155, ../sass/app.scss */
+/* line 154, ../sass/app.scss */
 .dashboard .component {
   margin: 0 -15px;
 }
-/* line 157, ../sass/app.scss */
+/* line 156, ../sass/app.scss */
 .dashboard .component nav {
   width: 100%;
 }
 
 /* global elements */
-/* line 163, ../sass/app.scss */
+/* line 162, ../sass/app.scss */
 article {
   background: #fcfcfa;
 }
 
-/* line 167, ../sass/app.scss */
-.ad {
+/* line 166, ../sass/app.scss */
+.ad-container {
   text-align: center;
 }
+/* line 168, ../sass/app.scss */
+.ad-container .ad-title {
+  text-align: left;
+}
+/* line 170, ../sass/app.scss */
+.ad-container .ad-title .ad-title-text {
+  text-transform: uppercase;
+}
+/* line 174, ../sass/app.scss */
+.ad-container .ad-content {
+  background: transparent;
+  display: block;
+  overflow: hidden;
+}
+/* line 178, ../sass/app.scss */
+.ad-container .ad-content object {
+  display: block;
+  height: auto;
+}
 
-/* line 171, ../sass/app.scss */
+/* line 185, ../sass/app.scss */
 #sidebar {
   box-flex: 2;
   padding-top: 1em;
@@ -5338,16 +5371,16 @@ article {
 
 /* Page Layouts */
 /* !Update Layout */
-/* line 181, ../sass/app.scss */
+/* line 195, ../sass/app.scss */
 body.update .dashboard {
   width: 100%;
 }
-/* line 182, ../sass/app.scss */
+/* line 196, ../sass/app.scss */
 body.update .stream-container {
   width: 66.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 182, ../sass/app.scss */
+  /* line 196, ../sass/app.scss */
   body.update .stream-container {
     width: auto;
     min-width: 0;
@@ -5365,12 +5398,12 @@ body.update .stream-container {
     clear: both;
   }
 }
-/* line 183, ../sass/app.scss */
+/* line 197, ../sass/app.scss */
 body.update .recommended {
   width: 33.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 183, ../sass/app.scss */
+  /* line 197, ../sass/app.scss */
   body.update .recommended {
     float: left;
     width: 100%;
@@ -5379,16 +5412,16 @@ body.update .recommended {
 }
 
 /* !Explore Layout */
-/* line 189, ../sass/app.scss */
+/* line 203, ../sass/app.scss */
 body.explore .dashboard {
   width: 100%;
 }
-/* line 191, ../sass/app.scss */
+/* line 205, ../sass/app.scss */
 body.explore .explore-container {
   width: 66.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 191, ../sass/app.scss */
+  /* line 205, ../sass/app.scss */
   body.explore .explore-container {
     width: auto;
     min-width: 0;
@@ -5406,12 +5439,12 @@ body.explore .explore-container {
     clear: both;
   }
 }
-/* line 192, ../sass/app.scss */
+/* line 206, ../sass/app.scss */
 body.explore .recommended {
   width: 33.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 192, ../sass/app.scss */
+  /* line 206, ../sass/app.scss */
   body.explore .recommended {
     float: left;
     width: 100%;
@@ -5420,16 +5453,16 @@ body.explore .recommended {
 }
 
 /* !Learn Layout */
-/* line 198, ../sass/app.scss */
+/* line 212, ../sass/app.scss */
 body.learn .dashboard {
   width: 100%;
 }
-/* line 199, ../sass/app.scss */
+/* line 213, ../sass/app.scss */
 body.learn .cme-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 199, ../sass/app.scss */
+  /* line 213, ../sass/app.scss */
   body.learn .cme-container {
     width: auto;
     min-width: 0;
@@ -5448,12 +5481,12 @@ body.learn .cme-container {
   }
 }
 
-/* line 205, ../sass/app.scss */
+/* line 219, ../sass/app.scss */
 body.story-of-the-week .single-item-container {
   width: 66.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 205, ../sass/app.scss */
+  /* line 219, ../sass/app.scss */
   body.story-of-the-week .single-item-container {
     width: auto;
     min-width: 0;
@@ -5471,63 +5504,63 @@ body.story-of-the-week .single-item-container {
     clear: both;
   }
 }
-/* line 206, ../sass/app.scss */
+/* line 220, ../sass/app.scss */
 body.story-of-the-week .single-item-container article {
   margin: 0 -15px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 209, ../sass/app.scss */
+/* line 223, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-header {
   width: 100%;
 }
-/* line 211, ../sass/app.scss */
+/* line 225, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-header h1 {
   font-size: 27px;
 }
-/* line 213, ../sass/app.scss */
+/* line 227, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-content {
   width: 100%;
 }
-/* line 215, ../sass/app.scss */
+/* line 229, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-content .item-content-section {
   margin: 0 -15px;
 }
-/* line 217, ../sass/app.scss */
+/* line 231, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-content .item-content-section .source-container {
   margin-bottom: 1em;
 }
-/* line 219, ../sass/app.scss */
+/* line 233, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-content .take-home-message, body.story-of-the-week .single-item-container article .item-content .commentary, body.story-of-the-week .single-item-container article .item-content .abstract, body.story-of-the-week .single-item-container article .item-content .summary {
   width: 100%;
 }
-/* line 221, ../sass/app.scss */
+/* line 235, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-content .take-home-message h3, body.story-of-the-week .single-item-container article .item-content .commentary h3, body.story-of-the-week .single-item-container article .item-content .abstract h3, body.story-of-the-week .single-item-container article .item-content .summary h3 {
   font-size: 14px;
   text-transform: uppercase;
 }
-/* line 227, ../sass/app.scss */
+/* line 241, ../sass/app.scss */
 body.story-of-the-week .single-item-container article .item-footer {
   width: 100%;
 }
-/* line 232, ../sass/app.scss */
+/* line 246, ../sass/app.scss */
 body.story-of-the-week .single-item-container .taxonomy-meta ul {
   width: 25%;
   list-style: none;
 }
-/* line 236, ../sass/app.scss */
+/* line 250, ../sass/app.scss */
 body.story-of-the-week .single-item-container .taxonomy-meta .author-meta {
   margin: 0 -15px;
 }
-/* line 238, ../sass/app.scss */
+/* line 252, ../sass/app.scss */
 body.story-of-the-week .single-item-container .taxonomy-meta .author-meta .author {
   width: 50%;
 }
-/* line 244, ../sass/app.scss */
+/* line 258, ../sass/app.scss */
 body.story-of-the-week .recommended {
   width: 33.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 244, ../sass/app.scss */
+  /* line 258, ../sass/app.scss */
   body.story-of-the-week .recommended {
     float: left;
     width: 100%;
@@ -5536,7 +5569,7 @@ body.story-of-the-week .recommended {
 }
 
 /* !stream */
-/* line 248, ../sass/app.scss */
+/* line 262, ../sass/app.scss */
 .stream-item-container {
   margin: 0 -15px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
@@ -5544,29 +5577,29 @@ body.story-of-the-week .recommended {
   border-color: #ededed;
   margin-bottom: 10px;
 }
-/* line 255, ../sass/app.scss */
+/* line 269, ../sass/app.scss */
 .stream-item-container .stream-item {
   width: 100%;
 }
-/* line 257, ../sass/app.scss */
+/* line 271, ../sass/app.scss */
 .stream-item-container .stream-item:not([class*="featured"]) {
   padding-top: 1em;
 }
-/* line 260, ../sass/app.scss */
+/* line 274, ../sass/app.scss */
 .stream-item-container .stream-item.featured {
   border-top: 3px solid #dae348;
 }
-/* line 262, ../sass/app.scss */
+/* line 276, ../sass/app.scss */
 .stream-item-container .stream-item.featured .item-header-container {
   padding-top: .75em;
 }
-/* line 266, ../sass/app.scss */
+/* line 280, ../sass/app.scss */
 .stream-item-container .stream-item .flag {
   margin: 0 -15px;
   font-family: "Futura Medium", "Gill Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5;
 }
-/* line 271, ../sass/app.scss */
+/* line 285, ../sass/app.scss */
 .stream-item-container .stream-item .flag .featured {
   width: 25%;
   left: 75%;
@@ -5575,7 +5608,7 @@ body.story-of-the-week .recommended {
   text-align: right;
 }
 @media only screen and (max-width: 767px) {
-  /* line 271, ../sass/app.scss */
+  /* line 285, ../sass/app.scss */
   .stream-item-container .stream-item .flag .featured {
     float: left;
     width: 50%;
@@ -5583,63 +5616,63 @@ body.story-of-the-week .recommended {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 271, ../sass/app.scss */
+  /* line 285, ../sass/app.scss */
   .stream-item-container .stream-item .flag .featured {
     left: 50%;
   }
 }
-/* line 284, ../sass/app.scss */
+/* line 298, ../sass/app.scss */
 .stream-item-container .stream-item .item-container {
   margin: 0 -15px;
 }
-/* line 285, ../sass/app.scss */
+/* line 299, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-header-container {
   width: 100%;
 }
-/* line 286, ../sass/app.scss */
+/* line 300, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-header-container .item-header {
   margin: 0 -15px;
 }
-/* line 287, ../sass/app.scss */
+/* line 301, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-header-container .item-header .item-type {
   width: 50%;
 }
-/* line 288, ../sass/app.scss */
+/* line 302, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-header-container .item-header .item-pub-date {
   width: 33.33333%;
   left: 16.66667%;
   text-align: right;
 }
-/* line 289, ../sass/app.scss */
+/* line 303, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-header-container .item-header .pub-meta {
   width: 100%;
 }
-/* line 292, ../sass/app.scss */
+/* line 306, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-header-container .item-type {
   text-transform: capitalize;
 }
-/* line 295, ../sass/app.scss */
+/* line 309, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-content-container {
   width: 100%;
   margin-bottom: .75em;
 }
-/* line 296, ../sass/app.scss */
+/* line 310, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-content {
   margin: 0 -15px;
 }
-/* line 300, ../sass/app.scss */
+/* line 314, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .commentary-container div[class$="-photo"] {
   width: 16.66667%;
 }
-/* line 303, ../sass/app.scss */
+/* line 317, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .commentary-container div[class$="-name"] {
   width: 50%;
 }
-/* line 307, ../sass/app.scss */
+/* line 321, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-source-container {
   width: 100%;
 }
-/* line 309, ../sass/app.scss */
+/* line 323, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-source-container .item-source {
   *zoom: 1;
   background-color: light(#e6e3de, 25);
@@ -5647,7 +5680,7 @@ body.story-of-the-week .recommended {
   padding-top: .5em;
   padding-bottom: .5em;
 }
-/* line 310, ../sass/app.scss */
+/* line 324, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-source-container .item-source .item-title, .stream-item-container .stream-item .item-container .item-source-container .item-source cite {
   font-size: 14px;
 }
@@ -5660,67 +5693,67 @@ body.story-of-the-week .recommended {
 .stream-item-container .stream-item .item-container .item-source-container .item-source:after {
   clear: both;
 }
-/* line 318, ../sass/app.scss */
+/* line 332, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-source-container figure[class$="-photo"] {
   width: 16.66667%;
 }
-/* line 321, ../sass/app.scss */
+/* line 335, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-source-container div[class$="-name"] {
   width: 50%;
 }
-/* line 325, ../sass/app.scss */
+/* line 339, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .commentary-container {
   width: 100%;
 }
-/* line 326, ../sass/app.scss */
+/* line 340, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .item-title {
   font-size: 17px;
 }
-/* line 327, ../sass/app.scss */
+/* line 341, ../sass/app.scss */
 .stream-item-container .stream-item .item-container .source-title {
   font-size: 14px;
 }
-/* line 329, ../sass/app.scss */
+/* line 343, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer {
   margin: 0 -15px;
   margin-top: .5em;
   margin-bottom: 2em;
 }
-/* line 333, ../sass/app.scss */
+/* line 347, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .portal-meta {
   width: 33.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 333, ../sass/app.scss */
+  /* line 347, ../sass/app.scss */
   .stream-item-container .stream-item .item-footer .portal-meta {
     float: left;
     width: 50%;
     padding: 0 15px;
   }
 }
-/* line 336, ../sass/app.scss */
+/* line 350, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .portal-meta .rating {
   background: #e6e3de;
   border-radius: 10px;
   box-shadow: 0 1px 1px white;
   text-align: center;
 }
-/* line 341, ../sass/app.scss */
+/* line 355, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .portal-meta .rating dt, .stream-item-container .stream-item .item-footer .portal-meta .rating dd {
   display: inline-block;
   line-height: 1.5;
 }
-/* line 345, ../sass/app.scss */
+/* line 359, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .portal-meta .rating .value {
   font-weight: bold;
 }
-/* line 348, ../sass/app.scss */
+/* line 362, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .item-actions {
   width: 33.33333%;
   left: 33.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 348, ../sass/app.scss */
+  /* line 362, ../sass/app.scss */
   .stream-item-container .stream-item .item-footer .item-actions {
     float: left;
     width: 50%;
@@ -5728,17 +5761,17 @@ body.story-of-the-week .recommended {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 348, ../sass/app.scss */
+  /* line 362, ../sass/app.scss */
   .stream-item-container .stream-item .item-footer .item-actions {
     left: 0%;
   }
 }
-/* line 353, ../sass/app.scss */
+/* line 367, ../sass/app.scss */
 .stream-item-container .stream-item .item-footer .item-actions .link-list {
   margin-bottom: 0;
 }
 
-/* line 360, ../sass/app.scss */
+/* line 374, ../sass/app.scss */
 .load-more {
   margin: 0 auto !important;
   width: 50%;
@@ -5746,116 +5779,117 @@ body.story-of-the-week .recommended {
 }
 
 /* !Explore */
-/* line 367, ../sass/app.scss */
+/* line 381, ../sass/app.scss */
 body.explore .explore-feature .feature-item {
   background: #f0efec;
 }
-/* line 368, ../sass/app.scss */
+/* line 382, ../sass/app.scss */
 body.explore .explore-feature {
   background: url(loading.gif) center center #f4f4f4;
   height: 300px;
 }
-/* line 369, ../sass/app.scss */
+/* line 383, ../sass/app.scss */
 body.explore .explore-feature img {
   display: none;
 }
-/* line 371, ../sass/app.scss */
+/* line 385, ../sass/app.scss */
 body.explore .explore-feature.orbit {
   background: none;
 }
-/* line 372, ../sass/app.scss */
+/* line 386, ../sass/app.scss */
 body.explore .explore-feature.orbit img {
   display: block;
 }
-/* line 374, ../sass/app.scss */
+/* line 388, ../sass/app.scss */
 body.explore .explore-feature.orbit section {
   padding: 10px;
 }
-/* line 375, ../sass/app.scss */
+/* line 389, ../sass/app.scss */
 body.explore .explore-feature.orbit article {
   padding: 10px;
 }
-/* line 378, ../sass/app.scss */
+/* line 392, ../sass/app.scss */
 body.explore .explore-sections {
   width: 100%;
 }
-/* line 380, ../sass/app.scss */
+/* line 394, ../sass/app.scss */
 body.explore .explore-sections section {
   margin: 0 -15px;
   background: #fcfcfa;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
 }
-/* line 387, ../sass/app.scss */
+/* line 401, ../sass/app.scss */
 body.explore .section-widget {
   width: 100%;
 }
-/* line 389, ../sass/app.scss */
+/* line 403, ../sass/app.scss */
 body.explore .section-widget li {
   list-style: none;
 }
-/* line 390, ../sass/app.scss */
+/* line 404, ../sass/app.scss */
 body.explore .section-widget .meta.title {
   font-weight: bold;
 }
-/* line 393, ../sass/app.scss */
+/* line 407, ../sass/app.scss */
 body.explore .section-widget .section-header {
   width: 33.33333%;
 }
-/* line 396, ../sass/app.scss */
+/* line 410, ../sass/app.scss */
 body.explore .section-widget .section-content {
   width: 66.66667%;
 }
-/* line 398, ../sass/app.scss */
+/* line 412, ../sass/app.scss */
 body.explore .section-widget .section-content ul {
   margin-top: 2em;
 }
-/* line 399, ../sass/app.scss */
+/* line 413, ../sass/app.scss */
 body.explore .section-widget .section-content .entry {
   border-bottom: 1px solid #d0d0d0;
 }
-/* line 401, ../sass/app.scss */
+/* line 415, ../sass/app.scss */
 body.explore .section-widget .section-content .entry p {
   margin-bottom: .5em;
 }
-/* line 402, ../sass/app.scss */
+/* line 416, ../sass/app.scss */
 body.explore .section-widget .section-content .entry .meta.title {
   margin-bottom: .25em;
 }
 
 /* !COMPONENTS */
-/* line 409, ../sass/app.scss */
+/* line 427, ../sass/app.scss */
 .component {
   margin: 0 -15px;
 }
 
-/* line 416, ../sass/app.scss */
+/* line 434, ../sass/app.scss */
 .side-nav li.active {
   pointer-events: none;
   cursor: default;
 }
-/* line 421, ../sass/app.scss */
+/* line 439, ../sass/app.scss */
 .side-nav li a:hover {
   background: #ededed;
 }
 
-/* line 428, ../sass/app.scss */
+/* line 446, ../sass/app.scss */
 .recommended ul {
   list-style: none;
 }
-/* line 431, ../sass/app.scss */
+/* line 449, ../sass/app.scss */
 .recommended article {
   background: transparent;
 }
-/* line 434, ../sass/app.scss */
+/* line 452, ../sass/app.scss */
 .recommended p {
   border-top: 1px dotted #d0d0d0;
   font-size: 14px -1;
   margin-bottom: .25em;
 }
 
+/* !WIDGETS */
 /* !AD Slots */
-/* line 446, ../sass/app.scss */
+/* line 465, ../sass/app.scss */
 .footnotes a {
   word-break: break-all;
   word-break: break-word;
@@ -5863,12 +5897,12 @@ body.explore .section-widget .section-content .entry .meta.title {
 }
 
 /* !Utilities */
-/* line 453, ../sass/app.scss */
+/* line 472, ../sass/app.scss */
 body.logged-out .user-console {
   display: none;
 }
 
-/* line 457, ../sass/app.scss */
+/* line 476, ../sass/app.scss */
 body.logged-in .cta.register {
   display: none;
 }

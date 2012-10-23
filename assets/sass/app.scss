@@ -100,27 +100,14 @@ body{
 	background: lighten($bodyBackground, 5);
 }
 
-.container{
-	//@include outerRow();
-	//min-width:320px !important;
-}
+.container{}
 
 .page-content{
-	//@include outerRow();
-	//padding-top:$navBarHeight;
 	padding-bottom:$navBarHeight*2;
 }
 
 /* !main-nav */
-.top-bar{
-	//background-color: #5f5f61;
-	//background-color: transparent;
-	//border-top:5px solid darken($blue, 30);
-	//@include filter-gradient(#5f5f61, #020202, vertical);
-	//@include background-image(linear-gradient(top, #5f5f61 0%,#020202 100%));
-	//width: 100%;
-	//.nav-bar{margin-top:-1px;}
-}
+.top-bar{}
 
 .page-header{
 	@include clearfix();
@@ -129,6 +116,20 @@ body{
 	z-index: 500;
 
 }
+.page-footer{
+//	@include clearfix();
+	@include outerRow();
+
+}
+.footer-section-container{
+	@include column(12);
+	.footer-section{
+		@include innerRow();
+		.widget.els-branding{@include column(4);}
+		.widget.els-description{@include column(8);}
+	}
+}
+
 .page-header-fixed{
 	position: fixed;
 	top: 0;
@@ -144,11 +145,9 @@ body{
 	}
 }
 .nav-bar{
-	background: inherit;
 }
 
 @media all and (max-width: $screenSmall){
-	.page-header{position: static;}
 }
 
 /* !dashboard */
@@ -164,8 +163,23 @@ article{
 	background: $itemBackground;
 }
 
-.ad{
+.ad-container{
 	text-align: center;
+	.ad-title{
+		text-align:left;
+		.ad-title-text{
+			text-transform:uppercase;
+		}
+	}
+	.ad-content{
+		background:transparent;
+		display:block;
+		overflow:hidden;
+		object{
+			display:block;
+			height:auto;
+		}
+	}
 }
 
 #sidebar{
@@ -405,6 +419,10 @@ body.explore{
 	}
 }
 
+.footer-container{
+
+}
+
 /* !COMPONENTS */
 .component{@include innerRow();}
 .component.user-console{
@@ -437,6 +455,7 @@ body.explore{
 		margin-bottom:.25em;
 	}
 }
+/* !WIDGETS */
 
 /* !AD Slots */
 #page-leaderboard{

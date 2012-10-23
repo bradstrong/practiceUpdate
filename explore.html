@@ -39,10 +39,8 @@
 			</div><!--/.ad-->
 		</div><!--/.row-->
 		</div><!--/#page-leaderboard-->
-		<div class="container top-bar">
-		</div><!--/.container.top-bar-->
-
-	<div>
+		<div class="page-header">
+		</div><!--/.page-header-->
 	<div class="page-content">
 		<div class="row">
 			<div class="show-for-small">
@@ -138,8 +136,8 @@
 			</div><!--/.explore-sections-->
 		</div><!--/.explore-container-->
 				<div class="recommended">
-				<div class="recent">
-				</div><!--/.recent-->
+				<div class="widget recent">
+				</div><!--/.widget recent-->
 				<div class="ad">
 					<img src="http://placehold.it/300x250" align="ad" title="ad" />
 				</div>
@@ -153,19 +151,17 @@
 			</div><!--/.panel.cta.register-->
 			<div class="component user-console">
 			</div><!--/.component.user-console-->
-								<hr />
-
 			<div class="component user-specialties">
 			</div><!--/.component.user-specialties-->
 			<div class="component topic-spotlight">
 			</div><!--/.component.topic-spotlight-->
-			<div class="panel">
-				<img src="http://placehold.it/200x200" /><p><!-- Meet Our Experts --> Meet our Advisory and Editorial Boards comprised of physician editors and world-renowned experts.<p>
-			</div>
+			<div class="cta meet-experts">
+			</div><!--/.cta/meet-experts-->
 		</div><!--/.sidebar-->
 	</section><!--/.[role="complimentary"]-->
 	</div><!--/.page-content-->
-</div><!--/.container-->
+	<footer class="page-footer">
+	</footer><!-- /.page-footer -->
 
 	<!-- Included JS Files (Uncompressed) -->
   <script src="assets/js/foundation/jquery.js"></script>
@@ -176,6 +172,7 @@
 	<script src="assets/js/foundation/jquery.foundation.forms.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.navigation.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>	
 	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
@@ -261,6 +258,27 @@
 	    $('.topic-spotlight').html(html);
 		});
 	});	
+
+			<!-- Mustache - homepage ad template -->
+		$.get('assets/mustache/ad.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template);
+	    $('.ad').html(html);
+		});
+
+	<!-- Mustache - homepage footer template -->
+	$.get('assets/mustache/page-footer.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template);
+	    $('.page-footer').html(html);
+		});
+
+	<!-- Mustache - homepage meet-experts -->
+	$.get('assets/mustache/cta-meet-experts.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template);
+	    $('.cta.meet-experts').html(html);
+		});
 
 	</script>
 
