@@ -3,7 +3,7 @@
     $.get('assets/mustache/top-bar.mustache', function(template) {
       //alert('Load was performed.');
       var html = Mustache.to_html(template, data);
-      $('.page-header').html(html);
+      $('.explore .page-header').html(html);
       //Disable "Learn" during beta phase -- Remove once Learn/CME goes live
       $('.top-bar a.learn').attr('data-reveal-id', 'modal-feature-disabled');
     });
@@ -17,16 +17,6 @@ $.get('assets/mustache/main-search.mustache', function(template) {
     
 $('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
 //   console.log("explore slider initialized");
-
-/*-- User-status --*/
-// $('a[href="#action-register"]').click(function(){
-//   $('body').removeClass('logged-out').addClass('logged-in');
-// });
-// $('a[href="#action-sign-out"]').click(function(){
-//   $('body').removeClass('logged-in').addClass('logged-out');
-// });
-$('body').removeClass('logged-out').addClass('logged-in');
-
 /*-- Modals --*/
 //Import Modals
 $.get('assets/mustache/modals.mustache', function(template) {
@@ -34,7 +24,12 @@ $.get('assets/mustache/modals.mustache', function(template) {
   $('body').append(html);
 });
 
-/* ----- foundation.min.js --*/
+
+/*--
+//
+//Begin Original Foundation Scripts
+//
+ --*/
 ;(function ($, window, undefined) {
   'use strict';
 
@@ -51,6 +46,8 @@ $.get('assets/mustache/modals.mustache', function(template) {
     $.fn.foundationMediaQueryViewer ? $doc.foundationMediaQueryViewer() : null;
     $.fn.foundationTabs             ? $doc.foundationTabs({callback : $.foundation.customForms.appendCustomMarkup}) : null;
     $.fn.foundationTooltips         ? $doc.foundationTooltips() : null;
+    $.fn.foundationMagellan         ? $doc.foundationMagellan() : null;
+    $.fn.foundationClearing         ? $doc.foundationClearing() : null;
 
     $('input, textarea').placeholder();
   });

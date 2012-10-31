@@ -1,10 +1,73 @@
-@import "foundation/common/ratios";
+// ----------------------------------------
+// Custom PracticeUpdate Variables & Mixins
+
+/* !variables */
+
+// Colors
+$grey: #ededed;
+$blue:#00aeff;
+$green:#dae348;
+$bodyBackground: #fff;
+$itemBackground: #fcfcfa;
+
+$juneoblue: #43A1DA;
+
+// PRIMARY
+$pri-blue:rgb(0,45,86); // pantone 298
+$pri-green:rgb(193,205,35); // pantone 390
+$pri-tan:rgb(136,126,111); // pantone 404
+
+//SECONDARY
+$sec-orange:rgb(250,166,52); // pantone 1375
+$sec-green:rgb(214,224,61); // pantone 381
+$sec-purple:rgb(154,78,158); // pantone 513
+$sec-blue:rgb(0,132,169); // pantone 314
+$sec-red:rgb(181,9,56); // pantone 7427
+
+//TERTIARY
+$ter-ltTan:rgb(233,227,220); // pantone WG2
+$ter-dkTan:rgb(201,193,184); // pantone WG4
+$ter-ltBlue:rgb(136,203,223); // pantone 7458
+$ter-dkBlue:rgb(0,85,150); // pantone 391
+$ter-green:rgb(163,165,16); // pantone 294
+
+//Additional
+
+//Gradients
+//Top-Nav
+$topnav-lt: #c1cd24;
+$topnav-dk: #798725;
+
+//blue1: #003045;
+//blue2: #0d4862;
+
+/* !mixins */
+
+@mixin elementBoxShadow {
+	box-shadow: 0px 2px 2px rgba(0,0,0,.2);
+}
+
+@mixin noise($color:#fff, $intensity: 0.02, $color2:"false") {
+	background: $color;
+	$color: transparentize($color, $intensity);
+	@if $color2 == "false" {
+	        $color2: $color;
+	} @else {
+	        $color2: transparentize($color2, $intensity);
+	}
+	@include background(linear-gradient(top, $color, $color2), inline-image("../img/noise.jpg"));
+}       
+
+// ----------------------------------------
+// Original Foundation Settings
+
+//@import "foundation/common/ratios";
 
 // Settings file containing Foundation defaults
 
 // Grid Settings
 
-// $rowWidth: 1000px;
+$rowWidth: 100%;
 // $columnGutter: 30px;
 // $totalColumns: 12;
 // $mobileTotalColumns: 4;
@@ -12,11 +75,11 @@
 
 // Colors Settings
 
-// $mainColor: #2ba6cb;
+ $mainColor: $sec-blue;
 // $secondaryColor: #e9e9e9;
 // $alertColor: #c60f13;
 // $successColor: #5da423;
-// $txtColor: #222;
+ $txtColor: $pri-tan;
 // $highlightColor: #ffff99;
 // $black: #000;
 // $white: #fff;
@@ -94,22 +157,22 @@
 
 // Top Bar Settings
 
-// $topBarBgColor: #222;
-// $topBarHeight: 45px;
+ $topBarBgColor: $bodyBackground;
+ $topBarHeight: 60px;
 // $topBarHeightMobile: 45px;
-// $topBarBtmMargin: 30px;
+$topBarBtmMargin: 0px;
 // $topBarTitleWeight: bold;
 // $topBarTitleSize: 17px;
-// $topBarLinkColor: #fff;
+$topBarLinkColor: $pri-blue;
 // $topBarLinkWeight: bold;
 // $topBarLinkSize: 13px;
-// $topBarDropBgColor: #222;
-// $topBarDropLinkColor: #fff;
+$topBarDropBgColor: #fff;
+$topBarDropLinkColor: $pri-blue;
 // $topBarDropToggleSize: 5px;
-// $topBarDropToggleColor: #fff;
-// $topBarDropToggleAlpha: 0.5;
+$topBarDropToggleColor: $pri-blue;
+$topBarDropToggleAlpha: 1;
 // $topBarSearchWidth: 200px;
-// $topBarBreakPoint: 940px; // Change to 9999px for always mobile layout
+$topBarBreakPoint: 768px; // Change to 9999px for always mobile layout
 // $topBarNavToggleSize: 8px;
 
 // UI Settings
@@ -240,3 +303,9 @@
 // Produced the following list of values: 14, 17, 23, 27, 37, 44, 59, 71, 95, 115;
 // http://www.modularscale.com by Tim Brown
 // https://github.com/scottkellum/modular-scale by scottkellum
+
+// ----------------------------------------
+// Off Canvas Width Settings
+
+ $mainWidth: 80%;
+ $complementaryWidth: 20%;

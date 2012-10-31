@@ -7,9 +7,12 @@
 				<ul>
 	{{#items}}
 					<li class="entry">
+					<article>
+					{{#featured}}<div class="flag"><span class="featured"><i class="icon-bolt"></i> featured</span></div>{{/featured}}
 							<p class="meta title"><a href="#">{{title}}</a></p>
 							<p class="meta author">{{#source}}{{source.name.firstName}} {{source.name.lastName}}{{/source}}</p>
 							{{> _articles}}
+					</article>		
 					</li>
 	{{/items}}
 				</ul>
