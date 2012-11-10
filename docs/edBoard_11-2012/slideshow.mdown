@@ -1,0 +1,117 @@
+PracticeUpdate
+==============
+
+---
+
+###You asked, We delivered!
+
+- **Mobile Accessible** (Access anywhere, anytime, on any device)
+- **Personalization** (Custom view based on specialty and specific preferences)
+- **Rapid improvement schedule** (Ability to more quickly add additional information and improve site features)
+
+---
+
+### What is Coming Next?
+
+- **Ed Board Site Suggestion Process** (Working on a process to better collect reoccurring Ed Board feedback on non-editorial topics)
+- **Development Site Launched** (Ed Board can continue to use as a preview of changes that are in development)
+- **Transparent Priority List** (Will show priority of Product ToDo’s, In Process Fixes, and Future Changes)
+
+---
+
+### Why change is necessary: <!-- CHANGE IF YOU WANT-was trying to convey why imp decisions were made -->
+
+- **PracticeUpdate as a Clean Slate** (Created from the ground up, as a common foundation to build on in the future)
+- **Focus Shifted from Practice to Physician** (New site is physician focused and customizable for a truly unique user experience<!-- – CHANGE IF YOU WANT -->
+- **Flexible Content** (More flexible content creation for staff and more flexible content consumption for end users)
+- **Consistency in Naming** (Site & some features to more appropriately capture the speed in which users will be receiving relevant, updated content, globally)
+
+---
+
+# We Need your Feedback!
+
+___
+
+##Topic: Story of the Week
+
+---
+
+### Issues
+
+- Name ties us to a weekly timeframe
+- Multiple specialties chosen, would result in multiple “Stories of the Week”
+
+### Criteria for Change
+
+<!-- ???? WHAT HERE? -->
+- Feature bar and presence in slide show
+
+### Feedback Needed
+
+- Our current suggestion is **Featured Item**
+
+---
+
+## Topic: Practice Relevance
+
+---
+
+###Issues
+
+- Need to properly convey relevance of articles to end users so they can easily identify articles with highest relevance
+<!-- ??? ANYTHING ELSE? -->
+
+### Criteria for Change
+<!-- ???? WHAT FIRST? -->
+- Feature bar and presence in slide show
+
+### Feedback Needed
+
+- Our current suggestion is <!-- ??? – DO WE HAVE A CURRENT SUGGESTION TO START THEM WITH? -->
+- Should we rate news articles in the future?
+- Should we rate expert opinion articles in the future?
+
+---
+
+## Topic: Infoblast
+
+---
+
+### Issues
+
+- Should be our best performer, but currently doesn’t get many user hits
+- Surveys tell us that Users don't understand what Infoblast is, based on the current name
+
+### Criteria for Change
+- "Stream" page in new design is based on this concept
+- Surveys tell us that when users learn what it is, they are more likely to read it so name needs to be more intuitive
+
+*cont'd*
+
+---
+
+### Feedback Needed
+- Would like to add a "week in review {name undecided}" to the top of the Infoblast, allowing the Editor in Chief to - explain the week's events and choices
+- Rename infoblast to **OncologyUpdate** is our suggestion
+
+---
+
+## Topic: Newsletter
+
+---
+
+### Issues
+- provide users more control over what they receive and how often <!-- WASN’T SURE HOW TO FIT THIS INTO THE ABOVE FORMAT-didn’t know what feedback u needed -->
+
+---
+
+## Current Beta Site
+
+---
+
+### Questions
+
+- How we will be collecting feedback
+- Who will be invited
+- Preview of the invitation
+- What's missing?
