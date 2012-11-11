@@ -1,29 +1,38 @@
-/*-- Mustache - Top-bar --*/
-  $.getJSON('content/json/top-bar.json', function(data) {
-    $.get('assets/mustache/top-bar.mustache', function(template) {
-      //alert('Load was performed.');
-      var html = Mustache.to_html(template, data);
-      $('.explore .page-header').html(html);
-      //Disable "Learn" during beta phase -- Remove once Learn/CME goes live
-      $('.top-bar a.learn').attr('data-reveal-id', 'modal-feature-disabled');
+/*--
+//
+//PracticeUpdate Scripts
+//
+ --*/
+;(function () {
+  /*-- Mustache - Top-bar --*/
+    $.getJSON('content/json/top-bar.json', function(data) {
+      $.get('assets/mustache/top-bar.mustache', function(template) {
+        //alert('Load was performed.');
+        var html = Mustache.to_html(template, data);
+        $('.explore .page-header').html(html);
+        //Disable "Learn" during beta phase -- Remove once Learn/CME goes live
+        $('.top-bar a.learn').attr('data-reveal-id', 'modal-feature-disabled');
+      });
     });
+
+  /*-- Mustache - Main Search Panel --*/
+  $.get('assets/mustache/main-search.mustache', function(template) {
+    var html = Mustache.to_html(template);
+    $('.main-search').html(html);
+  });
+      
+  $('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
+  //   console.log("explore slider initialized");
+  /*-- Modals --*/
+  //Import Modals
+  $.get('assets/mustache/modals.mustache', function(template) {
+    var html = Mustache.to_html(template);
+    $('body').append(html);
   });
 
-/*-- Mustache - Main Search Panel --*/
-$.get('assets/mustache/main-search.mustache', function(template) {
-  var html = Mustache.to_html(template);
-  $('.main-search').html(html);
-});
-    
-$('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
-//   console.log("explore slider initialized");
-/*-- Modals --*/
-//Import Modals
-$.get('assets/mustache/modals.mustache', function(template) {
-  var html = Mustache.to_html(template);
-  $('body').append(html);
-});
 
+
+})(jQuery, this);
 
 /*--
 //
