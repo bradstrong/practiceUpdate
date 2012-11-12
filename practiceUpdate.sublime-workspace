@@ -4,8 +4,68 @@
 		"selected_items":
 		[
 			[
+				"border",
+				"border-top"
+			],
+			[
+				"clea",
+				"clear	clearfix"
+			],
+			[
+				"mobil",
+				"mobilePush"
+			],
+			[
 				"font",
 				"font-size"
+			],
+			[
+				"mobi",
+				"mobileColumn"
+			],
+			[
+				"mob",
+				"mobileColumn"
+			],
+			[
+				"ro",
+				"innerRow"
+			],
+			[
+				"topba",
+				"topBarLinkColor"
+			],
+			[
+				"topnav",
+				"topBarNavToggleColor"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"ter",
+				"ter-ltTan"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"modl",
+				"modal-feature-disabled"
+			],
+			[
+				"side",
+				"side-nav"
+			],
+			[
+				"md",
+				"modular-scale"
 			],
 			[
 				"nav",
@@ -24,16 +84,8 @@
 				"page-footer"
 			],
 			[
-				"ter",
-				"ter-dkTan"
-			],
-			[
 				"u",
 				"uppercase"
-			],
-			[
-				"te",
-				"text-transform"
 			],
 			[
 				"pri-",
@@ -58,14 +110,6 @@
 			[
 				"pri",
 				"pri-blue"
-			],
-			[
-				"text",
-				"text-transform"
-			],
-			[
-				"border",
-				"border-bottom"
 			],
 			[
 				"add",
@@ -111,21 +155,21 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
-			"settings":
-			{
-				"buffer_size": 2735,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 47.0,
 		"selected_items":
 		[
+			[
+				"sho",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"show",
+				"Show TODOs: Project and open files"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -143,7 +187,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 467.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -160,17 +204,31 @@
 	},
 	"file_history":
 	[
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/section.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceUpdate/dermatology.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
+		"/Users/brad/Sites/pn-foundation/practiceUpdate/oncology.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/news-item.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/page-footer.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+		"/Users/brad/Sites/pn-foundation/practiceUpdate/cardiology.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_news.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_research.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_expert-opinion.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_review.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/feed.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/learn.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.js",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/register.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/section.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/experts.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.offcanvas.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/topic-spotlight.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/foundation-overrides.scss",
@@ -185,18 +243,12 @@
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/page-footer.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/experts.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/news-item.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_news.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/img/users/oncologyStat.png",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/ad.json",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/ad.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/plugins.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/recent.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/feed.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/recent.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_expert-opinion.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.topbar.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/plugins-ck.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/modernizr.foundation-ck.js",
@@ -217,7 +269,6 @@
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/top-bar.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/explore_articles.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/resource-center.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_review.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/main-search.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/_articles.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/newsletter-daily.html",
@@ -253,9 +304,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -263,6 +315,74 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"recommend",
+			"!color",
+			".page-footer",
+			"extend",
+			"els-branding",
+			"header",
+			".flag",
+			"item-header",
+			"article",
+			".flag",
+			"article",
+			"title",
+			"journal",
+			"footer",
+			"noise",
+			"main",
+			"//padding",
+			"mobilerow",
+			"top-bar",
+			"off-canvas-control",
+			"sidebar",
+			"sidebar-button",
+			":not",
+			"//.active",
+			".hover",
+			"tint($topBarLinkColor, 85%)",
+			"linear",
+			"dropli",
+			"background",
+			"maincolor",
+			"main",
+			":hover",
+			"grad",
+			"opBarDropToggleColor",
+			"$topBarNavToggleColor",
+			"toggle-topbar",
+			"explore",
+			"page-footer",
+			"container",
+			"single-item",
+			"collapse",
+			"main",
+			"copy",
+			".name",
+			".site-branding",
+			"explore",
+			".nav-header",
+			".right",
+			"has-tip",
+			".nav-header",
+			":before",
+			".has-tip",
+			":before",
+			"line",
+			"height",
+			"right",
+			"ul",
+			".active",
+			"nav-header",
+			"side-nav",
+			"typogr",
+			"side-nav",
+			".side-nav",
+			"item-type",
+			"rating",
+			"practice",
+			"relev",
+			"noise",
 			"site-branding",
 			"e9e9e9",
 			".recommended",
@@ -322,75 +442,7 @@
 			"img",
 			"top-bar",
 			"page-content",
-			"nav",
-			"#sidebar",
-			"recommended",
-			"side",
-			"complimentary",
-			"#sidebar",
-			"sidebar",
-			"item-content",
-			"item-content-section",
-			"commentary",
-			"take",
-			"nav-bar",
-			"mainNav",
-			"item-footer",
-			"border",
-			"clear",
-			"clear-fix",
-			"item-source",
-			"item-content-container",
-			"commentary-container",
-			"source-container",
-			"citation",
-			"-name",
-			"journal",
-			"\"photo\"",
-			"item-footer",
-			"source",
-			"\"story-of-the-week\"",
-			"border",
-			"section-cont",
-			"recommended",
-			"meta",
-			"item-pub-date",
-			"pub-meta",
-			"rating",
-			"box-shadow",
-			"flag",
-			"story-of-the-week",
-			"console",
-			"user console",
-			"round",
-			"stream-container",
-			"row",
-			"outer",
-			"page",
-			"search",
-			"outer",
-			"clear",
-			"body",
-			"outer",
-			"media",
-			"page-content",
-			"page-header",
-			"outerRow",
-			"explore-container",
-			"section",
-			"stream-item-container",
-			"main",
-			"ad",
-			".ad",
-			"header",
-			"page-header",
-			"pad",
-			"padding",
-			"user-s",
-			"article",
-			"scher",
-			"stream-item",
-			"background"
+			"nav"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -411,37 +463,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
-					"settings":
-					{
-						"buffer_size": 2735,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								261,
-								261
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 2.0,
-						"translation.y": 524.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -486,6 +509,50 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"app.j",
+				"assets/js/foundation/app.js"
+			],
+			[
+				"news",
+				"news-item.html"
+			],
+			[
+				"story",
+				"story-of-the-week.html"
+			],
+			[
+				"explo",
+				"explore.html"
+			],
+			[
+				"upd",
+				"update.html"
+			],
+			[
+				"exp",
+				"explore.html"
+			],
+			[
+				"update",
+				"update.html"
+			],
+			[
+				"app.scss",
+				"assets/sass/app.scss"
+			],
+			[
+				"stor",
+				"story-of-the-week.html"
+			],
+			[
+				"learn.",
+				"learn.html"
+			],
+			[
+				"app.",
+				"assets/sass/app.scss"
+			],
 			[
 				"overr",
 				"assets/sass/foundation-overrides.scss"
