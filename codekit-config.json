@@ -46,15 +46,15 @@
       "initialSize" : 1599,
       "fileType" : 8192
     },
-    "\/assets\/img\/fairhead-icons\/fc-webicon-linkedin-s.png" : {
+    "\/assets\/img\/orbit\/right-arrow.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-linkedin-s.png",
+      "inputAbbreviatedPath" : "\/assets\/img\/orbit\/right-arrow.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-linkedin-s.png",
-      "initialSize" : 1664,
+      "outputAbbreviatedPath" : "\/assets\/img\/orbit\/right-arrow.png",
+      "initialSize" : 519,
       "fileType" : 8192
     },
     "\/assets\/img\/misc\/input-bg.png" : {
@@ -79,17 +79,6 @@
       "initialSize" : 213,
       "fileType" : 8192
     },
-    "\/assets\/img\/orbit\/right-arrow.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/orbit\/right-arrow.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/orbit\/right-arrow.png",
-      "initialSize" : 519,
-      "fileType" : 8192
-    },
     "\/assets\/img\/fairhead-icons\/fc-webicon-icloud-s.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -99,6 +88,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-icloud-s.png",
       "initialSize" : 1588,
+      "fileType" : 8192
+    },
+    "\/assets\/img\/fairhead-icons\/fc-webicon-linkedin-s.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-linkedin-s.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-linkedin-s.png",
+      "initialSize" : 1664,
       "fileType" : 8192
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-mail-s.png" : {
@@ -134,12 +134,12 @@
       "initialSize" : 1812,
       "fileType" : 8192
     },
-    "\/Untitled.html" : {
+    "\/index.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/Untitled.html",
+      "inputAbbreviatedPath" : "\/index.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -163,23 +163,25 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/assets\/css\/foundation-overrides.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/css\/foundation-overrides.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/index.php" : {
+    "\/Untitled.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.php",
+      "inputAbbreviatedPath" : "\/Untitled.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/assets\/img\/fairhead-icons\/fc-webicon-twitter-s.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-twitter-s.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-twitter-s.png",
+      "initialSize" : 1628,
+      "fileType" : 8192
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-msn-s.png" : {
       "ignoreWasSetByUser" : 0,
@@ -192,16 +194,14 @@
       "initialSize" : 1741,
       "fileType" : 8192
     },
-    "\/assets\/img\/fairhead-icons\/fc-webicon-twitter-s.png" : {
+    "\/assets\/css\/foundation-overrides.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-twitter-s.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-twitter-s.png",
-      "initialSize" : 1628,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/assets\/css\/foundation-overrides.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/cardiology.html" : {
       "ignoreWasSetByUser" : 0,
@@ -398,6 +398,15 @@
       "initialSize" : 2341,
       "fileType" : 8192
     },
+    "\/offcanvas-2.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/offcanvas-2.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/assets\/img\/orbit\/pause-black.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -408,15 +417,6 @@
       "outputAbbreviatedPath" : "\/assets\/img\/orbit\/pause-black.png",
       "initialSize" : 288,
       "fileType" : 8192
-    },
-    "\/offcanvas-2.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/offcanvas-2.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/docs\/edBoard_11-2012\/slideshow.html" : {
       "ignoreWasSetByUser" : 0,
@@ -577,6 +577,15 @@
       "initialSize" : 1800,
       "fileType" : 8192
     },
+    "\/assets\/css\/offcanvas.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/css\/offcanvas.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/assets\/img\/foundation\/orbit\/left-arrow.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -587,15 +596,6 @@
       "outputAbbreviatedPath" : "\/assets\/img\/foundation\/orbit\/left-arrow.png",
       "initialSize" : 522,
       "fileType" : 8192
-    },
-    "\/assets\/css\/offcanvas.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/css\/offcanvas.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-behance.png" : {
       "ignoreWasSetByUser" : 0,
@@ -652,17 +652,6 @@
       "initialSize" : 2254,
       "fileType" : 8192
     },
-    "\/assets\/img\/foundation\/orbit\/bullets.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/foundation\/orbit\/bullets.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/foundation\/orbit\/bullets.jpg",
-      "initialSize" : 657,
-      "fileType" : 4096
-    },
     "\/content\/img\/oncologyStat_logo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -674,16 +663,25 @@
       "initialSize" : 5324,
       "fileType" : 8192
     },
-    "\/assets\/img\/fairhead-icons\/fc-webicon-rdio-m.png" : {
+    "\/news-item.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-rdio-m.png",
+      "inputAbbreviatedPath" : "\/news-item.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/assets\/img\/foundation\/orbit\/bullets.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/img\/foundation\/orbit\/bullets.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-rdio-m.png",
-      "initialSize" : 2098,
-      "fileType" : 8192
+      "outputAbbreviatedPath" : "\/assets\/img\/foundation\/orbit\/bullets.jpg",
+      "initialSize" : 657,
+      "fileType" : 4096
     },
     "\/update.html" : {
       "ignoreWasSetByUser" : 0,
@@ -694,14 +692,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/news-item.html" : {
+    "\/assets\/img\/fairhead-icons\/fc-webicon-rdio-m.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/news-item.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-rdio-m.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-rdio-m.png",
+      "initialSize" : 2098,
+      "fileType" : 8192
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-skype-s.png" : {
       "ignoreWasSetByUser" : 0,
@@ -779,15 +779,15 @@
       "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.tabs-ck.js",
       "fileType" : 64
     },
-    "\/assets\/img\/fairhead-icons\/fc-webicon-evernote.png" : {
+    "\/assets\/img\/orbit\/timer-black.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-evernote.png",
+      "inputAbbreviatedPath" : "\/assets\/img\/orbit\/timer-black.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-evernote.png",
-      "initialSize" : 1426,
+      "outputAbbreviatedPath" : "\/assets\/img\/orbit\/timer-black.png",
+      "initialSize" : 526,
       "fileType" : 8192
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-skitch-s.png" : {
@@ -801,15 +801,15 @@
       "initialSize" : 1783,
       "fileType" : 8192
     },
-    "\/assets\/img\/orbit\/timer-black.png" : {
+    "\/assets\/img\/fairhead-icons\/fc-webicon-facebook.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/orbit\/timer-black.png",
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-facebook.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/orbit\/timer-black.png",
-      "initialSize" : 526,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-facebook.png",
+      "initialSize" : 712,
       "fileType" : 8192
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-skype-m.png" : {
@@ -834,15 +834,15 @@
       "initialSize" : 1255,
       "fileType" : 8192
     },
-    "\/assets\/img\/fairhead-icons\/fc-webicon-facebook.png" : {
+    "\/assets\/img\/fairhead-icons\/fc-webicon-evernote.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-facebook.png",
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-evernote.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-facebook.png",
-      "initialSize" : 712,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-evernote.png",
+      "initialSize" : 1426,
       "fileType" : 8192
     },
     "\/offcanvas-1.html" : {
@@ -995,17 +995,6 @@
       "initialSize" : 1860,
       "fileType" : 8192
     },
-    "\/docs\/edBoard_11-2012\/images\/google-logo-small.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/images\/google-logo-small.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/images\/google-logo-small.png",
-      "initialSize" : 8466,
-      "fileType" : 8192
-    },
     "\/assets\/js\/foundation\/jquery.foundation.accordion.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1016,6 +1005,17 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.accordion-ck.js",
       "fileType" : 64
+    },
+    "\/docs\/edBoard_11-2012\/images\/google-logo-small.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/images\/google-logo-small.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/images\/google-logo-small.png",
+      "initialSize" : 8466,
+      "fileType" : 8192
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-github-s.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1072,15 +1072,6 @@
       "outputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/js\/slides-ck.js",
       "fileType" : 64
     },
-    "\/update-offcanvas.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/update-offcanvas.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/assets\/img\/fairhead-icons\/fc-webicon-spotify-s.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1091,6 +1082,15 @@
       "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-spotify-s.png",
       "initialSize" : 1814,
       "fileType" : 8192
+    },
+    "\/update-offcanvas.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/update-offcanvas.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/assets\/js\/foundation\/jquery.foundation.tooltips.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1219,17 +1219,6 @@
       "outputAbbreviatedPath" : "\/assets\/js\/plugins-ck.js",
       "fileType" : 64
     },
-    "\/docs\/edBoard_11-2012\/images\/googleio-logo.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/images\/googleio-logo.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/images\/googleio-logo.png",
-      "initialSize" : 84742,
-      "fileType" : 8192
-    },
     "\/assets\/ico\/apple-touch-icon-114x114-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1239,6 +1228,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/assets\/ico\/apple-touch-icon-114x114-precomposed.png",
       "initialSize" : 1032,
+      "fileType" : 8192
+    },
+    "\/docs\/edBoard_11-2012\/images\/googleio-logo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/images\/googleio-logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/images\/googleio-logo.png",
+      "initialSize" : 84742,
       "fileType" : 8192
     },
     "\/content\/img\/elsevier_logo.png" : {
@@ -1305,6 +1305,15 @@
       "initialSize" : 913,
       "fileType" : 8192
     },
+    "\/poster-index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/poster-index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/assets\/js\/foundation\/jquery.foundation.alerts.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1315,15 +1324,6 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.alerts-ck.js",
       "fileType" : 64
-    },
-    "\/poster-index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/poster-index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/assets\/css\/foundation-icons-general.css" : {
       "ignoreWasSetByUser" : 0,
@@ -1699,17 +1699,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/assets\/img\/fairhead-icons\/fc-webicon-icloud.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-icloud.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-icloud.png",
-      "initialSize" : 1179,
-      "fileType" : 8192
-    },
     "\/content\/img\/poster\/PosterRoom_web.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1721,14 +1710,16 @@
       "initialSize" : 430238,
       "fileType" : 4096
     },
-    "\/oncology.html" : {
+    "\/assets\/img\/fairhead-icons\/fc-webicon-icloud.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/oncology.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-icloud.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-icloud.png",
+      "initialSize" : 1179,
+      "fileType" : 8192
     },
     "\/assets\/js\/foundation\/jquery.foundation.forms.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1741,6 +1732,15 @@
       "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.forms-ck.js",
       "fileType" : 64
     },
+    "\/oncology.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/oncology.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/assets\/css\/font-awesome.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1750,16 +1750,14 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/assets\/js\/foundation\/jquery.foundation.joyride.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/assets\/css\/fc-webicons.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.joyride.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.joyride-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/assets\/css\/fc-webicons.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-creativecloud-m.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1772,25 +1770,27 @@
       "initialSize" : 2390,
       "fileType" : 8192
     },
-    "\/assets\/img\/fairhead-icons\/fc-webicon-msn.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+    "\/assets\/js\/foundation\/jquery.foundation.joyride.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-msn.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-msn.png",
-      "initialSize" : 1327,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.joyride.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.joyride-ck.js",
+      "fileType" : 64
     },
-    "\/assets\/css\/fc-webicons.css" : {
+    "\/assets\/img\/fairhead-icons\/fc-webicon-rss-s.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/css\/fc-webicons.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-rss-s.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-rss-s.png",
+      "initialSize" : 1870,
+      "fileType" : 8192
     },
     "\/assets\/js\/foundation\/jquery.foundation.topbar.js" : {
       "ignoreWasSetByUser" : 1,
@@ -1803,15 +1803,15 @@
       "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.topbar-ck.js",
       "fileType" : 64
     },
-    "\/assets\/img\/fairhead-icons\/fc-webicon-rss-s.png" : {
+    "\/assets\/img\/fairhead-icons\/fc-webicon-msn.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-rss-s.png",
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-msn.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-rss-s.png",
-      "initialSize" : 1870,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-msn.png",
+      "initialSize" : 1327,
       "fileType" : 8192
     },
     "\/assets\/img\/foundation\/orbit\/pause-black.png" : {
@@ -1911,35 +1911,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/assets\/img\/fairhead-icons\/fc-webicon-pinterest-s.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-pinterest-s.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-pinterest-s.png",
-      "initialSize" : 1941,
-      "fileType" : 8192
-    },
-    "\/learn.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/learn.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/hot-topics.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/hot-topics.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/content\/img\/section\/editorial_board_group.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1959,6 +1930,35 @@
       "inputAbbreviatedPath" : "\/posters.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/hot-topics.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/hot-topics.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/learn.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/learn.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/assets\/img\/fairhead-icons\/fc-webicon-pinterest-s.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-pinterest-s.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-pinterest-s.png",
+      "initialSize" : 1941,
+      "fileType" : 8192
     },
     "\/explore_articles.html" : {
       "ignoreWasSetByUser" : 0,

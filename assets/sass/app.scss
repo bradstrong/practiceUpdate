@@ -100,7 +100,7 @@ $sidebarLiBackground:scale-saturation(shade($mainColor, 15%), -30%);
 $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 body{background:$bodyBackground;}
 .page-content{@include noise($sidebarBackground, 0.02);}//Displays as the sidebar's background color
-[role="main"]{background-color: $ter-ltTan;}
+[role="main"]{@include noise($ter-ltTan);}
 .explore-container, .stream-container, .single-item-container{background-color: $bodyBackground;}//center column for content cards
 
 .dashboard{
@@ -153,6 +153,11 @@ body{background:$bodyBackground;}
 	dt{
 		color:$pri-blue;
 	}
+}
+
+.page-footer{
+	@include noise($ter-ltTan);
+	border-top:2px solid $white;
 }
 
 /* !structure */
