@@ -1,3 +1,18 @@
+{{^items}}
+	<div class="cta query-no-results">
+		<div class="cta-title">
+			<span class="cta-title-text">Oops! We have no items to display.</span>
+		</div><!--/.cta-title-->
+		<div class="cta-content">
+			<p>There are no items that match your selection.</p>
+		</div><!--/.cta-content-->
+
+		<div class="cta-action">
+			<a class="button" href="#"><span class="cta-button-text">View All Items</span></a>
+		</div><!--/.cta-action-->
+	</div><!--/.query-no-results-->
+{{/items}}
+
 {{#items}}
 <div class="stream-item-container">
 <article class="stream-item {{#featured}}featured{{/featured}}">

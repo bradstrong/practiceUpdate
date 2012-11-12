@@ -184,8 +184,9 @@ body > .widget.ad{@media only screen and (max-width: $screenMedium) {display:non
 	.footer-section{
 		@include innerRow();
 		@include mobileRow();
-		.widget.els-branding{@include column(4); @include mobileColumn(1);}
-		.widget.els-description{@include column(8); @include mobileColumn(3);}
+		.widget.els-branding{@include column(3); @include mobileColumn(1); @include mobilePush(3);}
+		.widget.els-description{@include column(6); @include mobileColumn(3); @include mobilePull(1);}
+		.widget.powered-by{@include column(3); @include mobileColumn(1); @include mobilePush(3);}
 	}
 }
 
@@ -559,6 +560,7 @@ article{
 	@include border-radius(5px);
 	padding:1em 1.5em .25em;
 	.cta-title{
+		@extend h5;
 		padding: .25em 0;
 		.cta-title-text{
 			font-size:ms(1);
@@ -579,6 +581,13 @@ article{
 	.cta-actions{}
 	/* !Meet Our Experts*/
 	&.meet-experts{}
+
+	/* !query-no-results */
+	&.query-no-results{
+		@extend .panel;
+		@extend .radius;
+		@extend .callout;
+	}
 }
 
 /* !Utilities */

@@ -35,40 +35,11 @@
 		</div><!--/#leaderboard.ad-container-->
   </div><!--/.widget.ad-->
 	<div class="page-header">
-		<nav class="top-bar">
-			<ul>
-			  <li class="name"><div class="site-branding"><img src="assets/img/PracticeUpdate_logo.png"/></div><!--/.site-branding--></li>
-			  <li class="toggle-topbar"><a href="#"></a></li>
-			</ul>
-			<section>
-			  <ul class="right">
-					<li class="active"><a href="update.html" class="update">update</a></li>
-					<li><a href="explore.html" class="explore">explore</a></li>
-					<li><a href="learn.html" class="learn" data-reveal-id="modal-feature-disabled">learn</a></li>
-			  </ul>
-			</section>
-		</nav><!--/.top-bar-->
-
-		<div class="off-canvas-control">
-			<div class="control-visibility">
-				<div class="sidebar-button-container">
-					<a class='sidebar-button button' id="sidebarButton" href="#sidebar">
-					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-		        <line fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" x1="0" y1="8.907" x2="48" y2="8.907"></line>
-		        <line fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" x1="0" y1="24.173" x2="48" y2="24.173"></line>
-		        <line fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" x1="0" y1="39.439" x2="48" y2="39.439"></line>
-		        Menu
-		      </svg>
-		      </a><!--/#sidebarButton -->
-				</div><!--/.sidebar-button-container -->
-			</div><!--/.control-visibility-->
-		</div><!--/.off-canvas-control-->
 	</div><!--/.page-header-->
 	<div class="page-content">
 		<section role="main">
 			<div class="stream-container">
 			</div><!--/.stream-container-->
-
 			<div class="recommended">
 			<div class="widget recent">
 			</div><!--/.widget recent-->
@@ -117,11 +88,11 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(2228,{"containerId":"getsat-w
 	<script src="assets/js/foundation/jquery.foundation.tooltips.js"></script>
 	<script src="assets/js/foundation/jquery.placeholder.js"></script>
 	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
-
+	<script src="assets/js/mustache.js"></script>
 	<script src="assets/js/foundation/app.js"></script>
 
 
-	<script src="assets/js/mustache.js"></script>
+
 
 	<!-- Mustache - homepage feed template -->
 	<script>
@@ -179,13 +150,6 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(2228,{"containerId":"getsat-w
 			//alert('Load was performed.');
 	    var html = Mustache.to_html(template);
 	    $('.ad').html(html);
-		});
-
-	<!-- Mustache - homepage footer template -->
-	$.get('assets/mustache/page-footer.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.page-footer').html(html);
 		});
 
 	<!-- Mustache - homepage meet-experts -->
