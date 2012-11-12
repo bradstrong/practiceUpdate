@@ -51,12 +51,14 @@
 // ----------------------------------------
 // PracticeUpdate.com styles Copyright Elsevier
 
-//html {font-family:"Skolar Bold", Georgia, serif; font-size-adjust:0.49; font-weight:bold; font-style:normal;}
-
 /* typography */
 body{white-space-collapse: collapse;}
 h1, h2, h3, h4, h5, h6{
 	text-transform: capitalize;
+}
+
+*[class$="-title"]{
+	font-family:$headerFontFamily;
 }
 
 .meta{
@@ -113,6 +115,7 @@ body{background:$bodyBackground;}
 				a .has-tip{color:shade($ter-ltTan, 25%);}
 			}
 			background-color: $sidebarLiBackground;
+			/* TODO: Make the active state match the hover state */
 			&.active a{
 				&:after{@include cssTriangle(($baseFontSize/2), $sidebarBackground, left); float:right; position:relative; top:2px;}
 				color:$sidebarBackground;}
@@ -289,6 +292,7 @@ article{
 
 .flag{
 //	@include innerRow();
+	/* TODO: make this extend .-title */
 	font-family: $headerFontFamily;
 	line-height:1.5;
 	//text-transform: uppercase;

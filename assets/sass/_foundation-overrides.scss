@@ -17,21 +17,21 @@ $pri-blue:rgba(0,45,86,1); // pantone 298
 $pri-green:rgba(193,205,35,1); // pantone 390
 $pri-tan:rgba(136,126,111,1); // pantone 404
 
-//SECONDARY
+// SECONDARY
 $sec-orange:rgba(250,166,52,1); // pantone 1375
 $sec-green:rgba(214,224,61,1); // pantone 381
 $sec-purple:rgba(154,78,158,1); // pantone 513
 $sec-blue:rgba(0,132,169,1); // pantone 314
 $sec-red:rgba(181,9,56,1); // pantone 7427
 
-//TERTIARY
+// TERTIARY
 $ter-ltTan:rgba(233,227,220,1); // pantone WG2
 $ter-dkTan:rgba(201,193,184,1); // pantone WG4
 $ter-ltBlue:rgba(136,203,223,1); // pantone 7458
 $ter-dkBlue:rgba(0,85,150,1); // pantone 391
 $ter-green:rgba(163,165,16,1); // pantone 294
 
-//Additional
+// Additional
 
 //Gradients
 //Top-Nav
@@ -40,6 +40,9 @@ $topnav-dk: #798725;
 
 //blue1: #003045;
 //blue2: #0d4862;
+
+/* !fonts */
+@import "/font/MuseoSlab-500.css";
 
 /* !mixins */
 
@@ -55,6 +58,7 @@ $topnav-dk: #798725;
 	} @else {
 	        $color2: transparentize($color2, $intensity);
 	}
+	/* TODO: Fix color code to match PSD */
 	@include background(linear-gradient(top, $color, $color2), inline-image("../img/noise.jpg"));
 }       
 
@@ -67,7 +71,7 @@ $topnav-dk: #798725;
 
 // Grid Settings
 
-$rowWidth: 100%;
+$rowWidth: 100%;// sets site to fluid grid
 // $columnGutter: 30px;
 // $totalColumns: 12;
 // $mobileTotalColumns: 4;
@@ -88,7 +92,7 @@ $rowWidth: 100%;
 
 // Font Settings
 
-// $headerFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ $headerFontFamily: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $headerFontWeight: bold;
 // $headerFontStyle: normal;
 // $headerFontColor: #222;
