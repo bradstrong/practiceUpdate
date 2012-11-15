@@ -1,5 +1,4 @@
 require 'zurb-foundation'
-#require '/Users/brad/.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.0.9/lib/zurb-foundation.rb' --trace #exact path for codekit
 # Require any additional compass plugins here.
 require 'modular-scale'
 #require 'Linguistics'

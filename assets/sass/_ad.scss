@@ -1,0 +1,23 @@
+.widget{
+	/* !Ads */
+	&.ad{
+		.ad-container{
+			text-align: center;
+			.ad-title{
+				text-align:left;
+				.ad-title-text{
+					text-transform:uppercase;
+				}
+			}
+			.ad-content{
+				background:transparent;
+				display:block;
+				overflow:hidden;
+				object{
+					display:block;
+					height:auto;
+				}
+			}
+		}
+	}
+}
