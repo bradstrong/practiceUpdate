@@ -39,6 +39,6 @@ Thumbs.db
 
 # local cache and settings #
 #######################
-.sass-cache
+*.sass-cache
 codekit-config.json
 *.sublime-project
