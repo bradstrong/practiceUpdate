@@ -21,3 +21,6 @@
 		}
 	}
 }
+
+
+body > .widget.ad{@media only screen and (max-width: $screenMedium) {display:none;}}

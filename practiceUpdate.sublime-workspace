@@ -4,8 +4,68 @@
 		"selected_items":
 		[
 			[
+				"te",
+				"text-transform"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"mo",
+				"mobileRow"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"pre",
+				"pri-green"
+			],
+			[
+				"sec",
+				"sec-blue"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
 				"font",
 				"font-size"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"body",
+				"bodyFontFamily"
+			],
+			[
+				"header",
+				"headerFontFamily"
+			],
+			[
+				"cle",
+				"clear	clearfix"
+			],
+			[
+				"mobil",
+				"mobilePush"
 			],
 			[
 				"nav",
@@ -32,16 +92,8 @@
 				"uppercase"
 			],
 			[
-				"te",
-				"text-transform"
-			],
-			[
 				"pri-",
 				"pri-blue"
-			],
-			[
-				"col",
-				"color"
 			],
 			[
 				"bord",
@@ -50,10 +102,6 @@
 			[
 				"ter-lt",
 				"ter-ltBlue"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"pri",
@@ -84,10 +132,6 @@
 				"background-color"
 			],
 			[
-				"padding",
-				"padding-top"
-			],
-			[
 				"remo",
 				"removeClass"
 			],
@@ -112,10 +156,85 @@
 	"buffers":
 	[
 		{
+			"contents": "TODO:\n\nOncology Landing Page\n\n\n\nsend 2 images to Mike\n	add advance breast cancer to topic spotlight\n	show where the ads would be displayed\n\nadd <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />\nto the header template for PracticeUpdate\n",
+			"settings":
+			{
+				"buffer_size": 296,
+				"line_ending": "Unix",
+				"name": "TODO:"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
+			"settings":
+			{
+				"buffer_size": 8769,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+			"settings":
+			{
+				"buffer_size": 6137,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
+			"settings":
+			{
+				"buffer_size": 1724,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Package Control 1.6.0 Changelog:\n  \n  Wow! It has been 9 months since the last stable release of Package Control.\n  Quite a lot has happened since then, including the release of Sublime Text 2\n  stable, and hundreds upon hundreds of new packages from the community!\n  \n  A quick thank you to Kevin Yank (@sentience) for recently volunteering to help\n  review packages for inclusion in the default channel, and ninj0x\n  (https://github.com/ninj0x) for rewriting the Package Control Community\n  Packages search functionality so it is nice and fast once again! The lists\n  below include specific thanks for code contributions.\n  \n  As Sublime Text has become increasingly more popular, and the number of\n  packages has increased so rapidly, the bandwidth requirements have also\n  significantly increased. This month the default channel will very likely serve\n  over 1TB of JSON data. If you feel so inclined, consider pitching in a small\n  amount to help cover the cost:\n  http://wbond.net/sublime_packages/package_control/say_thanks. A big thank you\n  to all of the users who have already contributed!\n  \n  \n  Enhancements\n  \n  \n   - Added full (custom) proxy authentication support for HTTPS connections\n  \n   - Added NTLM authentication for proxies on Windows\n  \n   - Proxy authentication information is now set via the new proxy_username and\n     proxy_password settings.\n  \n   - If the https_proxy setting it set to false, it will not inherit from the\n     http_proxy setting (thanks planardothum!)\n  \n   - The time of the last successful run is no longer stored in\n     Packages/User/Package Control.sublime-settings, but rather in\n     Packages/User/Package Control.last-run making it easier to ignore via git,\n     hg, etc. (thanks schlamar!)\n  \n   - Packages are now ignored during install and upgrade to help prevents errors\n     where Sublime Text tries to read a file as it is being extracted\n  \n   - Packages that include DLLs for Windows can now be upgraded. In-use\n     DLLs will be detected and the user prompted to restart.\n  \n   - Package version numbers may now include non-numeric components, and semantic\n     versioning (http://semver.org) is fully supported\n  \n   - JSON parsing messages are now printed to the console instead of being shown\n     in an error popup\n  \n   - Added support for changes to the BitBucket API\n  \n   - Added support for changes to GitHub URLs\n  \n   - Added the debug setting to help track down HTTP connection issues\n  \n   - All of the downloaders will now try to use HTTP compression\n  \n   - All of the downloaders will now follow redirects\n  \n   - Added new install_missing setting to control if Package Control should try\n     to install any packages that appear to be missing from the current machine.\n     This defaults to true, and is really only useful if you want to prevent\n     Package Control from connecting to the internet without explicitly asking\n     it to.\n  \n   - Added lots of code comments as a first step towards making contributions\n     by other developers easier\n  \n  \n  Bug Fixes\n  \n  \n   - Added support for the new preferences filename (thanks titoBouzout!)\n  \n   - If a package is missing from a machine, but not available for that\n     platform, it is no longer considered an error (thanks schlamar!)\n  \n   - Updated CA certs\n  \n   - Fixed handling of install and upgrade messages that contain non-ASCII\n     characters\n  \n   - Fixed a unicode error trying to load the CA cert bundle file on Windows when\n     the install path to Sublime Text contains non-ASCII characters\n  \n   - Better handling for edge case HTTP errors (thanks tgecho!)\n  \n   - Fixed a number of errors related to non-ASCII error messages being created\n     by the operating system (thanks quarnster!)\n  \n   - GitHub URLs will now automatically be trimmed of trailing .git suffixes\n  \n   - Badly formatted messages.json files will no longer break the install process\n",
+			"settings":
+			{
+				"buffer_size": 3999,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
+			"settings":
+			{
+				"buffer_size": 6205,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+			"settings":
+			{
+				"buffer_size": 2662,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
+			"settings":
+			{
+				"buffer_size": 405,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
 			"settings":
 			{
-				"buffer_size": 2735,
+				"buffer_size": 3176,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
+			"settings":
+			{
+				"buffer_size": 1369,
 				"line_ending": "Unix"
 			}
 		}
@@ -126,6 +245,26 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"todo",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"gist",
+				"GitHub: Open Gist in Editor"
+			],
+			[
+				"new",
+				"File: New File Relative to Current View"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -160,6 +299,23 @@
 	},
 	"file_history":
 	[
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
+		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/sass/_ad.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/marketing.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/page-footer.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/cardiology.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/oncology.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides-marketing.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/marketing.js",
+		"/etc/hosts",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/dermatology.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/de3225710d60b15d0a6df5c356cb618685603156/_opacity.scssc",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/c41bfe3e0594ee6743c257e86d2cf5507d6658bd/_foundation-overrides.scssc",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/foundation-overrides.css",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/section.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/learn.html",
@@ -167,12 +323,8 @@
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.offcanvas.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/topic-spotlight.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/foundation-overrides.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/c41bfe3e0594ee6743c257e86d2cf5507d6658bd/foundation-overrides.scssc",
 		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
@@ -185,7 +337,6 @@
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/page-footer.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/experts.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/news-item.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_news.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/img/users/oncologyStat.png",
@@ -256,6 +407,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -263,6 +415,50 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"side-nav",
+			"header",
+			"collapse",
+			"dashboard",
+			"component",
+			"specialties",
+			"component",
+			"stream-container",
+			"dashboard",
+			"header",
+			"nav-header",
+			"background",
+			"name",
+			"sidebar",
+			"side",
+			"main",
+			"em",
+			"page-content",
+			"you are a",
+			"filter",
+			"shinyEdge",
+			"shadow",
+			"powered",
+			"$txt",
+			"$body",
+			"$text",
+			"footer",
+			"expert",
+			"expert-letter-copy",
+			"h3",
+			"page-footer",
+			"noise",
+			"acti",
+			"page-con",
+			"secondar",
+			"radius",
+			"control",
+			"page-header",
+			"ms(",
+			"side-nav",
+			"off-canvas-control",
+			".page-content",
+			"sideb",
+			"font",
 			"site-branding",
 			"e9e9e9",
 			".recommended",
@@ -346,53 +542,9 @@
 			"citation",
 			"-name",
 			"journal",
-			"\"photo\"",
-			"item-footer",
-			"source",
-			"\"story-of-the-week\"",
-			"border",
-			"section-cont",
-			"recommended",
-			"meta",
-			"item-pub-date",
-			"pub-meta",
-			"rating",
-			"box-shadow",
-			"flag",
-			"story-of-the-week",
-			"console",
-			"user console",
-			"round",
-			"stream-container",
-			"row",
-			"outer",
-			"page",
-			"search",
-			"outer",
-			"clear",
-			"body",
-			"outer",
-			"media",
-			"page-content",
-			"page-header",
-			"outerRow",
-			"explore-container",
-			"section",
-			"stream-item-container",
-			"main",
-			"ad",
-			".ad",
-			"header",
-			"page-header",
-			"pad",
-			"padding",
-			"user-s",
-			"article",
-			"scher",
-			"stream-item",
-			"background"
+			"\"photo\""
 		],
-		"highlight": true,
+		"highlight": false,
 		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
@@ -411,23 +563,237 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
 					"settings":
 					{
-						"buffer_size": 2735,
+						"buffer_size": 296,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								261,
-								261
+								296,
+								296
+							]
+						],
+						"settings":
+						{
+							"auto_name": "TODO:",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
+					"settings":
+					{
+						"buffer_size": 8769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								883,
+								883
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+					"settings":
+					{
+						"buffer_size": 6137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
+					"settings":
+					{
+						"buffer_size": 1724,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								690,
+								690
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 3999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3999,
+								3999
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
+					"settings":
+					{
+						"buffer_size": 6205,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2946,
+								2946
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+					"settings":
+					{
+						"buffer_size": 2662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								389,
+								389
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 31.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
+					"settings":
+					{
+						"buffer_size": 405,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								405,
+								405
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
+					"settings":
+					{
+						"buffer_size": 3176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								308,
+								308
 							]
 						],
 						"settings":
@@ -436,8 +802,34 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 2.0,
-						"translation.y": 524.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
+					"settings":
+					{
+						"buffer_size": 1369,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1369,
+								1369
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Mustache/mustache.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -486,6 +878,26 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"update",
+				"update.html"
+			],
+			[
+				"oncolo",
+				"oncology.html"
+			],
+			[
+				"cardio",
+				"cardiology.html"
+			],
+			[
+				"over",
+				".sass-cache/c41bfe3e0594ee6743c257e86d2cf5507d6658bd/_foundation-overrides.scssc"
+			],
+			[
+				"app.scss",
+				"assets/sass/app.scss"
+			],
 			[
 				"overr",
 				"assets/sass/foundation-overrides.scss"
