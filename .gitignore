@@ -40,8 +40,6 @@ Thumbs.db
 # local cache and settings #
 #######################
 *.sass-cache
+*.sass-cache*
 codekit-config.json
 *.sublime-project
-.sass-cache/c41bfe3e0594ee6743c257e86d2cf5507d6658bd/_foundation-overrides.scssc
-
-.sass-cache/f102a73b4eb27d8722e6da746b8734ae600798a3/_modular-scale.sassc
