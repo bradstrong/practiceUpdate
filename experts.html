@@ -69,8 +69,8 @@ OncologySTAT is guided by a world-renowned Advisory Board that represents commun
 		<div class="dashboard">
 			<div class="component user-console">
 			</div><!--/.component.user-console-->
-			<div class="component user-specialties">
-			</div><!--/.component.user-specialties-->
+			<div class="component user-topic">
+			</div><!--/.component.user-topic-->
 			<div class="component topic-spotlight">
 			</div><!--/.component.topic-spotlight-->
 			<div class="panel cta meet-experts">
@@ -136,12 +136,12 @@ OncologySTAT is guided by a world-renowned Advisory Board that represents commun
 		});
 	});
 
-	<!-- Mustache - homepage user-specialties template -->
-	$.getJSON('content/json/user-specialties.json', function(data) {
-		$.get('assets/mustache/user-specialties.mustache', function(template) {
+	<!-- Mustache - homepage user-topic template -->
+	$.getJSON('content/json/user-topic.json', function(data) {
+		$.get('assets/mustache/user-topic.mustache', function(template) {
 			//alert('Load was performed.');
 	    var html = Mustache.to_html(template, data);
-	    $('.user-specialties').html(html);
+	    $('.user-topic').html(html);
 		});
 	});
 

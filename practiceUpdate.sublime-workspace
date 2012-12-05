@@ -121,7 +121,7 @@
 			],
 			[
 				"user",
-				"user-specialties"
+				"user-topic"
 			],
 			[
 				"margin",
@@ -354,13 +354,13 @@
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.buttons.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.alerts.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.accordion.js",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/user-specialties.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/user-topic.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/user-console.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/modals.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app copy.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/modernizr.foundation.js",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/share-this.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/user-specialties.json",
+		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/user-topic.json",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/topic-spotlight.json",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/topic-spotlight.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/author-meta.mustache",
@@ -464,7 +464,7 @@
 			".recommended",
 			".recommended a",
 			"!top bar",
-			"user-specialties",
+			"user-topic",
 			".dashb",
 			"margin-bottom",
 			"margin-",

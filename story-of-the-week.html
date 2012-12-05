@@ -219,8 +219,8 @@
 			<div class="component user-console">
 			</div><!--/.component.user-console-->
 
-			<div class="component user-specialties">
-			</div><!--/.component.user-specialties-->
+			<div class="component user-topic">
+			</div><!--/.component.user-topic-->
 <!-- 			<div class="component user-topics">
 				<nav role="navigation">
 					<ul class="side-nav">
@@ -250,7 +250,7 @@
 						<li><a href="#">Breast ER-Positive</a></li>
 					</ul>
 				</nav>
-			</div><!--/.component.user-specialties-->
+			</div><!--/.component.user-topic-->
 			<div class="panel">
 				<img src="http://placehold.it/200x200" /><p><!-- Meet Our Experts --> Meet our Advisory and Editorial Boards comprised of physician editors and world-renowned experts.<p>
 			</div>
@@ -310,11 +310,11 @@
     $('.user-console').html(html);
 	});
 
-		<!-- Mustache - homepage user-specialties template -->
-	$.get('assets/mustache/user-specialties.mustache', function(template) {
+		<!-- Mustache - homepage user-topic template -->
+	$.get('assets/mustache/user-topic.mustache', function(template) {
 		//alert('Load was performed.');
     var html = Mustache.to_html(template);
-    $('.user-specialties').html(html);
+    $('.user-topic').html(html);
 	});
 
 	</script>

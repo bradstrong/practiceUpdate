@@ -165,12 +165,12 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(2228,{"containerId":"getsat-w
 		});
 	});
 
-	<!-- Mustache - homepage user-specialties template -->
-	$.getJSON('content/json/user-specialties.json', function(data) {
-		$.get('assets/mustache/user-specialties.mustache', function(template) {
+	<!-- Mustache - homepage user-topic template -->
+	$.getJSON('content/json/user-topic.json', function(data) {
+		$.get('assets/mustache/user-topic.mustache', function(template) {
 			//alert('Load was performed.');
 	    var html = Mustache.to_html(template, data);
-	    $('.user-specialties').html(html);
+	    $('.user-topic').html(html);
 		});
 	});
 
