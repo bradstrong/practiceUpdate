@@ -1,0 +1,317 @@
+
+
+/* !structure */
+//.container{}
+//[role="main"]{padding:0;}
+
+//HEADER
+
+.page-header{
+	@include outerRow();
+	#main-nav{@extend .right;}
+}
+
+.top-bar {
+  /* Setting up the sliding area */
+  ul {
+    &>li {
+      /* Branding and name */
+      &.name {
+      	@include column(3);
+      }
+    }
+  }
+	section{
+		@include column(9);
+	}
+}
+
+//FIXME: This is meant to provide a background color for the top of the page, behind the leaderboard banner ad
+#page-leaderboard{
+//	background-color:$ter-dkTan;
+}
+
+.page-content{
+	@include outerRow();
+}
+
+// FOOTER
+.page-footer{
+	@include outerRow();
+	@include mobileRow();
+	padding:$navBarHeight inherit;
+}
+
+.footer-section-container{
+	@include column(12);
+	.footer-section{
+		@include innerRow();
+		@include mobileRow();
+	}
+}
+
+/* !Navigation */
+
+
+/* !off-canvas-control */
+.off-canvas-control{
+	@include mobileRow();
+	.control-visibility{
+		@include mobileColumn(1);
+		.sidebar-button-container{
+			.sidebar-button{}
+		}
+	}
+}
+
+
+/* global elements */
+article{
+	background: $itemBackground;
+}
+
+.footnotes a {
+	word-break: break-all;
+	word-break: break-word;
+	hyphens: auto;
+}
+
+.flag{
+//	@include innerRow();
+	/* TODO: make this extend .-title */
+	font-family: $headerFontFamily;
+	line-height:1.5;
+	//text-transform: uppercase;
+	span.featured{
+		background:$pri-green;
+		color: $white;
+		display:block;
+		font-weight:bold;
+		//margin-top:.2em;
+		//padding-right:1em;
+		text-align: right;
+		text-transform:uppercase;
+	}
+}
+
+/* Page Layouts */
+/* !Base Layout */
+//	.dashboard{@include column(12, collapse);}
+	.recommended{@include column(5); @include mobileColumn(4);}
+
+/* !Update Layout */
+.stream-container{@include column(7, collapse); @include mobileRow();}
+
+/* !Explore Layout */
+.explore-container{@include column(7); @include mobileRow();}
+
+/* !Learn Layout */
+.cme-container{@include column(12); @include mobileRow();}
+
+/* !Single Item */
+.single-item-container{@include column(7); @include mobileRow();}
+
+/* Page Specific Styles*/
+/* Single Item page elements*/
+.single-item-container{
+		article{
+			@include column(12);
+			@include elementBoxShadow();
+			@include clearfix();
+			.item-header{
+				@include column(12);
+				h1{font-size:ms(3);}
+			}
+			.item-content{
+				@include column(12);
+				.item-content-section{
+					@include innerRow();
+					//.source-container{margin-bottom:1em;}
+				}
+				.take-home-message, .commentary, .abstract, .summary{
+					@include column(12);
+					h3{
+						font-size:ms(0);
+						text-transform:uppercase;
+					}
+				}
+			}
+			.item-footer{
+				@include column(12);
+			}
+		}
+	.taxonomy-meta{
+		ul{
+			@include column(3);
+			list-style:none;
+		}
+		.author-meta{
+			@include innerRow();
+			.author{
+				@include column(6);
+			}
+		}
+	}
+}
+
+/* !Update Page Elements */
+/* !stream */
+.stream-item-container{
+	@include innerRow(collapse);
+	box-shadow: 0px 2px 5px rgba(0,0,0,.15);
+	//border-radius: 5px;
+	border:1px solid;
+	border-color:$grey;
+	margin-bottom: $columnGutter/3;
+	.stream-item{
+		@include column(12);
+		&:not([class*="featured"]){
+			//padding-top:1em;
+		}
+		&.featured{
+			.item-header-container{
+				//padding-top:.75em;
+			}
+		}
+		.item-container{@include innerRow();
+			.item-header-container{@include column(12);
+				.item-header{@include innerRow();
+					.item-type{@include column(7);}
+					.item-pub-date{@include column(5); text-align: right;}
+					.pub-meta{@include column(12);
+					}
+				}
+				.item-type{
+					color:ter-ltTan;
+					font-weight:bold;
+					text-transform:uppercase;
+				}
+			}
+			.item-content-container{@include column(12); /*margin-bottom:.75em*/;}
+			.item-content{@include innerRow();}
+			.commentary-container{
+				.source-container{
+				}
+				div[class$="-photo"]{
+					@include column(2);
+				}
+				div[class$="-name"]{
+					@include column(6);
+				}
+			}
+			.item-source-container{
+				@include column(12);
+				.item-source{
+					.item-title, cite{font-size: ms(0);}
+					//@include elementBoxShadow();
+					@include clearfix();
+					background-color:light($bodyBackground, 25);
+					border-top:1px solid lighten($bodyFontColor, 55);
+					//padding-top:.5em;
+					//padding-bottom:.5em;
+				}
+				figure[class$="-photo"]{
+					@include column(2);
+				}
+				div[class$="-name"]{
+					@include column(6);
+				}
+			}
+			.commentary-container{@include column(12);}
+			.journal-title{font-size:ms(2);}
+			.item-title{font-size:ms(1);}
+			.source-title{font-size:ms(0);}
+		}
+		.item-footer{
+			@include innerRow();
+			//margin-top:.5em;
+			//margin-bottom:2em;
+			.portal-meta{
+				@include column(8);
+				@include mobileColumn(2);
+				.rating{
+					//background:$bodyBackground;
+					//border-radius:10px;
+					//box-shadow: 0 1px 1px lighten($itemBackground, 10);
+					//text-align: center;
+					color: $pri-blue;
+					dt, dd{
+						display: inline-block;
+						line-height:1.5;
+					}
+					.value{font-weight: bold;}
+				}
+			}
+			.item-actions{
+				@include column(4);
+				@include push(4);
+				@include mobileColumn(2);
+				@include mobilePush(0);
+				.link-list{
+					margin-bottom:0;
+				}
+			}
+		}
+	}
+}
+.load-more{
+	@include column(6, center);
+	text-align: center;
+	padding-top:$baseFontSize;
+	padding-bottom:$baseFontSize;
+}
+
+/* !Explore Page Elements*/
+.explore-feature .feature-item{background: $white;}
+.explore-feature { background: url(loading.gif) center center #f4f4f4; height: 300px;}
+.explore-feature img { display: none; }
+
+.explore-feature.orbit { background: none; }
+.explore-feature.orbit img { display: block; }
+.explore-feature.orbit {
+	section{ padding:$columnGutter/3;}
+	article{ padding:$columnGutter/3;}
+}
+
+.explore-sections{
+	@include column(12);
+	section{
+		@include innerRow();
+		background: $itemBackground;
+		@include elementBoxShadow();
+		margin-bottom:$columnGutter/3;
+	}
+}
+.section-widget{
+	@include column(12);
+	li{list-style: none;}
+	.meta.title{
+		font-weight: bold;
+	}
+	.section-header{
+		@include column(12);
+	}
+	.section-content{
+		@include column(12);
+		//ul{margin-top: 2em;}
+		.entry{
+			border-bottom:1px solid lighten($bodyFontColor, 55);
+			//p{margin-bottom:.5em;}
+			//.meta.title{margin-bottom: .25em;}
+		}
+	}
+}
+
+/* !Utilities */
+//body.logged-out .user-console{
+//	display: none;
+//}
+
+//body.logged-in .cta.register{
+//	display: none;
+//}
+
+/*  !UI ELEMENTS */
+.load-more-button{
+	@extend .button;
+}

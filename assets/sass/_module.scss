@@ -1,0 +1,149 @@
+
+
+/* !Top Bar */
+.top-bar {
+  /* Setting up the sliding area */
+	section{
+	  ul {
+	    &>li:not(.name) {
+	    	text-transform:uppercase;
+	      &.active {
+	      	@include site-gradient($pri-green);
+				}
+				&:hover{
+					@include site-gradient($pri-green);
+				}
+				&.active, &:hover{
+					& a{color:$white;}
+				}
+	    }
+	  }
+	}
+}
+
+.page-footer{
+	@include noise(lighten($ter-ltTan, 10%));
+	border-top:2px solid $white;
+}
+
+// SIDEBAR
+
+//sidebar variables
+$sidebarBackground:lighten(scale-saturation($mainColor, -66%), 40%);
+$sidebarLiBackground:scale-saturation(shade($mainColor, 15%), -30%);
+$sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
+
+// SIDE NAV (.side-nav)
+.nav-header{
+	@include border-top-radius(3px);
+	font-size:ms(1);
+	@include noise($ter-ltTan);
+	color: $sidebarLiBackground;
+	&:hover{background-color:$ter-ltTan;}
+	a .has-tip{color:shade($ter-ltTan, 25%);}
+}
+.side-nav{
+	li{
+		//background-color:$sidebarLiBackground;
+		margin-bottom:1px;
+		&:hover{background-color:$sidebarLiHoverBackground;}
+		&.active{
+			a{cursor: default;}
+			&:hover{background-color:$sidebarLiBackground;}
+		}
+		&:last-child{@include border-bottom-radius(3px);}
+		a{
+			text-transform:uppercase;
+			color:$sidebarBackground;
+			text-transform: uppercase;
+		}
+	}
+	&[data-reveal-id="modal-feature-disabled"]{
+		padding:0;
+		.has-tip{
+			border-bottom:none;
+			&:hover{
+				cursor:pointer;
+			}
+		}
+	}
+}
+
+/* !COMPONENTS */
+
+// QUERY NO RESULTS
+
+.query-no-results{
+	@extend .panel;
+	@extend .radius;
+	@extend .callout;
+}
+
+
+// CTA
+
+.cta{
+	.cta-title{
+		.cta-title-text{}
+	}
+	.cta-img-container{}
+	.cta-content{}
+	.cta-actions{}
+	/* !Meet Our Experts*/
+	&.meet-experts{}
+}
+
+// CTA - in dashboard
+.dashboard{
+	.cta{
+		.cta-title{
+			.cta-title-text{
+				color: $sidebarLiBackground;
+			}
+		}
+	}
+}
+
+// WIDGETS
+.widget{
+	ul{
+		list-style:none;
+	}
+	article{
+		background: transparent;
+	}
+}
+
+// ADs
+@import "ad";
+
+.widget.els-branding{@include column(3); @include mobileColumn(1); @include mobilePush(3);}
+.widget.els-description{@include column(6); @include mobileColumn(3); @include mobilePull(1);}
+.widget.powered-by{@include column(3); @include mobileColumn(1); @include mobilePush(3);}
+
+
+// CTAs
+.cta{
+	@include border-radius(5px);
+	padding:1em 1.5em .25em;
+	.cta-title{
+		@extend h5;
+		padding: .25em 0;
+		.cta-title-text{
+			font-size:ms(1);
+			text-transform:capitalize;
+		}
+	}
+	.cta-img-container{
+		//background-color:lighten($ter-ltTan, 5%);
+		//border:1px solid $ter-dkTan;
+		padding:.25em;
+		text-align:center;
+		img{
+			border:1px solid $ter-dkTan;
+			@include single-box-shadow($white, 0, 1px, 1px);
+		}
+	}
+	.cta-content{}
+	.cta-actions{}
+}

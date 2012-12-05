@@ -42,4 +42,8 @@ Thumbs.db
 *.sass-cache
 *.sass-cache*
 codekit-config.json
+<<<<<<< HEAD
 *.sublime-project
+=======
+*.sublime-project
+>>>>>>> topbar-mobile-bugfixes

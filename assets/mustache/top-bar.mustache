@@ -1,16 +1,4 @@
 <nav class="top-bar">
-	<ul>
-	  <li class="name"><div class="site-branding"><img src="assets/img/PracticeUpdate_logo.png"/></div><!--/.site-branding--></li>
-	  <li class="toggle-topbar"><a href="#"></a></li>
-	</ul>
-	<section>
-	  <ul class="right">
-		  {{#pages}}
-			<li ><a href="{{page-id}}.html" class="{{page-id}}">{{page-id}}</a></li>
-			{{/pages}}
-	  </ul>
-	</section>
-</nav><!--/.top-bar-->
 
 <div class="off-canvas-control">
 	<div class="control-visibility">
@@ -26,3 +14,16 @@
 		</div><!--/.sidebar-button-container -->
 	</div><!--/.control-visibility-->
 </div><!--/.off-canvas-control-->
+
+	<ul>
+	  <li class="name"><div class="site-branding"><img src="assets/img/PracticeUpdate_logo.png"/></div><!--/.site-branding--></li>
+	  <li class="toggle-topbar"><a href="#"></a></li>
+	</ul>
+	<section>
+	  <ul id="main-nav">
+		  {{#pages}}
+			<li ><a href="{{page-id}}.html" class="{{page-id}}">{{page-id}}</a></li>
+			{{/pages}}
+	  </ul>
+	</section>
+</nav><!--/.top-bar-->

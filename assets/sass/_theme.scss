@@ -1,0 +1,14 @@
+article{
+	//&
+}
+
+.page-content{
+	@include noise(lighten($ter-ltTan, 10%), 0.02);
+	border-top:3px solid $pri-blue;
+	padding-top: $baseFontSize;
+}
+
+// BUTTONS
+.load-more-button{
+	background-color:$pri-green;
+}
