@@ -44,7 +44,7 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 }
 .side-nav{
 	li{
-		background-color:$sidebarLiBackground;
+		//background-color:$sidebarLiBackground;
 		margin-bottom:1px;
 		&:hover{background-color:$sidebarLiHoverBackground;}
 		&.active{

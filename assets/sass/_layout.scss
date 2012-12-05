@@ -257,6 +257,8 @@ article{
 .load-more{
 	@include column(6, center);
 	text-align: center;
+	padding-top:$baseFontSize;
+	padding-bottom:$baseFontSize;
 }
 
 /* !Explore Page Elements*/

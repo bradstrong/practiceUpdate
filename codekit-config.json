@@ -1,18 +1,7 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "7839",
+  "creatorBuild" : "7978",
   "files" : {
-    "\/assets\/img\/fairhead-icons\/fc-webicon-behance-m.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-behance-m.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-behance-m.png",
-      "initialSize" : 2043,
-      "fileType" : 8192
-    },
     "\/assets\/img\/fairhead-icons\/fc-webicon-googleplus-s.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -22,6 +11,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-googleplus-s.png",
       "initialSize" : 1802,
+      "fileType" : 8192
+    },
+    "\/assets\/img\/fairhead-icons\/fc-webicon-behance-m.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-behance-m.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-behance-m.png",
+      "initialSize" : 2043,
       "fileType" : 8192
     },
     "\/assets\/img\/glyphicons-halflings-white.png" : {
@@ -90,16 +90,16 @@
       "initialSize" : 1588,
       "fileType" : 8192
     },
-    "\/docs\/edBoard_11-2012\/js\/prettify.js" : {
+    "\/assets\/img\/misc\/input-bg.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/js\/prettify.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/js\/prettify-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/assets\/img\/misc\/input-bg.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/img\/misc\/input-bg.png",
+      "initialSize" : 2993,
+      "fileType" : 8192
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-mail-s.png" : {
       "ignoreWasSetByUser" : 0,
@@ -112,16 +112,16 @@
       "initialSize" : 1546,
       "fileType" : 8192
     },
-    "\/assets\/img\/misc\/input-bg.png" : {
+    "\/docs\/edBoard_11-2012\/js\/prettify.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/misc\/input-bg.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/misc\/input-bg.png",
-      "initialSize" : 2993,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/js\/prettify.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/js\/prettify-ck.js",
+      "fileType" : 64
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-facebook-m.png" : {
       "ignoreWasSetByUser" : 0,
@@ -134,6 +134,15 @@
       "initialSize" : 1812,
       "fileType" : 8192
     },
+    "\/Untitled.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/Untitled.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/index.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -142,17 +151,6 @@
       "inputAbbreviatedPath" : "\/index.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
-    },
-    "\/assets\/js\/foundation\/jquery.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery-ck.js",
-      "fileType" : 64
     },
     "\/story-of-the-week copy.html" : {
       "ignoreWasSetByUser" : 0,
@@ -194,14 +192,16 @@
       "initialSize" : 1741,
       "fileType" : 8192
     },
-    "\/Untitled.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+    "\/assets\/js\/foundation\/jquery.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/Untitled.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery-ck.js",
+      "fileType" : 64
     },
     "\/cardiology.html" : {
       "ignoreWasSetByUser" : 0,
@@ -481,15 +481,15 @@
       "initialSize" : 536,
       "fileType" : 8192
     },
-    "\/assets\/img\/fairhead-icons\/fc-webicon-dribbble-s.png" : {
+    "\/assets\/img\/fairhead-icons\/fc-webicon-tumblr.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-dribbble-s.png",
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-tumblr.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-dribbble-s.png",
-      "initialSize" : 1857,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-tumblr.png",
+      "initialSize" : 961,
       "fileType" : 8192
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-spotify.png" : {
@@ -514,15 +514,15 @@
       "initialSize" : 2123,
       "fileType" : 8192
     },
-    "\/assets\/img\/fairhead-icons\/fc-webicon-tumblr.png" : {
+    "\/assets\/img\/fairhead-icons\/fc-webicon-dribbble-s.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-tumblr.png",
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-dribbble-s.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-tumblr.png",
-      "initialSize" : 961,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-dribbble-s.png",
+      "initialSize" : 1857,
       "fileType" : 8192
     },
     "\/assets\/js\/foundation\/jquery.foundation.orbit.js" : {
@@ -675,16 +675,16 @@
       "initialSize" : 2254,
       "fileType" : 8192
     },
-    "\/assets\/img\/foundation\/orbit\/bullets.jpg" : {
+    "\/content\/img\/oncologyStat_logo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/foundation\/orbit\/bullets.jpg",
+      "inputAbbreviatedPath" : "\/content\/img\/oncologyStat_logo.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/foundation\/orbit\/bullets.jpg",
-      "initialSize" : 657,
-      "fileType" : 4096
+      "outputAbbreviatedPath" : "\/content\/img\/oncologyStat_logo.png",
+      "initialSize" : 5324,
+      "fileType" : 8192
     },
     "\/news-item.html" : {
       "ignoreWasSetByUser" : 0,
@@ -692,6 +692,26 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/news-item.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/content\/img\/powered-by.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/content\/img\/powered-by.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/content\/img\/powered-by.png",
+      "initialSize" : 1389,
+      "fileType" : 8192
+    },
+    "\/update.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/update.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -706,36 +726,16 @@
       "initialSize" : 2098,
       "fileType" : 8192
     },
-    "\/update.html" : {
+    "\/assets\/img\/foundation\/orbit\/bullets.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/update.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/content\/img\/oncologyStat_logo.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/content\/img\/oncologyStat_logo.png",
+      "inputAbbreviatedPath" : "\/assets\/img\/foundation\/orbit\/bullets.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/content\/img\/oncologyStat_logo.png",
-      "initialSize" : 5324,
-      "fileType" : 8192
-    },
-    "\/content\/img\/powered-by.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/content\/img\/powered-by.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/content\/img\/powered-by.png",
-      "initialSize" : 1389,
-      "fileType" : 8192
+      "outputAbbreviatedPath" : "\/assets\/img\/foundation\/orbit\/bullets.jpg",
+      "initialSize" : 657,
+      "fileType" : 4096
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-skype-s.png" : {
       "ignoreWasSetByUser" : 0,
@@ -771,16 +771,16 @@
       "initialSize" : 1342,
       "fileType" : 8192
     },
-    "\/assets\/img\/misc\/input-bg-outset.png" : {
+    "\/assets\/js\/foundation\/jquery.foundation.tabs.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/misc\/input-bg-outset.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/misc\/input-bg-outset.png",
-      "initialSize" : 10922,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.tabs.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.tabs-ck.js",
+      "fileType" : 64
     },
     "\/newsletter-weekly.html" : {
       "ignoreWasSetByUser" : 0,
@@ -802,16 +802,16 @@
       "initialSize" : 1246,
       "fileType" : 8192
     },
-    "\/assets\/js\/foundation\/jquery.foundation.tabs.js" : {
+    "\/assets\/img\/misc\/input-bg-outset.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.tabs.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.tabs-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/assets\/img\/misc\/input-bg-outset.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/img\/misc\/input-bg-outset.png",
+      "initialSize" : 10922,
+      "fileType" : 8192
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-evernote.png" : {
       "ignoreWasSetByUser" : 0,
@@ -857,17 +857,6 @@
       "initialSize" : 2351,
       "fileType" : 8192
     },
-    "\/assets\/img\/orbit\/timer-black.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/orbit\/timer-black.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/orbit\/timer-black.png",
-      "initialSize" : 526,
-      "fileType" : 8192
-    },
     "\/assets\/img\/fairhead-icons\/fc-webicon-zerply.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -877,6 +866,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-zerply.png",
       "initialSize" : 1255,
+      "fileType" : 8192
+    },
+    "\/assets\/img\/orbit\/timer-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/img\/orbit\/timer-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/img\/orbit\/timer-black.png",
+      "initialSize" : 526,
       "fileType" : 8192
     },
     "\/offcanvas-1.html" : {
@@ -921,6 +921,15 @@
       "initialSize" : 2286,
       "fileType" : 8192
     },
+    "\/docs\/edBoard_11-2012\/css\/styles.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/css\/styles.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/assets\/img\/fairhead-icons\/fc-webicon-dribbble.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -931,15 +940,6 @@
       "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-dribbble.png",
       "initialSize" : 1809,
       "fileType" : 8192
-    },
-    "\/docs\/edBoard_11-2012\/css\/styles.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/css\/styles.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-youversion.png" : {
       "ignoreWasSetByUser" : 0,
@@ -963,17 +963,6 @@
       "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.offcanvas-ck.js",
       "fileType" : 64
     },
-    "\/assets\/js\/foundation\/jquery.foundation.mediaQueryToggle.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.mediaQueryToggle.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.mediaQueryToggle-ck.js",
-      "fileType" : 64
-    },
     "\/assets\/img\/noise.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -985,16 +974,16 @@
       "initialSize" : 8211,
       "fileType" : 4096
     },
-    "\/assets\/img\/orbit\/bullets.jpg" : {
+    "\/assets\/js\/foundation\/jquery.foundation.mediaQueryToggle.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/orbit\/bullets.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/orbit\/bullets.jpg",
-      "initialSize" : 657,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.mediaQueryToggle.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.mediaQueryToggle-ck.js",
+      "fileType" : 64
     },
     "\/content\/img\/users\/Dan_Hayes_tcm8-283548.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -1005,6 +994,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/content\/img\/users\/Dan_Hayes_tcm8-283548.jpg",
       "initialSize" : 20324,
+      "fileType" : 4096
+    },
+    "\/assets\/img\/orbit\/bullets.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/img\/orbit\/bullets.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/img\/orbit\/bullets.jpg",
+      "initialSize" : 657,
       "fileType" : 4096
     },
     "\/assets\/js\/foundation\/jquery.foundation.navigation.js" : {
@@ -1029,17 +1029,6 @@
       "initialSize" : 1860,
       "fileType" : 8192
     },
-    "\/docs\/edBoard_11-2012\/images\/google-logo-small.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/images\/google-logo-small.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/images\/google-logo-small.png",
-      "initialSize" : 8466,
-      "fileType" : 8192
-    },
     "\/assets\/js\/foundation\/jquery.foundation.accordion.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1050,6 +1039,17 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.accordion-ck.js",
       "fileType" : 64
+    },
+    "\/docs\/edBoard_11-2012\/images\/google-logo-small.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/images\/google-logo-small.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/docs\/edBoard_11-2012\/images\/google-logo-small.png",
+      "initialSize" : 8466,
+      "fileType" : 8192
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-github-s.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1243,13 +1243,13 @@
       "fileType" : 8192
     },
     "\/assets\/js\/plugins.js" : {
-      "ignoreWasSetByUser" : 1,
+      "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/assets\/js\/plugins.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
+      "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/assets\/js\/plugins-ck.js",
       "fileType" : 64
     },
@@ -1351,6 +1351,15 @@
       "initialSize" : 913,
       "fileType" : 8192
     },
+    "\/poster-index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/poster-index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/assets\/js\/foundation\/jquery.foundation.alerts.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1361,15 +1370,6 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.alerts-ck.js",
       "fileType" : 64
-    },
-    "\/poster-index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/poster-index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/assets\/css\/foundation-icons-general.css" : {
       "ignoreWasSetByUser" : 0,
@@ -1796,6 +1796,27 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/assets\/sass\/_theme.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/sass\/_theme.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/assets\/css\/_theme.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/assets\/css\/fc-webicons.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/css\/fc-webicons.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/assets\/js\/foundation\/jquery.foundation.joyride.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -1806,17 +1827,6 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.joyride-ck.js",
       "fileType" : 64
-    },
-    "\/assets\/img\/fairhead-icons\/fc-webicon-creativecloud-m.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-creativecloud-m.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-creativecloud-m.png",
-      "initialSize" : 2390,
-      "fileType" : 8192
     },
     "\/assets\/img\/fairhead-icons\/fc-webicon-msn.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1829,14 +1839,16 @@
       "initialSize" : 1327,
       "fileType" : 8192
     },
-    "\/assets\/css\/fc-webicons.css" : {
+    "\/assets\/img\/fairhead-icons\/fc-webicon-rss-s.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/css\/fc-webicons.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-rss-s.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-rss-s.png",
+      "initialSize" : 1870,
+      "fileType" : 8192
     },
     "\/assets\/js\/foundation\/jquery.foundation.topbar.js" : {
       "ignoreWasSetByUser" : 1,
@@ -1849,15 +1861,15 @@
       "outputAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.topbar-ck.js",
       "fileType" : 64
     },
-    "\/assets\/img\/fairhead-icons\/fc-webicon-rss-s.png" : {
+    "\/assets\/img\/fairhead-icons\/fc-webicon-creativecloud-m.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-rss-s.png",
+      "inputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-creativecloud-m.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-rss-s.png",
-      "initialSize" : 1870,
+      "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-creativecloud-m.png",
+      "initialSize" : 2390,
       "fileType" : 8192
     },
     "\/assets\/img\/foundation\/orbit\/pause-black.png" : {
@@ -1946,6 +1958,15 @@
       "initialSize" : 47745,
       "fileType" : 4096
     },
+    "\/index2.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index2.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/assets\/js\/foundation\/app.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -1957,12 +1978,32 @@
       "outputAbbreviatedPath" : "\/assets\/js\/foundation\/app-ck.js",
       "fileType" : 64
     },
-    "\/index2.html" : {
+    "\/content\/img\/section\/editorial_board_group.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index2.html",
+      "inputAbbreviatedPath" : "\/content\/img\/section\/editorial_board_group.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/content\/img\/section\/editorial_board_group.jpg",
+      "initialSize" : 10752,
+      "fileType" : 4096
+    },
+    "\/learn.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/learn.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/hot-topics.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/hot-topics.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -1977,41 +2018,12 @@
       "initialSize" : 1941,
       "fileType" : 8192
     },
-    "\/content\/img\/section\/editorial_board_group.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/content\/img\/section\/editorial_board_group.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/content\/img\/section\/editorial_board_group.jpg",
-      "initialSize" : 10752,
-      "fileType" : 4096
-    },
-    "\/hot-topics.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/hot-topics.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/posters.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/posters.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/learn.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/learn.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -2069,17 +2081,6 @@
       "initialSize" : 1877,
       "fileType" : 8192
     },
-    "\/assets\/ico\/apple-touch-icon-precomposed.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/ico\/apple-touch-icon-precomposed.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/ico\/apple-touch-icon-precomposed.png",
-      "initialSize" : 640,
-      "fileType" : 8192
-    },
     "\/assets\/img\/fairhead-icons\/fc-webicon-googleplus-m.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -2089,6 +2090,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/assets\/img\/fairhead-icons\/fc-webicon-googleplus-m.png",
       "initialSize" : 2256,
+      "fileType" : 8192
+    },
+    "\/assets\/ico\/apple-touch-icon-precomposed.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/ico\/apple-touch-icon-precomposed.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/ico\/apple-touch-icon-precomposed.png",
+      "initialSize" : 640,
       "fileType" : 8192
     },
     "\/assets\/js\/mustache.js" : {
@@ -2146,97 +2158,7 @@
     }
   },
   "manualImportLinks" : [
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.accordion.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.alerts.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.buttons.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 3,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.forms.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 4,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.mediaQueryToggle.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 5,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.navigation.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 6,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.orbit.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 7,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.reveal.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 8,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.tabs.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 9,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.foundation.tooltips.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 10,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.placeholder.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 11,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/foundation\/jquery.offcanvas.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 12,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/mustache.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins.js",
-      "followForSyntaxChecking" : 1
-    }
+
   ],
   "projectSettings" : {
     "hamlNoEscapeInAttributes" : 0,
@@ -2410,5 +2332,11 @@
     "lessDebugStyle" : 0,
     "javascriptAutoOutputPathRelativePath" : "",
     "slimAutoOutputPathStyle" : 0
+  },
+  "projectAttributes" : {
+    "bourbonEnabled" : 0,
+    "displayValue" : "practiceUpdate",
+    "displayValueWasSetByUser" : 1,
+    "compassEnabled" : 1
   }
 }
