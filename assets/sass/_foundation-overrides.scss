@@ -42,12 +42,13 @@ $topnav-dk: #798725;
 //blue2: #0d4862;
 
 /* !fonts */
-@import "/assets/font/MuseoSlab-500.css";
+$titleFontFamily: "din-condensed-web", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 /* !mixins */
 
-@mixin elementBoxShadow {
-	box-shadow: 0px 2px 2px rgba(0,0,0,.2);
+@mixin elementBoxShadow($color:$black, $hoff:0px, $voff:2px, $blur:2px, $spread:0px, $inset:false, $intensity: 0.8) {
+	$color: transparentize($color, $intensity);
+	@include single-box-shadow($color, $hoff, $voff, $blur, $spread, $inset);
 }
 
 @mixin noise($color:#fff, $intensity: 0.02, $color2:"false") {
@@ -82,7 +83,7 @@ $topnav-dk: #798725;
 
 // Grid Settings
 
-$rowWidth: 100%;// sets site to fluid grid
+$rowWidth: 1280px;// sets site to fluid grid
 // $columnGutter: 30px;
 // $totalColumns: 12;
 // $mobileTotalColumns: 4;

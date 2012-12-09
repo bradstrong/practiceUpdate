@@ -28,3 +28,20 @@
 		{{/user}}
 	{{/users}}
 {{/user-group}}
+
+
+<div itemscope itemtype="http://data-vocabulary.org/Person" class="{{source.type}}-name">  
+ <img src="{{{img.url}}}" itemprop="photo" class="photo">  
+  <span itemprop="name">{{firstName}} {{middleName}} {{lastName}} {{honorific}}</span>
+  <dl><span itemprop="title">writer</span>  
+  <a href="http://net.tutsplus.com" itemprop="affliation">Nettuts+</a>.  
+  I live in  
+  <span itemprop="address" itemscope  
+    itemtype="http://data-vocabulary.org/Address">  
+    <span itemprop="locality">Memphis</span>,  
+    <span itemprop="region">TN</span>  
+  </span>
+  Member since:
+  </dl>
+  <div class="user-bio"></div>
+</div> 

@@ -1,14 +1,55 @@
 article{
-	//&
+	background-color:$white;
+	@include elementBoxShadow;
 }
 
-.page-content{
+body{
 	@include noise(lighten($ter-ltTan, 10%), 0.02);
-	border-top:3px solid $pri-blue;
+}
+
+.page-header{
+	border-bottom:3px solid $pri-blue;
+	background-color: $white;
+}
+.page-content{
 	padding-top: $baseFontSize;
+}
+
+.section-widget{
+	background-color:$white;
+	@include elementBoxShadow;
+}
+
+.page-footer{
+	@include noise(lighten($ter-ltTan, 10%));
+	border-top:2px solid $white;
+}
+
+//type
+.item-title, .item-type, .item-pub-date{
+	font-family:$titleFontFamily;
+	font-weight:normal;
+	color:ter-ltTan;
+	text-transform:uppercase;
 }
 
 // BUTTONS
 .load-more-button{
 	background-color:$pri-green;
+}
+
+//Flag
+
+.flag{
+	border-top:1ps solid $white;
+	color: $white;
+	font-family:$titleFontFamily;
+	font-weight: normal;
+	@include elementBoxShadow;
+	&.featured{
+		background:$sec-green;
+	}
+	&.story-of-the-week{
+		background:$sec-orange;
+	}
 }

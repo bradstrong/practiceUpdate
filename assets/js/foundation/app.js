@@ -1,11 +1,21 @@
+ ;(function ($, window, undefined) {
 /*--
 //
 //PracticeUpdate Scripts
 //
  --*/
-;(function(){
-  /*-- Mustache - Top-bar --*/
-    $.getJSON('content/json/top-bar.json', function(data) {
+ /*-- TypeKit--*/
+(function() {
+    var config = {
+      kitId: 'zwv8ekz',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+  
+(function siteInit(){
+    /*-- Mustache - Top-bar --*/  
+     $.getJSON('content/json/top-bar.json', function(data) {
       $.get('assets/mustache/top-bar.mustache', function(template) {
         //alert('Load was performed.');
         var html = Mustache.to_html(template, data);
@@ -14,43 +24,31 @@
         $('.top-bar a.learn').attr('data-reveal-id', 'modal-feature-disabled');
       });
     });
-
-  /*-- Mustache - Main Search Panel --*/
-  //$.get('assets/mustache/main-search.mustache', function(template) {
-  //  var html = Mustache.to_html(template);
-  //  $('.main-search').html(html);
-  //});
-
-
-  /* Mustache - homepage footer template */
-  $.get('assets/mustache/page-footer.mustache', function(template) {
+    /* Mustache - homepage footer template */
+    $.get('assets/mustache/page-footer.mustache', function(template) {
       //alert('Load was performed.');
       var html = Mustache.to_html(template);
       $('.page-footer').html(html);
     });
+    /* Mustache - explore slider template */
+    $('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
+    //   console.log("explore slider initialized");
+    /*-- Modals --*/
+    //Import Modals
+    $.get('assets/mustache/modals.mustache', function(template) {
+      var html = Mustache.to_html(template);
+      $('body').append(html);
+    });
 
-  /* Mustache - explore slider template */
-  $('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
-  //   console.log("explore slider initialized");
-  /*-- Modals --*/
-  //Import Modals
-  $.get('assets/mustache/modals.mustache', function(template) {
-    var html = Mustache.to_html(template);
-    $('body').append(html);
-  });
-})(jQuery, this);
-
+    })();
 /*--
 //
 //Begin Original Foundation Scripts
 //
- --*/
- ;(function ($, window, undefined) {
+--*/
   'use strict';
-
   var $doc = $(document),
       Modernizr = window.Modernizr;
-
   $(document).ready(function() {
     $.fn.foundationAlerts           ? $doc.foundationAlerts() : null;
     $.fn.foundationButtons          ? $doc.foundationButtons() : null;
@@ -80,6 +78,10 @@
         window.scrollTo(0, 1);
       }, 0);
     });
-  }
-
+  };
+/*--
+//
+//End Original Foundation Scripts
+//
+ --*/
 })(jQuery, this);
