@@ -43,5 +43,8 @@ Thumbs.db
 *.sass-cache
 *.sass-cache*
 codekit-config.json
+codekit-config*
+*codekit-config.*
 *.sublime-project
 *.sublime-workspace
+codekit-config.json
