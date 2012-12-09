@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width" />
 	<meta name="description" content="View all the latest news and articles, personalized for you, in a single view.">
 
-	<title>Practice Network : Update</title>
+	<title>PracticeUpdate : Update</title>
 
 	<!-- Include CSS Files -->
 	<link rel="stylesheet" href="assets/css/app.css">
@@ -26,7 +26,7 @@
 	<![endif]-->   
 
 </head>
-<body id="update" class="update off-canvas logged-out">
+<body id="update" class="update off-canvas">
   <div class="widget ad">
     <div id="leaderboard" class="Breast ad-container">
       <div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
@@ -34,10 +34,46 @@
 			</div><!--.ad-content-->
 		</div><!--/#leaderboard.ad-container-->
   </div><!--/.widget.ad-->
-	<div class="page-header">
+	<div class="page-header container">
+<nav class="top-bar">
+
+<div class="off-canvas-control">
+	<div class="control-visibility">
+		<div class="sidebar-button-container">
+			<a class='sidebar-button button' id="sidebarButton" href="#sidebar">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+        <line fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" x1="0" y1="8.907" x2="48" y2="8.907"></line>
+        <line fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" x1="0" y1="24.173" x2="48" y2="24.173"></line>
+        <line fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" x1="0" y1="39.439" x2="48" y2="39.439"></line>
+        Menu
+      </svg>
+      </a><!--/#sidebarButton -->
+		</div><!--/.sidebar-button-container -->
+	</div><!--/.control-visibility-->
+</div><!--/.off-canvas-control-->
+
+	<ul>
+	  <li class="name"><div class="site-branding"><img src="assets/img/PracticeUpdate_logo.png"/></div><!--/.site-branding--></li>
+	  <li class="toggle-topbar"><a href="#"></a></li>
+	</ul>
+	<section>
+	  <ul id="main-nav">
+		  {{#pages}}
+			<li ><a href="{{page-id}}.html" class="{{page-id}}">{{page-id}}</a></li>
+			{{/pages}}
+	  </ul>
+	</section>
+</nav><!--/.top-bar-->
+
 	</div><!--/.page-header-->
 	<div class="page-content">
 		<section role="main">
+			<ul class="tabs pill">
+  <li class="active"><a href="#pillTab1">All Oncology</a></dli>
+  <li><a href="#pillTab2">My Oncology Topics</a></li>
+</ul>
+</li>
+</ul>
 			<div class="stream-container">
 			</div><!--/.stream-container-->
 			<div class="recommended">
@@ -52,46 +88,42 @@
 		<div class="dashboard">
 			<div class="component user-console">
 			</div><!--/.component.user-console-->
-<nav role="navigation" class="top-bar">
-	<ul class="nav-bar vertical">
-		<li class="nav-header">Specialties</li>
-<li>Bladder</li>
-<li>Bone</li>
-<li>Breast</li>
-<li>CNS/Brain</li>
-<li>Colon and Rectum</li>
-<li>Endocrine System</li>
-<li>Esophagus</li>
-<li>GYN (Non-Ovary)</li>
-<li>GYN (Ovary)</li>
-<li>Head and Neck</li>
-<li class="has-flyout">
-    <a href="#">More topics</a>
-    <a href="#" class="flyout-toggle"><span> </span></a>
-    <ul class="flyout">
-			<li>HIV-Related Cancers</li>
-			<li>Hodgkin's Lymphoma</li>
-			<li>Kidney (Renal Cell)</li>
-			<li>Leukemia</li>
-			<li>Liver and Bile Duct</li>
-			<li>Lung</li>
-			<li>Multiple Myeloma</li>
-			<li>Myelodysplastic Syndrome</li>
-			<li>Myeloproliferative Diseases</li>
-			<li>Non-Hodgkin's Lymphoma</li>
-			<li>Pancreas</li>
-			<li>Pediatric Cancers</li>
-			<li>Prostate</li>
-			<li>Rare Cancers</li>
-			<li>Skin (Melanoma)</li>
-			<li>Skin (Non-Melanoma)</li>
-			<li>Soft-Tissue Sarcoma</li>
-			<li>Stomach</li>
-			<li>Testicle</li>
-    </ul>
-  </li>
-	</ul>
-</nav>
+				<div class="component user-topic">
+					<form class="custom">
+					  <!-- <select style="display:none;" id="customDropdown">
+					    <option SELECTED>All my channels</option>
+					    <option>This is another option</option>
+					    <option>Look, a third option</option>
+					  </select> -->
+					  <div class="custom dropdown">
+					    <a href="#" class="current">
+					      All my channels
+					    </a>
+					    <a href="#" class="selector"></a>
+					    <ul>
+					      <li><a href="#">Oncology</a></li>
+					      <li><a href="#">Dermatology</a></li>
+					      <li class="divider"></li>
+					      <li><a href="#">Add or change</a></li>
+					    </ul>
+					  </div>
+					</form>
+				<nav role="navigation">
+					<ul class="tabs vertical">
+					      <li class="active"><a href="#">Oncology</a>
+					      	<ul>
+					      		<li class="active"><a href="#">Breast</a></li>
+							      <li><a href="#">Bladder</a></li>
+							      <li><a href="#">Prostate</a></li><a href="#">
+					      	</ul>
+					      </li>
+					      <li><a href="#">My Oncology</a></li>
+					      <li><a href="#">All Dermatology</a></li>
+					      <li><a href="#">My Dermatology</a></li><a href="#">
+					</ul>
+				</nav>					
+			</div><!--/.component.user-topic-->
+
 			<div class="component topic-spotlight">
 			</div><!--/.component.topic-spotlight-->
 			<div class="cta meet-experts">
@@ -131,7 +163,6 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(2228,{"containerId":"getsat-w
 
 
 
-
 	<!-- Mustache - homepage feed template -->
 	<script>
 
@@ -166,13 +197,13 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(2228,{"containerId":"getsat-w
 	});
 
 	<!-- Mustache - homepage user-topic template -->
-	$.getJSON('content/json/user-topic.json', function(data) {
-		$.get('assets/mustache/user-topic.mustache', function(template) {
+//	$.getJSON('content/json/user-topic.json', function(data) {
+//		$.get('assets/mustache/user-topic.mustache', function(template) {
 			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.user-topic').html(html);
-		});
-	});
+//	    var html = Mustache.to_html(template, data);
+//	    $('.user-topic').html(html);
+//		});
+//	});
 
 	<!-- Mustache - homepage topic-spotlight template -->
 	$.getJSON('content/json/topic-spotlight.json', function(data) {

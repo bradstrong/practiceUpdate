@@ -2,7 +2,10 @@
 	"items": [
 		{
 			"id": "0001",
-			"featured": true,
+			"flag": {
+				"featured": true,
+				"story-of-the-week": true
+			},
 			"type": "Journal Scan: Research",
 			"pub-date": {
 				"date": {
@@ -61,7 +64,10 @@
 		},
 		{
 			"id": "0002",
-			"featured": false,
+			"flag": {
+				"featured": false,
+				"story-of-the-week": false
+			},
 			"type": "News",
 			"pub-date": {
 				"date": {
@@ -91,7 +97,10 @@
 		},
 		{
 			"id": "0003",
-			"featured": false,
+			"flag": {
+				"featured": false,
+				"story-of-the-week": false
+			},
 			"type": "Journal Scan: Research",
 			"pub-date": {
 				"date": {
@@ -121,7 +130,10 @@
 		},
 		{
 			"id": "0004",
-			"featured": false,
+			"flag": {
+				"featured": false,
+				"story-of-the-week": false
+			},
 			"type": "Journal Scan: Research",
 			"pub-date": {
 				"date": {
@@ -150,7 +162,10 @@
 		},
 		{
 			"id": "0005",
-			"featured": false,
+			"flag": {
+				"featured": false,
+				"story-of-the-week": false
+			},
 			"type": "Journal Scan: Review",
 			"pub-date": {
 				"date": {
@@ -180,7 +195,10 @@
 		},
 		{
 			"id": "0006",
-			"featured": true,
+			"flag": {
+				"featured": false,
+				"story-of-the-week": false
+			},
 			"type": "Expert Opinion",
 			"pub-date": {
 				"date": {
@@ -208,7 +226,10 @@
 		},		
 		{
 			"id": "0007",
-			"featured": false,
+			"flag": {
+				"featured": false,
+				"story-of-the-week": false
+			},
 			"type": "CME",
 			"pub-date": {
 				"date": {
