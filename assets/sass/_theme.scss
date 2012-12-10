@@ -51,7 +51,7 @@ body{
 	color: $white;
 	font-family:$titleFontFamily;
 	font-weight: normal;
-	@include elementBoxShadow;
+	//@include elementBoxShadow;
 	&.featured{
 		background:$sec-green;
 	}

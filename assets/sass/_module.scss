@@ -170,13 +170,17 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 	}
 }
 
+//channel list
+.channel-title{
+	@extend h4;
+}
+
 //user directory
 .user-directory-header{@include innerRow(collapse);}
 .user-directory{@include innerRow(collapse);}
 .user-group{@include column(12, collapse);}
 
 // User Profile
-
 .profile-card{@include innerRow();}
 .profile-details{@include innerRow();}
 .profile-overview{@include column(9);}

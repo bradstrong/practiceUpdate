@@ -2,7 +2,7 @@
 /* !fonts */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_semantic-grid.scss */
-.top-bar ul > li.name, .top-bar section, .footer-section-container, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .user-directory-container, .user-profile-container, expert-channel-list-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-footer, .commentary-container div[class$="-photo"], .commentary-container div[class$="-name"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .single-channel, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .user-group, .profile-overview, .profile-photo, .user-detail-list dt, .user-detail-list dd, .user-profile-section {
+.top-bar ul > li.name, .top-bar section, .footer-section-container, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .user-directory-container, .user-profile-container, .channel-list-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-footer, .commentary-container div[class$="-photo"], .commentary-container div[class$="-name"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .single-channel, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .user-group, .profile-overview, .profile-photo, .user-detail-list dt, .user-detail-list dd, .user-profile-section {
   float: left;
 }
 
@@ -33,7 +33,7 @@ article, .footer-section-container .footer-section, .flag-container, .item-heade
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_semantic-grid.scss */
-.top-bar ul > li.name, .top-bar section, .footer-section-container, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .user-directory-container, .user-profile-container, expert-channel-list-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-footer, .commentary-container div[class$="-photo"], .commentary-container div[class$="-name"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .single-channel, .load-more, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .user-group, .profile-overview, .profile-photo, .user-detail-list dt, .user-detail-list dd, .user-profile-section {
+.top-bar ul > li.name, .top-bar section, .footer-section-container, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .user-directory-container, .user-profile-container, .channel-list-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-footer, .commentary-container div[class$="-photo"], .commentary-container div[class$="-name"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .single-channel, .load-more, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .user-group, .profile-overview, .profile-photo, .user-detail-list dt, .user-detail-list dd, .user-profile-section {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -631,7 +631,7 @@ that IE7/8 do not support :nth-child.
 
 /* Base Type Styles Using Modular Scale ---------------------- */
 /* line 3, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/common/_typography.scss */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, .user-name, h4, h5, .cta .cta-title, .user-profile-section-title, h6, pre, form, p, blockquote, th, td {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, .user-name, h4, .channel-title, h5, .cta .cta-title, .user-profile-section-title, h6, pre, form, p, blockquote, th, td {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -661,7 +661,7 @@ aside p {
 }
 
 /* line 15, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/common/_typography.scss */
-h1, h2, h3, .user-name, h4, h5, .cta .cta-title, .user-profile-section-title, h6 {
+h1, h2, h3, .user-name, h4, .channel-title, h5, .cta .cta-title, .user-profile-section-title, h6 {
   font-family: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -672,7 +672,7 @@ h1, h2, h3, .user-name, h4, h5, .cta .cta-title, .user-profile-section-title, h6
   margin-top: 14px;
 }
 /* line 24, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/common/_typography.scss */
-h1 small, h2 small, h3 small, .user-name small, h4 small, h5 small, .cta .cta-title small, .user-profile-section-title small, h6 small {
+h1 small, h2 small, h3 small, .user-name small, h4 small, .channel-title small, h5 small, .cta .cta-title small, .user-profile-section-title small, h6 small {
   font-size: 60%;
   color: #6f6f6f;
   line-height: 0;
@@ -694,7 +694,7 @@ h3, .user-name {
 }
 
 /* line 30, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/common/_typography.scss */
-h4 {
+h4, .channel-title {
   font-size: 23px;
 }
 
@@ -2589,7 +2589,7 @@ ul.accordion > li > div.title {
   transition: 0.15s background linear;
 }
 /* line 106, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_ui.scss */
-ul.accordion > li > div.title h1, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, ul.accordion > li > div.title .user-name, ul.accordion > li > div.title h4, ul.accordion > li > div.title h5, ul.accordion > li > div.title .cta .cta-title, .cta ul.accordion > li > div.title .cta-title, ul.accordion > li > div.title .user-profile-section-title {
+ul.accordion > li > div.title h1, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, ul.accordion > li > div.title .user-name, ul.accordion > li > div.title h4, ul.accordion > li > div.title .channel-title, ul.accordion > li > div.title h5, ul.accordion > li > div.title .cta .cta-title, .cta ul.accordion > li > div.title .cta-title, ul.accordion > li > div.title .user-profile-section-title {
   margin: 0;
 }
 /* line 107, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_ui.scss */
@@ -5969,9 +5969,8 @@ article {
   margin: 0;
   font-family: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  text-align: right;
 }
-/* line 69, ../sass/_layout.scss */
+/* line 68, ../sass/_layout.scss */
 .flag-container .flag {
   font-size: 14px;
   text-transform: uppercase;
@@ -5979,19 +5978,19 @@ article {
 
 /* Page Layouts */
 /* !Base Layout */
-/* line 81, ../sass/_layout.scss */
+/* line 80, ../sass/_layout.scss */
 .recommended {
   width: 41.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 81, ../sass/_layout.scss */
+  /* line 80, ../sass/_layout.scss */
   .recommended {
     float: left;
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 81, ../sass/_layout.scss */
+  /* line 80, ../sass/_layout.scss */
   .recommended {
     float: left;
     width: 100%;
@@ -6000,20 +5999,20 @@ article {
 }
 
 /* !Update Layout */
-/* line 84, ../sass/_layout.scss */
+/* line 83, ../sass/_layout.scss */
 .stream-container {
   padding: 0;
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 84, ../sass/_layout.scss */
+  /* line 83, ../sass/_layout.scss */
   .stream-container {
     float: left;
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 84, ../sass/_layout.scss */
+  /* line 83, ../sass/_layout.scss */
   .stream-container {
     width: auto;
     min-width: 0;
@@ -6033,20 +6032,20 @@ article {
 }
 
 /* !Explore Layout */
-/* line 87, ../sass/_layout.scss */
+/* line 86, ../sass/_layout.scss */
 .explore-container {
   padding: 0;
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 87, ../sass/_layout.scss */
+  /* line 86, ../sass/_layout.scss */
   .explore-container {
     float: left;
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 87, ../sass/_layout.scss */
+  /* line 86, ../sass/_layout.scss */
   .explore-container {
     width: auto;
     min-width: 0;
@@ -6066,19 +6065,19 @@ article {
 }
 
 /* !Learn Layout */
-/* line 90, ../sass/_layout.scss */
+/* line 89, ../sass/_layout.scss */
 .cme-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 90, ../sass/_layout.scss */
+  /* line 89, ../sass/_layout.scss */
   .cme-container {
     float: left;
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 90, ../sass/_layout.scss */
+  /* line 89, ../sass/_layout.scss */
   .cme-container {
     width: auto;
     min-width: 0;
@@ -6098,20 +6097,20 @@ article {
 }
 
 /* !Single Item */
-/* line 93, ../sass/_layout.scss */
+/* line 92, ../sass/_layout.scss */
 .single-item-container {
   padding: 0;
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 93, ../sass/_layout.scss */
+  /* line 92, ../sass/_layout.scss */
   .single-item-container {
     float: left;
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 93, ../sass/_layout.scss */
+  /* line 92, ../sass/_layout.scss */
   .single-item-container {
     width: auto;
     min-width: 0;
@@ -6131,20 +6130,20 @@ article {
 }
 
 /* !User Directory */
-/* line 96, ../sass/_layout.scss */
+/* line 95, ../sass/_layout.scss */
 .user-directory-container {
   padding: 0;
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 96, ../sass/_layout.scss */
+  /* line 95, ../sass/_layout.scss */
   .user-directory-container {
     float: left;
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 96, ../sass/_layout.scss */
+  /* line 95, ../sass/_layout.scss */
   .user-directory-container {
     width: auto;
     min-width: 0;
@@ -6163,20 +6162,20 @@ article {
   }
 }
 
-/* line 97, ../sass/_layout.scss */
+/* line 96, ../sass/_layout.scss */
 .user-profile-container {
   padding: 0;
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 97, ../sass/_layout.scss */
+  /* line 96, ../sass/_layout.scss */
   .user-profile-container {
     float: left;
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 97, ../sass/_layout.scss */
+  /* line 96, ../sass/_layout.scss */
   .user-profile-container {
     width: auto;
     min-width: 0;
@@ -6195,21 +6194,21 @@ article {
   }
 }
 
-/* line 98, ../sass/_layout.scss */
-expert-channel-list-container {
+/* line 97, ../sass/_layout.scss */
+.channel-list-container {
   padding: 0;
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 98, ../sass/_layout.scss */
-  expert-channel-list-container {
+  /* line 97, ../sass/_layout.scss */
+  .channel-list-container {
     float: left;
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 98, ../sass/_layout.scss */
-  expert-channel-list-container {
+  /* line 97, ../sass/_layout.scss */
+  .channel-list-container {
     width: auto;
     min-width: 0;
     margin-left: 0;
@@ -6217,150 +6216,150 @@ expert-channel-list-container {
     *zoom: 1;
   }
   /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_clearfix.scss */
-  expert-channel-list-container:before, expert-channel-list-container:after {
+  .channel-list-container:before, .channel-list-container:after {
     content: " ";
     display: table;
   }
   /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_clearfix.scss */
-  expert-channel-list-container:after {
+  .channel-list-container:after {
     clear: both;
   }
 }
 
 /* Page Specific Styles*/
 /* Single Item page elements*/
-/* line 103, ../sass/_layout.scss */
+/* line 102, ../sass/_layout.scss */
 .item-header {
   margin: 0;
   padding-top: 7px;
 }
 
-/* line 105, ../sass/_layout.scss */
+/* line 104, ../sass/_layout.scss */
 .item-title-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 105, ../sass/_layout.scss */
+  /* line 104, ../sass/_layout.scss */
   .item-title-container {
     float: left;
     width: 100%;
   }
 }
 
-/* line 106, ../sass/_layout.scss */
+/* line 105, ../sass/_layout.scss */
 .item-type {
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 106, ../sass/_layout.scss */
+  /* line 105, ../sass/_layout.scss */
   .item-type {
     float: left;
     width: 100%;
   }
 }
 
-/* line 107, ../sass/_layout.scss */
+/* line 106, ../sass/_layout.scss */
 .item-pub-date {
   width: 41.66667%;
   text-align: right;
 }
 @media only screen and (max-width: 767px) {
-  /* line 107, ../sass/_layout.scss */
+  /* line 106, ../sass/_layout.scss */
   .item-pub-date {
     float: left;
     width: 100%;
   }
 }
 
-/* line 109, ../sass/_layout.scss */
+/* line 108, ../sass/_layout.scss */
 .item-container .commentary-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 109, ../sass/_layout.scss */
+  /* line 108, ../sass/_layout.scss */
   .item-container .commentary-container {
     float: left;
     width: 100%;
   }
 }
-/* line 110, ../sass/_layout.scss */
+/* line 109, ../sass/_layout.scss */
 .item-container .journal-title {
   font-size: 17px;
 }
-/* line 111, ../sass/_layout.scss */
+/* line 110, ../sass/_layout.scss */
 .item-container .item-title {
   font-size: 17px;
 }
-/* line 112, ../sass/_layout.scss */
+/* line 111, ../sass/_layout.scss */
 .item-container .source-title {
   font-size: 14px;
 }
 
-/* line 115, ../sass/_layout.scss */
+/* line 114, ../sass/_layout.scss */
 .item-content-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 115, ../sass/_layout.scss */
+  /* line 114, ../sass/_layout.scss */
   .item-content-container {
     float: left;
     width: 100%;
   }
 }
 
-/* line 116, ../sass/_layout.scss */
+/* line 115, ../sass/_layout.scss */
 .item-footer {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 116, ../sass/_layout.scss */
+  /* line 115, ../sass/_layout.scss */
   .item-footer {
     float: left;
     width: 100%;
   }
 }
 
-/* line 119, ../sass/_layout.scss */
+/* line 118, ../sass/_layout.scss */
 .commentary-container div[class$="-photo"] {
   width: 16.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 119, ../sass/_layout.scss */
+  /* line 118, ../sass/_layout.scss */
   .commentary-container div[class$="-photo"] {
     float: left;
     width: 100%;
   }
 }
-/* line 122, ../sass/_layout.scss */
+/* line 121, ../sass/_layout.scss */
 .commentary-container div[class$="-name"] {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 122, ../sass/_layout.scss */
+  /* line 121, ../sass/_layout.scss */
   .commentary-container div[class$="-name"] {
     float: left;
     width: 100%;
   }
 }
 
-/* line 127, ../sass/_layout.scss */
+/* line 126, ../sass/_layout.scss */
 .item-source-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 127, ../sass/_layout.scss */
+  /* line 126, ../sass/_layout.scss */
   .item-source-container {
     float: left;
     width: 100%;
   }
 }
-/* line 129, ../sass/_layout.scss */
+/* line 128, ../sass/_layout.scss */
 .item-source-container .item-source {
   *zoom: 1;
   background-color: light(white, 25);
   border-top: 1px solid white;
 }
-/* line 130, ../sass/_layout.scss */
+/* line 129, ../sass/_layout.scss */
 .item-source-container .item-source .item-title, .item-source-container .item-source cite {
   font-size: 14px;
   font-style: normal;
@@ -6374,23 +6373,23 @@ expert-channel-list-container {
 .item-source-container .item-source:after {
   clear: both;
 }
-/* line 137, ../sass/_layout.scss */
+/* line 136, ../sass/_layout.scss */
 .item-source-container figure[class$="-photo"] {
   width: 16.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 137, ../sass/_layout.scss */
+  /* line 136, ../sass/_layout.scss */
   .item-source-container figure[class$="-photo"] {
     float: left;
     width: 100%;
   }
 }
-/* line 140, ../sass/_layout.scss */
+/* line 139, ../sass/_layout.scss */
 .item-source-container div[class$="-name"] {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 140, ../sass/_layout.scss */
+  /* line 139, ../sass/_layout.scss */
   .item-source-container div[class$="-name"] {
     float: left;
     width: 100%;
@@ -6401,59 +6400,60 @@ expert-channel-list-container {
 /* Single Item page elements*/
 /* !Update Page Elements */
 /* !stream */
-/* line 151, ../sass/_layout.scss */
+/* line 150, ../sass/_layout.scss */
 .stream-item-container {
   margin-bottom: 10px;
 }
 
 /* !Explore Page Elements*/
-/* line 156, ../sass/_layout.scss */
+/* line 155, ../sass/_layout.scss */
 .explore-feature .feature-item {
   background: white;
 }
 
-/* line 157, ../sass/_layout.scss */
+/* line 156, ../sass/_layout.scss */
 .explore-feature {
   background: url(loading.gif) center center #f4f4f4;
   height: 300px;
 }
 
-/* line 158, ../sass/_layout.scss */
+/* line 157, ../sass/_layout.scss */
 .explore-feature img {
   display: none;
 }
 
-/* line 160, ../sass/_layout.scss */
+/* line 159, ../sass/_layout.scss */
 .explore-feature.orbit {
   background: none;
 }
 
-/* line 161, ../sass/_layout.scss */
+/* line 160, ../sass/_layout.scss */
 .explore-feature.orbit img {
   display: block;
 }
 
-/* line 163, ../sass/_layout.scss */
+/* line 162, ../sass/_layout.scss */
 .explore-feature.orbit section {
   padding: 10px;
 }
-/* line 164, ../sass/_layout.scss */
+/* line 163, ../sass/_layout.scss */
 .explore-feature.orbit article {
   padding: 10px;
 }
 
 /* Channel Listing Page */
-/* line 168, ../sass/_layout.scss */
+/* line 167, ../sass/_layout.scss */
 .channel-list {
   margin: 0 -15px;
 }
 
-/* line 171, ../sass/_layout.scss */
+/* line 170, ../sass/_layout.scss */
 .single-channel {
-  width: 33.33333%;
+  padding: 0;
+  width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 171, ../sass/_layout.scss */
+  /* line 170, ../sass/_layout.scss */
   .single-channel {
     float: left;
     width: 100%;
@@ -6461,7 +6461,7 @@ expert-channel-list-container {
 }
 
 /*  !UI ELEMENTS */
-/* line 176, ../sass/_layout.scss */
+/* line 175, ../sass/_layout.scss */
 .load-more {
   margin: 0 auto !important;
   width: 50%;
@@ -6470,7 +6470,7 @@ expert-channel-list-container {
   padding-bottom: 14px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 176, ../sass/_layout.scss */
+  /* line 175, ../sass/_layout.scss */
   .load-more {
     float: left;
     width: 100%;
@@ -6815,97 +6815,97 @@ expert-channel-list-container {
   border-bottom: 1px solid white;
 }
 
-/* line 174, ../sass/_module.scss */
+/* line 179, ../sass/_module.scss */
 .user-directory-header {
   margin: 0;
 }
 
-/* line 175, ../sass/_module.scss */
+/* line 180, ../sass/_module.scss */
 .user-directory {
   margin: 0;
 }
 
-/* line 176, ../sass/_module.scss */
+/* line 181, ../sass/_module.scss */
 .user-group {
   padding: 0;
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 176, ../sass/_module.scss */
+  /* line 181, ../sass/_module.scss */
   .user-group {
     float: left;
     width: 100%;
   }
 }
 
-/* line 180, ../sass/_module.scss */
+/* line 184, ../sass/_module.scss */
 .profile-card {
   margin: 0 -15px;
 }
 
-/* line 181, ../sass/_module.scss */
+/* line 185, ../sass/_module.scss */
 .profile-details {
   margin: 0 -15px;
 }
 
-/* line 182, ../sass/_module.scss */
+/* line 186, ../sass/_module.scss */
 .profile-overview {
   width: 75%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 182, ../sass/_module.scss */
+  /* line 186, ../sass/_module.scss */
   .profile-overview {
     float: left;
     width: 100%;
   }
 }
 
-/* line 183, ../sass/_module.scss */
+/* line 187, ../sass/_module.scss */
 .profile-photo {
   width: 25%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 183, ../sass/_module.scss */
+  /* line 187, ../sass/_module.scss */
   .profile-photo {
     float: left;
     width: 100%;
   }
 }
 
-/* line 186, ../sass/_module.scss */
+/* line 190, ../sass/_module.scss */
 .user-detail-list {
   margin: 0 -15px;
 }
-/* line 188, ../sass/_module.scss */
+/* line 192, ../sass/_module.scss */
 .user-detail-list dt {
   width: 33.33333%;
   font-weight: bold;
 }
 @media only screen and (max-width: 767px) {
-  /* line 188, ../sass/_module.scss */
+  /* line 192, ../sass/_module.scss */
   .user-detail-list dt {
     float: left;
     width: 100%;
   }
 }
-/* line 192, ../sass/_module.scss */
+/* line 196, ../sass/_module.scss */
 .user-detail-list dd {
   width: 66.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 192, ../sass/_module.scss */
+  /* line 196, ../sass/_module.scss */
   .user-detail-list dd {
     float: left;
     width: 100%;
   }
 }
 
-/* line 196, ../sass/_module.scss */
+/* line 200, ../sass/_module.scss */
 .user-profile-section {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 196, ../sass/_module.scss */
+  /* line 200, ../sass/_module.scss */
   .user-profile-section {
     float: left;
     width: 100%;
@@ -6981,9 +6981,6 @@ body {
   color: white;
   font-family: "din-condensed-web", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 /* line 55, ../sass/_theme.scss */
 .flag.featured {
