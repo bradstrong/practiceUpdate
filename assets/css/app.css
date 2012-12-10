@@ -2,7 +2,7 @@
 /* !fonts */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_semantic-grid.scss */
-.top-bar ul > li.name, .top-bar section, .footer-section-container, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-footer, .commentary-container div[class$="-photo"], .commentary-container div[class$="-name"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content {
+.top-bar ul > li.name, .top-bar section, .footer-section-container, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .user-directory-container, .user-profile-container, expert-channel-list-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-footer, .commentary-container div[class$="-photo"], .commentary-container div[class$="-name"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .single-channel, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .user-group, .profile-overview, .profile-photo, .user-detail-list dt, .user-detail-list dd, .user-profile-section {
   float: left;
 }
 
@@ -12,28 +12,28 @@
 }
 
 /* line 55, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_semantic-grid.scss */
-article, .page-content, .page-footer, .footer-section-container .footer-section, .flag-container, .item-header, .explore-sections section {
+article, .page-content, .page-footer, .footer-section-container .footer-section, .flag-container, .item-header, .channel-list, .explore-sections section, .user-directory-header, .user-directory, .profile-card, .profile-details, .user-detail-list {
   *zoom: 1;
 }
 /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_clearfix.scss */
-article:before, .page-content:before, .page-footer:before, .footer-section-container .footer-section:before, .flag-container:before, .item-header:before, .explore-sections section:before, article:after, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .flag-container:after, .item-header:after, .explore-sections section:after {
+article:before, .page-content:before, .page-footer:before, .footer-section-container .footer-section:before, .flag-container:before, .item-header:before, .channel-list:before, .explore-sections section:before, .user-directory-header:before, .user-directory:before, .profile-card:before, .profile-details:before, .user-detail-list:before, article:after, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .flag-container:after, .item-header:after, .channel-list:after, .explore-sections section:after, .user-directory-header:after, .user-directory:after, .profile-card:after, .profile-details:after, .user-detail-list:after {
   content: " ";
   display: table;
 }
 /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_clearfix.scss */
-article:after, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .flag-container:after, .item-header:after, .explore-sections section:after {
+article:after, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .flag-container:after, .item-header:after, .channel-list:after, .explore-sections section:after, .user-directory-header:after, .user-directory:after, .profile-card:after, .profile-details:after, .user-detail-list:after {
   clear: both;
 }
 
 /* line 59, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_semantic-grid.scss */
-article, .footer-section-container .footer-section, .flag-container, .item-header, .explore-sections section {
+article, .footer-section-container .footer-section, .flag-container, .item-header, .channel-list, .explore-sections section, .user-directory-header, .user-directory, .profile-card, .profile-details, .user-detail-list {
   width: auto;
   max-width: none;
   min-width: 0;
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_semantic-grid.scss */
-.top-bar ul > li.name, .top-bar section, .footer-section-container, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-footer, .commentary-container div[class$="-photo"], .commentary-container div[class$="-name"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .load-more, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content {
+.top-bar ul > li.name, .top-bar section, .footer-section-container, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .user-directory-container, .user-profile-container, expert-channel-list-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-footer, .commentary-container div[class$="-photo"], .commentary-container div[class$="-name"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .single-channel, .load-more, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .user-group, .profile-overview, .profile-photo, .user-detail-list dt, .user-detail-list dd, .user-profile-section {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -631,7 +631,7 @@ that IE7/8 do not support :nth-child.
 
 /* Base Type Styles Using Modular Scale ---------------------- */
 /* line 3, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/common/_typography.scss */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, .cta .cta-title, h6, pre, form, p, blockquote, th, td {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, .user-name, h4, h5, .cta .cta-title, .user-profile-section-title, h6, pre, form, p, blockquote, th, td {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -661,7 +661,7 @@ aside p {
 }
 
 /* line 15, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/common/_typography.scss */
-h1, h2, h3, h4, h5, .cta .cta-title, h6 {
+h1, h2, h3, .user-name, h4, h5, .cta .cta-title, .user-profile-section-title, h6 {
   font-family: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -672,7 +672,7 @@ h1, h2, h3, h4, h5, .cta .cta-title, h6 {
   margin-top: 14px;
 }
 /* line 24, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/common/_typography.scss */
-h1 small, h2 small, h3 small, h4 small, h5 small, .cta .cta-title small, h6 small {
+h1 small, h2 small, h3 small, .user-name small, h4 small, h5 small, .cta .cta-title small, .user-profile-section-title small, h6 small {
   font-size: 60%;
   color: #6f6f6f;
   line-height: 0;
@@ -689,7 +689,7 @@ h2 {
 }
 
 /* line 29, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/common/_typography.scss */
-h3 {
+h3, .user-name {
   font-size: 27px;
 }
 
@@ -699,7 +699,7 @@ h4 {
 }
 
 /* line 31, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/common/_typography.scss */
-h5, .cta .cta-title {
+h5, .cta .cta-title, .user-profile-section-title {
   font-size: 17px;
 }
 
@@ -923,13 +923,13 @@ abbr {
 }
 
   /* line 98, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/common/_typography.scss */
-  p, h2, h3 {
+  p, h2, h3, .user-name {
     orphans: 3;
     widows: 3;
   }
 
   /* line 99, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/common/_typography.scss */
-  h2, h3 {
+  h2, h3, .user-name {
     page-break-after: avoid;
   }
 
@@ -1012,7 +1012,7 @@ label.inline {
 }
 
 /* line 24, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/common/_forms.scss */
-a.button.prefix, a.prefix.load-more-button, a.button.postfix, a.postfix.load-more-button {
+a.button.prefix, a.prefix.load-more-button, a.prefix.view-more-button, a.button.postfix, a.postfix.load-more-button, a.postfix.view-more-button {
   padding-left: 0;
   padding-right: 0;
   text-align: center;
@@ -1398,7 +1398,7 @@ form.custom .custom.disabled {
 
 /* Normal Buttons ---------------------- */
 /* line 3, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button, .load-more-button {
+.button, .load-more-button, .view-more-button {
   width: auto;
   background: #0084a9;
   border: 1px solid #00485c;
@@ -1430,110 +1430,110 @@ form.custom .custom.disabled {
   /* Disabled ---------- */
 }
 /* line 6, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button:hover, .load-more-button:hover {
+.button:hover, .load-more-button:hover, .view-more-button:hover {
   color: white;
   background-color: #005c76;
 }
 /* line 7, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button:active, .load-more-button:active {
+.button:active, .load-more-button:active, .view-more-button:active {
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
 }
 /* line 8, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button:focus, .load-more-button:focus {
+.button:focus, .load-more-button:focus, .view-more-button:focus {
   -webkit-box-shadow: 0 0 4px #0084a9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 0 4px #0084a9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 0 4px #0084a9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   color: white;
 }
 /* line 11, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.large, .large.load-more-button {
+.button.large, .large.load-more-button, .large.view-more-button {
   font-size: 17px;
   padding: 15px 30px 16px;
 }
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.medium, .medium.load-more-button {
+.button.medium, .medium.load-more-button, .medium.view-more-button {
   font-size: 14px;
 }
 /* line 13, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.small, .small.load-more-button {
+.button.small, .small.load-more-button, .small.view-more-button {
   font-size: 11px;
   padding: 7px 14px 8px;
 }
 /* line 14, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.tiny, .tiny.load-more-button {
+.button.tiny, .tiny.load-more-button, .tiny.view-more-button {
   font-size: 10px;
   padding: 5px 10px 6px;
 }
 /* line 15, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.expand, .expand.load-more-button {
+.button.expand, .expand.load-more-button, .expand.view-more-button {
   width: 100%;
   text-align: center;
 }
 /* line 18, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.primary, .primary.load-more-button {
+.button.primary, .primary.load-more-button, .primary.view-more-button {
   background-color: #0084a9;
   border: 1px solid #00485c;
 }
 /* line 19, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.primary:hover, .primary.load-more-button:hover {
+.button.primary:hover, .primary.load-more-button:hover, .primary.view-more-button:hover {
   background-color: #005c76;
 }
 /* line 20, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.primary:focus, .primary.load-more-button:focus {
+.button.primary:focus, .primary.load-more-button:focus, .primary.view-more-button:focus {
   -webkit-box-shadow: 0 0 4px #0084a9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 0 4px #0084a9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 0 4px #0084a9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 /* line 22, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.success, .success.load-more-button {
+.button.success, .success.load-more-button, .success.view-more-button {
   background-color: #5da423;
   border: 1px solid #396516;
 }
 /* line 23, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.success:hover, .success.load-more-button:hover {
+.button.success:hover, .success.load-more-button:hover, .success.view-more-button:hover {
   background-color: #457a1a;
 }
 /* line 24, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.success:focus, .success.load-more-button:focus {
+.button.success:focus, .success.load-more-button:focus, .success.view-more-button:focus {
   -webkit-box-shadow: 0 0 5px #5da423, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 0 5px #5da423, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 0 5px #5da423, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 /* line 26, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.alert, .alert.load-more-button {
+.button.alert, .alert.load-more-button, .alert.view-more-button {
   background-color: #c60f13;
   border: 1px solid #7f0a0c;
 }
 /* line 27, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.alert:hover, .alert.load-more-button:hover {
+.button.alert:hover, .alert.load-more-button:hover, .alert.view-more-button:hover {
   background-color: #970b0e;
 }
 /* line 28, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.alert:focus, .alert.load-more-button:focus {
+.button.alert:focus, .alert.load-more-button:focus, .alert.view-more-button:focus {
   -webkit-box-shadow: 0 0 4px #c60f13, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 0 4px #c60f13, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 0 4px #c60f13, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 /* line 30, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.secondary, .secondary.load-more-button {
+.button.secondary, .secondary.load-more-button, .secondary.view-more-button {
   background-color: #e9e9e9;
   color: #1d1d1d;
   border: 1px solid #c3c3c3;
 }
 /* line 31, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.secondary:hover, .secondary.load-more-button:hover {
+.button.secondary:hover, .secondary.load-more-button:hover, .secondary.view-more-button:hover {
   background-color: #d0d0d0;
 }
 /* line 32, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.secondary:focus, .secondary.load-more-button:focus {
+.button.secondary:focus, .secondary.load-more-button:focus, .secondary.view-more-button:focus {
   -webkit-box-shadow: 0 0 5px #e9e9e9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 0 5px #e9e9e9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 0 5px #e9e9e9, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 /* line 36, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.radius, .flag-container .button.flag, .flag-container .flag.load-more-button, .radius.load-more-button, .load-more-button.query-no-results, .button.query-no-results {
+.button.radius, .flag-container .button.flag, .flag-container .flag.load-more-button, .flag-container .flag.view-more-button, .radius.load-more-button, .load-more-button.query-no-results, .button.query-no-results, .query-no-results.view-more-button, .radius.view-more-button {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -1541,7 +1541,7 @@ form.custom .custom.disabled {
   border-radius: 3px;
 }
 /* line 37, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.round, .round.load-more-button {
+.button.round, .round.load-more-button, .round.view-more-button {
   -webkit-border-radius: 1000px;
   -moz-border-radius: 1000px;
   -ms-border-radius: 1000px;
@@ -1549,19 +1549,19 @@ form.custom .custom.disabled {
   border-radius: 1000px;
 }
 /* line 40, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.full-width, .full-width.load-more-button {
+.button.full-width, .full-width.load-more-button, .full-width.view-more-button {
   width: 100%;
   text-align: center;
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
 /* line 41, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.left-align, .left-align.load-more-button {
+.button.left-align, .left-align.load-more-button, .left-align.view-more-button {
   text-align: left;
   text-indent: 12px;
 }
 /* line 44, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.disabled, .disabled.load-more-button, .button[disabled], [disabled].load-more-button {
+.button.disabled, .disabled.load-more-button, .disabled.view-more-button, .button[disabled], [disabled].load-more-button, [disabled].view-more-button {
   opacity: 0.6;
   cursor: default;
   background: #0084a9;
@@ -1570,37 +1570,37 @@ form.custom .custom.disabled {
   box-shadow: none;
 }
 /* line 45, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.disabled :hover, .disabled.load-more-button :hover, .button[disabled] :hover, [disabled].load-more-button :hover {
+.button.disabled :hover, .disabled.load-more-button :hover, .disabled.view-more-button :hover, .button[disabled] :hover, [disabled].load-more-button :hover, [disabled].view-more-button :hover {
   background: #0084a9;
 }
 /* line 47, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.disabled.success, .disabled.success.load-more-button, .button[disabled].success, [disabled].success.load-more-button {
+.button.disabled.success, .disabled.success.load-more-button, .disabled.success.view-more-button, .button[disabled].success, [disabled].success.load-more-button, [disabled].success.view-more-button {
   background-color: #5da423;
 }
 /* line 48, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.disabled.success:hover, .disabled.success.load-more-button:hover, .button[disabled].success:hover, [disabled].success.load-more-button:hover {
+.button.disabled.success:hover, .disabled.success.load-more-button:hover, .disabled.success.view-more-button:hover, .button[disabled].success:hover, [disabled].success.load-more-button:hover, [disabled].success.view-more-button:hover {
   background-color: #5da423;
 }
 /* line 50, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.disabled.alert, .disabled.alert.load-more-button, .button[disabled].alert, [disabled].alert.load-more-button {
+.button.disabled.alert, .disabled.alert.load-more-button, .disabled.alert.view-more-button, .button[disabled].alert, [disabled].alert.load-more-button, [disabled].alert.view-more-button {
   background-color: #c60f13;
 }
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.disabled.alert:hover, .disabled.alert.load-more-button:hover, .button[disabled].alert:hover, [disabled].alert.load-more-button:hover {
+.button.disabled.alert:hover, .disabled.alert.load-more-button:hover, .disabled.alert.view-more-button:hover, .button[disabled].alert:hover, [disabled].alert.load-more-button:hover, [disabled].alert.view-more-button:hover {
   background-color: #c60f13;
 }
 /* line 53, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.disabled.secondary, .disabled.secondary.load-more-button, .button[disabled].secondary, [disabled].secondary.load-more-button {
+.button.disabled.secondary, .disabled.secondary.load-more-button, .disabled.secondary.view-more-button, .button[disabled].secondary, [disabled].secondary.load-more-button, [disabled].secondary.view-more-button {
   background-color: #e9e9e9;
 }
 /* line 54, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.disabled.secondary:hover, .disabled.secondary.load-more-button:hover, .button[disabled].secondary:hover, [disabled].secondary.load-more-button:hover {
+.button.disabled.secondary:hover, .disabled.secondary.load-more-button:hover, .disabled.secondary.view-more-button:hover, .button[disabled].secondary:hover, [disabled].secondary.load-more-button:hover, [disabled].secondary.view-more-button:hover {
   background-color: #e9e9e9;
 }
 
 /* Don't use native buttons on iOS */
 /* line 60, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-input[type=submit].button, input[type=submit].load-more-button, button.button, button.load-more-button {
+input[type=submit].button, input[type=submit].load-more-button, input[type=submit].view-more-button, button.button, button.load-more-button, button.view-more-button {
   -webkit-appearance: none;
 }
 
@@ -1613,29 +1613,29 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   }
 
   /* line 65, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-  input[type="submit"].tiny.button, input[type="submit"].tiny.load-more-button {
+  input[type="submit"].tiny.button, input[type="submit"].tiny.load-more-button, input[type="submit"].tiny.view-more-button {
     padding: 3px 10px 4px;
   }
 
   /* line 66, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-  input[type="submit"].small.button, input[type="submit"].small.load-more-button {
+  input[type="submit"].small.button, input[type="submit"].small.load-more-button, input[type="submit"].small.view-more-button {
     padding: 5px 14px 6px;
   }
 
   /* line 67, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-  input[type="submit"].button, input[type="submit"].load-more-button, input[type=submit].medium.button, input[type=submit].medium.load-more-button {
+  input[type="submit"].button, input[type="submit"].load-more-button, input[type="submit"].view-more-button, input[type=submit].medium.button, input[type=submit].medium.load-more-button, input[type=submit].medium.view-more-button {
     padding: 8px 20px 9px;
   }
 
   /* line 68, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-  input[type="submit"].large.button, input[type="submit"].large.load-more-button {
+  input[type="submit"].large.button, input[type="submit"].large.load-more-button, input[type="submit"].large.view-more-button {
     padding: 13px 30px 14px;
   }
 }
 
 /* Buttons with Dropdowns ---------------------- */
 /* line 73, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown, .dropdown.load-more-button {
+.button.dropdown, .dropdown.load-more-button, .dropdown.view-more-button {
   position: relative;
   padding-right: 44px;
   /* Sizes */
@@ -1644,19 +1644,19 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   /* Split Dropdown Buttons */
 }
 /* line 76, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.large, .dropdown.large.load-more-button {
+.button.dropdown.large, .dropdown.large.load-more-button, .dropdown.large.view-more-button {
   padding-right: 60px;
 }
 /* line 77, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.small, .dropdown.small.load-more-button {
+.button.dropdown.small, .dropdown.small.load-more-button, .dropdown.small.view-more-button {
   padding-right: 28px;
 }
 /* line 78, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.tiny, .dropdown.tiny.load-more-button {
+.button.dropdown.tiny, .dropdown.tiny.load-more-button, .dropdown.tiny.view-more-button {
   padding-right: 20px;
 }
 /* line 81, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown:after, .dropdown.load-more-button:after {
+.button.dropdown:after, .dropdown.load-more-button:after, .dropdown.view-more-button:after {
   content: "";
   display: block;
   width: 0;
@@ -1669,7 +1669,7 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   margin-top: -2px;
 }
 /* line 82, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.large:after, .dropdown.large.load-more-button:after {
+.button.dropdown.large:after, .dropdown.large.load-more-button:after, .dropdown.large.view-more-button:after {
   content: "";
   display: block;
   width: 0;
@@ -1680,7 +1680,7 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   right: 30px;
 }
 /* line 83, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.small:after, .dropdown.small.load-more-button:after {
+.button.dropdown.small:after, .dropdown.small.load-more-button:after, .dropdown.small.view-more-button:after {
   content: "";
   display: block;
   width: 0;
@@ -1691,7 +1691,7 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   right: 14px;
 }
 /* line 84, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.tiny:after, .dropdown.tiny.load-more-button:after {
+.button.dropdown.tiny:after, .dropdown.tiny.load-more-button:after, .dropdown.tiny.view-more-button:after {
   content: "";
   display: block;
   width: 0;
@@ -1702,7 +1702,7 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   right: 10px;
 }
 /* line 87, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown > ul, .dropdown.load-more-button > ul {
+.button.dropdown > ul, .dropdown.load-more-button > ul, .dropdown.view-more-button > ul {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -1720,7 +1720,7 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   z-index: 40;
 }
 /* line 89, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown > ul li, .dropdown.load-more-button > ul li {
+.button.dropdown > ul li, .dropdown.load-more-button > ul li, .dropdown.view-more-button > ul li {
   width: 100%;
   cursor: pointer;
   padding: 0;
@@ -1731,7 +1731,7 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   list-style: none;
 }
 /* line 90, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown > ul li a, .dropdown.load-more-button > ul li a {
+.button.dropdown > ul li a, .dropdown.load-more-button > ul li a, .dropdown.view-more-button > ul li a {
   display: block;
   color: #555;
   font-size: 13px;
@@ -1740,12 +1740,12 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   text-align: left;
 }
 /* line 91, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown > ul li:hover, .dropdown.load-more-button > ul li:hover {
+.button.dropdown > ul li:hover, .dropdown.load-more-button > ul li:hover, .dropdown.view-more-button > ul li:hover {
   background-color: #8fe7ff;
   color: #222;
 }
 /* line 92, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown > ul li.divider, .dropdown.load-more-button > ul li.divider {
+.button.dropdown > ul li.divider, .dropdown.load-more-button > ul li.divider, .dropdown.view-more-button > ul li.divider {
   min-height: 0;
   padding: 0;
   height: 1px;
@@ -1753,20 +1753,20 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   background: #ededed;
 }
 /* line 96, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.up > ul, .dropdown.up.load-more-button > ul {
+.button.dropdown.up > ul, .dropdown.up.load-more-button > ul, .dropdown.up.view-more-button > ul {
   border-top: 1px solid #cccccc;
   border-bottom: none;
 }
 /* line 98, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown ul.no-hover.show-dropdown, .dropdown.load-more-button ul.no-hover.show-dropdown {
+.button.dropdown ul.no-hover.show-dropdown, .dropdown.load-more-button ul.no-hover.show-dropdown, .dropdown.view-more-button ul.no-hover.show-dropdown {
   display: block !important;
 }
 /* line 100, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown:hover > ul.no-hover, .dropdown.load-more-button:hover > ul.no-hover {
+.button.dropdown:hover > ul.no-hover, .dropdown.load-more-button:hover > ul.no-hover, .dropdown.view-more-button:hover > ul.no-hover {
   display: none;
 }
 /* line 106, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split, .dropdown.split.load-more-button {
+.button.dropdown.split, .dropdown.split.load-more-button, .dropdown.split.view-more-button {
   padding: 0;
   position: relative;
   /* Sizes */
@@ -1774,27 +1774,27 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   /* Colors */
 }
 /* line 108, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split:after, .dropdown.split.load-more-button:after {
+.button.dropdown.split:after, .dropdown.split.load-more-button:after, .dropdown.split.view-more-button:after {
   display: none;
 }
 /* line 109, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split:hover, .dropdown.split.load-more-button:hover {
+.button.dropdown.split:hover, .dropdown.split.load-more-button:hover, .dropdown.split.view-more-button:hover {
   background-color: #0084a9;
 }
 /* line 110, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.alert:hover, .dropdown.split.alert.load-more-button:hover {
+.button.dropdown.split.alert:hover, .dropdown.split.alert.load-more-button:hover, .dropdown.split.alert.view-more-button:hover {
   background-color: #c60f13;
 }
 /* line 111, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.success:hover, .dropdown.split.success.load-more-button:hover {
+.button.dropdown.split.success:hover, .dropdown.split.success.load-more-button:hover, .dropdown.split.success.view-more-button:hover {
   background-color: #5da423;
 }
 /* line 112, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary:hover, .dropdown.split.secondary.load-more-button:hover {
+.button.dropdown.split.secondary:hover, .dropdown.split.secondary.load-more-button:hover, .dropdown.split.secondary.view-more-button:hover {
   background-color: #e9e9e9;
 }
 /* line 115, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split > a, .dropdown.split.load-more-button > a {
+.button.dropdown.split > a, .dropdown.split.load-more-button > a, .dropdown.split.view-more-button > a {
   color: white;
   display: block;
   padding: 10px 50px 11px 20px;
@@ -1806,29 +1806,29 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   transition: background-color 0.15s ease-in-out;
 }
 /* line 116, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split > a:hover, .dropdown.split.load-more-button > a:hover {
+.button.dropdown.split > a:hover, .dropdown.split.load-more-button > a:hover, .dropdown.split.view-more-button > a:hover {
   background-color: #005c76;
 }
 /* line 118, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.large > a, .dropdown.split.large.load-more-button > a {
+.button.dropdown.split.large > a, .dropdown.split.large.load-more-button > a, .dropdown.split.large.view-more-button > a {
   padding: 15px 75px 16px 30px;
   padding-left: 30px;
   padding-right: 75px;
 }
 /* line 119, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.small > a, .dropdown.split.small.load-more-button > a {
+.button.dropdown.split.small > a, .dropdown.split.small.load-more-button > a, .dropdown.split.small.view-more-button > a {
   padding: 7px 35px 8px 14px;
   padding-left: 14px;
   padding-right: 35px;
 }
 /* line 120, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.tiny > a, .dropdown.split.tiny.load-more-button > a {
+.button.dropdown.split.tiny > a, .dropdown.split.tiny.load-more-button > a, .dropdown.split.tiny.view-more-button > a {
   padding: 5px 25px 6px 10px;
   padding-left: 10px;
   padding-right: 25px;
 }
 /* line 123, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split > span, .dropdown.split.load-more-button > span {
+.button.dropdown.split > span, .dropdown.split.load-more-button > span, .dropdown.split.view-more-button > span {
   background-color: #0084a9;
   position: absolute;
   right: 0;
@@ -1845,11 +1845,11 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   transition: background-color 0.15s ease-in-out;
 }
 /* line 124, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split > span:hover, .dropdown.split.load-more-button > span:hover {
+.button.dropdown.split > span:hover, .dropdown.split.load-more-button > span:hover, .dropdown.split.view-more-button > span:hover {
   background-color: #005c76;
 }
 /* line 125, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split > span:after, .dropdown.split.load-more-button > span:after {
+.button.dropdown.split > span:after, .dropdown.split.load-more-button > span:after, .dropdown.split.view-more-button > span:after {
   content: "";
   display: block;
   width: 0;
@@ -1863,7 +1863,7 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   margin-top: -2px;
 }
 /* line 127, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary > span:after, .dropdown.split.secondary.load-more-button > span:after {
+.button.dropdown.split.secondary > span:after, .dropdown.split.secondary.load-more-button > span:after, .dropdown.split.secondary.view-more-button > span:after {
   content: "";
   display: block;
   width: 0;
@@ -1872,19 +1872,19 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   border-color: #1d1d1d transparent transparent transparent;
 }
 /* line 129, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.large span, .dropdown.split.large.load-more-button span {
+.button.dropdown.split.large span, .dropdown.split.large.load-more-button span, .dropdown.split.large.view-more-button span {
   width: 45px;
 }
 /* line 130, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.small span, .dropdown.split.small.load-more-button span {
+.button.dropdown.split.small span, .dropdown.split.small.load-more-button span, .dropdown.split.small.view-more-button span {
   width: 21px;
 }
 /* line 131, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.tiny span, .dropdown.split.tiny.load-more-button span {
+.button.dropdown.split.tiny span, .dropdown.split.tiny.load-more-button span, .dropdown.split.tiny.view-more-button span {
   width: 15px;
 }
 /* line 133, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.large span:after, .dropdown.split.large.load-more-button span:after {
+.button.dropdown.split.large span:after, .dropdown.split.large.load-more-button span:after, .dropdown.split.large.view-more-button span:after {
   content: "";
   display: block;
   width: 0;
@@ -1895,7 +1895,7 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   margin-left: -7px;
 }
 /* line 134, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.small span:after, .dropdown.split.small.load-more-button span:after {
+.button.dropdown.split.small span:after, .dropdown.split.small.load-more-button span:after, .dropdown.split.small.view-more-button span:after {
   content: "";
   display: block;
   width: 0;
@@ -1906,7 +1906,7 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   margin-left: -4px;
 }
 /* line 135, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.tiny span:after, .dropdown.split.tiny.load-more-button span:after {
+.button.dropdown.split.tiny span:after, .dropdown.split.tiny.load-more-button span:after, .dropdown.split.tiny.view-more-button span:after {
   content: "";
   display: block;
   width: 0;
@@ -1917,34 +1917,34 @@ input[type=submit].button, input[type=submit].load-more-button, button.button, b
   margin-left: -3px;
 }
 /* line 138, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.alert > span, .dropdown.split.alert.load-more-button > span {
+.button.dropdown.split.alert > span, .dropdown.split.alert.load-more-button > span, .dropdown.split.alert.view-more-button > span {
   background-color: #c60f13;
   border-left-color: #7f0a0c;
 }
 /* line 139, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.success > span, .dropdown.split.success.load-more-button > span {
+.button.dropdown.split.success > span, .dropdown.split.success.load-more-button > span, .dropdown.split.success.view-more-button > span {
   background-color: #5da423;
   border-left-color: #396516;
 }
 /* line 140, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary > span, .dropdown.split.secondary.load-more-button > span {
+.button.dropdown.split.secondary > span, .dropdown.split.secondary.load-more-button > span, .dropdown.split.secondary.view-more-button > span {
   background-color: #e9e9e9;
   border-left-color: #c3c3c3;
 }
 /* line 141, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary > a, .dropdown.split.secondary.load-more-button > a {
+.button.dropdown.split.secondary > a, .dropdown.split.secondary.load-more-button > a, .dropdown.split.secondary.view-more-button > a {
   color: #1d1d1d;
 }
 /* line 143, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.alert > a:hover, .dropdown.split.alert.load-more-button > a:hover, .button.dropdown.split.alert > span:hover, .dropdown.split.alert.load-more-button > span:hover {
+.button.dropdown.split.alert > a:hover, .dropdown.split.alert.load-more-button > a:hover, .dropdown.split.alert.view-more-button > a:hover, .button.dropdown.split.alert > span:hover, .dropdown.split.alert.load-more-button > span:hover, .dropdown.split.alert.view-more-button > span:hover {
   background-color: #970b0e;
 }
 /* line 144, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.success > a:hover, .dropdown.split.success.load-more-button > a:hover, .button.dropdown.split.success > span:hover, .dropdown.split.success.load-more-button > span:hover {
+.button.dropdown.split.success > a:hover, .dropdown.split.success.load-more-button > a:hover, .dropdown.split.success.view-more-button > a:hover, .button.dropdown.split.success > span:hover, .dropdown.split.success.load-more-button > span:hover, .dropdown.split.success.view-more-button > span:hover {
   background-color: #457a1a;
 }
 /* line 145, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary > a:hover, .dropdown.split.secondary.load-more-button > a:hover, .button.dropdown.split.secondary > span:hover, .dropdown.split.secondary.load-more-button > span:hover {
+.button.dropdown.split.secondary > a:hover, .dropdown.split.secondary.load-more-button > a:hover, .dropdown.split.secondary.view-more-button > a:hover, .button.dropdown.split.secondary > span:hover, .dropdown.split.secondary.load-more-button > span:hover, .dropdown.split.secondary.view-more-button > span:hover {
   background-color: #d0d0d0;
 }
 
@@ -1976,7 +1976,7 @@ ul.button-group li:first-child {
   margin-left: 0;
 }
 /* line 159, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-ul.button-group.radius li a.button, .flag-container ul.button-group.flag li a.button, ul.button-group.query-no-results li a.button, ul.button-group.radius li a.load-more-button, .flag-container ul.button-group.flag li a.load-more-button, ul.button-group.query-no-results li a.load-more-button, ul.button-group.radius li a.button.radius, .flag-container ul.button-group.flag li a.button.radius, ul.button-group.query-no-results li a.button.radius, ul.button-group.radius li .flag-container a.button.flag, .flag-container ul.button-group.radius li a.button.flag, .flag-container ul.button-group.flag li a.button.flag, ul.button-group.query-no-results li .flag-container a.button.flag, .flag-container ul.button-group.query-no-results li a.button.flag, ul.button-group.radius li .flag-container a.flag.load-more-button, .flag-container ul.button-group.radius li a.flag.load-more-button, .flag-container ul.button-group.flag li a.flag.load-more-button, ul.button-group.query-no-results li .flag-container a.flag.load-more-button, .flag-container ul.button-group.query-no-results li a.flag.load-more-button, ul.button-group.radius li a.radius.load-more-button, .flag-container ul.button-group.flag li a.radius.load-more-button, ul.button-group.query-no-results li a.radius.load-more-button, ul.button-group.radius li a.load-more-button.query-no-results, .flag-container ul.button-group.flag li a.load-more-button.query-no-results, ul.button-group.query-no-results li a.load-more-button.query-no-results, ul.button-group.radius li a.button.query-no-results, .flag-container ul.button-group.flag li a.button.query-no-results, ul.button-group.query-no-results li a.button.query-no-results, ul.button-group.radius li a.button-rounded, .flag-container ul.button-group.flag li a.button-rounded, ul.button-group.query-no-results li a.button-rounded, ul.button-group.radius li input[type="submit"].button, .flag-container ul.button-group.flag li input[type="submit"].button, ul.button-group.query-no-results li input[type="submit"].button, ul.button-group.radius li input[type="submit"].load-more-button, .flag-container ul.button-group.flag li input[type="submit"].load-more-button, ul.button-group.query-no-results li input[type="submit"].load-more-button, ul.button-group.radius li input[type="submit"].button.radius, .flag-container ul.button-group.flag li input[type="submit"].button.radius, ul.button-group.query-no-results li input[type="submit"].button.radius, ul.button-group.radius li .flag-container input[type="submit"].button.flag, .flag-container ul.button-group.radius li input[type="submit"].button.flag, .flag-container ul.button-group.flag li input[type="submit"].button.flag, ul.button-group.query-no-results li .flag-container input[type="submit"].button.flag, .flag-container ul.button-group.query-no-results li input[type="submit"].button.flag, ul.button-group.radius li .flag-container input[type="submit"].flag.load-more-button, .flag-container ul.button-group.radius li input[type="submit"].flag.load-more-button, .flag-container ul.button-group.flag li input[type="submit"].flag.load-more-button, ul.button-group.query-no-results li .flag-container input[type="submit"].flag.load-more-button, .flag-container ul.button-group.query-no-results li input[type="submit"].flag.load-more-button, ul.button-group.radius li input[type="submit"].radius.load-more-button, .flag-container ul.button-group.flag li input[type="submit"].radius.load-more-button, ul.button-group.query-no-results li input[type="submit"].radius.load-more-button, ul.button-group.radius li input[type="submit"].load-more-button.query-no-results, .flag-container ul.button-group.flag li input[type="submit"].load-more-button.query-no-results, ul.button-group.query-no-results li input[type="submit"].load-more-button.query-no-results, ul.button-group.radius li input[type="submit"].button.query-no-results, .flag-container ul.button-group.flag li input[type="submit"].button.query-no-results, ul.button-group.query-no-results li input[type="submit"].button.query-no-results, ul.button-group.radius li input[type="submit"].button-rounded, .flag-container ul.button-group.flag li input[type="submit"].button-rounded, ul.button-group.query-no-results li input[type="submit"].button-rounded {
+ul.button-group.radius li a.button, .flag-container ul.button-group.flag li a.button, ul.button-group.query-no-results li a.button, ul.button-group.radius li a.load-more-button, .flag-container ul.button-group.flag li a.load-more-button, ul.button-group.query-no-results li a.load-more-button, ul.button-group.radius li a.view-more-button, .flag-container ul.button-group.flag li a.view-more-button, ul.button-group.query-no-results li a.view-more-button, ul.button-group.radius li a.button.radius, .flag-container ul.button-group.flag li a.button.radius, ul.button-group.query-no-results li a.button.radius, ul.button-group.radius li .flag-container a.button.flag, .flag-container ul.button-group.radius li a.button.flag, .flag-container ul.button-group.flag li a.button.flag, ul.button-group.query-no-results li .flag-container a.button.flag, .flag-container ul.button-group.query-no-results li a.button.flag, ul.button-group.radius li .flag-container a.flag.load-more-button, .flag-container ul.button-group.radius li a.flag.load-more-button, .flag-container ul.button-group.flag li a.flag.load-more-button, ul.button-group.query-no-results li .flag-container a.flag.load-more-button, .flag-container ul.button-group.query-no-results li a.flag.load-more-button, ul.button-group.radius li .flag-container a.flag.view-more-button, .flag-container ul.button-group.radius li a.flag.view-more-button, .flag-container ul.button-group.flag li a.flag.view-more-button, ul.button-group.query-no-results li .flag-container a.flag.view-more-button, .flag-container ul.button-group.query-no-results li a.flag.view-more-button, ul.button-group.radius li a.radius.load-more-button, .flag-container ul.button-group.flag li a.radius.load-more-button, ul.button-group.query-no-results li a.radius.load-more-button, ul.button-group.radius li a.load-more-button.query-no-results, .flag-container ul.button-group.flag li a.load-more-button.query-no-results, ul.button-group.query-no-results li a.load-more-button.query-no-results, ul.button-group.radius li a.button.query-no-results, .flag-container ul.button-group.flag li a.button.query-no-results, ul.button-group.query-no-results li a.button.query-no-results, ul.button-group.radius li a.query-no-results.view-more-button, .flag-container ul.button-group.flag li a.query-no-results.view-more-button, ul.button-group.query-no-results li a.query-no-results.view-more-button, ul.button-group.radius li a.radius.view-more-button, .flag-container ul.button-group.flag li a.radius.view-more-button, ul.button-group.query-no-results li a.radius.view-more-button, ul.button-group.radius li a.button-rounded, .flag-container ul.button-group.flag li a.button-rounded, ul.button-group.query-no-results li a.button-rounded, ul.button-group.radius li input[type="submit"].button, .flag-container ul.button-group.flag li input[type="submit"].button, ul.button-group.query-no-results li input[type="submit"].button, ul.button-group.radius li input[type="submit"].load-more-button, .flag-container ul.button-group.flag li input[type="submit"].load-more-button, ul.button-group.query-no-results li input[type="submit"].load-more-button, ul.button-group.radius li input[type="submit"].view-more-button, .flag-container ul.button-group.flag li input[type="submit"].view-more-button, ul.button-group.query-no-results li input[type="submit"].view-more-button, ul.button-group.radius li input[type="submit"].button.radius, .flag-container ul.button-group.flag li input[type="submit"].button.radius, ul.button-group.query-no-results li input[type="submit"].button.radius, ul.button-group.radius li .flag-container input[type="submit"].button.flag, .flag-container ul.button-group.radius li input[type="submit"].button.flag, .flag-container ul.button-group.flag li input[type="submit"].button.flag, ul.button-group.query-no-results li .flag-container input[type="submit"].button.flag, .flag-container ul.button-group.query-no-results li input[type="submit"].button.flag, ul.button-group.radius li .flag-container input[type="submit"].flag.load-more-button, .flag-container ul.button-group.radius li input[type="submit"].flag.load-more-button, .flag-container ul.button-group.flag li input[type="submit"].flag.load-more-button, ul.button-group.query-no-results li .flag-container input[type="submit"].flag.load-more-button, .flag-container ul.button-group.query-no-results li input[type="submit"].flag.load-more-button, ul.button-group.radius li .flag-container input[type="submit"].flag.view-more-button, .flag-container ul.button-group.radius li input[type="submit"].flag.view-more-button, .flag-container ul.button-group.flag li input[type="submit"].flag.view-more-button, ul.button-group.query-no-results li .flag-container input[type="submit"].flag.view-more-button, .flag-container ul.button-group.query-no-results li input[type="submit"].flag.view-more-button, ul.button-group.radius li input[type="submit"].radius.load-more-button, .flag-container ul.button-group.flag li input[type="submit"].radius.load-more-button, ul.button-group.query-no-results li input[type="submit"].radius.load-more-button, ul.button-group.radius li input[type="submit"].load-more-button.query-no-results, .flag-container ul.button-group.flag li input[type="submit"].load-more-button.query-no-results, ul.button-group.query-no-results li input[type="submit"].load-more-button.query-no-results, ul.button-group.radius li input[type="submit"].button.query-no-results, .flag-container ul.button-group.flag li input[type="submit"].button.query-no-results, ul.button-group.query-no-results li input[type="submit"].button.query-no-results, ul.button-group.radius li input[type="submit"].query-no-results.view-more-button, .flag-container ul.button-group.flag li input[type="submit"].query-no-results.view-more-button, ul.button-group.query-no-results li input[type="submit"].query-no-results.view-more-button, ul.button-group.radius li input[type="submit"].radius.view-more-button, .flag-container ul.button-group.flag li input[type="submit"].radius.view-more-button, ul.button-group.query-no-results li input[type="submit"].radius.view-more-button, ul.button-group.radius li input[type="submit"].button-rounded, .flag-container ul.button-group.flag li input[type="submit"].button-rounded, ul.button-group.query-no-results li input[type="submit"].button-rounded {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -1984,7 +1984,7 @@ ul.button-group.radius li a.button, .flag-container ul.button-group.flag li a.bu
   border-radius: 0px;
 }
 /* line 162, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-ul.button-group.radius li:first-child a.button, .flag-container ul.button-group.flag li:first-child a.button, ul.button-group.query-no-results li:first-child a.button, ul.button-group.radius li:first-child a.load-more-button, .flag-container ul.button-group.flag li:first-child a.load-more-button, ul.button-group.query-no-results li:first-child a.load-more-button, ul.button-group.radius li:first-child a.button.radius, .flag-container ul.button-group.flag li:first-child a.button.radius, ul.button-group.query-no-results li:first-child a.button.radius, ul.button-group.radius li:first-child .flag-container a.button.flag, .flag-container ul.button-group.radius li:first-child a.button.flag, .flag-container ul.button-group.flag li:first-child a.button.flag, ul.button-group.query-no-results li:first-child .flag-container a.button.flag, .flag-container ul.button-group.query-no-results li:first-child a.button.flag, ul.button-group.radius li:first-child .flag-container a.flag.load-more-button, .flag-container ul.button-group.radius li:first-child a.flag.load-more-button, .flag-container ul.button-group.flag li:first-child a.flag.load-more-button, ul.button-group.query-no-results li:first-child .flag-container a.flag.load-more-button, .flag-container ul.button-group.query-no-results li:first-child a.flag.load-more-button, ul.button-group.radius li:first-child a.radius.load-more-button, .flag-container ul.button-group.flag li:first-child a.radius.load-more-button, ul.button-group.query-no-results li:first-child a.radius.load-more-button, ul.button-group.radius li:first-child a.load-more-button.query-no-results, .flag-container ul.button-group.flag li:first-child a.load-more-button.query-no-results, ul.button-group.query-no-results li:first-child a.load-more-button.query-no-results, ul.button-group.radius li:first-child a.button.query-no-results, .flag-container ul.button-group.flag li:first-child a.button.query-no-results, ul.button-group.query-no-results li:first-child a.button.query-no-results, ul.button-group.radius li:first-child input[type="submit"].button, .flag-container ul.button-group.flag li:first-child input[type="submit"].button, ul.button-group.query-no-results li:first-child input[type="submit"].button, ul.button-group.radius li:first-child input[type="submit"].load-more-button, .flag-container ul.button-group.flag li:first-child input[type="submit"].load-more-button, ul.button-group.query-no-results li:first-child input[type="submit"].load-more-button, ul.button-group.radius li:first-child input[type="submit"].button.radius, .flag-container ul.button-group.flag li:first-child input[type="submit"].button.radius, ul.button-group.query-no-results li:first-child input[type="submit"].button.radius, ul.button-group.radius li:first-child .flag-container input[type="submit"].button.flag, .flag-container ul.button-group.radius li:first-child input[type="submit"].button.flag, .flag-container ul.button-group.flag li:first-child input[type="submit"].button.flag, ul.button-group.query-no-results li:first-child .flag-container input[type="submit"].button.flag, .flag-container ul.button-group.query-no-results li:first-child input[type="submit"].button.flag, ul.button-group.radius li:first-child .flag-container input[type="submit"].flag.load-more-button, .flag-container ul.button-group.radius li:first-child input[type="submit"].flag.load-more-button, .flag-container ul.button-group.flag li:first-child input[type="submit"].flag.load-more-button, ul.button-group.query-no-results li:first-child .flag-container input[type="submit"].flag.load-more-button, .flag-container ul.button-group.query-no-results li:first-child input[type="submit"].flag.load-more-button, ul.button-group.radius li:first-child input[type="submit"].radius.load-more-button, .flag-container ul.button-group.flag li:first-child input[type="submit"].radius.load-more-button, ul.button-group.query-no-results li:first-child input[type="submit"].radius.load-more-button, ul.button-group.radius li:first-child input[type="submit"].load-more-button.query-no-results, .flag-container ul.button-group.flag li:first-child input[type="submit"].load-more-button.query-no-results, ul.button-group.query-no-results li:first-child input[type="submit"].load-more-button.query-no-results, ul.button-group.radius li:first-child input[type="submit"].button.query-no-results, .flag-container ul.button-group.flag li:first-child input[type="submit"].button.query-no-results, ul.button-group.query-no-results li:first-child input[type="submit"].button.query-no-results {
+ul.button-group.radius li:first-child a.button, .flag-container ul.button-group.flag li:first-child a.button, ul.button-group.query-no-results li:first-child a.button, ul.button-group.radius li:first-child a.load-more-button, .flag-container ul.button-group.flag li:first-child a.load-more-button, ul.button-group.query-no-results li:first-child a.load-more-button, ul.button-group.radius li:first-child a.view-more-button, .flag-container ul.button-group.flag li:first-child a.view-more-button, ul.button-group.query-no-results li:first-child a.view-more-button, ul.button-group.radius li:first-child a.button.radius, .flag-container ul.button-group.flag li:first-child a.button.radius, ul.button-group.query-no-results li:first-child a.button.radius, ul.button-group.radius li:first-child .flag-container a.button.flag, .flag-container ul.button-group.radius li:first-child a.button.flag, .flag-container ul.button-group.flag li:first-child a.button.flag, ul.button-group.query-no-results li:first-child .flag-container a.button.flag, .flag-container ul.button-group.query-no-results li:first-child a.button.flag, ul.button-group.radius li:first-child .flag-container a.flag.load-more-button, .flag-container ul.button-group.radius li:first-child a.flag.load-more-button, .flag-container ul.button-group.flag li:first-child a.flag.load-more-button, ul.button-group.query-no-results li:first-child .flag-container a.flag.load-more-button, .flag-container ul.button-group.query-no-results li:first-child a.flag.load-more-button, ul.button-group.radius li:first-child .flag-container a.flag.view-more-button, .flag-container ul.button-group.radius li:first-child a.flag.view-more-button, .flag-container ul.button-group.flag li:first-child a.flag.view-more-button, ul.button-group.query-no-results li:first-child .flag-container a.flag.view-more-button, .flag-container ul.button-group.query-no-results li:first-child a.flag.view-more-button, ul.button-group.radius li:first-child a.radius.load-more-button, .flag-container ul.button-group.flag li:first-child a.radius.load-more-button, ul.button-group.query-no-results li:first-child a.radius.load-more-button, ul.button-group.radius li:first-child a.load-more-button.query-no-results, .flag-container ul.button-group.flag li:first-child a.load-more-button.query-no-results, ul.button-group.query-no-results li:first-child a.load-more-button.query-no-results, ul.button-group.radius li:first-child a.button.query-no-results, .flag-container ul.button-group.flag li:first-child a.button.query-no-results, ul.button-group.query-no-results li:first-child a.button.query-no-results, ul.button-group.radius li:first-child a.query-no-results.view-more-button, .flag-container ul.button-group.flag li:first-child a.query-no-results.view-more-button, ul.button-group.query-no-results li:first-child a.query-no-results.view-more-button, ul.button-group.radius li:first-child a.radius.view-more-button, .flag-container ul.button-group.flag li:first-child a.radius.view-more-button, ul.button-group.query-no-results li:first-child a.radius.view-more-button, ul.button-group.radius li:first-child input[type="submit"].button, .flag-container ul.button-group.flag li:first-child input[type="submit"].button, ul.button-group.query-no-results li:first-child input[type="submit"].button, ul.button-group.radius li:first-child input[type="submit"].load-more-button, .flag-container ul.button-group.flag li:first-child input[type="submit"].load-more-button, ul.button-group.query-no-results li:first-child input[type="submit"].load-more-button, ul.button-group.radius li:first-child input[type="submit"].view-more-button, .flag-container ul.button-group.flag li:first-child input[type="submit"].view-more-button, ul.button-group.query-no-results li:first-child input[type="submit"].view-more-button, ul.button-group.radius li:first-child input[type="submit"].button.radius, .flag-container ul.button-group.flag li:first-child input[type="submit"].button.radius, ul.button-group.query-no-results li:first-child input[type="submit"].button.radius, ul.button-group.radius li:first-child .flag-container input[type="submit"].button.flag, .flag-container ul.button-group.radius li:first-child input[type="submit"].button.flag, .flag-container ul.button-group.flag li:first-child input[type="submit"].button.flag, ul.button-group.query-no-results li:first-child .flag-container input[type="submit"].button.flag, .flag-container ul.button-group.query-no-results li:first-child input[type="submit"].button.flag, ul.button-group.radius li:first-child .flag-container input[type="submit"].flag.load-more-button, .flag-container ul.button-group.radius li:first-child input[type="submit"].flag.load-more-button, .flag-container ul.button-group.flag li:first-child input[type="submit"].flag.load-more-button, ul.button-group.query-no-results li:first-child .flag-container input[type="submit"].flag.load-more-button, .flag-container ul.button-group.query-no-results li:first-child input[type="submit"].flag.load-more-button, ul.button-group.radius li:first-child .flag-container input[type="submit"].flag.view-more-button, .flag-container ul.button-group.radius li:first-child input[type="submit"].flag.view-more-button, .flag-container ul.button-group.flag li:first-child input[type="submit"].flag.view-more-button, ul.button-group.query-no-results li:first-child .flag-container input[type="submit"].flag.view-more-button, .flag-container ul.button-group.query-no-results li:first-child input[type="submit"].flag.view-more-button, ul.button-group.radius li:first-child input[type="submit"].radius.load-more-button, .flag-container ul.button-group.flag li:first-child input[type="submit"].radius.load-more-button, ul.button-group.query-no-results li:first-child input[type="submit"].radius.load-more-button, ul.button-group.radius li:first-child input[type="submit"].load-more-button.query-no-results, .flag-container ul.button-group.flag li:first-child input[type="submit"].load-more-button.query-no-results, ul.button-group.query-no-results li:first-child input[type="submit"].load-more-button.query-no-results, ul.button-group.radius li:first-child input[type="submit"].button.query-no-results, .flag-container ul.button-group.flag li:first-child input[type="submit"].button.query-no-results, ul.button-group.query-no-results li:first-child input[type="submit"].button.query-no-results, ul.button-group.radius li:first-child input[type="submit"].query-no-results.view-more-button, .flag-container ul.button-group.flag li:first-child input[type="submit"].query-no-results.view-more-button, ul.button-group.query-no-results li:first-child input[type="submit"].query-no-results.view-more-button, ul.button-group.radius li:first-child input[type="submit"].radius.view-more-button, .flag-container ul.button-group.flag li:first-child input[type="submit"].radius.view-more-button, ul.button-group.query-no-results li:first-child input[type="submit"].radius.view-more-button {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
   border-top-left-radius: 3px;
@@ -1993,7 +1993,7 @@ ul.button-group.radius li:first-child a.button, .flag-container ul.button-group.
   border-bottom-left-radius: 3px;
 }
 /* line 163, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-ul.button-group.radius li:first-child a.button.rounded, .flag-container ul.button-group.flag li:first-child a.button.rounded, ul.button-group.query-no-results li:first-child a.button.rounded, ul.button-group.radius li:first-child a.rounded.load-more-button, .flag-container ul.button-group.flag li:first-child a.rounded.load-more-button, ul.button-group.query-no-results li:first-child a.rounded.load-more-button, ul.button-group.radius li:first-child input[type="submit"].button.rounded, .flag-container ul.button-group.flag li:first-child input[type="submit"].button.rounded, ul.button-group.query-no-results li:first-child input[type="submit"].button.rounded, ul.button-group.radius li:first-child input[type="submit"].rounded.load-more-button, .flag-container ul.button-group.flag li:first-child input[type="submit"].rounded.load-more-button, ul.button-group.query-no-results li:first-child input[type="submit"].rounded.load-more-button {
+ul.button-group.radius li:first-child a.button.rounded, .flag-container ul.button-group.flag li:first-child a.button.rounded, ul.button-group.query-no-results li:first-child a.button.rounded, ul.button-group.radius li:first-child a.rounded.load-more-button, .flag-container ul.button-group.flag li:first-child a.rounded.load-more-button, ul.button-group.query-no-results li:first-child a.rounded.load-more-button, ul.button-group.radius li:first-child a.rounded.view-more-button, .flag-container ul.button-group.flag li:first-child a.rounded.view-more-button, ul.button-group.query-no-results li:first-child a.rounded.view-more-button, ul.button-group.radius li:first-child input[type="submit"].button.rounded, .flag-container ul.button-group.flag li:first-child input[type="submit"].button.rounded, ul.button-group.query-no-results li:first-child input[type="submit"].button.rounded, ul.button-group.radius li:first-child input[type="submit"].rounded.load-more-button, .flag-container ul.button-group.flag li:first-child input[type="submit"].rounded.load-more-button, ul.button-group.query-no-results li:first-child input[type="submit"].rounded.load-more-button, ul.button-group.radius li:first-child input[type="submit"].rounded.view-more-button, .flag-container ul.button-group.flag li:first-child input[type="submit"].rounded.view-more-button, ul.button-group.query-no-results li:first-child input[type="submit"].rounded.view-more-button {
   -moz-border-radius-topleft: 1000px;
   -webkit-border-top-left-radius: 1000px;
   border-top-left-radius: 1000px;
@@ -2002,7 +2002,7 @@ ul.button-group.radius li:first-child a.button.rounded, .flag-container ul.butto
   border-bottom-left-radius: 1000px;
 }
 /* line 166, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-ul.button-group.radius li:last-child a.button, .flag-container ul.button-group.flag li:last-child a.button, ul.button-group.query-no-results li:last-child a.button, ul.button-group.radius li:last-child a.load-more-button, .flag-container ul.button-group.flag li:last-child a.load-more-button, ul.button-group.query-no-results li:last-child a.load-more-button, ul.button-group.radius li:last-child a.button.radius, .flag-container ul.button-group.flag li:last-child a.button.radius, ul.button-group.query-no-results li:last-child a.button.radius, ul.button-group.radius li:last-child .flag-container a.button.flag, .flag-container ul.button-group.radius li:last-child a.button.flag, .flag-container ul.button-group.flag li:last-child a.button.flag, ul.button-group.query-no-results li:last-child .flag-container a.button.flag, .flag-container ul.button-group.query-no-results li:last-child a.button.flag, ul.button-group.radius li:last-child .flag-container a.flag.load-more-button, .flag-container ul.button-group.radius li:last-child a.flag.load-more-button, .flag-container ul.button-group.flag li:last-child a.flag.load-more-button, ul.button-group.query-no-results li:last-child .flag-container a.flag.load-more-button, .flag-container ul.button-group.query-no-results li:last-child a.flag.load-more-button, ul.button-group.radius li:last-child a.radius.load-more-button, .flag-container ul.button-group.flag li:last-child a.radius.load-more-button, ul.button-group.query-no-results li:last-child a.radius.load-more-button, ul.button-group.radius li:last-child a.load-more-button.query-no-results, .flag-container ul.button-group.flag li:last-child a.load-more-button.query-no-results, ul.button-group.query-no-results li:last-child a.load-more-button.query-no-results, ul.button-group.radius li:last-child a.button.query-no-results, .flag-container ul.button-group.flag li:last-child a.button.query-no-results, ul.button-group.query-no-results li:last-child a.button.query-no-results, ul.button-group.radius li:last-child input[type="submit"].button, .flag-container ul.button-group.flag li:last-child input[type="submit"].button, ul.button-group.query-no-results li:last-child input[type="submit"].button, ul.button-group.radius li:last-child input[type="submit"].load-more-button, .flag-container ul.button-group.flag li:last-child input[type="submit"].load-more-button, ul.button-group.query-no-results li:last-child input[type="submit"].load-more-button, ul.button-group.radius li:last-child input[type="submit"].button.radius, .flag-container ul.button-group.flag li:last-child input[type="submit"].button.radius, ul.button-group.query-no-results li:last-child input[type="submit"].button.radius, ul.button-group.radius li:last-child .flag-container input[type="submit"].button.flag, .flag-container ul.button-group.radius li:last-child input[type="submit"].button.flag, .flag-container ul.button-group.flag li:last-child input[type="submit"].button.flag, ul.button-group.query-no-results li:last-child .flag-container input[type="submit"].button.flag, .flag-container ul.button-group.query-no-results li:last-child input[type="submit"].button.flag, ul.button-group.radius li:last-child .flag-container input[type="submit"].flag.load-more-button, .flag-container ul.button-group.radius li:last-child input[type="submit"].flag.load-more-button, .flag-container ul.button-group.flag li:last-child input[type="submit"].flag.load-more-button, ul.button-group.query-no-results li:last-child .flag-container input[type="submit"].flag.load-more-button, .flag-container ul.button-group.query-no-results li:last-child input[type="submit"].flag.load-more-button, ul.button-group.radius li:last-child input[type="submit"].radius.load-more-button, .flag-container ul.button-group.flag li:last-child input[type="submit"].radius.load-more-button, ul.button-group.query-no-results li:last-child input[type="submit"].radius.load-more-button, ul.button-group.radius li:last-child input[type="submit"].load-more-button.query-no-results, .flag-container ul.button-group.flag li:last-child input[type="submit"].load-more-button.query-no-results, ul.button-group.query-no-results li:last-child input[type="submit"].load-more-button.query-no-results, ul.button-group.radius li:last-child input[type="submit"].button.query-no-results, .flag-container ul.button-group.flag li:last-child input[type="submit"].button.query-no-results, ul.button-group.query-no-results li:last-child input[type="submit"].button.query-no-results {
+ul.button-group.radius li:last-child a.button, .flag-container ul.button-group.flag li:last-child a.button, ul.button-group.query-no-results li:last-child a.button, ul.button-group.radius li:last-child a.load-more-button, .flag-container ul.button-group.flag li:last-child a.load-more-button, ul.button-group.query-no-results li:last-child a.load-more-button, ul.button-group.radius li:last-child a.view-more-button, .flag-container ul.button-group.flag li:last-child a.view-more-button, ul.button-group.query-no-results li:last-child a.view-more-button, ul.button-group.radius li:last-child a.button.radius, .flag-container ul.button-group.flag li:last-child a.button.radius, ul.button-group.query-no-results li:last-child a.button.radius, ul.button-group.radius li:last-child .flag-container a.button.flag, .flag-container ul.button-group.radius li:last-child a.button.flag, .flag-container ul.button-group.flag li:last-child a.button.flag, ul.button-group.query-no-results li:last-child .flag-container a.button.flag, .flag-container ul.button-group.query-no-results li:last-child a.button.flag, ul.button-group.radius li:last-child .flag-container a.flag.load-more-button, .flag-container ul.button-group.radius li:last-child a.flag.load-more-button, .flag-container ul.button-group.flag li:last-child a.flag.load-more-button, ul.button-group.query-no-results li:last-child .flag-container a.flag.load-more-button, .flag-container ul.button-group.query-no-results li:last-child a.flag.load-more-button, ul.button-group.radius li:last-child .flag-container a.flag.view-more-button, .flag-container ul.button-group.radius li:last-child a.flag.view-more-button, .flag-container ul.button-group.flag li:last-child a.flag.view-more-button, ul.button-group.query-no-results li:last-child .flag-container a.flag.view-more-button, .flag-container ul.button-group.query-no-results li:last-child a.flag.view-more-button, ul.button-group.radius li:last-child a.radius.load-more-button, .flag-container ul.button-group.flag li:last-child a.radius.load-more-button, ul.button-group.query-no-results li:last-child a.radius.load-more-button, ul.button-group.radius li:last-child a.load-more-button.query-no-results, .flag-container ul.button-group.flag li:last-child a.load-more-button.query-no-results, ul.button-group.query-no-results li:last-child a.load-more-button.query-no-results, ul.button-group.radius li:last-child a.button.query-no-results, .flag-container ul.button-group.flag li:last-child a.button.query-no-results, ul.button-group.query-no-results li:last-child a.button.query-no-results, ul.button-group.radius li:last-child a.query-no-results.view-more-button, .flag-container ul.button-group.flag li:last-child a.query-no-results.view-more-button, ul.button-group.query-no-results li:last-child a.query-no-results.view-more-button, ul.button-group.radius li:last-child a.radius.view-more-button, .flag-container ul.button-group.flag li:last-child a.radius.view-more-button, ul.button-group.query-no-results li:last-child a.radius.view-more-button, ul.button-group.radius li:last-child input[type="submit"].button, .flag-container ul.button-group.flag li:last-child input[type="submit"].button, ul.button-group.query-no-results li:last-child input[type="submit"].button, ul.button-group.radius li:last-child input[type="submit"].load-more-button, .flag-container ul.button-group.flag li:last-child input[type="submit"].load-more-button, ul.button-group.query-no-results li:last-child input[type="submit"].load-more-button, ul.button-group.radius li:last-child input[type="submit"].view-more-button, .flag-container ul.button-group.flag li:last-child input[type="submit"].view-more-button, ul.button-group.query-no-results li:last-child input[type="submit"].view-more-button, ul.button-group.radius li:last-child input[type="submit"].button.radius, .flag-container ul.button-group.flag li:last-child input[type="submit"].button.radius, ul.button-group.query-no-results li:last-child input[type="submit"].button.radius, ul.button-group.radius li:last-child .flag-container input[type="submit"].button.flag, .flag-container ul.button-group.radius li:last-child input[type="submit"].button.flag, .flag-container ul.button-group.flag li:last-child input[type="submit"].button.flag, ul.button-group.query-no-results li:last-child .flag-container input[type="submit"].button.flag, .flag-container ul.button-group.query-no-results li:last-child input[type="submit"].button.flag, ul.button-group.radius li:last-child .flag-container input[type="submit"].flag.load-more-button, .flag-container ul.button-group.radius li:last-child input[type="submit"].flag.load-more-button, .flag-container ul.button-group.flag li:last-child input[type="submit"].flag.load-more-button, ul.button-group.query-no-results li:last-child .flag-container input[type="submit"].flag.load-more-button, .flag-container ul.button-group.query-no-results li:last-child input[type="submit"].flag.load-more-button, ul.button-group.radius li:last-child .flag-container input[type="submit"].flag.view-more-button, .flag-container ul.button-group.radius li:last-child input[type="submit"].flag.view-more-button, .flag-container ul.button-group.flag li:last-child input[type="submit"].flag.view-more-button, ul.button-group.query-no-results li:last-child .flag-container input[type="submit"].flag.view-more-button, .flag-container ul.button-group.query-no-results li:last-child input[type="submit"].flag.view-more-button, ul.button-group.radius li:last-child input[type="submit"].radius.load-more-button, .flag-container ul.button-group.flag li:last-child input[type="submit"].radius.load-more-button, ul.button-group.query-no-results li:last-child input[type="submit"].radius.load-more-button, ul.button-group.radius li:last-child input[type="submit"].load-more-button.query-no-results, .flag-container ul.button-group.flag li:last-child input[type="submit"].load-more-button.query-no-results, ul.button-group.query-no-results li:last-child input[type="submit"].load-more-button.query-no-results, ul.button-group.radius li:last-child input[type="submit"].button.query-no-results, .flag-container ul.button-group.flag li:last-child input[type="submit"].button.query-no-results, ul.button-group.query-no-results li:last-child input[type="submit"].button.query-no-results, ul.button-group.radius li:last-child input[type="submit"].query-no-results.view-more-button, .flag-container ul.button-group.flag li:last-child input[type="submit"].query-no-results.view-more-button, ul.button-group.query-no-results li:last-child input[type="submit"].query-no-results.view-more-button, ul.button-group.radius li:last-child input[type="submit"].radius.view-more-button, .flag-container ul.button-group.flag li:last-child input[type="submit"].radius.view-more-button, ul.button-group.query-no-results li:last-child input[type="submit"].radius.view-more-button {
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
@@ -2011,7 +2011,7 @@ ul.button-group.radius li:last-child a.button, .flag-container ul.button-group.f
   border-bottom-right-radius: 3px;
 }
 /* line 167, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-ul.button-group.radius li:last-child a.button.rounded, .flag-container ul.button-group.flag li:last-child a.button.rounded, ul.button-group.query-no-results li:last-child a.button.rounded, ul.button-group.radius li:last-child a.rounded.load-more-button, .flag-container ul.button-group.flag li:last-child a.rounded.load-more-button, ul.button-group.query-no-results li:last-child a.rounded.load-more-button, ul.button-group.radius li:last-child input[type="submit"].button.rounded, .flag-container ul.button-group.flag li:last-child input[type="submit"].button.rounded, ul.button-group.query-no-results li:last-child input[type="submit"].button.rounded, ul.button-group.radius li:last-child input[type="submit"].rounded.load-more-button, .flag-container ul.button-group.flag li:last-child input[type="submit"].rounded.load-more-button, ul.button-group.query-no-results li:last-child input[type="submit"].rounded.load-more-button {
+ul.button-group.radius li:last-child a.button.rounded, .flag-container ul.button-group.flag li:last-child a.button.rounded, ul.button-group.query-no-results li:last-child a.button.rounded, ul.button-group.radius li:last-child a.rounded.load-more-button, .flag-container ul.button-group.flag li:last-child a.rounded.load-more-button, ul.button-group.query-no-results li:last-child a.rounded.load-more-button, ul.button-group.radius li:last-child a.rounded.view-more-button, .flag-container ul.button-group.flag li:last-child a.rounded.view-more-button, ul.button-group.query-no-results li:last-child a.rounded.view-more-button, ul.button-group.radius li:last-child input[type="submit"].button.rounded, .flag-container ul.button-group.flag li:last-child input[type="submit"].button.rounded, ul.button-group.query-no-results li:last-child input[type="submit"].button.rounded, ul.button-group.radius li:last-child input[type="submit"].rounded.load-more-button, .flag-container ul.button-group.flag li:last-child input[type="submit"].rounded.load-more-button, ul.button-group.query-no-results li:last-child input[type="submit"].rounded.load-more-button, ul.button-group.radius li:last-child input[type="submit"].rounded.view-more-button, .flag-container ul.button-group.flag li:last-child input[type="submit"].rounded.view-more-button, ul.button-group.query-no-results li:last-child input[type="submit"].rounded.view-more-button {
   -moz-border-radius-topright: 1000px;
   -webkit-border-top-right-radius: 1000px;
   border-top-right-radius: 1000px;
@@ -2020,7 +2020,7 @@ ul.button-group.radius li:last-child a.button.rounded, .flag-container ul.button
   border-bottom-right-radius: 1000px;
 }
 /* line 172, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
-ul.button-group.even .button, ul.button-group.even .load-more-button {
+ul.button-group.even .button, ul.button-group.even .load-more-button, ul.button-group.even .view-more-button {
   width: 100%;
 }
 /* line 173, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_buttons.scss */
@@ -2542,14 +2542,14 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   color: #fff;
 }
 /* line 88, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_ui.scss */
-.panel.callout .button, .query-no-results .button, .panel.callout .load-more-button, .query-no-results .load-more-button {
+.panel.callout .button, .query-no-results .button, .panel.callout .load-more-button, .query-no-results .load-more-button, .panel.callout .view-more-button, .query-no-results .view-more-button {
   background: white;
   border: none;
   color: #0084a9;
   text-shadow: none;
 }
 /* line 90, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_ui.scss */
-.panel.callout .button:hover, .query-no-results .button:hover, .panel.callout .load-more-button:hover, .query-no-results .load-more-button:hover {
+.panel.callout .button:hover, .query-no-results .button:hover, .panel.callout .load-more-button:hover, .query-no-results .load-more-button:hover, .panel.callout .view-more-button:hover, .query-no-results .view-more-button:hover {
   background: rgba(255, 255, 255, 0.8);
 }
 /* line 94, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_ui.scss */
@@ -2589,7 +2589,7 @@ ul.accordion > li > div.title {
   transition: 0.15s background linear;
 }
 /* line 106, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_ui.scss */
-ul.accordion > li > div.title h1, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, ul.accordion > li > div.title h4, ul.accordion > li > div.title h5, ul.accordion > li > div.title .cta .cta-title, .cta ul.accordion > li > div.title .cta-title {
+ul.accordion > li > div.title h1, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, ul.accordion > li > div.title .user-name, ul.accordion > li > div.title h4, ul.accordion > li > div.title h5, ul.accordion > li > div.title .cta .cta-title, .cta ul.accordion > li > div.title .cta-title, ul.accordion > li > div.title .user-profile-section-title {
   margin: 0;
 }
 /* line 107, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_ui.scss */
@@ -3259,7 +3259,7 @@ div.progress.round .meter {
   width: 1px;
 }
 /* line 58, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_topbar.scss */
-.top-bar ul > li.has-button a.button, .top-bar ul > li.has-button a.load-more-button {
+.top-bar ul > li.has-button a.button, .top-bar ul > li.has-button a.load-more-button, .top-bar ul > li.has-button a.view-more-button {
   margin: 0 15px;
 }
 /* line 59, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_topbar.scss */
@@ -3295,7 +3295,7 @@ div.progress.round .meter {
   height: 30px;
 }
 /* line 68, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_topbar.scss */
-.top-bar ul > li.search form input[type=text] + .button, .top-bar ul > li.search form input[type=text] + .load-more-button {
+.top-bar ul > li.search form input[type=text] + .button, .top-bar ul > li.search form input[type=text] + .load-more-button, .top-bar ul > li.search form input[type=text] + .view-more-button {
   border-left: none;
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;
@@ -3463,7 +3463,7 @@ div.progress.round .meter {
 /* Firefox Fixes */
 @-moz-document url-prefix() {
   /* line 127, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_topbar.scss */
-  .top-bar ul li .button.small, .top-bar ul li .small.load-more-button {
+  .top-bar ul li .button.small, .top-bar ul li .small.load-more-button, .top-bar ul li .small.view-more-button {
     padding-bottom: 6px;
   }
 
@@ -3487,7 +3487,7 @@ div.progress.round .meter {
   padding: 0 20px;
 }
 /* line 133, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_topbar.scss */
-.lt-ie9 .top-bar ul li a.button, .lt-ie9 .top-bar ul li a.load-more-button {
+.lt-ie9 .top-bar ul li a.button, .lt-ie9 .top-bar ul li a.load-more-button, .lt-ie9 .top-bar ul li a.view-more-button {
   height: auto;
   line-height: 30px;
   margin-top: 7px;
@@ -5191,12 +5191,12 @@ table.hide-for-medium {
   /*             */
   /* Basic overrides */
   /* line 261, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
-  .button, .load-more-button {
+  .button, .load-more-button, .view-more-button {
     display: block;
   }
 
   /* line 262, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
-  button.button, button.load-more-button, input[type="submit"].button, input[type="submit"].load-more-button {
+  button.button, button.load-more-button, button.view-more-button, input[type="submit"].button, input[type="submit"].load-more-button, input[type="submit"].view-more-button {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -5204,28 +5204,28 @@ table.hide-for-medium {
 
   /* Button Groups */
   /* line 265, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
-  .button-group button.button, .button-group button.load-more-button, .button-group input[type="submit"].button, .button-group input[type="submit"].load-more-button {
+  .button-group button.button, .button-group button.load-more-button, .button-group button.view-more-button, .button-group input[type="submit"].button, .button-group input[type="submit"].load-more-button, .button-group input[type="submit"].view-more-button {
     width: auto;
     padding: 10px 20px 11px;
   }
   /* line 266, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
-  .button-group button.button.large, .button-group button.large.load-more-button, .button-group input[type="submit"].button.large, .button-group input[type="submit"].large.load-more-button {
+  .button-group button.button.large, .button-group button.large.load-more-button, .button-group button.large.view-more-button, .button-group input[type="submit"].button.large, .button-group input[type="submit"].large.load-more-button, .button-group input[type="submit"].large.view-more-button {
     padding: 15px 30px 16px;
   }
   /* line 267, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
-  .button-group button.button.medium, .button-group button.medium.load-more-button, .button-group input[type="submit"].button.medium, .button-group input[type="submit"].medium.load-more-button {
+  .button-group button.button.medium, .button-group button.medium.load-more-button, .button-group button.medium.view-more-button, .button-group input[type="submit"].button.medium, .button-group input[type="submit"].medium.load-more-button, .button-group input[type="submit"].medium.view-more-button {
     padding: 10px 20px 11px;
   }
   /* line 268, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
-  .button-group button.button.small, .button-group button.small.load-more-button, .button-group input[type="submit"].button.small, .button-group input[type="submit"].small.load-more-button {
+  .button-group button.button.small, .button-group button.small.load-more-button, .button-group button.small.view-more-button, .button-group input[type="submit"].button.small, .button-group input[type="submit"].small.load-more-button, .button-group input[type="submit"].small.view-more-button {
     padding: 7px 14px 8px;
   }
   /* line 269, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
-  .button-group button.button.tiny, .button-group button.tiny.load-more-button, .button-group input[type="submit"].button.tiny, .button-group input[type="submit"].tiny.load-more-button {
+  .button-group button.button.tiny, .button-group button.tiny.load-more-button, .button-group button.tiny.view-more-button, .button-group input[type="submit"].button.tiny, .button-group input[type="submit"].tiny.load-more-button, .button-group input[type="submit"].tiny.view-more-button {
     padding: 5px 10px 6px;
   }
   /* line 271, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
-  .button-group.even button.button, .button-group.even button.load-more-button, .button-group.even input[type="submit"].button, .button-group.even input[type="submit"].load-more-button {
+  .button-group.even button.button, .button-group.even button.load-more-button, .button-group.even button.view-more-button, .button-group.even input[type="submit"].button, .button-group.even input[type="submit"].load-more-button, .button-group.even input[type="submit"].view-more-button {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -5602,7 +5602,7 @@ table.hide-for-medium {
     width: 75%;
   }
   /* line 389, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul > li.search form .button, .top-bar ul > li.search form .load-more-button {
+  .top-bar ul > li.search form .button, .top-bar ul > li.search form .load-more-button, .top-bar ul > li.search form .view-more-button {
     top: 0;
     width: 25%;
   }
@@ -5692,13 +5692,13 @@ table.hide-for-medium {
     border-color: transparent #002d56 transparent transparent;
   }
   /* line 414, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul > li.has-dropdown.moved .back.title h5, .top-bar ul > li.has-dropdown.moved .back.title .cta .cta-title, .cta .top-bar ul > li.has-dropdown.moved .back.title .cta-title {
+  .top-bar ul > li.has-dropdown.moved .back.title h5, .top-bar ul > li.has-dropdown.moved .back.title .cta .cta-title, .cta .top-bar ul > li.has-dropdown.moved .back.title .cta-title, .top-bar ul > li.has-dropdown.moved .back.title .user-profile-section-title {
     margin: 0;
     padding-left: 15px;
     position: relative;
   }
   /* line 415, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul > li.has-dropdown.moved .back.title h5 a, .top-bar ul > li.has-dropdown.moved .back.title .cta .cta-title a, .cta .top-bar ul > li.has-dropdown.moved .back.title .cta-title a {
+  .top-bar ul > li.has-dropdown.moved .back.title h5 a, .top-bar ul > li.has-dropdown.moved .back.title .cta .cta-title a, .cta .top-bar ul > li.has-dropdown.moved .back.title .cta-title a, .top-bar ul > li.has-dropdown.moved .back.title .user-profile-section-title a {
     background: transparent;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -5794,14 +5794,14 @@ table.hide-for-medium {
   }
 
   /* line 454, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul li .button.small, .top-bar ul li .small.load-more-button {
+  .top-bar ul li .button.small, .top-bar ul li .small.load-more-button, .top-bar ul li .small.view-more-button {
     margin: 0 !important;
     display: inline-block;
     width: 100%;
   }
 
   /* line 456, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul > li.has-button a.button, .top-bar ul > li.has-button a.load-more-button {
+  .top-bar ul > li.has-button a.button, .top-bar ul > li.has-button a.load-more-button, .top-bar ul > li.has-button a.view-more-button {
     margin: 0;
   }
 }
@@ -6130,140 +6130,237 @@ article {
   }
 }
 
+/* !User Directory */
+/* line 96, ../sass/_layout.scss */
+.user-directory-container {
+  padding: 0;
+  width: 58.33333%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 96, ../sass/_layout.scss */
+  .user-directory-container {
+    float: left;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 96, ../sass/_layout.scss */
+  .user-directory-container {
+    width: auto;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    *zoom: 1;
+  }
+  /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_clearfix.scss */
+  .user-directory-container:before, .user-directory-container:after {
+    content: " ";
+    display: table;
+  }
+  /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_clearfix.scss */
+  .user-directory-container:after {
+    clear: both;
+  }
+}
+
+/* line 97, ../sass/_layout.scss */
+.user-profile-container {
+  padding: 0;
+  width: 58.33333%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 97, ../sass/_layout.scss */
+  .user-profile-container {
+    float: left;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 97, ../sass/_layout.scss */
+  .user-profile-container {
+    width: auto;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    *zoom: 1;
+  }
+  /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_clearfix.scss */
+  .user-profile-container:before, .user-profile-container:after {
+    content: " ";
+    display: table;
+  }
+  /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_clearfix.scss */
+  .user-profile-container:after {
+    clear: both;
+  }
+}
+
+/* line 98, ../sass/_layout.scss */
+expert-channel-list-container {
+  padding: 0;
+  width: 58.33333%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 98, ../sass/_layout.scss */
+  expert-channel-list-container {
+    float: left;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 98, ../sass/_layout.scss */
+  expert-channel-list-container {
+    width: auto;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    *zoom: 1;
+  }
+  /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_clearfix.scss */
+  expert-channel-list-container:before, expert-channel-list-container:after {
+    content: " ";
+    display: table;
+  }
+  /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_clearfix.scss */
+  expert-channel-list-container:after {
+    clear: both;
+  }
+}
+
 /* Page Specific Styles*/
 /* Single Item page elements*/
-/* line 98, ../sass/_layout.scss */
+/* line 103, ../sass/_layout.scss */
 .item-header {
   margin: 0;
   padding-top: 7px;
 }
 
-/* line 100, ../sass/_layout.scss */
+/* line 105, ../sass/_layout.scss */
 .item-title-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 100, ../sass/_layout.scss */
+  /* line 105, ../sass/_layout.scss */
   .item-title-container {
     float: left;
     width: 100%;
   }
 }
 
-/* line 101, ../sass/_layout.scss */
+/* line 106, ../sass/_layout.scss */
 .item-type {
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 101, ../sass/_layout.scss */
+  /* line 106, ../sass/_layout.scss */
   .item-type {
     float: left;
     width: 100%;
   }
 }
 
-/* line 102, ../sass/_layout.scss */
+/* line 107, ../sass/_layout.scss */
 .item-pub-date {
   width: 41.66667%;
   text-align: right;
 }
 @media only screen and (max-width: 767px) {
-  /* line 102, ../sass/_layout.scss */
+  /* line 107, ../sass/_layout.scss */
   .item-pub-date {
     float: left;
     width: 100%;
   }
 }
 
-/* line 104, ../sass/_layout.scss */
+/* line 109, ../sass/_layout.scss */
 .item-container .commentary-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 104, ../sass/_layout.scss */
+  /* line 109, ../sass/_layout.scss */
   .item-container .commentary-container {
     float: left;
     width: 100%;
   }
 }
-/* line 105, ../sass/_layout.scss */
+/* line 110, ../sass/_layout.scss */
 .item-container .journal-title {
   font-size: 17px;
 }
-/* line 106, ../sass/_layout.scss */
+/* line 111, ../sass/_layout.scss */
 .item-container .item-title {
   font-size: 17px;
 }
-/* line 107, ../sass/_layout.scss */
+/* line 112, ../sass/_layout.scss */
 .item-container .source-title {
   font-size: 14px;
 }
 
-/* line 110, ../sass/_layout.scss */
+/* line 115, ../sass/_layout.scss */
 .item-content-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 110, ../sass/_layout.scss */
+  /* line 115, ../sass/_layout.scss */
   .item-content-container {
     float: left;
     width: 100%;
   }
 }
 
-/* line 111, ../sass/_layout.scss */
+/* line 116, ../sass/_layout.scss */
 .item-footer {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 111, ../sass/_layout.scss */
+  /* line 116, ../sass/_layout.scss */
   .item-footer {
     float: left;
     width: 100%;
   }
 }
 
-/* line 114, ../sass/_layout.scss */
+/* line 119, ../sass/_layout.scss */
 .commentary-container div[class$="-photo"] {
   width: 16.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 114, ../sass/_layout.scss */
+  /* line 119, ../sass/_layout.scss */
   .commentary-container div[class$="-photo"] {
     float: left;
     width: 100%;
   }
 }
-/* line 117, ../sass/_layout.scss */
+/* line 122, ../sass/_layout.scss */
 .commentary-container div[class$="-name"] {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 117, ../sass/_layout.scss */
+  /* line 122, ../sass/_layout.scss */
   .commentary-container div[class$="-name"] {
     float: left;
     width: 100%;
   }
 }
 
-/* line 122, ../sass/_layout.scss */
+/* line 127, ../sass/_layout.scss */
 .item-source-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 122, ../sass/_layout.scss */
+  /* line 127, ../sass/_layout.scss */
   .item-source-container {
     float: left;
     width: 100%;
   }
 }
-/* line 124, ../sass/_layout.scss */
+/* line 129, ../sass/_layout.scss */
 .item-source-container .item-source {
   *zoom: 1;
   background-color: light(white, 25);
   border-top: 1px solid white;
 }
-/* line 125, ../sass/_layout.scss */
+/* line 130, ../sass/_layout.scss */
 .item-source-container .item-source .item-title, .item-source-container .item-source cite {
   font-size: 14px;
   font-style: normal;
@@ -6277,23 +6374,23 @@ article {
 .item-source-container .item-source:after {
   clear: both;
 }
-/* line 132, ../sass/_layout.scss */
+/* line 137, ../sass/_layout.scss */
 .item-source-container figure[class$="-photo"] {
   width: 16.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 132, ../sass/_layout.scss */
+  /* line 137, ../sass/_layout.scss */
   .item-source-container figure[class$="-photo"] {
     float: left;
     width: 100%;
   }
 }
-/* line 135, ../sass/_layout.scss */
+/* line 140, ../sass/_layout.scss */
 .item-source-container div[class$="-name"] {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 135, ../sass/_layout.scss */
+  /* line 140, ../sass/_layout.scss */
   .item-source-container div[class$="-name"] {
     float: left;
     width: 100%;
@@ -6304,49 +6401,67 @@ article {
 /* Single Item page elements*/
 /* !Update Page Elements */
 /* !stream */
-/* line 146, ../sass/_layout.scss */
+/* line 151, ../sass/_layout.scss */
 .stream-item-container {
   margin-bottom: 10px;
 }
 
 /* !Explore Page Elements*/
-/* line 151, ../sass/_layout.scss */
+/* line 156, ../sass/_layout.scss */
 .explore-feature .feature-item {
   background: white;
 }
 
-/* line 152, ../sass/_layout.scss */
+/* line 157, ../sass/_layout.scss */
 .explore-feature {
   background: url(loading.gif) center center #f4f4f4;
   height: 300px;
 }
 
-/* line 153, ../sass/_layout.scss */
+/* line 158, ../sass/_layout.scss */
 .explore-feature img {
   display: none;
 }
 
-/* line 155, ../sass/_layout.scss */
+/* line 160, ../sass/_layout.scss */
 .explore-feature.orbit {
   background: none;
 }
 
-/* line 156, ../sass/_layout.scss */
+/* line 161, ../sass/_layout.scss */
 .explore-feature.orbit img {
   display: block;
 }
 
-/* line 158, ../sass/_layout.scss */
+/* line 163, ../sass/_layout.scss */
 .explore-feature.orbit section {
   padding: 10px;
 }
-/* line 159, ../sass/_layout.scss */
+/* line 164, ../sass/_layout.scss */
 .explore-feature.orbit article {
   padding: 10px;
 }
 
+/* Channel Listing Page */
+/* line 168, ../sass/_layout.scss */
+.channel-list {
+  margin: 0 -15px;
+}
+
+/* line 171, ../sass/_layout.scss */
+.single-channel {
+  width: 33.33333%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 171, ../sass/_layout.scss */
+  .single-channel {
+    float: left;
+    width: 100%;
+  }
+}
+
 /*  !UI ELEMENTS */
-/* line 163, ../sass/_layout.scss */
+/* line 176, ../sass/_layout.scss */
 .load-more {
   margin: 0 auto !important;
   width: 50%;
@@ -6355,7 +6470,7 @@ article {
   padding-bottom: 14px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 163, ../sass/_layout.scss */
+  /* line 176, ../sass/_layout.scss */
   .load-more {
     float: left;
     width: 100%;
@@ -6700,15 +6815,112 @@ article {
   border-bottom: 1px solid white;
 }
 
-/* line 1, ../sass/_theme.scss */
-article {
+/* line 174, ../sass/_module.scss */
+.user-directory-header {
+  margin: 0;
+}
+
+/* line 175, ../sass/_module.scss */
+.user-directory {
+  margin: 0;
+}
+
+/* line 176, ../sass/_module.scss */
+.user-group {
+  padding: 0;
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 176, ../sass/_module.scss */
+  .user-group {
+    float: left;
+    width: 100%;
+  }
+}
+
+/* line 180, ../sass/_module.scss */
+.profile-card {
+  margin: 0 -15px;
+}
+
+/* line 181, ../sass/_module.scss */
+.profile-details {
+  margin: 0 -15px;
+}
+
+/* line 182, ../sass/_module.scss */
+.profile-overview {
+  width: 75%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 182, ../sass/_module.scss */
+  .profile-overview {
+    float: left;
+    width: 100%;
+  }
+}
+
+/* line 183, ../sass/_module.scss */
+.profile-photo {
+  width: 25%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 183, ../sass/_module.scss */
+  .profile-photo {
+    float: left;
+    width: 100%;
+  }
+}
+
+/* line 186, ../sass/_module.scss */
+.user-detail-list {
+  margin: 0 -15px;
+}
+/* line 188, ../sass/_module.scss */
+.user-detail-list dt {
+  width: 33.33333%;
+  font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  /* line 188, ../sass/_module.scss */
+  .user-detail-list dt {
+    float: left;
+    width: 100%;
+  }
+}
+/* line 192, ../sass/_module.scss */
+.user-detail-list dd {
+  width: 66.66667%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 192, ../sass/_module.scss */
+  .user-detail-list dd {
+    float: left;
+    width: 100%;
+  }
+}
+
+/* line 196, ../sass/_module.scss */
+.user-profile-section {
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 196, ../sass/_module.scss */
+  .user-profile-section {
+    float: left;
+    width: 100%;
+  }
+}
+
+/* line 2, ../sass/_theme.scss */
+.in-stream {
   background-color: white;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 6, ../sass/_theme.scss */
+/* line 9, ../sass/_theme.scss */
 body {
   background: #fdfcfb;
   /* TODO: Fix color code to match PSD */
@@ -6719,18 +6931,18 @@ body {
   background: linear-gradient(top, rgba(253, 252, 251, 0.98), rgba(253, 252, 251, 0.98)), url('data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABGAAD/4QMtaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MSA2NC4xNDA5NDksIDIwMTAvMTIvMDctMTA6NTc6MDEgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUuMSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDkzMDM2RkEyRjI3MTFFMUI2QjFERTBEQkZDOEQ1NjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDkzMDM2RkIyRjI3MTFFMUI2QjFERTBEQkZDOEQ1NjEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowOTMwMzZGODJGMjcxMUUxQjZCMURFMERCRkM4RDU2MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowOTMwMzZGOTJGMjcxMUUxQjZCMURFMERCRkM4RDU2MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv/uAA5BZG9iZQBkwAAAAAH/2wCEAAQDAwMDAwQDAwQGBAMEBgcF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');
 }
 
-/* line 10, ../sass/_theme.scss */
+/* line 13, ../sass/_theme.scss */
 .page-header {
   border-bottom: 3px solid #002d56;
   background-color: white;
 }
 
-/* line 14, ../sass/_theme.scss */
+/* line 17, ../sass/_theme.scss */
 .page-content {
   padding-top: 14px;
 }
 
-/* line 18, ../sass/_theme.scss */
+/* line 21, ../sass/_theme.scss */
 .section-widget {
   background-color: white;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
@@ -6738,7 +6950,7 @@ body {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 23, ../sass/_theme.scss */
+/* line 26, ../sass/_theme.scss */
 .page-footer {
   background: #fdfcfb;
   /* TODO: Fix color code to match PSD */
@@ -6750,7 +6962,7 @@ body {
   border-top: 2px solid white;
 }
 
-/* line 29, ../sass/_theme.scss */
+/* line 32, ../sass/_theme.scss */
 .item-title, .item-type, .item-pub-date {
   font-family: "din-condensed-web", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -6758,12 +6970,12 @@ body {
   text-transform: uppercase;
 }
 
-/* line 37, ../sass/_theme.scss */
+/* line 40, ../sass/_theme.scss */
 .load-more-button {
   background-color: #c1cd23;
 }
 
-/* line 43, ../sass/_theme.scss */
+/* line 49, ../sass/_theme.scss */
 .flag {
   border-top: 1ps solid white;
   color: white;
@@ -6773,11 +6985,11 @@ body {
   -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
-/* line 49, ../sass/_theme.scss */
+/* line 55, ../sass/_theme.scss */
 .flag.featured {
   background: #d6e03d;
 }
-/* line 52, ../sass/_theme.scss */
+/* line 58, ../sass/_theme.scss */
 .flag.story-of-the-week {
   background: #faa634;
 }

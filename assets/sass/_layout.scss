@@ -92,6 +92,11 @@
 /* !Single Item */
 .single-item-container{@include column(7, collapse); @include mobileRow();}
 
+/* !User Directory */
+.user-directory-container{@include column(7, collapse); @include mobileRow();}
+.user-profile-container{@include column(7, collapse); @include mobileRow();}
+expert-channel-list-container{@include column(7, collapse); @include mobileRow();}
+
 /* Page Specific Styles*/
 /* Single Item page elements*/
 
@@ -157,6 +162,14 @@
 .explore-feature.orbit {
 	section{ padding:$columnGutter/3;}
 	article{ padding:$columnGutter/3;}
+}
+
+/* Channel Listing Page */
+.channel-list{
+	@include innerRow();
+}
+.single-channel{
+	@include column(4);
 }
 
 /*  !UI ELEMENTS */

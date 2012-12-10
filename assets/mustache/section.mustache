@@ -8,7 +8,10 @@
 	{{#items}}
 					<li class="entry">
 					<article>
-					{{#featured}}<div class="flag"><span class="featured"><i class="icon-bolt"></i> featured</span></div>{{/featured}}
+						<div class="flag-container">
+							{{#featured}}<span class="flag featured"><i class="icon-bolt"></i> featured</span>{{/featured}}
+							{{#story-of-the-week}}<span class="flag story-of-the-week"><i class="icon-bolt"></i> story of the week</span>{{/story-of-the-week}}
+						</div>
 							<p class="meta title"><a href="#">{{title}}</a></p>
 							<p class="meta author">{{#source}}{{source.name.firstName}} {{source.name.lastName}}{{/source}}</p>
 							{{> _articles}}
@@ -17,7 +20,7 @@
 	{{/items}}
 				</ul>
 			<footer class="section-footer">
-				<p><a href="#" class="view-more">view more</a></p>
+				<p><a href="#" class="view-more-button">view more</a></p>
 			</footer><!--.section-footer-->
 	</div><!--/.section-content-->
 	</section><!--/.section-content-->

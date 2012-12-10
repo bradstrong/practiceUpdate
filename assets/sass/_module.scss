@@ -169,3 +169,34 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 		}
 	}
 }
+
+//user directory
+.user-directory-header{@include innerRow(collapse);}
+.user-directory{@include innerRow(collapse);}
+.user-group{@include column(12, collapse);}
+
+// User Profile
+
+.profile-card{@include innerRow();}
+.profile-details{@include innerRow();}
+.profile-overview{@include column(9);}
+.profile-photo{@include column(3);}
+.user-name{@extend h3;}
+.user-photo{}
+.user-detail-list{
+	@include innerRow();
+	dt{
+		@include column(4);
+		font-weight: bold;
+	}
+	dd{
+		@include column(8);
+	}
+}
+.user-profile-section{
+@include column(12);
+}
+
+.user-profile-section-title{
+	@extend h5;
+}

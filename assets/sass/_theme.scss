@@ -1,6 +1,9 @@
-article{
-	background-color:$white;
+//article{
+.in-stream{	background-color:$white;
 	@include elementBoxShadow;
+}
+
+.in-list{
 }
 
 body{
@@ -36,6 +39,9 @@ body{
 // BUTTONS
 .load-more-button{
 	background-color:$pri-green;
+}
+.view-more-button{
+	@extend .button;
 }
 
 //Flag

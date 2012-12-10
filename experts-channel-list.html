@@ -11,7 +11,7 @@
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 
-	<title>PracticeUpdate : MEET OUR EXPERTS</title>
+	<title>PracticeUpdate : Oncology Boards</title>
 
 
 	<link rel="stylesheet" href="assets/css/app.css">
@@ -48,26 +48,14 @@
 			</div><!--/.show-for-small-->
 		</div><!--/.row-->
 	<section role="main">
+<div class="expert-channel-list-container">
+<h1>MEET OUR EXPERTS</h1>
+<p>PracticeUpate is guided by a world-renowned experts that represents community practitioners and academic specialists with cross-disciplinary expertise.</p>
 
-<div class="user-directory-container">
-	<div class="user-directory-header">
-	<a class="button" href="#">view boards for all channels</a>
-		<header class="channel-header">
-			<h1>Oncology</h1>
-			<p>PracticeUpate is guided by a world-renowned experts that represents community practitioners and academic specialists with cross-disciplinary expertise.</p>
-		<header>
-	</div><!--/.user-directory-header-->
-	<div class="user-directory">
-	</div><!--/.user-directory -->
-</div><!-- /.user-directory-container -->
 
-	<div class="recommended">
-	<div class="widget recent">
-	</div><!--/.widget recent-->
-		<div class="widget ad">
-		</div><!--/.widget.ad-->
-	</div><!--/.recommended-->
-
+<div id="channel-list">
+</div><!--/#channel-list -->
+</div><!--/.expert-channel-list-container-->
 	</section><!--/[role="main"]-->
 	<section id="sidebar" role="complementary">
 		<div class="dashboard">
@@ -138,12 +126,12 @@
 		});
 	});
 
-	<!-- Mustache - homepage experts template -->
-
-	$.getJSON('content/json/experts.json', function(data) {
-		$.get('assets/mustache/experts.mustache', function(template) {
+	<!-- Mustache - experts channel list -->
+	$.getJSON('content/json/channel-list.json', function(data) {
+		$.get('assets/mustache/channel-list.mustache', function(template) {
+			console.log("load performed");
 	    var html = Mustache.to_html(template, data);
-	    $('.user-directory').html(html);
+	    $('#channel-list').html(html);
 		});
 	});
 

@@ -49,17 +49,12 @@
 		</div><!--/.row-->
 	<section role="main">
 
-<div class="user-directory-container">
-	<div class="user-directory-header">
-	<a class="button" href="#">view boards for all channels</a>
-		<header class="channel-header">
-			<h1>Oncology</h1>
-			<p>PracticeUpate is guided by a world-renowned experts that represents community practitioners and academic specialists with cross-disciplinary expertise.</p>
-		<header>
-	</div><!--/.user-directory-header-->
-	<div class="user-directory">
-	</div><!--/.user-directory -->
-</div><!-- /.user-directory-container -->
+<div class="user-profile-container">
+	<div class="user-profile-header">
+	</div><!--/.user-profile-header-->
+	<div class="user-profile">
+	</div><!--/.user-profile -->
+</div><!-- /.user-profile-container -->
 
 	<div class="recommended">
 	<div class="widget recent">
@@ -140,10 +135,10 @@
 
 	<!-- Mustache - homepage experts template -->
 
-	$.getJSON('content/json/experts.json', function(data) {
-		$.get('assets/mustache/experts.mustache', function(template) {
+	$.getJSON('content/json/user-profile.json', function(data) {
+		$.get('assets/mustache/user-profile.mustache', function(template) {
 	    var html = Mustache.to_html(template, data);
-	    $('.user-directory').html(html);
+	    $('.user-profile').html(html);
 		});
 	});
 
