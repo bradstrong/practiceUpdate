@@ -64,7 +64,7 @@ Templates should be created using external .mustache and .json files, as opposed
 
 ## Deliver assets
 
-Completed .html, .js and .css files should be delivered to the engineering team.
+Completed .html, .js and .css files should be delivered to the engineering team, via [PMcFad](https://github.com/PMcFad).
 
 
 
