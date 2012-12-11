@@ -17,6 +17,7 @@ Tasks will be assigned to collaborators as issues.
 - [Zurb Foundation](http://foundation.zurb.com/)
 - [SCSS](http://sass-lang.com/)
 - [mustache.js](https://github.com/janl/mustache.js)
+- [json](http://www.json.org/)
 
 Optional:
 
@@ -33,7 +34,7 @@ Once installed, development follows the recommended workflow for Zurb Foundation
 
 CSS is generated locally. I recommend using codekit on mac environment, as the app provides a GUI for most Compass and SCSS settings as well as detaied debug logs.
 
-## Notes
+## Conventions
 
 ### Avoid presentational markup
 
@@ -54,6 +55,16 @@ you would write:
 ```scss
 .post-container{@include innerRow();}
 ```
+
+### Use templates as necessary
+
+Repetative areas of the UI should be broken out into individual mustache templates, as neccesary.
+
+Templates should be created using external .mustache and .json files, as opposed to hardcoding vars.
+
+## Deliver assets
+
+Completed .html, .js and .css files should be delivered to the engineering team.
 
 
 
