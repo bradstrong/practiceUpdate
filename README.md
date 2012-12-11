@@ -41,19 +41,19 @@ Zurb foundation uses .row and .column classes in order to work with the grid. Us
 
 As opposed to writing something like:
 
-'''html
+```html
 <div class="row">
-'''
+```
 
 you would write:
 
-'''html
+```html
 <div class="post-container">
-'''
+```
 
-'''scss
+```scss
 .post-container{@include innerRow();}
-'''
+```
 
 
 
