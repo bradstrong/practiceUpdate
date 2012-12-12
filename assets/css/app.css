@@ -7236,19 +7236,43 @@ ul.tabs-content form fieldset legend {
 }
 
 /* line 200, ../sass/_my-custom-style.scss */
+.checked-list.width100 li {
+  width: 100%;
+}
+
+/* line 203, ../sass/_my-custom-style.scss */
 .checked-list li {
   float: left;
   width: 35%;
 }
 
-/* line 204, ../sass/_my-custom-style.scss */
+/* line 207, ../sass/_my-custom-style.scss */
+.checked-list-down {
+  float: left;
+  list-style-type: none;
+  margin: 0 30% 2% 0;
+  padding: 0;
+  width: 70%;
+}
+
+/* line 214, ../sass/_my-custom-style.scss */
+.checked-list-down li {
+  float: left;
+  background: #ededed;
+  width: 70%;
+  margin: 0 0 -1px;
+  border: 1px solid #ccc;
+  color: #000;
+}
+
+/* line 222, ../sass/_my-custom-style.scss */
 .ButtonSaveCencel {
   float: right;
 }
 
 /*End: update-popup*/
 /*Start: personal-info-side*/
-/* line 209, ../sass/_my-custom-style.scss */
+/* line 227, ../sass/_my-custom-style.scss */
 .personal-info-side {
   width: 25%;
   float: left;
@@ -7256,7 +7280,7 @@ ul.tabs-content form fieldset legend {
   min-height: 600px;
 }
 
-/* line 217, ../sass/_my-custom-style.scss */
+/* line 235, ../sass/_my-custom-style.scss */
 .channels-topic,
 .topic-spotlight,
 .board-text {
@@ -7268,7 +7292,7 @@ ul.tabs-content form fieldset legend {
   background: #4c78a5;
 }
 
-/* line 225, ../sass/_my-custom-style.scss */
+/* line 243, ../sass/_my-custom-style.scss */
 .personal-info-block {
   background: #fffde6;
   width: 80%;
@@ -7279,7 +7303,7 @@ ul.tabs-content form fieldset legend {
   border: 1px solid #ccc;
 }
 
-/* line 234, ../sass/_my-custom-style.scss */
+/* line 252, ../sass/_my-custom-style.scss */
 .container-side {
   width: 48%;
   margin: 0 1%;
@@ -7288,7 +7312,7 @@ ul.tabs-content form fieldset legend {
   float: left;
 }
 
-/* line 241, ../sass/_my-custom-style.scss */
+/* line 259, ../sass/_my-custom-style.scss */
 .container-side-list {
   width: 90%;
   margin: 0 5% 2%;
@@ -7297,7 +7321,7 @@ ul.tabs-content form fieldset legend {
   float: left;
 }
 
-/* line 248, ../sass/_my-custom-style.scss */
+/* line 266, ../sass/_my-custom-style.scss */
 .recommended {
   width: 25%;
   float: left;

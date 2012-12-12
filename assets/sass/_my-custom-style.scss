@@ -197,9 +197,27 @@ ul.tabs-content form fieldset legend{
     padding: 0;
     width: 70%;
 }
+.checked-list.width100 li {
+	width:100%;
+}
 .checked-list li{
 	float:left;
 	width:35%;
+}
+.checked-list-down {
+	float: left;
+    list-style-type: none;
+    margin: 0 30% 2% 0;
+    padding: 0;
+    width: 70%;
+}
+.checked-list-down li{
+	float: left;
+    background:#ededed;
+    width: 70%;
+	margin:0 0 -1px;
+	border:1px solid #ccc;
+	color:#000;
 }
 .ButtonSaveCencel {
 	float:right;
