@@ -45,6 +45,10 @@
 .login-form legend {
 	margin:0 0 10px;
 }
+.tabs-content i {
+	float: left;
+    font-size: x-small;
+}
 .login-form fieldset {
 	float:left;
 	width:48%;
@@ -197,12 +201,27 @@ ul.tabs-content form fieldset legend{
     padding: 0;
     width: 70%;
 }
+ul.accordion > li.active {
+    border-top: none;
+}
+ul.accordion > li {
+	border-top: none;
+	float: left;
+    width: 100%;
+}
+ul.accordion > li.active .content {
+	border:none;
+	background:none;	
+}
 .checked-list.width100 li {
 	width:100%;
 }
 .checked-list li{
 	float:left;
 	width:35%;
+}
+.checked-list li:first-child{
+	width:70%;
 }
 .checked-list-down {
 	float: left;
@@ -221,6 +240,13 @@ ul.tabs-content form fieldset legend{
 }
 .ButtonSaveCencel {
 	float:right;
+}
+.reg-block {
+	border-top:1px solid #ccc;
+	padding:0 0 1%;
+	margin:1% 0 0;
+	float:left;
+	width:100%;
 }
 /*End: update-popup*/
 /*Start: personal-info-side*/
@@ -270,3 +296,34 @@ ul.tabs-content form fieldset legend{
 	min-height:600px;
 }
 /*End: personal-info-side*/
+/*Start: widget-block*/
+.widget-block {
+	float: left;
+    height: 100px;
+    width: 20%;
+}
+.widget-block.bg-grey {
+	background:#ebebeb;
+}
+.bg-yellow {
+	background:#fffde6;
+}
+.bg-turquoise {
+	background:#e6fffc;
+}
+.bordersolid {
+	border:1px solid #8c8c8c;
+}
+.bordersolid.border-black {
+	border:1px solid #000;
+}
+.borderdotted {
+	border:1px dotted #858585;
+}
+.borderdotted.border-black {
+	border:1px dotted #000;
+}
+.borderradius {
+	border-radius:15px;
+}
+/*End: widget-block*/

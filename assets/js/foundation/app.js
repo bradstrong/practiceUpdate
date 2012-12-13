@@ -39,6 +39,11 @@
       var html = Mustache.to_html(template);
       $('body').append(html);
     });
+	
+	$.get('assets/mustache/modals-forgot-password.mustache', function(template) {
+      var html = Mustache.to_html(template);
+      $('body').append(html);
+    });
 
     })();
 /*--

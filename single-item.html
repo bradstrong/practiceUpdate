@@ -31,21 +31,10 @@
 		<p>Page header</p>
 	</div>
 	<div class="page-content width100">
-		<div class="return-block">
-			<p>Return</p>
-		</div>
-		<div class="user-form-actions">
-			<p>User Form / Actions</p>
-			<div class="personal-info">
+		<div class="widget-block-wrapper">
+			<div class="widget-block bg-yellow borderdotted border-black">
+				<p>Only text</p>
 			</div>
-			<div class="account-question">
-			</div>
-			<div class="confirmation">
-			</div>
-			<div class="update-popup">
-			</div>
-			<!-- div class="personal-info-wrapper">
-			</div -->
 		</div>
 	</div>
 	<footer class="page-footer markrting-footer logout">
@@ -54,6 +43,7 @@
 	<script src="assets/js/mustache.js"></script>	
 	<script src="assets/js/foundation/jquery.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
 	<script>
 		<!-- Mustache - homepage meet-experts -->
 		$.get('assets/mustache/personal-info.mustache', function(template) {
@@ -104,6 +94,7 @@
   
   <!-- Initialize JS Plugins -->
   <script src="assets/js/foundation/app.js"></script>
+
 
   </body>
 </html>
