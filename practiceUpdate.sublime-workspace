@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"in",
+				"include"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"user-grop",
+				"user-group-title"
+			],
+			[
+				"user",
+				"user-group"
+			],
+			[
 				"te",
 				"text-transform"
 			],
@@ -38,10 +54,6 @@
 			[
 				"padding",
 				"padding-bottom"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"line",
@@ -120,10 +132,6 @@
 				"addClass"
 			],
 			[
-				"user",
-				"user-topic"
-			],
-			[
 				"margin",
 				"margin-bottom"
 			],
@@ -165,10 +173,56 @@
 			}
 		},
 		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/expert-opinion-item.html",
 			"settings":
 			{
-				"buffer_size": 8769,
+				"buffer_size": 11382,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/experts.html",
+			"settings":
+			{
+				"buffer_size": 5736,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n\n<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n	<meta charset=\"utf-8\" />\n\n	<!-- Set the viewport width to device width for mobile -->\n	<meta name=\"viewport\" content=\"width=device-width\" />\n\n	<title>PracticeUpdate : MEET OUR EXPERTS</title>\n\n\n	<link rel=\"stylesheet\" href=\"assets/css/app.css\">\n	<link rel=\"stylesheet\" href=\"assets/css/font-awesome.css\">\n	<link rel=\"stylesheet\" href=\"assets/css/fc-webicons.css\">\n	<link rel=\"stylesheet\" href=\"assets/css/foundation-icons-general.css\">\n\n	<script src=\"assets/js/foundation/modernizr.foundation.js\"></script>\n\n	<!-- IE Fix for HTML5 Tags -->\n	<!--[if lt IE 9]>\n		<script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\n	<![endif]-->   \n\n</head>\n	<body id=\"update\" class=\"update off-canvas logged-out\">\n		 <div id=\"page-leaderboard\">\n			<div class=\"row\">\n			<div class=\"ad centered eight columns hide-for-small\">\n				<img src=\"http://placehold.it/728x90\" class=\"ad\" title=\"ad\" />\n			</div> <!--/.ad -->\n		 </div> <!--/.row -->\n		 </div> <!--/#page-leaderboard -->\n		<div class=\"contain-to-grid\">\n		<nav class=\"top-bar\">\n		</nav><!--/.container.top-bar-->\n		</div>\n\n	<div class=\"page-content\">\n		<div class=\"row\">\n			<div class=\"show-for-small\">\n				<!-- <div class=\"four columns mobile-two\"><a class='menu-button button' id=\"menuButton\" href=\"#menu\">Menu</a></div> -->\n				<div class=\"four columns mobile-two\"><a class='sidebar-button button' id=\"sidebarButton\" href=\"#sidebar\" >Extra</a></div>\n			</div><!--/.show-for-small-->\n		</div><!--/.row-->\n	<section role=\"main\">\n\n<div class=\"user-profile-container\">\n	<div class=\"user-profile-header\">\n	</div><!--/.user-profile-header-->\n	<div class=\"user-profile\">\n	</div><!--/.user-profile -->\n</div><!-- /.user-profile-container -->\n\n	<div class=\"recommended\">\n	<div class=\"widget recent\">\n	</div><!--/.widget recent-->\n		<div class=\"widget ad\">\n		</div><!--/.widget.ad-->\n	</div><!--/.recommended-->\n\n	</section><!--/[role=\"main\"]-->\n	<section id=\"sidebar\" role=\"complementary\">\n		<div class=\"dashboard\">\n			<div class=\"component user-console\">\n			</div><!--/.component.user-console-->\n			<div class=\"component user-topic\">\n			</div><!--/.component.user-topic-->\n			<div class=\"component topic-spotlight\">\n			</div><!--/.component.topic-spotlight-->\n			<div class=\"panel cta meet-experts\">\n				<img src=\"http://placehold.it/200x200\" /><p><!-- Meet Our Experts --> Meet our Advisory and Editorial Boards comprised of physician editors and world-renowned experts.<p>\n			</div>\n		</div><!--/.sidebar-->\n	</section><!--/.[role=\"complimentary\"]-->\n	</div><!--/.page-content-->\n	<footer class=\"page-footer\">\n	</footer><!-- /.page-footer -->\n\n\n	<!-- Included JS Files (Uncompressed) -->\n  <script src=\"assets/js/foundation/jquery.js\"></script>\n<!--   <script src=\"assets/js/plugins-ck.js\"></script> -->\n\n	<script src=\"assets/js/foundation/jquery.foundation.accordion.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.alerts.js\"></script>	\n	<script src=\"assets/js/foundation/jquery.foundation.buttons.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.forms.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.mediaQueryToggle.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.navigation.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.topbar.js\"></script>	\n	<script src=\"assets/js/foundation/jquery.foundation.orbit.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.reveal.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.tabs.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.tooltips.js\"></script>\n	<script src=\"assets/js/foundation/jquery.placeholder.js\"></script>\n	<script src=\"assets/js/foundation/jquery.offcanvas.js\"></script>\n	<script src=\"assets/js/mustache.js\"></script>\n	<script src=\"assets/js/foundation/app.js\"></script>\n\n	<!-- Mustache - homepage feed template -->\n	<script>\n\n\n	<!-- Mustache - homepage feed template -->\n	$.getJSON('content/json/feed.json', function(data) {\n		$.get('assets/mustache/feed-item.mustache', function(template) {\n			//alert('Load was performed.');\n	    var html = Mustache.to_html(template, data);\n	    $('.stream-container').html(html);\n		});\n\n	});\n\n	<!-- Mustache - homepage recent template -->\n	$.getJSON('content/json/recent.json', function(data) {\n		$.get('assets/mustache/recent.mustache', function(template) {\n			//alert('Load was performed.');\n	    var html = Mustache.to_html(template, data);\n	    $('.recent').html(html);\n		});\n\n	});\n\n	<!-- Mustache - homepage user-console template -->\n	$.getJSON('content/json/user-console.json', function(data) {\n		$.get('assets/mustache/user-console.mustache', function(template) {\n			//alert('Load was performed.');\n	    var html = Mustache.to_html(template, data);\n	    $('.user-console').html(html);\n		});\n	});\n\n	<!-- Mustache - homepage experts template -->\n\n	$.getJSON('content/json/user-profile.json', function(data) {\n		$.get('assets/mustache/user-profile.mustache', function(template) {\n	    var html = Mustache.to_html(template, data);\n	    $('.user-profile').html(html);\n		});\n	});\n\n	</script>\n</body>\n</html>",
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/user-profile.html",
+			"file_size": 5446,
+			"file_write_time": 1355114495000000,
+			"settings":
+			{
+				"buffer_size": 5506,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n\n<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n	<meta charset=\"utf-8\" />\n\n	<!-- Set the viewport width to device width for mobile -->\n	<meta name=\"viewport\" content=\"width=device-width\" />\n\n	<title>PracticeUpdate : Oncology Boards</title>\n\n\n	<link rel=\"stylesheet\" href=\"assets/css/app.css\">\n	<link rel=\"stylesheet\" href=\"assets/css/font-awesome.css\">\n	<link rel=\"stylesheet\" href=\"assets/css/fc-webicons.css\">\n	<link rel=\"stylesheet\" href=\"assets/css/foundation-icons-general.css\">\n\n	<script src=\"assets/js/foundation/modernizr.foundation.js\"></script>\n\n	<!-- IE Fix for HTML5 Tags -->\n	<!--[if lt IE 9]>\n		<script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\n	<![endif]-->   \n\n</head>\n	<body id=\"update\" class=\"update off-canvas logged-out\">\n		 <div id=\"page-leaderboard\">\n			<div class=\"row\">\n			<div class=\"ad centered eight columns hide-for-small\">\n				<img src=\"http://placehold.it/728x90\" class=\"ad\" title=\"ad\" />\n			</div> <!--/.ad -->\n		 </div> <!--/.row -->\n		 </div> <!--/#page-leaderboard -->\n		<div class=\"contain-to-grid\">\n		<nav class=\"top-bar\">\n		</nav><!--/.container.top-bar-->\n		</div>\n\n	<div class=\"page-content\">\n		<div class=\"row\">\n			<div class=\"show-for-small\">\n				<!-- <div class=\"four columns mobile-two\"><a class='menu-button button' id=\"menuButton\" href=\"#menu\">Menu</a></div> -->\n				<div class=\"four columns mobile-two\"><a class='sidebar-button button' id=\"sidebarButton\" href=\"#sidebar\" >Extra</a></div>\n			</div><!--/.show-for-small-->\n		</div><!--/.row-->\n	<section role=\"main\">\n<div class=\"channel-list-container\">\n	<div class=\"channel-list-header\">\n<h1>MEET OUR EXPERTS</h1>\n<p>PracticeUpate is guided by a world-renowned experts that represents community practitioners and academic specialists with cross-disciplinary expertise.</p>\n</div><!--/.channel-list-header-->\n\n<div id=\"channel-list\">\n</div><!--/#channel-list -->\n</div><!--/.channel-list-container-->\n\n	</section><!--/[role=\"main\"]-->\n	<section id=\"sidebar\" role=\"complementary\">\n		<div class=\"dashboard\">\n			<div class=\"component user-console\">\n			</div><!--/.component.user-console-->\n			<div class=\"component user-topic\">\n			</div><!--/.component.user-topic-->\n			<div class=\"component topic-spotlight\">\n			</div><!--/.component.topic-spotlight-->\n			<div class=\"panel cta meet-experts\">\n				<img src=\"http://placehold.it/200x200\" /><p><!-- Meet Our Experts --> Meet our Advisory and Editorial Boards comprised of physician editors and world-renowned experts.<p>\n			</div>\n		</div><!--/.sidebar-->\n	</section><!--/.[role=\"complimentary\"]-->\n	</div><!--/.page-content-->\n\n\n	<!-- Included JS Files (Uncompressed) -->\n  <script src=\"assets/js/foundation/jquery.js\"></script>\n<!--   <script src=\"assets/js/plugins-ck.js\"></script> -->\n\n	<script src=\"assets/js/foundation/jquery.foundation.accordion.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.alerts.js\"></script>	\n	<script src=\"assets/js/foundation/jquery.foundation.buttons.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.forms.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.mediaQueryToggle.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.navigation.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.topbar.js\"></script>	\n	<script src=\"assets/js/foundation/jquery.foundation.orbit.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.reveal.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.tabs.js\"></script>\n	<script src=\"assets/js/foundation/jquery.foundation.tooltips.js\"></script>\n	<script src=\"assets/js/foundation/jquery.placeholder.js\"></script>\n	<script src=\"assets/js/foundation/jquery.offcanvas.js\"></script>\n	<script src=\"assets/js/mustache.js\"></script>\n	<script src=\"assets/js/foundation/app.js\"></script>\n\n	<!-- Mustache - homepage feed template -->\n	<script>\n\n\n	<!-- Mustache - homepage feed template -->\n	$.getJSON('content/json/feed.json', function(data) {\n		$.get('assets/mustache/feed-item.mustache', function(template) {\n			//alert('Load was performed.');\n	    var html = Mustache.to_html(template, data);\n	    $('.stream-container').html(html);\n		});\n\n	});\n\n	<!-- Mustache - homepage recent template -->\n	$.getJSON('content/json/recent.json', function(data) {\n		$.get('assets/mustache/recent.mustache', function(template) {\n			//alert('Load was performed.');\n	    var html = Mustache.to_html(template, data);\n	    $('.recent').html(html);\n		});\n\n	});\n\n	<!-- Mustache - homepage user-console template -->\n	$.getJSON('content/json/user-console.json', function(data) {\n		$.get('assets/mustache/user-console.mustache', function(template) {\n			//alert('Load was performed.');\n	    var html = Mustache.to_html(template, data);\n	    $('.user-console').html(html);\n		});\n	});\n\n	<!-- Mustache - experts channel list -->\n	$.getJSON('content/json/channel-list.json', function(data) {\n		$.get('assets/mustache/channel-list.mustache', function(template) {\n			console.log(\"load performed\");\n	    var html = Mustache.to_html(template, data);\n	    $('#channel-list').html(html);\n		});\n	});\n\n	</script>\n</body>\n</html>",
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/channel-list.html",
+			"file_size": 5481,
+			"file_write_time": 1355116435000000,
+			"settings":
+			{
+				"buffer_size": 5479,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/channel-list.mustache",
+			"settings":
+			{
+				"buffer_size": 299,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/channel-list.json",
+			"settings":
+			{
+				"buffer_size": 715,
 				"line_ending": "Unix"
 			}
 		},
@@ -176,33 +230,63 @@
 			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
 			"settings":
 			{
-				"buffer_size": 6137,
+				"buffer_size": 8819,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json",
 			"settings":
 			{
-				"buffer_size": 1724,
+				"buffer_size": 13119,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Package Control 1.6.0 Changelog:\n  \n  Wow! It has been 9 months since the last stable release of Package Control.\n  Quite a lot has happened since then, including the release of Sublime Text 2\n  stable, and hundreds upon hundreds of new packages from the community!\n  \n  A quick thank you to Kevin Yank (@sentience) for recently volunteering to help\n  review packages for inclusion in the default channel, and ninj0x\n  (https://github.com/ninj0x) for rewriting the Package Control Community\n  Packages search functionality so it is nice and fast once again! The lists\n  below include specific thanks for code contributions.\n  \n  As Sublime Text has become increasingly more popular, and the number of\n  packages has increased so rapidly, the bandwidth requirements have also\n  significantly increased. This month the default channel will very likely serve\n  over 1TB of JSON data. If you feel so inclined, consider pitching in a small\n  amount to help cover the cost:\n  http://wbond.net/sublime_packages/package_control/say_thanks. A big thank you\n  to all of the users who have already contributed!\n  \n  \n  Enhancements\n  \n  \n   - Added full (custom) proxy authentication support for HTTPS connections\n  \n   - Added NTLM authentication for proxies on Windows\n  \n   - Proxy authentication information is now set via the new proxy_username and\n     proxy_password settings.\n  \n   - If the https_proxy setting it set to false, it will not inherit from the\n     http_proxy setting (thanks planardothum!)\n  \n   - The time of the last successful run is no longer stored in\n     Packages/User/Package Control.sublime-settings, but rather in\n     Packages/User/Package Control.last-run making it easier to ignore via git,\n     hg, etc. (thanks schlamar!)\n  \n   - Packages are now ignored during install and upgrade to help prevents errors\n     where Sublime Text tries to read a file as it is being extracted\n  \n   - Packages that include DLLs for Windows can now be upgraded. In-use\n     DLLs will be detected and the user prompted to restart.\n  \n   - Package version numbers may now include non-numeric components, and semantic\n     versioning (http://semver.org) is fully supported\n  \n   - JSON parsing messages are now printed to the console instead of being shown\n     in an error popup\n  \n   - Added support for changes to the BitBucket API\n  \n   - Added support for changes to GitHub URLs\n  \n   - Added the debug setting to help track down HTTP connection issues\n  \n   - All of the downloaders will now try to use HTTP compression\n  \n   - All of the downloaders will now follow redirects\n  \n   - Added new install_missing setting to control if Package Control should try\n     to install any packages that appear to be missing from the current machine.\n     This defaults to true, and is really only useful if you want to prevent\n     Package Control from connecting to the internet without explicitly asking\n     it to.\n  \n   - Added lots of code comments as a first step towards making contributions\n     by other developers easier\n  \n  \n  Bug Fixes\n  \n  \n   - Added support for the new preferences filename (thanks titoBouzout!)\n  \n   - If a package is missing from a machine, but not available for that\n     platform, it is no longer considered an error (thanks schlamar!)\n  \n   - Updated CA certs\n  \n   - Fixed handling of install and upgrade messages that contain non-ASCII\n     characters\n  \n   - Fixed a unicode error trying to load the CA cert bundle file on Windows when\n     the install path to Sublime Text contains non-ASCII characters\n  \n   - Better handling for edge case HTTP errors (thanks tgecho!)\n  \n   - Fixed a number of errors related to non-ASCII error messages being created\n     by the operating system (thanks quarnster!)\n  \n   - GitHub URLs will now automatically be trimmed of trailing .git suffixes\n  \n   - Badly formatted messages.json files will no longer break the install process\n",
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/user-profile.json",
 			"settings":
 			{
-				"buffer_size": 3999,
-				"line_ending": "Unix",
-				"name": "Package Control Messages",
-				"scratch": true
+				"buffer_size": 2484,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts-copy.json",
+			"settings":
+			{
+				"buffer_size": 791,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache",
+			"settings":
+			{
+				"buffer_size": 1820,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-profile.mustache",
+			"settings":
+			{
+				"buffer_size": 1361,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_base.scss",
+			"settings":
+			{
+				"buffer_size": 62,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
 			"settings":
 			{
-				"buffer_size": 6205,
+				"buffer_size": 3750,
 				"line_ending": "Unix"
 			}
 		},
@@ -210,31 +294,15 @@
 			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
 			"settings":
 			{
-				"buffer_size": 2662,
+				"buffer_size": 3729,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss",
 			"settings":
 			{
-				"buffer_size": 405,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
-			"settings":
-			{
-				"buffer_size": 3176,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
-			"settings":
-			{
-				"buffer_size": 1369,
+				"buffer_size": 928,
 				"line_ending": "Unix"
 			}
 		}
@@ -242,9 +310,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 107.0,
 		"selected_items":
 		[
+			[
+				"new",
+				"File: New File Relative to Current View"
+			],
 			[
 				"todo",
 				"Show TODOs: Project and open files"
@@ -252,10 +324,6 @@
 			[
 				"gist",
 				"GitHub: Open Gist in Editor"
-			],
-			[
-				"new",
-				"File: New File Relative to Current View"
 			],
 			[
 				"install ",
@@ -299,10 +367,27 @@
 	},
 	"file_history":
 	[
+		"/Users/brad/Sites/pn-foundation/practiceupdate/experts-channel-list.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/recent.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/section.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-console.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/feed.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/channel-list.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-topic.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/author-meta.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/ad.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/sass/_ad.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/marketing.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/page-footer.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/cardiology.html",
@@ -312,16 +397,12 @@
 		"/etc/hosts",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/dermatology.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/de3225710d60b15d0a6df5c356cb618685603156/_opacity.scssc",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/c41bfe3e0594ee6743c257e86d2cf5507d6658bd/_foundation-overrides.scssc",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/foundation-overrides.css",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/section.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/learn.html",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/experts.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.offcanvas.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/topic-spotlight.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css",
@@ -330,7 +411,6 @@
 		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/9446bd9a038f52b6135aaf4d34353a575830dcf0/_semantic-grid.scssc",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/ad.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/cta-meet-experts.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/updates_2012-10-23.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/img/section/editorial_board_group.jpg",
@@ -343,9 +423,6 @@
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/ad.json",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/ad.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/plugins.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/recent.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/feed.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/recent.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_expert-opinion.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.topbar.js",
@@ -415,6 +492,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"flag",
+			"item-container",
+			"mustache",
 			"side-nav",
 			"header",
 			"collapse",
@@ -539,10 +619,7 @@
 			"item-content-container",
 			"commentary-container",
 			"source-container",
-			"citation",
-			"-name",
-			"journal",
-			"\"photo\""
+			"citation"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -563,7 +640,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -594,45 +671,45 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/expert-opinion-item.html",
 					"settings":
 					{
-						"buffer_size": 8769,
+						"buffer_size": 11382,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								883,
-								883
+								7713,
+								7501
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1559.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/experts.html",
 					"settings":
 					{
-						"buffer_size": 6137,
+						"buffer_size": 5736,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1175,
+								1175
 							]
 						],
 						"settings":
@@ -648,23 +725,23 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/user-profile.html",
 					"settings":
 					{
-						"buffer_size": 1724,
+						"buffer_size": 5506,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								690,
-								690
+								2969,
+								2969
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -675,50 +752,50 @@
 				},
 				{
 					"buffer": 4,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/channel-list.html",
 					"settings":
 					{
-						"buffer_size": 3999,
+						"buffer_size": 5479,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3999,
-								3999
+								2276,
+								2276
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": true
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 436.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/channel-list.mustache",
 					"settings":
 					{
-						"buffer_size": 6205,
+						"buffer_size": 299,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2946,
-								2946
+								155,
+								155
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Mustache/mustache.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -728,50 +805,23 @@
 				},
 				{
 					"buffer": 6,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/channel-list.json",
 					"settings":
 					{
-						"buffer_size": 2662,
+						"buffer_size": 715,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								389,
-								389
+								715,
+								715
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 31.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
-					"settings":
-					{
-						"buffer_size": 405,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								405,
-								405
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -781,26 +831,52 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
+					"buffer": 7,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
 					"settings":
 					{
-						"buffer_size": 3176,
+						"buffer_size": 8819,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								308,
-								308
+								3371,
+								3371
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 834.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json",
+					"settings":
+					{
+						"buffer_size": 13119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								88,
+								2635
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -810,18 +886,72 @@
 				},
 				{
 					"buffer": 9,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/user-profile.json",
 					"settings":
 					{
-						"buffer_size": 1369,
+						"buffer_size": 2484,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1369,
-								1369
+								2484,
+								2484
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts-copy.json",
+					"settings":
+					{
+						"buffer_size": 791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								791,
+								791
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache",
+					"settings":
+					{
+						"buffer_size": 1820,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1153,
+								1153
 							]
 						],
 						"settings":
@@ -829,7 +959,141 @@
 							"syntax": "Packages/Mustache/mustache.tmLanguage"
 						},
 						"translation.x": 0.0,
+						"translation.y": 14.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-profile.mustache",
+					"settings":
+					{
+						"buffer_size": 1361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1026,
+								1026
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Mustache/mustache.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_base.scss",
+					"settings":
+					{
+						"buffer_size": 62,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
+					"settings":
+					{
+						"buffer_size": 3750,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3562,
+								3562
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1919.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+					"settings":
+					{
+						"buffer_size": 3729,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3145,
+								3145
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss",
+					"settings":
+					{
+						"buffer_size": 928,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								807,
+								807
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 89.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -879,8 +1143,20 @@
 		"selected_items":
 		[
 			[
+				"theme",
+				"assets/sass/_theme.scss"
+			],
+			[
+				"base",
+				"assets/sass/_base.scss"
+			],
+			[
 				"update",
 				"update.html"
+			],
+			[
+				"chann",
+				"assets/mustache/channel-list.mustache"
 			],
 			[
 				"oncolo",
