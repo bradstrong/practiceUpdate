@@ -44,6 +44,9 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 			a{cursor: default;}
 			&:hover{background-color:$sidebarLiBackground;}
 		}
+		&.selected{
+			a{}
+		}
 		&:last-child{@include border-bottom-radius(3px);}
 		a{
 			text-transform:uppercase;
