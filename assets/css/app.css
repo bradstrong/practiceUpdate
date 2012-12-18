@@ -12,16 +12,16 @@
 }
 
 /* line 55, ../../../../.gem/ruby/1.9.1/gems/zurb-foundation-3.2.3/scss/foundation/mixins/_semantic-grid.scss */
-article, .page-content, .page-footer, .footer-section-container .footer-section, .flag-container, .item-header, .channel-list, .explore-sections section, .user-directory-header, .user-directory, .profile-card, .profile-details, .user-detail-list {
+article, .page-footer, .footer-section-container .footer-section, .flag-container, .item-header, .channel-list, .explore-sections section, .user-directory-header, .user-directory, .profile-card, .profile-details, .user-detail-list {
   *zoom: 1;
 }
 /* line 4, ../../../../.gem/ruby/1.9.1/gems/zurb-foundation-3.2.3/scss/foundation/mixins/_clearfix.scss */
-article:before, .page-content:before, .page-footer:before, .footer-section-container .footer-section:before, .flag-container:before, .item-header:before, .channel-list:before, .explore-sections section:before, .user-directory-header:before, .user-directory:before, .profile-card:before, .profile-details:before, .user-detail-list:before, article:after, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .flag-container:after, .item-header:after, .channel-list:after, .explore-sections section:after, .user-directory-header:after, .user-directory:after, .profile-card:after, .profile-details:after, .user-detail-list:after {
+article:before, .page-footer:before, .footer-section-container .footer-section:before, .flag-container:before, .item-header:before, .channel-list:before, .explore-sections section:before, .user-directory-header:before, .user-directory:before, .profile-card:before, .profile-details:before, .user-detail-list:before, article:after, .page-footer:after, .footer-section-container .footer-section:after, .flag-container:after, .item-header:after, .channel-list:after, .explore-sections section:after, .user-directory-header:after, .user-directory:after, .profile-card:after, .profile-details:after, .user-detail-list:after {
   content: " ";
   display: table;
 }
 /* line 5, ../../../../.gem/ruby/1.9.1/gems/zurb-foundation-3.2.3/scss/foundation/mixins/_clearfix.scss */
-article:after, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .flag-container:after, .item-header:after, .channel-list:after, .explore-sections section:after, .user-directory-header:after, .user-directory:after, .profile-card:after, .profile-details:after, .user-detail-list:after {
+article:after, .page-footer:after, .footer-section-container .footer-section:after, .flag-container:after, .item-header:after, .channel-list:after, .explore-sections section:after, .user-directory-header:after, .user-directory:after, .profile-card:after, .profile-details:after, .user-detail-list:after {
   clear: both;
 }
 
@@ -5819,19 +5819,7 @@ article {
 
 /* line 25, ../sass/_layout.scss */
 .page-content {
-  width: 1280px;
-  max-width: 100%;
-  min-width: 768px;
-  margin: 0 auto;
-}
-@media only screen and (max-width: 767px) {
-  /* line 25, ../sass/_layout.scss */
-  .page-content {
-    width: auto;
-    min-width: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
+  /*@include outerRow();*/
 }
 
 /* line 30, ../sass/_layout.scss */
@@ -7419,7 +7407,7 @@ ul.accordion > li.active .content {
 .row select {
   margin: 0 0 12px;
   height: 32px;
-  padding: 7px 0 0;
+  padding: 7px 0;
 }
 
 /* line 333, ../sass/_my-custom-style.scss */
@@ -7430,7 +7418,7 @@ ul.accordion > li.active .content {
 /* line 336, ../sass/_my-custom-style.scss */
 .lets-go {
   border: 1px solid #CCCCCC;
-  width: 98%;
+  width: 100%;
   padding: 1% 1% 0;
 }
 
@@ -7449,4 +7437,10 @@ ul.accordion > li.active .content {
 .six.columns a, .row .columns.six a {
   margin: 10px 0 0;
   float: left;
+}
+
+/* line 352, ../sass/_my-custom-style.scss */
+.row legend {
+  margin: 0 0 3px;
+  font-weight: bold;
 }

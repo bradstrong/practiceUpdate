@@ -328,14 +328,14 @@ ul.accordion > li.active .content {
 .row select {
 	margin: 0 0 12px;
 	height:32px;
-	padding:7px 0 0;
+	padding:7px 0;
 }
 #ErrorDivMsg {
 	display:none;
 }
 .lets-go {
 	border: 1px solid #CCCCCC;
-	width:98%;
+	width:100%;
 	padding:1% 1% 0;
 }
 .create-login {
@@ -348,4 +348,8 @@ ul.accordion > li.active .content {
 .six.columns a {
 	margin:10px 0 0;
 	float:left;
+}
+.row legend {
+	margin:0 0 3px;
+	font-weight:bold;
 }

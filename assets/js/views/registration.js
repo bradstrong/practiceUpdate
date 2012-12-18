@@ -7,6 +7,10 @@
             $('#state').parent()[this.value == 232 ? 'show' : 'hide']();
         }).change();
 
+        $.validator.addMethod('alphanumeric', function(value, element) {
+            return this.optional(element) || /^[a-zA-Z\d\-]+$/i.test(value);
+        }, "letters, numbers and hyphens only please");
+
         $("#registration-form").validate({
             focusInvalid: false,
             errorElement: 'small',
@@ -36,7 +40,8 @@
                 },
                 Password: {
                     required: true,
-                    rangelength: [6, 20]
+                    rangelength: [6, 20],
+                    alphanumeric: true
                 },
                 VerifyPassword: {
                     equalTo: '#password'
