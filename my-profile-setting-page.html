@@ -74,11 +74,6 @@
 	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
     <script src="assets/js/jquery.validate.js"></script>
 	<script>
-    $.get('assets/mustache/personal-info.mustache', function(template) {
-        var html = Mustache.to_html(template);
-        $('.personal-info').html(html);
-    });
-
     $.get('assets/mustache/account-question.mustache', function(template) {
         var html = Mustache.to_html(template);
         $('.account-question').html(html);
