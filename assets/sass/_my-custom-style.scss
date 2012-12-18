@@ -182,11 +182,11 @@ ul.tabs-content {
 	float:left;
 	min-height:400px;
 }
-ul.tabs-content form fieldset{
+ul.tabs-content fieldset{
 	padding:0;
 	margin:0;
 }
-ul.tabs-content form fieldset legend{
+ul.tabs-content fieldset legend{
 	background:none;
 }
 .checked-list {
@@ -324,4 +324,28 @@ ul.accordion > li.active .content {
 /*End: widget-block*/
 .row {
 	width:100%;
+}
+.row select {
+	margin: 0 0 12px;
+	height:32px;
+	padding:7px 0 0;
+}
+#ErrorDivMsg {
+	display:none;
+}
+.lets-go {
+	border: 1px solid #CCCCCC;
+	width:98%;
+	padding:1% 1% 0;
+}
+.create-login {
+	margin:15px 0 0;
+}
+.create-login h3 {
+	font-size:14px;
+	margin:0;
+}
+.six.columns a {
+	margin:10px 0 0;
+	float:left;
 }

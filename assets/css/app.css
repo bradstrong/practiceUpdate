@@ -7215,13 +7215,13 @@ ul.tabs-content {
 }
 
 /* line 185, ../sass/_my-custom-style.scss */
-ul.tabs-content form fieldset {
+ul.tabs-content fieldset {
   padding: 0;
   margin: 0;
 }
 
 /* line 189, ../sass/_my-custom-style.scss */
-ul.tabs-content form fieldset legend {
+ul.tabs-content fieldset legend {
   background: none;
 }
 
@@ -7413,4 +7413,40 @@ ul.accordion > li.active .content {
 /* line 325, ../sass/_my-custom-style.scss */
 .row {
   width: 100%;
+}
+
+/* line 328, ../sass/_my-custom-style.scss */
+.row select {
+  margin: 0 0 12px;
+  height: 32px;
+  padding: 7px 0 0;
+}
+
+/* line 333, ../sass/_my-custom-style.scss */
+#ErrorDivMsg {
+  display: none;
+}
+
+/* line 336, ../sass/_my-custom-style.scss */
+.lets-go {
+  border: 1px solid #CCCCCC;
+  width: 98%;
+  padding: 1% 1% 0;
+}
+
+/* line 341, ../sass/_my-custom-style.scss */
+.create-login {
+  margin: 15px 0 0;
+}
+
+/* line 344, ../sass/_my-custom-style.scss */
+.create-login h3, .create-login .user-name {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* line 348, ../sass/_my-custom-style.scss */
+.six.columns a, .row .columns.six a {
+  margin: 10px 0 0;
+  float: left;
 }
