@@ -62,7 +62,7 @@
 	height:100px;
 	text-align:center;
 	background:$grey;
-	width:10%;
+	width:100%;
 	float:left;
 	margin:0 1% 0 0;
 }
@@ -74,11 +74,6 @@
 /*End: login*/
 
 /*Start: personal info*/
-.personal-info {
-	width:400px;
-	float:left;
-	margin:0 1%;
-}
 .section-form-login legend{
 	background:none;
 	margin:0 0 10px;
@@ -327,3 +322,6 @@ ul.accordion > li.active .content {
 	border-radius:15px;
 }
 /*End: widget-block*/
+.row {
+	width:100%;
+}
