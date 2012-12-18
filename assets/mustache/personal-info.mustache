@@ -1,13 +1,12 @@
 <section class="section-form-login">
 	<fieldset>
-		<div class="row"><div class="twelve columns"><label>Personal Information</label><input type="text" name="FirstName" value="First Name"/></div></div>
-		<div class="row"><div class="twelve columns"><label></label><input type="text" name="LastName" value="Last Name"/></div></div>
+		<div class="row"><div class="twelve columns"><label>Personal Information</label><input type="text" name="FirstName" placeholder="First Name"/></div></div>
+		<div class="row"><div class="twelve columns"><label></label><input type="text" name="LastName" placeholder="Last Name"/></div></div>
 	</fieldset>
 	<fieldset>
-		<div class="row"><div class="twelve columns"><label>Your Login</label><input type="text" name="Email" value="Email"/></div></div>
-		<div class="row"><div class="twelve columns"><label></label><input type="password" name="Password" value="Password"/></div></div>
-		<div class="row"><div class="twelve columns"><label></label><input name="VerifyPassword" type="password" value="Confirm Password"/></div></div>
-		<span>password must be 6-20 xharacters (letters? numbers and hyphens are accepted but not spaces)</span>
+		<div class="row"><div class="twelve columns"><label>Your Login</label><input type="text" name="Email" placeholder="Email"/></div></div>
+		<div class="row"><div class="twelve columns"><label></label><input id="password" type="password" name="Password" placeholder="Password"/></div></div>
+		<div class="row"><div class="twelve columns"><label></label><input name="VerifyPassword" type="password" placeholder="Confirm Password"/></div></div>
 		<div class="row"><div class="twelve columns"><label></label>
 			<select>
 				<option>Country of Residence</option>
@@ -20,7 +19,7 @@
 		</div></div>
 		<div id="ErrorDiv" class="row">
 			<div class="twelve columns">
-			<div id="ErrorDivMsg">All fields are required</div>
+			<div id="ErrorDivMsg" class="hide">All fields are required</div>
 			</div>
 		</div>
 		<div class="row"><div class="six columns">

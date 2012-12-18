@@ -31,7 +31,7 @@
 		<p>Page header</p>
 	</div>
 	<div class="page-content width100">
-		<form id="frmRegister" method="post" action="/User/Register">
+		<form id="registration-form" method="post" action="">
 			<div id="RegisterDiv" class="">
 				<div class="row">
 					<div class="one columns">
@@ -39,13 +39,9 @@
 							<p>Return</p>
 						</div>
 					</div>
-					<div class="five columns">
+					<div id="container" class="five columns">
 						<div class="personal-info">
 						</div>						
-						<div class="confirmation">
-						</div>
-						<div class="update-popup">
-						</div>
 					</div>
 					<div class="five columns end">					
 						<div class="account-question">
@@ -62,59 +58,25 @@
 	</footer>
 	<script src="assets/js/mustache.js"></script>	
 	<script src="assets/js/foundation/jquery.js"></script>
+    <script src="assets/js/foundation/foundation.min.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
+    <script src="assets/js/jquery.validate.js"></script>
 	<script>
-		<!-- Mustache - homepage meet-experts -->
-		$.get('assets/mustache/personal-info.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.personal-info').html(html);
-		});
-		
-		<!-- Mustache - homepage meet-experts -->
-		$.get('assets/mustache/account-question.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.account-question').html(html);
-		});
-		
-		<!-- Mustache - homepage meet-experts -->
-		$.get('assets/mustache/confirmation.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.confirmation').html(html);
-		});
-		
-		<!-- Mustache - homepage meet-experts -->
-		$.get('assets/mustache/update-popup.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.update-popup').html(html);
-		});
-		
-		<!-- Mustache - homepage meet-experts -->
-		$.get('assets/mustache/personal-info-wrapper.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.personal-info-wrapper').html(html);
-		});
+    $.get('assets/mustache/personal-info.mustache', function(template) {
+        var html = Mustache.to_html(template);
+        $('.personal-info').html(html);
+    });
 
+    $.get('assets/mustache/account-question.mustache', function(template) {
+        var html = Mustache.to_html(template);
+        $('.account-question').html(html);
+    });
 	</script>
-  <!-- Included JS Files (Uncompressed) -->
-  <!--
-    
-  <script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
-  
-  -->
-  
-  <!-- Included JS Files (Compressed) -->
-  <script src="assets/js/foundation/jquery.js"></script>
-  <script src="assets/js/foundation/foundation.min.js"></script>
-  
+
   <!-- Initialize JS Plugins -->
   <script src="assets/js/foundation/app.js"></script>
-
+  <script src="assets/js/views/registration.js"></script>
 
   </body>
 </html>

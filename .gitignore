@@ -48,3 +48,5 @@ codekit-config*
 *.sublime-project
 *.sublime-workspace
 codekit-config.json
+
+.idea
