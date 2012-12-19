@@ -85,7 +85,7 @@
           </div>
           <div class="form-action">
                   <a id="Submit" class="form-submit">Register</a>
-                  <a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
+                  <a id="Cancel" class="form-cancel" data-reveal-id="modal-password-reset-confirmation" href="javaScript:void(0);">Cancel</a>
           </div><!--/.form-action-->
 	</form>
 	      </div><!--/#RegisterDiv-->
@@ -95,7 +95,7 @@
       <p>Thank you!  Check your email to validate your registration.  One more step and you'll be ready to start using PracticeUpdate!</p>
 		</div><!--.alert-box-->
     <div class="hide">
-        <input type="text" id="IsEmailSent" value="False">
+        <input type="text" id="IsEmailSent" placeholder="False">
     </div><!--/.hide-->
   </div><!--/#ConfirmationDiv-->
 
@@ -200,6 +200,11 @@
 	    var html = Mustache.to_html(template);
 	    $('.cta.meet-experts').html(html);
 		});
+
+    $.get('assets/mustache/modal-cancel-registration.mustache', function(template) {
+        var html = Mustache.to_html(template);
+        $('body').append(html);
+    });
 
 	</script>
 </body>

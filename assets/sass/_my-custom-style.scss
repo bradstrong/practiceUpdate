@@ -43,6 +43,7 @@
 }
 .tabs-content i {
 	float: left;
+	clear:both;
     font-size: x-small;
 }
 .login-form fieldset {
@@ -148,29 +149,37 @@
 }
 .tabs dd {
 	width:100%;
-	margin: 0 0 2px;
 }
 .tabs dd.active, .tabs li.active {
     border-top: none;
     margin-top: 0;
 }
 .tabs dd a {
-	border:1px solid #ccc;
-	border-radius:5px 0 0 5px;
+	border: 1px solid #333333;
+	border-bottom:none;
 	padding: 8px 6px;
 	width:100%;
 	text-align:center;
-	color:#000;
+	color:#fff;
 	float:left;
 	height:auto;
 	line-height:normal;
-	 background: none repeat scroll 0 0 #F2F2F2;
+	background: none repeat scroll 0 0 #4D4D4D;
 }
-.tabs a:hover,
 .tabs dd.active a {
-	background:#fff;
-	border:1px solid #ccc;
-	border-right:none
+	background: none repeat scroll 0 0 #0084A9;
+	color:#fff;
+	border: 1px solid #333333;
+	border-bottom:none;
+}
+.tabs a:hover {
+    background: none repeat scroll 0 0 #333333;
+	border: 1px solid #333333;
+	border-bottom:none;
+}
+.tabs dd a:focus, .tabs li a:focus {
+    color: #fff;
+    font-weight: normal;
 }
 .content-info {
 	min-height:300px;
@@ -423,6 +432,9 @@ ul.accordion > li.active .content {
 .AlertWhite .cta-title-text {
     font-size: 22px;
 }
+.AlertWhite .alert-box.alert{
+	margin: -30px -30px 20px;
+}
 /********************/
 .page-header {
     border-bottom: 3px solid #002D56;
@@ -471,4 +483,15 @@ ul.accordion > li.active .content {
 }
 #main-nav {
 	float:right;
+}
+.help-block {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 12px;
+    margin-top: -13px;
+    padding: 6px 4px;
+}
+.ReturnToLogin {
+	display: block;
+    margin: 10px 0 0;
 }
