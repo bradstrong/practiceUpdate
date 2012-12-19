@@ -13,7 +13,7 @@
 				background:transparent;
 				display:block;
 				overflow:hidden;
-				object{
+				object, embed{
 					display:block;
 					height:auto;
 				}
@@ -22,5 +22,25 @@
 	}
 }
 
+#leaderboard{}
+#leaderboardcontent{}
+#leaderboardcontentinner{ max-width: 728px; margin: 0 auto; max-height: 90px; }
+
+#boombox1{}
+#boombox1content{}
+#boombox1contentinner{ max-width: 300px; margin: 0 auto; max-height: 250px; }
+
+#boombox2{}
+#boombox2content{}
+#boombox2contentinner{ max-width: 300px; margin: 0 auto; max-height: 250px; }
 
 body > .widget.ad{@media only screen and (max-width: $screenMedium) {display:none;}}
+
+// standard leaderboard
+// 728X90
+
+// standard boombox
+// 300x250
+
+// custom boombox
+// 336x280
