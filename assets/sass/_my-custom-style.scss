@@ -135,6 +135,14 @@
 .personal-info-wrapper .message p{
 	color:#000;
 }
+.message {
+	background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 14px;
+	float:left;
+	margin:1% 0;
+	width:100%;
+}
 .content-menu {
 	background-color: white;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -166,11 +174,12 @@
 	font-weight:normal;
 	float:left;
 	height:auto;
-	line-height:normal;
+	background: none repeat scroll 0 0 #4D4D4D;
 }
 .tabs dd.active a {
 	background: none repeat scroll 0 0 #0084A9;
 	color:#fff;
+	font-weight:normal;
 	border: 1px solid #333333;
 	border-bottom:none;
 }
@@ -227,6 +236,7 @@ ul.tabs-content fieldset legend{
 .tabs-content h4 {
 	color: #C6C6BC;
     font-size: 17px;
+	margin: 8px 0;
 	font-weight:normal;
 }
 ul.accordion > li > div.title {
@@ -245,9 +255,14 @@ ul.accordion > li .title h5{
 .checked-list {
 	float: left;
     list-style-type: none;
-    margin: 0 30% 0 0;
+    margin: 0 30% 11px 0;
     padding: 0;
     width: 70%;
+}
+ul.accordion {
+	float: left;
+    margin: 0 0 22px;
+	width:100%;
 }
 ul.accordion > li.active {
     border-top: none;
@@ -269,7 +284,7 @@ ul.accordion > li.active .content {
 	width:35%;
 }
 .checked-list li:first-child{
-	width:70%;
+	width:80%;
 }
 .checked-list-down {
 	float: left;
@@ -417,11 +432,8 @@ ul.accordion > li.active .content {
 }
 #formLogin {
     float: left;
-    margin: 0 3% 0 14px;
-    width: 53%;
-}
-.alert-box.alert {
-	margin-bottom:0;
+    margin: 0 0 0 14px;
+    width: 51%;
 }
 #formLoginNotRegisterYet {
 	width:38%;
@@ -435,7 +447,7 @@ ul.accordion > li.active .content {
 }
 #formLogin label {
 	float: right;
-    margin: 9px 0 0;
+    margin: 9px 0 0 80px;
 }
 #formLogin h3{
 	font-size:18px;
@@ -520,4 +532,23 @@ ul.accordion > li.active .content {
 .ReturnToLogin {
 	display: block;
     margin: 10px 0 0;
+}
+.floationg {
+	float:right;
+}
+.error.error-check {
+	margin:-6px 0 0;
+}
+.page-banner-logout {
+	margin:0 auto;
+}
+
+#formRegisterPrompt {
+	width:44%;
+}
+.logout-container {
+	padding-bottom: 1em;
+}
+.logout-container p {
+    color: white;
 }

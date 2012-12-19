@@ -47,8 +47,7 @@
         <div class="alert-box alert">
             We cannot validate {name of field}. Please check the info and re-enter.
             <a href="#" class="close">&times;</a>
-        </div>
-		<form action="#" method="#">
+        </div>	
 			<dl class="tabs">
 				<dd class="active"><a href="#simple1">Email & Password</a></dd>
 				<dd><a href="#simple2">Personal Info</a></dd>
@@ -58,6 +57,7 @@
 			</dl>
 			<ul class="tabs-content">
 				<li class="active" id="simple1Tab">
+				<form action="#" method="#">
 					<header class="form-header">
 						<div class="cta-title">
 							<span class="cta-title-text">Email</span>
@@ -79,8 +79,14 @@
 					<small class="error">New Password required</small>
 					<input type="text" placeholder="Verify Password"/>
 					<small class="error">Passwords do not match</small>
+					<div class="form-action floationg">
+						<a id="Submit" class="form-submit">Save</a>
+						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
+					</div>
+					</form>
 				</li>
 				<li id="simple2Tab">
+				<form action="#" method="#">
 					<header class="form-header">
 						<div class="cta-title">
 							<span class="cta-title-text">Personal Information</span>
@@ -98,8 +104,14 @@
 						<option>State</option>
 					</select>
 					<small class="error">State required</small>
+					<div class="form-action floationg">
+						<a id="Submit" class="form-submit">Save</a>
+						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
+					</div>
+					</form>
 				</li>
 				<li id="simple3Tab">
+				<form action="#" method="#">
 					<header class="form-header">
 						<div class="cta-title">
 							<span class="cta-title-text">Professional Info</span>
@@ -117,8 +129,14 @@
 						<option>Primary Area of Practice</option>
 					</select>
 					<small class="error">Primary Area of Practice required</small>
+					<div class="form-action floationg">
+						<a id="Submit" class="form-submit">Save</a>
+						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
+					</div>
+					</form>
 				</li>
 				<li id="simple4Tab">
+				<form action="#" method="#">
 						<header class="form-header">
 							<div class="cta-title">
 								<span class="cta-title-text">Content Preferences</span>
@@ -129,7 +147,7 @@
 						<small class="help-block">Each medical specialty has its own Editorial Board. Select the focus of content to view on the site. (Channel=specialty).</small>
 						<ul class="checked-list">
 							<li>
-								<label><input type="checkbox">
+								<label><input type="checkbox" checked="checked">
 									Oncology</label>
 							</li>
 							<li>
@@ -145,16 +163,17 @@
 									Urology</label>
 							</li>
 							<li>
-								<label><input type="checkbox">
+								<label><input type="checkbox" checked="checked">
 									Primary Care</label>
 							</li>
 							<li>
 								<label><input type="checkbox">
 									Cardiology</label>
 							</li>
+							
 						</ul>
 						<h4>Topic</h4>
-						<span>Each "Channel" offers you a different variety of topics to view. You can select a few or all in each Channel.</span>
+						<small class="help-block">Each "Channel" offers you a different variety of topics to view. You can select a few or all in each Channel.</small>
 						<ul class="accordion">
 							<li class="active">
 								<div class="title">
@@ -235,8 +254,14 @@
 								</div>
 							</li>
 						</ul>
+						<div class="form-action floationg">
+							<a id="Submit" class="form-submit">Save</a>
+							<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
+						</div>
+						</form>
 				</li>
 				<li id="simple5Tab">
+				<form action="#" method="#">
 					<header class="form-header">
 						<div class="cta-title">
 							<span class="cta-title-text">Subscriptions</span>
@@ -370,12 +395,13 @@
 							</li>
 						</ul>
 					</div>
+					<div class="form-action floationg">
+						<a id="Submit" class="form-submit">Save</a>
+						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
+					</div>
+					</form>
 				</li>
-			</ul>
-			<div class="form-action">
-				<a id="Submit" class="form-submit">Save</a>
-				<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
-			</div>
+			</ul>			
 		</form>
 	</div>
 </section>
