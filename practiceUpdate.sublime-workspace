@@ -164,6 +164,7 @@
 	"buffers":
 	[
 		{
+<<<<<<< HEAD
 			"contents": "TODO:\n\nOncology Landing Page\n\n\n\nsend 2 images to Mike\n	add advance breast cancer to topic spotlight\n	show where the ads would be displayed\n\nadd <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />\nto the header template for PracticeUpdate\n",
 			"settings":
 			{
@@ -231,18 +232,32 @@
 			"settings":
 			{
 				"buffer_size": 8819,
+=======
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+			"settings":
+			{
+				"buffer_size": 7635,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 				"line_ending": "Unix"
 			}
 		},
 		{
+<<<<<<< HEAD
 			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json",
 			"settings":
 			{
 				"buffer_size": 13119,
+=======
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
+			"settings":
+			{
+				"buffer_size": 10204,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 				"line_ending": "Unix"
 			}
 		},
 		{
+<<<<<<< HEAD
 			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/user-profile.json",
 			"settings":
 			{
@@ -255,34 +270,62 @@
 			"settings":
 			{
 				"buffer_size": 791,
+=======
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
+			"settings":
+			{
+				"buffer_size": 3771,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 				"line_ending": "Unix"
 			}
 		},
 		{
+<<<<<<< HEAD
 			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache",
 			"settings":
 			{
 				"buffer_size": 1820,
+=======
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-topic.mustache",
+			"settings":
+			{
+				"buffer_size": 575,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 				"line_ending": "Unix"
 			}
 		},
 		{
+<<<<<<< HEAD
 			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-profile.mustache",
 			"settings":
 			{
 				"buffer_size": 1361,
+=======
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
+			"settings":
+			{
+				"buffer_size": 3817,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 				"line_ending": "Unix"
 			}
 		},
 		{
+<<<<<<< HEAD
 			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_base.scss",
 			"settings":
 			{
 				"buffer_size": 62,
+=======
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+			"settings":
+			{
+				"buffer_size": 3754,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 				"line_ending": "Unix"
 			}
 		},
 		{
+<<<<<<< HEAD
 			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
 			"settings":
 			{
@@ -303,6 +346,15 @@
 			"settings":
 			{
 				"buffer_size": 928,
+=======
+			"contents": "<div id =\"els-global-footer\" class=\"footer-section-container\">\n	<div class=\"footer-section\">\n		<div class=\"widget els-branding\">			\n			<img class=\"els-logo\" src=\"content/img/elsevier_logo.png\" alt=\"Elsevier Logo\" />\n		</div><!--/.els-branding-->\n		<div class=\"widget els-description\">			\n			<p class=\"span4\">Elsevier is a leading publisher of health science books and journals, helping to advance medicine by delivering superior education, reference information and decision support tools to doctors, nurses, health practitioners and students. With titles available across a variety of media—print, online and handheld, we are able to supply the information you need in the most convenient format.</p>\n			<p>Copyright <span class=\"sc-copy\">&copy;</span> 2012 Elsevier Inc. All rights reserved.</p>\n		</div><!--/.els-description-->\n		<div class=\"widget powered-by\">\n		<!-- TODO: ADD Powered By image -->\n			<img src=\"content/img/powered-by.png\" alt=\"Powered by OncologySTAT\" />\n		</div><!--/.powered-by-->\n	</div><!--/.footer-section-->\n</div><!--/.footer-section-container-->\n\nCopyright © 2012 Elsevier Inc. All rights reserved.\n\nhome\nhelp*\nprivacy policy\nterms and conditions\ncontact us\n\nadvertise\nfeedback*\nsitemap*\nabout us\n[hon code]*\n\n\nels-branding\npracticeupdate\nPracticeUpdate connects healthcare professionals with the information that matters most for patient care.\n\nFeedback*\n\n\nSocial\nfacebook\ngoogle+\ntwitter",
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/page-footer.mustache",
+			"file_size": 1077,
+			"file_write_time": 1355331933000000,
+			"settings":
+			{
+				"buffer_size": 1419,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 				"line_ending": "Unix"
 			}
 		}
@@ -367,21 +419,47 @@
 	},
 	"file_history":
 	[
+<<<<<<< HEAD
+=======
+		"/Users/brad/Sites/pn-foundation/practiceupdate/user-profile.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/channel-list.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/channel-list.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/channel-list.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/user-profile.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts-copy.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-profile.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_base.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/experts.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/expert-opinion-item.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/.gitignore",
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 		"/Users/brad/Sites/pn-foundation/practiceupdate/experts-channel-list.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/recent.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/section.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-console.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/feed.json",
+<<<<<<< HEAD
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json",
+=======
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 		"/Users/brad/Sites/pn-foundation/practiceupdate/channel-list.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-topic.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/author-meta.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/ad.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
+<<<<<<< HEAD
 		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+=======
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
@@ -415,7 +493,6 @@
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/updates_2012-10-23.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/img/section/editorial_board_group.jpg",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/page-footer.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/experts.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/news-item.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_news.json",
@@ -640,49 +717,65 @@
 	"groups":
 	[
 		{
+<<<<<<< HEAD
 			"selected": 0,
+=======
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
 					"settings":
 					{
-						"buffer_size": 296,
+						"buffer_size": 7635,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								296,
-								296
+								3596,
+								3596
 							]
 						],
 						"settings":
 						{
-							"auto_name": "TODO:",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2135.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+<<<<<<< HEAD
 					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/expert-opinion-item.html",
 					"settings":
 					{
 						"buffer_size": 11382,
+=======
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
+					"settings":
+					{
+						"buffer_size": 10204,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								7713,
 								7501
+=======
+								0,
+								0
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 							]
 						],
 						"settings":
@@ -698,10 +791,17 @@
 				},
 				{
 					"buffer": 2,
+<<<<<<< HEAD
 					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/experts.html",
 					"settings":
 					{
 						"buffer_size": 5736,
+=======
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
+					"settings":
+					{
+						"buffer_size": 3771,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 						"regions":
 						{
 						},
@@ -714,10 +814,11 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
+						"translation.x": 4.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -725,24 +826,42 @@
 				},
 				{
 					"buffer": 3,
+<<<<<<< HEAD
 					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/user-profile.html",
 					"settings":
 					{
 						"buffer_size": 5506,
+=======
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-topic.mustache",
+					"settings":
+					{
+						"buffer_size": 575,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								2969,
 								2969
+=======
+								126,
+								126
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 							]
 						],
 						"settings":
 						{
+<<<<<<< HEAD
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
+=======
+							"syntax": "Packages/Mustache/mustache.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -752,6 +871,7 @@
 				},
 				{
 					"buffer": 4,
+<<<<<<< HEAD
 					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/channel-list.html",
 					"settings":
 					{
@@ -783,14 +903,25 @@
 					"settings":
 					{
 						"buffer_size": 299,
+=======
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
+					"settings":
+					{
+						"buffer_size": 3817,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								155,
 								155
+=======
+								778,
+								778
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 							]
 						],
 						"settings":
@@ -798,25 +929,38 @@
 							"syntax": "Packages/Mustache/mustache.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 404.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
+<<<<<<< HEAD
 					"buffer": 6,
 					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/content/json/channel-list.json",
 					"settings":
 					{
 						"buffer_size": 715,
+=======
+					"buffer": 5,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+					"settings":
+					{
+						"buffer_size": 3754,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								715,
 								715
+=======
+								1057,
+								1057
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 							]
 						],
 						"settings":
@@ -825,30 +969,51 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+<<<<<<< HEAD
 						"translation.y": 0.0,
+=======
+						"translation.y": 308.0,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
+<<<<<<< HEAD
 					"buffer": 7,
 					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
 					"settings":
 					{
 						"buffer_size": 8819,
+=======
+					"buffer": 6,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/page-footer.mustache",
+					"settings":
+					{
+						"buffer_size": 1419,
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								3371,
 								3371
+=======
+								1176,
+								1176
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 							]
 						],
 						"settings":
 						{
+<<<<<<< HEAD
 							"syntax": "Packages/HTML/HTML.tmLanguage",
+=======
+							"syntax": "Packages/Mustache/mustache.tmLanguage",
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -856,6 +1021,7 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+<<<<<<< HEAD
 				},
 				{
 					"buffer": 8,
@@ -1097,6 +1263,8 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+=======
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 				}
 			]
 		}

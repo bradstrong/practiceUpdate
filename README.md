@@ -28,8 +28,13 @@ PracticeUpdate uses [Zurb Foundation](http://foundation.zurb.com/) as a [compass
 Once installed, development follows the recommended workflow for Zurb Foundation:
 
 - app.scss contains all import rules for scss partials
-- _foundation-overrides.scss contains all variables specific to the project, including Foundation variables whose values have been reassigned
+- _foundation-overrides.scss contains all variables specific to the project, including Foundation variables whose values have been reassigned. Custom mixins should be placed here, as well.
 - styles are divided across several partial files (_base, _layout, _module, _theme), following the patterns laid out by [SMACCS](http://smacss.com/). 
+  - _base: element styles (i.e., `form{ display: block;}`)
+  - _layout: Container elements that control page layout (i.e., `.page-header{ display: block;}`)
+  - _module: reusable markup patters (i.e., `.page-header{ display: block;}`)
+  - _state: *has not been created, but can be if necessary* used to indicate a non-default state or context. This would be appropriate for device-specific styles.
+  - _theme: Mostly used for color and type styling that differs from the framework settings
 - JS is placed in app.js, written predomintently in well commented jquery.
 
 CSS is generated locally. I recommend using codekit on mac environment, as the app provides a GUI for most Compass and SCSS settings as well as detaied debug logs.
@@ -38,7 +43,7 @@ CSS is generated locally. I recommend using codekit on mac environment, as the a
 
 ### Avoid presentational markup
 
-Zurb foundation uses .row and .column classes in order to work with the grid. Using, SCSS allows you to work with mixins, meanign that your HTML markup can contain semantically rich class names, while the grid related styles can be included in your SCSS files.
+Zurb foundation uses .row and .column classes in order to work with the grid. Using, SCSS allows you to work with mixins, meaning that your HTML markup can contain semantically rich class names, while the grid related styles can be included in your SCSS files.
 
 As opposed to writing something like:
 
@@ -62,7 +67,24 @@ Repetative areas of the UI should be broken out into individual mustache templat
 
 Templates should be created using external .mustache and .json files, as opposed to hardcoding vars.
 
-## Deliver assets
+### When possible, create reusable markup
+
+`<header class="form-header">` as opposed to `<form id="form1"><header id="form1header">`
+
+### Remotes
+
+**Live beta**: http://www.practiceupdate.com
+
+**Dev Server**: http://dev.practiceupdate.com
+
+## Deliverables
+
+Most html pages that Nix needs to deliver exists on the Dev server. Issues have been created for each individual page, and links to the dev pages have been added to each issue.
+The pages on the dev server should be seen as draft html. They represent appropriate functionality, but they are not production-ready.
+
+As much as possible, HTML should be written before css/scss. If appropriate html elements are used and the foundation framework markup patterns are followed, a large amount of the content will already be styled.
+
+It's more important to show error text and confirmation alerts as markup than to create functioning validation and state changes. The wireframes are meant to illustrate the logic to the engineering team who will be implementing the templates on the development server.
 
 Completed .html, .js and .css files should be delivered to the engineering team, via [PMcFad](https://github.com/PMcFad).
 

@@ -40,6 +40,7 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 	li{
 		//background-color:$sidebarLiBackground;
 		margin-bottom:1px;
+<<<<<<< HEAD
 		//&:hover{background-color:$sidebarLiHoverBackground;}
 		// &.active{
 		// 	a{cursor: default;}
@@ -51,6 +52,22 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 		// 	color:$sidebarBackground;
 		// 	text-transform: uppercase;
 		// }
+=======
+		&:hover{background-color:$sidebarLiHoverBackground;}
+		&.active{
+			a{cursor: default;}
+			&:hover{background-color:$sidebarLiBackground;}
+		}
+		&.selected{
+			a{}
+		}
+		&:last-child{@include border-bottom-radius(3px);}
+		a{
+			text-transform:uppercase;
+			color:$sidebarBackground;
+			text-transform: uppercase;
+		}
+>>>>>>> 3d0ae46378a7afe134f13be7047ee482e1ffa7b5
 	}
 	&[data-reveal-id="modal-feature-disabled"]{
 		padding:0;
