@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="View all the latest news and articles, personalized for you, in a single view.">
+
+    <title>PracticeUpdate : Update</title>
+
+    <!-- Include CSS Files -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <!-- Include Modernizr -->
+    <script src="assets/js/foundation/modernizr.foundation.js"></script>
+
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body id="update" class="update off-canvas custom-mockup">
+<div class="page-header">
+    <p>Page header</p>
+</div>
+<div class="page-content">
+<section class="update-block">
+	<div class="message">
+		<p>Get the most updates,relevant content by your completing your profile and settings information. Content is
+			displayed based on your information and your preferenced. Click save to make any updates or Cancel to return to
+			the Home page.</p>
+	</div>
+	<div class="content-menu">
+		<form action="#" method="#">
+			<dl class="tabs">
+				<dd class="active"><a href="#simple1">Email & Password</a></dd>
+				<dd><a href="#simple2">Personal Info</a></dd>
+				<dd><a href="#simple3">Professional Info</a></dd>
+				<dd><a href="#simple4">Content Preferences</a></dd>
+				<dd><a href="#simple5">Subscription</a></dd>
+			</dl>
+			<ul class="tabs-content">
+				<li class="active" id="simple1Tab">
+					<legend>Email</legend>					
+					<input type="text" value="Email (User Name)"/>
+					<small class="error">Email (User Name) required</small>
+					<small class="help-block">Your email address is your User Name. If you change it, your new User Name will be update</small>
+					<legend>Password</legend>
+					<input type="text" value="Current Password"/>
+					<small class="error">Current Password required</small>
+					<small class="help-block">Password must be 6-20 characters (letters, numbers and hyphens are accepted but not spaces)</small>
+					<input type="text" value="New Password"/>
+					<small class="error">New Password required</small>
+					<input type="text" value="Verify Password"/>
+					<small class="error">Passwords do not match</small>
+					<small class="error">Passwords do not match</small>
+					<small class="help-block">Want to change your password? Enter your current password and create a new one.</small>
+					<i>All fields are required</i>
+				</li>
+				<li id="simple2Tab">
+					<legend>Personal Information</legend>
+					<i>All fields are required</i>
+					<input type="text" value="First Name"/>
+					<small class="error">First Name required</small>
+					<input type="text" value="Last Name"/>
+					<small class="error">Last Name required</small>
+					<select>
+						<option>Country of Residence</option>
+					</select>
+					<small class="error">Country of Residence required</small>
+					<select>
+						<option>State</option>
+					</select>
+					<small class="error">State required</small>
+				</li>
+				<li id="simple3Tab">
+					<legend>Professional Info</legend>
+					<i>All fields are required</i>
+					<select>
+						<option>Workplace Type</option>
+					</select>
+					<small class="error">Workplace Type required</small>
+					<select>
+						<option>Profession</option>
+					</select>
+					<small class="error">Profession required</small>
+					<select>
+						<option>Primary Area of Practice</option>
+					</select>
+					<small class="error">Primary Area of Practice required</small>
+				</li>
+				<li id="simple4Tab">
+						<legend>Content Preferences</legend>
+						<small class="help-block">You're in control. Choose what type of content to see on the site. You can change this at any time</small>
+						<h4>Channels</h4>
+						<small class="help-block">Each medical specialty has its own Editorial Board. Select the focus of content to view on the site. (Channel=specialty)</small>
+						<ul class="checked-list">
+							<li>
+								<label><input type="checkbox">
+									Oncology</label>
+							</li>
+							<li>
+								<label><input type="checkbox">
+									Eve Care</label>
+							</li>
+							<li>
+								<label><input type="checkbox">
+									Dermatology</label>
+							</li>
+							<li>
+								<label><input type="checkbox">
+									Urology</label>
+							</li>
+							<li>
+								<label><input type="checkbox">
+									Primary Care</label>
+							</li>
+							<li>
+								<label><input type="checkbox">
+									Cardiology</label>
+							</li>
+						</ul>
+						<h4>Topic</h4>
+						<span>Each "Channel" offers you a different variety of topics to view. You can select a few or all each Channel</span>
+						<ul class="accordion">
+							<li class="active">
+								<div class="title">
+									<h5>Oncology</h5>
+								</div>
+								<div class="content" style="display: block;">
+									<ul class="checked-list">
+										<li>
+											<label><input type="checkbox">
+												All {{channel}}</label>
+										</li>
+										<li>
+											<label><input type="checkbox">
+												Breast Cancer</label>
+										</li>
+										<li>
+											<label><input type="checkbox">
+												Medical</label>
+										</li>
+										<li>
+											<label><input type="checkbox">
+												Bladder Cancer</label>
+										</li>
+										<li>
+											<label><input type="checkbox">
+												Surgical</label>
+										</li>
+										<li>
+											<label><input type="checkbox">
+												... cancer</label>
+										</li>
+										<li>
+											<label><input type="checkbox">
+												Raditation</label>
+										</li>
+										<li>
+											<label><input type="checkbox">
+												... cancer</label>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="">
+								<div class="title">
+									<h5>Primary Care</h5>
+								</div>
+								<div class="content" style="display: none;">
+									<ul class="checked-list">
+										<li>
+											<label><input type="checkbox">
+												Breast Cancer</label>
+										</li>
+										<li>
+											<label><input type="checkbox">
+												Medical</label>
+										</li>
+										<li>
+											<label><input type="checkbox">
+												Bladder Cancer</label>
+										</li>
+										<li>
+											<label><input type="checkbox">
+												Surgical</label>
+										</li>
+										<li>
+											<label><input type="checkbox">
+												... cancer</label>
+										</li>
+										<li>
+											<label><input type="checkbox">
+												Raditation</label>
+										</li>
+										<li>
+											<label><input type="checkbox">
+												... cancer</label>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+				</li>
+				<li id="simple5Tab">
+					<legend>Subscriptions</legend>
+					<small class="help-block">We offer newsletters and targeted emails based on your preferences. Choose to receive emails on 1, a few or all topics.</small>
+					<ul class="accordion">
+						<li class="active">
+							<div class="title">
+								<h5>Oncology</h5>
+							</div>
+							<div class="content" style="display: block;">
+								<h4>Weekly</h4>
+								<ul class="checked-list width100">
+									<li>
+										<label><input type="checkbox">
+											InfoBlast(Oncology Update) - a weekly digest of the last cancer information</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											News - a weekly round-up of the top news stories</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											Journal Scars - a weekly survey of cancer-related journal articles</label>
+									</li>
+								</ul>
+								<h4>Monthly</h4>
+								<ul class="checked-list">
+									<li>
+										<label><input type="checkbox">
+											Breast Cancer</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											Medical</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											Bladder Cancer</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											Surgical</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											... cancer</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											Raditation</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											... cancer</label>
+									</li>
+								</ul>
+								<h4>Alerts</h4>
+								<ul class="checked-list width100">
+									<li>
+										<label><input type="checkbox">
+											Conferences</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											CME - notification of new CMEs in my cancer area of interest</label>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="">
+							<div class="title">
+								<h5>Primary Care</h5>
+							</div>
+							<div class="content" style="display: none;">
+								<ul class="checked-list">
+									<li>
+										<label><input type="checkbox">
+											Breast Cancer</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											Medical</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											Bladder Cancer</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											Surgical</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											... cancer</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											Raditation</label>
+									</li>
+									<li>
+										<label><input type="checkbox">
+											... cancer</label>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="reg-block">
+						<legend>Promotions</legend>
+						<small class="help-block">I wish to receive carefully selected special offers / Promotions from:</small>
+						<ul class="checked-list width100">
+							<li>
+								<label><input type="checkbox">
+									Elsevier</label>
+							</li>
+							<li>
+								<label><input type="checkbox">
+									Third parties</label>
+							</li>
+						</ul>
+					</div>
+					<div class="reg-block">
+						<legend>Registered User Agreement</legend>
+						<ul class="checked-list width100">
+							<li>
+								<label><input type="checkbox">
+									I have read and understand the registered user agreement and agree to be bound by all its
+									terms</label>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<div class="form-action">
+				<a id="Submit" class="form-submit">Save</a>
+				<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
+			</div>
+		</form>
+	</div>
+</section>
+<!--/.update-block-->
+</div>
+	<footer class="page-footer">
+	</footer><!-- /.page-footer -->
+
+	<!-- Included JS Files (Uncompressed) -->
+  <script src="assets/js/foundation/jquery.js"></script>
+<!--   <script src="assets/js/plugins-ck.js"></script> -->
+ 
+	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>	
+	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.forms.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.navigation.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>	
+	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.tooltips.js"></script>
+	<script src="assets/js/foundation/jquery.placeholder.js"></script>
+	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
+	<script src="assets/js/mustache.js"></script>
+	<script src="assets/js/foundation/app.js"></script>
+
+</body>
+</html>
