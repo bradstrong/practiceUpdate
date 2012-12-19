@@ -1,5 +1,6 @@
 //article{
-.in-stream{	background-color:$white;
+.in-stream{
+	background-color:$white;
 	@include elementBoxShadow;
 }
 
@@ -36,6 +37,8 @@ body{
 	text-transform:uppercase;
 }
 
+.subheader{ color:$headerFontColor;}
+
 // BUTTONS
 .load-more-button{
 	background-color:$pri-green;
@@ -58,4 +61,11 @@ body{
 	&.story-of-the-week{
 		background:$sec-orange;
 	}
+}
+
+#RegisterDiv{
+	@include clearfix();
+	background-color:$white;
+	@include elementBoxShadow;
+	padding: $baseFontSize;
 }

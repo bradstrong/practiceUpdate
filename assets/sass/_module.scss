@@ -36,20 +36,21 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 	a .has-tip{color:shade($ter-ltTan, 25%);}
 }
 .side-nav{
+	background-color:$white;
 	li{
 		//background-color:$sidebarLiBackground;
 		margin-bottom:1px;
-		&:hover{background-color:$sidebarLiHoverBackground;}
-		&.active{
-			a{cursor: default;}
-			&:hover{background-color:$sidebarLiBackground;}
-		}
-		&:last-child{@include border-bottom-radius(3px);}
-		a{
-			text-transform:uppercase;
-			color:$sidebarBackground;
-			text-transform: uppercase;
-		}
+		//&:hover{background-color:$sidebarLiHoverBackground;}
+		// &.active{
+		// 	a{cursor: default;}
+		// 	&:hover{background-color:$sidebarLiBackground;}
+		// }
+		// &:last-child{@include border-bottom-radius(3px);}
+		// a{
+		// 	text-transform:uppercase;
+		// 	color:$sidebarBackground;
+		// 	text-transform: uppercase;
+		// }
 	}
 	&[data-reveal-id="modal-feature-disabled"]{
 		padding:0;
@@ -72,30 +73,50 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 	@extend .callout;
 }
 
+// FORM
+.form-header{}
+.form-title{}
+.form-description{@extend .subheader;}
+.form-description{}
+
+.form-submit{@extend .button; @extend .primary;}
+.form-cancel{@extend .button; @extend .secondary;}
+
+.help-block{
+	display: block; padding: 6px 4px; margin-top: -($formSpacing) - 1; margin-bottom: $formSpacing; font-size: ms(0) - 2;
+}
+
+// Alert-Box
+
+.alert-title{
+	color: $white;
+//	font-family: $titleFontFamily;
+}
 
 // CTA
 
 .cta{
-	.cta-title{
-		.cta-title-text{}
-	}
-	.cta-img-container{}
-	.cta-content{}
-	.cta-actions{}
-	/* !Meet Our Experts*/
-	&.meet-experts{}
+	@extend .panel;
 }
-
-// CTA - in dashboard
-.dashboard{
-	.cta{
-		.cta-title{
-			.cta-title-text{
-				color: $sidebarLiBackground;
-			}
+.cta-title{
+	@extend h5;
+	padding: .25em 0;
+}
+.cta-title-text{
+	font-size:ms(1);
+	text-transform:capitalize;
+}
+	.cta-img-container{
+		padding:.25em;
+		text-align:center;
+		img{
+			border:1px solid $ter-dkTan;
+			@include single-box-shadow($white, 0, 1px, 1px);
 		}
 	}
-}
+
+	.cta-content{}
+	.cta-actions{}
 
 // WIDGETS
 .widget{
@@ -114,32 +135,6 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 .widget.els-description{@include column(6); @include mobileColumn(3); @include mobilePull(1);}
 .widget.powered-by{@include column(3); @include mobileColumn(1); @include mobilePush(3);}
 
-
-// CTAs
-.cta{
-	@include border-radius(5px);
-	padding:1em 1.5em .25em;
-	.cta-title{
-		@extend h5;
-		padding: .25em 0;
-		.cta-title-text{
-			font-size:ms(1);
-			text-transform:capitalize;
-		}
-	}
-	.cta-img-container{
-		//background-color:lighten($ter-ltTan, 5%);
-		//border:1px solid $ter-dkTan;
-		padding:.25em;
-		text-align:center;
-		img{
-			border:1px solid $ter-dkTan;
-			@include single-box-shadow($white, 0, 1px, 1px);
-		}
-	}
-	.cta-content{}
-	.cta-actions{}
-}
 
 .explore-sections{
 	@include column(12);

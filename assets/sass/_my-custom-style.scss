@@ -91,23 +91,23 @@
 /*End: personal info*/
 
 /*Start: account-question*/
-.account-question {
-	width:250px;
-	float:left;
-	margin:0 1%;
-	background:#e0e0e0;
-	border:1px solid #000;
-	padding:5px 10px;
-}
-.account-question h2{
-	font-size:18px;	
-	margin:0 0 10px;
-}
-.account-question a{
-	float:left;
-	clear:both;
-	margin:0 0 10px;
-}
+// .account-question {
+// 	width:250px;
+// 	float:left;
+// 	margin:0 1%;
+// 	background:#e0e0e0;
+// 	border:1px solid #000;
+// 	padding:5px 10px;
+// }
+// .account-question h2{
+// 	font-size:18px;	
+// 	margin:0 0 10px;
+// }
+// .account-question a{
+// 	float:left;
+// 	clear:both;
+// 	margin:0 0 10px;
+// }
 .confirmation {
 	width:400px;
 	float:left;
@@ -251,16 +251,16 @@ ul.accordion > li.active .content {
 	background:#e0e0e0;
 	min-height:600px;
 }
-.channels-topic,
-.topic-spotlight,
-.board-text {
-	width:80%;
-	color:#fff;
-	text-align:center;
-	padding:10%;
-	margin:0 10% 10%;
-	background:#4c78a5;
-}
+// .channels-topic,
+// .topic-spotlight,
+// .board-text {
+// 	width:80%;
+// 	color:#fff;
+// 	text-align:center;
+// 	padding:10%;
+// 	margin:0 10% 10%;
+// 	background:#4c78a5;
+// }
 .personal-info-block {
 	background:#fffde6;
 	width:80%;
@@ -284,12 +284,12 @@ ul.accordion > li.active .content {
 	height:130px;
 	float:left;
 }
-.recommended {
-	width:25%;
-	float:left;
-	background:#e0e0e0;
-	min-height:600px;
-}
+// .recommended { // these styles break layouts in existing pages
+// 	width:25%;
+// 	float:left;
+// 	background:#e0e0e0;
+// 	min-height:600px;
+// }
 /*End: personal-info-side*/
 /*Start: widget-block*/
 .widget-block {
@@ -325,11 +325,11 @@ ul.accordion > li.active .content {
 .row {
 	width:100%;
 }
-.row select {
-	margin: 0 0 12px;
-	height:32px;
-	padding:7px 0;
-}
+// .row select { // margins were added in _base.scss
+// 	margin: 0 0 12px;
+// 	height:32px;
+// 	padding:7px 0;
+// }
 #ErrorDivMsg {
 	display:none;
 }

@@ -68,12 +68,6 @@
 	</div><!--/.page-header-->
 	<div class="page-content">
 		<section role="main">
-			<ul class="tabs pill">
-  <li class="active"><a href="#pillTab1">All Oncology</a></dli>
-  <li><a href="#pillTab2">My Oncology Topics</a></li>
-</ul>
-</li>
-</ul>
 			<div class="stream-container">
 			</div><!--/.stream-container-->
 			<div class="recommended">
@@ -88,40 +82,7 @@
 		<div class="dashboard">
 			<div class="component user-console">
 			</div><!--/.component.user-console-->
-				<div class="component user-topic">
-					<form class="custom">
-					  <!-- <select style="display:none;" id="customDropdown">
-					    <option SELECTED>All my channels</option>
-					    <option>This is another option</option>
-					    <option>Look, a third option</option>
-					  </select> -->
-					  <div class="custom dropdown">
-					    <a href="#" class="current">
-					      All my channels
-					    </a>
-					    <a href="#" class="selector"></a>
-					    <ul>
-					      <li><a href="#">Oncology</a></li>
-					      <li><a href="#">Dermatology</a></li>
-					      <li class="divider"></li>
-					      <li><a href="#">Add or change</a></li>
-					    </ul>
-					  </div>
-					</form>
-				<nav role="navigation">
-					<ul class="tabs vertical">
-					      <li class="active"><a href="#">Oncology</a>
-					      	<ul>
-					      		<li class="active"><a href="#">Breast</a></li>
-							      <li><a href="#">Bladder</a></li>
-							      <li><a href="#">Prostate</a></li><a href="#">
-					      	</ul>
-					      </li>
-					      <li><a href="#">My Oncology</a></li>
-					      <li><a href="#">All Dermatology</a></li>
-					      <li><a href="#">My Dermatology</a></li><a href="#">
-					</ul>
-				</nav>					
+			<div class="component user-topic">				
 			</div><!--/.component.user-topic-->
 
 			<div class="component topic-spotlight">
@@ -134,13 +95,6 @@
 	<footer class="page-footer">
 	</footer><!-- /.page-footer -->
 
-	<!-- GET SATISFACTION WIDGET AND JS DEPENDENCIES -->
-<div id="getsat-widget-2228"></div>
-<script type="text/javascript" src="https://loader.engage.gsfn.us/loader.js"></script>
-<script type="text/javascript">
-if (typeof GSFN !== "undefined") { GSFN.loadWidget(2228,{"containerId":"getsat-widget-2228"}); }
-</script>
-	<!-- END GET SATISFACTION -->
 	<!-- Included JS Files (Uncompressed) -->
   <script src="assets/js/foundation/jquery.js"></script>
 <!--   <script src="assets/js/plugins-ck.js"></script> -->
@@ -197,13 +151,13 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(2228,{"containerId":"getsat-w
 	});
 
 	<!-- Mustache - homepage user-topic template -->
-//	$.getJSON('content/json/user-topic.json', function(data) {
-//		$.get('assets/mustache/user-topic.mustache', function(template) {
+	$.getJSON('content/json/user-topic.json', function(data) {
+		$.get('assets/mustache/user-topic.mustache', function(template) {
 			//alert('Load was performed.');
-//	    var html = Mustache.to_html(template, data);
-//	    $('.user-topic').html(html);
-//		});
-//	});
+	    var html = Mustache.to_html(template, data);
+	    $('.user-topic').html(html);
+		});
+	});
 
 	<!-- Mustache - homepage topic-spotlight template -->
 	$.getJSON('content/json/topic-spotlight.json', function(data) {

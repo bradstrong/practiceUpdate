@@ -2,3 +2,7 @@
 article{
 	@include innerRow(collapse);
 }
+
+select{
+	margin: 0 0 $formSpacing;
+}
