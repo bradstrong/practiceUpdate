@@ -75,9 +75,12 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 
 // FORM
 .form-header{}
-.form-title{}
+.form-title{
+	@extend h5;
+	padding: .25em 0;
+}
 .form-description{@extend .subheader;}
-.form-description{}
+.form-action{}
 
 .form-submit{@extend .button; @extend .primary;}
 .form-cancel{@extend .button; @extend .secondary;}
