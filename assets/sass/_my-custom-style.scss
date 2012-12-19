@@ -11,10 +11,6 @@
 	background:$grey;
 	margin:0 0 10px;
 }
-.channel-specific-banner-block p {
-	width:58%;
-	text-align:center;
-}
 .expert-letter-block{
 	min-height:100px;
 	text-align:center;
@@ -47,6 +43,7 @@
 }
 .tabs-content i {
 	float: left;
+	clear:both;
     font-size: x-small;
 }
 .login-form fieldset {
@@ -136,9 +133,9 @@
 	color:#000;
 }
 .content-menu {
-	background:#e0e0e0;
-	border:1px solid #000;
-	padding:5px 10px;
+	background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 14px;
 	float:left;
 	margin:1% 0;
 	width:100%;
@@ -147,6 +144,7 @@
 	width: 24%;
 	float:left;
 	height: auto;
+	border-bottom:none;
 	list-style-type:none;	
 }
 .tabs dd {
@@ -157,21 +155,31 @@
     margin-top: 0;
 }
 .tabs dd a {
-	border:1px solid #ccc;
-	border-radius:5px 0 0 5px;
-	padding:3px 6px;
+	border: 1px solid #333333;
+	border-bottom:none;
+	padding: 8px 6px;
 	width:100%;
 	text-align:center;
-	color:#000;
+	color:#fff;
 	float:left;
 	height:auto;
 	line-height:normal;
+	background: none repeat scroll 0 0 #4D4D4D;
 }
-.tabs a:hover,
 .tabs dd.active a {
-	background:#fff;
-	border:1px solid #ccc;
-	border-right:none
+	background: none repeat scroll 0 0 #0084A9;
+	color:#fff;
+	border: 1px solid #333333;
+	border-bottom:none;
+}
+.tabs a:hover {
+    background: none repeat scroll 0 0 #333333;
+	border: 1px solid #333333;
+	border-bottom:none;
+}
+.tabs dd a:focus, .tabs li a:focus {
+    color: #fff;
+    font-weight: normal;
 }
 .content-info {
 	min-height:300px;
@@ -188,6 +196,28 @@ ul.tabs-content fieldset{
 }
 ul.tabs-content fieldset legend{
 	background:none;
+}
+.tabs-content legend {
+	font-size: 16px;
+    font-weight: bold;
+	padding:0;
+}
+.tabs-content h4 {
+	font-size:20px;
+	font-weight:normal;
+}
+ul.accordion > li > div.title {
+	background:#F2F2F2;
+	border: 1px solid #ccc;
+	margin:0 0 3px;
+}
+ul.accordion > li.active > div.title {
+	background:#E9E3DC;
+	border: 1px solid #CBBDAD;
+	padding-top: 15px;
+}
+ul.accordion > li .title h5{
+	color:#000;
 }
 .checked-list {
 	float: left;
@@ -232,9 +262,6 @@ ul.accordion > li.active .content {
 	margin:0 0 -1px;
 	border:1px solid #ccc;
 	color:#000;
-}
-.ButtonSaveCencel {
-	float:right;
 }
 .reg-block {
 	border-top:1px solid #ccc;
@@ -293,9 +320,9 @@ ul.accordion > li.active .content {
 /*End: personal-info-side*/
 /*Start: widget-block*/
 .widget-block {
-	float: left;
-    height: 100px;
-    width: 20%;
+	padding:0 14px 14px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+	text-align:center;
 }
 .widget-block.bg-grey {
 	background:#ebebeb;
@@ -322,9 +349,6 @@ ul.accordion > li.active .content {
 	border-radius:15px;
 }
 /*End: widget-block*/
-// .row {
-// 	width:100%;
-// }
 // .row select { // margins were added in _base.scss
 // 	margin: 0 0 12px;
 // 	height:32px;
@@ -352,4 +376,122 @@ ul.accordion > li.active .content {
 .row legend {
 	margin:0 0 3px;
 	font-weight:bold;
+}
+/*Start: formLogin*/
+.FormLoginWrapper {
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    float: right;
+    margin: 0 10px 0 0;
+    padding: 0 0 14px;
+    width: 450px;
+}
+#formLoginNotRegisterYet p {
+	margin:0 0 50px;
+}
+#formLogin {
+    float: left;
+    margin: 0 3% 0 14px;
+    width: 53%;
+}
+.alert-box.alert {
+	margin-bottom:0;
+}
+#formLoginNotRegisterYet {
+	width:38%;
+	float:right;
+}
+#formLogin a{
+	margin:0 0 10px;
+}
+#formLogin a.form-submit{
+	margin:0 30px 10px 0;
+}
+#formLogin label {
+	float: right;
+    margin: 9px 0 0;
+}
+#formLogin h3{
+	font-size:18px;
+}
+.cta-title{
+	margin-bottom:7px;
+}
+#formLoginNotRegisterYet .cta-title{
+	margin-bottom:1px;
+}
+.formActionRight {
+	float:right;
+}
+/*End: formLogin*/
+/*Start: Alert*/
+.AlertWhite .cta-title {
+	margin-top: -9px;
+	margin-bottom: -1px;
+}
+.AlertWhite .cta-title-text {
+    font-size: 22px;
+}
+.AlertWhite .alert-box.alert{
+	margin: -30px -30px 20px;
+}
+/********************/
+.page-header {
+    border-bottom: 3px solid #002D56;
+}
+.cta-title {
+	margin:15px 0 7px;
+	padding: 0.25em 0;
+}
+.cta-title-text {
+    font-size: 17px;
+    text-transform: capitalize;
+	color: #C6C6BC;
+}
+.form-submit,
+.form-cancel{
+    background: none repeat scroll 0 0 #0084A9;
+    border: 1px solid #00485C;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    padding: 10px 20px 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.15s ease-in-out 0s;
+    width: auto;
+}
+.form-submit:hover{
+    background-color: #005C76;
+	color: white;
+}
+.form-cancel:hover{
+    background-color: #D5CABD;
+	color: white;
+}
+.form-cancel {
+	background-color: #E9E3DC;
+    border: 1px solid #CBBDAD;
+    color: #1C1711;
+}
+#main-nav {
+	float:right;
+}
+.help-block {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 12px;
+    margin-top: -13px;
+    padding: 6px 4px;
+}
+.ReturnToLogin {
+	display: block;
+    margin: 10px 0 0;
 }
