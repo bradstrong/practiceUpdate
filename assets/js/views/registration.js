@@ -11,6 +11,11 @@
             return this.optional(element) || /^[a-zA-Z\d\-]+$/i.test(value);
         }, "letters, numbers and hyphens only please");
 
+        $.get('assets/mustache/modal-cancel-registration.mustache', function(template) {
+            var html = Mustache.to_html(template);
+            $('body').append(html);
+        });
+
         $("#registration-form").validate({
             focusInvalid: false,
             errorElement: 'small',
