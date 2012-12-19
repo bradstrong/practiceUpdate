@@ -33,11 +33,21 @@
 <div class="page-content">
 <section class="update-block">
 	<div class="message">
-		<p>Get the most updates,relevant content by your completing your profile and settings information. Content is
-			displayed based on your information and your preferenced. Click save to make any updates or Cancel to return to
-			the Home page.</p>
+		<p>Get the most updated, relevant content by completing your account information. Content is displayed based on your information and your preferences. Click Save to make any updates or Cancel to return to the Home page.</p>
 	</div>
 	<div class="content-menu">
+        <div class="alert-box success">
+            Your changes have been saved.
+            <a href="#" class="close">&times;</a>
+        </div>
+        <div class="alert-box alert">
+            {name of field} is required.
+            <a href="#" class="close">&times;</a>
+        </div>
+        <div class="alert-box alert">
+            We cannot validate {name of field}. Please check the info and re-enter.
+            <a href="#" class="close">&times;</a>
+        </div>
 		<form action="#" method="#">
 			<dl class="tabs">
 				<dd class="active"><a href="#simple1">Email & Password</a></dd>
@@ -48,11 +58,20 @@
 			</dl>
 			<ul class="tabs-content">
 				<li class="active" id="simple1Tab">
-					<legend>Email</legend>					
+					<header class="form-header">
+						<div class="cta-title">
+							<span class="cta-title-text">Email</span>
+						</div>
+					</header>
+					<small class="help-block">Your email address is your User Name. If you change it, your new User Name will be update.</small>
 					<input type="text" placeholder="Email (User Name)"/>
 					<small class="error">Email (User Name) required</small>
-					<small class="help-block">Your email address is your User Name. If you change it, your new User Name will be update</small>
-					<legend>Password</legend>
+					<header class="form-header">
+						<div class="cta-title">
+							<span class="cta-title-text">Password</span>
+						</div>
+					</header>
+					<small class="help-block">Want to change your password? Enter your current password and create a new one.</small>
 					<input type="text" placeholder="Current Password"/>
 					<small class="error">Current Password required</small>
 					<small class="help-block">Password must be 6-20 characters (letters, numbers and hyphens are accepted but not spaces)</small>
@@ -60,12 +79,13 @@
 					<small class="error">New Password required</small>
 					<input type="text" placeholder="Verify Password"/>
 					<small class="error">Passwords do not match</small>
-					<small class="help-block">Want to change your password? Enter your current password and create a new one.</small>
-					<i>All fields are required</i>
 				</li>
 				<li id="simple2Tab">
-					<legend>Personal Information</legend>
-					<i>All fields are required</i>
+					<header class="form-header">
+						<div class="cta-title">
+							<span class="cta-title-text">Personal Information</span>
+						</div>
+					</header>
 					<input type="text" placeholder="First Name"/>
 					<small class="error">First Name required</small>
 					<input type="text" placeholder="Last Name"/>
@@ -80,8 +100,11 @@
 					<small class="error">State required</small>
 				</li>
 				<li id="simple3Tab">
-					<legend>Professional Info</legend>
-					<i>All fields are required</i>
+					<header class="form-header">
+						<div class="cta-title">
+							<span class="cta-title-text">Professional Info</span>
+						</div>
+					</header>
 					<select>
 						<option>Workplace Type</option>
 					</select>
@@ -96,10 +119,14 @@
 					<small class="error">Primary Area of Practice required</small>
 				</li>
 				<li id="simple4Tab">
-						<legend>Content Preferences</legend>
-						<small class="help-block">You're in control. Choose what type of content to see on the site. You can change this at any time</small>
+						<header class="form-header">
+							<div class="cta-title">
+								<span class="cta-title-text">Content Preferences</span>
+							</div>
+						</header>
+						<small class="help-block">You're in control. Choose what type of content to see on the site. You can change this at any time.</small>
 						<h4>Channels</h4>
-						<small class="help-block">Each medical specialty has its own Editorial Board. Select the focus of content to view on the site. (Channel=specialty)</small>
+						<small class="help-block">Each medical specialty has its own Editorial Board. Select the focus of content to view on the site. (Channel=specialty).</small>
 						<ul class="checked-list">
 							<li>
 								<label><input type="checkbox">
@@ -127,7 +154,7 @@
 							</li>
 						</ul>
 						<h4>Topic</h4>
-						<span>Each "Channel" offers you a different variety of topics to view. You can select a few or all each Channel</span>
+						<span>Each "Channel" offers you a different variety of topics to view. You can select a few or all in each Channel.</span>
 						<ul class="accordion">
 							<li class="active">
 								<div class="title">
@@ -210,7 +237,11 @@
 						</ul>
 				</li>
 				<li id="simple5Tab">
-					<legend>Subscriptions</legend>
+					<header class="form-header">
+						<div class="cta-title">
+							<span class="cta-title-text">Subscriptions</span>
+						</div>
+					</header>
 					<small class="help-block">We offer newsletters and targeted emails based on your preferences. Choose to receive emails on 1, a few or all topics.</small>
 					<ul class="accordion">
 						<li class="active">

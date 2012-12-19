@@ -141,7 +141,7 @@
 	width:100%;
 }
 .tabs  {
-	width: 24%;
+	width: 30%;
 	float:left;
 	height: auto;
 	border-bottom:none;
@@ -157,13 +157,13 @@
 .tabs dd a {
 	border: 1px solid #333333;
 	border-bottom:none;
-	padding: 8px 6px;
+	padding: 0 20px;
 	width:100%;
-	text-align:center;
+	line-height: 38px;
 	color:#fff;
+	font-weight:normal;
 	float:left;
 	height:auto;
-	line-height:normal;
 	background: none repeat scroll 0 0 #4D4D4D;
 }
 .tabs dd.active a {
@@ -171,6 +171,10 @@
 	color:#fff;
 	border: 1px solid #333333;
 	border-bottom:none;
+	font-weight:normal;
+}
+.tabs dd:last-child a{
+    border-bottom: 1px solid #333333;
 }
 .tabs a:hover {
     background: none repeat scroll 0 0 #333333;
@@ -185,10 +189,18 @@
 	min-height:300px;
 }
 ul.tabs-content {
-	margin:0 1%;
-	width: 74%;
-	float:left;
-	min-height:400px;
+	float: left;
+    margin: -12px 0 2% 2%;
+    min-height: 400px;
+    width: 68%;
+}
+.tabs-content .cta-title {
+    margin: 5px 0 5px;
+}
+.tabs-content .help-block {
+    display: block;
+    font-size: 12px;
+    margin-bottom: -2px;
 }
 ul.tabs-content fieldset{
 	padding:0;
@@ -203,7 +215,8 @@ ul.tabs-content fieldset legend{
 	padding:0;
 }
 .tabs-content h4 {
-	font-size:20px;
+	color: #C6C6BC;
+    font-size: 17px;
 	font-weight:normal;
 }
 ul.accordion > li > div.title {
@@ -395,7 +408,7 @@ ul.accordion > li.active .content {
     width: 53%;
 }
 .alert-box.alert {
-	margin-bottom:0;
+	/*margin-bottom:0;*/
 }
 #formLoginNotRegisterYet {
 	width:38%;
@@ -494,4 +507,12 @@ ul.accordion > li.active .content {
 .ReturnToLogin {
 	display: block;
     margin: 10px 0 0;
+}
+.message {
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    float: left;
+    margin: 1% 0;
+    padding: 14px;
+    width: 100%;
 }
