@@ -3,6 +3,9 @@
 
 /* !variables */
 
+//Compass
+$experimental-support-for-svg: true; //support SVG in IE
+
 // Colors
 $grey: #ededed;
 $blue:#00aeff;
@@ -83,7 +86,7 @@ $titleFontFamily: "din-condensed-web", "Helvetica Neue", "Helvetica", Helvetica,
 
 // Grid Settings
 
-// $rowWidth: 1280px;// sets site to fluid grid
+$rowWidth: 1440px;// sets site to fluid grid
 // $columnGutter: 30px;
 // $totalColumns: 12;
 // $mobileTotalColumns: 4;
