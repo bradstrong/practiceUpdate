@@ -446,14 +446,16 @@ checked-list.width100 li:first-child{
 	float:right;
 }
 #formLogin a{
-	margin:0 0 10px;
+	clear: both;
+    float: left;
+    margin: 0 0 10px;
 }
 #formLogin a.form-submit{
-	margin:0 30px 10px 0;
+	margin:0 0 10px 0;
 }
 #formLogin label {
 	float: right;
-    margin: 9px 0 0 80px;
+    margin: 9px 0 0 0;
 }
 #formLogin h3{
 	font-size:18px;
@@ -608,3 +610,19 @@ line {
 	}
 }
 #main-nav li:hover {filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#{$topnav-lt}', endColorstr='#{$topnav-dk}');}
+@media only screen and (max-width: 990px) {
+	#formLogin label {
+		float: left;
+		margin: 9px 0 7px;
+		width:100%;
+	}
+	#formLogin label input {
+		margin: 3px 3px 3px 0;
+	}
+}
+@media only screen and (max-width: 850px) {
+	.login-register-container {
+		float: left;
+		width: 100%;
+	}
+}
