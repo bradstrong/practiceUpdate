@@ -6,3 +6,9 @@ article{
 select{
 	margin: 0 0 $formSpacing;
 }
+
+object, embed{
+	display:block;
+	height:auto;
+	width:auto;
+}
