@@ -167,6 +167,7 @@
 	},
 	"buffers":
 	[
+<<<<<<< HEAD
 		{
 			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/.gitignore",
 			"settings":
@@ -183,14 +184,27 @@
 				"line_ending": "Unix"
 			}
 		}
+=======
+>>>>>>> new-registration
 	],
 	"build_system": "Packages/User/Marked.sublime-build",
 	"command_palette":
 	{
+<<<<<<< HEAD
 		"height": 327.0,
 		"selected_items":
 		[
 			[
+=======
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"gi",
+				"GitHub: Open Gist in Browser"
+			],
+			[
+>>>>>>> new-registration
 				"gist",
 				"GitHub: Public Gist from Selection"
 			],
@@ -244,6 +258,7 @@
 	},
 	"file_history":
 	[
+<<<<<<< HEAD
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_my-custom-style.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides-marketing.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/marketing.scss",
@@ -265,6 +280,26 @@
 		"/Users/brad/Sites/pn-foundation/practiceupdate/experts.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/expert-opinion-item.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+=======
+		"/Users/brad/Sites/pn-foundation/practiceupdate/expert-opinion-item.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/experts.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/user-profile.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/channel-list.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/channel-list.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/channel-list.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/user-profile.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts-copy.json",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-profile.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_base.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css",
+>>>>>>> new-registration
 		"/Users/brad/Sites/pn-foundation/practiceupdate/experts-channel-list.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/recent.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/section.mustache",
@@ -275,7 +310,11 @@
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-topic.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/author-meta.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/ad.mustache",
+<<<<<<< HEAD
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
+=======
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
+>>>>>>> new-registration
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
@@ -295,7 +334,6 @@
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.offcanvas.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/topic-spotlight.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/foundation-overrides.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/c41bfe3e0594ee6743c257e86d2cf5507d6658bd/foundation-overrides.scssc",
 		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
@@ -381,6 +419,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< HEAD
 			"/Users/brad/Sites/pn-foundation/practiceUpdate/",
 			"footer-container",
 			"head",
@@ -389,6 +428,12 @@
 			"FormLoginWrapper",
 			"formLogin",
 			"form",
+=======
+			"leaderboard",
+			"#leaderboard{",
+			".ad-container{",
+			"	/* !Ads */",
+>>>>>>> new-registration
 			"flag",
 			"item-container",
 			"mustache",
@@ -508,7 +553,15 @@
 			"take",
 			"nav-bar",
 			"mainNav",
+<<<<<<< HEAD
 			"item-footer"
+=======
+			"item-footer",
+			"border",
+			"clear",
+			"clear-fix",
+			"item-source"
+>>>>>>> new-registration
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -532,6 +585,7 @@
 	"groups":
 	[
 		{
+<<<<<<< HEAD
 			"selected": 1,
 			"sheets":
 			[
@@ -587,6 +641,10 @@
 					},
 					"type": "text"
 				}
+=======
+			"sheets":
+			[
+>>>>>>> new-registration
 			]
 		}
 	],
@@ -636,12 +694,20 @@
 		"selected_items":
 		[
 			[
-				"theme",
-				"assets/sass/_theme.scss"
-			],
-			[
 				"base",
 				"assets/sass/_base.scss"
+			],
+			[
+				"up",
+				"update.html"
+			],
+			[
+				"ad",
+				"assets/sass/_ad.scss"
+			],
+			[
+				"theme",
+				"assets/sass/_theme.scss"
 			],
 			[
 				"update",

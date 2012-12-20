@@ -13,14 +13,57 @@
 				background:transparent;
 				display:block;
 				overflow:hidden;
-				object{
-					display:block;
-					height:auto;
-				}
+
 			}
 		}
 	}
 }
 
+#leaderboard{
+	.ad-title{
+		margin:0 auto;
+		width: 728px;
+		text-align:left;
+		.ad-title-text{
+			text-transform:uppercase;
+		}
+	}
+	object, embed{
+		display:block;
+		height: 90px;
+		width: 728px;
+	}
+}
+#leaderboardcontent{}
+#leaderboardcontentinner{ max-width: 728px; margin: 0 auto; max-height: 90px; }
+
+#boombox1{
+	object, embed{
+		display:block;
+		height: 250px;
+		width: 300px;
+	}
+}
+#boombox1content{}
+#boombox1contentinner{ max-width: 300px; margin: 0 auto; max-height: 250px; }
+
+#boombox2{
+	object, embed{
+		display:block;
+		height: 250px;
+		width: 300px;
+	}
+}
+#boombox2content{}
+#boombox2contentinner{ max-width: 300px; margin: 0 auto; max-height: 250px; }
 
 body > .widget.ad{@media only screen and (max-width: $screenMedium) {display:none;}}
+
+// standard leaderboard
+// 728X90
+
+// standard boombox
+// 300x250
+
+// custom boombox
+// 336x280

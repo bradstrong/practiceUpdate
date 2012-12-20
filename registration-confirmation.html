@@ -37,89 +37,28 @@
 	<div class="page-header container">
 	</div><!--/.page-header-->
 	<div class="page-content">
-		<section role="main">
-			<div class="register-container">
-			<div id="RegisterDiv">
-				<!-- 
-				// While this text is in the wireframe, it seems unnecessary. I'm commenting it out until we reach a final decision.
-				<div>
-					<p>Let's get you started using PracticeUpdate! Just a few steps</p>
-					<ol>
-					<li>Enter your First and Last Name, email address and create a password.</li>
-					<li>Click Register and we will send you an email to confirm and validate your account registration.</li>
-					</ol>
-				</div> -->
-                <form action="/User/Register" id="formRegister" method="post">
+        <section role="main">
+            <div class="content-menu">
+                <form>
+                    <div class="alert-box alert">
+                        Code incorrect: Please refer to the email we sent for the correct Code.
+                        <a href="#" class="close">&times;</a>
+                    </div>
                     <header class="form-header">
-                        <h3 class="form-title">Create Login</h3>
-
-                        <p class="form-description">Create a username and password to access qualty, updated, relevant
-                            content in PracticeUpdate.</p>
+                        <div class="cta-title">
+                            <span class="cta-title-text">Registration Confirmation</span>
+                        </div>
                     </header>
-                    <!--/.form-header-->
-
-                    <input id="Email" name="Email" placeholder="Email" type="text">
-                    <small class="error">Email required</small>
-                    <small class="error">Not a valid email address</small>
-                    <input id="Password" name="Password" placeholder="Password" type="password">
-                    <small class="error">Invalid Password</small>
-                    <small class="help-block">Password must be 6-20 characters (letters, numbers and hyphens are
-                        accepted but not spaces)
+                    <p>Enter your validation code sent to you via email.</p>
+                    <input type="text" name="ValidationCode" placeholder="Validation Code">
+                    <small class="error">No code entered: Please refer to the email we sent for the Validation
+                        Code.
                     </small>
-                    <input id="VerifyPassword" name="VerifyPassword" placeholder="Verify Password" type="password">
-                    <small class="error">Passwords do not match</small>
-
-                    <hr>
-
-                    <input id="FirstName" name="FirstName" placeholder="FirstName" type="text">
-                    <small class="error">First name required</small>
-                    <input id="LastName" name="LastName" placeholder="LastName" type="text">
-                    <small class="error">Last name required</small>
-                    <select id="CountryId" name="CountryId" class="error">
-                        <option value="0">Country of Residence</option>
-                    </select>
-                    <small class="error">Country required</small>
-                    <select id="TempState" name="TempState" class="error">
-                        <option value="0">State / Territory</option>
-                    </select>
-
-                    <div class="hide">
-                        <input type="text" id="StateId" name="StateId">
-                    </div>
-                    <!--/.hide-->
-                    <small class="error">State or Territory required</small>
-
-                    <div class="row hide" id="ErrorDiv">
-                        <div id="ErrorDivMsg"></div>
-                    </div>
-                    <div class="form-action">
-                        <a id="Submit" class="form-submit">Register</a>
-                        <a id="Cancel" class="form-cancel" data-reveal-id="modal-password-reset-confirmation"
-                           href="javaScript:void(0);">Cancel</a>
-                    </div>
-                    <!--/.form-action-->
+                    <a href="#" data-reveal-id="modal-complete-registration" class="form-submit">Confirm Registration</a>
                 </form>
-	      </div><!--/#RegisterDiv-->
-  <div id="ConfirmationDiv" class="">
-		<div class="alert-box">
-      <h1 class="alert-title">Confirmation</h1>
-      <p>Thank you!  Check your email to validate your registration.  One more step and you'll be ready to start using PracticeUpdate!</p>
-		</div><!--.alert-box-->
-    <div class="hide">
-        <input type="text" id="IsEmailSent" placeholder="False">
-    </div><!--/.hide-->
-  </div><!--/#ConfirmationDiv-->
-
-			</div><!--/.register-container-->
-			<div class="aux">
-				<div class="cta account-question">
-					<div class="cta-title"><span class="cta-title-text">Already have an account?</span></div><!--/.cta-title-->
-					<div class="cta-action">
-						<a class="button" id="LoginNow" href="javaScript:void(0);"><span class="cta-button-text">Log in Now</span></a>
-					</div> <!--/.cta-action-->
-				</div><!--/.account-question-->
-			</div><!--/.aux-->
-	</section><!--/[role="main"]-->
+            </div>
+        </section>
+        <!--/[role="main"]-->
 
 	</div><!--/.page-content-->
 	<footer class="page-footer">
@@ -211,6 +150,11 @@
 		});
 
     $.get('assets/mustache/modal-cancel-registration.mustache', function(template) {
+        var html = Mustache.to_html(template);
+        $('body').append(html);
+    });
+
+    $.get('assets/mustache/modal-complete-registration.mustache', function(template) {
         var html = Mustache.to_html(template);
         $('body').append(html);
     });

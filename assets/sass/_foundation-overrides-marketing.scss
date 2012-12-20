@@ -44,14 +44,15 @@ $topnav-dk: #798725;
 //blue1: #003045;
 //blue2: #0d4862;
 
-/* !Type */
+/* !fonts */
+//"din-condensed-web"
 $titleFontFamily: "din-condensed-web", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+//"museo-slab"
 
 /* !mixins */
 
-@mixin elementBoxShadow($color:$black, $hoff:0px, $voff:2px, $blur:2px, $spread:0px, $inset:false, $intensity: 0.8) {
-	$color: transparentize($color, $intensity);
-	@include single-box-shadow($color, $hoff, $voff, $blur, $spread, $inset);
+@mixin elementBoxShadow {
+	box-shadow: 0px 2px 2px rgba(0,0,0,.2);
 }
 
 @mixin noise($color:#fff, $intensity: 0.02, $color2:"false") {
@@ -64,7 +65,7 @@ $titleFontFamily: "din-condensed-web", "Helvetica Neue", "Helvetica", Helvetica,
 	}
 	/* TODO: Fix color code to match PSD */
 	@include background(linear-gradient(top, $color, $color2), inline-image("../img/noise.jpg"));
-}       
+}
 
 @mixin site-gradient($color:$pri-blue, $colorDif:15%, $shinyEdge:"false", $ie-compat:"true"){
 	@if $ie-compat == "true"{
@@ -86,7 +87,7 @@ $titleFontFamily: "din-condensed-web", "Helvetica Neue", "Helvetica", Helvetica,
 
 // Grid Settings
 
-$rowWidth: 1440px;// sets site to fluid grid
+//$rowWidth: 100%;// sets site to fluid grid
 // $columnGutter: 30px;
 // $totalColumns: 12;
 // $mobileTotalColumns: 4;
@@ -94,13 +95,11 @@ $rowWidth: 1440px;// sets site to fluid grid
 
 // Colors Settings
 
-	$mainColor: $sec-blue;
+ $mainColor: $sec-blue;
 // $secondaryColor: #e9e9e9;
-	$secondaryColor: $ter-ltTan;
 // $alertColor: #c60f13;
-	$alertColor: $sec-red;
 // $successColor: #5da423;
-	$txtColor: $pri-tan;
+ $txtColor: $pri-tan;
 // $highlightColor: #ffff99;
 // $black: #000;
 // $white: #fff;
@@ -109,11 +108,10 @@ $rowWidth: 1440px;// sets site to fluid grid
 
 // Font Settings
 
- $headerFontFamily: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $headerFontWeight: bold;
+ $headerFontFamily: "museo-slab", "Rockwell", Rockwell "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ $headerFontWeight: 500;
 // $headerFontStyle: normal;
 // $headerFontColor: #222;
-	$headerFontColor: 	#c6c6bc; //#b1b1a7;
 // $bodyFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $bodyFontWeight: normal;
 // $bodyFontStyle: normal;
@@ -125,7 +123,7 @@ $rowWidth: 1440px;// sets site to fluid grid
 
 // Button Settings
 
-$buttonRadius: 3px;
+// $buttonRadius: 3px;
 // $btnBase: 10px;
 
 // $tinyBtnBase: $btnBase - 5;
