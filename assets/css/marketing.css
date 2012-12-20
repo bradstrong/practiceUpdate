@@ -6928,7 +6928,6 @@ checked-list.width100 li:first-child {
 
 /* line 573, ../sass/_my-custom-style.scss */
 .top-bar ul li a {
-  color: #002D56 !important;
   display: block !important;
   font-size: 13px !important;
   font-weight: bold !important;
@@ -6937,29 +6936,24 @@ checked-list.width100 li:first-child {
   padding: 0 20px !important;
 }
 
-/* line 582, ../sass/_my-custom-style.scss */
+/* line 581, ../sass/_my-custom-style.scss */
 .top-bar section ul > li {
   text-transform: uppercase;
 }
 
-/* line 585, ../sass/_my-custom-style.scss */
-.top-bar section ul > li:hover {
-  background: linear-gradient(#d9e35a, #c1cd23) repeat scroll 0 0 transparent;
-}
-
-/* line 588, ../sass/_my-custom-style.scss */
+/* line 584, ../sass/_my-custom-style.scss */
 line {
   width: 100px !important;
   height: 100px !important;
   border: 1px solid red !important;
 }
 
-/* line 593, ../sass/_my-custom-style.scss */
+/* line 589, ../sass/_my-custom-style.scss */
 #sidebarButton line {
   display: none;
 }
 
-/* line 596, ../sass/_my-custom-style.scss */
+/* line 592, ../sass/_my-custom-style.scss */
 #sidebarButton {
   background: #0084a9 url("../img/line.png") no-repeat center center;
   font-size: 1px;
@@ -6968,16 +6962,27 @@ line {
 }
 
 @media only screen and (max-width: 620px) {
-  /* line 603, ../sass/_my-custom-style.scss */
+  /* line 599, ../sass/_my-custom-style.scss */
   .tabs {
     width: 100%;
   }
 
-  /* line 606, ../sass/_my-custom-style.scss */
+  /* line 602, ../sass/_my-custom-style.scss */
   ul.tabs-content {
     width: 97%;
   }
+
+  /* line 605, ../sass/_my-custom-style.scss */
+  .checked-list li {
+    float: left;
+    width: 100%;
+  }
 }
+/* line 610, ../sass/_my-custom-style.scss */
+#main-nav li:hover {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#c1cd24', endColorstr='#798725');
+}
+
 /* typography */
 /* line 55, ../sass/marketing.scss */
 body {

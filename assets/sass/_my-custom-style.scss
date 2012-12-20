@@ -571,7 +571,6 @@ checked-list.width100 li:first-child{
     top: 0 !important;
 }
 .top-bar ul li a {
-    color: #002D56 !important;
     display: block !important;
     font-size: 13px !important;
     font-weight: bold !important;
@@ -581,9 +580,6 @@ checked-list.width100 li:first-child{
 }
 .top-bar section ul > li {
     text-transform: uppercase;
-}
-.top-bar section ul > li:hover {
-    background: linear-gradient(#D9E35A, #C1CD23) repeat scroll 0 0 transparent;
 }
 line {
 	width:100px !important;
@@ -606,4 +602,9 @@ line {
 	ul.tabs-content {
 		width:97%;
 	}
+	.checked-list li {
+		float: left;
+		width: 100%;
+	}
 }
+#main-nav li:hover {filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#{$topnav-lt}', endColorstr='#{$topnav-dk}');}
