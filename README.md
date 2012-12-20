@@ -88,5 +88,24 @@ It's more important to show error text and confirmation alerts as markup than to
 
 Completed .html, .js and .css files should be delivered to the engineering team, via [PMcFad](https://github.com/PMcFad).
 
+## Visual Assets
+
+### Icons
+
+- we use [Font Awesome](http://fortawesome.github.com/Font-Awesome/) for our icons
+
+### Colors
+
+- Our base color palette can be downloaded as an [illustrator file](https://www.dropbox.com/s/ebtgdc5iji45frg/PracticeUpdate_ColorPalette.ai)
+		- all colors in the palette are available as variables that have been set in _foundation-overrides.scss *these variable should be used, instead of hardcoding color values into the css*
+
+### Fonts
+
+- We are serving our fonts via [Typekit](http://typekit.com)
+- Our branding is done in Museo Slab and Din
+	- for web fonts, we are using Museo Slab 500 and Din Condensed
+	- Museo is the default for headers
+	- Din is used for item titles (such as articles) because the condenced font helps reduce line wraps in longer titles
+	- for general font styling, consult [this mockup](https://www.dropbox.com/s/h72xx42yzzt8xqu/PracticeUpdate_Web_3_V6.psd) *We have since decided to use a solid light tan background, please keep that in mind when styling the text*
 
 
