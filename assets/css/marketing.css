@@ -7005,6 +7005,204 @@ line {
     width: 100%;
   }
 }
+/* line 629, ../sass/_my-custom-style.scss */
+.component {
+  background-color: transparent;
+  float: left;
+  width: 100%;
+  margin: 1% 0 0%;
+  padding: 1% 0 4%;
+  border-bottom: 1px dotted #C6C6BC;
+}
+
+/* line 638, ../sass/_my-custom-style.scss */
+.meet-experts,
+.dashboard .account-question {
+  background-color: #fff !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  padding: 14px !important;
+  float: left;
+  margin: 1% 0 4% !important;
+  width: 100%;
+}
+
+/* line 646, ../sass/_my-custom-style.scss */
+.user-console .split {
+  text-align: left;
+  width: 100%;
+}
+
+/* line 650, ../sass/_my-custom-style.scss */
+.component .nav-header {
+  background: none;
+}
+
+/* line 653, ../sass/_my-custom-style.scss */
+.component .side-nav {
+  padding: 0;
+}
+
+/* line 656, ../sass/_my-custom-style.scss */
+.component .side-nav li {
+  background-color: #E9E3DC;
+  border: 1px solid #CBBDAD;
+  border-top: none;
+  color: #1C1711;
+  margin: 0;
+  padding: 5px 14px;
+}
+
+/* line 664, ../sass/_my-custom-style.scss */
+.component .side-nav li a {
+  color: #000;
+}
+
+/* line 667, ../sass/_my-custom-style.scss */
+.component .side-nav li:hover {
+  background-color: #D5CABD;
+}
+
+/* line 670, ../sass/_my-custom-style.scss */
+.component .side-nav li:hover a {
+  color: #fff;
+}
+
+/* line 673, ../sass/_my-custom-style.scss */
+.component .side-nav {
+  background: none;
+}
+
+/* line 676, ../sass/_my-custom-style.scss */
+.component .side-nav li.nav-header {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #CBBDAD;
+}
+
+/* line 681, ../sass/_my-custom-style.scss */
+.dashboard .cta {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 688, ../sass/_my-custom-style.scss */
+li.nav-header,
+.recommended h5,
+.recommended .cta .cta-title,
+.cta .recommended .cta-title {
+  color: #C6C6BC;
+  font-size: 17px;
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 695, ../sass/_my-custom-style.scss */
+.recommended .widget {
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  padding: 14px;
+  float: left;
+  margin: 1% 0 4%;
+}
+
+/* line 702, ../sass/_my-custom-style.scss */
+.recommended .widget li:first-child {
+  border-top: none;
+}
+
+/* line 705, ../sass/_my-custom-style.scss */
+.recommended .widget li {
+  border-top: 1px dotted #C6C6BC;
+}
+
+/*Start: user-consol*/
+/* line 709, ../sass/_my-custom-style.scss */
+.dashboard .cta.user-consol {
+  background: #0084A9;
+  padding: 1em !important;
+  padding-bottom: 1em !important;
+  z-index: 10 !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+/* line 717, ../sass/_my-custom-style.scss */
+.user-consol p {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* line 721, ../sass/_my-custom-style.scss */
+.user-consol .right {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+/* line 729, ../sass/_my-custom-style.scss */
+.user-consol .right span {
+  background: transparent url("../img/linkD.png") no-repeat center center;
+  width: 13px;
+  height: 11px;
+  float: right;
+}
+
+/* line 735, ../sass/_my-custom-style.scss */
+.user-consol .right ul {
+  border-radius: 5px 5px 5px 5px;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  position: absolute;
+  display: none;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  width: 180px;
+}
+
+/* line 747, ../sass/_my-custom-style.scss */
+.user-consol .right:hover ul {
+  display: block;
+}
+
+/* line 750, ../sass/_my-custom-style.scss */
+.user-consol .right ul li {
+  background-color: #E9E3DC;
+  border: 1px solid #CBBDAD;
+  border-top: none;
+  color: #1C1711;
+  margin: 0;
+  padding: 5px 14px;
+}
+
+/* line 758, ../sass/_my-custom-style.scss */
+.user-consol .right ul li:first-child {
+  border-top: 1px solid #CBBDAD;
+}
+
+/* line 761, ../sass/_my-custom-style.scss */
+.user-consol .right ul li a {
+  color: #000;
+}
+
+/* line 764, ../sass/_my-custom-style.scss */
+.user-consol .right ul li:hover {
+  background-color: #D5CABD;
+}
+
+/* line 767, ../sass/_my-custom-style.scss */
+.user-consol .right ul li:hover a {
+  color: #fff;
+}
+
+/*End: user-consol*/
 /* typography */
 /* line 55, ../sass/marketing.scss */
 body {

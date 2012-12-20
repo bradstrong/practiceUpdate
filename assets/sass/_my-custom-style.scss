@@ -626,3 +626,145 @@ line {
 		width: 100%;
 	}
 }
+.component {
+	background-color: transparent;
+	float:left;
+	width:100%;
+	margin:1% 0 0%;
+	padding:1% 0 4%;
+	border-bottom:1px dotted #C6C6BC;
+}
+.meet-experts,
+.dashboard .account-question {
+	background-color: #fff !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 14px !important;
+	float:left;
+	margin:1% 0 4% !important;
+	width: 100%;
+}
+.user-console .split {
+	text-align: left;
+    width: 100%;
+}
+.component .nav-header {
+	background:none;
+}
+.component .side-nav {
+	padding:0;
+}
+.component .side-nav li {
+	background-color: #E9E3DC;
+    border: 1px solid #CBBDAD;
+	border-top:none;
+    color: #1C1711;
+	margin:0;
+	padding:5px 14px;
+}
+.component .side-nav li a{
+    color: #000;
+}
+.component .side-nav li:hover {
+	background-color: #D5CABD;
+}
+.component .side-nav li:hover a{
+    color: #fff;
+}
+.component .side-nav {
+	background:none;
+}
+.component .side-nav li.nav-header {
+	background-color: transparent;
+    border: none;
+	border-bottom: 1px solid #CBBDAD;
+}
+.dashboard .cta {
+	background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+li.nav-header,
+.recommended h5 {
+	color: #C6C6BC;
+    font-size: 17px;
+	margin:0;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+.recommended .widget {
+	background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 14px;
+	float:left;
+	margin:1% 0 4%;
+}
+.recommended .widget li:first-child{
+	border-top:none;
+}
+.recommended .widget li{
+	border-top:1px dotted #C6C6BC;
+}
+/*Start: user-consol*/
+.dashboard .cta.user-consol {
+	background:#0084A9;
+	padding:1em !important;
+	padding-bottom:1em !important;
+	z-index: 10 !important;
+	width:100% !important;
+	position:relative !important;
+}
+.user-consol p {
+	color:#fff;
+	font-weight:bold;
+}
+.user-consol .right {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	position:absolute;
+	top:14px;
+	right:14px;
+}
+.user-consol .right span {
+	background:transparent url("../img/linkD.png") no-repeat center center;
+	width:13px;
+	height:11px;
+	float:right;
+}
+.user-consol .right ul{
+	border-radius: 5px 5px 5px 5px;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+	display:none;
+    top: 0;
+	background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    width: 180px;
+}
+.user-consol .right:hover ul {
+	display:block;
+}
+.user-consol .right ul li {
+	background-color: #E9E3DC;
+    border: 1px solid #CBBDAD;
+	border-top:none;
+    color: #1C1711;
+	margin:0;
+	padding:5px 14px;
+}
+.user-consol .right ul li:first-child {
+	border-top:1px solid #CBBDAD;
+}
+.user-consol .right ul li a{
+    color: #000;
+}
+.user-consol .right ul li:hover {
+	background-color: #D5CABD;
+}
+.user-consol .right ul li:hover a{
+    color: #fff;
+}
+/*End: user-consol*/

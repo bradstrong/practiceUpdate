@@ -80,21 +80,32 @@
 
 	</div><!--/.page-header-->
 	<div class="page-content">
-		<section role="main">
-			<div class="stream-container">
-			</div><!--/.stream-container-->
-			<div class="recommended">
+	<section role="main">
+		<div class="stream-container">
+		</div><!--/.stream-container-->
+		<div class="recommended">
 			<div class="widget recent">
 			</div><!--/.widget recent-->
-				<div class="widget ad">
-				</div><!--/.widget.ad-->
-			</div><!--/.recommended-->
+			<div class="widget ad">
+			</div><!--/.widget.ad-->
+		</div><!--/.recommended-->
 	</section><!--/[role="main"]-->
 
 	<section id="sidebar" role="complementary">
 		<div class="dashboard">
-			<div class="component user-console">
-			</div><!--/.component.user-console-->
+			<div class="cta user-consol">
+			   <p>Dr. {{First}} {{Last}}</p>
+			   <p>{{Profession}}</p>
+			   <ul class="right">
+					<li>
+						<span></span>
+						<ul class="user-menu">
+							<li><a href="preferences.html">My Profile & Settings</a></li>
+							<li><a href="logout.html">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>			
 			<div class="component user-topic">				
 			</div><!--/.component.user-topic-->
 
@@ -102,6 +113,12 @@
 			</div><!--/.component.topic-spotlight-->
 			<div class="cta meet-experts">
 			</div><!--/.cta/meet-experts-->
+			<div class="cta account-question">
+			   <div class="cta-title"><span class="cta-title-text">Already have an account?</span></div><!--/.cta-title-->
+			   <div class="cta-action">
+					<a class="button form-submit" id="LoginNow" href="javaScript:void(0);"><span class="cta-button-text">Log in Now</span></a>
+			   </div> <!--/.cta-action-->
+			</div>
 		</div><!--/.dashboard-->
 	</section><!--/.[role="complimentary"]#sidebar-->
 	</div><!--/.page-content-->
