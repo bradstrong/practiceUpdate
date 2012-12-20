@@ -255,14 +255,19 @@ ul.accordion > li .title h5{
 .checked-list {
 	float: left;
     list-style-type: none;
-    margin: 0 30% 11px 0;
+    margin: 0 10% 11px 0;
     padding: 0;
-    width: 70%;
+    width: 90%;
+}
+.checked-list.width100 {
+    width: 100%;
+	margin:0;
 }
 ul.accordion {
 	float: left;
     margin: 0 0 22px;
 	width:100%;
+	border:none;
 }
 ul.accordion > li.active {
     border-top: none;
@@ -276,14 +281,15 @@ ul.accordion > li.active .content {
 	border:none;
 	background:none;	
 }
-.checked-list.width100 li {
-	width:100%;
+.checked-list.width100 li,
+checked-list.width100 li:first-child{
+	width:100% !important;
 }
 .checked-list li{
 	float:left;
-	width:35%;
+	width:50%;
 }
-.checked-list li:first-child{
+.accordion .checked-list li:first-child{
 	width:80%;
 }
 .checked-list-down {
@@ -535,6 +541,8 @@ ul.accordion > li.active .content {
 }
 .floationg {
 	float:right;
+	clear:both;
+	margin:0 0 10px;
 }
 .error.error-check {
 	margin:-6px 0 0;
@@ -551,4 +559,51 @@ ul.accordion > li.active .content {
 }
 .logout-container p {
     color: white;
+}
+.top-bar {
+	position:relative;
+}
+.top-bar ul > li.toggle-topbar a {
+	background: url("../img/arrow.png") no-repeat scroll 0 28px transparent !important;
+    border: medium none !important;
+    min-height: 46px !important;
+    min-width: 16px !important;
+    top: 0 !important;
+}
+.top-bar ul li a {
+    color: #002D56 !important;
+    display: block !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    height: 60px !important;
+    line-height: 60px !important;
+    padding: 0 20px !important;
+}
+.top-bar section ul > li {
+    text-transform: uppercase;
+}
+.top-bar section ul > li:hover {
+    background: linear-gradient(#D9E35A, #C1CD23) repeat scroll 0 0 transparent;
+}
+line {
+	width:100px !important;
+	height:100px !important;
+	border:1px solid red !important;
+}
+#sidebarButton line{
+	display:none;
+}
+#sidebarButton{
+	background:#0084A9 url("../img/line.png") no-repeat center center;
+	font-size:1px;
+	color:#0084A9;
+	height:40px;
+}
+@media only screen and (max-width: 620px) {
+	.tabs {
+		width:100%;
+	}
+	ul.tabs-content {
+		width:97%;
+	}
 }

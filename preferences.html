@@ -1,41 +1,89 @@
 <!DOCTYPE html>
-
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8" />
+	<meta charset="utf-8" />
 
-    <!-- Set the viewport width to device width for mobile -->
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="View all the latest news and articles, personalized for you, in a single view.">
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	<meta content="no-cache" http-equiv="pragma">
+	<meta content="View all the latest news and articles, personalized for you, in a single view" name="description">
+	<meta content="Cardiology, Dermatology, Ophthalmology, Optometry, Internal Medicine, Oncology, Urology" name="keywords">
+	<title>
+ Update : PracticeUpdate
+	</title>
 
-    <title>PracticeUpdate : Update</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="/assets/css/app.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/css/font-awesome.css" type="text/css" /> 
 
-    <!-- Include CSS Files -->
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
-    <!-- Include Modernizr -->
-    <script src="assets/js/foundation/modernizr.foundation.js"></script>
+    <script src="/assets/js/foundation/jquery.js" type="text/javascript"></script>
+    <script src="/assets/js/foundation/modernizr.foundation.js" type="text/javascript"></script>
+    <script src="/assets/js/Common.js" type="text/javascript"></script>
+    <script src="/assets/js/cookie.js" type="text/javascript"></script>
+    
+    <script src="/assets/js/DART/htmlParser.js" type="text/javascript"></script>
+    <script src="/assets/js/DART/postscribe.js" type="text/javascript"></script>
+    <script src="/assets/js/DART/DART.js" type="text/javascript"></script>
+	<script src="http://scottjehl.github.com/Respond/respond.src.js" type="text/javascript"></script>
+	<script src="/assets/js/foundation/polyfills.js" type="text/javascript"></script>
+	<script src="https://raw.github.com/DmitryBaranovskiy/raphael/master/raphael-min.js" type="text/javascript"></script>
 
-    <!-- IE Fix for HTML5 Tags -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->   
 </head>
-<body id="update" class="update off-canvas custom-mockup">
-<div class="page-header">
-    <p>Page header</p>
-</div>
+
+<body class="off-canvas slide-nav">
+    
+    <div class="widget ad">
+        <div id="leaderboard" class="hide">
+	        <div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
+	        <div id="leaderboardcontent" class="ad-content">
+	        </div><!--.ad-content-->
+        </div><!--/.ad-container-->
+    </div>
+
+	<div class="page-header">
+        <nav class="top-bar">
+	<ul>
+	  <li class="name"><div class="site-branding"><img src="/assets/img/PracticeUpdate_logo.png"/></div><!--/.site-branding--></li>
+	  <li class="toggle-topbar"><a href="#"></a></li>
+	</ul>
+	<section>
+	  <ul id="topbarli" class="right">
+	  <li id="li_update" class="active"><a href="/Update/">update</a></li><li id="li_explore"><a href="/Explore/">explore</a></li><li id="li_learn"><a href="javascript:Beta();">learn</a></li></ul>
+	</section>
+</nav><!--/.top-bar-->
+
+<div class="off-canvas-control">
+	<div class="control-visibility">
+		<div class="sidebar-button-container">
+			<a class='sidebar-button button' id="sidebarButton" href="#sidebar">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+        <line fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" x1="0" y1="8.907" x2="48" y2="8.907"></line>
+        <line fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" x1="0" y1="24.173" x2="48" y2="24.173"></line>
+        <line fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" x1="0" y1="39.439" x2="48" y2="39.439"></line>
+        Menu
+      </svg>
+      </a><!--/#sidebarButton -->
+		</div><!--/.sidebar-button-container -->
+	</div><!--/.control-visibility-->
+</div><!--/.off-canvas-control-->
+	</div><!--/.page-header-->
 <div class="page-content">
-<section class="update-block">
+	<section id="sidebar" role="complementary">
+	</section>
+<section role="main">
 	<div class="message">
 		<p>Get the most updated, relevant content by completing your account information. Content is displayed based on your information and your preferences. Click Save to make any updates or Cancel to return to the Home page.</p>
 	</div>
-	<div class="content-menu">
+	
+	<div class="content-menu" role="main">
         <div class="alert-box success">
             Your changes have been saved.
             <a href="#" class="close">&times;</a>
@@ -83,6 +131,13 @@
 						<a id="Submit" class="form-submit">Save</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
 					</div>
+					<div class="form-action floationg">
+						<a id="Submit" class="form-submit">Back</a>
+						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Next</a>
+					</div>
+					<div class="form-action floationg">
+						<a id="Submit" class="form-submit">Complete Registration</a>
+					</div>
 					</form>
 				</li>
 				<li id="simple2Tab">
@@ -108,6 +163,13 @@
 						<a id="Submit" class="form-submit">Save</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
 					</div>
+					<div class="form-action floationg">
+						<a id="Submit" class="form-submit">Back</a>
+						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Next</a>
+					</div>
+					<div class="form-action floationg">
+						<a id="Submit" class="form-submit">Complete Registration</a>
+					</div>
 					</form>
 				</li>
 				<li id="simple3Tab">
@@ -132,6 +194,13 @@
 					<div class="form-action floationg">
 						<a id="Submit" class="form-submit">Save</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
+					</div>
+					<div class="form-action floationg">
+						<a id="Submit" class="form-submit">Back</a>
+						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Next</a>
+					</div>
+					<div class="form-action floationg">
+						<a id="Submit" class="form-submit">Complete Registration</a>
 					</div>
 					</form>
 				</li>
@@ -257,6 +326,13 @@
 						<div class="form-action floationg">
 							<a id="Submit" class="form-submit">Save</a>
 							<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
+						</div>
+						<div class="form-action floationg">
+							<a id="Submit" class="form-submit">Back</a>
+							<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Next</a>
+						</div>
+						<div class="form-action floationg">
+							<a id="Submit" class="form-submit">Complete Registration</a>
 						</div>
 						</form>
 				</li>
@@ -399,6 +475,13 @@
 						<a id="Submit" class="form-submit">Save</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
 					</div>
+					<div class="form-action floationg">
+						<a id="Submit" class="form-submit">Back</a>
+						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Next</a>
+					</div>
+					<div class="form-action floationg">
+						<a id="Submit" class="form-submit">Complete Registration</a>
+					</div>
 					</form>
 				</li>
 			</ul>			
@@ -408,27 +491,38 @@
 <!--/.update-block-->
 </div>
 	<footer class="page-footer">
-	</footer><!-- /.page-footer -->
+    <div class="footer-section-container" id="els-global-footer">
+	    <div class="footer-section">
+		    <div class="widget els-branding">			
+			    <img alt="Elsevier Logo" src="/content/img/elsevier_logo.png" class="els-logo">
+		    </div><!--/.els-branding-->
+		    <div class="widget els-description">			
+			    <p>Elsevier is a leading publisher of health science books and journals, helping to advance medicine by delivering superior education, reference information and decision support tools to doctors, nurses, health practitioners and students. With titles available across a variety of media&mdash;print, online and handheld, we are able to supply the information you need in the most convenient format.</p>
+			    <p>Copyright <span class="sc-copy">&copy;</span> 2012 Elsevier Inc. All rights reserved.</p>
+		    </div><!--/.els-description-->
+		    <div class="widget powered-by">
+		    <!-- TODO: ADD Powered By image -->
+			    <img title="2-1.0.707" alt="Powered by OncologySTAT" src="/content/img/powered-by.png">
+		    </div><!--/.powered-by-->
+	    </div><!--/.footer-section-->
+    </div><!--/.footer-section-container-->
+</footer><!-- /.page-footer -->
 
-	<!-- Included JS Files (Uncompressed) -->
-  <script src="assets/js/foundation/jquery.js"></script>
-<!--   <script src="assets/js/plugins-ck.js"></script> -->
- 
-	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>	
-	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.forms.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.navigation.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>	
-	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.tooltips.js"></script>
-	<script src="assets/js/foundation/jquery.placeholder.js"></script>
-	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
-	<script src="assets/js/mustache.js"></script>
-	<script src="assets/js/foundation/app.js"></script>
+	<script src="/assets/js/foundation/jquery.foundation.accordion.js" type="text/javascript"></script>
+	<script src="/assets/js/foundation/jquery.foundation.alerts.js" type="text/javascript"></script>
+	<script src="/assets/js/foundation/jquery.foundation.buttons.js" type="text/javascript"></script>
+	<script src="/assets/js/foundation/jquery.foundation.forms.js" type="text/javascript"></script>
+	<script src="/assets/js/foundation/jquery.foundation.mediaQueryToggle.js" type="text/javascript"></script>
+	<script src="/assets/js/foundation/jquery.foundation.navigation.js" type="text/javascript"></script>
+	<script src="/assets/js/foundation/jquery.foundation.orbit.js" type="text/javascript"></script>
+	<script src="/assets/js/foundation/jquery.foundation.reveal.js" type="text/javascript"></script>
+	<script src="/assets/js/foundation/jquery.foundation.tabs.js" type="text/javascript"></script>
+	<script src="/assets/js/foundation/jquery.foundation.tooltips.js" type="text/javascript"></script>
+	<script src="/assets/js/foundation/jquery.placeholder.js" type="text/javascript"></script>
+	<script src="/assets/js/foundation/jquery.offcanvas.js" type="text/javascript"></script>
+    <script src="/assets/js/foundation/jquery.foundation.topbar.js"></script>
+    <script src="/assets/js/foundation/app.js" type="text/javascript"></script>
+	<script src="/assets/js/mustache.js" type="text/javascript"></script>
 
 </body>
 </html>
