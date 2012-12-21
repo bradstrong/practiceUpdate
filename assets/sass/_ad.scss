@@ -5,7 +5,9 @@
 			text-align: center;
 			.ad-title{
 				text-align:left;
+				margin: $baseFontSize;
 				.ad-title-text{
+					@extend small;
 					text-transform:uppercase;
 				}
 			}
@@ -17,6 +19,10 @@
 			}
 		}
 	}
+}
+
+.page-content .widget.ad{
+	padding:$baseFontSize 0;
 }
 
 #leaderboard{
@@ -57,6 +63,16 @@
 #boombox2content{}
 #boombox2contentinner{ max-width: 300px; margin: 0 auto; max-height: 250px; }
 
+#skyscraper{
+	object, embed{
+		display:block;
+		height: 250px;
+		width: 300px;
+	}
+}
+#skyscrapercontent{}
+#skyscrapercontentinner{ max-width: 300px; margin: 0 auto; max-height: 250px; }
+
 body > .widget.ad{@media only screen and (max-width: $screenMedium) {display:none;}}
 
 // standard leaderboard
@@ -67,3 +83,6 @@ body > .widget.ad{@media only screen and (max-width: $screenMedium) {display:non
 
 // custom boombox
 // 336x280
+
+// skyscraper
+// 120x600
