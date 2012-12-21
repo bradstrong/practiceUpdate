@@ -772,6 +772,7 @@ li.nav-header,
 .users-console p.user-console-small {
 	font-size:12px;
 }
+
 .users-console {
 	float:left;
 }
@@ -933,4 +934,95 @@ ul.side-nav li.active a {
     border: none;
     margin: 0;
     padding: 20px;
+}
+/*Start: source-container*/
+.commentary-container p {
+	float: left;
+    margin: 0 0 0 130px;
+    width: 100%;
+	line-height: 23px;
+	text-transform:uppercase;
+}
+.commentary-container .source-container {
+	float: left;
+    margin: -20px 0 0;
+    width: 100%;
+}
+.source-container .expert-name{
+	float: left;
+    margin: 14px 0 0 190px;
+    width: 100%;
+}
+.source-container .source-photo{
+	float: left;
+    margin: -33px 0 0;
+}
+.source-container .source-photo .photo {
+	float: left;
+}
+.source-container .source-photo .label {
+	background: none repeat scroll 0 0 transparent;
+    color: #D6E03D;
+    float: left;
+	line-height: 13px;
+	font-size:14px;
+    margin: 15px 0 0 6px;
+    text-transform: uppercase;
+}
+/*End: source-container*/
+/*Start: user-profile-container*/
+.user-profile-container .user-profile,
+.channel-list-container{
+	padding:14px;
+}
+.user-group {
+	padding:14px;
+}
+.user-profile-container .profile-photo,
+.user-group .profile-photo {
+	padding-right: 0;
+	width: 17%;
+}
+.user-profile-container .user-name,
+.user-group .user-name {
+	margin-bottom: 14px;
+    margin-top: -1px;
+}
+.user-profile-container .user-name,
+.user-group .user-name{
+    font-size: 18px;
+}
+.user-directory-container .user-group h2{
+	font-size: 20px;
+    font-weight: normal;
+    margin: -4px 0 6px;
+    text-transform: uppercase;
+}
+.user-directory-container h1,
+.channel-list-container h1{
+	font-size: 24px;
+}
+.channel-list-container ul {
+	padding:0 0 0 30px;
+}
+.user-detail-list dd,
+.user-detail-list dt{
+	line-height: 14px;
+    margin: 0 0 10px;
+}
+.user-group {
+	
+}
+/*End: user-profile-container*/
+.footer-row {
+	width:25%;
+	float:left;
+}
+.social-links,
+.utility-links,
+.policy-links {
+	list-style-type:none;
+}
+.social-links li{
+	display:inline;
 }
