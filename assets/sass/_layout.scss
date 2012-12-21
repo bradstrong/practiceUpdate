@@ -32,6 +32,11 @@
 	@include outerRow();
 	@include mobileRow();
 	padding:$navBarHeight inherit;
+
+	.copyright{
+		@include column(4);
+		@extend .end;
+	}
 }
 
 .footer-section-container{
