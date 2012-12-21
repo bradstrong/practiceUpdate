@@ -1,5 +1,5 @@
 //article{
-.in-stream{
+.in-stream, .single-item, .user-profile, .user-group, .channel-list-container{
 	background-color:$white;
 	@include elementBoxShadow;
 }
@@ -25,16 +25,19 @@ body{
 }
 
 .page-footer{
-	@include noise(lighten($ter-ltTan, 10%));
 	border-top:2px solid $white;
 }
 
 //type
+.journal-title{
+	color:$pri-blue;
+	font-size:ms(1);
+}
+
 .item-title, .item-type, .item-pub-date{
 	font-family:$titleFontFamily;
 	font-weight:normal;
 	color:ter-ltTan;
-	text-transform:uppercase;
 }
 
 .subheader{ color:$headerFontColor;}
@@ -149,7 +152,7 @@ padding-top: $baseFontSize/2;
 
 .beta-accept-sub{display: none;}
 
-.specialty-name{
+.specialty-name, .brand-name{
 	color:$white;
 	font-size: ms(7);
 	text-transform:uppercase;

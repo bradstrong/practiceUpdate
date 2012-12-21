@@ -736,8 +736,9 @@ li.nav-header,
 }
 .users-console p {
 	color:#fff;
-	margin:0;
+	margin: 0 0 -4px;
 	font-weight:bold;
+	font-size:17px;
 }
 .users-console .right {
 	padding:0;
@@ -747,32 +748,7 @@ li.nav-header,
 	top:14px;
 	right:14px;
 }
-.users-console .right span {
-	background:transparent url("../img/linkD.png") no-repeat center center;
-	width:13px;
-	height:11px;
-	float:right;
-}
-.users-console .right ul{
-	border-radius: 5px 5px 5px 5px;
-    list-style-type: none;
-    margin: 0;
-	display:none;
-	position:absolute;
-	top:0;
-	right:0;
-	background-color: white;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    width: 180px;
-}
-.users-console .right:hover ul {
-	display:block;
-	-webkit-transition: all 10s linear;
-	    -moz-transition: all 10s linear;
-	    -o-transition: all 10s linear;
-	    -ms-transition: all 10s linear;
-		transition: all 10s linear;
-}
+
 .users-console .right ul li {
 	background-color: #E9E3DC;
     border: 1px solid #CBBDAD;
@@ -794,7 +770,56 @@ li.nav-header,
     color: #fff;
 }
 .users-console p.user-console-small {
-	font-size:11px;
+	font-size:12px;
+}
+
+.users-console {
+	float:left;
+}
+.users-console .accordion{
+	float:left;
+}
+.users-console ul.accordion > li > div.title {
+	border:none !important;
+	background:transparent url("../img/linkD.png") no-repeat right 10px;
+	padding:0;
+}
+ul.accordion > li > div.title:after {
+	border:none !important;
+}
+.dashboard .user-menu {
+	margin:0;
+	list-style-type:none;
+}
+.dashboard .user-menu li:first-child {
+	border-top: none;
+}
+.dashboard .user-menu li {
+	float:left;
+	width:100%;
+	border-top: 1px solid #007798;
+}
+.dashboard .user-menu li.active {
+	border-left:7px solid #D6E03D;
+}
+.dashboard .user-menu li.active a{
+	padding:4px 8px 4px 15px;
+}
+.dashboard .user-menu li a{
+	color:#fff;
+	float:left;
+	border:1px solid #0084A9;
+	width:100%;
+	padding:4px 8px 4px 15px;
+}
+.dashboard .user-menu li a:hover {
+	border:1px solid #007fa2;
+	background:#00a3d1;
+}
+.dashboard .accordion .content {
+	padding:10px 0 0;
+	margin:10px -14px 0;
+	border-top:1px dotted #00708f !important; 
 }
 /*End: users-console*/
 /*Start: custom css*/
@@ -858,7 +883,7 @@ li.nav-header,
 	width:100%;
 }
 .static-container p.phone {
-	font-size:16px;
+	font-size:14px;
 	line-height: 22px;
 }
 .static-container p {
@@ -877,7 +902,6 @@ li.nav-header,
 }
 .static-container h2 {
 	font-size:22px;
-	color:#ff8400;
 	font-weight:bold;
 	text-transform:uppercase;
 	margin:0 0 15px;
@@ -890,9 +914,115 @@ li.nav-header,
 .static-container h4 {
 	font-size:16px;
 }
+.static-container p.phone-contact {
+	margin:-30px 0 26px;
+}
+.static-container .links {
+	margin:0 20px 20px 0;
+}
 /*End: static-container*/
 
+ul.side-nav li.active {
+	border-left: 7px solid #0084A9;
+}
 ul.side-nav li.active a {
     font-weight: normal;
 	color:#000000;
+}
+.dashboard .panel, .dashboard .query-no-results, .dashboard .cta {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 20px;
+}
+/*Start: source-container*/
+.commentary-container p {
+	float: left;
+    margin: 0 0 0 130px;
+    width: 100%;
+	line-height: 23px;
+	text-transform:uppercase;
+}
+.commentary-container .source-container {
+	float: left;
+    margin: -20px 0 0;
+    width: 100%;
+}
+.source-container .expert-name{
+	float: left;
+    margin: 14px 0 0 190px;
+    width: 100%;
+}
+.source-container .source-photo{
+	float: left;
+    margin: -33px 0 0;
+}
+.source-container .source-photo .photo {
+	float: left;
+}
+.source-container .source-photo .label {
+	background: none repeat scroll 0 0 transparent;
+    color: #D6E03D;
+    float: left;
+	line-height: 13px;
+	font-size:14px;
+    margin: 15px 0 0 6px;
+    text-transform: uppercase;
+}
+/*End: source-container*/
+/*Start: user-profile-container*/
+.user-profile-container .user-profile,
+.channel-list-container{
+	padding:14px;
+}
+.user-group {
+	padding:14px;
+}
+.user-profile-container .profile-photo,
+.user-group .profile-photo {
+	padding-right: 0;
+	width: 17%;
+}
+.user-profile-container .user-name,
+.user-group .user-name {
+	margin-bottom: 14px;
+    margin-top: -1px;
+}
+.user-profile-container .user-name,
+.user-group .user-name{
+    font-size: 18px;
+}
+.user-directory-container .user-group h2{
+	font-size: 20px;
+    font-weight: normal;
+    margin: -4px 0 6px;
+    text-transform: uppercase;
+}
+.user-directory-container h1,
+.channel-list-container h1{
+	font-size: 24px;
+}
+.channel-list-container ul {
+	padding:0 0 0 30px;
+}
+.user-detail-list dd,
+.user-detail-list dt{
+	line-height: 14px;
+    margin: 0 0 10px;
+}
+.user-group {
+	
+}
+/*End: user-profile-container*/
+.footer-row {
+	width:25%;
+	float:left;
+}
+.social-links,
+.utility-links,
+.policy-links {
+	list-style-type:none;
+}
+.social-links li{
+	display:inline;
 }
