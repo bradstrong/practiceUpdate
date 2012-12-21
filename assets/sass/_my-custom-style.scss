@@ -626,3 +626,273 @@ line {
 		width: 100%;
 	}
 }
+.component {
+	background-color: transparent;
+	float:left;
+	width:100%;
+	margin:1% 0 0%;
+	padding:1% 0 4%;
+	border-bottom:1px dotted #C6C6BC;
+}
+.meet-experts,
+.dashboard .account-question {
+	background-color: #fff !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 14px !important;
+	float:left;
+	margin:1% 0 4% !important;
+	width: 100%;
+}
+.user-console .split {
+	text-align: left;
+    width: 100%;
+}
+.component .nav-header {
+	background:none;
+}
+.component .side-nav {
+	padding:0;
+}
+.component .side-nav .dropdownvisible li {
+	background-color: #E9E3DC;
+    border: 1px solid #CBBDAD;
+	border-top:none;
+    color: #1C1711;
+	margin: 0 0;
+    padding: 5px 14px;
+    width: 100%;
+}
+.component .side-nav .dropdownvisible li:hover {
+	background-color:#c3b7a8;
+}
+.component .side-nav li:hover li a {
+    color: #000;
+}
+.component .side-nav li li:hover a{
+    color: #b87c2b;
+}
+.component .side-nav li {
+	background-color: #E9E3DC;
+    border: 1px solid #CBBDAD;
+	border-top:none;
+    color: #1C1711;
+	margin:0;
+	float:left;
+	width:100%;
+	padding:5px 14px;
+}
+.component .side-nav li a{
+    color: #000;
+}
+.component .side-nav li:hover{
+	background-color: #D5CABD;
+}
+.component .side-nav li li a{
+	text-transform:capitalize;
+}
+.component .side-nav {
+	background:none;
+}
+.component .side-nav li.nav-header {
+	background-color: #D5CABD;
+    border: none;
+	border-bottom: 1px solid #CBBDAD;
+}
+.dashboard .cta {
+	background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+li.nav-header,
+.recommended h5 {
+	color: #C6C6BC;
+    font-size: 17px;
+	margin:0;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+.recommended .widget {
+	background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 14px;
+	float:left;
+	margin:1% 0 4%;
+}
+.recommended .widget li:first-child{
+	border-top:none;
+}
+.recommended .widget li{
+	border-top:1px dotted #C6C6BC;
+}
+/*Start: user-consol*/
+.dashboard .cta.users-console {
+	background:#0084A9;
+	padding:1em !important;
+	padding-bottom:1em !important;
+	z-index: 10 !important;
+	width:100% !important;
+	position:relative !important;
+}
+.users-console p {
+	color:#fff;
+	margin:0;
+	font-weight:bold;
+}
+.users-console .right {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	position:absolute;
+	top:14px;
+	right:14px;
+}
+.users-console .right span {
+	background:transparent url("../img/linkD.png") no-repeat center center;
+	width:13px;
+	height:11px;
+	float:right;
+}
+.users-console .right ul{
+	border-radius: 5px 5px 5px 5px;
+    list-style-type: none;
+    margin: 0;
+	display:none;
+	position:absolute;
+	top:0;
+	right:0;
+	background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    width: 180px;
+}
+.users-console .right:hover ul {
+	display:block;
+	-webkit-transition: all 10s linear;
+	    -moz-transition: all 10s linear;
+	    -o-transition: all 10s linear;
+	    -ms-transition: all 10s linear;
+		transition: all 10s linear;
+}
+.users-console .right ul li {
+	background-color: #E9E3DC;
+    border: 1px solid #CBBDAD;
+	border-top:none;
+    color: #1C1711;
+	margin:0;
+	padding:5px 14px;
+}
+.users-console .right ul li:first-child {
+	border-top:1px solid #CBBDAD;
+}
+.users-console .right ul li a{
+    color: #000;
+}
+.users-console .right ul li:hover {
+	background-color: #D5CABD;
+}
+.users-console .right ul li:hover a{
+    color: #fff;
+}
+.users-console p.user-console-small {
+	font-size:11px;
+}
+/*End: users-console*/
+/*Start: custom css*/
+.component .side-nav li.nav-header {
+	padding:7px 14px 2px;
+	margin:10px 0 0;
+}
+.component .side-nav li.nav-header a.trigger,
+.component .side-nav li.nav-header a.activetrigger{
+	background: url("../img/bottom-select.png") no-repeat scroll 100% center transparent;
+    border-radius: 2px 2px 2px 2px;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 17px;
+    height: 32px;
+   margin:-3px -7px 2px;
+    padding: 6px;
+    transition: all 0.15s linear 0s;
+    width: 100%;
+}
+.component .side-nav li.nav-header a.trigger {
+	background:transparent url("../img/right-select.png") no-repeat 100% center;
+}
+.dropdownhidden {
+	display:none;
+	width:100%;
+}
+.dropdownvisible {
+	margin:0 0 10px;
+	float:left;
+}
+/*End: custom css*/
+/*Start: static-container*/
+.static-container ul,
+.static-container ol {
+	padding:0 0 0 30px;
+}
+.static-container ul ol,
+.static-container ul ul,
+.static-container ol ol,
+.static-container ol ul{
+	margin:0;
+}
+.static-container ul ol li,
+.static-container ul ul li,
+.static-container ol ol li,
+.static-container ol ul li{
+	margin:10px 0 0;
+}
+.static-container  ol li,
+.static-container  ul li,
+.static-container  ol li,
+.static-container  ul li{
+	margin:10px 0 0;
+}
+.static-container span {
+	font-size:14px;
+	float:left;
+	clear:both;
+	width:100%;
+}
+.static-container p.phone {
+	font-size:16px;
+	line-height: 22px;
+}
+.static-container p {
+	font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    margin-bottom: 26px;
+}
+.static-container span.bolder {
+	font-size:14px;
+	float:none;
+	clear:none;
+	font-weight:bold;
+	width:auto;
+}
+.static-container h2 {
+	font-size:22px;
+	color:#ff8400;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin:0 0 15px;
+}
+.static-container h3 {
+	font-size: 18px;
+    font-weight: normal;
+    margin: 0 0 6px;
+}
+.static-container h4 {
+	font-size:16px;
+}
+/*End: static-container*/
+
+ul.side-nav li.active a {
+    font-weight: normal;
+	color:#000000;
+}

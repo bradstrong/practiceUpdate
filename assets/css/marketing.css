@@ -7005,6 +7005,375 @@ line {
     width: 100%;
   }
 }
+/* line 629, ../sass/_my-custom-style.scss */
+.component {
+  background-color: transparent;
+  float: left;
+  width: 100%;
+  margin: 1% 0 0%;
+  padding: 1% 0 4%;
+  border-bottom: 1px dotted #C6C6BC;
+}
+
+/* line 638, ../sass/_my-custom-style.scss */
+.meet-experts,
+.dashboard .account-question {
+  background-color: #fff !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  padding: 14px !important;
+  float: left;
+  margin: 1% 0 4% !important;
+  width: 100%;
+}
+
+/* line 646, ../sass/_my-custom-style.scss */
+.user-console .split {
+  text-align: left;
+  width: 100%;
+}
+
+/* line 650, ../sass/_my-custom-style.scss */
+.component .nav-header {
+  background: none;
+}
+
+/* line 653, ../sass/_my-custom-style.scss */
+.component .side-nav {
+  padding: 0;
+}
+
+/* line 656, ../sass/_my-custom-style.scss */
+.component .side-nav .dropdownvisible li {
+  background-color: #E9E3DC;
+  border: 1px solid #CBBDAD;
+  border-top: none;
+  color: #1C1711;
+  margin: 0 0;
+  padding: 5px 14px;
+  width: 100%;
+}
+
+/* line 665, ../sass/_my-custom-style.scss */
+.component .side-nav .dropdownvisible li:hover {
+  background-color: #c3b7a8;
+}
+
+/* line 668, ../sass/_my-custom-style.scss */
+.component .side-nav li:hover li a {
+  color: #000;
+}
+
+/* line 671, ../sass/_my-custom-style.scss */
+.component .side-nav li li:hover a {
+  color: #b87c2b;
+}
+
+/* line 674, ../sass/_my-custom-style.scss */
+.component .side-nav li {
+  background-color: #E9E3DC;
+  border: 1px solid #CBBDAD;
+  border-top: none;
+  color: #1C1711;
+  margin: 0;
+  float: left;
+  width: 100%;
+  padding: 5px 14px;
+}
+
+/* line 684, ../sass/_my-custom-style.scss */
+.component .side-nav li a {
+  color: #000;
+}
+
+/* line 687, ../sass/_my-custom-style.scss */
+.component .side-nav li:hover {
+  background-color: #D5CABD;
+}
+
+/* line 690, ../sass/_my-custom-style.scss */
+.component .side-nav li li a {
+  text-transform: capitalize;
+}
+
+/* line 693, ../sass/_my-custom-style.scss */
+.component .side-nav {
+  background: none;
+}
+
+/* line 696, ../sass/_my-custom-style.scss */
+.component .side-nav li.nav-header {
+  background-color: #D5CABD;
+  border: none;
+  border-bottom: 1px solid #CBBDAD;
+}
+
+/* line 701, ../sass/_my-custom-style.scss */
+.dashboard .cta {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 708, ../sass/_my-custom-style.scss */
+li.nav-header,
+.recommended h5,
+.recommended .cta .cta-title,
+.cta .recommended .cta-title {
+  color: #C6C6BC;
+  font-size: 17px;
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 715, ../sass/_my-custom-style.scss */
+.recommended .widget {
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  padding: 14px;
+  float: left;
+  margin: 1% 0 4%;
+}
+
+/* line 722, ../sass/_my-custom-style.scss */
+.recommended .widget li:first-child {
+  border-top: none;
+}
+
+/* line 725, ../sass/_my-custom-style.scss */
+.recommended .widget li {
+  border-top: 1px dotted #C6C6BC;
+}
+
+/*Start: user-consol*/
+/* line 729, ../sass/_my-custom-style.scss */
+.dashboard .cta.users-console {
+  background: #0084A9;
+  padding: 1em !important;
+  padding-bottom: 1em !important;
+  z-index: 10 !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+/* line 737, ../sass/_my-custom-style.scss */
+.users-console p {
+  color: #fff;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* line 742, ../sass/_my-custom-style.scss */
+.users-console .right {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+/* line 750, ../sass/_my-custom-style.scss */
+.users-console .right span {
+  background: transparent url("../img/linkD.png") no-repeat center center;
+  width: 13px;
+  height: 11px;
+  float: right;
+}
+
+/* line 756, ../sass/_my-custom-style.scss */
+.users-console .right ul {
+  border-radius: 5px 5px 5px 5px;
+  list-style-type: none;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  width: 180px;
+}
+
+/* line 768, ../sass/_my-custom-style.scss */
+.users-console .right:hover ul {
+  display: block;
+  -webkit-transition: all 10s linear;
+  -moz-transition: all 10s linear;
+  -o-transition: all 10s linear;
+  -ms-transition: all 10s linear;
+  transition: all 10s linear;
+}
+
+/* line 776, ../sass/_my-custom-style.scss */
+.users-console .right ul li {
+  background-color: #E9E3DC;
+  border: 1px solid #CBBDAD;
+  border-top: none;
+  color: #1C1711;
+  margin: 0;
+  padding: 5px 14px;
+}
+
+/* line 784, ../sass/_my-custom-style.scss */
+.users-console .right ul li:first-child {
+  border-top: 1px solid #CBBDAD;
+}
+
+/* line 787, ../sass/_my-custom-style.scss */
+.users-console .right ul li a {
+  color: #000;
+}
+
+/* line 790, ../sass/_my-custom-style.scss */
+.users-console .right ul li:hover {
+  background-color: #D5CABD;
+}
+
+/* line 793, ../sass/_my-custom-style.scss */
+.users-console .right ul li:hover a {
+  color: #fff;
+}
+
+/* line 796, ../sass/_my-custom-style.scss */
+.users-console p.user-console-small {
+  font-size: 11px;
+}
+
+/*End: users-console*/
+/*Start: custom css*/
+/* line 801, ../sass/_my-custom-style.scss */
+.component .side-nav li.nav-header {
+  padding: 7px 14px 2px;
+  margin: 10px 0 0;
+}
+
+/* line 806, ../sass/_my-custom-style.scss */
+.component .side-nav li.nav-header a.trigger,
+.component .side-nav li.nav-header a.activetrigger {
+  background: url("../img/bottom-select.png") no-repeat scroll 100% center transparent;
+  border-radius: 2px 2px 2px 2px;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-size: 17px;
+  height: 32px;
+  margin: -3px -7px 2px;
+  padding: 6px;
+  transition: all 0.15s linear 0s;
+  width: 100%;
+}
+
+/* line 819, ../sass/_my-custom-style.scss */
+.component .side-nav li.nav-header a.trigger {
+  background: transparent url("../img/right-select.png") no-repeat 100% center;
+}
+
+/* line 822, ../sass/_my-custom-style.scss */
+.dropdownhidden {
+  display: none;
+  width: 100%;
+}
+
+/* line 826, ../sass/_my-custom-style.scss */
+.dropdownvisible {
+  margin: 0 0 10px;
+  float: left;
+}
+
+/*End: custom css*/
+/*Start: static-container*/
+/* line 833, ../sass/_my-custom-style.scss */
+.static-container ul,
+.static-container ol {
+  padding: 0 0 0 30px;
+}
+
+/* line 839, ../sass/_my-custom-style.scss */
+.static-container ul ol,
+.static-container ul ul,
+.static-container ol ol,
+.static-container ol ul {
+  margin: 0;
+}
+
+/* line 845, ../sass/_my-custom-style.scss */
+.static-container ul ol li,
+.static-container ul ul li,
+.static-container ol ol li,
+.static-container ol ul li {
+  margin: 10px 0 0;
+}
+
+/* line 851, ../sass/_my-custom-style.scss */
+.static-container ol li,
+.static-container ul li,
+.static-container ol li,
+.static-container ul li {
+  margin: 10px 0 0;
+}
+
+/* line 854, ../sass/_my-custom-style.scss */
+.static-container span {
+  font-size: 14px;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+/* line 860, ../sass/_my-custom-style.scss */
+.static-container p.phone {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* line 864, ../sass/_my-custom-style.scss */
+.static-container p {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+
+/* line 871, ../sass/_my-custom-style.scss */
+.static-container span.bolder {
+  font-size: 14px;
+  float: none;
+  clear: none;
+  font-weight: bold;
+  width: auto;
+}
+
+/* line 878, ../sass/_my-custom-style.scss */
+.static-container h2 {
+  font-size: 22px;
+  color: #ff8400;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+
+/* line 885, ../sass/_my-custom-style.scss */
+.static-container h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 6px;
+}
+
+/* line 890, ../sass/_my-custom-style.scss */
+.static-container h4 {
+  font-size: 16px;
+}
+
+/*End: static-container*/
+/* line 895, ../sass/_my-custom-style.scss */
+ul.side-nav li.active a {
+  font-weight: normal;
+  color: #000000;
+}
+
 /* typography */
 /* line 55, ../sass/marketing.scss */
 body {

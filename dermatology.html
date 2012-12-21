@@ -1,1 +1,121 @@
-<!-- TODO: Dermatology Newsletter signup pages -->
+﻿<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	<meta name="description" content="View all the latest news and articles, personalized for you, in a single view.">
+
+	<title>PracticeUpdate : Update</title>
+	
+
+	<!-- Include CSS Files -->
+	
+	<!-- link rel="stylesheet" href="assets/css/app.css" -->
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+	<!-- Include Modernizr -->
+	<script src="assets/js/foundation/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body id="update" class="update off-canvas custom-mockup">
+	<div class="page-header">
+		<p>Page header</p>
+	</div>
+		<div class="page-banner-container">
+			<div class="page-banner row">
+                <div class="brand-container six columns">
+                    <h1 class="specialty-name">Dermatology</h1>
+                    <p class="tagline">What matters to your practice. <span class="tagline-str2">In our expert opinion.</span></p>
+                    <p>PracticeUpdate connects healthcare professionals with the information that matters most for patient care.</p>
+                </div>
+				<div class="login-register-container">
+				</div><!--/.login-register-container-->
+			</div>
+		</div>
+		<div class="page-content-first">
+			<div class="expert-letter row">
+                <div class="expert-letter-copy eight columns centered">
+                    <h3 class="copy-header">Just what the doctors ordered</h3>
+                    <p class="letter-body">As practicing dermatologists, you and I both know how challenging it can be with the volume of constantly evolving information, to know what really matters to your practice. That’s why I am excited to tell you about PracticeUpdate from Elsevier—a valuable new online tool that will give you access to the information of greatest interest to you whenever and wherever you need it.</p>
+                    <p class="letter-body">Robert Brodell, M.D., Editor-in-Chief</p>
+                </div>
+			</div>
+		</div>
+		<div class="page-content-second">
+            <div class="row site-benefits">
+                <div class="twelve columns">
+                    <h2 class="copy-header">Each week, PracticeUpdate will deliver</h2><!--/.copy-header-->
+                </div>
+                <div class="four columns">
+                    <h3>Weekly scans of the premiere Cariology journals </h3>
+                    <p>Our Expert Editorial team hand selects research that matters most to your practice</p>
+                </div><!--/.four.columns -->
+
+                <div class="four columns">
+                    <h3>Expert summary and commentary</h3>
+                    <p>Put the most important findings of the week into perspective</p>
+                </div><!--/.four.columns -->
+
+                <div class="four columns">
+                    <h3>The latest news, research, and clinical findings</h3>
+                    <p>A personalized web interface based on your specific interests and specialty that you can access from any device</p>
+                </div><!--/.four.columns -->
+            </div>
+		</div>
+	<div class="page-footer-container">
+		<footer class="page-footer">
+		</footer><!-- /.page-footer -->
+	</div>
+	<!-- Included JS Files (Uncompressed) -->
+  <script src="assets/js/foundation/jquery.js"></script>
+<!--   <script src="assets/js/plugins-ck.js"></script> -->
+ 
+	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>	
+	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.forms.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.navigation.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>	
+	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.tooltips.js"></script>
+	<script src="assets/js/foundation/jquery.placeholder.js"></script>
+	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
+	<script src="assets/js/mustache.js"></script>
+	<script src="assets/js/foundation/app.js"></script>
+    <script>
+    jQuery(function($) {
+        $.get('assets/mustache/modal-password-reset-confirmation.mustache', function(template) {
+            var html = Mustache.to_html(template);
+            $('body').append(html);
+
+            var modal = $('#modals-forgot-password');
+            modal.find('#Submit').click(function() {
+                $('#modal-password-reset-confirmation').reveal()
+            })
+        });
+    })
+	<!-- Mustache - landing pages login-register -->
+	$.get('assets/mustache/login-register.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template);
+	    $('.login-register-container').html(html);
+		});
+    </script>
+
+</body>
+</html>

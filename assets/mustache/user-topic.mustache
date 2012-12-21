@@ -1,27 +1,27 @@
 <nav role="navigation">
-    <ul class="side-nav">
-        <li class="nav-header">All</li>
-    <!-- BEGIN TEST -->
-
-    <li class="selected"><a href="#">All My Channels</a></li>
-    <li><a href="#">Oncology</a></li>
-    <li><a href="#">Dermatology</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Add / Change Channel</a></li>
-
-    <!-- END TEST -->
-    <!-- 
-<li>Bladder</li>
-<li>Bone</li>
-<li>Breast</li>
-<li>CNS/Brain</li>
-<li>Colon and Rectum</li>
-<li>Endocrine System</li>
-<li>Esophagus</li>
-<li>GYN (Non-Ovary)</li>
-<li>GYN (Ovary)</li>
-<li>Head and Neck</li>
-
--->
-    </ul>
+    <ul id="ul-specialties" class="side-nav">
+        <li class="nav-header">
+            <select id="SpecialtyId" class="turnintodropdown">
+				<option value="1">Oncology</option>
+				<option value="2">Urology</option>
+				<option value="3">Dermatology</option>
+				<option value="4">Primarycare</option>
+				<option value="5">Eyecare</option>
+				<option value="6">Cardiology</option>
+				<option value="1">All Channels</option>
+			</select>
+        </li>
+		<li class="hide tagmy" id="my0">
+			<a href="javascript:TagClick('my0');">All Oncology</a>
+		</li>
+		<li class="tagspall tagsp1" id="sp1">
+			<a href="javascript:TagClick('sp1');">My Oncology</a>
+		</li>
+		<li class="hide tagmy active topics-item" id="my1">
+			<a href="javascript:TagClick('my1');">Breast Cancer</a>
+		</li>
+		<li class="tagsingle tagsp1 topics-item" id="tag1">
+			<a href="javascript:TagClick('tag1');">Bladder Cancer</a>
+		</li>
+	</ul>
 </nav>
