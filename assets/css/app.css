@@ -676,7 +676,7 @@ h1, h2, h3, .user-name, h4, .channel-title, h5, .form-title, .cta-title, .user-p
   margin-top: 14px;
 }
 /* line 24, ../../../../.gem/ruby/1.9.1/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-h1 small, h2 small, h3 small, .user-name small, h4 small, .channel-title small, h5 small, .form-title small, .cta-title small, .user-profile-section-title small, h6 small {
+h1 small, h1 .widget.ad .ad-container .ad-title .ad-title-text, .widget.ad .ad-container .ad-title h1 .ad-title-text, h2 small, h2 .widget.ad .ad-container .ad-title .ad-title-text, .widget.ad .ad-container .ad-title h2 .ad-title-text, h3 small, .user-name small, h3 .widget.ad .ad-container .ad-title .ad-title-text, .widget.ad .ad-container .ad-title h3 .ad-title-text, .user-name .widget.ad .ad-container .ad-title .ad-title-text, .widget.ad .ad-container .ad-title .user-name .ad-title-text, h4 small, .channel-title small, h4 .widget.ad .ad-container .ad-title .ad-title-text, .widget.ad .ad-container .ad-title h4 .ad-title-text, .channel-title .widget.ad .ad-container .ad-title .ad-title-text, .widget.ad .ad-container .ad-title .channel-title .ad-title-text, h5 small, .form-title small, .cta-title small, .user-profile-section-title small, h5 .widget.ad .ad-container .ad-title .ad-title-text, .widget.ad .ad-container .ad-title h5 .ad-title-text, .form-title .widget.ad .ad-container .ad-title .ad-title-text, .widget.ad .ad-container .ad-title .form-title .ad-title-text, .cta-title .widget.ad .ad-container .ad-title .ad-title-text, .widget.ad .ad-container .ad-title .cta-title .ad-title-text, .user-profile-section-title .widget.ad .ad-container .ad-title .ad-title-text, .widget.ad .ad-container .ad-title .user-profile-section-title .ad-title-text, h6 small, h6 .widget.ad .ad-container .ad-title .ad-title-text, .widget.ad .ad-container .ad-title h6 .ad-title-text {
   font-size: 60%;
   color: white;
   line-height: 0;
@@ -742,7 +742,7 @@ strong, b {
 }
 
 /* line 40, ../../../../.gem/ruby/1.9.1/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-small {
+small, .widget.ad .ad-container .ad-title .ad-title-text {
   font-size: 60%;
   line-height: inherit;
 }
@@ -1135,7 +1135,7 @@ fieldset legend {
 }
 
 /* line 51, ../../../../.gem/ruby/1.9.1/gems/zurb-foundation-3.2.3/scss/foundation/common/_forms.scss */
-.error small, small.error {
+.error small, .error .widget.ad .ad-container .ad-title .ad-title-text, .widget.ad .ad-container .ad-title .error .ad-title-text, small.error, .widget.ad .ad-container .ad-title .error.ad-title-text {
   display: block;
   padding: 6px 4px;
   margin-top: -13px;
@@ -6679,72 +6679,92 @@ object, embed {
 /* line 6, ../sass/_ad.scss */
 .widget.ad .ad-container .ad-title {
   text-align: left;
+  margin: 14px;
 }
-/* line 8, ../sass/_ad.scss */
+/* line 9, ../sass/_ad.scss */
 .widget.ad .ad-container .ad-title .ad-title-text {
   text-transform: uppercase;
 }
-/* line 12, ../sass/_ad.scss */
+/* line 14, ../sass/_ad.scss */
 .widget.ad .ad-container .ad-content {
   background: transparent;
   display: block;
   overflow: hidden;
 }
 
-/* line 23, ../sass/_ad.scss */
+/* line 24, ../sass/_ad.scss */
+.page-content .widget.ad {
+  padding: 14px 0;
+}
+
+/* line 29, ../sass/_ad.scss */
 #leaderboard .ad-title {
   margin: 0 auto;
   width: 728px;
   text-align: left;
 }
-/* line 27, ../sass/_ad.scss */
+/* line 33, ../sass/_ad.scss */
 #leaderboard .ad-title .ad-title-text {
   text-transform: uppercase;
 }
-/* line 31, ../sass/_ad.scss */
+/* line 37, ../sass/_ad.scss */
 #leaderboard object, #leaderboard embed {
   display: block;
   height: 90px;
   width: 728px;
 }
 
-/* line 38, ../sass/_ad.scss */
+/* line 44, ../sass/_ad.scss */
 #leaderboardcontentinner {
   max-width: 728px;
   margin: 0 auto;
   max-height: 90px;
 }
 
-/* line 41, ../sass/_ad.scss */
+/* line 47, ../sass/_ad.scss */
 #boombox1 object, #boombox1 embed {
   display: block;
   height: 250px;
   width: 300px;
 }
 
-/* line 48, ../sass/_ad.scss */
+/* line 54, ../sass/_ad.scss */
 #boombox1contentinner {
   max-width: 300px;
   margin: 0 auto;
   max-height: 250px;
 }
 
-/* line 51, ../sass/_ad.scss */
+/* line 57, ../sass/_ad.scss */
 #boombox2 object, #boombox2 embed {
   display: block;
   height: 250px;
   width: 300px;
 }
 
-/* line 58, ../sass/_ad.scss */
+/* line 64, ../sass/_ad.scss */
 #boombox2contentinner {
   max-width: 300px;
   margin: 0 auto;
   max-height: 250px;
 }
 
+/* line 67, ../sass/_ad.scss */
+#skyscraper object, #skyscraper embed {
+  display: block;
+  height: 250px;
+  width: 300px;
+}
+
+/* line 74, ../sass/_ad.scss */
+#skyscrapercontentinner {
+  max-width: 300px;
+  margin: 0 auto;
+  max-height: 250px;
+}
+
 @media only screen and (max-width: 1279px) {
-  /* line 60, ../sass/_ad.scss */
+  /* line 76, ../sass/_ad.scss */
   body > .widget.ad {
     display: none;
   }
@@ -8323,11 +8343,12 @@ li.nav-header,
 /* line 737, ../sass/_my-custom-style.scss */
 .users-console p {
   color: #fff;
-  margin: 0;
+  margin: 0 0 -4px;
   font-weight: bold;
+  font-size: 17px;
 }
 
-/* line 742, ../sass/_my-custom-style.scss */
+/* line 743, ../sass/_my-custom-style.scss */
 .users-console .right, .users-console .page-header #main-nav, .page-header .users-console #main-nav {
   padding: 0;
   margin: 0;
@@ -8337,39 +8358,7 @@ li.nav-header,
   right: 14px;
 }
 
-/* line 750, ../sass/_my-custom-style.scss */
-.users-console .right span, .users-console .page-header #main-nav span, .page-header .users-console #main-nav span {
-  background: transparent url("../img/linkD.png") no-repeat center center;
-  width: 13px;
-  height: 11px;
-  float: right;
-}
-
-/* line 756, ../sass/_my-custom-style.scss */
-.users-console .right ul, .users-console .page-header #main-nav ul, .page-header .users-console #main-nav ul {
-  border-radius: 5px 5px 5px 5px;
-  list-style-type: none;
-  margin: 0;
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: white;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-  width: 180px;
-}
-
-/* line 768, ../sass/_my-custom-style.scss */
-.users-console .right:hover ul, .users-console .page-header #main-nav:hover ul, .page-header .users-console #main-nav:hover ul {
-  display: block;
-  -webkit-transition: all 10s linear;
-  -moz-transition: all 10s linear;
-  -o-transition: all 10s linear;
-  -ms-transition: all 10s linear;
-  transition: all 10s linear;
-}
-
-/* line 776, ../sass/_my-custom-style.scss */
+/* line 752, ../sass/_my-custom-style.scss */
 .users-console .right ul li, .users-console .page-header #main-nav ul li, .page-header .users-console #main-nav ul li {
   background-color: #E9E3DC;
   border: 1px solid #CBBDAD;
@@ -8379,40 +8368,112 @@ li.nav-header,
   padding: 5px 14px;
 }
 
-/* line 784, ../sass/_my-custom-style.scss */
+/* line 760, ../sass/_my-custom-style.scss */
 .users-console .right ul li:first-child, .users-console .page-header #main-nav ul li:first-child, .page-header .users-console #main-nav ul li:first-child {
   border-top: 1px solid #CBBDAD;
 }
 
-/* line 787, ../sass/_my-custom-style.scss */
+/* line 763, ../sass/_my-custom-style.scss */
 .users-console .right ul li a, .users-console .page-header #main-nav ul li a, .page-header .users-console #main-nav ul li a {
   color: #000;
 }
 
-/* line 790, ../sass/_my-custom-style.scss */
+/* line 766, ../sass/_my-custom-style.scss */
 .users-console .right ul li:hover, .users-console .page-header #main-nav ul li:hover, .page-header .users-console #main-nav ul li:hover {
   background-color: #D5CABD;
 }
 
-/* line 793, ../sass/_my-custom-style.scss */
+/* line 769, ../sass/_my-custom-style.scss */
 .users-console .right ul li:hover a, .users-console .page-header #main-nav ul li:hover a, .page-header .users-console #main-nav ul li:hover a {
   color: #fff;
 }
 
-/* line 796, ../sass/_my-custom-style.scss */
+/* line 772, ../sass/_my-custom-style.scss */
 .users-console p.user-console-small {
-  font-size: 11px;
+  font-size: 12px;
+}
+
+/* line 775, ../sass/_my-custom-style.scss */
+.users-console {
+  float: left;
+}
+
+/* line 778, ../sass/_my-custom-style.scss */
+.users-console .accordion {
+  float: left;
+}
+
+/* line 781, ../sass/_my-custom-style.scss */
+.users-console ul.accordion > li > div.title {
+  border: none !important;
+  background: transparent url("../img/linkD.png") no-repeat right 10px;
+  padding: 0;
+}
+
+/* line 786, ../sass/_my-custom-style.scss */
+ul.accordion > li > div.title:after {
+  border: none !important;
+}
+
+/* line 789, ../sass/_my-custom-style.scss */
+.dashboard .user-menu {
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 793, ../sass/_my-custom-style.scss */
+.dashboard .user-menu li:first-child {
+  border-top: none;
+}
+
+/* line 796, ../sass/_my-custom-style.scss */
+.dashboard .user-menu li {
+  float: left;
+  width: 100%;
+  border-top: 1px solid #007798;
+}
+
+/* line 801, ../sass/_my-custom-style.scss */
+.dashboard .user-menu li.active {
+  border-left: 7px solid #D6E03D;
+}
+
+/* line 804, ../sass/_my-custom-style.scss */
+.dashboard .user-menu li.active a {
+  padding: 4px 8px 4px 15px;
+}
+
+/* line 807, ../sass/_my-custom-style.scss */
+.dashboard .user-menu li a {
+  color: #fff;
+  float: left;
+  border: 1px solid #0084A9;
+  width: 100%;
+  padding: 4px 8px 4px 15px;
+}
+
+/* line 814, ../sass/_my-custom-style.scss */
+.dashboard .user-menu li a:hover {
+  border: 1px solid #007fa2;
+  background: #00a3d1;
+}
+
+/* line 818, ../sass/_my-custom-style.scss */
+.dashboard .accordion .content {
+  padding: 10px 0 0;
+  margin: 10px -14px 0;
+  border-top: 1px dotted #00708f !important;
 }
 
 /*End: users-console*/
 /*Start: custom css*/
-/* line 801, ../sass/_my-custom-style.scss */
+/* line 825, ../sass/_my-custom-style.scss */
 .component .side-nav li.nav-header {
   padding: 7px 14px 2px;
   margin: 10px 0 0;
 }
 
-/* line 806, ../sass/_my-custom-style.scss */
+/* line 830, ../sass/_my-custom-style.scss */
 .component .side-nav li.nav-header a.trigger,
 .component .side-nav li.nav-header a.activetrigger {
   background: url("../img/bottom-select.png") no-repeat scroll 100% center transparent;
@@ -8428,18 +8489,18 @@ li.nav-header,
   width: 100%;
 }
 
-/* line 819, ../sass/_my-custom-style.scss */
+/* line 843, ../sass/_my-custom-style.scss */
 .component .side-nav li.nav-header a.trigger {
   background: transparent url("../img/right-select.png") no-repeat 100% center;
 }
 
-/* line 822, ../sass/_my-custom-style.scss */
+/* line 846, ../sass/_my-custom-style.scss */
 .dropdownhidden {
   display: none;
   width: 100%;
 }
 
-/* line 826, ../sass/_my-custom-style.scss */
+/* line 850, ../sass/_my-custom-style.scss */
 .dropdownvisible {
   margin: 0 0 10px;
   float: left;
@@ -8447,13 +8508,13 @@ li.nav-header,
 
 /*End: custom css*/
 /*Start: static-container*/
-/* line 833, ../sass/_my-custom-style.scss */
+/* line 857, ../sass/_my-custom-style.scss */
 .static-container ul,
 .static-container ol {
   padding: 0 0 0 30px;
 }
 
-/* line 839, ../sass/_my-custom-style.scss */
+/* line 863, ../sass/_my-custom-style.scss */
 .static-container ul ol,
 .static-container ul ul,
 .static-container ol ol,
@@ -8461,7 +8522,7 @@ li.nav-header,
   margin: 0;
 }
 
-/* line 845, ../sass/_my-custom-style.scss */
+/* line 869, ../sass/_my-custom-style.scss */
 .static-container ul ol li,
 .static-container ul ul li,
 .static-container ol ol li,
@@ -8469,7 +8530,7 @@ li.nav-header,
   margin: 10px 0 0;
 }
 
-/* line 851, ../sass/_my-custom-style.scss */
+/* line 875, ../sass/_my-custom-style.scss */
 .static-container ol li,
 .static-container ul li,
 .static-container ol li,
@@ -8477,7 +8538,7 @@ li.nav-header,
   margin: 10px 0 0;
 }
 
-/* line 854, ../sass/_my-custom-style.scss */
+/* line 878, ../sass/_my-custom-style.scss */
 .static-container span {
   font-size: 14px;
   float: left;
@@ -8485,13 +8546,13 @@ li.nav-header,
   width: 100%;
 }
 
-/* line 860, ../sass/_my-custom-style.scss */
+/* line 884, ../sass/_my-custom-style.scss */
 .static-container p.phone {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
 }
 
-/* line 864, ../sass/_my-custom-style.scss */
+/* line 888, ../sass/_my-custom-style.scss */
 .static-container p {
   font-family: inherit;
   font-size: 14px;
@@ -8500,7 +8561,7 @@ li.nav-header,
   margin-bottom: 26px;
 }
 
-/* line 871, ../sass/_my-custom-style.scss */
+/* line 895, ../sass/_my-custom-style.scss */
 .static-container span.bolder {
   font-size: 14px;
   float: none;
@@ -8509,30 +8570,52 @@ li.nav-header,
   width: auto;
 }
 
-/* line 878, ../sass/_my-custom-style.scss */
+/* line 902, ../sass/_my-custom-style.scss */
 .static-container h2 {
   font-size: 22px;
-  color: #ff8400;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0 0 15px;
 }
 
-/* line 885, ../sass/_my-custom-style.scss */
+/* line 908, ../sass/_my-custom-style.scss */
 .static-container h3, .static-container .user-name {
   font-size: 18px;
   font-weight: normal;
   margin: 0 0 6px;
 }
 
-/* line 890, ../sass/_my-custom-style.scss */
+/* line 913, ../sass/_my-custom-style.scss */
 .static-container h4, .static-container .channel-title {
   font-size: 16px;
 }
 
+/* line 916, ../sass/_my-custom-style.scss */
+.static-container p.phone-contact {
+  margin: -30px 0 26px;
+}
+
+/* line 919, ../sass/_my-custom-style.scss */
+.static-container .links {
+  margin: 0 20px 20px 0;
+}
+
 /*End: static-container*/
-/* line 895, ../sass/_my-custom-style.scss */
+/* line 924, ../sass/_my-custom-style.scss */
+ul.side-nav li.active {
+  border-left: 7px solid #0084A9;
+}
+
+/* line 927, ../sass/_my-custom-style.scss */
 ul.side-nav li.active a {
   font-weight: normal;
   color: #000000;
+}
+
+/* line 931, ../sass/_my-custom-style.scss */
+.dashboard .panel, .dashboard .query-no-results, .dashboard .cta, .dashboard .query-no-results, .dashboard .cta {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 20px;
 }
