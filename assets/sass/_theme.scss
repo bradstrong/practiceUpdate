@@ -1,5 +1,5 @@
 //article{
-.in-stream{
+.in-stream, .single-item{
 	background-color:$white;
 	@include elementBoxShadow;
 }
@@ -149,7 +149,7 @@ padding-top: $baseFontSize/2;
 
 .beta-accept-sub{display: none;}
 
-.specialty-name{
+.specialty-name, .brand-name{
 	color:$white;
 	font-size: ms(7);
 	text-transform:uppercase;

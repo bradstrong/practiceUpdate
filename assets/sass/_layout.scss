@@ -63,9 +63,12 @@
 
 // Flag
 .flag-container{
-	@include innerRow(collapse);
+	//@include innerRow();
+	@include column(12);
 	font-family: $headerFontFamily;
 	line-height:1.5;
+	padding-top: $baseFontSize/2;
+	padding-bottom: $baseFontSize/2;
 	.flag{
 		@extend .radius;
 		@extend .label;
@@ -93,7 +96,7 @@
 .cme-container{@include column(12); @include mobileRow();}
 
 /* !Single Item */
-.single-item-container{@include column(7, collapse); @include mobileRow();}
+.single-item-container{@include column(7); @include mobileRow();}
 
 /* !Explore Layout */
 .register-container{@include column(7, collapse); @include mobileRow();}
@@ -106,7 +109,8 @@
 /* Page Specific Styles*/
 /* Single Item page elements*/
 
-.item-header{@include innerRow(collapse);
+.item-header-container{@include column(12);}
+.item-header{@include innerRow();
 	padding-top:$baseFontSize/2;}
 .item-title-container{@include column(12);}
 .item-type{@include column(7);}
@@ -131,14 +135,6 @@
 
 .item-source-container{
 	@include column(12);
-	.item-source{
-		.item-title, cite{font-size: ms(0); font-style:normal;}
-		@include clearfix();
-		background-color:light($bodyBackground, 25);
-		border-top:1px solid lighten($bodyFontColor, 55);
-		//padding-top:.5em;
-		//padding-bottom:.5em;
-	}
 	figure[class$="-photo"]{
 		@include column(2);
 	}
@@ -147,9 +143,19 @@
 	}
 }
 
+.item-source{
+	padding-bottom:$baseFontSize;
+	.item-title, cite{font-size: ms(0); font-style:normal;}
+	@include clearfix();
+	background-color:light($bodyBackground, 25);
+	border-top:1px solid lighten($bodyFontColor, 55);
+	//padding-top:.5em;
+	//padding-bottom:.5em;
+}
+
 /* Page Specific Styles*/
 /* Single Item page elements*/
-.single-item{}
+.single-item{@include innerRow();}
 
 /* !Update Page Elements */
 /* !stream */
