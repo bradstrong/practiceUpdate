@@ -143,8 +143,6 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 	@include column(12);
 	section{
 		@include innerRow();
-		background: $itemBackground;
-		@include elementBoxShadow();
 		margin-bottom:$columnGutter/3;
 	}
 }
