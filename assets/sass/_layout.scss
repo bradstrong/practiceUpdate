@@ -106,6 +106,9 @@
 .user-profile-container{@include column(7, collapse); @include mobileRow();}
 .channel-list-container{@include column(7, collapse); @include mobileRow();}
 
+/* !Stat pages */
+.static-container{@include column(7, collapse); @include mobileRow();}
+
 /* Page Specific Styles*/
 /* Single Item page elements*/
 
@@ -117,7 +120,6 @@
 .item-pub-date{@include column(5); text-align: right;}
 .item-container{
 	.commentary-container{@include column(12);}
-	.journal-title{font-size:ms(1);}
 	.source-title{font-size:ms(0);}
 }
 	.item-title{font-size:ms(1);}
@@ -162,6 +164,8 @@
 .stream-item-container{
 	margin-bottom: $columnGutter/3;
 }
+
+.vcard{}
 
 /* !Explore Page Elements*/
 .explore-feature .feature-item{background: $white;}

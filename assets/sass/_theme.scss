@@ -1,5 +1,5 @@
 //article{
-.in-stream, .single-item{
+.in-stream, .single-item, .user-profile, .user-group, .channel-list-container{
 	background-color:$white;
 	@include elementBoxShadow;
 }
@@ -30,11 +30,15 @@ body{
 }
 
 //type
+.journal-title{
+	color:$pri-blue;
+	font-size:ms(1);
+}
+
 .item-title, .item-type, .item-pub-date{
 	font-family:$titleFontFamily;
 	font-weight:normal;
 	color:ter-ltTan;
-	text-transform:uppercase;
 }
 
 .subheader{ color:$headerFontColor;}
