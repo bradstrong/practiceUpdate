@@ -94,15 +94,18 @@
 	<section id="sidebar" role="complementary">
 		<div class="dashboard">
 			<div class="cta users-console">
-			   <p>Dr. {{First}} {{Last}}</p>
-			   <p class="user-console-small">{{Profession}}</p>
-			   <ul class="right">
+				<ul class="accordion">
 					<li>
-						<span></span>
-						<ul class="user-menu">
-							<li><a href="preferences.html">My Profile & Settings</a></li>
-							<li><a href="logout.html">Logout</a></li>
-						</ul>
+						<div class="title">
+							<p>Dr. {{First}} {{Last}}</p>
+							<p class="user-console-small">{{Profession}}</p>
+						</div>
+						<div class="content">
+							<ul class="user-menu">
+								<li class="active"><a href="preferences.html">My Profile & Settings</a></li>
+								<li><a href="logout.html">Logout</a></li>
+							</ul>
+						</div>
 					</li>
 				</ul>
 			</div>
