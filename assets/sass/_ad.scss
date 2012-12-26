@@ -73,7 +73,10 @@
 #skyscrapercontent{}
 #skyscrapercontentinner{ max-width: 300px; margin: 0 auto; max-height: 250px; }
 
+// Hide ad containers on mobile
+
 body > .widget.ad{@media only screen and (max-width: $screenMedium) {display:none;}}
+
 
 // standard leaderboard
 // 728X90

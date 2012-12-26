@@ -6884,7 +6884,7 @@ object, embed {
 }
 
 @media only screen and (max-width: 1279px) {
-  /* line 76, ../sass/_ad.scss */
+  /* line 78, ../sass/_ad.scss */
   body > .widget.ad {
     display: none;
   }
