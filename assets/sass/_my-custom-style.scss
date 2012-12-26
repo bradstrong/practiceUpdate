@@ -430,51 +430,51 @@ checked-list.width100 li:first-child{
 	font-weight:bold;
 }
 /*Start: formLogin*/
-.FormLoginWrapper {
-    background-color: white;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    float: right;
-    margin: 0 10px 0 0;
-    padding: 0 0 14px;
-    width: 450px;
-}
-#formLoginNotRegisterYet p {
-	margin:0 0 50px;
-}
-#formLogin {
-    float: left;
-    margin: 0 0 0 14px;
-    width: 51%;
-}
-#formLoginNotRegisterYet {
-	width:38%;
-	float:right;
-}
-#formLogin a.forgot{
-	clear: both;
-    float: left;
-    margin: 0 0 10px;
-}
-#formLogin a.form-submit{
-	margin:0 0 10px;
-	float:left;
-}
-#formLogin label {
-	float: right;
-    margin: 9px 0 0 0;
-}
-#formLogin h3{
-	font-size:18px;
-}
-.cta-title{
-	margin-bottom:7px;
-}
-#formLoginNotRegisterYet .cta-title{
-	margin-bottom:1px;
-}
-.formActionRight {
-	float:right;
-}
+// .FormLoginWrapper {
+//     background-color: white;
+//     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+//     float: right;
+//     margin: 0 10px 0 0;
+//     padding: 0 0 14px;
+//     width: 450px;
+// }
+// #formLoginNotRegisterYet p {
+// 	margin:0 0 50px;
+// }
+// #formLogin {
+//     float: left;
+//     margin: 0 0 0 14px;
+//     width: 51%;
+// }
+// #formLoginNotRegisterYet {
+// 	width:38%;
+// 	float:right;
+// }
+// #formLogin a.forgot{
+// 	clear: both;
+//     float: left;
+//     margin: 0 0 10px;
+// }
+// #formLogin a.form-submit{
+// 	margin:0 0 10px;
+// 	float:left;
+// }
+// #formLogin label {
+// 	float: right;
+//     margin: 9px 0 0 0;
+// }
+// #formLogin h3{
+// 	font-size:18px;
+// }
+// .cta-title{
+// 	margin-bottom:7px;
+// }
+// #formLoginNotRegisterYet .cta-title{
+// 	margin-bottom:1px;
+// }
+// .formActionRight {
+// 	float:right;
+// }
 /*End: formLogin*/
 /*Start: Alert*/
 .AlertWhite .cta-title {

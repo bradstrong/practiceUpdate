@@ -2,7 +2,7 @@
 /* !Type */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_semantic-grid.scss */
-.top-bar ul > li.name, .top-bar section, .page-footer .copyright, .footer-section-container, .flag-container, .recommended, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-footer, .commentary-container div[class$="-photo"], .commentary-container div[class$="-name"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .single-channel, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .user-group, .profile-overview, .profile-photo, .user-detail-list dt, .user-detail-list dd, .user-profile-section, .login-register-container, #formLogin, #formRegisterPrompt, .footer-row {
+.top-bar ul > li.name, .top-bar section, .page-footer .copyright, .footer-section-container, .flag-container, .recommended, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-footer, .commentary-container div[class$="-photo"], .commentary-container div[class$="-name"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .single-channel, .password-signin .password, .password-signin .signin, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .user-group, .profile-overview, .profile-photo, .user-detail-list dt, .user-detail-list dd, .user-profile-section, .login-register-container, #formLogin, #formRegisterPrompt, .footer-row {
   float: left;
 }
 
@@ -12,28 +12,28 @@
 }
 
 /* line 55, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_semantic-grid.scss */
-article, .page-content, .page-footer, .footer-section-container .footer-section, .item-header, .single-item, .channel-list, .explore-sections section, .user-directory-header, .user-directory, .profile-card, .profile-details, .user-detail-list, .login-register {
+article, .page-content, .page-footer, .footer-section-container .footer-section, .item-header, .single-item, .channel-list, .password-signin, .explore-sections section, .user-directory-header, .user-directory, .profile-card, .profile-details, .user-detail-list, .login-register {
   *zoom: 1;
 }
 /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_clearfix.scss */
-article:before, .page-content:before, .page-footer:before, .footer-section-container .footer-section:before, .item-header:before, .single-item:before, .channel-list:before, .explore-sections section:before, .user-directory-header:before, .user-directory:before, .profile-card:before, .profile-details:before, .user-detail-list:before, .login-register:before, article:after, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .item-header:after, .single-item:after, .channel-list:after, .explore-sections section:after, .user-directory-header:after, .user-directory:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .login-register:after {
+article:before, .page-content:before, .page-footer:before, .footer-section-container .footer-section:before, .item-header:before, .single-item:before, .channel-list:before, .password-signin:before, .explore-sections section:before, .user-directory-header:before, .user-directory:before, .profile-card:before, .profile-details:before, .user-detail-list:before, .login-register:before, article:after, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .item-header:after, .single-item:after, .channel-list:after, .password-signin:after, .explore-sections section:after, .user-directory-header:after, .user-directory:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .login-register:after {
   content: " ";
   display: table;
 }
 /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_clearfix.scss */
-article:after, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .item-header:after, .single-item:after, .channel-list:after, .explore-sections section:after, .user-directory-header:after, .user-directory:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .login-register:after {
+article:after, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .item-header:after, .single-item:after, .channel-list:after, .password-signin:after, .explore-sections section:after, .user-directory-header:after, .user-directory:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .login-register:after {
   clear: both;
 }
 
 /* line 59, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_semantic-grid.scss */
-article, .footer-section-container .footer-section, .item-header, .single-item, .channel-list, .explore-sections section, .user-directory-header, .user-directory, .profile-card, .profile-details, .user-detail-list, .login-register {
+article, .footer-section-container .footer-section, .item-header, .single-item, .channel-list, .password-signin, .explore-sections section, .user-directory-header, .user-directory, .profile-card, .profile-details, .user-detail-list, .login-register {
   width: auto;
   max-width: none;
   min-width: 0;
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/mixins/_semantic-grid.scss */
-.top-bar ul > li.name, .top-bar section, .page-footer .copyright, .footer-section-container, .flag-container, .recommended, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-footer, .commentary-container div[class$="-photo"], .commentary-container div[class$="-name"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .single-channel, .load-more, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .user-group, .profile-overview, .profile-photo, .user-detail-list dt, .user-detail-list dd, .user-profile-section, .login-register-container, #formLogin, #formRegisterPrompt, .footer-row {
+.top-bar ul > li.name, .top-bar section, .page-footer .copyright, .footer-section-container, .flag-container, .recommended, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-footer, .commentary-container div[class$="-photo"], .commentary-container div[class$="-name"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .single-channel, .load-more, .password-signin .password, .password-signin .signin, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .user-group, .profile-overview, .profile-photo, .user-detail-list dt, .user-detail-list dd, .user-profile-section, .login-register-container, #formLogin, #formRegisterPrompt, .footer-row {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -6704,12 +6704,44 @@ object, embed {
 }
 
 /* !COMPONENTS */
-/* line 78, ../sass/_module.scss */
+/* line 70, ../sass/_module.scss */
+.password-signin {
+  margin: 0 -15px;
+}
+/* line 72, ../sass/_module.scss */
+.password-signin .password {
+  width: 66.66667%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 72, ../sass/_module.scss */
+  .password-signin .password {
+    float: left;
+    width: 100%;
+  }
+}
+/* line 73, ../sass/_module.scss */
+.password-signin .signin {
+  width: 33.33333%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 73, ../sass/_module.scss */
+  .password-signin .signin {
+    float: left;
+    width: 100%;
+  }
+}
+
+/* line 77, ../sass/_module.scss */
+.remember-forgot .remember, .remember-forgot .separator, .remember-forgot .forgot {
+  display: inline;
+}
+
+/* line 90, ../sass/_module.scss */
 .form-title {
   padding: .25em 0;
 }
 
-/* line 88, ../sass/_module.scss */
+/* line 100, ../sass/_module.scss */
 .help-block {
   display: block;
   padding: 6px 4px;
@@ -6718,28 +6750,28 @@ object, embed {
   font-size: 12px;
 }
 
-/* line 94, ../sass/_module.scss */
+/* line 106, ../sass/_module.scss */
 .alert-title {
   color: white;
 }
 
-/* line 104, ../sass/_module.scss */
+/* line 116, ../sass/_module.scss */
 .cta-title {
   padding: .25em 0;
 }
 
-/* line 108, ../sass/_module.scss */
+/* line 120, ../sass/_module.scss */
 .cta-title-text {
   font-size: 17px;
   text-transform: capitalize;
 }
 
-/* line 112, ../sass/_module.scss */
+/* line 124, ../sass/_module.scss */
 .cta-img-container {
   padding: .25em;
   text-align: center;
 }
-/* line 115, ../sass/_module.scss */
+/* line 127, ../sass/_module.scss */
 .cta-img-container img {
   border: 1px solid #c9c1b8;
   -webkit-box-shadow: 0 1px 1px white;
@@ -6747,11 +6779,11 @@ object, embed {
   box-shadow: 0 1px 1px white;
 }
 
-/* line 126, ../sass/_module.scss */
+/* line 138, ../sass/_module.scss */
 .widget ul {
   list-style: none;
 }
-/* line 129, ../sass/_module.scss */
+/* line 141, ../sass/_module.scss */
 .widget article {
   background: transparent;
 }
@@ -6858,19 +6890,19 @@ object, embed {
   }
 }
 
-/* line 137, ../sass/_module.scss */
+/* line 149, ../sass/_module.scss */
 .widget.els-branding {
   width: 25%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 137, ../sass/_module.scss */
+  /* line 149, ../sass/_module.scss */
   .widget.els-branding {
     float: left;
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 137, ../sass/_module.scss */
+  /* line 149, ../sass/_module.scss */
   .widget.els-branding {
     float: left;
     width: 25%;
@@ -6878,25 +6910,25 @@ object, embed {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 137, ../sass/_module.scss */
+  /* line 149, ../sass/_module.scss */
   .widget.els-branding {
     left: 75%;
   }
 }
 
-/* line 138, ../sass/_module.scss */
+/* line 150, ../sass/_module.scss */
 .widget.els-description {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 138, ../sass/_module.scss */
+  /* line 150, ../sass/_module.scss */
   .widget.els-description {
     float: left;
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 138, ../sass/_module.scss */
+  /* line 150, ../sass/_module.scss */
   .widget.els-description {
     float: left;
     width: 75%;
@@ -6904,25 +6936,25 @@ object, embed {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 138, ../sass/_module.scss */
+  /* line 150, ../sass/_module.scss */
   .widget.els-description {
     right: 25%;
   }
 }
 
-/* line 139, ../sass/_module.scss */
+/* line 151, ../sass/_module.scss */
 .widget.powered-by {
   width: 25%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 139, ../sass/_module.scss */
+  /* line 151, ../sass/_module.scss */
   .widget.powered-by {
     float: left;
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 139, ../sass/_module.scss */
+  /* line 151, ../sass/_module.scss */
   .widget.powered-by {
     float: left;
     width: 25%;
@@ -6930,166 +6962,166 @@ object, embed {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 139, ../sass/_module.scss */
+  /* line 151, ../sass/_module.scss */
   .widget.powered-by {
     left: 75%;
   }
 }
 
-/* line 142, ../sass/_module.scss */
+/* line 154, ../sass/_module.scss */
 .explore-sections {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 142, ../sass/_module.scss */
+  /* line 154, ../sass/_module.scss */
   .explore-sections {
     float: left;
     width: 100%;
   }
 }
-/* line 144, ../sass/_module.scss */
+/* line 156, ../sass/_module.scss */
 .explore-sections section {
   margin: 0 -15px;
   margin-bottom: 10px;
 }
 
-/* line 149, ../sass/_module.scss */
+/* line 161, ../sass/_module.scss */
 .section-widget {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 149, ../sass/_module.scss */
+  /* line 161, ../sass/_module.scss */
   .section-widget {
     float: left;
     width: 100%;
   }
 }
-/* line 151, ../sass/_module.scss */
+/* line 163, ../sass/_module.scss */
 .section-widget li {
   list-style: none;
 }
-/* line 152, ../sass/_module.scss */
+/* line 164, ../sass/_module.scss */
 .section-widget .meta.title {
   font-weight: bold;
 }
-/* line 155, ../sass/_module.scss */
+/* line 167, ../sass/_module.scss */
 .section-widget .section-header {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 155, ../sass/_module.scss */
+  /* line 167, ../sass/_module.scss */
   .section-widget .section-header {
     float: left;
     width: 100%;
   }
 }
-/* line 158, ../sass/_module.scss */
+/* line 170, ../sass/_module.scss */
 .section-widget .section-content {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 158, ../sass/_module.scss */
+  /* line 170, ../sass/_module.scss */
   .section-widget .section-content {
     float: left;
     width: 100%;
   }
 }
-/* line 161, ../sass/_module.scss */
+/* line 173, ../sass/_module.scss */
 .section-widget .section-content .entry {
   border-bottom: 1px solid white;
 }
 
-/* line 175, ../sass/_module.scss */
+/* line 187, ../sass/_module.scss */
 .user-directory-header {
   margin: 0;
 }
 
-/* line 176, ../sass/_module.scss */
+/* line 188, ../sass/_module.scss */
 .user-directory {
   margin: 0;
 }
 
-/* line 177, ../sass/_module.scss */
+/* line 189, ../sass/_module.scss */
 .user-group {
   padding: 0;
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 177, ../sass/_module.scss */
+  /* line 189, ../sass/_module.scss */
   .user-group {
     float: left;
     width: 100%;
   }
 }
 
-/* line 180, ../sass/_module.scss */
+/* line 192, ../sass/_module.scss */
 .profile-card {
   margin: 0 -15px;
 }
 
-/* line 181, ../sass/_module.scss */
+/* line 193, ../sass/_module.scss */
 .profile-details {
   margin: 0 -15px;
 }
 
-/* line 182, ../sass/_module.scss */
+/* line 194, ../sass/_module.scss */
 .profile-overview {
   width: 75%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 182, ../sass/_module.scss */
+  /* line 194, ../sass/_module.scss */
   .profile-overview {
     float: left;
     width: 100%;
   }
 }
 
-/* line 183, ../sass/_module.scss */
+/* line 195, ../sass/_module.scss */
 .profile-photo {
   width: 25%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 183, ../sass/_module.scss */
+  /* line 195, ../sass/_module.scss */
   .profile-photo {
     float: left;
     width: 100%;
   }
 }
 
-/* line 186, ../sass/_module.scss */
+/* line 198, ../sass/_module.scss */
 .user-detail-list {
   margin: 0 -15px;
 }
-/* line 188, ../sass/_module.scss */
+/* line 200, ../sass/_module.scss */
 .user-detail-list dt {
   width: 33.33333%;
   font-weight: bold;
 }
 @media only screen and (max-width: 767px) {
-  /* line 188, ../sass/_module.scss */
+  /* line 200, ../sass/_module.scss */
   .user-detail-list dt {
     float: left;
     width: 100%;
   }
 }
-/* line 192, ../sass/_module.scss */
+/* line 204, ../sass/_module.scss */
 .user-detail-list dd {
   width: 66.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 192, ../sass/_module.scss */
+  /* line 204, ../sass/_module.scss */
   .user-detail-list dd {
     float: left;
     width: 100%;
   }
 }
 
-/* line 196, ../sass/_module.scss */
+/* line 208, ../sass/_module.scss */
 .user-profile-section {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 196, ../sass/_module.scss */
+  /* line 208, ../sass/_module.scss */
   .user-profile-section {
     float: left;
     width: 100%;
@@ -7989,73 +8021,6 @@ checked-list.width100 li:first-child {
 }
 
 /*Start: formLogin*/
-/* line 433, ../sass/_my-custom-style.scss */
-.FormLoginWrapper {
-  background-color: white;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-  float: right;
-  margin: 0 10px 0 0;
-  padding: 0 0 14px;
-  width: 450px;
-}
-
-/* line 441, ../sass/_my-custom-style.scss */
-#formLoginNotRegisterYet p {
-  margin: 0 0 50px;
-}
-
-/* line 444, ../sass/_my-custom-style.scss */
-#formLogin {
-  float: left;
-  margin: 0 0 0 14px;
-  width: 51%;
-}
-
-/* line 449, ../sass/_my-custom-style.scss */
-#formLoginNotRegisterYet {
-  width: 38%;
-  float: right;
-}
-
-/* line 453, ../sass/_my-custom-style.scss */
-#formLogin a.forgot {
-  clear: both;
-  float: left;
-  margin: 0 0 10px;
-}
-
-/* line 458, ../sass/_my-custom-style.scss */
-#formLogin a.form-submit {
-  margin: 0 0 10px;
-  float: left;
-}
-
-/* line 462, ../sass/_my-custom-style.scss */
-#formLogin label {
-  float: right;
-  margin: 9px 0 0 0;
-}
-
-/* line 466, ../sass/_my-custom-style.scss */
-#formLogin h3, #formLogin .user-name {
-  font-size: 18px;
-}
-
-/* line 469, ../sass/_my-custom-style.scss */
-.cta-title {
-  margin-bottom: 7px;
-}
-
-/* line 472, ../sass/_my-custom-style.scss */
-#formLoginNotRegisterYet .cta-title {
-  margin-bottom: 1px;
-}
-
-/* line 475, ../sass/_my-custom-style.scss */
-.formActionRight {
-  float: right;
-}
-
 /*End: formLogin*/
 /*Start: Alert*/
 /* line 480, ../sass/_my-custom-style.scss */
