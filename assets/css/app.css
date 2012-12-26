@@ -2529,7 +2529,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   margin-bottom: 0;
 }
 /* line 86, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_ui.scss */
-.panel.callout, .query-no-results, .callout.cta, .cta.query-no-results {
+.panel.callout, .callout.query-no-results, .callout.cta {
   background: #0084a9;
   color: #fff;
   border-color: #005c76;
@@ -2538,18 +2538,18 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
 }
 /* line 87, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_ui.scss */
-.panel.callout a, .query-no-results a, .callout.cta a, .cta.query-no-results a {
+.panel.callout a, .callout.query-no-results a, .callout.cta a {
   color: #fff;
 }
 /* line 88, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_ui.scss */
-.panel.callout .button, .query-no-results .button, .callout.cta .button, .panel.callout .load-more-button, .query-no-results .load-more-button, .callout.cta .load-more-button, .cta.query-no-results .load-more-button, .panel.callout .form-submit, .query-no-results .form-submit, .callout.cta .form-submit, .cta.query-no-results .form-submit, .panel.callout .form-cancel, .query-no-results .form-cancel, .callout.cta .form-cancel, .cta.query-no-results .form-cancel, .panel.callout .view-more-button, .query-no-results .view-more-button, .callout.cta .view-more-button, .cta.query-no-results .view-more-button {
+.panel.callout .button, .callout.query-no-results .button, .callout.cta .button, .panel.callout .load-more-button, .callout.query-no-results .load-more-button, .callout.cta .load-more-button, .panel.callout .form-submit, .callout.query-no-results .form-submit, .callout.cta .form-submit, .panel.callout .form-cancel, .callout.query-no-results .form-cancel, .callout.cta .form-cancel, .panel.callout .view-more-button, .callout.query-no-results .view-more-button, .callout.cta .view-more-button {
   background: white;
   border: none;
   color: #0084a9;
   text-shadow: none;
 }
 /* line 90, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_ui.scss */
-.panel.callout .button:hover, .query-no-results .button:hover, .callout.cta .button:hover, .panel.callout .load-more-button:hover, .query-no-results .load-more-button:hover, .callout.cta .load-more-button:hover, .panel.callout .form-submit:hover, .query-no-results .form-submit:hover, .callout.cta .form-submit:hover, .panel.callout .form-cancel:hover, .query-no-results .form-cancel:hover, .callout.cta .form-cancel:hover, .panel.callout .view-more-button:hover, .query-no-results .view-more-button:hover, .callout.cta .view-more-button:hover {
+.panel.callout .button:hover, .callout.query-no-results .button:hover, .callout.cta .button:hover, .panel.callout .load-more-button:hover, .callout.query-no-results .load-more-button:hover, .callout.cta .load-more-button:hover, .panel.callout .form-submit:hover, .callout.query-no-results .form-submit:hover, .callout.cta .form-submit:hover, .panel.callout .form-cancel:hover, .callout.query-no-results .form-cancel:hover, .callout.cta .form-cancel:hover, .panel.callout .view-more-button:hover, .callout.query-no-results .view-more-button:hover, .callout.cta .view-more-button:hover {
   background: rgba(255, 255, 255, 0.8);
 }
 /* line 94, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_ui.scss */

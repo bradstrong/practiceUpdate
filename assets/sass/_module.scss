@@ -82,7 +82,7 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 .query-no-results{
 	@extend .panel;
 	@extend .radius;
-	@extend .callout;
+	// @extend .callout;
 }
 
 // FORM
