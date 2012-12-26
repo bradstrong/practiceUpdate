@@ -765,22 +765,6 @@ li.nav-header,
 	font-weight:normal;
 	text-transform:uppercase;
 }
-.recommended .widget,
-.recommended .recent {
-	background-color: white;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    padding: 14px;
-	float:left;
-	margin:1% 0 4%;
-}
-.recommended .widget li:first-child,
-.recommended .recent li:first-child{
-	border-top:none;
-}
-.recommended .widget li,
-.recommended .recent li{
-	border-top:1px dotted #C6C6BC;
-}
 .recent ul {
 	list-style-type:none;
 }
@@ -1117,4 +1101,10 @@ ul.side-nav li.active a {
 }
 .source-container .vcard {
 	width:100%;
+}
+.widget.recent .source-citation{
+	margin:0;
+}
+#cme-table h1 {
+	font-size:24px;
 }
