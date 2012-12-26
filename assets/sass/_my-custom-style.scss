@@ -39,7 +39,7 @@
 	float:right;
 	width:40%;
 	padding:0 1%;
-	background:#fff;
+	background:$white;
 	margin:10px 0;
 }
 .login-form legend {
@@ -151,11 +151,10 @@
 	margin:1% 0;
 	width:100%;
 }
+/*Start : tabs*/
 .tabs  {
 	width: 30%;
 	float:left;
-	height: auto;
-	list-style-type:none;	
 }
 .tabs dd {
 	width:100%;
@@ -170,7 +169,7 @@
 	padding: 0 20px;
 	width:100%;
 	line-height: 38px;
-	color:#fff;
+	color:$white;
 	font-weight:normal;
 	float:left;
 	height:auto;
@@ -178,10 +177,16 @@
 }
 .tabs dd.active a {
 	background: none repeat scroll 0 0 #0084A9;
-	color:#fff;
+	color:$white;
 	font-weight:normal;
 	border: 1px solid #333333;
 	border-bottom:none;
+}
+.disabled{
+  cursor: default;
+  & a{
+    cursor: default;
+  }
 }
 .tabs a:hover {
     background: none repeat scroll 0 0 #333333;
@@ -189,7 +194,7 @@
 	border-bottom:none;
 }
 .tabs dd a:focus, .tabs li a:focus {
-    color: #fff;
+    color: $white;
     font-weight: normal;
 }
 .tabs dd:last-child a{
@@ -201,7 +206,7 @@
 	border-bottom:none;
 }
 .tabs dd a:focus, .tabs li a:focus {
-    color: #fff;
+    color: $white;
     font-weight: normal;
 }
 .content-info {
@@ -329,7 +334,7 @@ checked-list.width100 li:first-child{
 // .topic-spotlight,
 // .board-text {
 // 	width:80%;
-// 	color:#fff;
+// 	color:$white;
 // 	text-align:center;
 // 	padding:10%;
 // 	margin:0 10% 10%;
@@ -338,7 +343,7 @@ checked-list.width100 li:first-child{
 .personal-info-block {
 	background:#fffde6;
 	width:80%;
-	color:#fff;
+	color:$white;
 	text-align:center;
 	padding:5% 10%;
 	margin:5% 10%;
@@ -445,13 +450,14 @@ checked-list.width100 li:first-child{
 	width:38%;
 	float:right;
 }
-#formLogin a{
+#formLogin a.forgot{
 	clear: both;
     float: left;
     margin: 0 0 10px;
 }
 #formLogin a.form-submit{
-	margin:0 0 10px 0;
+	margin:0 0 10px;
+	float:left;
 }
 #formLogin label {
 	float: right;
@@ -608,9 +614,36 @@ line {
 		float: left;
 		width: 100%;
 	}
+	#formLogin {
+		width:100%;
+		margin:0;
+	}
+	#formRegisterPrompt {
+		width: 100%;
+	}
+	.item-type {
+		float: left;
+		width: 58%;
+	}
+	.item-pub-date {
+		text-align: right;
+		width: 41.6667%;
+	}
+	.commentary-container p {
+		margin: 0 !important;
+	}
+	.commentary-container .source-container {
+		margin: 0 !important;
+	}
+	.source-container .expert-name {
+		margin: 0 !important;
+	}
+	.source-container .source-photo {
+		margin: 0 !important;
+	}
 }
 #main-nav li:hover {filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#{$topnav-lt}', endColorstr='#{$topnav-dk}');}
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1000px) {
 	#formLogin label {
 		float: left;
 		margin: 9px 0 7px;
@@ -625,6 +658,19 @@ line {
 		float: left;
 		width: 100%;
 	}
+	.commentary-container p {
+		margin: 0 !important;
+	}
+	.commentary-container .source-container {
+		margin: 0 !important;
+	}
+	.source-container .expert-name {
+		margin: 0 !important;
+	}
+	.source-container .source-photo {
+		margin: 0 !important;
+		clear: both;
+	}	
 }
 .component {
 	background-color: transparent;
@@ -636,7 +682,7 @@ line {
 }
 .meet-experts,
 .dashboard .account-question {
-	background-color: #fff !important;
+	background-color: $white !important;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     padding: 14px !important;
 	float:left;
@@ -675,14 +721,21 @@ line {
 	background-color: #E9E3DC;
     border: 1px solid #CBBDAD;
 	border-top:none;
+	border-bottom:none;
     color: #1C1711;
 	margin:0;
 	float:left;
-	width:100%;
-	padding:5px 14px;
+	width:100%;	
 }
 .component .side-nav li a{
     color: #000;
+	border-bottom: 1px solid #CBBDAD;
+	padding:5px 14px;
+}
+.component .side-nav li.nav-header a{
+    color: #000;
+	border-bottom: none;
+	padding:0;
 }
 .component .side-nav li:hover{
 	background-color: #D5CABD;
@@ -712,18 +765,24 @@ li.nav-header,
 	font-weight:normal;
 	text-transform:uppercase;
 }
-.recommended .widget {
+.recommended .widget,
+.recommended .recent {
 	background-color: white;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     padding: 14px;
 	float:left;
 	margin:1% 0 4%;
 }
-.recommended .widget li:first-child{
+.recommended .widget li:first-child,
+.recommended .recent li:first-child{
 	border-top:none;
 }
-.recommended .widget li{
+.recommended .widget li,
+.recommended .recent li{
 	border-top:1px dotted #C6C6BC;
+}
+.recent ul {
+	list-style-type:none;
 }
 /*Start: user-consol*/
 .dashboard .cta.users-console {
@@ -735,7 +794,7 @@ li.nav-header,
 	position:relative !important;
 }
 .users-console p {
-	color:#fff;
+	color:$white;
 	margin: 0 0 -4px;
 	font-weight:bold;
 	font-size:17px;
@@ -767,7 +826,7 @@ li.nav-header,
 	background-color: #D5CABD;
 }
 .users-console .right ul li:hover a{
-    color: #fff;
+    color: $white;
 }
 .users-console p.user-console-small {
 	font-size:12px;
@@ -806,7 +865,7 @@ ul.accordion > li > div.title:after {
 	padding:4px 8px 4px 15px;
 }
 .dashboard .user-menu li a{
-	color:#fff;
+	color:$white;
 	float:left;
 	border:1px solid #0084A9;
 	width:100%;
@@ -939,9 +998,9 @@ ul.side-nav li.active a {
 .commentary-container p {
 	float: left;
     margin: 0 0 0 130px;
-    width: 100%;
 	line-height: 23px;
 	text-transform:uppercase;
+	width:100%;
 }
 .commentary-container .source-container {
 	float: left;
@@ -951,7 +1010,7 @@ ul.side-nav li.active a {
 .source-container .expert-name{
 	float: left;
     margin: 14px 0 0 190px;
-    width: 100%;
+	width:100%;
 }
 .source-container .source-photo{
 	float: left;
@@ -1015,8 +1074,7 @@ ul.side-nav li.active a {
 }
 /*End: user-profile-container*/
 .footer-row {
-	width:25%;
-	float:left;
+	@include column(3);
 }
 .social-links,
 .utility-links,
@@ -1025,4 +1083,38 @@ ul.side-nav li.active a {
 }
 .social-links li{
 	display:inline;
+}
+/*Start: single item*/
+.single-item .item-content-section h3{
+	font-size:17px;
+	font-weight:normal;
+}
+.single-item .source-container {
+	float: left;
+    margin: -10px 0 10px;
+    width: 100%;
+}
+.single-item .source-container .expert-name {
+	font-size:12px;
+	margin:0;
+	padding:0;
+}
+.single-item .expert-photo {
+	padding:0 10px 0 0 !important;
+}
+.single-item .commentary-container p {
+	margin:0;
+	margin:0 0 10px;
+	text-transform: none;
+}
+/*End: single item*/
+.page-footer .copyright {
+	width:100%;
+	padding:0;
+}
+.item-source-container {
+	overflow:hidden;
+}
+.source-container .vcard {
+	width:100%;
 }
