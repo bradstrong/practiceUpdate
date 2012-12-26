@@ -89,4 +89,11 @@
 //End Original Foundation Scripts
 //
  --*/
+
+  $(document).ready(function() {
+    $('.disabled a').click(function(e) {
+      e.preventDefault();
+    });
+  });
+
 })(jQuery, this);

@@ -1,8 +1,10 @@
 {
-	"folders":
-	[
-		{
-			"path": "/Users/brad/Sites/pn-foundation/practiceupdate"
-		}
-	]
+ "folders": [
+  {
+   "folder_exclude_patterns": [
+    ".sass-cache"
+   ], 
+   "path": "/Users/brad/Sites/pn-foundation/practiceupdate"
+  }
+ ]
 }

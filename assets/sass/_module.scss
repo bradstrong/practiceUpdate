@@ -68,12 +68,24 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 
 /* !COMPONENTS */
 
+// Login-Register
+
+.password-signin{
+	@include innerRow();
+	.password{@include column(8);}
+	.signin{@include column(4);}
+}
+
+.remember-forgot{
+	.remember, .separator, .forgot{display: inline;}
+}
+
 // QUERY NO RESULTS
 
 .query-no-results{
 	@extend .panel;
 	@extend .radius;
-	@extend .callout;
+	// @extend .callout;
 }
 
 // FORM

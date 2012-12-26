@@ -24,7 +24,7 @@
             flyout = $(this).children('.content').first();
 
         if (li.hasClass('active')) {
-          p.find('li').removeClass('active').end().find('.content').hide();
+          p.children('li').removeClass('active').end().find('.content').hide();
         } else {
           $('.content', p).not(flyout).hide().parent('li').removeClass('active'); //changed this
           flyout.show(0, function () {
