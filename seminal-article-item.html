@@ -1,190 +1,922 @@
 <!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en">
+<![endif]-->
+<!--[if gt IE 8]>
+<!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8" />
-
-	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
-
-	<title>PracticeUpdate : Expert Opinion Item</title>
-
-	<link rel="stylesheet" href="assets/css/app.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.css">
-	<link rel="stylesheet" href="assets/css/fc-webicons.css">
-	<link rel="stylesheet" href="assets/css/foundation-icons-general.css">
-
-	<script src="assets/js/foundation/modernizr.foundation.js"></script>
-
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+    <title>
+        PracticeUpdate : Expert Opinion Item
+    </title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/fc-webicons.css">
+    <link rel="stylesheet" href="assets/css/foundation-icons-general.css">
+    <script src="assets/js/foundation/modernizr.foundation.js">
+    </script>
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+        </script>
+    <![endif]-->
 </head>
-	<body id="page" class="update off-canvas slide-nav expert-opinion-item logged-out">
-  <div class="widget ad">
-    <div id="leaderboard" class="Breast ad-container">
-      <div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
-      <div id="leaderboardcontent" class="ad-content">
-			</div><!--.ad-content-->
-		</div><!--/#leaderboard.ad-container-->
-  </div><!--/.widget.ad-->
-	<div class="page-header">
-	</div><!--/.page-header-->
-	<div class="page-content">
-	<section role="main">
 
-<div class="single-item-container">
-	<article class="type-expert-opinion single-item">
-		<div class="item-header-container">
-			<header class="item-header">
-                <div class="flag-container">
-                    <span class="flag featured"><i class="icon-bolt"></i> featured</span>
-                    <span class="flag story-of-the-week"><i class="icon-bolt"></i> story of the week</span>
+<body id="page" class="update off-canvas slide-nav expert-opinion-item logged-out">
+    <div class="widget ad">
+        <div id="leaderboard" class="Breast ad-container">
+            <div class="ad-title">
+                <span class="ad-title-text">
+                    advertisement
+                </span>
+            </div>
+            <!--/.ad-title-->
+            <div id="leaderboardcontent" class="ad-content">
+            </div>
+            <!--.ad-content-->
+        </div>
+        <!--/#leaderboard.ad-container-->
+    </div>
+    <!--/.widget.ad-->
+    <div class="page-header">
+    </div>
+    <!--/.page-header-->
+    <div class="page-content">
+        <section role="main">
+            <div class="single-item-container">
+                <article class="type-expert-opinion single-item">
+                    <!-- info taken from: http://oncologystat.com/viewpoints/seminal_articles/Seminal_Articles_Germ_Cell_Tumors.html
+                    -->
+                    <div class="item-header-container">
+                        <header class="item-header">
+                            <div class="flag-container">
+                                <span class="flag featured">
+                                    <i class="icon-bolt">
+                                    </i>
+                                    featured
+                                </span>
+                                <span class="flag story-of-the-week">
+                                    <i class="icon-bolt">
+                                    </i>
+                                    story of the week
+                                </span>
+                            </div>
+                            <div class="meta pub-meta">
+                                <span class="item-type">
+                                    Seminal Article
+                                </span>
+                                <span class="item-pub-date">
+                                    <time datetime="12-12-19">
+                                        December 19, 2012
+                                </span>
+                            </div>
+                            <hgroup class="item-title-container">
+                                <h1 class="item-title">
+                                    Seminal Articles—Germ Cell Tumors
+                                </h1>
+                                <p class="item-citation">
+                                    <!-- {{source.citation}} -->
+                                    2012 Dec 19, Darren Feldman, MD
+                                </p>
+                            </hgroup>
+                            <!-- /.item-title-container -->
+                        </header>
+                    </div>
+                    <!--/.item-header-container-->
+                    <div class="item-content-container">
+                        <div class="item-content">
+                            <div class="item-content-section">
+                                <section class="seminal-article-body">
+                                    <div class="seminal-article-body-container">
+                                        <div class="source-container">
+                                            <div class="vcard">
+                                                <div class="expert-photo">
+                                                    <img class="photo" src="content/img/users/Axel_Grothey_2009_REVISED_tcm8-199717.jpg">
+                                                    <!-- <p class="label">Expert</p> -->
+                                                </div>
+                                                <div class="expert-name">
+                                                    <!-- Axel Grothey MD -->
+                                                    <a class="fn" href="#">
+																										<span class="n">
+																											<!-- <span class="honorific-prefix">Dr.</span> -->
+																											<span class="given-name">Darren</span>
+																											<abbr class="additional-name">R</abbr>
+																											<span class="family-name">Feldman</span>
+																											<span class="honorific-suffix">MD</span>
+																										</span>
+																										</a>
+                                                    <!--/.fn-->
+                                                </div>
+                                                <!--/.expert-name-->
+                                            </div>
+                                            <!--/.vcard-->
+                                        </div>
+                                        <!--/.source-container-->
+                                        //NOTE: The content below is the raw html pulled from the original item on OncologySTAT.com
+                                        <p>
+                                            Based on our expert's review, here are the must-read articles for every
+                                            oncologist about patients with germ cell tumors.
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                General Review
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            1. Journal of Clinical Oncology: Issue on Genitourinary Cancers.
+                                            <a href="http://jco.ascopubs.org/content/24/35.toc" target="_blank">J Clin Oncol. 2006;24(35):5479-5621</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            2. Bosl GJ, Motzer RJ. Testicular germ-cell cancer.
+                                            <a href="http://www.nejm.org/doi/full/10.1056/NEJM199707243370406" target="_blank">N Engl J Med. 1997;337(4):242–253</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            3. Kondagunta GV, Motzer RJ. Chemotherapy for advanced germ cell tumors.
+                                            <a href="http://jco.ascopubs.org/content/24/35/5493.abstract" target="_blank">J Clin Oncol. 2006;24(35):5493-5502</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            4. Feldman DR, Bosl GJ, Sheinfeld J, et al. Medical treatment of advanced
+                                            testicular cancer.
+                                            <a href="http://jama.jamanetwork.com/article.aspx?articleid=181433" target="_blank">JAMA. 2008;299(6):672-684</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                Epidemiology/Risk Factors
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            5. Lutke-Holzik MF, Rapley EA, Hoekstra HJ, et al. Genetic predisposition
+                                            to testicular germ-cell tumours.
+                                            <a href="http://www.sciencedirect.com/science/article/pii/S1470204504014937"
+                                            target="_blank">Lancet Oncol. 2004;5(6):363-371</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            6. Siegel R, Naishadham D, Jemal A. Cancer statistics, 2012.
+                                            <a href="http://onlinelibrary.wiley.com/doi/10.3322/caac.20138/full" target="_blank">CA Cancer J Clin. 2012;62(1):10-29</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            7. Siegel R, DeSantis C, Virgo K, et al. Cancer treatment and survivorship
+                                            statistics, 2012.
+                                            <a href="http://onlinelibrary.wiley.com/doi/10.3322/caac.21149/full" target="_blank">CA Cancer J Clin. 2012;62(4):220-241</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            8. Daling JR, Doody DR, Sun X, et al. Association of marijuana use and
+                                            the incidence of testicular germ cell tumors.
+                                            <a href="http://onlinelibrary.wiley.com/doi/10.1002/cncr.24159/full" target="_blank">Cancer. 2009;115(6):1215-1223</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            9. Trabert B, Sigurdson AJ, Sweeney AM, et al. Marijuana use and testicular
+                                            germ cell tumors.
+                                            <a href="http://onlinelibrary.wiley.com/doi/10.1002/cncr.25499/full" target="_blank">Cancer. 2011;117(4):848-853</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                Underlying Biology
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            10. Houldsworth J, Korkola JE, Bosl GJ, et al. Biology and genetics of
+                                            adult male germ cell tumors.
+                                            <a href="http://jco.ascopubs.org/content/24/35/5512.abstract" target="_blank">J Clin Oncol. 2006;24(35):5512-5518</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            11. Reuter VE. Origins and molecular biology of testicular germ cell tumors.
+                                            <a href="http://www.nature.com/modpathol/journal/v18/n2s/full/3800309a.html"
+                                            target="_blank">Mod Pathol. 2005;18(Suppl 2):S51-60</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                Staging/Prognosis
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            12. Garnick MB. Spurious rise in human chorionic gonadotropin induced
+                                            by marihuana in patients with testicular cancer.
+                                            <a href="http://www.nejm.org/doi/full/10.1056/NEJM198011133032013" target="_blank">N Engl J Med. 1980;303(20):1177</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            13. International Germ Cell Consensus Classification: a prognostic factor-based
+                                            staging system for metastatic germ cell cancers. International Germ Cell
+                                            Cancer Collaborative Group.
+                                            <a href="http://jco.ascopubs.org/content/15/2/594.abstract" target="_blank">J Clin Oncol. 1997;15(2):594-603</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            14. Testis. In: Edge SB, Byrd DR, Compton CC, et al, eds. AJCC Cancer
+                                            Staging Manual. 7th ed. New York, NY: Springer; 2010:469-478.
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                Early-Stage Seminomatous Germ Cell Tumors
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            15. Fosså SD, Horwich A, Russell JM, et al. Optimal planning target volume
+                                            for stage I testicular seminoma: A Medical Research Council randomized
+                                            trial. Medical Research Council Testicular Tumor Working Group.
+                                            <a href="http://jco.ascopubs.org/content/17/4/1146.long" target="_blank">J Clin Oncol. 1999;17(4):1146</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            16. Jones WG, Fosså SD, Mead GM, et al. Randomized trial of 30 versus
+                                            20 Gy in the adjuvant treatment of stage I Testicular Seminoma: a report
+                                            on Medical Research Council Trial TE18, European Origanisation for the
+                                            Research and Treatment of Cancer Trial 30942 (ISRCTN18525328).
+                                            <a href="http://jco.ascopubs.org/content/23/6/1200.long" target="_blank">J Clin Oncol. 2005;23(6):1200-1208</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            17. Oliver RT, Mead GM, Rustin GJ, et al. Randomized trial of carboplatin
+                                            versus radiotherapy for stage I seminoma: mature results on relapse and
+                                            contralateral testis cancer rates in MRC TE19/EORTC 30982 study (ISRCTN27163214).
+                                            <a href="http://jco.ascopubs.org/content/29/8/957.long" target="_blank">J Clin Oncol. 2011;29(8):957-962</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            18. Bosl GJ, Patil S. Carboplatin in clinical stage I seminoma: too much
+                                            and too little at the same time.
+                                            <a href="http://jco.ascopubs.org/content/29/8/949.long" target="_blank">J Clin Oncol. 2011;29(8):949-952</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            19. Garcia-del-Muro X, Maroto P, Gumá J, et al. Chemotherapy as an alternative
+                                            to radiotherapy in the treatment of stage IIA and IIB testicular seminoma:
+                                            a Spanish Germ Cell Cancer Group Study.
+                                            <a href="http://jco.ascopubs.org/content/26/33/5416.long" target="_blank">J Clin Oncol. 2008;26(33):5416-5421</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                Early-Stage Non-Seminomatous Germ Cell Tumors
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            20. Motzer RJ, Sheinfeld J, Mazumdar M, et al. Etoposide and cisplatin
+                                            adjuvant therapy for patients with pathologic stage II germ cell tumors.
+                                            <a href="http://jco.ascopubs.org/content/13/11/2700.long" target="_blank">J Clin Oncol. 1995;13(11):2700-2704</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            21. Kondagunta GV, Motzer RJ. Adjuvant chemotherapy for stage II nonseminomatous
+                                            germ-cell tumors.
+                                            <a href="http://www.sciencedirect.com/science/article/pii/S0094014307000067"
+                                            target="_blank">Urol Clin North Am. 2002;34(2):179-185</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            22. Albers P, Siener R, Krege S, et al. Randomized phase III trial comparing
+                                            retroperitoneal lymph node dissection with one course of bleomycin and
+                                            etoposide plus cisplatin chemotherapy in the adjuvant treatment of clinical
+                                            stage I Nonseminomatous testicular germ cell tumors: AUO trial AH 01/94
+                                            by the German Testicular Cancer Study Group.
+                                            <a href="http://jco.ascopubs.org/content/26/18/2966.long" target="_blank">J Clin Oncol. 2008;26(18):2966-2972</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            23. Stephenson AJ, Bosl GJ, Motzer RJ, et al. Nonrandomized comparison
+                                            of primary chemotherapy and retroperitoneal lymph node dissection for clinical
+                                            stage IIA and IIB nonseminomatous germ cell testicular cancer.
+                                            <a href="http://jco.ascopubs.org/content/25/35/5597.long" target="_blank">J Clin Oncol. 2007;25(35):5597-5602</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                Advanced Disease (Nonseminoma and Seminoma)
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                Good Risk
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            24. Bosl GJ, Geller NL, Bajorin D, et al. A randomized trial of etoposide
+                                            + cisplatin versus vinblastine + bleomycin + cisplatin + cyclophosphamide
+                                            + dactinomycin in patients with good-prognosis germ cell tumors.
+                                            <a href="http://jco.ascopubs.org/content/6/8/1231.abstract" target="_blank">J Clin Oncol. 1988;6(8):1231-1238</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            25. Bajorin DF, Sarosdy MF, Pfister DG, et al. Randomized trial of etoposide
+                                            and cisplatin versus etoposide and carboplatin in patients with good-risk
+                                            germ cell tumors: a multiinstitutional study.
+                                            <a href="http://jco.ascopubs.org/content/11/4/598.abstract" target="_blank">J Clin Oncol. 1993;11(4):598-606</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            26. Loehrer PJ Sr, Johnson D, Elson P, et al. Importance of bleomycin
+                                            in favorable-prognosis disseminated germ cell tumors: an Eastern Cooperative
+                                            Oncology Group trial.
+                                            <a href="http://jco.ascopubs.org/content/13/2/470.abstract" target="_blank">J Clin Oncol. 1995;13(2):470-476</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            27. de Wit R, Stoter G, Kaye SB et al. Importance of bleomycin in combination
+                                            chemotherapy for good-prognosis testicular nonseminoma: a randomized study
+                                            of the European Organization for Research and Treatment of Cancer Genitourinary
+                                            Tract Cancer Cooperative Group.
+                                            <a href="http://jco.ascopubs.org/content/15/5/1837.abstract" target="_blank">J Clin Oncol. 1997;15(5):1837-1843</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            28. Horwich A, Sleijfer DT, Fosså SD, et al. Randomized trial of bleomycin,
+                                            etoposide, and cisplatin compared with bleomycin, etoposide, and carboplatin
+                                            in good-prognosis metastatic nonseminomatous germ cell cancer: a Multiinstitutional
+                                            Medical Research Council/European Organization for Research and Treatment
+                                            of Cancer Trial.
+                                            <a href="http://jco.ascopubs.org/content/15/5/1844.long" target="_blank">J Clin Oncol. 1997;15(5):1844-1852</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            29. Grimison PS, Stockler MR, Thomson DB, et al. Comparison of two standard
+                                            chemotherapy regimens for good-prognosis germ cell tumors: updated analysis
+                                            of a randomized trial.
+                                            <a href="http://jnci.oxfordjournals.org/content/102/16/1253.long" target="_blank">J Natl Cancer Inst. 2010;102:1253</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            30. Kondagunta GV, Bacik J, Bajorin D, et al. Etoposide and cisplatin
+                                            chemotherapy for metastatic good-risk germ cell tumors.
+                                            <a href="http://jco.ascopubs.org/content/23/36/9290.long" target="_blank">J Clin Oncol. 2005;23(36):9290-9294</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            31. Culine S, Kerbrat P, Kramar A, et al. Refining the optimal chemotherapy
+                                            regimen for good-risk metastatic nonseminomatous germ-cell tumors: a randomized
+                                            trial of the Genito-Urinary Group of the French Federation of Cancer Centers
+                                            (GETUG T93BP).
+                                            <a href="http://annonc.oxfordjournals.org/content/18/5/917.long" target="_blank">Ann Oncol. 2007;18(5):917-924</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                Intermediate/Poor Risk
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            32. Williams SD, Birch R, Einhorn LH, et al. Treatment of disseminated
+                                            germ-cell tumors with cisplatin, bleomycin, and either vinblastine or etoposide.
+                                            <a href="http://www.nejm.org/doi/full/10.1056/NEJM198706043162302" target="_blank">N Engl J Med. 1987;316(23):1435-1440</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            33. Nichols CR, Williams SD, Loehrer PJ, et al. Randomized study of cisplatin
+                                            dose intensity of poor-risk germ cell tumors: a Southeastern Cancer Study
+                                            Group and Southwest Oncology Group protocol.
+                                            <a href="http://jco.ascopubs.org/content/9/7/1163.abstract" target="_blank">J Clin Oncol. 1991;9(7):1163-1172</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            34. De Wit R, Stoter G, Sleijfer DT, et al. Four cycles of BEP versus
+                                            an alternating regime of PVB and BEP in patients with poor-prognosis metastatic
+                                            testicular non-seminoma; a randomized study of the EORTC Genitourinary
+                                            Tract Cancer Cooperative Group.
+                                            <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2033818/" target="_blank">Br J Cancer. 1995;71(6):1311-1314</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            35. de Wit R, Stoter G, Sleijfer DT, et al. Four cycles of BEP vs four
+                                            cycles of VIP in patients with intermediate-prognosis metastatic testicular
+                                            non-seminoma: a randomized study of the EORTC Genitourinary Tract Cancer
+                                            Cooperative Group. European Organization for Research and Treatment of
+                                            Cancer.
+                                            <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2062963/" target="_blank">Br J Cancer. 1998;78(6):828-832</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            36. Kaye SB, Mead GM, Fosså SD, et al. Intensive induction-sequential
+                                            chemotherapy with BOP/VIP-B compared with treatment with BEP/EP for poor-prognosis
+                                            metastatic nonseminomatous germ cell tumor: a Randomized Medical Research
+                                            Council/European Organization for Research and Treatment of Cancer study.
+                                            <a href="http://jco.ascopubs.org/content/16/2/692.abstract" target="_blank">J Clin Oncol. 1998;16(2):692-701</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            37. Hinton S, Catalano PJ, Einhorn LH, et al. Cisplatin, etoposide and
+                                            either bleomycin or ifosfamide in the treatment of disseminated germ cell
+                                            tumors: final analysis of an intergroup trial.
+                                            <a href="http://onlinelibrary.wiley.com/doi/10.1002/cncr.11271/abstract;jsessionid=CF71468A738837402A70CF6A86A955E0.d04t02"
+                                            target="_blank">Cancer. 2003;97(8):1869-1875</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            38. Motzer RJ, Nichols CJ, Margolin KA, et al. Phase III randomized trial
+                                            of conventional-dose chemotherapy with or without high-dose chemotherapy
+                                            and autologous hematopoietic stem-cell rescue as first-line treatment for
+                                            patients with poor-prognosis metastatic germ cell tumors.
+                                            <a href="http://jco.ascopubs.org/content/25/3/247.long" target="_blank">J Clin Oncol. 2007;25(3):247-256</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            39. Droz JP, Kramar A, Biron P, et al. Failure of high-dose cyclophosphamide
+                                            and etoposide combined with double-dose cisplatin and bone marrow support
+                                            in patients with high-volume metastatic nonseminomatous germ-cell tumours:
+                                            mature results of a randomised trial.
+                                            <a href="http://www.sciencedirect.com/science/article/pii/S0302283806013297"
+                                            target="_blank">Eur Urol. 2007;51(3):739-746</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            40. Daugaard G, Skoneczna I, Aass N, et al. A randomized phase III study
+                                            comparing standard dose BEP with sequential high-dose cisplatin, etoposide,
+                                            and ifosfamide (VIP) plus stem-cell support in males with poor-prognosis
+                                            germ-cell cancer. An intergroup study of EORTC, GTCSG, and Grupo Germinal
+                                            (EORTC 30974).
+                                            <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3082158/" target="_blank">Ann Oncol. 2011;22(5):1054-1061</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            41. Collette L, Sylvester RJ, Stenning SP, et al. Impact of the treating
+                                            institution on survival of patients with poor-prognosis metastatic nonseminoma.
+                                            European Organization for Research and Treatment of Cancer Genito-Urinary
+                                            Tract Cancer Collaborative Group and the Medical Research Council Testicular
+                                            Cancer Working Party.
+                                            <a href="http://jnci.oxfordjournals.org/content/91/10/839.long" target="_blank">J Natl Cancer Inst. 1999;91(10):839-846</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            42. Donadio AC, Motzer RJ, Bajorin DF, et al. Chemotherapy for teratoma
+                                            with malignant transformation.
+                                            <a href="http://jco.ascopubs.org/content/21/23/4285.long" target="_blank">J Clin Oncol. 2003;21(23):4285-4291</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                Post-Chemotherapy Surgery
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            43. Beck SD, Foster RS, Bihrle R, et al. Teratoma in the orchiectomy specimen
+                                            and volume of metastasis are predictors of retroperitoneal teratoma in
+                                            post-chemotherapy nonseminomatous testis cancer.
+                                            <a href="http://www.sciencedirect.com/science/article/pii/S0022534705644588"
+                                            target="_blank">J Urol. 2002;168(4 Pt 1):1402-1404</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            44. Oldenburg J, Alfsen GC, Lien HH, et al. Postchemotherapy retroperitoneal
+                                            surgery remains necessary in patients with nonseminomatous testicular cancer
+                                            and minimal residual tumor masses.
+                                            <a href="http://jco.ascopubs.org/content/21/17/3310.long" target="_blank">J Clin Oncol. 2003;21(17):3310-3317</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            45. De Santis M, Becherer A, Bokemeyer C, et al. 2-18fluoro-deoxy-D-glucose
+                                            positron emission tomography is a reliable predictor for viable tumor in
+                                            postchemotherapy seminoma: an update of the prospective multicentric SEMPET
+                                            trial.
+                                            <a href="http://jco.ascopubs.org/content/22/6/1034.long" target="_blank">J Clin Oncol. 2004;22(6):1034-1039</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            46. Carver BS, Shayegan B, Serio A, et al. Long-term clinical outcome
+                                            after postchemotherapy retroperitoneal lymph node dissection in men with
+                                            residual teratoma.
+                                            <a href="http://jco.ascopubs.org/content/25/9/1033.long" target="_blank">J Clin Oncol. 2007;25(9):1033-1037</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            47. Eggener SE, Carver BS, Loeb S, et al. Pathologic findings and clinical
+                                            outcome of patients undergoing retroperitoneal lymph node dissection after
+                                            multiple chemotherapy regimens for metastatic testicular germ cell tumors.
+                                            <a href="http://onlinelibrary.wiley.com/doi/10.1002/cncr.22440/abstract"
+                                            target="_blank">Cancer. 2007;109(3):528-535</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            48. Bosl GJ, Motzer RJ. Weighing risks and benefits of postchemotherapy
+                                            retroperitoneal lymph node dissection: not so easy.
+                                            <a href="http://jco.ascopubs.org/content/28/4/519.long" target="_blank">J Clin Oncol. 2010;28(4):519-521</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            49. Ehrlich Y, Brames MJ, Beck SD, et al. Long-term follow-up of Cisplatin
+                                            combination chemotherapy in patients with disseminated nonseminomatous
+                                            germ cell tumors: is a postchemotherapy retroperitoneal lymph node dissection
+                                            needed after complete remission?
+                                            <a href="http://jco.ascopubs.org/content/28/4/531.long" target="_blank">J Clin Oncol. 2010;28(4):531-536</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            50. Hartmann JT, Candelaria M, Kuczyk MA, et al. Comparison of histological
+                                            results from the resection of residual masses at different sites after
+                                            chemotherapy for metastatic non-seminomatous germ cell tumours.
+                                            <a href="http://www.sciencedirect.com/science/article/pii/S0959804996005175"
+                                            target="_blank">Eur J Cancer. 1997;33(6):843-847</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            51. Fox EP, Weathers TD, Williams SD, et al. Outcome analysis for patients
+                                            with persistent nonteratomatous germ cell tumor in post chemotherapy retroperitoneal
+                                            lymph node dissections.
+                                            <a href="http://jco.ascopubs.org/content/11/7/1294.long" target="_blank">J Clin Oncol. 2003;11(7):1294-1299</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            52. Mosharafa AA, Foster RS, Leibovich BC, et al. Is post-chemotherapy
+                                            resection of seminomatous elements associated with higher acute morbidity?
+                                            <a href="http://www.sciencedirect.com/science/article/pii/S0022534705635471"
+                                            target="_blank">J Urol. 2003;169(6):2126-2128</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                Relapsed-Disease/Salvage Therapy
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            53. Motzer RJ, Geller NL, Tan CC, et al. Salvage chemotherapy for patients
+                                            with germ cell tumors. The Memorial Sloan-Kettering Cancer Center experience
+                                            (1979-1989).
+                                            <a href="http://onlinelibrary.wiley.com/doi/10.1002/1097-0142%2819910301%2967:5%3C1305::AID-CNCR2820670506%3E3.0.CO;2-J/abstract"
+                                            target="_blank">Cancer. 1991;67(5):1305-1310</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            54. Loehrer PJ, Gonin R, Nichols CR, et al. Vinblastine plus ifosfamide
+                                            plus cisplatin as initial salvage therapy in recurrent germ cell tumor.
+                                            <a href="http://jco.ascopubs.org/content/16/7/2500.abstract" target="_blank">J Clin Oncol. 1998;16(7):2500-2504</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            55. Kollmannsberger C, Beyer J, Liersch R, et al. Combination chemotherapy
+                                            with gemcitabine plus oxaliplatin in patients with intensively pretreated
+                                            or refractory germ cell cancer: a study of the German Testicular Cancer
+                                            Study Group.
+                                            <a href="http://jco.ascopubs.org/content/22/1/108.long" target="_blank">J Clin Oncol. 2004;22(1):108-114</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            56. Ronnen EA, Kondagunta GV, Bacik J, et al. Incidence of late-relapse
+                                            germ cell tumor and outcome to salvage chemotherapy.
+                                            <a href="http://jco.ascopubs.org/content/23/28/6999.long" target="_blank">J Clin Oncol. 2005;23(28):6999-7004</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            57. Kondagunta GV, Bacik J, Donadio D, et al. Combination of paclitaxel,
+                                            ifosfamide, and cisplatin is an effective second-line therapy for patients
+                                            with relapsed testicular germ cell tumors.
+                                            <a href="http://jco.ascopubs.org/content/23/27/6549.long" target="_blank">J Clin Oncol. 2005;23(27):6549-6555</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            58. Oldenburg J, Martin JM, Fosså SD. Late relapses of germ cell malignancies:
+                                            incidence management, and prognosis.
+                                            <a href="http://jco.ascopubs.org/content/24/35/5503.abstract" target="_blank">J Clin Oncol. 2006;24(35):5503-5511</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            59. Einhorn LH, Brames MJ, Juliar B, et al. Phase II study of paclitaxel
+                                            plus gemcitabine salvage chemotherapy for germ cell tumors after progression
+                                            following high-dose chemotherapy with tandem transplant.
+                                            <a href="http://jco.ascopubs.org/content/25/5/513.long" target="_blank">J Clin Oncol. 2007;25(5):513-516</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            60. Einhorn LH, Williams SD, Chamness A, et al. High-dose chemotherapy
+                                            and stem-cell rescue for metastatic germ-cell tumors.
+                                            <a href="http://www.nejm.org/doi/full/10.1056/NEJMoa067749" target="_blank">N Engl J Med. 2007;357(4):340-348</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            61. Sharp DS, Carver BS, Eggener SE, et al. Clinical outcome and predictors
+                                            of survival in late relapse of germ cell tumor.
+                                            <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2651099/" target="_blank">J Clin Oncol. 2008;26(34):5524-5529</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            62. Feldman DR, Sheinfeld J, Bajorin DF, et al. TI-CE high dose chemotherapy
+                                            for patients with previously treated germ cell tumors.
+                                            <a href="http://jco.ascopubs.org/content/28/10/1706.long" target="_blank">J Clin Oncol. 2010;28(10):1706-1713</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            63. Pico JL, Rosti G, Kramar A, et al. A randomised trial of high-dose
+                                            chemotherapy in the salvage treatment of patients failing first-line platinum
+                                            chemotherapy for advanced germ cell tumours.
+                                            <a href="http://annonc.oxfordjournals.org/content/16/7/1152.long" target="_blank">Ann Oncol. 2005;16(7):1152-1159</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            64. International Prognostic Factors Study Group, Lorch A, Beyer J, Bascoul-Mollevi
+                                            C, et al. Prognostic factors in patients with metastatic germ cell tumors
+                                            who experienced treatment failure with cisplatin-based first-line chemotherapy.
+                                            <a href="http://jco.ascopubs.org/content/28/33/4906.long" target="_blank">J Clin Oncol. 2010;28(33):4906-4911</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            65. Lorch A, Kollmannsberger C, Hartmann JT, et al. Single versus sequential
+                                            high-dose chemotherapy in patients with relapsed or refractory germ cell
+                                            tumors: a prospective randomized multicenter trial of the German Testicular
+                                            Cancer Study Group.
+                                            <a href="http://jco.ascopubs.org/content/25/19/2778.long" target="_blank">J Clin Oncol. 2007;25(19):2778-2784</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            66. Lorch A, Bascoul-Mollevi C, Kramar A, et al. Conventional-dose versus
+                                            high-dose chemotherapy as first salvage treatment in male patients with
+                                            metastatic germ cell tumors: evidence from a large international database.
+                                            <a href="http://jco.ascopubs.org/content/29/16/2178.long" target="_blank">J Clin Oncol. 2011;29(16):2178-2184</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            67. Kondagunta GV, Sheinfeld J, Motzer RJ. Recommendations of follow-up
+                                            after treatment of germ cell tumors.
+                                            <a href="http://www.sciencedirect.com/science/article/pii/S0093775403000988"
+                                            target="_blank">Semin Oncol. 2003;30(3):382-389</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            <strong>
+                                                Survivorship
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            68. Hartmann JT, Albrecht C, Schmoll HJ, et al. Long-term effects on sexual
+                                            function and fertility after treatment of testicular cancer.
+                                            <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2362282/" target="_blank">Br J Cancer. 1999;80(5-6):801-807</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            69. Nuver J, Smit AJ, van der Meer J, et al. Acute chemotherapy-induced
+                                            cardiovascular changes in patients with testicular cancer.
+                                            <a href="http://jco.ascopubs.org/content/23/36/9130.long" target="_blank">J Clin Oncol. 2005;23(36):9130-9137</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            70. Meinardi MT, Gietema JA, van der Graaf WT, et al. Cardiovascular morbidity
+                                            in long-term survivors of metastatic testicular cancer.
+                                            <a href="http://jco.ascopubs.org/content/18/8/1725.long" target="_blank">J Clin Oncol. 2000;18(8):1725-1732</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            71. van den Belt-Dusebout AW, Nuver J, de Wit R, et al. Long-term risk
+                                            of cardiovascular disease in 5-year survivors of testicular cancer.
+                                            <a href="http://jco.ascopubs.org/content/24/3/467.full" target="_blank">J Clin Oncol. 2006;24(3):467-475</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            72. Nuver J, Smit AJ, Wolffenbuttel BH, et al. The metabolic syndrome
+                                            and disturbances in hormone levels in long-term survivors of disseminated
+                                            testicular cancer.
+                                            <a href="http://jco.ascopubs.org/content/23/16/3718.long" target="_blank">J Clin Oncol. 2005;23(16):3718-3725</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            73. Travis LB, Fosså SD, Schonfeld SJ, et al. Second cancers among 40,576
+                                            testicular cancer patients: focus on long-term survivors.
+                                            <a href="http://jnci.oxfordjournals.org/content/97/18/1354.long" target="_blank">J Natl Cancer Inst. 2005;97(18):1354-1365</a>
+                                            .
+                                            <strong>
+                                                Free
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            74. van den Belt-Dusebout AW, de Wit R, Gietema JA, et al. Treatment-specific
+                                            risks of second malignancies and cardiovascular disease in 5-year survivors
+                                            of testicular cancer.
+                                            <a href="http://jco.ascopubs.org/content/25/28/4370.full.pdf" target="_blank">J Clin Oncol. 2007;25(28):4370-4378</a>
+                                            .
+                                        </p>
+                                        <p>
+                                            75. Dahl AA, Haaland CF, Mykletun A, et al. Study of anxiety disorder
+                                            and depression in long-term survivors of testicular cancer.
+                                            <a href="http://jco.ascopubs.org/content/23/10/2389.full.pdf" target="_blank">J Clin Oncol. 2005;23(10):2389-2395</a>
+                                            .
+                                        </p>
+                                        <p>
+                                        </p>
+                                    </div>
+                                    <!--/.seminal-article-body-container -->
+                                </section>
+                                <!-- /.seminal-article-body -->
+                            </div>
+                            <!-- ./item-content-section -->
+                        </div>
+                        <!-- ./item-content -->
+                    </div>
+                    <!-- /.item-conten-container -->
+                    <hr />
+                    <footer class="copyright item-footer">
+                        <img class="logo" src="content/img/feed/imng_logo.gif" alt="IMNG Medical Media"
+                        />
+                        <p>
+                            Copyright &copy; 2012 Elsevier
+                        </p>
+                    </footer>
+            </div>
+            <!--/.item-container-->
+            <div class="recommended">
+                <div class="recent">
                 </div>
-			</header>
-		</div><!--/.item-header-container-->
-		<div class="item-content-container">
-		<div class="item-content">
-			<div class="item-content-section">
-				<section class="expert-opinion-body">
-					<div class="expert-opinion-body-container">
-							<p>Metastatic colorectal cancer is generally treated initially with a regimen of fluorouracil and leucovorin plus either oxaliplatin (FOLFOX) or irinotecan (FOLFIRI). Patients cross over to the alternate regimen for second-line therapy. The antiangiogenic agent bevacizumab has been shown to increase survival in patients with metastatic colorectal cancer in the first-line setting when added to FOLFIRI and in the second-line setting when added to FOLFOX, but no biologic agent has been shown to improve survival in the second-line setting when added to FOLFIRI.</p><p>Aflibercept is a recombinant fusion protein that targets three factors that contribute to tumor angiogenesis: vascular endothelial growth factor A (VEGFA), VEGFB, and placental growth factor (PlGF). In a multinational phase III study sponsored by Sanofi, Van Cutsem et al added aflibercept to FOLFIRI as second-line therapy for metastatic colorectal cancer previously treated with oxaliplatin. Prior bevacizumab was allowed, but not prior irinotecan.</p><p>Between 2007 and 2010, a total of 1226 patients were randomized to receive aflibercept 4 mg/kg (n = 612) or placebo (n = 614) on day 1 every 2 weeks, followed by the FOLFIRI regimen (irinotecan 180 mg/m2, leucovorin 400 mg/m2, and fluorouracil 400 mg/m2 bolus and then 2400 mg/m2 by continuous infusion). Crossover to aflibercept after progression on placebo was not permitted.</p><p>At the February 2011 cutoff date for analysis of overall survival (OS), the primary endpoint, median follow-up was 22.28 months. The patients receiving aflibercept/FOLFIRI had a median survival of 13.50 months compared with 12.06 months for the placebo/FOLFIRI control patients (hazard ratio [HR], 0.817; P = .0032). At 2 years, survival rates were 28.0% and 18.7%, respectively. The treatment effect favoring aflibercept held in analyses of prespecified subgroups based on prior bevacizumab use and various patient characteristics at baseline.</p><p>Progression-free survival (PFS) increased from 4.7 months for controls to 6.9 months with use of aflibercept (HR, 0.758; P &lt; .0001). Subgroup analyses showed a consistent trend in PFS in favor of aflibercept. The response rate in patients with measurable disease was significantly higher with aflibercept vs placebo (19.8% vs 11.1%; P &lt; .001).</p><p>Grade 3 and 4 adverse events were more common with aflibercept than placebo (83.5% vs 62.5%, respectively). Toxicities related to anti-VEGF treatment were consistent with those reported in previous studies. Interestingly, some common adverse events related to treatment with FOLFIRI were more frequent in the aflibercept arm. These included grade 3 and 4 diarrhea, asthenia, stomatitis, infections, and palmar&#8211;plantar erythrodysesthesia, as well as grade 3 and 4 neutropenia, thrombocytopenia, and neutropenic complications.</p><p>The addition of aflibercept to FOLFIRI led to a relative reduction in the risk of death of 18.3%, compared with placebo/FOLFIRI. The early and continued divergence of the survival curves further supports the clinical value of the aflibercept results. Survival rates for aflibercept vs placebo were 38.5% vs 30.9% at 18 months, 28.0% vs 18.7% at 24 months, and 22.3% vs 12.0% at 30 months.</p><p>The authors concluded that aflibercept plus FOLFIRI may be a new therapeutic option for the treatment of metastatic colorectal cancer patients whose disease has progressed while on or after completion of an oxaliplatin-based regimen.</p>
-					</div><!--/.expert-opinion-body-container -->
-				</section><!-- /.expert-opinion-body -->
-			</div><!-- ./item-content-section -->
-			<div class="item-content-section">
-				<section class="references">
-					<div class="reference-container">
-							<ul class="accordion">
-							  <li>
-							    <div class="title">
-							      <h5 class="section-title">References</h5>
-							    </div>
-							    <div class="content">
-										<ol>
-											<li><a href="#">Sauer R, Becker H, Hohenberger W, et al. Preoperative versus postoperative chemoradiotherapy for rectal cancer. N Engl J Med. 2004;351(17):1731-1740.</a></li>
-										</ol>
-									</div>
-							  </li>
-							</ul>
-					</div>
-				</section><!-- /.references -->
-			</div><!-- /.item-content-section -->
-		</div><!-- ./item-content -->
-	</div> <!-- /.item-conten-container -->
-			<hr />
-<footer class="copyright item-footer">
-<img class="logo" src="content/img/feed/imng_logo.gif" alt="IMNG Medical Media"/>
-<p>Copyright &copy; 2012 Elsevier</p>
-</footer>
-</div><!--/.item-container-->
-				<div class="recommended">
-				<div class="recent">
-				</div><!--/.recent-->
-				<div class="ad">
-					<img src="http://placehold.it/300x250" align="ad" title="ad" />
-				</div>
-				</div><!--/.recommended-->
-
-	</section><!--/[role="main"]-->
-	<section id="sidebar" role="complementary">
-		<div class="dashboard">
-			<div class="panel cta register">
-				<p><!-- Meet Our Experts --> Become a member to customize this page.<p>
-				<a class="button" href="#action-register">Register for free</a>
-			</div><!--/.panel.cta.register-->
-			<div class="component user-console">
-			</div><!--/.component.user-console-->
-
-			<div class="component user-topic">
-			</div><!--/.component.user-topic-->
-			<div class="component topic-spotlight">
-			</div><!--/.component.topic-spotlight-->
-			<div class="panel">
-				<img src="http://placehold.it/200x200" /><p><!-- Meet Our Experts --> Meet our Advisory and Editorial Boards comprised of physician editors and world-renowned experts.<p>
-			</div>
-		</div><!--/.sidebar-->
-	</section><!--/.[role="complimentary"]-->
-</div><!--/.page-content-->
-	<footer class="page-footer">
-	</footer><!-- /.page-footer -->
-
-	<!-- Included JS Files (Uncompressed) -->
-  <script src="assets/js/foundation/jquery.js"></script>
-  
-	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>	
-	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.forms.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.navigation.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.tooltips.js"></script>
-	<script src="assets/js/foundation/jquery.placeholder.js"></script>
-
-
-	<script src="assets/js/foundation/app.js"></script>
-	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
-
-	<script src="assets/js/mustache.js"></script>
-
-	<!-- Mustache - homepage feed template -->
-	<script>
-	<!-- Mustache - homepage feed template -->
+                <!--/.recent-->
+                <div class="ad">
+                    <img src="http://placehold.it/300x250" align="ad" title="ad" />
+                </div>
+            </div>
+            <!--/.recommended-->
+        </section>
+        <!--/[role="main"]-->
+        <section id="sidebar" role="complementary">
+            <div class="dashboard">
+                <div class="panel cta register">
+                    <p>
+                        <!-- Meet Our Experts -->
+                        Become a member to customize this page.
+                        <p>
+                            <a class="button" href="#action-register">Register for free</a>
+                </div>
+                <!--/.panel.cta.register-->
+                <div class="component user-console">
+                </div>
+                <!--/.component.user-console-->
+                <div class="component user-topic">
+                </div>
+                <!--/.component.user-topic-->
+                <div class="component topic-spotlight">
+                </div>
+                <!--/.component.topic-spotlight-->
+                <div class="panel">
+                    <img src="http://placehold.it/200x200" />
+                    <p>
+                        <!-- Meet Our Experts -->
+                        Meet our Advisory and Editorial Boards comprised of physician editors
+                        and world-renowned experts.
+                        <p>
+                </div>
+            </div>
+            <!--/.sidebar-->
+        </section>
+        <!--/.[role="complimentary"]-->
+    </div>
+    <!--/.page-content-->
+    <footer class="page-footer">
+    </footer>
+    <!-- /.page-footer -->
+    <!-- Included JS Files (Uncompressed) -->
+    <script src="assets/js/foundation/jquery.js">
+    </script>
+    <script src="assets/js/foundation/jquery.foundation.accordion.js">
+    </script>
+    <script src="assets/js/foundation/jquery.foundation.alerts.js">
+    </script>
+    <script src="assets/js/foundation/jquery.foundation.buttons.js">
+    </script>
+    <script src="assets/js/foundation/jquery.foundation.forms.js">
+    </script>
+    <script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js">
+    </script>
+    <script src="assets/js/foundation/jquery.foundation.navigation.js">
+    </script>
+    <script src="assets/js/foundation/jquery.foundation.orbit.js">
+    </script>
+    <script src="assets/js/foundation/jquery.foundation.reveal.js">
+    </script>
+    <script src="assets/js/foundation/jquery.foundation.tabs.js">
+    </script>
+    <script src="assets/js/foundation/jquery.foundation.tooltips.js">
+    </script>
+    <script src="assets/js/foundation/jquery.placeholder.js">
+    </script>
+    <script src="assets/js/foundation/app.js">
+    </script>
+    <script src="assets/js/foundation/jquery.offcanvas.js">
+    </script>
+    <script src="assets/js/mustache.js">
+    </script>
+    <!-- Mustache - homepage feed template -->
+    <script>
+                    	<!--
+	Mustache - homepage feed template -->
 	$.getJSON('content/json/feed.json', function(data) {
-		$.get('assets/mustache/feed-item.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.stream-container').html(html);
-		});
+	    $.get('assets/mustache/feed-item.mustache', function(template) {
+	        //alert('Load was performed.');
+	        var html = Mustache.to_html(template, data);
+	        $('.stream-container').html(html);
+	    });
 
 	});
 
-	<!-- Mustache - homepage recent template -->
+	<!--
+	Mustache - homepage recent template -->
 	$.getJSON('content/json/recent.json', function(data) {
-		$.get('assets/mustache/recent.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.recent').html(html);
-		});
+	    $.get('assets/mustache/recent.mustache', function(template) {
+	        //alert('Load was performed.');
+	        var html = Mustache.to_html(template, data);
+	        $('.recent').html(html);
+	    });
 
 	});
 
-	<!-- Mustache - homepage user-console template -->
+	<!--
+	Mustache - homepage user - console template -->
 	$.getJSON('content/json/user-console.json', function(data) {
-		$.get('assets/mustache/user-console.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.user-console').html(html);
-		});
+	    $.get('assets/mustache/user-console.mustache', function(template) {
+	        //alert('Load was performed.');
+	        var html = Mustache.to_html(template, data);
+	        $('.user-console').html(html);
+	    });
 	});
 
-		<!-- Mustache - homepage user-topic template -->
+	<!--
+	Mustache - homepage user - topic template -->
 	$.getJSON('content/json/user-topic.json', function(data) {
-		$.get('assets/mustache/user-topic.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.user-topic').html(html);
-		});
+	    $.get('assets/mustache/user-topic.mustache', function(template) {
+	        //alert('Load was performed.');
+	        var html = Mustache.to_html(template, data);
+	        $('.user-topic').html(html);
+	    });
 	});
 
-	<!-- Mustache - homepage topic-spotlight template -->
+	<!--
+	Mustache - homepage topic - spotlight template -->
 	$.getJSON('content/json/topic-spotlight.json', function(data) {
-		$.get('assets/mustache/topic-spotlight.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.topic-spotlight').html(html);
-		});
-	});	
-	</script>
-
+	    $.get('assets/mustache/topic-spotlight.mustache', function(template) {
+	        //alert('Load was performed.');
+	        var html = Mustache.to_html(template, data);
+	        $('.topic-spotlight').html(html);
+	    });
+	});
+</script>
 </body>
+
 </html>
