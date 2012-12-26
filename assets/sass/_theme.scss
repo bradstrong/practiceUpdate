@@ -107,6 +107,16 @@ h3{
 	}
 	padding-bottom: 1em;
 }
+.brand-name{
+	text-transform:lowercase;
+	font-size: ms(6);
+		@media only screen and (max-width: $screenMedium) {
+			font-size: ms(4);
+		}
+	}
+.brand-name-practice{text-transform:capitalize;}
+.brand-name-update{text-transform:capitalize;}
+
 .login-register-container{
 	@include column(6);
 padding-top: $baseFontSize/2;
@@ -154,9 +164,11 @@ padding-top: $baseFontSize/2;
 
 .specialty-name, .brand-name{
 	color:$white;
-	font-size: ms(7);
-	text-transform:uppercase;
 	margin-bottom: 0;
+}
+.specialty-name{
+	font-size: ms(6);
+	text-transform:uppercase;
 	@media only screen and (max-width: 767px) {
 		font-size: ms(5);
 	}

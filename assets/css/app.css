@@ -7321,19 +7321,41 @@ h3, .user-name {
 }
 
 /* line 110, ../sass/_theme.scss */
+.brand-name {
+  text-transform: lowercase;
+  font-size: 59px;
+}
+@media only screen and (max-width: 1279px) {
+  /* line 110, ../sass/_theme.scss */
+  .brand-name {
+    font-size: 37px;
+  }
+}
+
+/* line 117, ../sass/_theme.scss */
+.brand-name-practice {
+  text-transform: capitalize;
+}
+
+/* line 118, ../sass/_theme.scss */
+.brand-name-update {
+  text-transform: capitalize;
+}
+
+/* line 120, ../sass/_theme.scss */
 .login-register-container {
   width: 50%;
   padding-top: 7px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 110, ../sass/_theme.scss */
+  /* line 120, ../sass/_theme.scss */
   .login-register-container {
     float: left;
     width: 100%;
   }
 }
 
-/* line 115, ../sass/_theme.scss */
+/* line 125, ../sass/_theme.scss */
 .login-register {
   margin: 0;
   padding-top: 7px;
@@ -7343,40 +7365,40 @@ h3, .user-name {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px 0px;
 }
 
-/* line 122, ../sass/_theme.scss */
+/* line 132, ../sass/_theme.scss */
 #formLogin {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 122, ../sass/_theme.scss */
+  /* line 132, ../sass/_theme.scss */
   #formLogin {
     float: left;
     width: 100%;
   }
 }
 
-/* line 128, ../sass/_theme.scss */
+/* line 138, ../sass/_theme.scss */
 #formRegisterPrompt {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 128, ../sass/_theme.scss */
+  /* line 138, ../sass/_theme.scss */
   #formRegisterPrompt {
     float: left;
     width: 100%;
   }
 }
 
-/* line 130, ../sass/_theme.scss */
+/* line 140, ../sass/_theme.scss */
 .beta-accept, .subscribe-container {
   text-align: center;
 }
-/* line 132, ../sass/_theme.scss */
+/* line 142, ../sass/_theme.scss */
 .beta-accept input.error, .subscribe-container input.error {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* line 135, ../sass/_theme.scss */
+/* line 145, ../sass/_theme.scss */
 .beta-accept-lead, .subscribe-lead {
   color: #88cbdf;
   font-size: 17px;
@@ -7384,7 +7406,7 @@ h3, .user-name {
   margin-bottom: 7px;
 }
 
-/* line 142, ../sass/_theme.scss */
+/* line 152, ../sass/_theme.scss */
 .beta-accept-button, .subscribe-button {
   color: #005596;
   font-weight: normal;
@@ -7400,7 +7422,7 @@ h3, .user-name {
   box-shadow: 0 0 4px #c1cd23, 0 1px 0 white inset;
   text-transform: uppercase;
 }
-/* line 146, ../sass/_theme.scss */
+/* line 156, ../sass/_theme.scss */
 .beta-accept-button:hover, .subscribe-button:hover {
   color: #005596;
   *zoom: 1;
@@ -7414,45 +7436,49 @@ h3, .user-name {
   background: linear-gradient(#f2f5c7, #c1cd23);
 }
 
-/* line 153, ../sass/_theme.scss */
+/* line 163, ../sass/_theme.scss */
 .beta-accept-sub {
   display: none;
 }
 
-/* line 155, ../sass/_theme.scss */
+/* line 165, ../sass/_theme.scss */
 .specialty-name, .brand-name {
   color: white;
-  font-size: 71px;
-  text-transform: uppercase;
   margin-bottom: 0;
 }
+
+/* line 169, ../sass/_theme.scss */
+.specialty-name {
+  font-size: 59px;
+  text-transform: uppercase;
+}
 @media only screen and (max-width: 767px) {
-  /* line 155, ../sass/_theme.scss */
-  .specialty-name, .brand-name {
+  /* line 169, ../sass/_theme.scss */
+  .specialty-name {
     font-size: 44px;
   }
 }
 
-/* line 164, ../sass/_theme.scss */
+/* line 176, ../sass/_theme.scss */
 .tagline {
   color: #002d56;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 17px;
 }
 
-/* line 169, ../sass/_theme.scss */
+/* line 181, ../sass/_theme.scss */
 .tagline-str2 {
   color: #88cbdf;
   font-style: italic;
 }
 @media only screen and (max-width: 767px) {
-  /* line 169, ../sass/_theme.scss */
+  /* line 181, ../sass/_theme.scss */
   .tagline-str2 {
     display: block;
   }
 }
 
-/* line 177, ../sass/_theme.scss */
+/* line 189, ../sass/_theme.scss */
 .page-content-first {
   background: #fdfcfb;
   /* TODO: Fix color code to match PSD */
@@ -7467,13 +7493,13 @@ h3, .user-name {
   z-index: -5;
 }
 
-/* line 185, ../sass/_theme.scss */
+/* line 197, ../sass/_theme.scss */
 .copy-header {
   font-size: 37px;
   color: #002d56;
 }
 
-/* line 190, ../sass/_theme.scss */
+/* line 202, ../sass/_theme.scss */
 .expert-letter-copy {
   background-color: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
@@ -7486,25 +7512,25 @@ h3, .user-name {
   border-radius: 2px;
 }
 @media screen and (min-width: 768px) {
-  /* line 194, ../sass/_theme.scss */
+  /* line 206, ../sass/_theme.scss */
   .expert-letter-copy .copy-header {
     padding: 1em .5em inherit;
   }
 }
 
-/* line 201, ../sass/_theme.scss */
+/* line 213, ../sass/_theme.scss */
 .letter-body {
   font-size: 17px;
   line-height: 2;
 }
 @media screen and (min-width: 768px) {
-  /* line 201, ../sass/_theme.scss */
+  /* line 213, ../sass/_theme.scss */
   .letter-body {
     padding: 1em 1em 2em;
   }
 }
 
-/* line 210, ../sass/_theme.scss */
+/* line 222, ../sass/_theme.scss */
 .page-content-second {
   padding-top: 1em;
   padding-bottom: 1em;
