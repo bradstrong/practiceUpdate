@@ -48,6 +48,10 @@ body{
 }
 .view-more-button{
 	@extend .button;
+	float:right;
+	margin:0 0 10px;
+	background:#D9E35A;
+	border:1px solid #C1CD23;
 }
 
 //Flag

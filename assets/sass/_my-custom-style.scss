@@ -248,6 +248,8 @@ ul.accordion > li > div.title {
 	background:#F2F2F2;
 	border: 1px solid #ccc;
 	margin:0 0 3px;
+	float:left;
+	width:100%;
 }
 ul.accordion > li.active > div.title {
 	background:#E9E3DC;
@@ -256,6 +258,19 @@ ul.accordion > li.active > div.title {
 }
 ul.accordion > li .title h5{
 	color:#000;
+	float:left;
+}
+ul.accordion > li .title span{
+	float:right;
+}
+ul.accordion > li .title span.triangle-open{
+	display:none;
+}
+ul.accordion > li.active .title span.triangle-open{
+	display:block;
+}
+ul.accordion > li.active .title span.triangle-close{
+	display:none;
 }
 .checked-list {
 	float: left;
@@ -1107,4 +1122,10 @@ ul.side-nav li.active a {
 }
 #cme-table h1 {
 	font-size:24px;
+}
+.section-widget .section-content .entry {
+	border-bottom:$exploresectionBottomborder;
+}
+.section-widget .meta.title {
+	margin:0;
 }
