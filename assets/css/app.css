@@ -7162,6 +7162,16 @@ object, embed {
   }
 }
 
+/* line 220, ../sass/_module.scss */
+.cme-image {
+  display: none;
+}
+
+/* line 223, ../sass/_module.scss */
+.cme-details dt {
+  font-weight: bold;
+}
+
 /* line 2, ../sass/_theme.scss */
 .in-stream, .single-item, .user-profile, .user-group, .channel-list-container {
   background-color: white;
@@ -7453,7 +7463,7 @@ h3, .user-name {
 /* line 174, ../sass/_theme.scss */
 .specialty-name {
   font-size: 59px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 @media only screen and (max-width: 767px) {
   /* line 174, ../sass/_theme.scss */

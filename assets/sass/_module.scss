@@ -215,3 +215,11 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 .user-profile-section-title{
 	@extend h5;
 }
+
+// CME modals
+.cme-image{
+	display:none;
+}
+.cme-details dt{
+	font-weight: bold;
+}
