@@ -22,6 +22,17 @@
         $('.page-header').html(html);
         //Disable "Learn" during beta phase -- Remove once Learn/CME goes live
         //$('.top-bar a.learn').attr('data-reveal-id', 'modal-feature-disabled');
+		
+		var b = $('body');
+		if(b.hasClass('page-update')) {
+			$('ul#main-nav .update').parent('li').addClass('active');
+		}
+		if(b.hasClass('page-explore')) {
+			$('ul#main-nav .explore').parent('li').addClass('active');
+		}
+		if(b.hasClass('page-learn')) {
+			$('ul#main-nav .learn').parent('li').addClass('active');
+		}
       });
     });
     /* Mustache - homepage footer template */
@@ -95,5 +106,5 @@
       e.preventDefault();
     });
   });
-
+  
 })(jQuery, this);

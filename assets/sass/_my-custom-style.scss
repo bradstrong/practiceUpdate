@@ -272,6 +272,9 @@ ul.accordion > li.active .title span.triangle-open{
 ul.accordion > li.active .title span.triangle-close{
 	display:none;
 }
+ul.accordion .content {
+	width:100%;
+}
 .checked-list {
 	float: left;
     list-style-type: none;
@@ -1210,3 +1213,6 @@ ul.side-nav li.active a {
 	margin:0 0 0 20px;
 }
 /*End: 404*/
+.top-bar section ul > li.active {
+	filter:none !important;
+}
