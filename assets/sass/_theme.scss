@@ -84,9 +84,10 @@ body{
 
 /* typography */
 body{white-space-collapse: collapse;}
-h1, h2, h3, h4, h5, h6{
-	text-transform: capitalize;
-}
+
+// h1, h2, h3, h4, h5, h6{
+// 	text-transform: capitalize;
+// }
 
 h3{
 	color:$sec-blue;
