@@ -9019,3 +9019,117 @@ ul.side-nav li.active a {
 .section-widget .meta.title {
   margin: 0;
 }
+
+/*Start: popup*/
+/* line 1133, ../sass/_my-custom-style.scss */
+.reveal-modal h3, .reveal-modal .user-name {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* line 1137, ../sass/_my-custom-style.scss */
+.reveal-modal .source {
+  font-size: 12px;
+}
+
+/* line 1140, ../sass/_my-custom-style.scss */
+.reveal-modal #cme_teaser {
+  margin: 25px 0 0;
+  float: blockelement;
+  width: 100%;
+}
+
+/* line 1145, ../sass/_my-custom-style.scss */
+.reveal-modal .photo {
+  float: blockelement;
+  margin: 0 1% 0 0;
+}
+
+/* line 1149, ../sass/_my-custom-style.scss */
+.reveal-modal .content {
+  float: blockelement;
+  width: 100%;
+}
+
+/* line 1153, ../sass/_my-custom-style.scss */
+.reveal-modal .content .intro {
+  float: blockelement;
+  width: 100%;
+  margin: 0 0 10px;
+  line-height: 1.6;
+}
+
+/* line 1159, ../sass/_my-custom-style.scss */
+.reveal-modal .info.clearfix {
+  float: blockelement;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 1164, ../sass/_my-custom-style.scss */
+.reveal-modal .info.clearfix dt {
+  width: 20%;
+  float: blockelement;
+  font-weight: bold;
+}
+
+/* line 1169, ../sass/_my-custom-style.scss */
+.reveal-modal .info.clearfix dd {
+  width: 80%;
+  float: blockelement;
+}
+
+/* line 1173, ../sass/_my-custom-style.scss */
+.reveal-modal .cme-container {
+  width: 100%;
+}
+
+/* line 1176, ../sass/_my-custom-style.scss */
+.reveal-modal .cme-container table {
+  width: 100%;
+}
+
+@media only screen and (max-width: 620px) {
+  /* line 1180, ../sass/_my-custom-style.scss */
+  .reveal-modal .info.clearfix dt {
+    width: 100%;
+    margin: 0 0 -5px;
+  }
+
+  /* line 1184, ../sass/_my-custom-style.scss */
+  .reveal-modal .info.clearfix dd {
+    float: blockelement;
+    margin: 0 0 11px;
+    width: 100%;
+  }
+
+  /* line 1190, ../sass/_my-custom-style.scss */
+  table thead tr td,
+  table tbody tr td {
+    padding: 2px;
+    font-size: 10px;
+  }
+
+  /* line 1194, ../sass/_my-custom-style.scss */
+  .cme-container table {
+    margin: 0 -10px;
+  }
+
+  /* line 1197, ../sass/_my-custom-style.scss */
+  table .label, table .flag-container .flag, .flag-container table .flag {
+    white-space: pre-wrap;
+  }
+}
+/*End: popup*/
+/*Start: 404*/
+/* line 1203, ../sass/_my-custom-style.scss */
+.error-block p {
+  margin: 0;
+}
+
+/* line 1206, ../sass/_my-custom-style.scss */
+.text-error-message {
+  margin: 0 0 10px;
+}
+
+/*End: 404*/
