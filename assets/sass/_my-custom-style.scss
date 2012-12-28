@@ -1139,36 +1139,36 @@ ul.side-nav li.active a {
 }
 .reveal-modal #cme_teaser {
 	margin:25px 0 0;
-	float:blockelement;
+	float:left;
 	width:$widthpopup;
 }
 .reveal-modal .photo {
-	float:blockelement;
+	float:left;
 	margin:0 1% 0 0;
 }
 .reveal-modal .content {
-	float:blockelement;
+	float:left;
 	width:$widthpopup;
 }
 .reveal-modal .content .intro {
-	float:blockelement;
+	float:left;
 	width:$widthpopup;
 	margin:0 0 10px;
 	line-height: 1.6;
 }
 .reveal-modal .info.clearfix {
-	float:blockelement;
+	float:left;
 	margin:0;
 	width:$widthpopup;
 }
 .reveal-modal .info.clearfix dt{
 	width:20%;
-	float:blockelement;
+	float:left;
 	font-weight:bold;
 }
 .reveal-modal .info.clearfix dd{
 	width:80%;
-	float:blockelement;
+	float:left;
 }
 .reveal-modal .cme-container {
 	width:$widthpopup;
@@ -1182,7 +1182,7 @@ ul.side-nav li.active a {
 		margin:0 0 -5px;
 	}
 	.reveal-modal .info.clearfix dd{
-		float: blockelement;
+		float: left;
 		margin: 0 0 11px;
 		width: $widthpopup;
 	}
@@ -1205,5 +1205,8 @@ ul.side-nav li.active a {
 }
 .text-error-message {
 	margin:0 0 10px;
+}
+.error-block ul{
+	margin:0 0 0 20px;
 }
 /*End: 404*/
