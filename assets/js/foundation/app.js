@@ -21,7 +21,7 @@
         var html = Mustache.to_html(template, data);
         $('.page-header').html(html);
         //Disable "Learn" during beta phase -- Remove once Learn/CME goes live
-        $('.top-bar a.learn').attr('data-reveal-id', 'modal-feature-disabled');
+        //$('.top-bar a.learn').attr('data-reveal-id', 'modal-feature-disabled');
       });
     });
     /* Mustache - homepage footer template */
