@@ -1129,3 +1129,81 @@ ul.side-nav li.active a {
 .section-widget .meta.title {
 	margin:0;
 }
+/*Start: popup*/
+.reveal-modal h3{
+	font-size:18px;
+	margin:0;
+}
+.reveal-modal .source {
+	font-size:12px;
+}
+.reveal-modal #cme_teaser {
+	margin:25px 0 0;
+	float:blockelement;
+	width:$widthpopup;
+}
+.reveal-modal .photo {
+	float:blockelement;
+	margin:0 1% 0 0;
+}
+.reveal-modal .content {
+	float:blockelement;
+	width:$widthpopup;
+}
+.reveal-modal .content .intro {
+	float:blockelement;
+	width:$widthpopup;
+	margin:0 0 10px;
+	line-height: 1.6;
+}
+.reveal-modal .info.clearfix {
+	float:blockelement;
+	margin:0;
+	width:$widthpopup;
+}
+.reveal-modal .info.clearfix dt{
+	width:20%;
+	float:blockelement;
+	font-weight:bold;
+}
+.reveal-modal .info.clearfix dd{
+	width:80%;
+	float:blockelement;
+}
+.reveal-modal .cme-container {
+	width:$widthpopup;
+}
+.reveal-modal .cme-container table{
+	width:$widthpopup;
+}
+@media only screen and (max-width: 620px) {
+	.reveal-modal .info.clearfix dt{
+		width:100%;
+		margin:0 0 -5px;
+	}
+	.reveal-modal .info.clearfix dd{
+		float: blockelement;
+		margin: 0 0 11px;
+		width: $widthpopup;
+	}
+	table thead tr td,
+	table tbody tr td {
+		padding:2px;
+		font-size:10px;
+	}
+	.cme-container table {
+		margin:0 -10px;
+	}
+	table .label{
+		white-space: pre-wrap;
+	}
+}
+/*End: popup*/
+/*Start: 404*/
+.error-block p {
+	margin:0;
+}
+.text-error-message {
+	margin:0 0 10px;
+}
+/*End: 404*/
