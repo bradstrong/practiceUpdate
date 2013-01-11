@@ -151,6 +151,11 @@
 	margin:1% 0;
 	width:100%;
 }
+.expert-letter-copy .copy-header{
+	width:100%;
+	float:left;
+	padding:0 0.5em;
+}
 /*Start : tabs*/
 .tabs  {
 	width: 30%;
@@ -878,8 +883,9 @@ ul.accordion > li > div.title:after {
 	background:#00a3d1;
 }
 .dashboard .accordion .content {
-	padding:10px 0 0;
+	padding:0;
 	margin:10px -14px 0;
+	float:left;
 	border-top:1px dotted #00708f !important; 
 }
 /*End: users-console*/
