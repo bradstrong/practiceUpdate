@@ -14,6 +14,22 @@
   })();
   
 (function siteInit(){
+  // A-B Testing function
+  //a=65, b=66
+  $(window).keydown(function(event){
+    var active = document.activeElement;
+    console.log(active.type);
+  if (event.which == 65 && active.type==undefined) {
+    event.preventDefault();
+    $('body').removeClass('experimental-b');
+    $('body').toggleClass('experimental-a');
+  } else if(event.which == 66 & active.type==undefined){
+    event.preventDefault();
+    $('body').removeClass('experimental-a');
+    $('body').toggleClass('experimental-b');
+  }
+});
+
     /*-- Mustache - Top-bar --*/  
      $.getJSON('content/json/top-bar.json', function(data) {
       $.get('assets/mustache/top-bar.mustache', function(template) {

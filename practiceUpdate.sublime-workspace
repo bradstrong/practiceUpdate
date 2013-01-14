@@ -4,12 +4,12 @@
 		"selected_items":
 		[
 			[
-				"login-re",
-				"login-register-container"
+				"brand",
+				"brand-name-update"
 			],
 			[
-				"padd",
-				"padding-top"
+				"brad",
+				"brand-name-practice"
 			],
 			[
 				"in",
@@ -54,6 +54,10 @@
 			[
 				"sec",
 				"sec-blue"
+			],
+			[
+				"padd",
+				"padding-bottom"
 			],
 			[
 				"padding",
@@ -167,46 +171,24 @@
 	},
 	"buffers":
 	[
-<<<<<<< HEAD
-		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/.gitignore",
-			"settings":
-			{
-				"buffer_size": 654,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/README.md",
-			"settings":
-			{
-				"buffer_size": 5000,
-				"line_ending": "Unix"
-			}
-		}
-=======
->>>>>>> new-registration
 	],
-	"build_system": "Packages/User/Marked.sublime-build",
+	"build_system": "",
 	"command_palette":
 	{
-<<<<<<< HEAD
 		"height": 327.0,
 		"selected_items":
 		[
 			[
-=======
-		"height": 392.0,
-		"selected_items":
-		[
+				"gist",
+				"GitHub: Public Gist from Selection"
+			],
+			[
+				"prett",
+				"HTMLPrettify: Prettify"
+			],
 			[
 				"gi",
 				"GitHub: Open Gist in Browser"
-			],
-			[
->>>>>>> new-registration
-				"gist",
-				"GitHub: Public Gist from Selection"
 			],
 			[
 				"new",
@@ -241,7 +223,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 467.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -258,48 +240,51 @@
 	},
 	"file_history":
 	[
-<<<<<<< HEAD
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/modal-cme-onc-001.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/index.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/urology.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/oncology.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/primarycare.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/dermatology.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/cardiology.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/eyecare.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/modal-cme-onc-003.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/modal-cme-onc-002.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/modal-cme-onc-004.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/login-register.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_my-custom-style.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides-marketing.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/marketing.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/user-profile.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/channel-list.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/page-footer.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_base.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/.gitignore",
+		"/Users/brad/Dropbox/Elsevier/_project/PracticeUpdate/Copy/ux-copy-changes.md",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/seminal-article-item.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-profile.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts-copy.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/user-profile.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/channel-list.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/channel-list.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/experts.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/expert-opinion-item.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
-=======
+		"/Users/brad/Sites/pn-foundation/practiceupdate/learn.html",
+		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/preferences.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/personal-info.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/cta-meet-experts.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/help.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/posters.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/expert-opinion-item.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/experts.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/user-profile.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/channel-list.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/channel-list.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/channel-list.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/user-profile.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts-copy.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-profile.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_base.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css",
->>>>>>> new-registration
 		"/Users/brad/Sites/pn-foundation/practiceupdate/experts-channel-list.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/recent.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/section.mustache",
@@ -310,33 +295,23 @@
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-topic.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/author-meta.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/ad.mustache",
-<<<<<<< HEAD
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
-=======
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
->>>>>>> new-registration
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/sass/_ad.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/cardiology.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/oncology.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/marketing.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides-marketing.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/marketing.js",
 		"/etc/hosts",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/dermatology.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/de3225710d60b15d0a6df5c356cb618685603156/_opacity.scssc",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/c41bfe3e0594ee6743c257e86d2cf5507d6658bd/_foundation-overrides.scssc",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/foundation-overrides.css",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/learn.html",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/experts.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.offcanvas.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/topic-spotlight.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/foundation-overrides.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/c41bfe3e0594ee6743c257e86d2cf5507d6658bd/foundation-overrides.scssc",
-		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/9446bd9a038f52b6135aaf4d34353a575830dcf0/_semantic-grid.scssc",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/cta-meet-experts.mustache",
@@ -379,7 +354,6 @@
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/register.html",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/top-bar.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/top-bar.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/index.html",
 		"/Users/brad/Sites/pn-foundation/practice-network/story-of-the-week.html",
 		"/Users/brad/Sites/pn-foundation/practice-network/update.html",
 		"/Users/brad/Sites/pn-foundation/practice-network/assets/js/app.js",
@@ -393,14 +367,7 @@
 		"/Users/brad/Sites/pn-foundation/practice-network/assets/sass/_settings.scss",
 		"/Users/brad/Sites/pn-foundation/practice-network/assets/js/jquery.offcanvas.js",
 		"/Users/brad/Sites/pn-foundation/practice-network/assets/mustache/main-search.mustache",
-		"/Users/brad/Sites/pn-foundation/practice-network/assets/mustache/recommended.mustache",
-		"/Users/brad/Sites/pn-foundation/practice-network/assets/sass/_offcanvas.scss",
-		"/Users/brad/Sites/pn-foundation/practice-network/content/json/feed.json",
-		"/Users/brad/Sites/pn-foundation/practice-network/assets/mustache/feed-item.mustache",
-		"/Users/brad/Sites/pn-foundation/practice-network/assets/sass/data-meta.html",
-		"/Users/brad/Sites/pn-foundation/practice-network/offcanvas-4.html",
-		"/Users/brad/Sites/pn-foundation/practice-network/update-offcanvas.html",
-		"/Users/brad/Dropbox/Elsevier/_reference/MailingLists/US-Physicians_OncologyStat.csv"
+		"/Users/brad/Sites/pn-foundation/practice-network/assets/mustache/recommended.mustache"
 	],
 	"find":
 	{
@@ -419,21 +386,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-<<<<<<< HEAD
-			"/Users/brad/Sites/pn-foundation/practiceUpdate/",
-			"footer-container",
-			"head",
-			"form-title",
-			"wrapper",
-			"FormLoginWrapper",
-			"formLogin",
-			"form",
-=======
+			"uppercase",
+			"capitalize",
+			"learn",
+			"keep",
+			"@media",
+			"first",
+			"source",
+			"callout",
+			"formlogin",
+			"error",
+			"override",
+			"#form",
+			"login",
+			"widget",
+			"query-no-results",
+			"query",
+			"cta-query",
+			".ad",
+			"commentary",
+			"query",
+			"310",
+			".query",
+			"query",
+			"button",
 			"leaderboard",
 			"#leaderboard{",
 			".ad-container{",
 			"	/* !Ads */",
->>>>>>> new-registration
 			"flag",
 			"item-container",
 			"mustache",
@@ -533,35 +513,7 @@
 			"topmenu",
 			"offcanvas",
 			"user-s",
-			"bread",
-			"recomm",
-			"background",
-			"href",
-			"img",
-			"top-bar",
-			"page-content",
-			"nav",
-			"#sidebar",
-			"recommended",
-			"side",
-			"complimentary",
-			"#sidebar",
-			"sidebar",
-			"item-content",
-			"item-content-section",
-			"commentary",
-			"take",
-			"nav-bar",
-			"mainNav",
-<<<<<<< HEAD
-			"item-footer"
-=======
-			"item-footer",
-			"border",
-			"clear",
-			"clear-fix",
-			"item-source"
->>>>>>> new-registration
+			"bread"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -569,9 +521,6 @@
 		"regex": false,
 		"replace_history":
 		[
-			"http://practice.head.rhino.nixsolutions.com/",
-			"",
-			"/Users/brad/Sites/pn-foundation/practiceUpdate/",
 			"\"featured\"",
 			"feature",
 			"\"img\""
@@ -585,66 +534,8 @@
 	"groups":
 	[
 		{
-<<<<<<< HEAD
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/.gitignore",
-					"settings":
-					{
-						"buffer_size": 654,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								654,
-								654
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/README.md",
-					"settings":
-					{
-						"buffer_size": 5000,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4997,
-								4997
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 816.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-=======
-			"sheets":
-			[
->>>>>>> new-registration
 			]
 		}
 	],
@@ -694,6 +585,98 @@
 		"selected_items":
 		[
 			[
+				"uro",
+				"urology.html"
+			],
+			[
+				"eye",
+				"eyecare.html"
+			],
+			[
+				"modu",
+				"assets/sass/_module.scss"
+			],
+			[
+				"app.scs",
+				"assets/sass/app.scss"
+			],
+			[
+				"theme",
+				"assets/sass/_theme.scss"
+			],
+			[
+				"app",
+				"assets/sass/app.scss"
+			],
+			[
+				"app.js",
+				"assets/js/foundation/app.js"
+			],
+			[
+				"prim",
+				"primarycare.html"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"onco",
+				"oncology.html"
+			],
+			[
+				"_ad.",
+				"assets/sass/_ad.scss"
+			],
+			[
+				"update",
+				"update.html"
+			],
+			[
+				"learn",
+				"learn.html"
+			],
+			[
+				"footer",
+				"assets/mustache/page-footer.mustache"
+			],
+			[
+				"pref",
+				"preferences.html"
+			],
+			[
+				"semin",
+				"seminal-article-item.html"
+			],
+			[
+				"module",
+				"assets/sass/_module.scss"
+			],
+			[
+				"gitign",
+				".gitignore"
+			],
+			[
+				"my-c",
+				"assets/sass/_my-custom-style.scss"
+			],
+			[
+				"_mod",
+				"assets/sass/_module.scss"
+			],
+			[
+				"_module",
+				"assets/sass/_module.scss"
+			],
+			[
+				"_lay",
+				"assets/sass/_layout.scss"
+			],
+			[
+				"_ad",
+				"assets/sass/_ad.scss"
+			],
+			[
 				"base",
 				"assets/sass/_base.scss"
 			],
@@ -704,14 +687,6 @@
 			[
 				"ad",
 				"assets/sass/_ad.scss"
-			],
-			[
-				"theme",
-				"assets/sass/_theme.scss"
-			],
-			[
-				"update",
-				"update.html"
 			],
 			[
 				"chann",

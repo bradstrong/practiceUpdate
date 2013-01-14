@@ -66,12 +66,12 @@
 #skyscraper{
 	object, embed{
 		display:block;
-		height: 120px;
-		width: 600px;
+		height: 600px;
+		width: 160px;
 	}
 }
 #skyscrapercontent{}
-#skyscrapercontentinner{ max-width: 300px; margin: 0 auto; max-height: 250px; }
+#skyscrapercontentinner{ max-width: 160px; margin: 0 auto; max-height: 600px; }
 
 // Hide ad containers on mobile
 
@@ -88,4 +88,4 @@ body > .widget.ad{@media only screen and (max-width: $screenMedium) {display:non
 // 336x280
 
 // skyscraper
-// 120x600
+// 160x600
