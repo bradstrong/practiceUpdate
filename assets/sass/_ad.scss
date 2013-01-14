@@ -49,6 +49,9 @@
 		height: 250px;
 		width: 300px;
 	}
+	#boombox1contentinner{
+		float: left;
+	}
 }
 #boombox1content{}
 #boombox1contentinner{ max-width: 300px; margin: 0 auto; max-height: 250px; }
@@ -61,7 +64,11 @@
 	}
 }
 #boombox2content{}
-#boombox2contentinner{ max-width: 300px; margin: 0 auto; max-height: 250px; }
+#boombox2contentinner{
+	max-width: 300px;
+	margin: 0 auto;
+	max-height: 250px;
+}
 
 #skyscraper{
 	object, embed{
@@ -71,11 +78,15 @@
 	}
 }
 #skyscrapercontent{}
-#skyscrapercontentinner{ max-width: 160px; margin: 0 auto; max-height: 600px; }
+#skyscrapercontentinner{
+	max-width: 160px;
+	margin: 0 auto;
+	max-height: 600px;
+}
 
 // Hide ad containers on mobile
 
-body > .widget.ad{@media only screen and (max-width: $screenMedium) {display:none;}}
+body > #leaderboardouter{@media only screen and (max-width: $screenMedium) {display:none;}}
 
 
 // standard leaderboard

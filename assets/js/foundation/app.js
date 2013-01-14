@@ -14,6 +14,17 @@
   })();
   
 (function siteInit(){
+
+  //user console menu
+ $(document).ready(function() {
+  console.log('toggle menu');
+  $('ul.user-settings-menu').addClass('is-collapsed');
+  $('ul.user-settings-menu li:first').addClass('active');
+  $('li.active a').append('<span class="active-item-indicator"><i class="icon-angle-right"></i></span>');
+  $('.edit-user-settings').click(function (){
+    $('.user-settings-menu').toggleClass('is-collapsed is-expanded');
+  });
+});
   // A-B Testing function
   //a=65, b=66
   $(window).keydown(function(event){

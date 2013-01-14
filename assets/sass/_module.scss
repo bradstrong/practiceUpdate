@@ -1,8 +1,17 @@
+.active-item-indicator{
+	display: block;
+	float: right;
+	position: relative;
+	left:$baseFontSize/2;
+}
+
 /* !Top Bar */
 .top-bar {
   /* Setting up the sliding area */
 	section{
 	  ul {
+	  	li.name{
+	  		}
 	    &>li:not(.name) {
 	    	text-transform:uppercase;
 	      &.active {
@@ -18,43 +27,60 @@
 	  }
 	}
 }
+@media only screen and (max-width: $topBarBreakPoint) {
+	.top-bar ul > li.name{background:$white;}
+	}
 
 // SIDEBAR
 
 //sidebar variables
-$sidebarBackground:lighten(scale-saturation($mainColor, -66%), 40%);
-$sidebarLiBackground:scale-saturation(shade($mainColor, 15%), -30%);
+$sidebarBackground:lighten(scale-saturation($pri-tan, -66%), 40%);
+$sidebarLiBackground:scale-saturation(shade($pri-tan, 15%), -30%);
 $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 
-// SIDE NAV (.side-nav)
-.nav-header{
-	@include border-top-radius(3px);
-	font-size:ms(1);
-	@include noise($ter-ltTan);
-	color: $sidebarLiBackground;
-	&:hover{background-color:$ter-ltTan;}
-	a .has-tip{color:shade($ter-ltTan, 25%);}
+#sidebar .component{
+	margin-bottom: $baseFontSize;
 }
-.side-nav{
-	background-color:$white;
+
+// SIDE NAV (.side-nav)
+ul.side-nav{
+	@include site-gradient(lighten($ter-ltTan, 5%), 5%);
+	@include border-radius(3px);
+	@include elementBoxShadow();
 	li{
-		//background-color:$sidebarLiBackground;
+		list-style: none;
 		margin-bottom:1px;
+		line-height: 1.2;
 		&:hover{background-color:$sidebarLiHoverBackground;}
 		&.active{
-			a{cursor: default;}
-			&:hover{background-color:$sidebarLiBackground;}
+			a{
+				color: $mainColor;
+				cursor: default;
+				font-weight: normal;
+				border-left:3px solid $mainColor;
+				padding-left: 4px;
+			}
+			&:hover{background-color: transparent;}
+			.active-item-indicator{font-weight: bold;}
 		}
 		&.selected{
 			a{}
 		}
 		&:last-child{@include border-bottom-radius(3px);}
 		a{
-			text-transform:uppercase;
-			color:$sidebarBackground;
-			text-transform: uppercase;
+			display: block;
+			text-transform: capitalize;
+			padding: $baseFontSize/2;
 		}
 	}
+.nav-header{
+	font-family: $headerFontFamily;
+	font-weight: $headerFontWeight;
+	font-size:ms(0);
+	color: $pri-blue;
+	&:hover{background-color:transparent;}
+	padding:0 $baseFontSize/2 $baseFontSize/2;
+}
 	&[data-reveal-id="modal-feature-disabled"]{
 		padding:0;
 		.has-tip{
@@ -67,6 +93,20 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 }
 
 /* !COMPONENTS */
+
+//user-console
+.users-console{
+	p{
+		color: $pri-blue;
+	}
+}
+.user-details{}
+.user-name{}
+.user-title{}                 
+.edit-user-settings{}
+.user-settings-menu{
+
+}
 
 // Login-Register
 
@@ -196,7 +236,6 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 .profile-details{@include innerRow();}
 .profile-overview{@include column(9);}
 .profile-photo{@include column(3);}
-.user-name{@extend h3;}
 .user-photo{}
 .user-detail-list{
 	@include innerRow();
@@ -223,3 +262,35 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 .cme-details dt{
 	font-weight: bold;
 }
+
+//TODO: add states for buttons, alerts, labels, badges
+// colors should be added to _foundation-overrides
+// classes should extend buttons and labels
+// create badge variant
+
+// foundation
+// .normal
+// .secondary
+// .success
+// .alert
+
+//bootstrap
+// .primary
+// .warning
+// .important/.danger
+// .success
+// .info
+// .inverse
+
+//practiceUpdate
+// .normal 							- default button, label or badge color
+// .primary* 						- main action when there are multiple options example: save
+// .secondary 					- second action when there are multiple options example: cancel
+// .success 						- indicates success of a user or system action
+// .info 								- provides more information to user example: status
+// .warning 						- warns users example: changes will not be saved
+// .important/.danger 	- provides important error/danger information example: do not save
+// .inverse 						- reverse color scheme for use on dark backgrounds
+// .disabled 						- button that is currently disabled
+
+
