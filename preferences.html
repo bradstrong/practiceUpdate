@@ -91,20 +91,19 @@
 			</ul>
 		</div><!--/#pref-tabs-->
 	<div id="pref-tabs-content">
-	<div class="alert-box secondary">
-		<p>PracticeUpdate content is displayed based on your information and your preferences. You're in control of what content is most relevant to you. Once you have completed your profile & settings, you can begin using the site.</p>
-		<a href="#" class="close">&times;</a>
+	<div class="panel">
+		PracticeUpdate content is displayed based on your information and your preferences. You're in control of what content is most relevant to you. Once you have completed your profile & settings, you can begin using the site.
 	</div>
         <div class="alert-box success">
-            <p>Your changes have been saved.</p>
+            Your changes have been saved.
             <a href="#" class="close">&times;</a>
         </div>
         <div class="alert-box alert">
-            <p>{ of field} is required.</p>
+            { of field} is required.</p>
             <a href="#" class="close">&times;</a>
         </div>
         <div class="alert-box alert">
-            <p>We cannot validate { of field}. Please check the info and re-enter.</p>
+            We cannot validate { of field}. Please check the info and re-enter.
             <a href="#" class="close">&times;</a>
         </div>
 <ul class="tabs-content">
@@ -145,42 +144,25 @@
 							<h3 class="form-title">Personal Information</h3>
 					</header>
 					<form>
-						<div class="row collapse">
+
 			    <label>Name</label>
-			    <div class="six columns collapse">
+
 				      <input type="text" placeholder="First Name"/>
-						  <small class="error">First Name required</small>
-						</div>
-				      <input class="five"type="text" placeholder="Last Name"/>
-							<small class="five error">Last Name required</small>
-						</div><!--.row-->
-				  <div class="row">
-				    <div class="six columns">
-				      <input type="text" placeholder="City" />
-				    </div>
-				    <div class="three columns">
-				      <input type="text" placeholder="State" />
-				    </div>
-				    <div class="three columns">
-				      <input type="text" placeholder="ZIP" />
-				    </div>
-				  </div>
-				  <textarea placeholder="Message"></textarea>
-				</form>
-					
-					
-					
-					
+						  <small class="error">First Name is required</small>
+
+				      <input type="text" placeholder="Last Name"/>
+							<small class="error">Last Name is required</small>
+
 					<label>Country of Residence</label>
 					<select>
 						<option>Select Country</option>
 					</select>
-					<small class="error">Country of Residence required</small>
+					<small class="error">Country is required</small>
 					<label>State of Residence</label>
 					<select>
 						<option>Select State</option>
 					</select>
-					<small class="error">State required</small>
+					<small class="error">State is required</small>
 					<div class="form-action">
 						<a id="Submit" class="form-submit">Save</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
@@ -199,18 +181,21 @@
 					<header class="form-header">
 							<h3 class="form-title">Professional Info</h3>
 					</header>
+					<label>Workplace</label>
 					<select>
-						<option>Workplace Type</option>
+						<option>Select workplace</option>
 					</select>
-					<small class="error">Workplace Type required</small>
+					<small class="error">Workplace is required</small>
+					<label>Profession</label>
 					<select>
-						<option>Profession</option>
+						<option>Select profession</option>
 					</select>
-					<small class="error">Profession required</small>
+					<small class="error">Profession is required</small>
+					<label>Primary Area of Practice</label>
 					<select>
-						<option>Primary Area of Practice</option>
+						<option>Select area of practice</option>
 					</select>
-					<small class="error">Primary Area of Practice required</small>
+					<small class="error">Primary area of practice is required</small>
 					<div class="form-action">
 						<a id="Submit" class="form-submit">Save</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
@@ -228,10 +213,10 @@
 				<form action="#" method="#">
 						<header class="form-header">
 							<h3 class="form-title">Content Preferences</h3>
+							<p class="form-description">You're in control. Choose what type of content you want to see on the site. You can change this at any time.</p>
 						</header>
-						<span class="help-block">You're in control. Choose what type of content to see on the site. You can change this at any time.</span>
 						<h4>Channels</h4>
-						<span class="help-block">Each medical specialty has its own Editorial Board. Select the focus of content to view on the site. (Channel=specialty).</span>
+						<p>Each channel has a dedicated Editorial Board. Selecting channels will add content to your Update stream and give you access to the channel's newsletters.</p>
 						<ul class="checked-list">
 							<li>
 								<label><input type="checkbox" checked="checked">
@@ -260,7 +245,8 @@
 							
 						</ul>
 						<h4>Topic</h4>
-						<span class="help-block">Each "Channel" offers you a different variety of topics to view. You can select a few or all in each Channel.</span>
+						<p>Topic
+Each channel features content on many topics. You can select a few or all in each Channel.</p>
 						<ul class="accordion">
 							<li class="active">
 								<div class="title">
@@ -366,7 +352,7 @@
 								<h5>Oncology</h5>
 							</div>
 							<div class="content">
-								<h4>Weekly</h4>
+								<h6>Weekly</h6>
 								<ul class="checked-list">
 									<li>
 										<label><input type="checkbox">
@@ -381,7 +367,7 @@
 											Journal Scars - a weekly survey of cancer-related journal articles</label>
 									</li>
 								</ul>
-								<h4>Monthly</h4>
+								<h6>Monthly</h6>
 								<ul class="checked-list">
 									<li>
 										<label><input type="checkbox">
@@ -412,7 +398,7 @@
 											... cancer</label>
 									</li>
 								</ul>
-								<h4>Alerts</h4>
+								<h6>Alerts</h6>
 								<ul class="checked-list">
 									<li>
 										<label><input type="checkbox">
@@ -430,55 +416,29 @@
 								<h5>Primary Care</h5>
 							</div>
 							<div class="content">
+								<h6>Weekly</h6>
 								<ul class="checked-list">
 									<li>
 										<label><input type="checkbox">
-											Breast Cancer</label>
-									</li>
-									<li>
-										<label><input type="checkbox">
-											Medical</label>
-									</li>
-									<li>
-										<label><input type="checkbox">
-											Bladder Cancer</label>
-									</li>
-									<li>
-										<label><input type="checkbox">
-											Surgical</label>
-									</li>
-									<li>
-										<label><input type="checkbox">
-											... cancer</label>
-									</li>
-									<li>
-										<label><input type="checkbox">
-											Raditation</label>
-									</li>
-									<li>
-										<label><input type="checkbox">
-											... cancer</label>
+											InfoBlast(Oncology Update) - a weekly digest of the last cancer information</label>
 									</li>
 								</ul>
 							</div>
 						</li>
 					</ul>
-					<div class="reg-block">
-						<legend>Promotions</legend>
-						<span class="help-block">I wish to receive carefully selected special offers / Promotions from:</span>
+						<h4>Promotions</h4>
+						<p>Stay connected! Be the first to know about new Elsevier Health Sciences publications, products and exclusive offers.</p>
 						<ul class="checked-list ">
 							<li>
 								<label><input type="checkbox">
-									Elsevier</label>
+									YES, I wish to receive special offers and promotions from Elsevier Inc. and affiliates about relevant products or services.</label>
 							</li>
 							<li>
 								<label><input type="checkbox">
-									Third parties</label>
+									YES, I wish to receive special offers and promotions from carefully selected third parties about relevant products or services.</label>
 							</li>
 						</ul>
-					</div>
-					<div class="reg-block">
-						<legend>Registered User Agreement</legend>
+						<h4>Registered User Agreement</h4>
 						<ul class="checked-list ">
 							<li>
 								<label><input type="checkbox">
@@ -486,7 +446,6 @@
 									terms</label>
 							</li>
 						</ul>
-					</div>
 					<div class="form-action ">
 						<a id="Submit" class="form-submit">Save</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>

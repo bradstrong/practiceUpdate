@@ -184,23 +184,23 @@
 	});
 
 	<!-- Mustache - homepage user-console template -->
-	// $.getJSON('content/json/user-console.json', function(data) {
-	// 	$.get('assets/mustache/user-console.mustache', function(template) {
-	// 		//alert('Load was performed.');
-	//     var html = Mustache.to_html(template, data);
-	//     $('.user-console').html(html);
-	// 	});
-	// });
+	$.getJSON('content/json/user-console.json', function(data) {
+		$.get('assets/mustache/user-console.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.user-console').html(html);
+		});
+	});
 
 	<!-- Mustache - homepage user-topic template -->
-	// $.getJSON('content/json/user-topic.json', function(data) {
-	// 	$.get('assets/mustache/user-topic.mustache', function(template) {
-	// 		//alert('Load was performed.');
-	//     var html = Mustache.to_html(template, data);
-	//     $('.user-topic').html(html);
- //            tamingselect();
-	// 	});
-	// });
+	$.getJSON('content/json/user-topic.json', function(data) {
+		$.get('assets/mustache/user-topic.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.user-topic').html(html);
+            tamingselect();
+		});
+	});
 
 	<!-- Mustache - homepage topic-spotlight template -->
 	$.getJSON('content/json/topic-spotlight.json', function(data) {

@@ -5895,6 +5895,11 @@ cite {
   font-style: normal;
 }
 
+/* line 16, ../sass/_base.scss */
+small, .widget.ad .ad-container .ad-title .ad-title-text {
+  font-size: 85%;
+}
+
 /* line 6, ../sass/_layout.scss */
 .page-content {
   width: 1440px;
@@ -7925,13 +7930,6 @@ h3 {
   margin: 5px 0 5px;
 }
 
-/* line 208, ../sass/_my-custom-style.scss */
-.tabs-content .help-block {
-  display: block;
-  font-size: 12px;
-  margin-bottom: -2px;
-}
-
 /* line 213, ../sass/_my-custom-style.scss */
 ul.tabs-content fieldset {
   padding: 0;
@@ -7943,143 +7941,6 @@ ul.tabs-content fieldset {
   font-size: 16px;
   font-weight: bold;
   padding: 0;
-}
-
-/* line 222, ../sass/_my-custom-style.scss */
-.tabs-content h4, .tabs-content .channel-title {
-  color: #C6C6BC;
-  font-size: 17px;
-  margin: 8px 0;
-  font-weight: normal;
-}
-
-/* line 228, ../sass/_my-custom-style.scss */
-ul.accordion > li > div.title {
-  background: #F2F2F2;
-  border: 1px solid #ccc;
-  margin: 0 0 3px;
-  float: left;
-  width: 100%;
-}
-
-/* line 235, ../sass/_my-custom-style.scss */
-ul.accordion > li.active > div.title {
-  background: #E9E3DC;
-  border: 1px solid #CBBDAD;
-  padding-top: 15px;
-}
-
-/* line 240, ../sass/_my-custom-style.scss */
-ul.accordion > li .title h5, ul.accordion > li .title .form-title, ul.accordion > li .title .cta-title {
-  color: #000;
-  float: left;
-}
-
-/* line 244, ../sass/_my-custom-style.scss */
-ul.accordion > li .title span {
-  float: right;
-}
-
-/* line 247, ../sass/_my-custom-style.scss */
-ul.accordion > li .title span.triangle-open {
-  display: none;
-}
-
-/* line 250, ../sass/_my-custom-style.scss */
-ul.accordion > li.active .title span.triangle-open {
-  display: block;
-}
-
-/* line 253, ../sass/_my-custom-style.scss */
-ul.accordion > li.active .title span.triangle-close {
-  display: none;
-}
-
-/* line 256, ../sass/_my-custom-style.scss */
-ul.accordion .content {
-  width: 100%;
-}
-
-/* line 259, ../sass/_my-custom-style.scss */
-.checked-list {
-  float: left;
-  list-style-type: none;
-  margin: 0 10% 11px 0;
-  padding: 0;
-  width: 90%;
-}
-
-/* line 266, ../sass/_my-custom-style.scss */
-.checked-list.width100 {
-  width: 100%;
-  margin: 0;
-}
-
-/* line 270, ../sass/_my-custom-style.scss */
-ul.accordion {
-  float: left;
-  margin: 0 0 22px;
-  width: 100%;
-  border: none;
-}
-
-/* line 276, ../sass/_my-custom-style.scss */
-ul.accordion > li.active {
-  border-top: none;
-}
-
-/* line 279, ../sass/_my-custom-style.scss */
-ul.accordion > li {
-  border-top: none;
-  float: left;
-  width: 100%;
-}
-
-/* line 284, ../sass/_my-custom-style.scss */
-ul.accordion > li.active .content {
-  border: none;
-  background: none;
-}
-
-/* line 289, ../sass/_my-custom-style.scss */
-.checked-list.width100 li,
-checked-list.width100 li:first-child {
-  width: 100% !important;
-}
-
-/* line 292, ../sass/_my-custom-style.scss */
-.checked-list li {
-  float: left;
-  width: 50%;
-}
-
-/* line 296, ../sass/_my-custom-style.scss */
-.accordion .checked-list li:first-child {
-  width: 80%;
-}
-
-/* line 299, ../sass/_my-custom-style.scss */
-.checked-list-down {
-  float: left;
-  list-style-type: none;
-  margin: 0 30% 2% 0;
-  padding: 0;
-  width: 70%;
-}
-
-/* line 306, ../sass/_my-custom-style.scss */
-.checked-list-down li {
-  float: left;
-  background: #ededed;
-  width: 70%;
-  margin: 0 0 -1px;
-  border: 1px solid #ccc;
-  color: #000;
-}
-
-/* line 314, ../sass/_my-custom-style.scss */
-.ButtonSaveCencel {
-  float: right;
 }
 
 /*End: update-popup*/
@@ -8263,15 +8124,6 @@ checked-list.width100 li:first-child {
   color: #1C1711;
 }
 
-/* line 535, ../sass/_my-custom-style.scss */
-.help-block {
-  display: block;
-  font-size: 12px;
-  margin-bottom: 12px;
-  margin-top: -13px;
-  padding: 6px 4px;
-}
-
 /* line 542, ../sass/_my-custom-style.scss */
 .ReturnToLogin {
   display: block;
@@ -8368,12 +8220,6 @@ line {
   /* line 606, ../sass/_my-custom-style.scss */
   ul.tabs-content {
     width: 97%;
-  }
-
-  /* line 609, ../sass/_my-custom-style.scss */
-  .checked-list li {
-    float: left;
-    width: 100%;
   }
 
   /* line 613, ../sass/_my-custom-style.scss */
