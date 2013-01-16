@@ -7401,12 +7401,6 @@ ul.side-nav[data-reveal-id="modal-feature-disabled"] .has-tip:hover {
   font-weight: bold;
 }
 
-/* line 1, ../sass/_state.scss */
-.is-collapsed {
-  height: 0px;
-  overflow: hidden;
-}
-
 /* line 1, ../sass/_theme.scss */
 ul li {
   list-style: none;
