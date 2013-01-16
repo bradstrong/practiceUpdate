@@ -136,6 +136,123 @@ ul.side-nav{
 
 }
 
+/* item card */
+
+.item-header-container{@include column(12);}
+.item-header{@include innerRow();
+	padding-top:$baseFontSize/2;}
+.item-title-container{@include column(12);}
+.item-type{@include column(7);}
+.item-pub-date{@include column(5); text-align: right;}
+.item-container{
+	.commentary-container{@include column(12);}
+	.source-title{font-size:ms(0);}
+}
+.item-title{font-size:ms(1);}
+.item-content-container{@include column(12);}
+.item-content{@include innerRow();}
+.item-content-section{@include column(12);}
+.item-footer{@include column(12);}
+
+.commentary-container{
+	p{
+		line-height: 1.6;
+		text-transform:uppercase;
+	}
+	.expert-name{}
+	.source-photo{}
+	.expert-photo{}
+	// div[class$="-photo"]{
+	// 	@include column(2);
+	// }
+	// div[class$="-name"]{
+	// 	@include column(6);
+	// }
+}
+
+// .vcard{}
+// /*Start: source-container*/
+// .commentary-container p {
+// 	float: left;
+//     margin: 0 0 0 130px;
+// 	line-height: 1.6;
+// 	text-transform:uppercase;
+// 	width:100%;
+// }
+// .commentary-container .source-container {
+// 	float: left;
+//     margin: -20px 0 0;
+//     width: 100%;
+// }
+// .source-container .expert-name{
+// 	float: left;
+//     margin: 14px 0 0 190px;
+// 	width:100%;
+// }
+// .source-container .source-photo{
+// 	float: left;
+//     margin: -33px 0 0;
+// }
+// .source-container .source-photo .photo {
+// 	float: left;
+// }
+// .source-container .source-photo .label {
+// 	background: none repeat scroll 0 0 transparent;
+//     color: #D6E03D;
+//     float: left;
+// 	line-height: 13px;
+// 	font-size:14px;
+//     margin: 15px 0 0 6px;
+//     text-transform: uppercase;
+// }
+// /*End: source-container*/
+
+.item-source-container{
+	@include column(12);
+	figure[class$="-photo"]{
+		@include column(2);
+	}
+	div[class$="-name"]{
+		@include column(6);
+	}
+	.label{
+		color: #D6E03D;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+}
+
+.item-source{
+	padding-bottom:$baseFontSize;
+	@include clearfix();
+	background-color:light($bodyBackground, 25);
+}
+
+/* Page Specific Styles*/
+/* Single Item page elements*/
+.single-item{@include innerRow();}
+
+/* !Update Page Elements */
+/* !stream */
+.stream-item-container{
+	margin-bottom: $columnGutter/3;
+}
+.in-stream{
+	@include innerRow(collapse);
+}
+
+/* !Explore Page Elements*/
+.explore-feature .feature-item{background: $white;}
+.explore-feature { background: url(loading.gif) center center #f4f4f4; height: 300px;}
+.explore-feature img { display: none; }
+
+.explore-feature.orbit { background: none; }
+.explore-feature.orbit img { display: block; }
+.explore-feature.orbit {
+	section{ padding:$columnGutter/3;}
+	article{ padding:$columnGutter/3;}
+}
+
 /* !COMPONENTS */
 
 //user-console
@@ -165,8 +282,8 @@ ul.side-nav{
 
 .password-signin{
 	@include innerRow();
-	.password{@include column(8);}
-	.signin{@include column(4);}
+	.password{@include column(6);}
+	.signin{@include column(6);}
 }
 
 .remember-forgot{
@@ -255,7 +372,7 @@ ul.side-nav{
 	}
 }
 .section-widget{
-	@include column(12);
+	@include column(12, collapse);
 	li{list-style: none;}
 	.meta.title{
 		font-weight: bold;
@@ -336,14 +453,18 @@ ul.side-nav{
 // .inverse
 
 //practiceUpdate
-// .normal 							- default button, label or badge color
-// .primary* 						- main action when there are multiple options example: save
+// .primary* 						- default button, label or badge color main action when there are multiple options example: save
 // .secondary 					- second action when there are multiple options example: cancel
 // .success 						- indicates success of a user or system action
 // .info 								- provides more information to user example: status
 // .warning 						- warns users example: changes will not be saved
 // .important/.danger 	- provides important error/danger information example: do not save
 // .inverse 						- reverse color scheme for use on dark backgrounds
+
+//button states
+//:hover
+//:active
+//:focus
 // .disabled 						- button that is currently disabled
 
 
