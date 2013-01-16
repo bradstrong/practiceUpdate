@@ -79,63 +79,62 @@
 	<section id="sidebar" role="complementary">
 	</section>
 <section role="main">
-	<div class="message">
-		<p>Get the most updated, relevant content by completing your account information. Content is displayed based on your information and your preferences. Click Save to make any updates or Cancel to return to the Home page.</p>
+	<div class="pref-container">
+		<div class="pref-content">
+      <div id="pref-tabs">
+			<ul class="tabs vertical">
+				<li class="active"><a href="#simple1">Email & Password</a></li>
+				<li><a href="#simple2">Personal Info</a></li>
+				<li><a href="#simple3">Professional Info</a></li>
+				<li class="disabled"><a href="#simple4">Content Preferences</a></li>
+				<li><a href="#simple5">Subscription</a></li>
+			</ul>
+		</div><!--/#pref-tabs-->
+	<div id="pref-tabs-content">
+	<div class="alert-box secondary">
+		<p>PracticeUpdate content is displayed based on your information and your preferences. You're in control of what content is most relevant to you. Once you have completed your profile & settings, you can begin using the site.</p>
+		<a href="#" class="close">&times;</a>
 	</div>
-	
-	<div class="content-menu" role="main">
         <div class="alert-box success">
-            Your changes have been saved.
+            <p>Your changes have been saved.</p>
             <a href="#" class="close">&times;</a>
         </div>
         <div class="alert-box alert">
-            {name of field} is required.
+            <p>{ of field} is required.</p>
             <a href="#" class="close">&times;</a>
         </div>
         <div class="alert-box alert">
-            We cannot validate {name of field}. Please check the info and re-enter.
+            <p>We cannot validate { of field}. Please check the info and re-enter.</p>
             <a href="#" class="close">&times;</a>
-        </div>	
-			<dl class="tabs">
-				<dd class="active"><a href="#simple1">Email & Password</a></dd>
-				<dd><a href="#simple2">Personal Info</a></dd>
-				<dd><a href="#simple3">Professional Info</a></dd>
-				<dd class="disabled"><a href="#simple4">Content Preferences</a></dd>
-				<dd><a href="#simple5">Subscription</a></dd>
-			</dl>
-			<ul class="tabs-content">
+        </div>
+<ul class="tabs-content">
 				<li class="active" id="simple1Tab">
 				<form action="#" method="#">
 					<header class="form-header">
-						<div class="cta-title">
-							<span class="cta-title-text">Email</span>
-						</div>
+							<h3 class="form-title">Email &amp; Password</h3>
 					</header>
-					<small class="help-block">Your email address is your User Name. If you change it, your new User Name will be update.</small>
+					<label>Email</label>
+					<span class="help-block">Your email address is your User Name. If you change it, your new User Name will be update.</span>
 					<input type="text" placeholder="Email (User Name)"/>
 					<small class="error">Email (User Name) required</small>
-					<header class="form-header">
-						<div class="cta-title">
-							<span class="cta-title-text">Password</span>
-						</div>
-					</header>
-					<small class="help-block">Want to change your password? Enter your current password and create a new one.</small>
+					<label>Password</label>
+					<span class="help-block">Want to change your password? Enter your current password and create a new one.</span>
 					<input type="text" placeholder="Current Password"/>
 					<small class="error">Current Password required</small>
-					<small class="help-block">Password must be 6-20 characters (letters, numbers and hyphens are accepted but not spaces)</small>
+					<span class="help-block">Password must be 6-20 characters (letters, numbers and hyphens are accepted but not spaces)</span>
 					<input type="text" placeholder="New Password"/>
 					<small class="error">New Password required</small>
 					<input type="text" placeholder="Verify Password"/>
 					<small class="error">Passwords do not match</small>
-					<div class="form-action floationg">
+					<div class="form-action">
 						<a id="Submit" class="form-submit">Save</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
 					</div>
-					<div class="form-action floationg">
+					<div class="form-action">
 						<a id="Submit" class="form-submit">Back</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Next</a>
 					</div>
-					<div class="form-action floationg">
+					<div class="form-action">
 						<a id="Submit" class="form-submit">Complete Registration</a>
 					</div>
 					</form>
@@ -143,31 +142,54 @@
 				<li id="simple2Tab">
 				<form action="#" method="#">
 					<header class="form-header">
-						<div class="cta-title">
-							<span class="cta-title-text">Personal Information</span>
-						</div>
+							<h3 class="form-title">Personal Information</h3>
 					</header>
-					<input type="text" placeholder="First Name"/>
-					<small class="error">First Name required</small>
-					<input type="text" placeholder="Last Name"/>
-					<small class="error">Last Name required</small>
+					<form>
+						<div class="row collapse">
+			    <label>Name</label>
+			    <div class="six columns collapse">
+				      <input type="text" placeholder="First Name"/>
+						  <small class="error">First Name required</small>
+						</div>
+				      <input class="five"type="text" placeholder="Last Name"/>
+							<small class="five error">Last Name required</small>
+						</div><!--.row-->
+				  <div class="row">
+				    <div class="six columns">
+				      <input type="text" placeholder="City" />
+				    </div>
+				    <div class="three columns">
+				      <input type="text" placeholder="State" />
+				    </div>
+				    <div class="three columns">
+				      <input type="text" placeholder="ZIP" />
+				    </div>
+				  </div>
+				  <textarea placeholder="Message"></textarea>
+				</form>
+					
+					
+					
+					
+					<label>Country of Residence</label>
 					<select>
-						<option>Country of Residence</option>
+						<option>Select Country</option>
 					</select>
 					<small class="error">Country of Residence required</small>
+					<label>State of Residence</label>
 					<select>
-						<option>State</option>
+						<option>Select State</option>
 					</select>
 					<small class="error">State required</small>
-					<div class="form-action floationg">
+					<div class="form-action">
 						<a id="Submit" class="form-submit">Save</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
 					</div>
-					<div class="form-action floationg">
+					<div class="form-action">
 						<a id="Submit" class="form-submit">Back</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Next</a>
 					</div>
-					<div class="form-action floationg">
+					<div class="form-action">
 						<a id="Submit" class="form-submit">Complete Registration</a>
 					</div>
 					</form>
@@ -175,9 +197,7 @@
 				<li id="simple3Tab">
 				<form action="#" method="#">
 					<header class="form-header">
-						<div class="cta-title">
-							<span class="cta-title-text">Professional Info</span>
-						</div>
+							<h3 class="form-title">Professional Info</h3>
 					</header>
 					<select>
 						<option>Workplace Type</option>
@@ -191,15 +211,15 @@
 						<option>Primary Area of Practice</option>
 					</select>
 					<small class="error">Primary Area of Practice required</small>
-					<div class="form-action floationg">
+					<div class="form-action">
 						<a id="Submit" class="form-submit">Save</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
 					</div>
-					<div class="form-action floationg">
+					<div class="form-action">
 						<a id="Submit" class="form-submit">Back</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Next</a>
 					</div>
-					<div class="form-action floationg">
+					<div class="form-action">
 						<a id="Submit" class="form-submit">Complete Registration</a>
 					</div>
 					</form>
@@ -207,13 +227,11 @@
 				<li id="simple4Tab">
 				<form action="#" method="#">
 						<header class="form-header">
-							<div class="cta-title">
-								<span class="cta-title-text">Content Preferences</span>
-							</div>
+							<h3 class="form-title">Content Preferences</h3>
 						</header>
-						<small class="help-block">You're in control. Choose what type of content to see on the site. You can change this at any time.</small>
+						<span class="help-block">You're in control. Choose what type of content to see on the site. You can change this at any time.</span>
 						<h4>Channels</h4>
-						<small class="help-block">Each medical specialty has its own Editorial Board. Select the focus of content to view on the site. (Channel=specialty).</small>
+						<span class="help-block">Each medical specialty has its own Editorial Board. Select the focus of content to view on the site. (Channel=specialty).</span>
 						<ul class="checked-list">
 							<li>
 								<label><input type="checkbox" checked="checked">
@@ -242,15 +260,13 @@
 							
 						</ul>
 						<h4>Topic</h4>
-						<small class="help-block">Each "Channel" offers you a different variety of topics to view. You can select a few or all in each Channel.</small>
+						<span class="help-block">Each "Channel" offers you a different variety of topics to view. You can select a few or all in each Channel.</span>
 						<ul class="accordion">
 							<li class="active">
 								<div class="title">
 									<h5>Oncology</h5>
-									<span class="triangle-close">&#9658;</span>
-									<span class="triangle-open">&#9660;</span>
 								</div>
-								<div class="content" style="display: block;">
+								<div class="content">
 									<ul class="checked-list">
 										<li>
 											<label><input type="checkbox">
@@ -290,8 +306,6 @@
 							<li class="">
 								<div class="title">
 									<h5>Primary Care</h5>
-									<span class="triangle-close">&#9658;</span>
-									<span class="triangle-open">&#9660;</span>
 								</div>
 								<div class="content" style="display: none;">
 									<ul class="checked-list">
@@ -343,19 +357,15 @@
 				<li id="simple5Tab">
 				<form action="#" method="#">
 					<header class="form-header">
-						<div class="cta-title">
-							<span class="cta-title-text">Subscriptions</span>
-						</div>
+							<h3 class="form-title">Subscriptions</h3>
 					</header>
-					<small class="help-block">We offer newsletters and targeted emails based on your preferences. Choose to receive emails on 1, a few or all topics.</small>
+					<span class="help-block">We offer newsletters and targeted emails based on your preferences. Choose to receive emails on 1, a few or all topics.</span>
 					<ul class="accordion">
 						<li class="active">
 							<div class="title">
 								<h5>Oncology</h5>
-								<span class="triangle-close">&#9658;</span>
-								<span class="triangle-open">&#9660;</span>
 							</div>
-							<div class="content" style="display: block;">
+							<div class="content">
 								<h4>Weekly</h4>
 								<ul class="checked-list width100">
 									<li>
@@ -415,13 +425,11 @@
 								</ul>
 							</div>
 						</li>
-						<li class="">
+						<li class="accordian">
 							<div class="title">
 								<h5>Primary Care</h5>
-								<span class="triangle-close">&#9658;</span>
-								<span class="triangle-open">&#9660;</span>
 							</div>
-							<div class="content" style="display: none;">
+							<div class="content">
 								<ul class="checked-list">
 									<li>
 										<label><input type="checkbox">
@@ -457,8 +465,8 @@
 					</ul>
 					<div class="reg-block">
 						<legend>Promotions</legend>
-						<small class="help-block">I wish to receive carefully selected special offers / Promotions from:</small>
-						<ul class="checked-list width100">
+						<span class="help-block">I wish to receive carefully selected special offers / Promotions from:</span>
+						<ul class="checked-list ">
 							<li>
 								<label><input type="checkbox">
 									Elsevier</label>
@@ -471,7 +479,7 @@
 					</div>
 					<div class="reg-block">
 						<legend>Registered User Agreement</legend>
-						<ul class="checked-list width100">
+						<ul class="checked-list ">
 							<li>
 								<label><input type="checkbox">
 									I have read and understand the registered user agreement and agree to be bound by all its
@@ -479,22 +487,23 @@
 							</li>
 						</ul>
 					</div>
-					<div class="form-action floationg">
+					<div class="form-action ">
 						<a id="Submit" class="form-submit">Save</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
 					</div>
-					<div class="form-action floationg">
+					<div class="form-action ">
 						<a id="Submit" class="form-submit">Back</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Next</a>
 					</div>
-					<div class="form-action floationg">
+					<div class="form-action ">
 						<a id="Submit" class="form-submit">Complete Registration</a>
 					</div>
 					</form>
 				</li>
 			</ul>			
-		</form>
-	</div>
+	</div><!--/#pref-tabs-content-->
+</div><!--/.pref-content-->
+	</div><!--/.pref-container-->
 </section>
 <!--/.update-block-->
 </div>

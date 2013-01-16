@@ -84,19 +84,5 @@
 	max-height: 600px;
 }
 
-// Hide ad containers on mobile
-
+// Hide leaderboard containers on mobile
 body > #leaderboardouter{@media only screen and (max-width: $screenMedium) {display:none;}}
-
-
-// standard leaderboard
-// 728X90
-
-// standard boombox
-// 300x250
-
-// custom boombox
-// 336x280
-
-// skyscraper
-// 160x600

@@ -1,31 +1,43 @@
-.active-item-indicator{
-	display: block;
-	float: right;
-	position: relative;
-	left:$baseFontSize/2;
-}
-
 /* !Top Bar */
+.top-bar {
+  ul {
+    &>li {
+      /* Branding and name */
+      &.name {
+      	@include column(3);
+      }
+    }
+  }
+	section{
+
+	}
+}
 .top-bar {
   /* Setting up the sliding area */
 	section{
-	  ul {
-	  	li.name{
-	  		}
-	    &>li:not(.name) {
-	    	text-transform:uppercase;
-	      &.active {
-	      	@include site-gradient($pri-green);
-				}
-				&:hover{
-					@include site-gradient($pri-green);
-				}
-				&.active, &:hover{
-					& a{color:$white;}
-				}
-	    }
-	  }
+		@include column(4);
+		@include push(5);
 	}
+  ul {
+  	li.name{
+  		@include column(3);
+  		}
+    li:not(.name) {
+    	text-transform:uppercase;
+      &.active {
+      	@include site-gradient($pri-green);
+			}
+			&:hover{
+				@include site-gradient($pri-green);
+			}
+			&.active, &:hover{
+				& a{color:$white;}
+			}
+    }
+    li a:not(.button){
+    	padding: 0 10px !important;
+    }
+  }
 }
 @media only screen and (max-width: $topBarBreakPoint) {
 	.top-bar ul > li.name{background:$white;}
@@ -44,21 +56,32 @@ $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
 
 // SIDE NAV (.side-nav)
 ul.side-nav{
-	@include site-gradient(lighten($ter-ltTan, 5%), 5%);
+//	@include site-gradient(lighten($ter-ltTan, 5%), 5%);
 	@include border-radius(3px);
-	@include elementBoxShadow();
+//	@include elementBoxShadow();
 	li{
 		list-style: none;
 		margin-bottom:1px;
 		line-height: 1.2;
-		&:hover{background-color:$sidebarLiHoverBackground;}
+		&:hover{
+			//background-color:$sidebarLiHoverBackground;
+			box-shadow: inset 0 0 5px rgba(0,0,0,.1);}
 		&.active{
+			box-shadow: inset 0 0 10px rgba(0,0,0,.1);
 			a{
 				color: $mainColor;
 				cursor: default;
 				font-weight: normal;
 				border-left:3px solid $mainColor;
 				padding-left: 4px;
+			.active-item-indicator{
+				margin-top: -($baseFontSize/2); position: absolute; right: 0; top:50%;
+			}
+			&:after{
+				//@include cssTriangle($baseFontSize/2, $mainColor, left);
+				//margin-right: $baseFontSize/2; margin-top: -($baseFontSize/2); position: absolute; right: 0; top:50%;
+				// @include cssTriangle(5px, $mainColor, left);
+			}
 			}
 			&:hover{background-color: transparent;}
 			.active-item-indicator{font-weight: bold;}
@@ -69,8 +92,10 @@ ul.side-nav{
 		&:last-child{@include border-bottom-radius(3px);}
 		a{
 			display: block;
+			position: relative;
 			text-transform: capitalize;
 			padding: $baseFontSize/2;
+			padding-right: $baseFontSize*1.25;
 		}
 	}
 .nav-header{
@@ -92,10 +117,31 @@ ul.side-nav{
 	}
 }
 
+/* Panels ---------------------- */
+
+.panel { background: darken($white, 5%); border: solid 1px darken($white, 10%); margin: 0 0 22px 0; padding: 20px;
+
+  > :first-child { margin-top: 0; }
+  > :last-child { margin-bottom: 0; }
+
+  &.callout { background: $mainColor; color: #fff; border-color: darken($mainColor, 10%); @include box-shadow(inset 0px 1px 0px rgba(255,255,255,0.5));
+    a { color: #fff; }
+    .button { background: $white; border: none; color: $mainColor; @include text-shadow(none);
+
+      &:hover, &:focus { background: rgba(255,255,255,0.8); }
+    }
+  }
+
+  &.radius { @include border-radius($buttonRadius); }
+
+}
+
 /* !COMPONENTS */
 
 //user-console
-.users-console{
+.user-console{
+	// transition: height 2s;
+	// -webkit-transition: height 2s; /* Safari and Chrome */
 	p{
 		color: $pri-blue;
 	}
@@ -105,7 +151,14 @@ ul.side-nav{
 .user-title{}                 
 .edit-user-settings{}
 .user-settings-menu{
-
+	-webkit-transition: height 0.3s ease;
+	&.is-expanded{
+	height: auto;
+	}
+	&.is-collapsed{
+	height: 0px;
+	overflow: hidden;
+	}
 }
 
 // Login-Register
@@ -252,7 +305,7 @@ ul.side-nav{
 }
 
 .user-profile-section-title{
-	@extend h5;
+	//@extend h5;
 }
 
 // CME modals

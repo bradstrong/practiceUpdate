@@ -10,15 +10,6 @@
 // $mobileTotalColumns: 4;
 // $blockGridElements: 12; // Highest number of block grid elements, Maximum of 24 supported
 
-//Tabs
-
-// $tabsWidth: 30%;
-// $tabsListElementWidth: 100%;
-
-// Explore Section
-
-$exploresectionBottomborder: dotted 1px #ddd;
-
 // Colors Settings
 
 // $mainColor: #2ba6cb;
@@ -121,6 +112,7 @@ $exploresectionBottomborder: dotted 1px #ddd;
 // $topBarSearchWidth: 200px;
 // $topBarBreakPoint: 940px; // Change to 9999px for always mobile layout
 // $topBarNavToggleSize: 8px;
+// $topBarNavToggleColor: #fff;
 
 // UI Settings
 
@@ -131,6 +123,7 @@ $exploresectionBottomborder: dotted 1px #ddd;
 // $progBarPad: 2px;
 // $linkListBottomMargin: 17px -22px;
 // $tableBorderRadius: 3px;
+// $alertBorderRadius: 3px;
 
 // Tooltip Settings
 
@@ -241,7 +234,6 @@ $exploresectionBottomborder: dotted 1px #ddd;
 // $tipCloseWeight: normal;
 // $tipScreenFill: rgba(0,0,0,0.5);
 
-
 // Modular Scale Settings
 
 // $ratio: $golden; // THIS IS DEFAULT IN MODULAR-SCALE
@@ -251,8 +243,3 @@ $exploresectionBottomborder: dotted 1px #ddd;
 // Produced the following list of values: 14, 17, 23, 27, 37, 44, 59, 71, 95, 115;
 // http://www.modularscale.com by Tim Brown
 // https://github.com/scottkellum/modular-scale by scottkellum
-
-//POP UP
-
-$widthpopup: 100%;
-$blockelement: left;

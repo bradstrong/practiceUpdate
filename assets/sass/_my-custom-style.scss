@@ -45,10 +45,6 @@
 .login-form legend {
 	margin:0 0 10px;
 }
-.tabs-content i {
-	float: left;
-    font-size: x-small;
-}
 .login-form fieldset {
 	float:left;
 	width:48%;
@@ -152,51 +148,46 @@
 	width:100%;
 }
 /*Start : tabs*/
-.tabs  {
-	width: 30%;
-	float:left;
-}
-.tabs dd {
-	width:100%;
-}
-.tabs dd.active, .tabs li.active {
-    border-top: none;
-    margin-top: 0;
-}
-.tabs dd a {
-	border: 1px solid #333333;
-	border-bottom:none;
-	padding: 0 20px;
-	width:100%;
-	line-height: 38px;
-	color:$white;
-	font-weight:normal;
-	float:left;
-	height:auto;
-	background: none repeat scroll 0 0 #4D4D4D;
-}
-.tabs dd.active a {
-	background: none repeat scroll 0 0 #0084A9;
-	color:$white;
-	font-weight:normal;
-	border: 1px solid #333333;
-	border-bottom:none;
-}
-.disabled{
-  cursor: default;
-  & a{
-    cursor: default;
-  }
-}
+// .tabs  {
+// 	width: 30%;
+// 	float:left;
+// }
+// .tabs dd {
+// 	width:100%;
+// }
+// .tabs dd.active, .tabs li.active {
+//     border-top: none;
+//     margin-top: 0;
+// }
+// .tabs dd a {
+// 	border: 1px solid #333333;
+// 	border-bottom:none;
+// 	padding: 0 20px;
+// 	width:100%;
+// 	line-height: 38px;
+// 	color:$white;
+// 	font-weight:normal;
+// 	float:left;
+// 	height:auto;
+// 	background: none repeat scroll 0 0 #4D4D4D;
+// }
+// .tabs dd.active a {
+// 	background: none repeat scroll 0 0 #0084A9;
+// 	color:$white;
+// 	font-weight:normal;
+// 	border: 1px solid #333333;
+// 	border-bottom:none;
+// }
+
 .tabs a:hover {
     background: none repeat scroll 0 0 #333333;
 	border: 1px solid #333333;
 	border-bottom:none;
 }
-.tabs dd a:focus, .tabs li a:focus {
-    color: $white;
-    font-weight: normal;
-}
+// .tabs dd a:focus, .tabs li a:focus {
+//     color: $white;
+//     font-weight: normal;
+// }
 .tabs dd:last-child a{
     border-bottom: 1px solid #333333;
 }
@@ -212,12 +203,12 @@
 .content-info {
 	min-height:300px;
 }
-ul.tabs-content {
-	float: left;
-    margin: -12px 0 2% 2%;
-    min-height: 400px;
-    width: 68%;
-}
+// ul.tabs-content {
+// 	float: left;
+//     margin: -12px 0 2% 2%;
+//     min-height: 400px;
+//     width: 68%;
+// }
 .tabs-content .cta-title {
     margin: 5px 0 5px;
 }
@@ -229,9 +220,6 @@ ul.tabs-content {
 ul.tabs-content fieldset{
 	padding:0;
 	margin:0;
-}
-ul.tabs-content fieldset legend{
-	background:none;
 }
 .tabs-content legend {
 	font-size: 16px;
@@ -551,9 +539,6 @@ checked-list.width100 li:first-child{
     border: 1px solid #CBBDAD;
     color: #1C1711;
 }
-#main-nav {
-	float:right;
-}
 .help-block {
     display: block;
     font-size: 12px;
@@ -790,41 +775,7 @@ line {
     margin: 0;
     padding: 20px;
 }
-/*Start: source-container*/
-.commentary-container p {
-	float: left;
-    margin: 0 0 0 130px;
-	line-height: 23px;
-	text-transform:uppercase;
-	width:100%;
-}
-.commentary-container .source-container {
-	float: left;
-    margin: -20px 0 0;
-    width: 100%;
-}
-.source-container .expert-name{
-	float: left;
-    margin: 14px 0 0 190px;
-	width:100%;
-}
-.source-container .source-photo{
-	float: left;
-    margin: -33px 0 0;
-}
-.source-container .source-photo .photo {
-	float: left;
-}
-.source-container .source-photo .label {
-	background: none repeat scroll 0 0 transparent;
-    color: #D6E03D;
-    float: left;
-	line-height: 13px;
-	font-size:14px;
-    margin: 15px 0 0 6px;
-    text-transform: uppercase;
-}
-/*End: source-container*/
+
 /*Start: user-profile-container*/
 .user-profile-container .user-profile,
 .channel-list-container{
@@ -921,7 +872,7 @@ line {
 	font-size:24px;
 }
 .section-widget .section-content .entry {
-	border-bottom:$exploresectionBottomborder;
+	// border-bottom:$exploresectionBottomborder;
 }
 .section-widget .meta.title {
 	margin:0;
@@ -937,7 +888,7 @@ line {
 .reveal-modal #cme_teaser {
 	margin:25px 0 0;
 	float:left;
-	width:$widthpopup;
+	// width:$widthpopup;
 }
 .reveal-modal .photo {
 	float:left;
@@ -945,18 +896,18 @@ line {
 }
 .reveal-modal .content {
 	float:left;
-	width:$widthpopup;
+	// width:$widthpopup;
 }
 .reveal-modal .content .intro {
 	float:left;
-	width:$widthpopup;
+	// width:$widthpopup;
 	margin:0 0 10px;
 	line-height: 1.6;
 }
 .reveal-modal .info.clearfix {
 	float:left;
 	margin:0;
-	width:$widthpopup;
+	// width:$widthpopup;
 }
 .reveal-modal .info.clearfix dt{
 	width:20%;
@@ -968,10 +919,10 @@ line {
 	float:left;
 }
 .reveal-modal .cme-container {
-	width:$widthpopup;
+	// width:$widthpopup;
 }
 .reveal-modal .cme-container table{
-	width:$widthpopup;
+	// width:$widthpopup;
 }
 @media only screen and (max-width: 620px) {
 	.reveal-modal .info.clearfix dt{
@@ -981,7 +932,7 @@ line {
 	.reveal-modal .info.clearfix dd{
 		float: left;
 		margin: 0 0 11px;
-		width: $widthpopup;
+		// width: $widthpopup;
 	}
 	table thead tr td,
 	table tbody tr td {

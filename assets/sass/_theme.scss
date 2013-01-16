@@ -1,5 +1,8 @@
+ul li{
+	list-style: none;
+}
 //article{
-.in-stream, .single-item, .user-profile, .user-group, .channel-list-container{
+.in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container{
 	background-color:$white;
 	@include elementBoxShadow;
 }
@@ -37,7 +40,6 @@ body{
 .item-title, .item-type, .item-pub-date{
 	font-family:$titleFontFamily;
 	font-weight:normal;
-	color:ter-ltTan;
 }
 
 .subheader{ color:$headerFontColor;}
