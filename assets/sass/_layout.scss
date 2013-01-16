@@ -42,9 +42,6 @@
 	}
 }
 
-/* !dashboard */
-.dashboard{height: 100%; display: inline-block;}
-
 .footnotes a {
 	word-break: break-all;
 	word-break: break-word;
@@ -71,10 +68,9 @@
 
 /* Page Layouts */
 /* !Base Layout */
+#dashboard,.dashboard{ @include column(12, collapse);}
 	.recommended{@include column(5); @include mobileColumn(4);}
-	.aux{@include column(5); @include mobileColumn(4);}
-//	#sidebar{padding:0;}
-
+	#aux{@include column(5); @include mobileColumn(4);}
 
 /* !Update Layout */
 .stream-container{@include column(7, collapse); @include mobileRow();}

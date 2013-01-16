@@ -2,7 +2,7 @@ ul li{
 	list-style: none;
 }
 //article{
-.in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container{
+.in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container, .user-console{
 	background-color:$white;
 	@include elementBoxShadow;
 }

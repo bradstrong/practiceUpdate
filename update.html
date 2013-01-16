@@ -94,16 +94,22 @@
 	<section id="sidebar" role="complementary">
 		<div class="dashboard">
 <div class="user-console">
+<div class="current-user">
 	<div class="user-details">
 		<p class="user-name">brad strong</p>
 		<p class="user-title">Physician</p>                    
 	</div>
-	<a class="button edit-user-settings tiny round"><i class="icon-cog"></i></a>
-	<ul class="user-settings-menu">
-		<li id="UserConsolePreferences"><a id="PreferencesLink" href="javascript:void(0);">My Profile &amp; Settings</a></li>
+</div><!--/.current-user-->
+<div class="drawer">
+	<ul class="drawer-menu user-settings-menu is-collapsed">
+		<li id="UserConsolePreferences" class="active"><a id="PreferencesLink" href="javascript:void(0);">My Profile &amp; Settings<span class="active-item-indicator"><i class="icon-chevron-right"></i></span></a></li>
 		<li><a id="Logout" href="/User/LogOut">Logout</a></li>
-	</ul>
-</div><!--/.component.user-console -->
+	</ul><!--/.drawer-menu-->
+	<div class="drawer-toggle">
+		<a class="drawer-toggle-button edit-user-settings"><i class="icon-angle-down icon-large"></i></a>
+</div><!--/.drawer-toggle -->
+</div><!--/.drawer-->
+</div><!--/.user-console-->
 
 				<div class="component user-topic">
 <nav role="navigation">
@@ -184,13 +190,13 @@
 	});
 
 	<!-- Mustache - homepage user-console template -->
-	$.getJSON('content/json/user-console.json', function(data) {
-		$.get('assets/mustache/user-console.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.user-console').html(html);
-		});
-	});
+	// $.getJSON('content/json/user-console.json', function(data) {
+	// 	$.get('assets/mustache/user-console.mustache', function(template) {
+	// 		//alert('Load was performed.');
+	//     var html = Mustache.to_html(template, data);
+	//     $('.user-console').html(html);
+	// 	});
+	// });
 
 	<!-- Mustache - homepage user-topic template -->
 	$.getJSON('content/json/user-topic.json', function(data) {

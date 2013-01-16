@@ -1,0 +1,282 @@
+// SIDEBAR
+
+//sidebar variables
+// $sidebarBackground:lighten(scale-saturation($pri-tan, -66%), 40%);
+// $sidebarLiBackground:scale-saturation(shade($pri-tan, 15%), -30%);
+// $sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
+
+// #sidebar .component{
+// 	margin-bottom: $baseFontSize;
+// }
+
+// // SIDE NAV (.side-nav)
+// ul.side-nav{
+// //	@include site-gradient(lighten($ter-ltTan, 5%), 5%);
+// 	@include border-radius(3px);
+// //	@include elementBoxShadow();
+// 	li{
+// 		list-style: none;
+// 		margin-bottom:1px;
+// 		line-height: 1.2;
+// 		&:hover{
+// 			//background-color:$sidebarLiHoverBackground;
+// 			box-shadow: inset 0 0 5px rgba(0,0,0,.1);}
+// 		&.active{
+// 			box-shadow: inset 0 0 10px rgba(0,0,0,.1);
+// 			a{
+// 				color: $mainColor;
+// 				cursor: default;
+// 				font-weight: normal;
+// 				border-left:3px solid $mainColor;
+// 				padding-left: 4px;
+// 			.active-item-indicator{
+// 				margin-top: -($baseFontSize/2); position: absolute; right: 0; top:50%;
+// 			}
+// 			&:after{
+// 				//@include cssTriangle($baseFontSize/2, $mainColor, left);
+// 				//margin-right: $baseFontSize/2; margin-top: -($baseFontSize/2); position: absolute; right: 0; top:50%;
+// 				// @include cssTriangle(5px, $mainColor, left);
+// 			}
+// 			}
+// 			&:hover{background-color: transparent;}
+// 			.active-item-indicator{font-weight: bold;}
+// 		}
+// 		&.selected{
+// 			a{}
+// 		}
+// 		&:last-child{@include border-bottom-radius(3px);}
+// 		a{
+// 			display: block;
+// 			position: relative;
+// 			text-transform: capitalize;
+// 			padding: $baseFontSize/2;
+// 			padding-right: $baseFontSize*1.25;
+// 		}
+// 	}
+// .nav-header{
+// 	font-family: $headerFontFamily;
+// 	font-weight: $headerFontWeight;
+// 	font-size:ms(0);
+// 	color: $pri-blue;
+// 	&:hover{background-color:transparent;}
+// 	padding:0 $baseFontSize/2 $baseFontSize/2;
+// }
+// 	&[data-reveal-id="modal-feature-disabled"]{
+// 		padding:0;
+// 		.has-tip{
+// 			border-bottom:none;
+// 			&:hover{
+// 				cursor:pointer;
+// 			}
+// 		}
+// 	}
+// }
+
+// .component {
+// 	background-color: transparent;
+// 	float:left;
+// 	width:100%;
+// 	margin:1% 0 0%;
+// 	padding:1% 0 4%;
+// 	border-bottom:1px dotted #C6C6BC;
+// }
+.component .nav-header {
+	background:none;
+}
+.component .side-nav {
+	padding:0;
+}
+.component .side-nav .dropdownvisible li {
+	background-color: #E9E3DC;
+    border: 1px solid #CBBDAD;
+	border-top:none;
+    color: #1C1711;
+	margin: 0 0;
+    padding: 5px 14px;
+    width: 100%;
+}
+.component .side-nav .dropdownvisible li:hover {
+	background-color:#c3b7a8;
+}
+.component .side-nav li:hover li a {
+    color: #000;
+}
+.component .side-nav li li:hover a{
+    color: #b87c2b;
+}
+.component .side-nav li {
+//	background-color: #E9E3DC;
+    // border: 1px solid #CBBDAD;
+//	border-top:none;
+//	border-bottom:none;
+    color: #1C1711;
+	margin:0;
+//	float:left;
+	width:100%;	
+}
+.component .side-nav li a{
+    color: #000;
+//	border-bottom: 1px solid #CBBDAD;
+	padding:5px 14px;
+}
+.component .side-nav li.nav-header a{
+    color: #000;
+//	border-bottom: none;
+	padding:0;
+}
+.component .side-nav li:hover{
+//	background-color: #D5CABD;
+}
+.component .side-nav li li a{
+	text-transform:capitalize;
+}
+.component .side-nav {
+	background:none;
+}
+.component .side-nav li.nav-header {
+//	background-color: #D5CABD;
+    border: none;
+//	border-bottom: 1px solid #CBBDAD;
+}
+// .dashboard .cta {
+// 	background: none;
+//     border: none;
+//     margin: 0;
+//     padding: 0;
+// }
+//li.nav-header,
+/*Start: user-consol*/
+// .dashboard .cta.users-console {
+// 	background:#0084A9;
+// 	padding:1em !important;
+// 	padding-bottom:1em !important;
+// 	z-index: 10 !important;
+// 	width:100% !important;
+// 	position:relative !important;
+// }
+.users-console p {
+	//color:$white;
+	//margin: 0 0 -4px;
+	//font-weight:bold;
+	//font-size:17px;
+}
+// .users-console .right {
+// 	padding:0;
+// 	margin:0;
+// 	list-style-type:none;
+// 	position:absolute;
+// 	top:14px;
+// 	right:14px;
+// }
+
+// .users-console .right ul li {
+// 	background-color: #E9E3DC;
+// //    border: 1px solid #CBBDAD;
+// 	border-top:none;
+//     color: #1C1711;
+// 	margin:0;
+// 	padding:5px 14px;
+// }
+.users-console .right ul li:first-child {
+//	border-top:1px solid #CBBDAD;
+}
+// .users-console .right ul li a{
+//     color: #000;
+// }
+// .users-console .right ul li:hover {
+// 	background-color: #D5CABD;
+// }
+// .users-console .right ul li:hover a{
+//     color: $white;
+// }
+// .users-console p.user-console-small {
+// 	font-size:12px;
+// }
+
+// .users-console {
+// 	float:left;
+// }
+// .users-console .accordion{
+// 	float:left;
+// }
+// .users-console ul.accordion > li > div.title {
+// 	border:none !important;
+// 	background:transparent url("../img/linkD.png") no-repeat right 10px;
+// 	padding:0;
+// }
+ul.accordion > li > div.title:after {
+	border:none !important;
+}
+.dashboard .user-menu {
+	margin:0;
+	list-style-type:none;
+}
+.dashboard .user-menu li:first-child {
+	border-top: none;
+}
+.dashboard .user-menu li {
+//	float:left;
+	width:100%;
+	border-top: 1px solid #007798;
+}
+.dashboard .user-menu li.active {
+	border-left:7px solid #D6E03D;
+}
+.dashboard .user-menu li.active a{
+	padding:4px 8px 4px 15px;
+}
+.dashboard .user-menu li a{
+	color:$white;
+//	float:left;
+	border:1px solid #0084A9;
+	width:100%;
+	padding:4px 8px 4px 15px;
+}
+.dashboard .user-menu li a:hover {
+	border:1px solid #007fa2;
+	background:#00a3d1;
+}
+.dashboard .accordion .content {
+	padding:0;
+	margin:10px -14px 0;
+	border-top:1px dotted #00708f !important; 
+}
+/*End: users-console*/
+/*Start: custom css*/
+.component .side-nav li.nav-header {
+	padding:7px 14px 2px;
+	margin:10px 0 0;
+}
+.component .side-nav li.nav-header a.trigger,
+.component .side-nav li.nav-header a.activetrigger{
+//	background: url("../img/bottom-select.png") no-repeat scroll 100% center transparent;
+    border-radius: 2px 2px 2px 2px;
+    display: block;
+    // float: left;
+    font-family: inherit;
+    font-size: 17px;
+    height: 32px;
+   margin:-3px -7px 2px;
+    padding: 6px;
+    transition: all 0.15s linear 0s;
+    width: 100%;
+}
+.component .side-nav li.nav-header a.trigger {
+	background:transparent url("../img/right-select.png") no-repeat 100% center;
+}
+.dropdownhidden {
+	display:none;
+	width:100%;
+}
+.dropdownvisible {
+	margin:0 0 10px;
+	// float:left;
+}
+/*End: custom css*/
+ul.side-nav li.active {
+	border-left: 7px solid #0084A9;
+}
+ul.side-nav li.active a {
+    font-weight: normal;
+	color:#000000;
+}

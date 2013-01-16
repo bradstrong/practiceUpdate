@@ -1,0 +1,85 @@
+//user-console
+
+// <div class="user-console">
+// <div class="current-user">
+// 	<div class="user-details">
+// 		<p class="user-name">brad strong</p>
+// 		<p class="user-title">Physician</p>                    
+// 	</div>
+// </div><!--/.current-user-->
+// <div class="drawer">
+// 	<ul class="drawer-menu user-settings-menu is-collapsed">
+// 		<li id="UserConsolePreferences" class="active"><a id="PreferencesLink" href="javascript:void(0);">My Profile &amp; Settings<span class="active-item-indicator"><i class="icon-chevron-right"></i></span></a></li>
+// 		<li><a id="Logout" href="/User/LogOut">Logout</a></li>
+// 	</ul><!--/.drawer-menu-->
+// 	<div class="drawer-toggle">
+// 		<a class="drawer-toggle-button edit-user-settings"><i class="icon-angle-down icon-large"></i></a>
+// </div><!--/.drawer-toggle -->
+// </div><!--/.drawer-->
+// </div><!--/.user-console-->
+
+.drawer-toggle{@include site-gradient(lighten($ter-ltTan, 5%));}
+.drawer-toggle-button{
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding:{
+		top: $baseFontSize/2;
+		bottom: $baseFontSize/4;
+	}
+}
+.drawer-menu{
+	background: lighten($ter-ltTan, 7%);
+	&.is-expanded{
+		border-top:1px solid lighten($ter-ltTan, 2%);
+		border-bottom: 1px solid lighten($ter-ltTan, 2%);
+	}
+	li{
+		a{
+			display: block;
+			padding: $baseFontSize/2;
+			&:hover{
+				background: lighten($ter-ltTan, 2%);
+			}
+		}
+		&.active a{
+			padding-left:$baseFontSize/4;
+			border-left: {
+				style: solid;
+				width: $baseFontSize/4;
+				color: $sec-blue;
+			}
+		}
+	}
+}
+
+.user-console{
+	// @include innerRow(collapse);
+	// transition: height 2s;
+	p{
+		color: $pri-blue;
+	}
+}
+.current-user{
+}
+.user-details{
+	padding: $baseFontSize/2;;
+}
+.user-name,.user-title{
+	color: $pri-blue;
+	text-transform: capitalize;
+	margin-bottom: $baseFontSize/2;
+}
+.user-title{@extend .subheader;}  
+.edit-user-settings{}
+.user-settings-menu{
+	margin-bottom:0;
+	-webkit-transition: height 0.3s ease;
+	&.is-expanded{
+	height: auto;
+	}
+	&.is-collapsed{
+	height: 0px;
+	overflow: hidden;
+	}
+}

@@ -43,79 +43,7 @@
 	.top-bar ul > li.name{background:$white;}
 	}
 
-// SIDEBAR
-
-//sidebar variables
-$sidebarBackground:lighten(scale-saturation($pri-tan, -66%), 40%);
-$sidebarLiBackground:scale-saturation(shade($pri-tan, 15%), -30%);
-$sidebarLiHoverBackground:lighten(scale-saturation($mainColor, -66%), 60%);
-
-#sidebar .component{
-	margin-bottom: $baseFontSize;
-}
-
-// SIDE NAV (.side-nav)
-ul.side-nav{
-//	@include site-gradient(lighten($ter-ltTan, 5%), 5%);
-	@include border-radius(3px);
-//	@include elementBoxShadow();
-	li{
-		list-style: none;
-		margin-bottom:1px;
-		line-height: 1.2;
-		&:hover{
-			//background-color:$sidebarLiHoverBackground;
-			box-shadow: inset 0 0 5px rgba(0,0,0,.1);}
-		&.active{
-			box-shadow: inset 0 0 10px rgba(0,0,0,.1);
-			a{
-				color: $mainColor;
-				cursor: default;
-				font-weight: normal;
-				border-left:3px solid $mainColor;
-				padding-left: 4px;
-			.active-item-indicator{
-				margin-top: -($baseFontSize/2); position: absolute; right: 0; top:50%;
-			}
-			&:after{
-				//@include cssTriangle($baseFontSize/2, $mainColor, left);
-				//margin-right: $baseFontSize/2; margin-top: -($baseFontSize/2); position: absolute; right: 0; top:50%;
-				// @include cssTriangle(5px, $mainColor, left);
-			}
-			}
-			&:hover{background-color: transparent;}
-			.active-item-indicator{font-weight: bold;}
-		}
-		&.selected{
-			a{}
-		}
-		&:last-child{@include border-bottom-radius(3px);}
-		a{
-			display: block;
-			position: relative;
-			text-transform: capitalize;
-			padding: $baseFontSize/2;
-			padding-right: $baseFontSize*1.25;
-		}
-	}
-.nav-header{
-	font-family: $headerFontFamily;
-	font-weight: $headerFontWeight;
-	font-size:ms(0);
-	color: $pri-blue;
-	&:hover{background-color:transparent;}
-	padding:0 $baseFontSize/2 $baseFontSize/2;
-}
-	&[data-reveal-id="modal-feature-disabled"]{
-		padding:0;
-		.has-tip{
-			border-bottom:none;
-			&:hover{
-				cursor:pointer;
-			}
-		}
-	}
-}
+@import "_module-user-topic.scss";
 
 /* Panels ---------------------- */
 
@@ -254,29 +182,7 @@ ul.side-nav{
 }
 
 /* !COMPONENTS */
-
-//user-console
-.user-console{
-	// transition: height 2s;
-	// -webkit-transition: height 2s; /* Safari and Chrome */
-	p{
-		color: $pri-blue;
-	}
-}
-.user-details{}
-.user-name{}
-.user-title{}                 
-.edit-user-settings{}
-.user-settings-menu{
-	-webkit-transition: height 0.3s ease;
-	&.is-expanded{
-	height: auto;
-	}
-	&.is-collapsed{
-	height: 0px;
-	overflow: hidden;
-	}
-}
+@import "_module-user-console";
 
 // Login-Register
 

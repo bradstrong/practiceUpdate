@@ -66,6 +66,7 @@
     $('.user-settings-menu').toggleClass('is-collapsed is-expanded');
   });
 });
+
   // A-B Testing function
   //a=65, b=66
   $(window).keydown(function(event){
