@@ -15,8 +15,9 @@
 .top-bar {
   /* Setting up the sliding area */
 	section{
-		@include column(4);
-		@include push(5);
+		@include column(9);
+//		@include push(5);
+ul{@extend .right;}
 	}
   ul {
   	li.name{
@@ -42,6 +43,8 @@
 @media only screen and (max-width: $topBarBreakPoint) {
 	.top-bar ul > li.name{background:$white;}
 	}
+
+//	@media only screen and (max-width: 768px)
 
 @import "_module-user-topic.scss";
 

@@ -85,4 +85,4 @@
 }
 
 // Hide leaderboard containers on mobile
-body > #leaderboardouter{@media only screen and (max-width: $screenMedium) {display:none;}}
+#leaderboard{@media only screen and (max-width: $screenSmall) {display:none;}}

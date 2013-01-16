@@ -74,9 +74,8 @@
 .edit-user-settings{}
 .user-settings-menu{
 	margin-bottom:0;
-	-webkit-transition: height 0.3s ease;
 	&.is-expanded{
-	height: auto;
+	-webkit-transition: all 0.5s ease;
 	}
 	&.is-collapsed{
 	height: 0px;

@@ -61,9 +61,10 @@
   console.log('toggle menu');
   $('ul.user-settings-menu').addClass('is-collapsed');
   $('ul.user-settings-menu li:first').addClass('active');
-  $('li.active > a, dd.active > a').append('<span class="active-item-indicator"><i class="icon-chevron-right"></i></span>');
+//  $('li.active > a, dd.active > a').append('<span class="active-item-indicator"><i class="icon-chevron-right"></i></span>');
   $('.edit-user-settings').click(function (){
     $('.user-settings-menu').toggleClass('is-collapsed is-expanded');
+    $('.drawer-toggle-button i').toggleClass('icon-angle-down icon-angle-up');
   });
 });
 

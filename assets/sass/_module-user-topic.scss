@@ -71,6 +71,7 @@
 // 		}
 // 	}
 // }
+// *** Begin NIX *** //
 
 // .component {
 // 	background-color: transparent;
@@ -105,14 +106,14 @@
     color: #b87c2b;
 }
 .component .side-nav li {
-//	background-color: #E9E3DC;
-    // border: 1px solid #CBBDAD;
-//	border-top:none;
-//	border-bottom:none;
+	background-color: #E9E3DC;
+    border: 1px solid #CBBDAD;
+	border-top:none;
+	// border-bottom:none;
     color: #1C1711;
 	margin:0;
 //	float:left;
-	width:100%;	
+// width:100%;	
 }
 .component .side-nav li a{
     color: #000;
@@ -134,9 +135,9 @@
 	background:none;
 }
 .component .side-nav li.nav-header {
-//	background-color: #D5CABD;
+	background-color: #D5CABD;
     border: none;
-//	border-bottom: 1px solid #CBBDAD;
+	border-bottom: 1px solid #CBBDAD;
 }
 // .dashboard .cta {
 // 	background: none;
@@ -199,11 +200,11 @@
 // .users-console .accordion{
 // 	float:left;
 // }
-// .users-console ul.accordion > li > div.title {
-// 	border:none !important;
-// 	background:transparent url("../img/linkD.png") no-repeat right 10px;
-// 	padding:0;
-// }
+ .users-console ul.accordion > li > div.title {
+	border:none !important;
+	background:transparent url("../img/linkD.png") no-repeat right 10px;
+	padding:0;
+ }
 ul.accordion > li > div.title:after {
 	border:none !important;
 }
@@ -249,7 +250,7 @@ ul.accordion > li > div.title:after {
 }
 .component .side-nav li.nav-header a.trigger,
 .component .side-nav li.nav-header a.activetrigger{
-//	background: url("../img/bottom-select.png") no-repeat scroll 100% center transparent;
+	background: url("../img/bottom-select.png") no-repeat scroll 100% center transparent;
     border-radius: 2px 2px 2px 2px;
     display: block;
     // float: left;
@@ -272,11 +273,15 @@ ul.accordion > li > div.title:after {
 	margin:0 0 10px;
 	// float:left;
 }
+//TODO: Remore this margin
+.topic-spotlight{
+	margin-bottom:14px;
+}
 /*End: custom css*/
 ul.side-nav li.active {
 	border-left: 7px solid #0084A9;
 }
 ul.side-nav li.active a {
-    font-weight: normal;
+  font-weight: normal;
 	color:#000000;
 }
