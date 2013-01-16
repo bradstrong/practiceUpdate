@@ -433,6 +433,13 @@ ul.side-nav{
 	font-weight: bold;
 }
 
+//Forms
+//Preferences
+.checked-list{
+	@include innerRow();
+	li{@include column(6);}
+}
+
 //TODO: add states for buttons, alerts, labels, badges
 // colors should be added to _foundation-overrides
 // classes should extend buttons and labels
