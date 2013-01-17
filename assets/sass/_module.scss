@@ -1,50 +1,5 @@
 /* !Top Bar */
-.top-bar {
-  ul {
-    &>li {
-      /* Branding and name */
-      &.name {
-      	@include column(3);
-      }
-    }
-  }
-	section{
-
-	}
-}
-.top-bar {
-  /* Setting up the sliding area */
-	section{
-		@include column(9);
-//		@include push(5);
-ul{@extend .right;}
-	}
-  ul {
-  	li.name{
-  		@include column(3);
-  		}
-    li:not(.name) {
-    	text-transform:uppercase;
-      &.active {
-      	@include site-gradient($pri-green);
-			}
-			&:hover{
-				@include site-gradient($pri-green);
-			}
-			&.active, &:hover{
-				& a{color:$white;}
-			}
-    }
-    li a:not(.button){
-    	padding: 0 10px !important;
-    }
-  }
-}
-@media only screen and (max-width: $topBarBreakPoint) {
-	.top-bar ul > li.name{background:$white;}
-	}
-
-//	@media only screen and (max-width: 768px)
+@import "_module-top-bar";
 
 @import "_module-user-topic.scss";
 

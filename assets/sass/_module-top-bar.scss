@@ -1,0 +1,74 @@
+// Module Top Bar
+.top-bar {
+  /* Setting up the sliding area */
+	section{
+		@include column(9);
+ul{@extend .right;}
+	}
+  ul {
+  	li.name{
+  		@include column(3);
+  		}
+    li:not(.name) {
+    	text-transform:uppercase;
+      &.active {
+      	@include site-gradient($pri-green);
+			}
+			&:hover{
+				background-color:$pri-blue;
+			}
+			&.active, &:hover{
+				& a{color:$white;}
+			}
+    }
+    li a:not(.button){
+    	//padding: 0 10px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: $topBarBreakPoint) {
+.top-bar{
+  ul{
+    li.toggle-topbar{
+      width:$topBarHeightMobile + 20px;
+      &:hover{background-color:adjust-saturation($ter-ltBlue, -85%);}
+    }
+    li.name{
+      text-align: center;
+      &:hover{background: transparent;}
+      .site-branding{
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .off-canvas-control{
+    position: absolute;
+    top: 10px;
+    left: $columnGutter/2;
+    width:$columnGutter;
+    #sidebarButton{
+      color:$pri-blue;
+      background-color: $white;
+    }
+  }
+}
+//div.off-canvas-control > div.control-visibility > div.sidebar-button-container > a.sidebar-button button
+//  background:$white;
+
+	}//end @media
+
+//	@media only screen and (max-width: 768px)
+
+/* !off-canvas-control */
+.off-canvas-control{
+//  @include mobileRow();
+  .control-visibility{
+//    @include mobileColumn(1);
+    .sidebar-button-container{
+      .sidebar-button{}
+    }
+  }
+}

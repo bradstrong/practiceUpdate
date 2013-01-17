@@ -2,7 +2,6 @@
 .page-header{
 	//#main-nav{@extend .right;}
 	@extend	.contain-to-grid;
-	@extend .sticky;
 }
 
 .page-content{
@@ -28,19 +27,6 @@
 	.footer-section{
 		@include innerRow();
 		@include mobileRow();
-	}
-}
-
-/* !Navigation */
-
-/* !off-canvas-control */
-.off-canvas-control{
-	@include mobileRow();
-	.control-visibility{
-		@include mobileColumn(1);
-		.sidebar-button-container{
-			.sidebar-button{}
-		}
 	}
 }
 
@@ -70,7 +56,8 @@
 
 /* Page Layouts */
 /* !Base Layout */
-#dashboard,.dashboard{ @include column(12, collapse);}
+#dashboard,.dashboard{}
+#sidebar{padding-right:0;}
 	.recommended{@include column(5); @include mobileColumn(4);}
 	#aux{@include column(5); @include mobileColumn(4);}
 
