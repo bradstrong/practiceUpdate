@@ -68,7 +68,7 @@ $titleFontFamily: "museo-sans-condensed", "Helvetica Neue", "Helvetica", Helveti
 
 @mixin site-gradient($color:$pri-blue, $colorDif:15%, $shinyEdge:"false", $ie-compat:"true"){
 	@if $ie-compat == "true"{
-		@include filter-gradient($color, lighten($pri-blue, $colorDif), vertical);
+		@include filter-gradient($color, lighten($color, $colorDif), vertical);
 	}
 	background-color: $color;
 	@include background(linear-gradient(lighten($color,$colorDif), $color));

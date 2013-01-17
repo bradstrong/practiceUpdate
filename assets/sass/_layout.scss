@@ -1,6 +1,8 @@
 //HEADER
 .page-header{
 	//#main-nav{@extend .right;}
+	@extend	.contain-to-grid;
+	@extend .sticky;
 }
 
 .page-content{
