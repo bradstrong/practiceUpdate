@@ -121,7 +121,7 @@ p a, p a:visited {
 }
 
 /* line 25, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/common/_globals.scss */
-.hide-override {
+.hide-override, .is-hidden {
   display: none !important;
 }
 
