@@ -1,7 +1,8 @@
 /* !Top Bar */
 @import "_module-top-bar";
 
-@import "_module-user-topic.scss";
+@import "_module-user-topic";
+@import "_module-page-footer";
 
 /* Panels ---------------------- */
 
@@ -185,30 +186,7 @@
 //	font-family: $titleFontFamily;
 }
 
-// CTA
-
-.cta{
-	@extend .panel;
-}
-.cta-title{
-	@extend h5;
-	padding: .25em 0;
-}
-.cta-title-text{
-	font-size:ms(1);
-	text-transform:capitalize;
-}
-	.cta-img-container{
-		padding:.25em;
-		text-align:center;
-		img{
-			border:1px solid $ter-dkTan;
-			@include single-box-shadow($white, 0, 1px, 1px);
-		}
-	}
-
-	.cta-content{}
-	.cta-actions{}
+@import "_module-cta";
 
 // WIDGETS
 .widget{

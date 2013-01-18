@@ -8,6 +8,9 @@
 	@include outerRow();
 	clear: both;
 	padding-bottom: $baseFontSize*2;
+	@media only screen and (max-width: $topBarBreakPoint) {
+		.page-content{margin-top:$topBarHeightMobile;}
+	}
 }
 
 // FOOTER
@@ -15,11 +18,6 @@
 	@include outerRow();
 	@include mobileRow();
 	padding:$navBarHeight inherit;
-
-	.copyright{
-		@include column(4);
-		@extend .end;
-	}
 }
 
 .footer-section-container{
@@ -59,7 +57,7 @@
 #dashboard,.dashboard{}
 #sidebar{padding-right:0;}
 	.recommended{@include column(5); @include mobileColumn(4);}
-	#aux{@include column(5); @include mobileColumn(4);}
+	#aux, .aux{@include column(5); @include mobileColumn(4);}
 
 /* !Update Layout */
 .stream-container{@include column(7, collapse); @include mobileRow();}

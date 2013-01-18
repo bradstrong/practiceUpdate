@@ -45,6 +45,7 @@
 //PracticeUpdate Scripts
 //
  --*/
+
  /*-- TypeKit--*/
 (function() {
     var config = {
@@ -55,62 +56,99 @@
   })();
   
 (function siteInit(){
+//'use strict';
 
-  //user console menu
- $(document).ready(function() {
-  console.log('toggle menu');
-  $('ul.user-settings-menu').addClass('is-collapsed');
-  $('ul.user-settings-menu li:first').addClass('active');
-//  $('li.active > a, dd.active > a').append('<span class="active-item-indicator"><i class="icon-chevron-right"></i></span>');
-  $('.edit-user-settings').click(function (){
-    $('.user-settings-menu').toggleClass('is-collapsed is-expanded');
+
+//drawer interaction function
+// .drawer .drawer-menu, .drawer-toggle > a
+//TODO: correct transition animation
+//TODO: setup options, so this can easily be applied to any element as a function
+(function($) {
+  $.fn.practiceupdateDrawer = function(options) {
+  $('ul.drawer-menu').addClass('is-collapsed');
+  //$('li.active > a, dd.active > a').append('<span class="active-item-indicator"><i class="icon-chevron-right"></i></span>');
+  $('.drawer-toggle-button').click(function (){
+    $('ul.drawer-menu').toggleClass('is-collapsed is-expanded');
     $('.drawer-toggle-button i').toggleClass('icon-angle-down icon-angle-up');
   });
-});
+  };
+})(jQuery);
 
-  // A-B Testing function
-  //a=65, b=66
+// A-B Testing function
+//js keycodes a=65, b=66
+if((window.location.host==='practiceupdate:8888') || (window.location.hostname === 'dev.practiceupdate.com')){
   $(window).keydown(function(event){
     var active = document.activeElement;
-    console.log(active.type);
-  if (event.which == 65 && active.type==undefined) {
-    event.preventDefault();
-    $('body').removeClass('experimental-b');
-    $('body').toggleClass('experimental-a');
-  } else if(event.which == 66 & active.type==undefined){
-    event.preventDefault();
-    $('body').removeClass('experimental-a');
-    $('body').toggleClass('experimental-b');
-  }
-});
+    if (event.which === 65 && active.type === undefined) {
+      event.preventDefault();
+      $('body').removeClass('experimental-b');
+      $('body').toggleClass('experimental-a');
+    } else if(event.which === 66 && active.type === undefined){
+      event.preventDefault();
+      $('body').removeClass('experimental-a');
+      $('body').toggleClass('experimental-b');
+    }
+  })
+};
 
-    /*-- Mustache - Top-bar --*/  
-     $.getJSON('content/json/top-bar.json', function(data) {
-      $.get('assets/mustache/top-bar.mustache', function(template) {
-        //alert('Load was performed.');
-        var html = Mustache.to_html(template, data);
-        $('.page-header').html(html);
-        //Disable "Learn" during beta phase -- Remove once Learn/CME goes live
-        //$('.top-bar a.learn').attr('data-reveal-id', 'modal-feature-disabled');
-    
-    var b = $('body');
-    if(b.hasClass('page-update')) {
-      $('ul#main-nav .update').parent('li').addClass('active');
-    }
-    if(b.hasClass('page-explore')) {
-      $('ul#main-nav .explore').parent('li').addClass('active');
-    }
-    if(b.hasClass('page-learn')) {
-      $('ul#main-nav .learn').parent('li').addClass('active');
-    }
-      });
+//MUSTACHE CALLS
+//ONLY NECESSARY FOR LOCAL FRONT-END DEV
+
+//TODO: make async
+//NOTE: http://stackoverflow.com/questions/1531693/ajax-async-false-request-is-still-firing-asynchronously
+  /*-- Mustache - Top-bar --*/
+   $.getJSON('content/json/top-bar.json', function(data) {
+    $.get('assets/mustache/top-bar.mustache', function(template) {
+      var html = Mustache.to_html(template, data);
+      $('.page-header').html(html);
+      $('.page-header').foundationTopBar();
+
+      //on mustache callback - initialize off canvas func
+      //from jquery.offcanvas.js
+      // Watch for clicks to show the sidebar
+      var $selector2 = $('#sidebarButton'),
+      events = 'click.fndtn';
+      if ($selector2.length > 0) {
+        $('#sidebarButton').on(events, function (e) {
+          e.preventDefault();
+          $('body').toggleClass('active');
+        });
+      }
+
+      var b = $('body');
+      if(b.hasClass('page-update')) {
+        $('#main-nav .update').parent('li').addClass('active');
+      }
+      if(b.hasClass('page-explore')) {
+        $('#main-nav .explore').parent('li').addClass('active');
+      }
+      if(b.hasClass('page-learn')) {
+        $('#main-nav .learn').parent('li').addClass('active');
+      }
     });
+  });
+
+  /* Mustache - homepage user-console template */
+  $.getJSON('content/json/user-console.json', function(data) {
+    $.get('assets/mustache/user-console.mustache', function(template) {
+      //alert('Load was performed.');
+      var html = Mustache.to_html(template, data);
+      $('.user-console').html(html);
+      $('.user-console').practiceupdateDrawer();
+      if($('body').hasClass('page-preferences')){
+        $('.user-settings-menu').toggleClass('is-collapsed is-expanded');
+        $('.user-settings-menu li:first').addClass('active');
+      }
+    });
+  });
+
     /* Mustache - homepage footer template */
     $.get('assets/mustache/page-footer.mustache', function(template) {
       //alert('Load was performed.');
       var html = Mustache.to_html(template);
       $('.page-footer').html(html);
     });
+
     /* Mustache - explore slider template */
     $('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
     //   console.log("explore slider initialized");
@@ -126,8 +164,9 @@
       $('body').append(html);
     });
 
-    })();
+  })();
 
+//disable .disabled links
   $(document).ready(function() {
     $('.disabled a').click(function(e) {
       e.preventDefault();

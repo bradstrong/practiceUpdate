@@ -16,13 +16,13 @@
 
 	<!-- Include CSS Files -->
 	<link rel="stylesheet" href="assets/css/app.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.css">
 	<!-- Include Modernizr -->
 	<script src="assets/js/foundation/modernizr.foundation.js"></script>
 
 	<!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="assets/js/foundation/practiceupdate-ie.min.js"></script>
     <![endif]-->
 
 </head>
@@ -48,31 +48,6 @@
 		</div><!--/#leaderboard.ad-container-->
   </div><!--/.widget.ad-->
 	<div class="page-header sticky">
-<nav class="top-bar">
-
-<div class="off-canvas-control">
-	<div class="control-visibility">
-		<div class="sidebar-button-container">
-			<a class='sidebar-button button' id="sidebarButton" href="#sidebar">
-
-      </a><!--/#sidebarButton -->
-		</div><!--/.sidebar-button-container -->
-	</div><!--/.control-visibility-->
-</div><!--/.off-canvas-control-->
-
-	<ul>
-	  <li class="name"><div class="site-branding"><img src="assets/img/PracticeUpdate_logo.png"/></div><!--/.site-branding--></li>
-	  <li class="toggle-topbar"><a href="#"></a></li>
-	</ul>
-	<section>
-	  <ul id="main-nav">
-		  {{#pages}}
-			<li ><a href="{{page-id}}.html" class="{{page-id}}">{{page-id}}</a></li>
-			{{/pages}}
-	  </ul>
-	</section>
-</nav><!--/.top-bar-->
-
 	</div><!--/.page-header-->
 	<div class="page-content">
 	<section role="main">
@@ -167,15 +142,6 @@
 	    $('.recent').html(html);
 		});
 
-	});
-
-	<!-- Mustache - homepage user-console template -->
-	$.getJSON('content/json/user-console.json', function(data) {
-		$.get('assets/mustache/user-console.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.user-console').html(html);
-		});
 	});
 
 	<!-- Mustache - homepage user-topic template -->

@@ -1,0 +1,22 @@
+.footer-row {
+	@include column(3);
+	ul{
+		@extend .link-list;
+		// display:inline;
+	}
+}
+.powered-by, .els-logo{
+	max-width:250px;
+}
+.social-links,
+.utility-links,
+.policy-links {
+	//list-style-type:none;
+}
+.social-links {
+ i{@extend .icon-2x;}
+}
+.page-footer .copyright {
+	// width:100%;
+	// padding:0;
+}

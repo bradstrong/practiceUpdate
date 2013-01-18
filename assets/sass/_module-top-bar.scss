@@ -26,18 +26,19 @@ ul{@extend .right;}
     }
   }
 }
-
+#main-nav li:hover {filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#{$topnav-lt}', endColorstr='#{$topnav-dk}');}
 @media only screen and (max-width: $topBarBreakPoint) {
 .top-bar{
   ul{
     li.toggle-topbar{
       width:$topBarHeightMobile + 20px;
-      &:hover{background-color:adjust-saturation($ter-ltBlue, -85%);}
+      &:hover{background-color:$ter-ltTan}
     }
     li.name{
       text-align: center;
       &:hover{background: transparent;}
       .site-branding{
+        max-width:30%;
         display: inline-block;
         margin-left: auto;
         margin-right: auto;
@@ -47,14 +48,22 @@ ul{@extend .right;}
   .off-canvas-control{
     position: absolute;
     top: 10px;
-    left: $columnGutter/2;
-    width:$columnGutter;
+    left: 5px;
+    z-index:10;
     #sidebarButton{
-      color:$pri-blue;
+      color:$sec-blue;
+      @include site-gradient(lighten($ter-ltTan, 7%));
       background-color: $white;
+      border-color:$ter-ltTan;//$sec-blue;
+      width:40px;
+      height:40px;
+      padding: 10px 0;
+      border-radius:3px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.2);
     }
   }
 }
+
 //div.off-canvas-control > div.control-visibility > div.sidebar-button-container > a.sidebar-button button
 //  background:$white;
 
