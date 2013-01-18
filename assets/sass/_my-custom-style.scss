@@ -601,19 +601,19 @@ line {
 	#formRegisterPrompt {
 		width: 100%;
 	}
-	.commentary-container p {
-		margin: 0 !important;
-	}
-	.commentary-container .source-container {
-		margin: 0 !important;
-	}
-	.source-container .expert-name {
-		margin: 0 !important;
-	}
-	.source-container .source-photo {
-		margin: 0 !important;
-	}
-}
+// 	.commentary-container p {
+// 		margin: 0 !important;
+// 	}
+// 	.commentary-container .source-container {
+// 		margin: 0 !important;
+// 	}
+// 	.source-container .expert-name {
+// 		margin: 0 !important;
+// 	}
+// 	.source-container .source-photo {
+// 		margin: 0 !important;
+// 	}
+ }
 
 // @media only screen and (max-width: 1000px) {
 // 	#formLogin label {
@@ -783,11 +783,11 @@ line {
 	font-size:17px;
 	font-weight:normal;
 }
-.single-item .source-container {
-	float: left;
-    margin: -10px 0 10px;
-    width: 100%;
-}
+// .single-item .source-container {
+// 	float: left;
+//     margin: -10px 0 10px;
+//     width: 100%;
+// }
 .single-item .source-container .expert-name {
 	font-size:12px;
 	margin:0;
@@ -796,19 +796,19 @@ line {
 .single-item .expert-photo {
 	padding:0 10px 0 0 !important;
 }
-.single-item .commentary-container p {
-	margin:0;
-	margin:0 0 10px;
-	text-transform: none;
-}
+// .single-item .commentary-container p {
+// 	margin:0;
+// 	margin:0 0 10px;
+// 	text-transform: none;
+// }
 /*End: single item*/
 
-.item-source-container {
-	overflow:hidden;
-}
-.source-container .vcard {
-	width:100%;
-}
+// .item-source-container {
+// 	overflow:hidden;
+// }
+// .source-container .vcard {
+// 	width:100%;
+// }
 .widget.recent .source-citation{
 	margin:0;
 }
