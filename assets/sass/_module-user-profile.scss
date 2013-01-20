@@ -1,0 +1,23 @@
+// User Profile
+.profile-card{@include innerRow();}
+.profile-details{@include innerRow();}
+.profile-overview{@include column(9);}
+.profile-photo{@include column(3);}
+.user-photo{}
+.user-detail-list{
+	@include innerRow();
+	dd, dt{
+		line-height: 14px;
+    margin: 0 0 10px;
+    @include column(12);
+
+	}
+}
+.user-profile-section{
+@include column(12);
+}
+
+.user-profile-section-title{
+	//@extend h5;
+}
+/*End: user-profile-container*/

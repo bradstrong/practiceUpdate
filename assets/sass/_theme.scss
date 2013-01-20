@@ -2,6 +2,7 @@ ul li{
 	list-style: none;
 }
 //article{
+//TODO:  add background and dropshadow for .static-container. content container needs to be added to those pages.
 .in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container, .user-console{
 	background-color:$white;
 	@include elementBoxShadow;

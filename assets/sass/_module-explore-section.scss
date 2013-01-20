@@ -1,0 +1,26 @@
+.explore-sections{
+	@include column(12);
+	section{
+		@include innerRow();
+		margin-bottom:$columnGutter/3;
+	}
+}
+.section-widget{
+	@include column(12, collapse);
+	li{list-style: none;}
+	.meta.title{
+		font-weight: bold;
+	}
+	.section-header{
+		@include column(12);
+	}
+	.section-content{
+		@include column(12);
+		//ul{margin-top: 2em;}
+		.entry{
+			border-bottom:1px solid lighten($bodyFontColor, 55);
+			//p{margin-bottom:.5em;}
+			//.meta.title{margin-bottom: .25em;}
+		}
+	}
+}

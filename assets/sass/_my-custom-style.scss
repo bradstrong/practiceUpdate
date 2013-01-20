@@ -659,73 +659,7 @@ line {
 //     width: 100%;
 // }
 
-/*Start: static-container*/
-.static-container ul,
-.static-container ol {
-	padding:0 0 0 30px;
-}
-.static-container ul ol,
-.static-container ul ul,
-.static-container ol ol,
-.static-container ol ul{
-	margin:0;
-}
-.static-container ul ol li,
-.static-container ul ul li,
-.static-container ol ol li,
-.static-container ol ul li{
-	margin:10px 0 0;
-}
-.static-container  ol li,
-.static-container  ul li,
-.static-container  ol li,
-.static-container  ul li{
-	margin:10px 0 0;
-}
-.static-container span {
-	font-size:14px;
-	float:left;
-	clear:both;
-	width:100%;
-}
-.static-container p.phone {
-	font-size:14px;
-	line-height: 22px;
-}
-.static-container p {
-	font-family: inherit;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 24px;
-    margin-bottom: 26px;
-}
-.static-container span.bolder {
-	font-size:14px;
-	float:none;
-	clear:none;
-	font-weight:bold;
-	width:auto;
-}
-.static-container h2 {
-	font-size:22px;
-	font-weight:bold;
-	text-transform:uppercase;
-	margin:0 0 15px;
-}
-.static-container h3 {
-	font-size: 18px;
-    font-weight: normal;
-    margin: 0 0 6px;
-}
-.static-container h4 {
-	font-size:16px;
-}
-.static-container p.phone-contact {
-	margin:-30px 0 26px;
-}
-.static-container .links {
-	margin:0 20px 20px 0;
-}
+
 /*End: static-container*/
 // .dashboard .panel, .dashboard .query-no-results, .dashboard .cta {
 //     background: none;
@@ -734,50 +668,6 @@ line {
 //     padding: 20px;
 // }
 
-/*Start: user-profile-container*/
-.user-profile-container .user-profile,
-.channel-list-container{
-	padding:14px;
-}
-.user-group {
-	padding:14px;
-}
-.user-profile-container .profile-photo,
-.user-group .profile-photo {
-	padding-right: 0;
-	width: 17%;
-}
-.user-profile-container .user-name,
-.user-group .user-name {
-	margin-bottom: 14px;
-    margin-top: -1px;
-}
-.user-profile-container .user-name,
-.user-group .user-name{
-    font-size: 18px;
-}
-.user-directory-container .user-group h2{
-	font-size: 20px;
-    font-weight: normal;
-    margin: -4px 0 6px;
-    text-transform: uppercase;
-}
-.user-directory-container h1,
-.channel-list-container h1{
-	font-size: 24px;
-}
-.channel-list-container ul {
-	padding:0 0 0 30px;
-}
-.user-detail-list dd,
-.user-detail-list dt{
-	line-height: 14px;
-    margin: 0 0 10px;
-}
-.user-group {
-	
-}
-/*End: user-profile-container*/
 /*Start: single item*/
 .single-item .item-content-section h3{
 	font-size:17px;

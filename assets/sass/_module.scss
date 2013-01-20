@@ -155,6 +155,8 @@
 	.remember, .separator, .forgot{display: inline;}
 }
 
+@import "_module-user-profile";
+
 // QUERY NO RESULTS
 
 .query-no-results{
@@ -163,21 +165,7 @@
 	// @extend .callout;
 }
 
-// FORM
-.form-header{}
-.form-title{
-	@extend h5;
-	padding: .25em 0;
-}
-.form-description{@extend .subheader;}
-.form-action{}
-
-.form-submit{@extend .button; @extend .primary;}
-.form-cancel{@extend .button; @extend .secondary;}
-
-.help-block{
-	display: block; padding: 6px 4px; margin-top: -($formSpacing) - 1; margin-bottom: $formSpacing; font-size: ms(0) - 2;
-}
+@import "_module-form";
 
 // Alert-Box
 
@@ -199,73 +187,12 @@
 }
 
 // ADs
-@import "ad";
+@import "_module-ad";
 
 .widget.els-branding{@include column(3); @include mobileColumn(1); @include mobilePush(3);}
 .widget.els-description{@include column(6); @include mobileColumn(3); @include mobilePull(1);}
 .widget.powered-by{@include column(3); @include mobileColumn(1); @include mobilePush(3);}
-
-
-.explore-sections{
-	@include column(12);
-	section{
-		@include innerRow();
-		margin-bottom:$columnGutter/3;
-	}
-}
-.section-widget{
-	@include column(12, collapse);
-	li{list-style: none;}
-	.meta.title{
-		font-weight: bold;
-	}
-	.section-header{
-		@include column(12);
-	}
-	.section-content{
-		@include column(12);
-		//ul{margin-top: 2em;}
-		.entry{
-			border-bottom:1px solid lighten($bodyFontColor, 55);
-			//p{margin-bottom:.5em;}
-			//.meta.title{margin-bottom: .25em;}
-		}
-	}
-}
-
-//channel list
-.channel-title{
-	@extend h4;
-}
-
-//user directory
-.user-directory-header{@include innerRow(collapse);}
-.user-directory{@include innerRow(collapse);}
-.user-group{@include column(12, collapse);}
-
-// User Profile
-.profile-card{@include innerRow();}
-.profile-details{@include innerRow();}
-.profile-overview{@include column(9);}
-.profile-photo{@include column(3);}
-.user-photo{}
-.user-detail-list{
-	@include innerRow();
-	dt{
-		@include column(4);
-		font-weight: bold;
-	}
-	dd{
-		@include column(8);
-	}
-}
-.user-profile-section{
-@include column(12);
-}
-
-.user-profile-section-title{
-	//@extend h5;
-}
+@import "_module-explore-section";
 
 // CME modals
 .cme-image{
@@ -273,13 +200,6 @@
 }
 .cme-details dt{
 	font-weight: bold;
-}
-
-//Forms
-//Preferences
-.checked-list{
-	@include innerRow();
-	li{@include column(6);}
 }
 
 //TODO: add states for buttons, alerts, labels, badges

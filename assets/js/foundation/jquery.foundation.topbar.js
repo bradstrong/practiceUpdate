@@ -163,10 +163,12 @@
       $window.scroll(function() {
         if ( $window.scrollTop() >= distance ) {
            $(".sticky").addClass("fixed");
+           $("body").addClass("topbar-fixed"); //added by @bradstrong 2013-01-20
         }
 
        else if ( $window.scrollTop() < distance ) {
           $(".sticky").removeClass("fixed");
+          $("body").removeClass("topbar-fixed"); //added by @bradstrong 2013-01-20
        }
     });
   }

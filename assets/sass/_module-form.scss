@@ -1,0 +1,21 @@
+// FORM
+.form-header{}
+.form-title{
+	@extend h5;
+	padding: .25em 0;
+}
+.form-description{@extend .subheader;}
+.form-action{}
+
+.form-submit{@extend .button; @extend .primary;}
+.form-cancel{@extend .button; @extend .secondary;}
+
+.help-block{
+	display: block; padding: 6px 4px; margin-top: -($formSpacing) - 1; margin-bottom: $formSpacing; font-size: ms(0) - 2;
+}
+
+//Preferences
+.checked-list{
+	@include innerRow();
+	li{@include column(6);}
+}

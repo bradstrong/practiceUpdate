@@ -103,3 +103,60 @@
 .pref-content{@include innerRow();}
 #pref-tabs{@include column(3);}
 #pref-tabs-content{@include column(8);}
+
+/* Static Pages (footer utility links) */
+/*Start: static-container*/
+.static-container{
+	ul,ol {
+		padding:0 0 0 30px;
+	}
+
+	li{
+		margin:10px 0 0;
+	}
+	span {
+		font-size:14px;
+		float:left;
+		clear:both;
+		width:100%;
+	}
+	p.phone {
+		font-size:14px;
+		line-height: 22px;
+	}
+	p {
+		font-family: inherit;
+	    font-size: 14px;
+	    font-weight: normal;
+	    line-height: 24px;
+	    margin-bottom: 26px;
+	}
+	span.bolder {
+		font-size:14px;
+		float:none;
+		clear:none;
+		font-weight:bold;
+		width:auto;
+	}
+	h2 {
+		font-size:22px;
+		font-weight:bold;
+		text-transform:uppercase;
+		margin:0 0 15px;
+	}
+	h3 {
+		font-size: 18px;
+	    font-weight: normal;
+	    margin: 0 0 6px;
+	}
+
+	h4 {
+		font-size:16px;
+	}
+	p.phone-contact {
+		margin:-30px 0 26px;
+	}
+	.links {
+		margin:0 20px 20px 0;
+	}
+}

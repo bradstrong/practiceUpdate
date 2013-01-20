@@ -12,3 +12,10 @@
 .is-hidden{
 	@extend .hide-override;
 }
+
+// class applied to body by topbar.js when .page-header.sticky hits the top of the viewport
+.topbar-fixed{
+	.page-content{
+		padding-top: $topBarHeightMobile + $columnGutter/2;
+	}
+}
