@@ -129,16 +129,7 @@
 }
 
 /* !Explore Page Elements*/
-.explore-feature .feature-item{background: $white;}
-.explore-feature { background: url(loading.gif) center center #f4f4f4; height: 300px;}
-.explore-feature img { display: none; }
-
-.explore-feature.orbit { background: none; }
-.explore-feature.orbit img { display: block; }
-.explore-feature.orbit {
-	section{ padding:$columnGutter/3;}
-	article{ padding:$columnGutter/3;}
-}
+@import "_module-explore-carousel";
 
 /* !COMPONENTS */
 @import "_module-user-console";
