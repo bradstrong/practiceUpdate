@@ -96,6 +96,34 @@ if((window.location.host==='practiceupdate:8888') || (window.location.hostname =
 
 //TODO: make async
 //NOTE: http://stackoverflow.com/questions/1531693/ajax-async-false-request-is-still-firing-asynchronously
+
+//TODO: Load all 
+//NOTE: http://stackoverflow.com/questions/11675702/nested-partials-in-mustache-and-loading-partials-from-external-file
+// // json1.js
+// var user = {
+//     fname: 'joe',
+//     lname: 'blogs',
+// }
+// // json2.js
+// var translations = {
+//     someword: 'its translation'
+// }
+
+//NOTE: use local storage for tempaltes: https://github.com/jarednova/jquery-total-storage
+
+$.get('test.mustache', function(templates) {
+    var json = $.extend(user, translations),
+        one = $(templates).filter('#tpl-one').html(),
+        three = $(templates).filter('#tpl-three').html(),
+        two = $(templates).filter('#tpl-two').html(),
+        partials = {
+            "tplThree": three,
+            "tplTwo": two
+        };
+
+    var html = Mustache.to_html(one, json, partials);
+    $('#mustacheContainer').html(html);
+}, "html");
   /*-- Mustache - Top-bar --*/
    $.getJSON('content/json/top-bar.json', function(data) {
     $.get('assets/mustache/top-bar.mustache', function(template) {
