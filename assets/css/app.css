@@ -9120,7 +9120,12 @@ ul.side-nav li a:hover {
   padding-top: 75px;
 }
 
-/* line 25, ../sass/_state.scss */
+/* line 24, ../sass/_state.scss */
+.is-loading:after {
+  content: "\003Cspan class=\0022loader-container\0022\003E\003Ci class=\0022loader icon-spinner icon-spin icon-3x\0022\003E\003C\002Fi\003E\003C\002Fspan\003E";
+}
+
+/* line 28, ../sass/_state.scss */
 .loader-container {
   display: block;
   text-align: center;
