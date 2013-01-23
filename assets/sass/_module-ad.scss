@@ -25,6 +25,7 @@
 	padding:$baseFontSize 0;
 }
 
+#leaderboardouter{min-height:104px;}
 #leaderboard{
 	.ad-title{
 		margin:0 auto;
@@ -85,4 +86,4 @@
 }
 
 // Hide leaderboard containers on mobile
-#leaderboard{@media only screen and (max-width: $screenSmall) {display:none;}}
+#leaderboardouter, #leaderboard{@media only screen and (max-width: $screenSmall) {display:none;}}

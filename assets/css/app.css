@@ -8886,70 +8886,75 @@ ul.side-nav li a:hover {
   padding: 14px 0;
 }
 
-/* line 29, ../sass/_module-ad.scss */
+/* line 28, ../sass/_module-ad.scss */
+#leaderboardouter {
+  min-height: 104px;
+}
+
+/* line 30, ../sass/_module-ad.scss */
 #leaderboard .ad-title {
   margin: 0 auto;
   width: 728px;
   text-align: left;
 }
-/* line 33, ../sass/_module-ad.scss */
+/* line 34, ../sass/_module-ad.scss */
 #leaderboard .ad-title .ad-title-text {
   text-transform: uppercase;
 }
-/* line 37, ../sass/_module-ad.scss */
+/* line 38, ../sass/_module-ad.scss */
 #leaderboard object, #leaderboard embed {
   display: block;
   height: 90px;
   width: 728px;
 }
 
-/* line 44, ../sass/_module-ad.scss */
+/* line 45, ../sass/_module-ad.scss */
 #leaderboardcontentinner {
   max-width: 728px;
   margin: 0 auto;
   max-height: 90px;
 }
 
-/* line 47, ../sass/_module-ad.scss */
+/* line 48, ../sass/_module-ad.scss */
 #boombox1 object, #boombox1 embed {
   display: block;
   height: 250px;
   width: 300px;
 }
-/* line 52, ../sass/_module-ad.scss */
+/* line 53, ../sass/_module-ad.scss */
 #boombox1 #boombox1contentinner {
   float: left;
 }
 
-/* line 57, ../sass/_module-ad.scss */
+/* line 58, ../sass/_module-ad.scss */
 #boombox1contentinner {
   max-width: 300px;
   margin: 0 auto;
   max-height: 250px;
 }
 
-/* line 60, ../sass/_module-ad.scss */
+/* line 61, ../sass/_module-ad.scss */
 #boombox2 object, #boombox2 embed {
   display: block;
   height: 250px;
   width: 300px;
 }
 
-/* line 67, ../sass/_module-ad.scss */
+/* line 68, ../sass/_module-ad.scss */
 #boombox2contentinner {
   max-width: 300px;
   margin: 0 auto;
   max-height: 250px;
 }
 
-/* line 74, ../sass/_module-ad.scss */
+/* line 75, ../sass/_module-ad.scss */
 #skyscraper object, #skyscraper embed {
   display: block;
   height: 600px;
   width: 160px;
 }
 
-/* line 81, ../sass/_module-ad.scss */
+/* line 82, ../sass/_module-ad.scss */
 #skyscrapercontentinner {
   max-width: 160px;
   margin: 0 auto;
@@ -8957,8 +8962,8 @@ ul.side-nav li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 88, ../sass/_module-ad.scss */
-  #leaderboard {
+  /* line 89, ../sass/_module-ad.scss */
+  #leaderboardouter, #leaderboard {
     display: none;
   }
 }
@@ -9120,12 +9125,7 @@ ul.side-nav li a:hover {
   padding-top: 75px;
 }
 
-/* line 24, ../sass/_state.scss */
-.is-loading:after {
-  content: "\003Cspan class=\0022loader-container\0022\003E\003Ci class=\0022loader icon-spinner icon-spin icon-3x\0022\003E\003C\002Fi\003E\003C\002Fspan\003E";
-}
-
-/* line 28, ../sass/_state.scss */
+/* line 25, ../sass/_state.scss */
 .loader-container {
   display: block;
   text-align: center;
