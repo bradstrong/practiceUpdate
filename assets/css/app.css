@@ -9505,9 +9505,39 @@ h3 {
   padding-bottom: 1em;
 }
 
-/* line 1, ../sass/_experimental-a.scss */
+/* line 19, ../sass/_experimental-a.scss */
 body.experimental-a {
-  background-color: red;
+  color: #6c6458;
+}
+/* line 21, ../sass/_experimental-a.scss */
+body.experimental-a p {
+  font-family: "proxima-nova" !important;
+}
+/* line 24, ../sass/_experimental-a.scss */
+body.experimental-a .item-type, body.experimental-a .item-pub-date {
+  font-size: 14px !important;
+  font-family: "museo-slab", serif !important;
+}
+/* line 28, ../sass/_experimental-a.scss */
+body.experimental-a .item-title {
+  font-size: 23px !important;
+  font-family: "proxima-nova-condensed" !important;
+}
+/* line 33, ../sass/_experimental-a.scss */
+body.experimental-a .journal-title, body.experimental-a .feed-title {
+  color: #0084a9 !important;
+  font-size: 23px !important;
+  font-family: "proxima-nova-condensed" !important;
+}
+/* line 39, ../sass/_experimental-a.scss */
+body.experimental-a .journal .item-title, body.experimental-a .feed .item-title {
+  font-size: 14px !important;
+  font-family: "proxima-nova" !important;
+}
+/* line 44, ../sass/_experimental-a.scss */
+body.experimental-a .journal .item-citation, body.experimental-a .feed .item-citation {
+  font-size: 11.9px !important;
+  font-family: "proxima-nova" !important;
 }
 
 /* line 1, ../sass/_my-custom-style.scss */
