@@ -16,6 +16,8 @@
 $serifFontFamily: "museo-slab", serif;
 $sansFontFamily: "proxima-nova";
 $sansCondensedFontFamily: "proxima-nova-condensed";
+
+//Type changes
 &{color: darken($txtColor, 10%);}
 
 p{
@@ -44,4 +46,18 @@ p{
 .journal .item-citation, .feed .item-citation{
 	font-size: ms(0)*.85 !important;
 	font-family: $sansFontFamily !important;
+}
+
+.ad-title-text{
+	font-size: ms(0)*.85 !important;
+	letter-spacing:2px;
+}
+
+// Navigation
+.page-header.fixed{
+	background-color:transparent;
+	@include elementBoxShadow;
+	.top-bar{
+			background-color:rgba(255,255,255,.95);
+	}
 }

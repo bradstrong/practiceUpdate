@@ -3,10 +3,10 @@
 	
 		<ul>
 		{{#items}}
-			<li class="stream-item">
+			<li>
 				<article class="in-list">
 					<hgroup class="pub-meta meta">
-						<h6 class="item-title"><a href="{{url}}">{{title}}</a></h6>
+						<h1 class="item-title"><a href="{{url}}">{{title}}</a></h1>
 					</hgroup><!--/.pub-meta-->
 						{{#source}}
 					<div class="item-source">
@@ -16,7 +16,7 @@
 								{{#name}}
 									<dt class="fn n {{source.type}}-name">
 											<span class="given-name">{{firstName}}</span>
-											<abbr class="additional-name">{{middleName}}</abbr>
+											<span class="additional-name">{{middleName}}</span>
 											<span class="family-name">{{lastName}}</span>
 											<span class="honorific-suffix">{{honorific}}</span>
 									</dt><!--/.fn-->

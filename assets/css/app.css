@@ -8626,26 +8626,30 @@ ul.side-nav li a:hover {
   padding-top: 7px;
   padding-bottom: 3.5px;
 }
+/* line 30, ../sass/_module-user-console.scss */
+.drawer-toggle-button:hover {
+  cursor: pointer;
+}
 
-/* line 31, ../sass/_module-user-console.scss */
+/* line 34, ../sass/_module-user-console.scss */
 .drawer-menu {
   background: #f7f5f2;
 }
-/* line 33, ../sass/_module-user-console.scss */
+/* line 36, ../sass/_module-user-console.scss */
 .drawer-menu.is-expanded {
   border-top: 1px solid #ede8e2;
   border-bottom: 1px solid #ede8e2;
 }
-/* line 38, ../sass/_module-user-console.scss */
+/* line 41, ../sass/_module-user-console.scss */
 .drawer-menu li a {
   display: block;
   padding: 7px;
 }
-/* line 41, ../sass/_module-user-console.scss */
+/* line 44, ../sass/_module-user-console.scss */
 .drawer-menu li a:hover {
   background: #ede8e2;
 }
-/* line 45, ../sass/_module-user-console.scss */
+/* line 48, ../sass/_module-user-console.scss */
 .drawer-menu li.active a {
   padding-left: 3.5px;
   border-left-style: solid;
@@ -8653,32 +8657,32 @@ ul.side-nav li a:hover {
   border-left-color: #0084a9;
 }
 
-/* line 59, ../sass/_module-user-console.scss */
+/* line 62, ../sass/_module-user-console.scss */
 .user-console p {
   color: #002d56;
 }
 
-/* line 65, ../sass/_module-user-console.scss */
+/* line 68, ../sass/_module-user-console.scss */
 .user-details {
   padding: 7px;
 }
 
-/* line 68, ../sass/_module-user-console.scss */
+/* line 71, ../sass/_module-user-console.scss */
 .user-name, .user-title {
   color: #002d56;
   text-transform: capitalize;
   margin-bottom: 7px;
 }
 
-/* line 75, ../sass/_module-user-console.scss */
+/* line 78, ../sass/_module-user-console.scss */
 .user-settings-menu {
   margin-bottom: 0;
 }
-/* line 77, ../sass/_module-user-console.scss */
+/* line 80, ../sass/_module-user-console.scss */
 .user-settings-menu.is-expanded {
   -webkit-transition: all 0.5s ease;
 }
-/* line 80, ../sass/_module-user-console.scss */
+/* line 83, ../sass/_module-user-console.scss */
 .user-settings-menu.is-collapsed {
   height: 0px;
   overflow: hidden;
@@ -9505,39 +9509,55 @@ h3 {
   padding-bottom: 1em;
 }
 
-/* line 19, ../sass/_experimental-a.scss */
+/* line 21, ../sass/_experimental-a.scss */
 body.experimental-a {
   color: #6c6458;
 }
-/* line 21, ../sass/_experimental-a.scss */
+/* line 23, ../sass/_experimental-a.scss */
 body.experimental-a p {
   font-family: "proxima-nova" !important;
 }
-/* line 24, ../sass/_experimental-a.scss */
+/* line 26, ../sass/_experimental-a.scss */
 body.experimental-a .item-type, body.experimental-a .item-pub-date {
   font-size: 14px !important;
   font-family: "museo-slab", serif !important;
 }
-/* line 28, ../sass/_experimental-a.scss */
+/* line 30, ../sass/_experimental-a.scss */
 body.experimental-a .item-title {
   font-size: 23px !important;
   font-family: "proxima-nova-condensed" !important;
 }
-/* line 33, ../sass/_experimental-a.scss */
+/* line 35, ../sass/_experimental-a.scss */
 body.experimental-a .journal-title, body.experimental-a .feed-title {
   color: #0084a9 !important;
   font-size: 23px !important;
   font-family: "proxima-nova-condensed" !important;
 }
-/* line 39, ../sass/_experimental-a.scss */
+/* line 41, ../sass/_experimental-a.scss */
 body.experimental-a .journal .item-title, body.experimental-a .feed .item-title {
   font-size: 14px !important;
   font-family: "proxima-nova" !important;
 }
-/* line 44, ../sass/_experimental-a.scss */
+/* line 46, ../sass/_experimental-a.scss */
 body.experimental-a .journal .item-citation, body.experimental-a .feed .item-citation {
   font-size: 11.9px !important;
   font-family: "proxima-nova" !important;
+}
+/* line 51, ../sass/_experimental-a.scss */
+body.experimental-a .ad-title-text {
+  font-size: 11.9px !important;
+  letter-spacing: 2px;
+}
+/* line 57, ../sass/_experimental-a.scss */
+body.experimental-a .page-header.fixed {
+  background-color: transparent;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+/* line 60, ../sass/_experimental-a.scss */
+body.experimental-a .page-header.fixed .top-bar {
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 /* line 1, ../sass/_my-custom-style.scss */

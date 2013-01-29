@@ -64,6 +64,7 @@
 //TODO: setup options, so this can easily be applied to any element as a function
 (function($) {
   $.fn.practiceupdateDrawer = function(options) {
+    options = {};
   $('ul.drawer-menu').addClass('is-collapsed');
   //$('li.active > a, dd.active > a').append('<span class="active-item-indicator"><i class="icon-chevron-right"></i></span>');
   $('.drawer-toggle-button').click(function (){
@@ -72,33 +73,6 @@
   });
   };
 })(jQuery);
-
-// A-B Testing function
-//js keycodes a=65, b=66
-if((window.location.host==='practiceupdate:8888') || (window.location.hostname === 'dev.practiceupdate.com')){
-  
-  // Register Alternate Typekit Kit
-  (function() {
-    var config = {
-      kitId: 'ecr7wly',
-      scriptTimeout: 3000
-    };
-    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-  })();
-
-  $(window).keydown(function(event){
-    var active = document.activeElement;
-    if (event.which === 65 && active.type === undefined) {
-      event.preventDefault();
-      $('body').removeClass('experimental-b');
-      $('body').toggleClass('experimental-a');
-    } else if(event.which === 66 && active.type === undefined){
-      event.preventDefault();
-      $('body').removeClass('experimental-a');
-      $('body').toggleClass('experimental-b');
-    }
-  })
-};
 
 //MUSTACHE CALLS
 //ONLY NECESSARY FOR LOCAL FRONT-END DEV
@@ -120,19 +94,19 @@ if((window.location.host==='practiceupdate:8888') || (window.location.hostname =
 
 //NOTE: use local storage for tempaltes: https://github.com/jarednova/jquery-total-storage
 
-$.get('test.mustache', function(templates) {
-    var json = $.extend(user, translations),
-        one = $(templates).filter('#tpl-one').html(),
-        three = $(templates).filter('#tpl-three').html(),
-        two = $(templates).filter('#tpl-two').html(),
-        partials = {
-            "tplThree": three,
-            "tplTwo": two
-        };
+// $.get('test.mustache', function(templates) {
+//     var json = $.extend(user, translations),
+//         one = $(templates).filter('#tpl-one').html(),
+//         three = $(templates).filter('#tpl-three').html(),
+//         two = $(templates).filter('#tpl-two').html(),
+//         partials = {
+//             "tplThree": three,
+//             "tplTwo": two
+//         };
 
-    var html = Mustache.to_html(one, json, partials);
-    $('#mustacheContainer').html(html);
-}, "html");
+//     var html = Mustache.to_html(one, json, partials);
+//     $('#mustacheContainer').html(html);
+// }, "html");
   /*-- Mustache - Top-bar --*/
    $.getJSON('content/json/top-bar.json', function(data) {
     $.get('assets/mustache/top-bar.mustache', function(template) {

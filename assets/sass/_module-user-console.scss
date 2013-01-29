@@ -27,6 +27,9 @@
 		top: $baseFontSize/2;
 		bottom: $baseFontSize/4;
 	}
+	&:hover{
+		cursor: pointer;
+	}
 }
 .drawer-menu{
 	background: lighten($ter-ltTan, 7%);
