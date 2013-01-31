@@ -35,7 +35,7 @@
 	.commentary-container{@include column(12);}
 	.source-title{font-size:ms(0);}
 }
-.item-title{font-size:ms(1);}
+.item-title{font-size:ms(2);}
 .item-content-container{@include column(12);}
 .item-content{@include innerRow();}
 .item-content-section{@include column(12);}
@@ -46,9 +46,9 @@
 		// line-height: 1.6;
 		// text-transform:uppercase;
 	}
-	.expert-name{}
-	.source-photo{}
-	.expert-photo{}
+	// .expert-name{}
+	// .source-photo{}
+	// .expert-photo{}
 	// div[class$="-photo"]{
 	// 	@include column(2);
 	// }
@@ -176,6 +176,7 @@
 		background: transparent;
 	}
 }
+@import "_module-recent";
 
 // ADs
 @import "_module-ad";

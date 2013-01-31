@@ -100,7 +100,7 @@
 }
 /* Preferences*/
 .pref-container{@include column(12); @include mobileRow();}
-.pref-content{@include innerRow();}
+.pref-content{@include innerRow(); padding:{top:$baseFontSize; bottom:$baseFontSize;}}
 #pref-tabs{@include column(3);}
 #pref-tabs-content{@include column(8);}
 

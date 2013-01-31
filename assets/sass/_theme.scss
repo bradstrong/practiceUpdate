@@ -12,6 +12,7 @@ ul li{
 }
 
 body{
+	color: darken($txtColor, 10%);
 	@include noise(lighten($ter-ltTan, 10%), 0.02);
 }
 
@@ -33,8 +34,13 @@ body{
 }
 
 //type
+.journal .item-title, .feed .item-title{
+	font-size: ms(0);
+	font-family: $sansFontFamily;
+}
+
 .journal-title, .feed-title{
-	color:$pri-blue;
+	color: rgb(202,91,73); //logo red-orange
 	font-size:ms(1);
 }
 
@@ -42,7 +48,10 @@ body{
 	font-family:$titleFontFamily;
 	font-weight:normal;
 }
-
+.journal .item-citation, .feed .item-citation{
+	font-size: ms(0)*.85;
+	color: lighten($txtColor, 5%);
+}
 
 .recommended h5 {
   font-size: 17px;
@@ -246,6 +255,6 @@ body.experimental-a{
 	@import '_experimental-a';
 }
 body.experimental-b{
-//	@import '_experimental-b';
+	@import '_experimental-b';
 }
 

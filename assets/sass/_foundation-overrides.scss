@@ -47,7 +47,11 @@ $topnav-dk: #798725;
 
 // ----------------------------------------
 /* !Type */
-$titleFontFamily: "museo-sans-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$serifFontFamily: "museo-slab", serif;
+$sansFontFamily: "proxima-nova";
+$sansCondensedFontFamily: "proxima-nova-condensed";
+$titleFontFamily: $sansCondensedFontFamily, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;; //"museo-sans-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
 // ----------------------------------------
 /* !mixins */
 

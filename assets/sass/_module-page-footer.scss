@@ -1,18 +1,23 @@
 .footer-row {
-	@include column(3);
+	&:nth-child(1){@include column(2);}
+	&:nth-child(2){@include column(6);}
+	&:nth-child(3){@include column(3); @include push(1);}
 	ul{
 		@extend .link-list;
-		// display:inline;
+		&.utility-links,
+		&.policy-links {
+			text-align: center;
+			li{
+				float:none;
+				display:inline-block;
+			}
+		}
 	}
 }
 .powered-by, .els-logo{
 	max-width:250px;
 }
-.social-links,
-.utility-links,
-.policy-links {
-	//list-style-type:none;
-}
+
 .social-links {
  i{@extend .icon-2x;}
 }
