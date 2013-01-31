@@ -7,12 +7,14 @@
 .user-directory{@include innerRow(collapse);}
 .user-group{@include column(12, collapse);}
 
-.user-profile-container .user-profile,
+//.user-profile-container .user-profile
 .channel-list-container{
 	padding:14px;
 }
 .user-group {
-	padding:14px;
+	margin-top:$baseFontSize;
+	padding-top:$baseFontSize;
+	h2{font-size: ms(3); padding-left:$baseFontSize;}
 }
 .user-profile-container .profile-photo,
 .user-group .profile-photo {

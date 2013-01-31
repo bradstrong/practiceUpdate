@@ -60,11 +60,13 @@
 
 // User Profile
 .user-profile-container{}
-.user-profile-header{@include innerRow();}
-//.user-profile{@include innerRow();}
+.user-profile-header{@include innerRow(collapse);}
+.user-profile{}
 .user-profile-full{}
-.profile-card{}
-//.profile-details{@include innerRow();}
+.profile-card{@include innerRow(collapse); padding-top:$baseFontSize; padding-bottom:$baseFontSize;}
+.profile-details{@include innerRow(collapse);
+	.user-cv{@include column(12);}
+}
 .profile-overview{@include column(9);}
 .profile-photo{@include column(3);}
 .user-photo{}
@@ -80,6 +82,6 @@
 .user-profile-section{}
 
 .user-profile-section-title{
-	//@extend h5;
+	display: none;
 }
 /*End: user-profile-container*/
