@@ -33,33 +33,6 @@ body{
 	border-top:2px solid $white;
 }
 
-//type
-.journal .item-title, .feed .item-title{
-	font-size: ms(0);
-	font-family: $sansFontFamily;
-}
-
-.journal-title, .feed-title{
-	color: rgb(202,91,73); //logo red-orange
-	font-size:ms(1);
-}
-
-.item-title, .item-type, .item-pub-date{
-	font-family:$titleFontFamily;
-	font-weight:normal;
-}
-.journal .item-citation, .feed .item-citation{
-	font-size: ms(0)*.85;
-	color: lighten($txtColor, 5%);
-}
-
-.recommended h5 {
-  font-size: 17px;
-	margin:0;
-	font-weight:normal;
-}
-
-.subheader{ color:$headerFontColor;}
 
 // BUTTONS
 //.load-more-button{}
@@ -114,7 +87,6 @@ body{white-space-collapse: collapse;}
 // }
 
 h3{
-	color:$sec-blue;
 	font-family:$titleFontFamily;
 }
 .page-banner-container{
@@ -156,6 +128,46 @@ padding-top: $baseFontSize/2;
 	padding-top: $baseFontSize/2;
 	background-color: white;
 	@include box-shadow(rgba(0,0,0,0.2) 0px 2px 2px 0px);
+}
+
+//type
+.journal .item-title, .feed .item-title{
+	font-size: ms(0);
+	font-family: $sansFontFamily;
+}
+
+.journal-title, .feed-title{
+	color: rgb(202,91,73); //logo red-orange
+	font-size:ms(1);
+}
+
+.item-title, .item-type, .item-pub-date{
+	font-family:$titleFontFamily;
+	font-weight:normal;
+}
+.journal .item-citation, .feed .item-citation{
+	font-size: ms(0)*.85;
+	color: lighten($txtColor, 5%);
+}
+
+.recommended h5 {
+  font-size: 17px;
+	margin:0;
+	font-weight:normal;
+}
+
+.subheader{ color:$headerFontColor;}
+
+article.single-item{
+	h2{
+		text-transform: uppercase;
+		font-family: $sansFontFamily;
+		font-size: ms(2);
+	}
+	h3{
+		text-transform: uppercase;
+		font-size: ms(1);
+	}
 }
 
 #formLogin{@include column(6);

@@ -69,19 +69,19 @@ a img {
 
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/common/_globals.scss */
 a {
-  color: #0084a9;
+  color: #107090;
   text-decoration: none;
   line-height: inherit;
 }
 
 /* line 13, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/common/_globals.scss */
 a:hover {
-  color: #00708f;
+  color: #0d5e79;
 }
 
 /* line 14, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/common/_globals.scss */
 a:focus {
-  color: #00708f;
+  color: #0d5e79;
 }
 
 /* line 15, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/common/_globals.scss */
@@ -1390,8 +1390,8 @@ form.custom .custom.disabled {
 /* line 3, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button, .form-submit, .form-cancel, .load-more-button {
   width: auto;
-  background: #0084a9;
-  border: 1px solid #00485c;
+  background: #107090;
+  border: 1px solid #083a4b;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -1421,7 +1421,7 @@ form.custom .custom.disabled {
 /* line 6, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button:hover, .form-submit:hover, .form-cancel:hover, .load-more-button:hover, .button:focus, .form-submit:focus, .form-cancel:focus, .load-more-button:focus {
   color: white;
-  background-color: #005c76;
+  background-color: #0b4c62;
 }
 /* line 7, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button:active, .form-submit:active, .form-cancel:active, .load-more-button:active {
@@ -1455,12 +1455,12 @@ form.custom .custom.disabled {
 }
 /* line 17, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.primary, .form-submit, .primary.form-cancel, .form-cancel.form-submit, .primary.load-more-button, .load-more-button.form-submit {
-  background-color: #0084a9;
-  border: 1px solid #00485c;
+  background-color: #107090;
+  border: 1px solid #083a4b;
 }
 /* line 18, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.primary:hover, .form-submit:hover, .primary.form-cancel:hover, .primary.load-more-button:hover, .button.primary:focus, .form-submit:focus, .primary.form-cancel:focus, .primary.load-more-button:focus {
-  background-color: #005c76;
+  background-color: #0b4c62;
 }
 /* line 20, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.success, .success.form-submit, .form-submit.view-more-button, .form-submit.view-more, .success.form-cancel, .form-cancel.view-more-button, .form-cancel.view-more, .button.view-more-button, .view-more-button.load-more-button, .button.view-more, .view-more.load-more-button, .success.load-more-button {
@@ -1522,14 +1522,14 @@ form.custom .custom.disabled {
 .button.disabled, .disabled.form-submit, .disabled.form-cancel, .disabled.load-more-button, .button[disabled], [disabled].form-submit, [disabled].form-cancel, [disabled].load-more-button {
   opacity: 0.6;
   cursor: default;
-  background: #0084a9;
+  background: #107090;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 /* line 40, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.disabled:hover, .disabled.form-submit:hover, .disabled.form-cancel:hover, .disabled.load-more-button:hover, .button[disabled]:hover, [disabled].form-submit:hover, [disabled].form-cancel:hover, [disabled].load-more-button:hover {
-  background: #0084a9;
+  background: #107090;
 }
 /* line 42, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.disabled.success, .disabled.success.form-submit, .disabled.form-submit.view-more-button, .disabled.form-submit.view-more, .disabled.success.form-cancel, .disabled.form-cancel.view-more-button, .disabled.form-cancel.view-more, .button.disabled.view-more-button, .disabled.view-more-button.load-more-button, .button.disabled.view-more, .disabled.view-more.load-more-button, .disabled.success.load-more-button, .button[disabled].success, [disabled].success.form-submit, [disabled].form-submit.view-more-button, [disabled].form-submit.view-more, [disabled].success.form-cancel, [disabled].form-cancel.view-more-button, [disabled].form-cancel.view-more, .button[disabled].view-more-button, [disabled].view-more-button.load-more-button, .button[disabled].view-more, [disabled].view-more.load-more-button, [disabled].success.load-more-button {
@@ -1711,7 +1711,7 @@ input[type=submit].button, input[type=submit].form-submit, input[type=submit].fo
 }
 /* line 87, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown > ul li:hover, .dropdown.form-submit > ul li:hover, .dropdown.form-cancel > ul li:hover, .dropdown.load-more-button > ul li:hover, .button.dropdown > ul li:focus, .dropdown.form-submit > ul li:focus, .dropdown.form-cancel > ul li:focus, .dropdown.load-more-button > ul li:focus {
-  background-color: #8fe7ff;
+  background-color: #93dbf3;
   color: #222;
 }
 /* line 88, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
@@ -1749,7 +1749,7 @@ input[type=submit].button, input[type=submit].form-submit, input[type=submit].fo
 }
 /* line 105, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split:hover, .dropdown.split.form-submit:hover, .dropdown.split.form-cancel:hover, .dropdown.split.load-more-button:hover, .button.dropdown.split:focus, .dropdown.split.form-submit:focus, .dropdown.split.form-cancel:focus, .dropdown.split.load-more-button:focus {
-  background-color: #0084a9;
+  background-color: #107090;
 }
 /* line 106, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split.alert:hover, .dropdown.split.alert.form-submit:hover, .dropdown.split.alert.form-cancel:hover, .dropdown.split.alert.load-more-button:hover, .button.dropdown.split.alert:focus, .dropdown.split.alert.form-submit:focus, .dropdown.split.alert.form-cancel:focus, .dropdown.split.alert.load-more-button:focus {
@@ -1777,7 +1777,7 @@ input[type=submit].button, input[type=submit].form-submit, input[type=submit].fo
 }
 /* line 112, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > a:hover, .dropdown.split.form-submit > a:hover, .dropdown.split.form-cancel > a:hover, .dropdown.split.load-more-button > a:hover, .button.dropdown.split > a:focus, .dropdown.split.form-submit > a:focus, .dropdown.split.form-cancel > a:focus, .dropdown.split.load-more-button > a:focus {
-  background-color: #005c76;
+  background-color: #0b4c62;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -1802,13 +1802,13 @@ input[type=submit].button, input[type=submit].form-submit, input[type=submit].fo
 }
 /* line 119, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > span, .dropdown.split.form-submit > span, .dropdown.split.form-cancel > span, .dropdown.split.load-more-button > span {
-  background-color: #0084a9;
+  background-color: #107090;
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
   width: 30px;
-  border-left: 1px solid #00485c;
+  border-left: 1px solid #083a4b;
   -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -1819,7 +1819,7 @@ input[type=submit].button, input[type=submit].form-submit, input[type=submit].fo
 }
 /* line 120, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > span:hover, .dropdown.split.form-submit > span:hover, .dropdown.split.form-cancel > span:hover, .dropdown.split.load-more-button > span:hover, .button.dropdown.split > span:focus, .dropdown.split.form-submit > span:focus, .dropdown.split.form-cancel > span:focus, .dropdown.split.load-more-button > span:focus {
-  background-color: #005c76;
+  background-color: #0b4c62;
 }
 /* line 121, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > span:after, .dropdown.split.form-submit > span:after, .dropdown.split.form-cancel > span:after, .dropdown.split.load-more-button > span:after {
@@ -2086,11 +2086,11 @@ div.button-bar ul.button-group:last-child {
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_tabs.scss */
 .tabs dd a:focus, .tabs li a:focus {
   font-weight: bold;
-  color: #0084a9;
+  color: #107090;
 }
 /* line 14, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_tabs.scss */
 .tabs dd.active, .tabs li.active {
-  border-top: 3px solid #0084a9;
+  border-top: 3px solid #107090;
   margin-top: -3px;
 }
 /* line 15, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_tabs.scss */
@@ -2191,7 +2191,7 @@ div.button-bar ul.button-group:last-child {
 }
 /* line 39, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_tabs.scss */
 .tabs.pill dd.active a, .tabs.pill li.active a {
-  background-color: #0084a9;
+  background-color: #107090;
   border: none;
   color: #fff;
 }
@@ -2292,7 +2292,7 @@ div.alert-box {
   font-weight: bold;
   font-size: 14px;
   color: white;
-  background-color: #0084a9;
+  background-color: #107090;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 12px;
   -webkit-border-radius: 3px;
@@ -2350,7 +2350,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   position: relative;
   bottom: 1px;
   color: #fff;
-  background: #0084a9;
+  background: #107090;
 }
 /* line 43, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 .label.radius, .flag-container .flag, .label.query-no-results, .flag-container .query-no-results.flag {
@@ -2393,8 +2393,8 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 }
 /* line 56, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 .has-tip:hover, .has-tip:focus {
-  border-bottom: dotted 1px #003443;
-  color: #0084a9;
+  border-bottom: dotted 1px #062934;
+  color: #107090;
 }
 /* line 57, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 .has-tip.tip-left, .has-tip.tip-right {
@@ -2472,8 +2472,8 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 }
 /* line 73, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 .tooltip.opened {
-  color: #0084a9 !important;
-  border-bottom: dotted 1px #003443 !important;
+  color: #107090 !important;
+  border-bottom: dotted 1px #062934 !important;
 }
 
 /* line 77, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
@@ -2503,9 +2503,9 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 }
 /* line 86, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 .panel.callout, .callout.query-no-results, .callout.cta {
-  background: #0084a9;
+  background: #107090;
   color: #fff;
-  border-color: #005c76;
+  border-color: #0b4c62;
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
@@ -2518,7 +2518,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 .panel.callout .button, .callout.query-no-results .button, .callout.cta .button, .panel.callout .form-submit, .callout.query-no-results .form-submit, .callout.cta .form-submit, .panel.callout .form-cancel, .callout.query-no-results .form-cancel, .callout.cta .form-cancel, .panel.callout .load-more-button, .callout.query-no-results .load-more-button, .callout.cta .load-more-button {
   background: white;
   border: none;
-  color: #0084a9;
+  color: #107090;
   text-shadow: none;
 }
 /* line 90, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
@@ -2584,7 +2584,7 @@ ul.accordion > li .content {
 }
 /* line 112, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 ul.accordion > li.active {
-  border-top: 3px solid #0084a9;
+  border-top: 3px solid #107090;
 }
 /* line 114, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 ul.accordion > li.active .title {
@@ -2673,7 +2673,7 @@ dl.sub-nav dd a {
 /* line 144, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 dl.sub-nav dd.active a {
   font-weight: bold;
-  background: #0084a9;
+  background: #107090;
   color: #fff;
   padding: 3px 9px;
   cursor: default;
@@ -2716,14 +2716,14 @@ ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
 }
 /* line 158, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 ul.pagination li.current a {
-  background: #0084a9;
+  background: #107090;
   color: white;
   font-weight: bold;
   cursor: default;
 }
 /* line 159, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 ul.pagination li.current a:hover, ul.pagination li.current a:focus {
-  background: #0084a9;
+  background: #107090;
 }
 
 /* line 165, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
@@ -2866,9 +2866,9 @@ ul.inline-list > li > *, ul.link-list > li > *, .footer-row ul > li > * {
 }
 /* line 209, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 .th:hover img, .th:focus img {
-  -webkit-box-shadow: 0 0 6px 1px rgba(0, 132, 169, 0.5);
-  -moz-box-shadow: 0 0 6px 1px rgba(0, 132, 169, 0.5);
-  box-shadow: 0 0 6px 1px rgba(0, 132, 169, 0.5);
+  -webkit-box-shadow: 0 0 6px 1px rgba(16, 112, 144, 0.5);
+  -moz-box-shadow: 0 0 6px 1px rgba(16, 112, 144, 0.5);
+  box-shadow: 0 0 6px 1px rgba(16, 112, 144, 0.5);
 }
 
 /* Video - Mad props to http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ ---------------------- */
@@ -3010,7 +3010,7 @@ div.progress {
 }
 /* line 269, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 div.progress .meter {
-  background: #0084a9;
+  background: #107090;
   height: 100%;
   display: block;
   width: 50%;
@@ -3626,8 +3626,8 @@ div.progress.round .meter {
 }
 /* line 8, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li.active {
-  background: #0084a9;
-  border-color: #005c76;
+  background: #107090;
+  border-color: #0b4c62;
 }
 /* line 9, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li.active > a {
@@ -3636,7 +3636,7 @@ div.progress.round .meter {
 }
 /* line 10, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li.active:hover {
-  background: #0084a9;
+  background: #107090;
   cursor: default;
 }
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
@@ -3737,7 +3737,7 @@ div.progress.round .meter {
 }
 /* line 41, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 .nav-bar.vertical > li.active {
-  border-right: solid 1px #005c76;
+  border-right: solid 1px #0b4c62;
 }
 /* line 42, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 .nav-bar.vertical > li:last-child {
@@ -5485,7 +5485,7 @@ table.hide-for-medium {
   /* line 321, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
   .tabs.mobile dd a.active, .tabs.mobile li a.active {
     border: none;
-    background: #0084a9;
+    background: #107090;
     color: #fff;
     margin: 0;
     position: static;
@@ -5637,7 +5637,7 @@ table.hide-for-medium {
     width: 0;
     height: 0;
     border: solid 8px;
-    border-color: #0084a9 transparent transparent transparent;
+    border-color: #107090 transparent transparent transparent;
     padding: 0;
     position: absolute;
     top: 50%;
@@ -5854,7 +5854,7 @@ table.hide-for-medium {
     width: 0;
     height: 0;
     border: solid 8px;
-    border-color: transparent transparent #003443 transparent;
+    border-color: transparent transparent #062934 transparent;
     top: auto;
     bottom: 50%;
     margin-bottom: -4px;
@@ -8380,9 +8380,9 @@ ul.side-nav li a:hover {
 }
 /* line 14, ../sass/_module.scss */
 .panel.callout, .callout.query-no-results, .callout.cta {
-  background: #0084a9;
+  background: #107090;
   color: #fff;
-  border-color: #005c76;
+  border-color: #0b4c62;
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
@@ -8395,7 +8395,7 @@ ul.side-nav li a:hover {
 .panel.callout .button, .callout.query-no-results .button, .callout.cta .button, .panel.callout .form-submit, .callout.query-no-results .form-submit, .callout.cta .form-submit, .panel.callout .form-cancel, .callout.query-no-results .form-cancel, .callout.cta .form-cancel, .panel.callout .load-more-button, .callout.query-no-results .load-more-button, .callout.cta .load-more-button {
   background: white;
   border: none;
-  color: #0084a9;
+  color: #107090;
   text-shadow: none;
 }
 /* line 18, ../sass/_module.scss */
@@ -9315,60 +9315,24 @@ body {
   border-top: 2px solid white;
 }
 
-/* line 37, ../sass/_theme.scss */
-.journal .item-title, .feed .item-title {
-  font-size: 14px;
-  font-family: "proxima-nova";
-}
-
-/* line 42, ../sass/_theme.scss */
-.journal-title, .feed-title {
-  color: #ca5b49;
-  font-size: 17px;
-}
-
-/* line 47, ../sass/_theme.scss */
-.item-title, .item-type, .item-pub-date {
-  font-family: "proxima-nova-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-}
-
-/* line 51, ../sass/_theme.scss */
-.journal .item-citation, .feed .item-citation {
-  font-size: 11.9px;
-  color: #948b7c;
-}
-
-/* line 56, ../sass/_theme.scss */
-.recommended h5, .recommended .form-title, .recommended .cta-title {
-  font-size: 17px;
-  margin: 0;
-  font-weight: normal;
-}
-
-/* line 62, ../sass/_theme.scss */
-.subheader, .user-title, .form-description {
-  color: #887e6f;
-}
-
 /*  !UI ELEMENTS */
-/* line 83, ../sass/_theme.scss */
+/* line 56, ../sass/_theme.scss */
 .flag {
   border-top: 1ps solid white;
   color: white;
   font-family: "proxima-nova-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
-/* line 89, ../sass/_theme.scss */
+/* line 62, ../sass/_theme.scss */
 .flag.featured {
   background: #d6e03d;
 }
-/* line 92, ../sass/_theme.scss */
+/* line 65, ../sass/_theme.scss */
 .flag.story-of-the-week {
   background: #faa634;
 }
 
-/* line 97, ../sass/_theme.scss */
+/* line 70, ../sass/_theme.scss */
 #RegisterDiv {
   *zoom: 1;
   background-color: white;
@@ -9390,18 +9354,17 @@ body {
 /* ================================ */
 /* ================================ */
 /* typography */
-/* line 110, ../sass/_theme.scss */
+/* line 83, ../sass/_theme.scss */
 body {
   white-space-collapse: collapse;
 }
 
-/* line 116, ../sass/_theme.scss */
+/* line 89, ../sass/_theme.scss */
 h3 {
-  color: #0084a9;
   font-family: "proxima-nova-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-/* line 120, ../sass/_theme.scss */
+/* line 92, ../sass/_theme.scss */
 .page-banner-container {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF002D56', endColorstr='#FF0055A3');
@@ -9420,60 +9383,60 @@ h3 {
   z-index: 10;
 }
 
-/* line 129, ../sass/_theme.scss */
+/* line 101, ../sass/_theme.scss */
 .page-banner p {
   font-family: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-/* line 132, ../sass/_theme.scss */
+/* line 104, ../sass/_theme.scss */
 .brand-container {
   padding-bottom: 1em;
 }
-/* line 133, ../sass/_theme.scss */
+/* line 105, ../sass/_theme.scss */
 .brand-container p {
   color: white;
 }
-/* line 134, ../sass/_theme.scss */
+/* line 106, ../sass/_theme.scss */
 .brand-container .tagline {
   font-size: 17px;
 }
 
-/* line 139, ../sass/_theme.scss */
+/* line 111, ../sass/_theme.scss */
 .brand-name {
   text-transform: lowercase;
   font-size: 59px;
 }
 @media only screen and (max-width: 1279px) {
-  /* line 139, ../sass/_theme.scss */
+  /* line 111, ../sass/_theme.scss */
   .brand-name {
     font-size: 37px;
   }
 }
 
-/* line 146, ../sass/_theme.scss */
+/* line 118, ../sass/_theme.scss */
 .brand-name-practice {
   text-transform: capitalize;
 }
 
-/* line 147, ../sass/_theme.scss */
+/* line 119, ../sass/_theme.scss */
 .brand-name-update {
   text-transform: capitalize;
 }
 
-/* line 149, ../sass/_theme.scss */
+/* line 121, ../sass/_theme.scss */
 .login-register-container {
   width: 50%;
   padding-top: 7px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 149, ../sass/_theme.scss */
+  /* line 121, ../sass/_theme.scss */
   .login-register-container {
     float: none;
     width: auto;
   }
 }
 
-/* line 154, ../sass/_theme.scss */
+/* line 126, ../sass/_theme.scss */
 .login-register {
   margin: 0;
   padding-top: 7px;
@@ -9483,40 +9446,88 @@ h3 {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px 0px;
 }
 
-/* line 161, ../sass/_theme.scss */
+/* line 134, ../sass/_theme.scss */
+.journal .item-title, .feed .item-title {
+  font-size: 14px;
+  font-family: "proxima-nova";
+}
+
+/* line 139, ../sass/_theme.scss */
+.journal-title, .feed-title {
+  color: #ca5b49;
+  font-size: 17px;
+}
+
+/* line 144, ../sass/_theme.scss */
+.item-title, .item-type, .item-pub-date {
+  font-family: "proxima-nova-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+/* line 148, ../sass/_theme.scss */
+.journal .item-citation, .feed .item-citation {
+  font-size: 11.9px;
+  color: #948b7c;
+}
+
+/* line 153, ../sass/_theme.scss */
+.recommended h5, .recommended .form-title, .recommended .cta-title {
+  font-size: 17px;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* line 159, ../sass/_theme.scss */
+.subheader, .user-title, .form-description {
+  color: #887e6f;
+}
+
+/* line 162, ../sass/_theme.scss */
+article.single-item h2 {
+  text-transform: uppercase;
+  font-family: "proxima-nova";
+  font-size: 23px;
+}
+/* line 167, ../sass/_theme.scss */
+article.single-item h3 {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+/* line 173, ../sass/_theme.scss */
 #formLogin {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 161, ../sass/_theme.scss */
+  /* line 173, ../sass/_theme.scss */
   #formLogin {
     float: none;
     width: auto;
   }
 }
 
-/* line 167, ../sass/_theme.scss */
+/* line 179, ../sass/_theme.scss */
 #formRegisterPrompt {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 167, ../sass/_theme.scss */
+  /* line 179, ../sass/_theme.scss */
   #formRegisterPrompt {
     float: none;
     width: auto;
   }
 }
 
-/* line 169, ../sass/_theme.scss */
+/* line 181, ../sass/_theme.scss */
 .beta-accept, .subscribe-container {
   text-align: center;
 }
-/* line 171, ../sass/_theme.scss */
+/* line 183, ../sass/_theme.scss */
 .beta-accept input.error, .subscribe-container input.error {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* line 174, ../sass/_theme.scss */
+/* line 186, ../sass/_theme.scss */
 .beta-accept-lead, .subscribe-lead {
   color: #88cbdf;
   font-size: 17px;
@@ -9524,7 +9535,7 @@ h3 {
   margin-bottom: 7px;
 }
 
-/* line 181, ../sass/_theme.scss */
+/* line 193, ../sass/_theme.scss */
 .beta-accept-button, .subscribe-button {
   color: #005596;
   font-weight: normal;
@@ -9540,7 +9551,7 @@ h3 {
   box-shadow: 0 0 4px #c1cd23, 0 1px 0 white inset;
   text-transform: uppercase;
 }
-/* line 185, ../sass/_theme.scss */
+/* line 197, ../sass/_theme.scss */
 .beta-accept-button:hover, .subscribe-button:hover {
   color: #005596;
   *zoom: 1;
@@ -9554,49 +9565,49 @@ h3 {
   background: linear-gradient(#f2f5c7, #c1cd23);
 }
 
-/* line 192, ../sass/_theme.scss */
+/* line 204, ../sass/_theme.scss */
 .beta-accept-sub {
   display: none;
 }
 
-/* line 194, ../sass/_theme.scss */
+/* line 206, ../sass/_theme.scss */
 .specialty-name, .brand-name {
   color: white;
   margin-bottom: 0;
 }
 
-/* line 198, ../sass/_theme.scss */
+/* line 210, ../sass/_theme.scss */
 .specialty-name {
   font-size: 59px;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 767px) {
-  /* line 198, ../sass/_theme.scss */
+  /* line 210, ../sass/_theme.scss */
   .specialty-name {
     font-size: 44px;
   }
 }
 
-/* line 205, ../sass/_theme.scss */
+/* line 217, ../sass/_theme.scss */
 .tagline {
   color: #002d56;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 17px;
 }
 
-/* line 210, ../sass/_theme.scss */
+/* line 222, ../sass/_theme.scss */
 .tagline-str2 {
   color: #88cbdf;
   font-style: italic;
 }
 @media only screen and (max-width: 767px) {
-  /* line 210, ../sass/_theme.scss */
+  /* line 222, ../sass/_theme.scss */
   .tagline-str2 {
     display: block;
   }
 }
 
-/* line 218, ../sass/_theme.scss */
+/* line 230, ../sass/_theme.scss */
 .page-content-first {
   background: #fdfcfb;
   /* TODO: Fix color code to match PSD */
@@ -9611,13 +9622,13 @@ h3 {
   z-index: -5;
 }
 
-/* line 226, ../sass/_theme.scss */
+/* line 238, ../sass/_theme.scss */
 .copy-header {
   font-size: 37px;
   color: #002d56;
 }
 
-/* line 231, ../sass/_theme.scss */
+/* line 243, ../sass/_theme.scss */
 .expert-letter-copy {
   background-color: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
@@ -9628,25 +9639,25 @@ h3 {
   border-radius: 2px;
 }
 @media screen and (min-width: 768px) {
-  /* line 235, ../sass/_theme.scss */
+  /* line 247, ../sass/_theme.scss */
   .expert-letter-copy .copy-header {
     padding: 1em .5em inherit;
   }
 }
 
-/* line 242, ../sass/_theme.scss */
+/* line 254, ../sass/_theme.scss */
 .letter-body {
   font-size: 17px;
   line-height: 2;
 }
 @media screen and (min-width: 768px) {
-  /* line 242, ../sass/_theme.scss */
+  /* line 254, ../sass/_theme.scss */
   .letter-body {
     padding: 1em 1em 2em;
   }
 }
 
-/* line 251, ../sass/_theme.scss */
+/* line 263, ../sass/_theme.scss */
 .page-content-second {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -9672,7 +9683,7 @@ body.experimental-a .item-title {
 }
 /* line 35, ../sass/_experimental-a.scss */
 body.experimental-a .journal-title, body.experimental-a .feed-title {
-  color: #0084a9 !important;
+  color: #107090 !important;
   font-size: 23px !important;
   font-family: "proxima-nova-condensed" !important;
 }
@@ -9701,6 +9712,10 @@ body.experimental-a .page-header.fixed {
 /* line 60, ../sass/_experimental-a.scss */
 body.experimental-a .page-header.fixed .top-bar {
   background-color: rgba(255, 255, 255, 0.95);
+}
+/* line 66, ../sass/_experimental-a.scss */
+body.experimental-a section.take-home-message .source-container {
+  display: none;
 }
 
 /* line 24, ../sass/_experimental-b.scss */
