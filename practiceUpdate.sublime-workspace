@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
 				"_module-u",
 				"_module-user-topic"
 			],
@@ -22,10 +30,6 @@
 			[
 				"mar",
 				"margin"
-			],
-			[
-				"font",
-				"font-weight"
 			],
 			[
 				"heade",
@@ -227,6 +231,105 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "<div class=\"item-source-container\">\n								<div class=\"item-source\">\n									{{#expert}}\n										{{! expert opoinion source removed from template. will add once expert opinion has been implemented in juneo }}\n									{{/expert}}\n									{{#journal}}\n									<div class=\"journal\">\n									<dl class=\"source-citation\">\n										<dt class=\"journal-title\">{{title}}</dt>\n										<dt class=\"item-title\"><cite>{{source.title}}</cite></dt>\n										<dd class=\"item-citation\">{{source.citation}}</dd>\n									</dl>\n									</div><!--/.journal-->\n									{{/journal}}\n									{{#feed}}\n									<div class=\"feed\">\n										<dl class=\"source-citation\">\n											<dt class=\"feed-title\">{{title}}</dt>\n											<dd class=\"pub-date\"><date>{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</date></dt>\n											<dd class=\"item-citation\">{{source.citation}}</dd>\n										</dl><!--/.source-citation-->\n									</div><!--/.feed-->\n									{{/feed}}\n								</div><!--/.item-source -->\n							</div><!--/.item-source-container-->\n\n---\n<div class=\"single-item-container\">\n	<article class=\"type-news single-item\" itemscope itemtype=\"http://schema.org/NewsArticle\">\n		<link itemprop=\"audience\" href=\"http://schema.org/Clinician\"/>\n		<meta itemprop=\"publicationType\" content=\"Meta-Analysis\"/> <!-- referenced from: http://www.nlm.nih.gov/mesh/pubtypes.html -->\n		<meta itemprop=\"keywords\" content=\"Meta-Analysis\"/>\n		<div class=\"item-header-container\">\n			<header class=\"item-header\">\n				<div class=\"flag-container\"><span class=\"flag featured\"><i class=\"icon-bolt\"></i> featured</span></div>\n				<div class=\"meta pub-meta\">\n					<span class=\"item-type\">News</span>\n					<span class=\"item-pub-date\"><time datetime=\"12-12-05\">December 05, 2012</span>\n				</div>\n				<hgroup class=\"item-title-container\">\n					<h1 class=\"item-title\" itemprop=\"name\">Second-Line FOLFIRI/Aflibercept Ups Survival in Metastatic Colorectal Cancer</h1>\n					<p class=\"item-citation\">{{source.citation}}</p>\n				</hgroup>\n					<!-- <p class=\"source\"> --><!-- {{source}} --><!-- J Clin Oncol. 2012 Aug 27;[Epub Ahead of Print], HSL Jim, KM Phillips, S Chait</p>--><!--/.source-->\n					<!-- <h2 class=\"item-subtitle\">Article Subtitle - Optional</h2> -->\n				<!-- <div class=\"item-description\">\n					<p>In this commentary, Dr. Scher discusses his research on a novel androgen receptor signaling inhibitor, MDV3100, which was shown to improve survival in a post-chemotherapy population of men with progressive castration-resistant prostate cancer (CRPC).</p>\n				</div> --><!--/.description-->\n					<!-- <div class=\"meta taxonomy-meta\">\n					<p>Find more items about these topics:</p>\n					<ul class=\"tag-list\">\n						<li>\n							<i class=\"icon-tags\"></i><a class=\"label label-tag\" href=\"#\">Prostate</a>\n						</li> -->\n					<!-- </ul> --><!--/.tag-list-->\n				<!-- </div> --><!--/.taxonomy-meta-->\n			</header>\n		</div><!--/.item-header-container-->\n		<div class=\"item-content-container\">	\n			<div class=\"item-content\" itemprop=\"articleBody\">\n				<div class=\"item-content-section\">\n					<section class=\"commentary\">\n						<div class=\"commentary-container\">\n						</div><!--/.commentary-container-->\n					</section><!-- /.commentary-->\n				</div><!-- ./item-content-section -->\n			</div><!--/.item-content-->\n		</div><!--/.item-content-container-->		\n	</article>\n</div><!--/.single-item-container-->\n\nitemprop=\"author\" itemscope itemtype=\"http://schema.org/Person\"\n\n\n	\n<span itemprop=\"datePublished\"><time datetime=\"12-12-05\">December 05, 2012</span></span>\n<div class=\"item-footer-container\">\n	<footer class=\"copyright item-footer\">\n	<itemprop=\"copyrightHolder\" itemscope itemtype=\"organization\"><itemprop=\"img\"></>\n	<!-- http://www.imng.com/ -->\n	<img itemprop=\"image\" class=\"logo\" src=\"content/img/feed/imng_logo.gif\" alt=\"IMNG Medical Media\"/>\n	<p>Copyright &copy; <span class=\"copyrightYear\" itemprop\"itemcopyrightYear\">2012<span> International Medical News Group</p>\n	</footer>\n</div><!--/.item-footer-container-->\n\n\n\n---\n\n<div itemscope itemtype=\"http://schema.org/Person\">\n  <span itemprop=\"name\">Jane Doe</span>\n  <img src=\"janedoe.jpg\" itemprop=\"image\" />\n\n  <span itemprop=\"jobTitle\">Professor</span>\n  <div itemprop=\"address\" itemscope itemtype=\"http://schema.org/PostalAddress\">\n    <span itemprop=\"streetAddress\">\n      20341 Whitworth Institute\n      405 N. Whitworth\n    </span>\n    <span itemprop=\"addressLocality\">Seattle</span>,\n    <span itemprop=\"addressRegion\">WA</span>\n    <span itemprop=\"postalCode\">98052</span>\n  </div>\n  <span itemprop=\"telephone\">(425) 123-4567</span>\n  <a href=\"mailto:jane-doe@xyz.edu\" itemprop=\"email\">\n    jane-doe@xyz.edu</a>\n\n  Jane's home page:\n  <a href=\"http://www.janedoe.com\" itemprop=\"url\">janedoe.com</a>\n\n  Graduate students:\n  <a href=\"http://www.xyz.edu/students/alicejones.html\" itemprop=\"colleague\">\n    Alice Jones</a>\n  <a href=\"http://www.xyz.edu/students/bobsmith.html\" itemprop=\"colleague\">\n    Bob Smith</a>\n</div>\n    <span itemprop=\"code\" itemscope\n          itemtype=\"http://schema.org/MedicalCode\"\n          itemid=\"http://www.ncbi.nlm.nih.gov/mesh/D02.078.370.141.450\">\n      <!-- Note: use of itemid is not mandatory, but recommended when an\n           external enumeration is available -->\n      <meta itemprop=\"code\" content=\"D02.078.370.141.450\"/>\n      <meta itemprop=\"codingSystem\" content=\"MeSH\"/>\n    </span>\nitemid=\"urn:pmid:23065358\"",
+			"settings":
+			{
+				"buffer_size": 5413,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "## Cardiology & Vascular Medicine\nArrhythmias\nCardiac surgery\nCongenital heart disease\nHeart failure\nHypertension\nIschaemic heart disease\nPericardial & endocardial disease\nCardiology & vascular-other\n\n## Endocrinology\nDiabetes\nEndocrine system cancer\nPaediatric endocrinology\nEndocrinology-other\n\n## Gastroenterology\nHepatobiliary disease\nGastrointestinal cancer\nGastrointestinal infections\nInflammatory bowel diseases\nPaediatric gastroenterology\nGastroenterology-other\n\n## Genetics & Genomics\n\n## Global Health\n\n## Infectious Diseases\nAnti-infective therapy\nGastrointestinal infections\nHealthcare-associated infections\nHIV/AIDS\nImmunisation & vaccination\nMalaria  \nNeurological infections\nPaediatric infections\nRespiratory tract infections\nSexually transmitted infections\nTuberculosis & mycobacterial infections\nInfectious diseases-other\n\n## Neurology\nAmyotrophic lateral sclerosis\nCerebrovascular disease\nDementias\nEpilepsy & seizures\nGenetics & neurology\nHead injury\nHeadache & migraine\nMovement disorders\nMultiple sclerosis\nNeurological infections\nNeurology-other\nNeuromuscular disorders\nNeuro-oncology\nPaediatric neurology\n\n## Nutrition & Metabolism\nObesity\nUndernutrition  \nNutrition & metabolism-other\n\n## Obstetrics & Gynaecology\nContraception\nGynaecological cancer\nGynaecology\nObstetrics\nReproductive medicine\nObstetrics & gynaecology-other\n\n## Oncology\nBreast cancer\nCancer epidemiology & prevention & control\nCancer supportive care\nConnective tissue cancer\nEndocrine system cancer\nGastrointestinal cancer\nGenitourinary cancer\nGynaecological cancer\nHaematological cancer\nHead & neck cancer\nPaediatric cancer\nSkin cancer\nThoracic cancer\nTranslational oncology\nOncology-other\nNeuro-oncology\n\n## Paediatrics\nAdolescent health\nChild psychiatry\nNeonatal health\nPaediatric cancer\nPaediatric endocrinology\nPaediatric gastroenterology\nPaediatric haematology\nPaediatric infections\nPaediatric intensive care  \nPaediatric renal medicine  \nPaediatric respiratory medicine\nPaediatric surgery\nPaediatrics-other\nPaediatric neurology\n\n## Psychiatry\nAnxiety & depression\nChild psychiatry\nDrug & alcohol misuse\nSchizophrenia  \nPsychiatry-other\n\n## Public Health\n\n## Respiratory Medicine\nAsthma\nCOPD\nPaediatric respiratory medicine\nRespiratory tract infections\nThoracic cancer\nRespiratory medicine-other\n\n## Urology\nGenitourinary cancer\nUrology-other",
+			"settings":
+			{
+				"buffer_size": 2341,
+				"line_ending": "Unix",
+				"name": "## Cardiology & Vascular Medicine"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
+			"settings":
+			{
+				"buffer_size": 3514,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_experimental-b.scss",
+			"settings":
+			{
+				"buffer_size": 1684,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-console.scss",
+			"settings":
+			{
+				"buffer_size": 2023,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-profile.mustache",
+			"settings":
+			{
+				"buffer_size": 2063,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-profile.scss",
+			"settings":
+			{
+				"buffer_size": 4494,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 222 files for \"user-group\"\n\n/Users/brad/Sites/pn-foundation/practiceupdate/practiceUpdate.sublime-workspace:\n   94  			[\n   95  				\"user-grop\",\n   96: 				\"user-group-title\"\n   97  			],\n   98  			[\n   99  				\"user\",\n  100: 				\"user-group\"\n  101  			],\n  102  			[\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css:\n 9189  \n 9190  /* line 6, ../sass/_theme.scss */\n 9191: .in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container, .user-console {\n 9192    background-color: white;\n 9193    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache:\n    1  \n    2: {{#user-group}}\n    3: <section class=\"user-group\">\n    4: <h2>{{user-group-title}}</h2>\n    5  	{{#users}}\n    6  \n    .\n   38  	{{/users}}\n   39  	</section>\n   40: {{/user-group}}\n   41  \n   42  \n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss:\n    6  .user-directory-header{@include innerRow(collapse);}\n    7  .user-directory{@include innerRow(collapse);}\n    8: .user-group{@include column(12, collapse);}\n    9  \n   10  .user-profile-container .user-profile,\n   ..\n   12  	padding:14px;\n   13  }\n   14: .user-group {\n   15  	padding:14px;\n   16  }\n   17  .user-profile-container .profile-photo,\n   18: .user-group .profile-photo {\n   19  	padding-right: 0;\n   20  	width: 17%;\n   21  }\n   22  .user-profile-container .user-name,\n   23: .user-group .user-name {\n   24  	margin-bottom: 14px;\n   25      margin-top: -1px;\n   26  }\n   27  .user-profile-container .user-name,\n   28: .user-group .user-name{\n   29      font-size: 18px;\n   30  }\n   31: .user-directory-container .user-group h2{\n   32  	font-size: 20px;\n   33      font-weight: normal;\n   ..\n   42  	padding:0 0 0 30px;\n   43  }\n   44: .user-group {}\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss:\n    4  //article{\n    5  //TODO:  add background and dropshadow for .static-container. content container needs to be added to those pages.\n    6: .in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container, .user-console{\n    7  	background-color:$white;\n    8  	@include elementBoxShadow;\n\n/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json:\n    1  {\n    2: 	\"user-group\":[\n    3  		{\n    4: 			\"user-group-title\": \"Editor in Chief\",\n    5  			\"users\":[\n    6  				{\n    .\n   27  		},\n   28  		{\n   29: 			\"user-group-title\": \"Associate Editors\",\n   30  			\"users\":[\n   31  				{\n   ..\n   52  		},\n   53  		{\n   54: 			\"user-group-title\": \"Advisory Board\",\n   55  			\"users\":[\n   56  				{\n   ..\n   95  		},\n   96  		{\n   97: 			\"user-group-title\": \"Editorial Contributors\",\n   98  			\"users\":[\n   99  				{\n\n20 matches across 6 files\n\n\nSearching 222 files for \"user-directory\"\n\n/Users/brad/Sites/pn-foundation/practiceupdate/experts.html:\n   50  	<section role=\"main\">\n   51  \n   52: <div class=\"user-directory-container\">\n   53: 	<div class=\"user-directory-header\">\n   54  	<a class=\"button\" href=\"#\">view boards for all channels</a>\n   55  		<header class=\"channel-header\">\n   ..\n   57  			<p>PracticeUpate is guided by a world-renowned experts that represents community practitioners and academic specialists with cross-disciplinary expertise.</p>\n   58  		<header>\n   59: 	</div><!--/.user-directory-header-->\n   60: 	<div class=\"user-directory\">\n   61: 	</div><!--/.user-directory -->\n   62: </div><!-- /.user-directory-container -->\n   63  \n   64  	<div class=\"recommended\">\n   ..\n  144  		$.get('assets/mustache/experts.mustache', function(template) {\n  145  	    var html = Mustache.to_html(template, data);\n  146: 	    $('.user-directory').html(html);\n  147  		});\n  148  	});\n\n/Users/brad/Sites/pn-foundation/practiceupdate/practiceUpdate.sublime-workspace:\n  310  		\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_my-custom-style.scss\",\n  311  		\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-profile.scss\",\n  312: 		\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss\",\n  313  		\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss\",\n  314  		\"/Users/brad/Sites/pn-foundation/practiceupdate/user-profile.html\",\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css:\n    3  /* !mixins */\n    4  /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */\n    5: .footer-section-container, .flag-container, .recommended, #aux, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$=\"-photo\"], .item-source-container div[class$=\"-name\"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .checked-list li, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .login-register-container, #formLogin, #formRegisterPrompt {\n    6    float: left;\n    7  }\n    .\n   29  \n   30  /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */\n   31: .footer-section-container, .flag-container, .recommended, #aux, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$=\"-photo\"], .item-source-container div[class$=\"-name\"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .checked-list li, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .login-register-container, #formLogin, #formRegisterPrompt {\n   32    position: relative;\n   33    min-height: 1px;\n   ..\n 7860  /* !User Directory */\n 7861  /* line 78, ../sass/_layout.scss */\n 7862: .user-directory-container {\n 7863    padding: 0;\n 7864    width: 58.33333%;\n ....\n 7866  @media only screen and (max-width: 767px) {\n 7867    /* line 78, ../sass/_layout.scss */\n 7868:   .user-directory-container {\n 7869      float: none;\n 7870      width: auto;\n ....\n 7873  @media only screen and (max-width: 767px) {\n 7874    /* line 78, ../sass/_layout.scss */\n 7875:   .user-directory-container {\n 7876      width: auto;\n 7877      min-width: 0;\n ....\n 7881    }\n 7882    /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_clearfix.scss */\n 7883:   .user-directory-container:before, .user-directory-container:after {\n 7884      content: \" \";\n 7885      display: table;\n 7886    }\n 7887    /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_clearfix.scss */\n 7888:   .user-directory-container:after {\n 7889      clear: both;\n 7890    }\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss:\n   76  \n   77  /* !User Directory */\n   78: .user-directory-container{@include column(7, collapse); @include mobileRow();}\n   79  .user-profile-container{@include column(7, collapse); @include mobileRow();}\n   80  .channel-list-container{@include column(7, collapse); @include mobileRow();}\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss:\n    4  	@extend h4;\n    5  }\n    6: .user-directory-header{@include innerRow(collapse);}\n    7: .user-directory{@include innerRow(collapse);}\n    8  .user-group{@include column(12, collapse);}\n    9  \n   ..\n   30      font-size: 18px;\n   31  }\n   32: .user-directory-container .user-group h2{\n   33  	font-size: 20px;\n   34      font-weight: normal;\n   ..\n   36      text-transform: uppercase;\n   37  }\n   38: .user-directory-container h1,\n   39  .channel-list-container h1{\n   40  	font-size: 24px;\n\n21 matches across 5 files\n",
+			"settings":
+			{
+				"buffer_size": 9136,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
+			"settings":
+			{
+				"buffer_size": 3208,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss",
+			"settings":
+			{
+				"buffer_size": 990,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+			"settings":
+			{
+				"buffer_size": 5114,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+			"settings":
+			{
+				"buffer_size": 8352,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -304,50 +407,62 @@
 	},
 	"file_history":
 	[
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-profile.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-recent.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/learn.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-top-bar.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_experimental-a.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/dev-app.js",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/topic-spotlight.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/journal-scan-single-item.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-page-footer.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/page-footer.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-ad.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-explore-section.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/recent.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/foundation-overrides.css",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.topbar.js",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-console.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_my-custom-style.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_state.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/news-item.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-topic.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/preferences.html",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/ad.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-explore-carousel.scss",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.accordion.js",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-profile.mustache",
+		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/journal-scan-single-item.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-profile.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/user-profile.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-form.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/news-single-item.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/_articles.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.topbar.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-explore-section.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-ad.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-top-bar.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_state.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/sass/_module-user-console.scss",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/addthis.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/bio_experimental.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_experimental-a.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_experimental-b.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/login-register.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/sass/_module-user-topic.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-console.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/preferences.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/page-footer.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-page-footer.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_base.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-footer.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.offcanvas.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.accordion.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-cta.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/raphael.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/register.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-topic.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/practiceupdate-ie.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/respond.src.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/practiceupdate-it.js",
@@ -362,9 +477,6 @@
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/tamingselect.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/section.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/cta-meet-experts.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/foundation-overrides.css",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/modal-cme-onc-001.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/index.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/urology.html",
@@ -378,7 +490,6 @@
 		"/Users/brad/Sites/pn-foundation/practiceupdate/.gitignore",
 		"/Users/brad/Dropbox/Elsevier/_project/PracticeUpdate/Copy/ux-copy-changes.md",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/seminal-article-item.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/learn.html",
 		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/personal-info.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/help.html",
@@ -393,11 +504,9 @@
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts-copy.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/experts-channel-list.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/recent.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/feed.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/channel-list.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/author-meta.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/ad.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/sass/_ad.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/marketing.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides-marketing.scss",
@@ -406,7 +515,6 @@
 		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/de3225710d60b15d0a6df5c356cb618685603156/_opacity.scssc",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/c41bfe3e0594ee6743c257e86d2cf5507d6658bd/_foundation-overrides.scssc",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/experts.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/topic-spotlight.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/foundation-overrides.scss",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/c41bfe3e0594ee6743c257e86d2cf5507d6658bd/foundation-overrides.scssc",
 		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
@@ -416,7 +524,6 @@
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/img/section/editorial_board_group.jpg",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/page-footer.mustache",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/experts.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/news-item.html",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_news.json",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/content/img/users/oncologyStat.png",
 		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/ad.json",
@@ -427,11 +534,7 @@
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/modernizr.foundation-ck.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.buttons.js",
 		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.alerts.js",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/user-topic.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/user-console.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/modals.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app copy.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/modernizr.foundation.js"
+		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/user-topic.mustache"
 	],
 	"find":
 	{
@@ -439,7 +542,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -450,6 +553,33 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"user-directory",
+			"user-group",
+			"item-source",
+			"title",
+			"user-detail-list",
+			"channel-list-container",
+			"footer-row",
+			"test",
+			"test.mustache",
+			"drawer",
+			"ad.scss",
+			"ad",
+			"baseFontSize",
+			"fixed",
+			"scroll",
+			"115px",
+			"95px",
+			"71px",
+			"59",
+			"h1",
+			"simple5",
+			"simple4",
+			"simple3",
+			"simple2",
+			"simple1",
+			".gif",
+			"load",
 			"news",
 			"mobile",
 			".static-container",
@@ -550,34 +680,7 @@
 			"base",
 			"hover",
 			"uppercase",
-			"border",
-			"nav-header",
-			"side-",
-			"active",
-			"user-name",
-			"console",
-			"accordion",
-			"dashboard",
-			"overflow",
-			"overflow: hidden;",
-			"uppercase",
-			"capitalize",
-			"learn",
-			"keep",
-			"@media",
-			"first",
-			"source",
-			"callout",
-			"formlogin",
-			"error",
-			"override",
-			"#form",
-			"login",
-			"widget",
-			"query-no-results",
-			"query",
-			"cta-query",
-			".ad"
+			"border"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -585,6 +688,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"pref5",
+			"pref4",
+			"pref3",
+			"pref2",
+			"pref1",
 			"",
 			"<span class=\"help-block\">",
 			"help-text",
@@ -601,8 +709,507 @@
 	"groups":
 	[
 		{
+			"selected": 11,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 5413,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5413,
+								5413
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Mustache/mustache.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 2341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2299,
+								2299
+							]
+						],
+						"settings":
+						{
+							"auto_name": "## Cardiology & Vascular Medicine",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
+					"settings":
+					{
+						"buffer_size": 3514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1593,
+								1593
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1006.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_experimental-b.scss",
+					"settings":
+					{
+						"buffer_size": 1684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								482,
+								482
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-console.scss",
+					"settings":
+					{
+						"buffer_size": 2023,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1105,
+								1105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-profile.mustache",
+					"settings":
+					{
+						"buffer_size": 2063,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								796,
+								796
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Mustache/mustache.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-profile.scss",
+					"settings":
+					{
+						"buffer_size": 4494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4460,
+								4460
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 466.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"settings":
+					{
+						"buffer_size": 9136,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										167,
+										177
+									],
+									[
+										241,
+										251
+									],
+									[
+										444,
+										454
+									],
+									[
+										713,
+										723
+									],
+									[
+										749,
+										759
+									],
+									[
+										775,
+										785
+									],
+									[
+										880,
+										890
+									],
+									[
+										1119,
+										1129
+									],
+									[
+										1261,
+										1271
+									],
+									[
+										1360,
+										1370
+									],
+									[
+										1494,
+										1504
+									],
+									[
+										1636,
+										1646
+									],
+									[
+										1730,
+										1740
+									],
+									[
+										1853,
+										1863
+									],
+									[
+										2128,
+										2138
+									],
+									[
+										2358,
+										2368
+									],
+									[
+										2394,
+										2404
+									],
+									[
+										2505,
+										2515
+									],
+									[
+										2618,
+										2628
+									],
+									[
+										2728,
+										2738
+									],
+									[
+										2995,
+										3009
+									],
+									[
+										3042,
+										3056
+									],
+									[
+										3388,
+										3402
+									],
+									[
+										3433,
+										3447
+									],
+									[
+										3470,
+										3484
+									],
+									[
+										3509,
+										3523
+									],
+									[
+										3731,
+										3745
+									],
+									[
+										4134,
+										4148
+									],
+									[
+										4727,
+										4741
+									],
+									[
+										6072,
+										6086
+									],
+									[
+										7192,
+										7206
+									],
+									[
+										7379,
+										7393
+									],
+									[
+										7566,
+										7580
+									],
+									[
+										7808,
+										7822
+									],
+									[
+										7842,
+										7856
+									],
+									[
+										8087,
+										8101
+									],
+									[
+										8274,
+										8288
+									],
+									[
+										8646,
+										8660
+									],
+									[
+										8706,
+										8720
+									],
+									[
+										8861,
+										8875
+									],
+									[
+										9020,
+										9034
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								2835,
+								2835
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
+					"settings":
+					{
+						"buffer_size": 3208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2307,
+								2307
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1313.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss",
+					"settings":
+					{
+						"buffer_size": 990,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								703,
+								703
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
+					"settings":
+					{
+						"buffer_size": 5114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3299,
+								3299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2033.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
+					"settings":
+					{
+						"buffer_size": 8352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								888,
+								888
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -652,16 +1259,180 @@
 		"selected_items":
 		[
 			[
-				"user",
-				"assets/sass/_module-user-profile.scss"
+				"upd",
+				"update.html"
 			],
 			[
-				"_module",
+				"module.",
 				"assets/sass/_module.scss"
+			],
+			[
+				"direc",
+				"assets/sass/_module-user-directory.scss"
+			],
+			[
+				"footer",
+				"assets/mustache/page-footer.mustache"
+			],
+			[
+				"update",
+				"update.html"
+			],
+			[
+				"exper",
+				"assets/sass/_experimental-b.scss"
+			],
+			[
+				"expe",
+				"assets/sass/_experimental-b.scss"
 			],
 			[
 				"theme",
 				"assets/sass/_theme.scss"
+			],
+			[
+				"modul",
+				"assets/sass/_module.scss"
+			],
+			[
+				"module-ad",
+				"assets/sass/_module-ad.scss"
+			],
+			[
+				"ad",
+				"assets/sass/_ad.scss"
+			],
+			[
+				"module",
+				"assets/sass/_module-explore-section.scss"
+			],
+			[
+				"experiment",
+				"assets/sass/_experimental-b.scss"
+			],
+			[
+				"layou",
+				"assets/sass/_layout.scss"
+			],
+			[
+				"mod",
+				"assets/sass/_module.scss"
+			],
+			[
+				"recent",
+				"assets/mustache/recent.mustache"
+			],
+			[
+				"layo",
+				"assets/sass/_layout.scss"
+			],
+			[
+				"prof",
+				"assets/sass/_module-user-profile.scss"
+			],
+			[
+				"user",
+				"assets/mustache/user-profile.mustache"
+			],
+			[
+				"learn",
+				"learn.html"
+			],
+			[
+				"the",
+				"assets/sass/_theme.scss"
+			],
+			[
+				"top",
+				"assets/sass/_module-top-bar.scss"
+			],
+			[
+				"them",
+				"assets/sass/_theme.scss"
+			],
+			[
+				"dev",
+				"assets/js/foundation/dev-app.js"
+			],
+			[
+				"app.js",
+				"assets/js/foundation/app.js"
+			],
+			[
+				"found",
+				"assets/sass/_foundation-overrides.scss"
+			],
+			[
+				"founda",
+				"assets/css/foundation-overrides.css"
+			],
+			[
+				"topic",
+				"assets/mustache/topic-spotlight.mustache"
+			],
+			[
+				"stor",
+				"story-of-the-week.html"
+			],
+			[
+				"upda",
+				"update.html"
+			],
+			[
+				"ad.scss",
+				"assets/sass/_ad.scss"
+			],
+			[
+				"overr",
+				"assets/sass/_foundation-overrides.scss"
+			],
+			[
+				"experimen",
+				"assets/sass/_experimental-a.scss"
+			],
+			[
+				"modu",
+				"assets/sass/_module.scss"
+			],
+			[
+				"app",
+				"assets/sass/app.scss"
+			],
+			[
+				"sett",
+				"assets/sass/_settings.scss"
+			],
+			[
+				"state",
+				"assets/sass/_state.scss"
+			],
+			[
+				"topb",
+				"assets/sass/_module-top-bar.scss"
+			],
+			[
+				"feed",
+				"assets/mustache/feed-item.mustache"
+			],
+			[
+				"topi",
+				"assets/mustache/topic-spotlight.mustache"
+			],
+			[
+				"usert",
+				"assets/mustache/user-topic.mustache"
+			],
+			[
+				"prefer",
+				"preferences.html"
+			],
+			[
+				"ad.m",
+				"assets/mustache/ad.mustache"
+			],
+			[
+				"_module",
+				"assets/sass/_module.scss"
 			],
 			[
 				"_module-ad",
@@ -676,26 +1447,6 @@
 				"assets/sass/_foundation-overrides.scss"
 			],
 			[
-				"state",
-				"assets/sass/_state.scss"
-			],
-			[
-				"module",
-				"assets/sass/_module-top-bar.scss"
-			],
-			[
-				"top",
-				"assets/mustache/top-bar.mustache"
-			],
-			[
-				"upda",
-				"update.html"
-			],
-			[
-				"update",
-				"update.html"
-			],
-			[
 				"layout",
 				"assets/sass/_layout.scss"
 			],
@@ -704,32 +1455,8 @@
 				"assets/sass/_my-custom-style.scss"
 			],
 			[
-				"upd",
-				"update.html"
-			],
-			[
-				"overr",
-				"assets/sass/_foundation-overrides.scss"
-			],
-			[
-				"layou",
-				"assets/sass/_layout.scss"
-			],
-			[
-				"footer",
-				"assets/sass/_module-page-footer.scss"
-			],
-			[
 				"page",
 				"assets/sass/_module-page-footer.scss"
-			],
-			[
-				"prefer",
-				"preferences.html"
-			],
-			[
-				"app.js",
-				"assets/js/foundation/app.js"
 			],
 			[
 				"accordi",
@@ -744,16 +1471,8 @@
 				"assets/sass/_ad.scss"
 			],
 			[
-				"app",
-				"assets/sass/app.scss"
-			],
-			[
 				"oncology",
 				"oncology.html"
-			],
-			[
-				"modul",
-				"assets/sass/_module.scss"
 			],
 			[
 				"expl",
@@ -776,10 +1495,6 @@
 				"assets/sass/_foundation-overrides.scss"
 			],
 			[
-				"layo",
-				"assets/sass/_layout.scss"
-			],
-			[
 				"up",
 				"update.html"
 			],
@@ -792,20 +1507,12 @@
 				"story-of-the-week.html"
 			],
 			[
-				"ad",
-				"assets/sass/_ad.scss"
-			],
-			[
 				"uro",
 				"urology.html"
 			],
 			[
 				"eye",
 				"eyecare.html"
-			],
-			[
-				"modu",
-				"assets/sass/_module.scss"
 			],
 			[
 				"app.scs",
@@ -826,10 +1533,6 @@
 			[
 				"_ad.",
 				"assets/sass/_ad.scss"
-			],
-			[
-				"learn",
-				"learn.html"
 			],
 			[
 				"semin",
@@ -873,10 +1576,6 @@
 			],
 			[
 				"set",
-				"assets/sass/_settings.scss"
-			],
-			[
-				"sett",
 				"assets/sass/_settings.scss"
 			]
 		],
