@@ -93,7 +93,8 @@
 //     text-transform: uppercase;
 // }
 // /*End: source-container*/
-
+.commentary-container p{margin-bottom:$baseFontSize/2;}
+.expert-photo .label{display: none;}
 .item-source-container{
 	@include column(12);
 	figure[class$="-photo"]{

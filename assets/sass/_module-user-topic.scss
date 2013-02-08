@@ -75,17 +75,18 @@
 
 ul.side-nav{
 	.nav-header{
-		color: $pri-blue;
+		color: $sec-blue;
 		font-family: $headerFontFamily;
 		font-weight: 500;
-		border-bottom: 1px solid $ter-ltTan;
+		//border-bottom: 1px solid $ter-ltTan;
 		padding:7px 7px 2px;
 		margin:10px 0 0;
 		& > a{
 			&.trigger, &.activetrigger{
-				color: $pri-blue;
+				color: $sec-blue;
+				padding-left: 0px;
 			}
-			&:hover{background:transparent}
+			&:hover{background:transparent; border: none;}
 			&.trigger {
 				background:transparent url("../img/right-select.png") no-repeat 100% center;
 			}
@@ -96,23 +97,24 @@ ul.side-nav{
 		}
 	}
 	li{
-		background-color: lighten($ter-ltTan, 7%);
-	  border: 1px solid lighten($ter-ltTan, 2%);
+		background-color: $white;
+	  border: 1px solid darken($ter-ltTan, 2%);
 		border-top:none;
 		margin-bottom:0;
 		&.active{
 			a{
-				border-left:3px solid $sec-blue;
-				background: lighten($ter-ltTan, 2%);
-				color: $sec-blue;
-				font-weight: normal;
-				padding-left:$baseFontSize/2 - 3px;
+				background: $pri-orange;
+				color: $white;
 			}
 		}
 		a{
 			padding:$baseFontSize/2;
 			&:hover{
+				border-left:3px solid $pri-orange;
 				background: lighten($ter-ltTan, 2%);
+				color: $pri-orange;
+				// font-weight: normal;
+				padding-left:$baseFontSize/2 - 3px;
 			}
 		}
 	}

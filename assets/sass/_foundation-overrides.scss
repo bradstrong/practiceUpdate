@@ -10,21 +10,21 @@ $experimental-support-for-svg: true; //support SVG in IE
 $grey: #ededed;
 $blue:#00aeff;
 $green:#dae348;
-$bodyBackground: #fff;
+$bodyBackground: rgb(247,242,228);
 $itemBackground: #fcfcfa;
 
 $juneoblue: #43A1DA;
 
 // PRIMARY
-$pri-blue:rgba(0,45,86,1); // pantone 298
+//$pri-blue:rgba(0,45,86,1); // pantone 298
 $pri-green:rgba(193,205,35,1); // pantone 390
 $pri-tan:rgba(136,126,111,1); // pantone 404
 
 // SECONDARY
 $sec-orange:rgba(250,166,52,1); // pantone 1375
-$sec-green:rgba(214,224,61,1); // pantone 381
+// $sec-green:rgba(214,224,61,1); // pantone 381
 $sec-purple:rgba(154,78,158,1); // pantone 513
-$sec-blue:rgba(0,132,169,1); // pantone 314
+//$sec-blue:rgba(0,132,169,1); // pantone 314
 $sec-red:rgba(181,9,56,1); // pantone 7427
 
 // TERTIARY
@@ -35,6 +35,32 @@ $ter-dkBlue:rgba(0,85,150,1); // pantone 391
 $ter-green:rgba(163,165,16,1); // pantone 294
 
 // Additional
+
+// Rebrand
+$bodyBackground: rgb(247,242,228);
+
+$pri-blue: 		rgb(29,121,152); //#
+$pri-orange: 	rgb(216,102,84); //#
+
+$sec-blue: 		rgb(23,46,84); //#
+$sec-green: 	rgb(112,207,141); //#
+$sec-orange: 	rgb(243,183,39); //#
+
+$ter-ltTan: 	rgb(231,225,218); //#
+$ter-red: 		rgb(243,71,39); //#
+// background tan rgb(255,250,240); //#fffcf0
+
+// text dark blue rgb(0,4,69); //#003045
+// text light blue rgb(0,129,171); //#0081ab
+
+// text light tan rgb(119,111,103); //#776f67
+
+// illustration dark tan rgb(88,89,91); //#58595b
+
+// logo blue rgb(29,121,152); //#1d7999
+// logo orange rgb(216,102,84); //#da6754
+
+// gradient dark blue rgb(15,64,81); //#0f4051 logo blue darken 50%
 
 // ----------------------------------------
 //Gradients
@@ -72,12 +98,12 @@ $titleFontFamily: $sansCondensedFontFamily, "Helvetica Neue", "Helvetica", Helve
 	@include background(linear-gradient(top, $color, $color2), inline-image("../img/noise.jpg"));
 }       
 
-@mixin site-gradient($color:$pri-blue, $colorDif:15%, $shinyEdge:"false", $ie-compat:"true"){
+@mixin site-gradient($color:$pri-blue, $colorDif:10%, $shinyEdge:"false", $ie-compat:"true"){
 	@if $ie-compat == "true"{
-		@include filter-gradient($color, lighten($color, $colorDif), vertical);
+		@include filter-gradient($color, darken($color, $colorDif), vertical);
 	}
 	background-color: $color;
-	@include background(linear-gradient(lighten($color,$colorDif), $color));
+	@include background(linear-gradient(bottom, darken($color,$colorDif), $color));
 		@if $shinyEdge != "false" {
 			@include box-shadow(0 0 4px opacify($color, 0.3), 0 1px 0 $shinyEdge inset);
 		}
@@ -92,10 +118,10 @@ $rowWidth: 1440px;// 100%sets site to fluid grid
 
 // Colors Settings
 
-$mainColor: rgb(16,112,144);//$sec-blue;
-$secondaryColor: $ter-dkTan;
-$alertColor: $sec-red;
-$successColor: $pri-green;
+$mainColor: $pri-orange;//logo orange Previously: //rgb(16,112,144);//$sec-blue;
+$secondaryColor: rgb(201,193,184);//$ter-dkTan;
+$alertColor: $ter-red;
+$successColor: $sec-green;
 $txtColor: $pri-tan;
 
 // Font Settings

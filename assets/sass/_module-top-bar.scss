@@ -12,7 +12,7 @@ ul{@extend .right;}
     li:not(.name) {
     	text-transform:uppercase;
       &.active {
-      	@include site-gradient($pri-green);
+      	@include site-gradient($pri-orange);
 			}
 			&:hover{
 				background-color:$pri-blue;
@@ -29,6 +29,7 @@ ul{@extend .right;}
 #main-nav li:hover {filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#{$topnav-lt}', endColorstr='#{$topnav-dk}');}
 @media only screen and (max-width: $topBarBreakPoint) {
 .top-bar{
+  background:transparent;
   ul{
     li.toggle-topbar{
       width:$topBarHeightMobile + 20px;
@@ -52,7 +53,7 @@ ul{@extend .right;}
     left: 5px;
     z-index:10;
     #sidebarButton{
-      color:$sec-blue;
+      color:$pri-orange;
       @include site-gradient(lighten($ter-ltTan, 7%));
       background-color: $white;
       border-color:$ter-ltTan;//$sec-blue;

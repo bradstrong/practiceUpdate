@@ -4,12 +4,12 @@
 		"selected_items":
 		[
 			[
-				"margin-",
-				"margin-top"
+				"font",
+				"font-family"
 			],
 			[
-				"font",
-				"font-size"
+				"margin-",
+				"margin-top"
 			],
 			[
 				"_module-u",
@@ -252,7 +252,7 @@
 			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
 			"settings":
 			{
-				"buffer_size": 3514,
+				"buffer_size": 3532,
 				"line_ending": "Unix"
 			}
 		},
@@ -289,10 +289,10 @@
 			}
 		},
 		{
-			"contents": "Searching 222 files for \"user-group\"\n\n/Users/brad/Sites/pn-foundation/practiceupdate/practiceUpdate.sublime-workspace:\n   94  			[\n   95  				\"user-grop\",\n   96: 				\"user-group-title\"\n   97  			],\n   98  			[\n   99  				\"user\",\n  100: 				\"user-group\"\n  101  			],\n  102  			[\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css:\n 9189  \n 9190  /* line 6, ../sass/_theme.scss */\n 9191: .in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container, .user-console {\n 9192    background-color: white;\n 9193    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache:\n    1  \n    2: {{#user-group}}\n    3: <section class=\"user-group\">\n    4: <h2>{{user-group-title}}</h2>\n    5  	{{#users}}\n    6  \n    .\n   38  	{{/users}}\n   39  	</section>\n   40: {{/user-group}}\n   41  \n   42  \n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss:\n    6  .user-directory-header{@include innerRow(collapse);}\n    7  .user-directory{@include innerRow(collapse);}\n    8: .user-group{@include column(12, collapse);}\n    9  \n   10  .user-profile-container .user-profile,\n   ..\n   12  	padding:14px;\n   13  }\n   14: .user-group {\n   15  	padding:14px;\n   16  }\n   17  .user-profile-container .profile-photo,\n   18: .user-group .profile-photo {\n   19  	padding-right: 0;\n   20  	width: 17%;\n   21  }\n   22  .user-profile-container .user-name,\n   23: .user-group .user-name {\n   24  	margin-bottom: 14px;\n   25      margin-top: -1px;\n   26  }\n   27  .user-profile-container .user-name,\n   28: .user-group .user-name{\n   29      font-size: 18px;\n   30  }\n   31: .user-directory-container .user-group h2{\n   32  	font-size: 20px;\n   33      font-weight: normal;\n   ..\n   42  	padding:0 0 0 30px;\n   43  }\n   44: .user-group {}\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss:\n    4  //article{\n    5  //TODO:  add background and dropshadow for .static-container. content container needs to be added to those pages.\n    6: .in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container, .user-console{\n    7  	background-color:$white;\n    8  	@include elementBoxShadow;\n\n/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json:\n    1  {\n    2: 	\"user-group\":[\n    3  		{\n    4: 			\"user-group-title\": \"Editor in Chief\",\n    5  			\"users\":[\n    6  				{\n    .\n   27  		},\n   28  		{\n   29: 			\"user-group-title\": \"Associate Editors\",\n   30  			\"users\":[\n   31  				{\n   ..\n   52  		},\n   53  		{\n   54: 			\"user-group-title\": \"Advisory Board\",\n   55  			\"users\":[\n   56  				{\n   ..\n   95  		},\n   96  		{\n   97: 			\"user-group-title\": \"Editorial Contributors\",\n   98  			\"users\":[\n   99  				{\n\n20 matches across 6 files\n\n\nSearching 222 files for \"user-directory\"\n\n/Users/brad/Sites/pn-foundation/practiceupdate/experts.html:\n   50  	<section role=\"main\">\n   51  \n   52: <div class=\"user-directory-container\">\n   53: 	<div class=\"user-directory-header\">\n   54  	<a class=\"button\" href=\"#\">view boards for all channels</a>\n   55  		<header class=\"channel-header\">\n   ..\n   57  			<p>PracticeUpate is guided by a world-renowned experts that represents community practitioners and academic specialists with cross-disciplinary expertise.</p>\n   58  		<header>\n   59: 	</div><!--/.user-directory-header-->\n   60: 	<div class=\"user-directory\">\n   61: 	</div><!--/.user-directory -->\n   62: </div><!-- /.user-directory-container -->\n   63  \n   64  	<div class=\"recommended\">\n   ..\n  144  		$.get('assets/mustache/experts.mustache', function(template) {\n  145  	    var html = Mustache.to_html(template, data);\n  146: 	    $('.user-directory').html(html);\n  147  		});\n  148  	});\n\n/Users/brad/Sites/pn-foundation/practiceupdate/practiceUpdate.sublime-workspace:\n  310  		\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_my-custom-style.scss\",\n  311  		\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-profile.scss\",\n  312: 		\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss\",\n  313  		\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss\",\n  314  		\"/Users/brad/Sites/pn-foundation/practiceupdate/user-profile.html\",\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css:\n    3  /* !mixins */\n    4  /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */\n    5: .footer-section-container, .flag-container, .recommended, #aux, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$=\"-photo\"], .item-source-container div[class$=\"-name\"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .checked-list li, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .login-register-container, #formLogin, #formRegisterPrompt {\n    6    float: left;\n    7  }\n    .\n   29  \n   30  /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */\n   31: .footer-section-container, .flag-container, .recommended, #aux, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$=\"-photo\"], .item-source-container div[class$=\"-name\"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .checked-list li, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .login-register-container, #formLogin, #formRegisterPrompt {\n   32    position: relative;\n   33    min-height: 1px;\n   ..\n 7860  /* !User Directory */\n 7861  /* line 78, ../sass/_layout.scss */\n 7862: .user-directory-container {\n 7863    padding: 0;\n 7864    width: 58.33333%;\n ....\n 7866  @media only screen and (max-width: 767px) {\n 7867    /* line 78, ../sass/_layout.scss */\n 7868:   .user-directory-container {\n 7869      float: none;\n 7870      width: auto;\n ....\n 7873  @media only screen and (max-width: 767px) {\n 7874    /* line 78, ../sass/_layout.scss */\n 7875:   .user-directory-container {\n 7876      width: auto;\n 7877      min-width: 0;\n ....\n 7881    }\n 7882    /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_clearfix.scss */\n 7883:   .user-directory-container:before, .user-directory-container:after {\n 7884      content: \" \";\n 7885      display: table;\n 7886    }\n 7887    /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_clearfix.scss */\n 7888:   .user-directory-container:after {\n 7889      clear: both;\n 7890    }\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss:\n   76  \n   77  /* !User Directory */\n   78: .user-directory-container{@include column(7, collapse); @include mobileRow();}\n   79  .user-profile-container{@include column(7, collapse); @include mobileRow();}\n   80  .channel-list-container{@include column(7, collapse); @include mobileRow();}\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss:\n    4  	@extend h4;\n    5  }\n    6: .user-directory-header{@include innerRow(collapse);}\n    7: .user-directory{@include innerRow(collapse);}\n    8  .user-group{@include column(12, collapse);}\n    9  \n   ..\n   30      font-size: 18px;\n   31  }\n   32: .user-directory-container .user-group h2{\n   33  	font-size: 20px;\n   34      font-weight: normal;\n   ..\n   36      text-transform: uppercase;\n   37  }\n   38: .user-directory-container h1,\n   39  .channel-list-container h1{\n   40  	font-size: 24px;\n\n21 matches across 5 files\n",
+			"contents": "Searching 222 files for \"user-group\"\n\n/Users/brad/Sites/pn-foundation/practiceupdate/practiceUpdate.sublime-workspace:\n   94  			[\n   95  				\"user-grop\",\n   96: 				\"user-group-title\"\n   97  			],\n   98  			[\n   99  				\"user\",\n  100: 				\"user-group\"\n  101  			],\n  102  			[\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css:\n 9189  \n 9190  /* line 6, ../sass/_theme.scss */\n 9191: .in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container, .user-console {\n 9192    background-color: white;\n 9193    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache:\n    1  \n    2: {{#user-group}}\n    3: <section class=\"user-group\">\n    4: <h2>{{user-group-title}}</h2>\n    5  	{{#users}}\n    6  \n    .\n   38  	{{/users}}\n   39  	</section>\n   40: {{/user-group}}\n   41  \n   42  \n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss:\n    6  .user-directory-header{@include innerRow(collapse);}\n    7  .user-directory{@include innerRow(collapse);}\n    8: .user-group{@include column(12, collapse);}\n    9  \n   10  .user-profile-container .user-profile,\n   ..\n   12  	padding:14px;\n   13  }\n   14: .user-group {\n   15  	padding:14px;\n   16  }\n   17  .user-profile-container .profile-photo,\n   18: .user-group .profile-photo {\n   19  	padding-right: 0;\n   20  	width: 17%;\n   21  }\n   22  .user-profile-container .user-name,\n   23: .user-group .user-name {\n   24  	margin-bottom: 14px;\n   25      margin-top: -1px;\n   26  }\n   27  .user-profile-container .user-name,\n   28: .user-group .user-name{\n   29      font-size: 18px;\n   30  }\n   31: .user-directory-container .user-group h2{\n   32  	font-size: 20px;\n   33      font-weight: normal;\n   ..\n   42  	padding:0 0 0 30px;\n   43  }\n   44: .user-group {}\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss:\n    4  //article{\n    5  //TODO:  add background and dropshadow for .static-container. content container needs to be added to those pages.\n    6: .in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container, .user-console{\n    7  	background-color:$white;\n    8  	@include elementBoxShadow;\n\n/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json:\n    1  {\n    2: 	\"user-group\":[\n    3  		{\n    4: 			\"user-group-title\": \"Editor in Chief\",\n    5  			\"users\":[\n    6  				{\n    .\n   27  		},\n   28  		{\n   29: 			\"user-group-title\": \"Associate Editors\",\n   30  			\"users\":[\n   31  				{\n   ..\n   52  		},\n   53  		{\n   54: 			\"user-group-title\": \"Advisory Board\",\n   55  			\"users\":[\n   56  				{\n   ..\n   95  		},\n   96  		{\n   97: 			\"user-group-title\": \"Editorial Contributors\",\n   98  			\"users\":[\n   99  				{\n\n20 matches across 6 files\n\n\nSearching 222 files for \"user-directory\"\n\n/Users/brad/Sites/pn-foundation/practiceupdate/experts.html:\n   50  	<section role=\"main\">\n   51  \n   52: <div class=\"user-directory-container\">\n   53: 	<div class=\"user-directory-header\">\n   54  	<a class=\"button\" href=\"#\">view boards for all channels</a>\n   55  		<header class=\"channel-header\">\n   ..\n   57  			<p>PracticeUpate is guided by a world-renowned experts that represents community practitioners and academic specialists with cross-disciplinary expertise.</p>\n   58  		<header>\n   59: 	</div><!--/.user-directory-header-->\n   60: 	<div class=\"user-directory\">\n   61: 	</div><!--/.user-directory -->\n   62: </div><!-- /.user-directory-container -->\n   63  \n   64  	<div class=\"recommended\">\n   ..\n  144  		$.get('assets/mustache/experts.mustache', function(template) {\n  145  	    var html = Mustache.to_html(template, data);\n  146: 	    $('.user-directory').html(html);\n  147  		});\n  148  	});\n\n/Users/brad/Sites/pn-foundation/practiceupdate/practiceUpdate.sublime-workspace:\n  310  		\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_my-custom-style.scss\",\n  311  		\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-profile.scss\",\n  312: 		\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss\",\n  313  		\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss\",\n  314  		\"/Users/brad/Sites/pn-foundation/practiceupdate/user-profile.html\",\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css:\n    3  /* !mixins */\n    4  /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */\n    5: .footer-section-container, .flag-container, .recommended, #aux, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$=\"-photo\"], .item-source-container div[class$=\"-name\"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .checked-list li, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .login-register-container, #formLogin, #formRegisterPrompt {\n    6    float: left;\n    7  }\n    .\n   29  \n   30  /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */\n   31: .footer-section-container, .flag-container, .recommended, #aux, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$=\"-photo\"], .item-source-container div[class$=\"-name\"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .checked-list li, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .login-register-container, #formLogin, #formRegisterPrompt {\n   32    position: relative;\n   33    min-height: 1px;\n   ..\n 7860  /* !User Directory */\n 7861  /* line 78, ../sass/_layout.scss */\n 7862: .user-directory-container {\n 7863    padding: 0;\n 7864    width: 58.33333%;\n ....\n 7866  @media only screen and (max-width: 767px) {\n 7867    /* line 78, ../sass/_layout.scss */\n 7868:   .user-directory-container {\n 7869      float: none;\n 7870      width: auto;\n ....\n 7873  @media only screen and (max-width: 767px) {\n 7874    /* line 78, ../sass/_layout.scss */\n 7875:   .user-directory-container {\n 7876      width: auto;\n 7877      min-width: 0;\n ....\n 7881    }\n 7882    /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_clearfix.scss */\n 7883:   .user-directory-container:before, .user-directory-container:after {\n 7884      content: \" \";\n 7885      display: table;\n 7886    }\n 7887    /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_clearfix.scss */\n 7888:   .user-directory-container:after {\n 7889      clear: both;\n 7890    }\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss:\n   76  \n   77  /* !User Directory */\n   78: .user-directory-container{@include column(7, collapse); @include mobileRow();}\n   79  .user-profile-container{@include column(7, collapse); @include mobileRow();}\n   80  .channel-list-container{@include column(7, collapse); @include mobileRow();}\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss:\n    4  	@extend h4;\n    5  }\n    6: .user-directory-header{@include innerRow(collapse);}\n    7: .user-directory{@include innerRow(collapse);}\n    8  .user-group{@include column(12, collapse);}\n    9  \n   ..\n   30      font-size: 18px;\n   31  }\n   32: .user-directory-container .user-group h2{\n   33  	font-size: 20px;\n   34      font-weight: normal;\n   ..\n   36      text-transform: uppercase;\n   37  }\n   38: .user-directory-container h1,\n   39  .channel-list-container h1{\n   40  	font-size: 24px;\n\n21 matches across 5 files\n\n\nSearching 222 files for \"section-header\"\n\n/Users/brad/Sites/pn-foundation/practiceupdate/404.html:\n   46  						<!-- !#story-of-the-week -->\n   47  						<section id=\"story-of-the-week\" class=\"\">\n   48: 							<header class=\"section-header\">\n   49  								<div class=\"text-error-message\">\n   50  									<p><strong>Diagnosis:</strong> Page Not Found</p>\n   ..\n   56  									<li>Log in to your account {link to log in page} or Register {link to Register page} if you don't have an account yet</li>\n   57  								</ul>\n   58: 							</header><!--/.section-header-->\n   59  						</section><!--/#story-of-the-week-->\n   60  					</div><!--/.feature-item-->\n\n/Users/brad/Sites/pn-foundation/practiceupdate/error-page.html:\n   46  					<!-- !#story-of-the-week -->\n   47  					<section id=\"story-of-the-week\" class=\"\">\n   48: 						<header class=\"section-header\">\n   49  							<h1>HTTP Error 500 Internal server error</h1>\n   50  							<p>{Error message}</p>\n   51: 						</header><!--/.section-header-->						\n   52  							\n   53  					</section><!--/#story-of-the-week-->\n\n/Users/brad/Sites/pn-foundation/practiceupdate/explore.html:\n   46  					<!-- !#story-of-the-week -->\n   47  					<section id=\"story-of-the-week\" class=\"\">\n   48: 						<header class=\"section-header\">\n   49  							<h1>story of the week</h1>\n   50  							<p>Our physician editors collaborate weekly to choose the hottest stories</p>\n   51: 						</header><!--/.section-header-->\n   52  						<div class=\"section-content\"><!--/.section-content-->\n   53  							<article class=\"article\">\n   ..\n   75  					<!-- !#story-of-the-week -->\n   76  					<section id=\"story-of-the-week\" class=\"\">\n   77: 						<header class=\"section-header\">\n   78  							<h1>Featured News</h1>\n   79  							<p>Our physician editors collaborate weekly to choose the hottest stories</p>\n   80: 						</header><!--/.section-header-->\n   81  						<div class=\"section-content\"><!--/.section-content-->\n   82  							<article class=\"article\">\n\n/Users/brad/Sites/pn-foundation/practiceupdate/explore_articles.html:\n    1  				<section class=\"journal-scans research section-widget\">\n    2: 				<header class=\"section-header\">\n    3  						<h2>Primary Research</h2>\n    4  						<p>The top cancer-related articles from leading journals selected by medical experts</p>\n    5: 					</header><!--/.section-header-->\n    6  					<div class=\"section-content\">\n    7  								<ul>\n    .\n   32  \n   33  				<section class=\"journal-scans review section-widget\">\n   34: 				<header class=\"section-header\">\n   35  						<h2>Review Articles</h2>\n   36  						<p>The top cancer-related articles from leading journals selected by medical experts</p>\n   37: 					</header><!--/.section-header-->\n   38  					<div class=\"section-content\">\n   39  								<ul>\n   ..\n   64  				  <!-- !#news-articles-->\n   65  					<section id=\"news-articles\" class=\"section-widget\">\n   66: 						<header class=\"section-header\">\n   67  							<h1>Articles</h1>\n   68  							<p>Start each day with OncologySTAT?s premier medical and pharmaceutical news provided by Elsevier Global Medical News and FDC Reports. </p>\n   69: 						</header><!--/.section-header-->\n   70  						<div class=\"section-content\">\n   71  							<div class=\"entry\">\n\n/Users/brad/Sites/pn-foundation/practiceupdate/hot-topics.html:\n    1  		  <!-- !#hot-topics -->\n    2  			<section id=\"hot-topics\" class=\"\">\n    3: 				<header class=\"section-header\">\n    4  					<h1>Hot Topics</h1>\n    5  					<p>Our physician editors collaborate weekly to choose the hottest stories</p>\n    6: 				</header><!--/.section-header-->\n    7  				<div class=\"section-content\"></div><!--/.section-content-->\n    8  					<article class=\"article\">\n\n/Users/brad/Sites/pn-foundation/practiceupdate/learn.html:\n   68  \n   69  				<section class=\"{{section-id}} section-widget\">\n   70: <header class=\"section-header\">\n   71  		<h2>CME</h2>\n   72  		<p>Stay current and earn valuable credits by participating in customized online programs</p>\n   73: 	</header><!--/.section-header-->\n   74  	<div class=\"section-content\">\n   75  					<table>\n   ..\n  118  \n  119  	<section class=\"{{section-id}} section-widget\">\n  120: <header class=\"section-header\">\n  121  		<h2>Seminal Articles</h2>\n  122  		<p>The definitive list of must-read articles for practicing oncologists</p>\n  123: 	</header><!--/.section-header-->\n  124  	<div class=\"section-content\">\n  125  				<ul>\n\n/Users/brad/Sites/pn-foundation/practiceupdate/posters.html:\n   61  	  <div class=\"cme-container\">\n   62  			<section id=\"cme-table\">\n   63: 				<header class=\"section-header\">\n   64  					<h1>Posters</h1>\n   65  					<!-- <p>Stay current and earn valuable credits by participating in customized online programs</p> -->\n   66: 				</header><!--/.section-header-->\n   67  \n   68  				<div>\n\n/Users/brad/Sites/pn-foundation/practiceupdate/practiceUpdate.sublime-workspace:\n  290  		},\n  291  		{\n  292: 			\"contents\": \"Searching 222 files for \\\"user-group\\\"\\n\\n/Users/brad/Sites/pn-foundation/practiceupdate/practiceUpdate.sublime-workspace:\\n   94  			[\\n   95  				\\\"user-grop\\\",\\n   96: 				\\\"user-group-title\\\"\\n   97  			],\\n   98  			[\\n   99  				\\\"user\\\",\\n  100: 				\\\"user-group\\\"\\n  101  			],\\n  102  			[\\n\\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css:\\n 9189  \\n 9190  /* line 6, ../sass/_theme.scss */\\n 9191: .in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container, .user-console {\\n 9192    background-color: white;\\n 9193    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);\\n\\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache:\\n    1  \\n    2: {{#user-group}}\\n    3: <section class=\\\"user-group\\\">\\n    4: <h2>{{user-group-title}}</h2>\\n    5  	{{#users}}\\n    6  \\n    .\\n   38  	{{/users}}\\n   39  	</section>\\n   40: {{/user-group}}\\n   41  \\n   42  \\n\\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss:\\n    6  .user-directory-header{@include innerRow(collapse);}\\n    7  .user-directory{@include innerRow(collapse);}\\n    8: .user-group{@include column(12, collapse);}\\n    9  \\n   10  .user-profile-container .user-profile,\\n   ..\\n   12  	padding:14px;\\n   13  }\\n   14: .user-group {\\n   15  	padding:14px;\\n   16  }\\n   17  .user-profile-container .profile-photo,\\n   18: .user-group .profile-photo {\\n   19  	padding-right: 0;\\n   20  	width: 17%;\\n   21  }\\n   22  .user-profile-container .user-name,\\n   23: .user-group .user-name {\\n   24  	margin-bottom: 14px;\\n   25      margin-top: -1px;\\n   26  }\\n   27  .user-profile-container .user-name,\\n   28: .user-group .user-name{\\n   29      font-size: 18px;\\n   30  }\\n   31: .user-directory-container .user-group h2{\\n   32  	font-size: 20px;\\n   33      font-weight: normal;\\n   ..\\n   42  	padding:0 0 0 30px;\\n   43  }\\n   44: .user-group {}\\n\\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss:\\n    4  //article{\\n    5  //TODO:  add background and dropshadow for .static-container. content container needs to be added to those pages.\\n    6: .in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container, .user-console{\\n    7  	background-color:$white;\\n    8  	@include elementBoxShadow;\\n\\n/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json:\\n    1  {\\n    2: 	\\\"user-group\\\":[\\n    3  		{\\n    4: 			\\\"user-group-title\\\": \\\"Editor in Chief\\\",\\n    5  			\\\"users\\\":[\\n    6  				{\\n    .\\n   27  		},\\n   28  		{\\n   29: 			\\\"user-group-title\\\": \\\"Associate Editors\\\",\\n   30  			\\\"users\\\":[\\n   31  				{\\n   ..\\n   52  		},\\n   53  		{\\n   54: 			\\\"user-group-title\\\": \\\"Advisory Board\\\",\\n   55  			\\\"users\\\":[\\n   56  				{\\n   ..\\n   95  		},\\n   96  		{\\n   97: 			\\\"user-group-title\\\": \\\"Editorial Contributors\\\",\\n   98  			\\\"users\\\":[\\n   99  				{\\n\\n20 matches across 6 files\\n\\n\\nSearching 222 files for \\\"user-directory\\\"\\n\\n/Users/brad/Sites/pn-foundation/practiceupdate/experts.html:\\n   50  	<section role=\\\"main\\\">\\n   51  \\n   52: <div class=\\\"user-directory-container\\\">\\n   53: 	<div class=\\\"user-directory-header\\\">\\n   54  	<a class=\\\"button\\\" href=\\\"#\\\">view boards for all channels</a>\\n   55  		<header class=\\\"channel-header\\\">\\n   ..\\n   57  			<p>PracticeUpate is guided by a world-renowned experts that represents community practitioners and academic specialists with cross-disciplinary expertise.</p>\\n   58  		<header>\\n   59: 	</div><!--/.user-directory-header-->\\n   60: 	<div class=\\\"user-directory\\\">\\n   61: 	</div><!--/.user-directory -->\\n   62: </div><!-- /.user-directory-container -->\\n   63  \\n   64  	<div class=\\\"recommended\\\">\\n   ..\\n  144  		$.get('assets/mustache/experts.mustache', function(template) {\\n  145  	    var html = Mustache.to_html(template, data);\\n  146: 	    $('.user-directory').html(html);\\n  147  		});\\n  148  	});\\n\\n/Users/brad/Sites/pn-foundation/practiceupdate/practiceUpdate.sublime-workspace:\\n  310  		\\\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_my-custom-style.scss\\\",\\n  311  		\\\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-profile.scss\\\",\\n  312: 		\\\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss\\\",\\n  313  		\\\"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss\\\",\\n  314  		\\\"/Users/brad/Sites/pn-foundation/practiceupdate/user-profile.html\\\",\\n\\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css:\\n    3  /* !mixins */\\n    4  /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */\\n    5: .footer-section-container, .flag-container, .recommended, #aux, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$=\\\"-photo\\\"], .item-source-container div[class$=\\\"-name\\\"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .checked-list li, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .login-register-container, #formLogin, #formRegisterPrompt {\\n    6    float: left;\\n    7  }\\n    .\\n   29  \\n   30  /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */\\n   31: .footer-section-container, .flag-container, .recommended, #aux, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$=\\\"-photo\\\"], .item-source-container div[class$=\\\"-name\\\"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .checked-list li, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .login-register-container, #formLogin, #formRegisterPrompt {\\n   32    position: relative;\\n   33    min-height: 1px;\\n   ..\\n 7860  /* !User Directory */\\n 7861  /* line 78, ../sass/_layout.scss */\\n 7862: .user-directory-container {\\n 7863    padding: 0;\\n 7864    width: 58.33333%;\\n ....\\n 7866  @media only screen and (max-width: 767px) {\\n 7867    /* line 78, ../sass/_layout.scss */\\n 7868:   .user-directory-container {\\n 7869      float: none;\\n 7870      width: auto;\\n ....\\n 7873  @media only screen and (max-width: 767px) {\\n 7874    /* line 78, ../sass/_layout.scss */\\n 7875:   .user-directory-container {\\n 7876      width: auto;\\n 7877      min-width: 0;\\n ....\\n 7881    }\\n 7882    /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_clearfix.scss */\\n 7883:   .user-directory-container:before, .user-directory-container:after {\\n 7884      content: \\\" \\\";\\n 7885      display: table;\\n 7886    }\\n 7887    /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_clearfix.scss */\\n 7888:   .user-directory-container:after {\\n 7889      clear: both;\\n 7890    }\\n\\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss:\\n   76  \\n   77  /* !User Directory */\\n   78: .user-directory-container{@include column(7, collapse); @include mobileRow();}\\n   79  .user-profile-container{@include column(7, collapse); @include mobileRow();}\\n   80  .channel-list-container{@include column(7, collapse); @include mobileRow();}\\n\\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss:\\n    4  	@extend h4;\\n    5  }\\n    6: .user-directory-header{@include innerRow(collapse);}\\n    7: .user-directory{@include innerRow(collapse);}\\n    8  .user-group{@include column(12, collapse);}\\n    9  \\n   ..\\n   30      font-size: 18px;\\n   31  }\\n   32: .user-directory-container .user-group h2{\\n   33  	font-size: 20px;\\n   34      font-weight: normal;\\n   ..\\n   36      text-transform: uppercase;\\n   37  }\\n   38: .user-directory-container h1,\\n   39  .channel-list-container h1{\\n   40  	font-size: 24px;\\n\\n21 matches across 5 files\\n\",\n  293  			\"settings\":\n  294  			{\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css:\n    3  /* !mixins */\n    4  /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */\n    5: .footer-section-container, .flag-container, .recommended, #aux, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$=\"-photo\"], .item-source-container div[class$=\"-name\"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .login-register-container, #formLogin, #formRegisterPrompt {\n    6    float: left;\n    7  }\n    .\n   29  \n   30  /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */\n   31: .footer-section-container, .flag-container, .recommended, #aux, .aux, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$=\"-photo\"], .item-source-container div[class$=\"-name\"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget, .section-widget .section-header, .section-widget .section-content, .login-register-container, #formLogin, #formRegisterPrompt {\n   32    position: relative;\n   33    min-height: 1px;\n   ..\n 9219  }\n 9220  /* line 14, ../sass/_module-explore-section.scss */\n 9221: .section-widget .section-header {\n 9222    width: 100%;\n 9223  }\n 9224  @media only screen and (max-width: 767px) {\n 9225    /* line 14, ../sass/_module-explore-section.scss */\n 9226:   .section-widget .section-header {\n 9227      float: none;\n 9228      width: auto;\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/section.mustache:\n    1  <section class=\"{{section-id}} section-widget\">\n    2: <header class=\"section-header\">\n    3  		<h2>{{section-title}}</h2>\n    4  		<p>{{section-description}}</p>\n    5: 	</header><!--/.section-header-->\n    6  	<div class=\"section-content\">\n    7  				<ul>\n\n/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-explore-section.scss:\n   12  		font-weight: bold;\n   13  	}\n   14: 	.section-header{\n   15  		@include column(12);\n   16  	}\n\n31 matches across 11 files\n",
 			"settings":
 			{
-				"buffer_size": 9136,
+				"buffer_size": 27270,
 				"line_ending": "Unix",
 				"name": "Find Results",
 				"scratch": true
@@ -328,6 +328,47 @@
 			{
 				"buffer_size": 8352,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
+			"settings":
+			{
+				"buffer_size": 17028,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_experimental-a.scss",
+			"settings":
+			{
+				"buffer_size": 1483,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss",
+			"settings":
+			{
+				"buffer_size": 4854,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pn-foundation/practiceupdate/news-item.html",
+			"settings":
+			{
+				"buffer_size": 13779,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!-- http://support.addthis.com/customer/portal/articles/381263-addthis-client-api#rendering-preferred-services -->\n\n<!-- AddThis Button BEGIN -->\n<div class=\"addthis_toolbox addthis_default_style \">\n<a class=\"addthis_button_preferred_1\"></a>\n<a class=\"addthis_button_preferred_2\"></a>\n<a class=\"addthis_button_preferred_3\"></a>\n<a class=\"addthis_button_preferred_4\"></a>\n<a class=\"addthis_button_compact\"></a>\n<a class=\"addthis_counter addthis_bubble_style\"></a>\n</div>\n<script type=\"text/javascript\">var addthis_config = {\"data_track_addressbar\":true};</script>\n<script type=\"text/javascript\" src=\"//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50f715661b6cff2d\"></script>\n<!-- AddThis Button END -->\n\n\n<!-- hootsuite hootlet \nhttp://hootsuite.com/social-share\n-->\n<a href=\"[URL]\" title=\"[MESSAGE]\" class=\"_hs_socialshare\">Share</a>\n\n<script>\nvar _hs = {\n	size: 1\n};\n(function() {\n	var h = document.createElement('script'); h.type = 'text/javascript'; h.async = true;\n	h.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'd2l6uygi1pgnys.cloudfront.net/hootlet.js';\n	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(h, s);\n})();\n</script>\n<!-- End hootsuite -->",
+			"settings":
+			{
+				"buffer_size": 1219,
+				"line_ending": "Unix",
+				"name": "<!-- http://support.addthis.com/customer/portal/ar"
 			}
 		}
 	],
@@ -542,7 +583,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			""
@@ -553,6 +594,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ms(",
+			"h3",
+			"section-header",
 			"user-directory",
 			"user-group",
 			"item-source",
@@ -677,10 +721,7 @@
 			"border",
 			"size",
 			"text",
-			"base",
-			"hover",
-			"uppercase",
-			"border"
+			"base"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -709,7 +750,7 @@
 	"groups":
 	[
 		{
-			"selected": 11,
+			"selected": 15,
 			"sheets":
 			[
 				{
@@ -771,15 +812,15 @@
 					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
 					"settings":
 					{
-						"buffer_size": 3514,
+						"buffer_size": 3532,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1593,
-								1593
+								1334,
+								1336
 							]
 						],
 						"settings":
@@ -788,7 +829,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1006.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -904,7 +945,7 @@
 					"buffer": 7,
 					"settings":
 					{
-						"buffer_size": 9136,
+						"buffer_size": 27270,
 						"regions":
 						{
 							"match":
@@ -1075,6 +1116,130 @@
 									[
 										9020,
 										9034
+									],
+									[
+										9363,
+										9377
+									],
+									[
+										9689,
+										9703
+									],
+									[
+										9985,
+										9999
+									],
+									[
+										10127,
+										10141
+									],
+									[
+										10400,
+										10414
+									],
+									[
+										10578,
+										10592
+									],
+									[
+										10832,
+										10846
+									],
+									[
+										11006,
+										11020
+									],
+									[
+										11295,
+										11309
+									],
+									[
+										11480,
+										11494
+									],
+									[
+										11665,
+										11679
+									],
+									[
+										11849,
+										11863
+									],
+									[
+										12064,
+										12078
+									],
+									[
+										12296,
+										12310
+									],
+									[
+										12560,
+										12574
+									],
+									[
+										12725,
+										12739
+									],
+									[
+										13001,
+										13015
+									],
+									[
+										13165,
+										13179
+									],
+									[
+										13333,
+										13347
+									],
+									[
+										13493,
+										13507
+									],
+									[
+										13726,
+										13740
+									],
+									[
+										13912,
+										13926
+									],
+									[
+										19887,
+										19901
+									],
+									[
+										21242,
+										21256
+									],
+									[
+										24829,
+										24843
+									],
+									[
+										26187,
+										26201
+									],
+									[
+										26451,
+										26465
+									],
+									[
+										26637,
+										26651
+									],
+									[
+										26861,
+										26875
+									],
+									[
+										26977,
+										26991
+									],
+									[
+										27186,
+										27200
 									]
 								],
 								"scope": ""
@@ -1083,14 +1248,14 @@
 						"selection":
 						[
 							[
-								2835,
-								2835
+								9138,
+								9138
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
-							"output_tag": 2,
+							"output_tag": 3,
 							"result_base_dir": "",
 							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -1098,7 +1263,7 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3958.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1209,6 +1374,140 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
+					"settings":
+					{
+						"buffer_size": 17028,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15761,
+								15761
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4347.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_experimental-a.scss",
+					"settings":
+					{
+						"buffer_size": 1483,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1480,
+								1480
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 256.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss",
+					"settings":
+					{
+						"buffer_size": 4854,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2971,
+								2971
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1870.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/Users/brad/Sites/pn-foundation/practiceupdate/news-item.html",
+					"settings":
+					{
+						"buffer_size": 13779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3523,
+								3523
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 852.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"settings":
+					{
+						"buffer_size": 1219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								706,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<!-- http://support.addthis.com/customer/portal/ar",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		}
@@ -1259,6 +1558,30 @@
 		"selected_items":
 		[
 			[
+				"news",
+				"news-item.html"
+			],
+			[
+				"theme",
+				"assets/sass/_theme.scss"
+			],
+			[
+				"story",
+				"story-of-the-week.html"
+			],
+			[
+				"exper",
+				"assets/sass/_experimental-a.scss"
+			],
+			[
+				"overr",
+				"assets/sass/_foundation-overrides.scss"
+			],
+			[
+				"foundat",
+				"assets/sass/_foundation-overrides.scss"
+			],
+			[
 				"upd",
 				"update.html"
 			],
@@ -1279,16 +1602,8 @@
 				"update.html"
 			],
 			[
-				"exper",
-				"assets/sass/_experimental-b.scss"
-			],
-			[
 				"expe",
 				"assets/sass/_experimental-b.scss"
-			],
-			[
-				"theme",
-				"assets/sass/_theme.scss"
 			],
 			[
 				"modul",
@@ -1383,10 +1698,6 @@
 				"assets/sass/_ad.scss"
 			],
 			[
-				"overr",
-				"assets/sass/_foundation-overrides.scss"
-			],
-			[
 				"experimen",
 				"assets/sass/_experimental-a.scss"
 			],
@@ -1440,10 +1751,6 @@
 			],
 			[
 				"foundati",
-				"assets/sass/_foundation-overrides.scss"
-			],
-			[
-				"foundat",
 				"assets/sass/_foundation-overrides.scss"
 			],
 			[
@@ -1501,10 +1808,6 @@
 			[
 				"settin",
 				"assets/sass/_settings.scss"
-			],
-			[
-				"story",
-				"story-of-the-week.html"
 			],
 			[
 				"uro",
