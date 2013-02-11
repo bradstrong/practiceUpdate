@@ -149,7 +149,11 @@ var _hs = {
 <p>Copyright &copy; 2012 International Medical News Group</p>
 </footer>
 </div><!--/.item-container-->
-				<div class="recommended">
+				<div id="aux" class="recommended">
+				<div id="video-prompt-ad" class="ad">
+					<img data-src="holder.js/300x250/text:MOA Video image">
+					<a class="button" data-reveal-id="modal-video-ad" style="display:block;">Click to play video</a>
+				</div><!--/#video-prompt-ad-->	
 				<div class="recent">
 				</div><!--/.recent-->
 				<div class="ad">
@@ -199,10 +203,12 @@ var _hs = {
 	<script src="assets/js/foundation/app.js"></script>
 	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
 
+	
 	<script src="assets/js/mustache.js"></script>
 
-	<!-- Mustache - homepage feed template -->
-	<script>
+	<!-- Placeholder - for replacing placeholder images -->
+	<script src="assets/js/holder.js"></script>
+
 	<!-- Mustache - homepage feed template -->
 	$.getJSON('content/json/feed.json', function(data) {
 		$.get('assets/mustache/feed-item.mustache', function(template) {
@@ -250,6 +256,32 @@ var _hs = {
 		});
 	});	
 	</script>
+
+	<!-- Page Modal -->
+	<div id="modal-video-ad" class="reveal-modal">
+<div class="modal-header">
+<h3>
+    Histology Matters: Personalized Therapy for Patients with NSCLC
+</h3>
+<p class="cme-description">An interactive CME activity provided by the Johns Hopkins University School of Medicine</p>
+  </div><!--/.modal-header-->
+  <div class="modal-body">
+<div class="flex-video">
+  <!-- <iframe width="420" height="315" src="http://www.youtube.com/embed/9otNWTHOJi8" frameborder="0" allowfullscreen></iframe> -->
+  <iframe width="560" height="315" src="http://www.youtube.com/embed/b6Tmu7LLKEs" frameborder="0" allowfullscreen></iframe>
+</div>
+  </div><!--/.modal-body-->
+  <div class="modal-footer">
+
+    <p>FASLODEX is contraindicated in patients with known hypersensitivity to the drug or to any of its components. Hypersensitivity reactions, including urticaria and angiodema have been reported in associations with FASLODEX. See full Important Safety Information at the conclusion of the video.</p>
+    <a target="_blank" href="http://www.jhasim1.com/index.aspx?case_id=120" class="button">start learning</a>
+    <span>*Estrogen receptor |
+    Full PI</span> 
+
+                <img data-source="holder.js/200x200/text:AZ branding image" />
+  </div><!--/.modal-footer-->
+<a class="close-reveal-modal">×</a> 
+	</div><!-- /.modal-video-ad-->
 
 </body>
 </html>

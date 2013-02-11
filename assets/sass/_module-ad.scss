@@ -51,12 +51,9 @@
 		height: 250px;
 		width: 300px;
 	}
-	#boombox1contentinner{
-		float: left;
-	}
 }
 #boombox1content{}
-#boombox1contentinner{ max-width: 300px; margin: 0 auto; max-height: 250px; }
+#boombox1contentinner{float: left; max-width: 300px; margin: 0 auto; max-height: 250px; }
 
 #boombox2{
 	object, embed{
@@ -66,11 +63,7 @@
 	}
 }
 #boombox2content{}
-#boombox2contentinner{
-	max-width: 300px;
-	margin: 0 auto;
-	max-height: 250px;
-}
+#boombox2contentinner{float: left; max-width: 300px; margin: 0 auto; max-height: 250px;}
 
 #skyscraper{
 	object, embed{
@@ -80,11 +73,7 @@
 	}
 }
 #skyscrapercontent{}
-#skyscrapercontentinner{
-	max-width: 160px;
-	margin: 0 auto;
-	max-height: 600px;
-}
+#skyscrapercontentinner{float: left;	max-width: 160px; margin: 0 auto; max-height: 600px;}
 
 // Hide leaderboard containers on mobile
 #leaderboardouter, #leaderboard{@media only screen and (max-width: $screenSmall) {display:none;}}

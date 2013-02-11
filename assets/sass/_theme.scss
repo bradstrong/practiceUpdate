@@ -18,7 +18,7 @@ body{
 }
 
 .page-header{
-	// border-bottom:3px solid $pri-orange;
+	border-bottom:3px solid $pri-blue;
 }
 .page-content{
 	padding-top: $baseFontSize;
@@ -250,17 +250,17 @@ article.single-item{
 }
 
 .expert-letter{
-margin-top: $baseFontSize*2;
+	margin-top: $baseFontSize*2;
+	overflow: visible;
 }
 
 .expert-letter-copy{
 	background-color:lighten($ter-ltTan, 15%);
-	margin: $baseFontSize !important;
 	@include elementBoxShadow(black,0px,0px,20px);
 	@include border-radius(2px);
 	.copy-header{
 		@media screen and (min-width: 768px){
-			padding:1em .5em inherit;
+			//padding:1em .5em inherit;
 		}
 	}
 }
@@ -276,7 +276,7 @@ margin-top: $baseFontSize*2;
 	font-size: ms(1);
 	line-height:2;
 	@media screen and (min-width: 768px){
-		padding:1em 1em 2em;
+		//padding:1em 1em 2em;
 	}
 	
 }
@@ -284,7 +284,7 @@ margin-top: $baseFontSize*2;
 .illustration-container{
 	text-align: center;
 	img{
-		max-width: 100px;
+		max-width: 85px;
 		margin: auto;
 	}
 }
