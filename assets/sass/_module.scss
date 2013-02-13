@@ -30,7 +30,13 @@
 	padding-top:$baseFontSize/2;}
 .item-title-container{@include column(12);}
 .item-type{@include column(7);}
-.item-pub-date{@include column(5); text-align: right;}
+@media only screen and (max-width: $topBarBreakPoint) {
+	.item-title-container, .item-type{
+		display: block;
+		text-align: left;
+	}
+}
+.item-pub-date{@include column(5); text-align: right;} //TODO: reformat date - http://css-tricks.com/date-display-with-sprites/
 .item-container{
 	.commentary-container{@include column(12);}
 	.source-title{font-size:ms(0);}

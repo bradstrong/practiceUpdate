@@ -1,5 +1,6 @@
 // Module Top Bar
 .top-bar {
+  background-color:transparent;
   /* Setting up the sliding area */
 	section{
 		@include column(9);
@@ -26,7 +27,16 @@ ul{@extend .right;}
     }
   }
 }
-#main-nav li:hover {filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#{$topnav-lt}', endColorstr='#{$topnav-dk}');}
+
+.page-header{background-color:transparent;}
+.page-header.fixed{
+  background-color:transparent;
+  @include elementBoxShadow;
+  .top-bar{
+      @include noise($bodyBackground, 0.02);
+  }
+}
+
 @media only screen and (max-width: $topBarBreakPoint) {
 .top-bar{
   background:transparent;
@@ -50,7 +60,7 @@ ul{@extend .right;}
   .off-canvas-control{
     position: absolute;
     top: 10px;
-    left: 5px;
+    left: 15px;
     z-index:10;
     #sidebarButton{
       color:$pri-orange;
