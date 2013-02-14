@@ -1491,7 +1491,7 @@ form.custom .custom.disabled {
   background-color: #b3a89b;
 }
 /* line 31, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-.button.radius, .flag-container .button.flag, .flag-container .flag.form-submit, .flag-container .flag.form-cancel, .flag-container .flag.load-more-button, .button.query-no-results, .query-no-results.form-submit, .query-no-results.form-cancel, .query-no-results.load-more-button, .radius.form-submit, .radius.form-cancel, .radius.load-more-button {
+.button.radius, .button.query-no-results, .query-no-results.form-submit, .query-no-results.form-cancel, .query-no-results.load-more-button, .radius.form-submit, .radius.form-cancel, .radius.load-more-button {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -1949,7 +1949,7 @@ ul.button-group li:first-child {
   margin-left: 0;
 }
 /* line 154, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-ul.button-group.radius li .button, .flag-container ul.button-group.flag li .button, ul.button-group.query-no-results li .button, ul.button-group.radius li .form-submit, .flag-container ul.button-group.flag li .form-submit, ul.button-group.query-no-results li .form-submit, ul.button-group.radius li .form-cancel, .flag-container ul.button-group.flag li .form-cancel, ul.button-group.query-no-results li .form-cancel, ul.button-group.radius li .load-more-button, .flag-container ul.button-group.flag li .load-more-button, ul.button-group.query-no-results li .load-more-button, ul.button-group.radius li .button.radius, .flag-container ul.button-group.flag li .button.radius, ul.button-group.query-no-results li .button.radius, ul.button-group.radius li .flag-container .button.flag, .flag-container ul.button-group.radius li .button.flag, .flag-container ul.button-group.flag li .button.flag, ul.button-group.query-no-results li .flag-container .button.flag, .flag-container ul.button-group.query-no-results li .button.flag, ul.button-group.radius li .flag-container .flag.form-submit, .flag-container ul.button-group.radius li .flag.form-submit, .flag-container ul.button-group.flag li .flag.form-submit, ul.button-group.query-no-results li .flag-container .flag.form-submit, .flag-container ul.button-group.query-no-results li .flag.form-submit, ul.button-group.radius li .flag-container .flag.form-cancel, .flag-container ul.button-group.radius li .flag.form-cancel, .flag-container ul.button-group.flag li .flag.form-cancel, ul.button-group.query-no-results li .flag-container .flag.form-cancel, .flag-container ul.button-group.query-no-results li .flag.form-cancel, ul.button-group.radius li .flag-container .flag.load-more-button, .flag-container ul.button-group.radius li .flag.load-more-button, .flag-container ul.button-group.flag li .flag.load-more-button, ul.button-group.query-no-results li .flag-container .flag.load-more-button, .flag-container ul.button-group.query-no-results li .flag.load-more-button, ul.button-group.radius li .button.query-no-results, .flag-container ul.button-group.flag li .button.query-no-results, ul.button-group.query-no-results li .button.query-no-results, ul.button-group.radius li .query-no-results.form-submit, .flag-container ul.button-group.flag li .query-no-results.form-submit, ul.button-group.query-no-results li .query-no-results.form-submit, ul.button-group.radius li .query-no-results.form-cancel, .flag-container ul.button-group.flag li .query-no-results.form-cancel, ul.button-group.query-no-results li .query-no-results.form-cancel, ul.button-group.radius li .query-no-results.load-more-button, .flag-container ul.button-group.flag li .query-no-results.load-more-button, ul.button-group.query-no-results li .query-no-results.load-more-button, ul.button-group.radius li .radius.form-submit, .flag-container ul.button-group.flag li .radius.form-submit, ul.button-group.query-no-results li .radius.form-submit, ul.button-group.radius li .radius.form-cancel, .flag-container ul.button-group.flag li .radius.form-cancel, ul.button-group.query-no-results li .radius.form-cancel, ul.button-group.radius li .radius.load-more-button, .flag-container ul.button-group.flag li .radius.load-more-button, ul.button-group.query-no-results li .radius.load-more-button, ul.button-group.radius li .button-rounded, .flag-container ul.button-group.flag li .button-rounded, ul.button-group.query-no-results li .button-rounded {
+ul.button-group.radius li .button, ul.button-group.query-no-results li .button, ul.button-group.radius li .form-submit, ul.button-group.query-no-results li .form-submit, ul.button-group.radius li .form-cancel, ul.button-group.query-no-results li .form-cancel, ul.button-group.radius li .load-more-button, ul.button-group.query-no-results li .load-more-button, ul.button-group.radius li .button.radius, ul.button-group.query-no-results li .button.radius, ul.button-group.radius li .button.query-no-results, ul.button-group.query-no-results li .button.query-no-results, ul.button-group.radius li .query-no-results.form-submit, ul.button-group.query-no-results li .query-no-results.form-submit, ul.button-group.radius li .query-no-results.form-cancel, ul.button-group.query-no-results li .query-no-results.form-cancel, ul.button-group.radius li .query-no-results.load-more-button, ul.button-group.query-no-results li .query-no-results.load-more-button, ul.button-group.radius li .radius.form-submit, ul.button-group.query-no-results li .radius.form-submit, ul.button-group.radius li .radius.form-cancel, ul.button-group.query-no-results li .radius.form-cancel, ul.button-group.radius li .radius.load-more-button, ul.button-group.query-no-results li .radius.load-more-button, ul.button-group.radius li .button-rounded, ul.button-group.query-no-results li .button-rounded {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -1957,7 +1957,7 @@ ul.button-group.radius li .button, .flag-container ul.button-group.flag li .butt
   border-radius: 0px;
 }
 /* line 156, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-ul.button-group.radius li:first-child .button, .flag-container ul.button-group.flag li:first-child .button, ul.button-group.query-no-results li:first-child .button, ul.button-group.radius li:first-child .form-submit, .flag-container ul.button-group.flag li:first-child .form-submit, ul.button-group.query-no-results li:first-child .form-submit, ul.button-group.radius li:first-child .form-cancel, .flag-container ul.button-group.flag li:first-child .form-cancel, ul.button-group.query-no-results li:first-child .form-cancel, ul.button-group.radius li:first-child .load-more-button, .flag-container ul.button-group.flag li:first-child .load-more-button, ul.button-group.query-no-results li:first-child .load-more-button, ul.button-group.radius li:first-child .button.radius, .flag-container ul.button-group.flag li:first-child .button.radius, ul.button-group.query-no-results li:first-child .button.radius, ul.button-group.radius li:first-child .flag-container .button.flag, .flag-container ul.button-group.radius li:first-child .button.flag, .flag-container ul.button-group.flag li:first-child .button.flag, ul.button-group.query-no-results li:first-child .flag-container .button.flag, .flag-container ul.button-group.query-no-results li:first-child .button.flag, ul.button-group.radius li:first-child .flag-container .flag.form-submit, .flag-container ul.button-group.radius li:first-child .flag.form-submit, .flag-container ul.button-group.flag li:first-child .flag.form-submit, ul.button-group.query-no-results li:first-child .flag-container .flag.form-submit, .flag-container ul.button-group.query-no-results li:first-child .flag.form-submit, ul.button-group.radius li:first-child .flag-container .flag.form-cancel, .flag-container ul.button-group.radius li:first-child .flag.form-cancel, .flag-container ul.button-group.flag li:first-child .flag.form-cancel, ul.button-group.query-no-results li:first-child .flag-container .flag.form-cancel, .flag-container ul.button-group.query-no-results li:first-child .flag.form-cancel, ul.button-group.radius li:first-child .flag-container .flag.load-more-button, .flag-container ul.button-group.radius li:first-child .flag.load-more-button, .flag-container ul.button-group.flag li:first-child .flag.load-more-button, ul.button-group.query-no-results li:first-child .flag-container .flag.load-more-button, .flag-container ul.button-group.query-no-results li:first-child .flag.load-more-button, ul.button-group.radius li:first-child .button.query-no-results, .flag-container ul.button-group.flag li:first-child .button.query-no-results, ul.button-group.query-no-results li:first-child .button.query-no-results, ul.button-group.radius li:first-child .query-no-results.form-submit, .flag-container ul.button-group.flag li:first-child .query-no-results.form-submit, ul.button-group.query-no-results li:first-child .query-no-results.form-submit, ul.button-group.radius li:first-child .query-no-results.form-cancel, .flag-container ul.button-group.flag li:first-child .query-no-results.form-cancel, ul.button-group.query-no-results li:first-child .query-no-results.form-cancel, ul.button-group.radius li:first-child .query-no-results.load-more-button, .flag-container ul.button-group.flag li:first-child .query-no-results.load-more-button, ul.button-group.query-no-results li:first-child .query-no-results.load-more-button, ul.button-group.radius li:first-child .radius.form-submit, .flag-container ul.button-group.flag li:first-child .radius.form-submit, ul.button-group.query-no-results li:first-child .radius.form-submit, ul.button-group.radius li:first-child .radius.form-cancel, .flag-container ul.button-group.flag li:first-child .radius.form-cancel, ul.button-group.query-no-results li:first-child .radius.form-cancel, ul.button-group.radius li:first-child .radius.load-more-button, .flag-container ul.button-group.flag li:first-child .radius.load-more-button, ul.button-group.query-no-results li:first-child .radius.load-more-button {
+ul.button-group.radius li:first-child .button, ul.button-group.query-no-results li:first-child .button, ul.button-group.radius li:first-child .form-submit, ul.button-group.query-no-results li:first-child .form-submit, ul.button-group.radius li:first-child .form-cancel, ul.button-group.query-no-results li:first-child .form-cancel, ul.button-group.radius li:first-child .load-more-button, ul.button-group.query-no-results li:first-child .load-more-button, ul.button-group.radius li:first-child .button.radius, ul.button-group.query-no-results li:first-child .button.radius, ul.button-group.radius li:first-child .button.query-no-results, ul.button-group.query-no-results li:first-child .button.query-no-results, ul.button-group.radius li:first-child .query-no-results.form-submit, ul.button-group.query-no-results li:first-child .query-no-results.form-submit, ul.button-group.radius li:first-child .query-no-results.form-cancel, ul.button-group.query-no-results li:first-child .query-no-results.form-cancel, ul.button-group.radius li:first-child .query-no-results.load-more-button, ul.button-group.query-no-results li:first-child .query-no-results.load-more-button, ul.button-group.radius li:first-child .radius.form-submit, ul.button-group.query-no-results li:first-child .radius.form-submit, ul.button-group.radius li:first-child .radius.form-cancel, ul.button-group.query-no-results li:first-child .radius.form-cancel, ul.button-group.radius li:first-child .radius.load-more-button, ul.button-group.query-no-results li:first-child .radius.load-more-button {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
   border-top-left-radius: 3px;
@@ -1966,7 +1966,7 @@ ul.button-group.radius li:first-child .button, .flag-container ul.button-group.f
   border-bottom-left-radius: 3px;
 }
 /* line 157, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-ul.button-group.radius li:first-child .button.rounded, .flag-container ul.button-group.flag li:first-child .button.rounded, ul.button-group.query-no-results li:first-child .button.rounded, ul.button-group.radius li:first-child .rounded.form-submit, .flag-container ul.button-group.flag li:first-child .rounded.form-submit, ul.button-group.query-no-results li:first-child .rounded.form-submit, ul.button-group.radius li:first-child .rounded.form-cancel, .flag-container ul.button-group.flag li:first-child .rounded.form-cancel, ul.button-group.query-no-results li:first-child .rounded.form-cancel, ul.button-group.radius li:first-child .rounded.load-more-button, .flag-container ul.button-group.flag li:first-child .rounded.load-more-button, ul.button-group.query-no-results li:first-child .rounded.load-more-button {
+ul.button-group.radius li:first-child .button.rounded, ul.button-group.query-no-results li:first-child .button.rounded, ul.button-group.radius li:first-child .rounded.form-submit, ul.button-group.query-no-results li:first-child .rounded.form-submit, ul.button-group.radius li:first-child .rounded.form-cancel, ul.button-group.query-no-results li:first-child .rounded.form-cancel, ul.button-group.radius li:first-child .rounded.load-more-button, ul.button-group.query-no-results li:first-child .rounded.load-more-button {
   -moz-border-radius-topleft: 1000px;
   -webkit-border-top-left-radius: 1000px;
   border-top-left-radius: 1000px;
@@ -1975,7 +1975,7 @@ ul.button-group.radius li:first-child .button.rounded, .flag-container ul.button
   border-bottom-left-radius: 1000px;
 }
 /* line 160, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-ul.button-group.radius li:last-child .button, .flag-container ul.button-group.flag li:last-child .button, ul.button-group.query-no-results li:last-child .button, ul.button-group.radius li:last-child .form-submit, .flag-container ul.button-group.flag li:last-child .form-submit, ul.button-group.query-no-results li:last-child .form-submit, ul.button-group.radius li:last-child .form-cancel, .flag-container ul.button-group.flag li:last-child .form-cancel, ul.button-group.query-no-results li:last-child .form-cancel, ul.button-group.radius li:last-child .load-more-button, .flag-container ul.button-group.flag li:last-child .load-more-button, ul.button-group.query-no-results li:last-child .load-more-button, ul.button-group.radius li:last-child .button.radius, .flag-container ul.button-group.flag li:last-child .button.radius, ul.button-group.query-no-results li:last-child .button.radius, ul.button-group.radius li:last-child .flag-container .button.flag, .flag-container ul.button-group.radius li:last-child .button.flag, .flag-container ul.button-group.flag li:last-child .button.flag, ul.button-group.query-no-results li:last-child .flag-container .button.flag, .flag-container ul.button-group.query-no-results li:last-child .button.flag, ul.button-group.radius li:last-child .flag-container .flag.form-submit, .flag-container ul.button-group.radius li:last-child .flag.form-submit, .flag-container ul.button-group.flag li:last-child .flag.form-submit, ul.button-group.query-no-results li:last-child .flag-container .flag.form-submit, .flag-container ul.button-group.query-no-results li:last-child .flag.form-submit, ul.button-group.radius li:last-child .flag-container .flag.form-cancel, .flag-container ul.button-group.radius li:last-child .flag.form-cancel, .flag-container ul.button-group.flag li:last-child .flag.form-cancel, ul.button-group.query-no-results li:last-child .flag-container .flag.form-cancel, .flag-container ul.button-group.query-no-results li:last-child .flag.form-cancel, ul.button-group.radius li:last-child .flag-container .flag.load-more-button, .flag-container ul.button-group.radius li:last-child .flag.load-more-button, .flag-container ul.button-group.flag li:last-child .flag.load-more-button, ul.button-group.query-no-results li:last-child .flag-container .flag.load-more-button, .flag-container ul.button-group.query-no-results li:last-child .flag.load-more-button, ul.button-group.radius li:last-child .button.query-no-results, .flag-container ul.button-group.flag li:last-child .button.query-no-results, ul.button-group.query-no-results li:last-child .button.query-no-results, ul.button-group.radius li:last-child .query-no-results.form-submit, .flag-container ul.button-group.flag li:last-child .query-no-results.form-submit, ul.button-group.query-no-results li:last-child .query-no-results.form-submit, ul.button-group.radius li:last-child .query-no-results.form-cancel, .flag-container ul.button-group.flag li:last-child .query-no-results.form-cancel, ul.button-group.query-no-results li:last-child .query-no-results.form-cancel, ul.button-group.radius li:last-child .query-no-results.load-more-button, .flag-container ul.button-group.flag li:last-child .query-no-results.load-more-button, ul.button-group.query-no-results li:last-child .query-no-results.load-more-button, ul.button-group.radius li:last-child .radius.form-submit, .flag-container ul.button-group.flag li:last-child .radius.form-submit, ul.button-group.query-no-results li:last-child .radius.form-submit, ul.button-group.radius li:last-child .radius.form-cancel, .flag-container ul.button-group.flag li:last-child .radius.form-cancel, ul.button-group.query-no-results li:last-child .radius.form-cancel, ul.button-group.radius li:last-child .radius.load-more-button, .flag-container ul.button-group.flag li:last-child .radius.load-more-button, ul.button-group.query-no-results li:last-child .radius.load-more-button {
+ul.button-group.radius li:last-child .button, ul.button-group.query-no-results li:last-child .button, ul.button-group.radius li:last-child .form-submit, ul.button-group.query-no-results li:last-child .form-submit, ul.button-group.radius li:last-child .form-cancel, ul.button-group.query-no-results li:last-child .form-cancel, ul.button-group.radius li:last-child .load-more-button, ul.button-group.query-no-results li:last-child .load-more-button, ul.button-group.radius li:last-child .button.radius, ul.button-group.query-no-results li:last-child .button.radius, ul.button-group.radius li:last-child .button.query-no-results, ul.button-group.query-no-results li:last-child .button.query-no-results, ul.button-group.radius li:last-child .query-no-results.form-submit, ul.button-group.query-no-results li:last-child .query-no-results.form-submit, ul.button-group.radius li:last-child .query-no-results.form-cancel, ul.button-group.query-no-results li:last-child .query-no-results.form-cancel, ul.button-group.radius li:last-child .query-no-results.load-more-button, ul.button-group.query-no-results li:last-child .query-no-results.load-more-button, ul.button-group.radius li:last-child .radius.form-submit, ul.button-group.query-no-results li:last-child .radius.form-submit, ul.button-group.radius li:last-child .radius.form-cancel, ul.button-group.query-no-results li:last-child .radius.form-cancel, ul.button-group.radius li:last-child .radius.load-more-button, ul.button-group.query-no-results li:last-child .radius.load-more-button {
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
@@ -1984,7 +1984,7 @@ ul.button-group.radius li:last-child .button, .flag-container ul.button-group.fl
   border-bottom-right-radius: 3px;
 }
 /* line 161, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-ul.button-group.radius li:last-child .button.rounded, .flag-container ul.button-group.flag li:last-child .button.rounded, ul.button-group.query-no-results li:last-child .button.rounded, ul.button-group.radius li:last-child .rounded.form-submit, .flag-container ul.button-group.flag li:last-child .rounded.form-submit, ul.button-group.query-no-results li:last-child .rounded.form-submit, ul.button-group.radius li:last-child .rounded.form-cancel, .flag-container ul.button-group.flag li:last-child .rounded.form-cancel, ul.button-group.query-no-results li:last-child .rounded.form-cancel, ul.button-group.radius li:last-child .rounded.load-more-button, .flag-container ul.button-group.flag li:last-child .rounded.load-more-button, ul.button-group.query-no-results li:last-child .rounded.load-more-button {
+ul.button-group.radius li:last-child .button.rounded, ul.button-group.query-no-results li:last-child .button.rounded, ul.button-group.radius li:last-child .rounded.form-submit, ul.button-group.query-no-results li:last-child .rounded.form-submit, ul.button-group.radius li:last-child .rounded.form-cancel, ul.button-group.query-no-results li:last-child .rounded.form-cancel, ul.button-group.radius li:last-child .rounded.load-more-button, ul.button-group.query-no-results li:last-child .rounded.load-more-button {
   -moz-border-radius-topright: 1000px;
   -webkit-border-top-right-radius: 1000px;
   border-top-right-radius: 1000px;
@@ -2338,7 +2338,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 
 /* Labels ---------------------- */
 /* line 41, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-.label, .flag-container .flag {
+.label, .badge, .flag {
   padding: 1px 4px 2px;
   font-size: 12px;
   font-weight: bold;
@@ -2353,7 +2353,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   background: #d86654;
 }
 /* line 43, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-.label.radius, .flag-container .flag, .label.query-no-results, .flag-container .query-no-results.flag {
+.label.radius, .label.query-no-results, .query-no-results.badge, .query-no-results.flag, .radius.badge, .radius.flag {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -2361,7 +2361,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   border-radius: 3px;
 }
 /* line 44, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-.label.round, .flag-container .round.flag {
+.label.round, .round.badge, .round.flag {
   padding: 1px 7px 2px;
   -webkit-border-radius: 1000px;
   -moz-border-radius: 1000px;
@@ -2370,15 +2370,15 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   border-radius: 1000px;
 }
 /* line 46, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-.label.alert, .flag-container .alert.flag {
+.label.alert, .alert.badge, .alert.flag {
   background-color: #f34727;
 }
 /* line 47, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-.label.success, .flag-container .success.flag, .flag-container .flag.load-more-button, .flag-container .flag.view-more-button, .flag-container .flag.view-more, .label.load-more-button, .label.view-more-button, .label.view-more {
+.label.success, .label.load-more-button, .load-more-button.badge, .load-more-button.flag, .label.view-more-button, .view-more-button.badge, .view-more-button.flag, .label.view-more, .view-more.badge, .view-more.flag, .success.badge, .success.flag {
   background-color: #70cf8d;
 }
 /* line 48, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-.label.secondary, .flag-container .secondary.flag, .flag-container .flag.form-cancel, .label.form-cancel {
+.label.secondary, .label.form-cancel, .form-cancel.badge, .form-cancel.flag, .secondary.badge, .secondary.flag {
   background-color: #c9c1b8;
   color: #2d2822;
 }
@@ -2526,7 +2526,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   background: rgba(255, 255, 255, 0.8);
 }
 /* line 94, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-.panel.radius, .flag-container .panel.flag, .flag-container .flag.query-no-results, .flag-container .flag.cta, .query-no-results, .radius.cta, .cta.query-no-results {
+.panel.radius, .query-no-results, .radius.cta, .cta.query-no-results {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -3028,7 +3028,7 @@ div.progress.alert .meter {
   background: #f34727;
 }
 /* line 275, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-div.progress.radius, .flag-container div.progress.flag, div.progress.query-no-results {
+div.progress.radius, div.progress.query-no-results {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -3036,7 +3036,7 @@ div.progress.radius, .flag-container div.progress.flag, div.progress.query-no-re
   border-radius: 3px;
 }
 /* line 276, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-div.progress.radius .meter, .flag-container div.progress.flag .meter, div.progress.query-no-results .meter {
+div.progress.radius .meter, div.progress.query-no-results .meter {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -7641,32 +7641,27 @@ small {
     width: auto;
   }
 }
-/* line 45, ../sass/_layout.scss */
-.flag-container .flag {
-  font-size: 14px;
-  text-transform: uppercase;
-}
 
 /* Page Layouts */
 /* !Base Layout */
-/* line 58, ../sass/_layout.scss */
+/* line 52, ../sass/_layout.scss */
 #sidebar {
   padding-right: 0;
 }
 
-/* line 59, ../sass/_layout.scss */
+/* line 53, ../sass/_layout.scss */
 #aux, .aux, .recommended {
   width: 41.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 59, ../sass/_layout.scss */
+  /* line 53, ../sass/_layout.scss */
   #aux, .aux, .recommended {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 59, ../sass/_layout.scss */
+  /* line 53, ../sass/_layout.scss */
   #aux, .aux, .recommended {
     float: left;
     width: 100%;
@@ -7674,27 +7669,27 @@ small {
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 59, ../sass/_layout.scss */
+  /* line 53, ../sass/_layout.scss */
   #aux, .aux, .recommended {
     padding-top: 56px;
   }
 }
 
 /* !Update Layout */
-/* line 67, ../sass/_layout.scss */
+/* line 61, ../sass/_layout.scss */
 .stream-container {
   padding: 0;
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 67, ../sass/_layout.scss */
+  /* line 61, ../sass/_layout.scss */
   .stream-container {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 67, ../sass/_layout.scss */
+  /* line 61, ../sass/_layout.scss */
   .stream-container {
     width: auto;
     min-width: 0;
@@ -7714,20 +7709,20 @@ small {
 }
 
 /* !Explore Layout */
-/* line 70, ../sass/_layout.scss */
+/* line 64, ../sass/_layout.scss */
 .explore-container {
   padding: 0;
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 70, ../sass/_layout.scss */
+  /* line 64, ../sass/_layout.scss */
   .explore-container {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 70, ../sass/_layout.scss */
+  /* line 64, ../sass/_layout.scss */
   .explore-container {
     width: auto;
     min-width: 0;
@@ -7747,19 +7742,19 @@ small {
 }
 
 /* !Learn Layout */
-/* line 73, ../sass/_layout.scss */
+/* line 67, ../sass/_layout.scss */
 .cme-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 73, ../sass/_layout.scss */
+  /* line 67, ../sass/_layout.scss */
   .cme-container {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 73, ../sass/_layout.scss */
+  /* line 67, ../sass/_layout.scss */
   .cme-container {
     width: auto;
     min-width: 0;
@@ -7779,19 +7774,19 @@ small {
 }
 
 /* !Single Item */
-/* line 76, ../sass/_layout.scss */
+/* line 70, ../sass/_layout.scss */
 .single-item-container {
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 76, ../sass/_layout.scss */
+  /* line 70, ../sass/_layout.scss */
   .single-item-container {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 76, ../sass/_layout.scss */
+  /* line 70, ../sass/_layout.scss */
   .single-item-container {
     width: auto;
     min-width: 0;
@@ -7811,20 +7806,20 @@ small {
 }
 
 /* !Explore Layout */
-/* line 79, ../sass/_layout.scss */
+/* line 73, ../sass/_layout.scss */
 .register-container {
   padding: 0;
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 79, ../sass/_layout.scss */
+  /* line 73, ../sass/_layout.scss */
   .register-container {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 79, ../sass/_layout.scss */
+  /* line 73, ../sass/_layout.scss */
   .register-container {
     width: auto;
     min-width: 0;
@@ -7844,20 +7839,20 @@ small {
 }
 
 /* !User Directory */
-/* line 82, ../sass/_layout.scss */
+/* line 76, ../sass/_layout.scss */
 .user-directory-container {
   padding: 0;
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 82, ../sass/_layout.scss */
+  /* line 76, ../sass/_layout.scss */
   .user-directory-container {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 82, ../sass/_layout.scss */
+  /* line 76, ../sass/_layout.scss */
   .user-directory-container {
     width: auto;
     min-width: 0;
@@ -7876,20 +7871,20 @@ small {
   }
 }
 
-/* line 83, ../sass/_layout.scss */
+/* line 77, ../sass/_layout.scss */
 .user-profile-container {
   padding: 0;
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 83, ../sass/_layout.scss */
+  /* line 77, ../sass/_layout.scss */
   .user-profile-container {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 83, ../sass/_layout.scss */
+  /* line 77, ../sass/_layout.scss */
   .user-profile-container {
     width: auto;
     min-width: 0;
@@ -7908,20 +7903,20 @@ small {
   }
 }
 
-/* line 84, ../sass/_layout.scss */
+/* line 78, ../sass/_layout.scss */
 .channel-list-container {
   padding: 0;
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 84, ../sass/_layout.scss */
+  /* line 78, ../sass/_layout.scss */
   .channel-list-container {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 84, ../sass/_layout.scss */
+  /* line 78, ../sass/_layout.scss */
   .channel-list-container {
     width: auto;
     min-width: 0;
@@ -7941,20 +7936,20 @@ small {
 }
 
 /* !Static pages */
-/* line 87, ../sass/_layout.scss */
+/* line 81, ../sass/_layout.scss */
 .static-container {
   padding: 0;
   width: 58.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 87, ../sass/_layout.scss */
+  /* line 81, ../sass/_layout.scss */
   .static-container {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 87, ../sass/_layout.scss */
+  /* line 81, ../sass/_layout.scss */
   .static-container {
     width: auto;
     min-width: 0;
@@ -7976,18 +7971,18 @@ small {
 /* Page Specific Styles */
 /* Update Page */
 /* Channel Listing Page */
-/* line 99, ../sass/_layout.scss */
+/* line 93, ../sass/_layout.scss */
 .channel-list {
   margin: 0 -15px;
 }
 
-/* line 102, ../sass/_layout.scss */
+/* line 96, ../sass/_layout.scss */
 .single-channel {
   padding: 0;
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 102, ../sass/_layout.scss */
+  /* line 96, ../sass/_layout.scss */
   .single-channel {
     float: none;
     width: auto;
@@ -7995,19 +7990,19 @@ small {
 }
 
 /* Preferences*/
-/* line 106, ../sass/_layout.scss */
+/* line 100, ../sass/_layout.scss */
 .pref-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 106, ../sass/_layout.scss */
+  /* line 100, ../sass/_layout.scss */
   .pref-container {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 106, ../sass/_layout.scss */
+  /* line 100, ../sass/_layout.scss */
   .pref-container {
     width: auto;
     min-width: 0;
@@ -8026,31 +8021,31 @@ small {
   }
 }
 
-/* line 107, ../sass/_layout.scss */
+/* line 101, ../sass/_layout.scss */
 .pref-content {
   margin: 0 -15px;
   padding-top: 14px;
   padding-bottom: 14px;
 }
 
-/* line 108, ../sass/_layout.scss */
+/* line 102, ../sass/_layout.scss */
 #pref-tabs {
   width: 25%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 108, ../sass/_layout.scss */
+  /* line 102, ../sass/_layout.scss */
   #pref-tabs {
     float: none;
     width: auto;
   }
 }
 
-/* line 109, ../sass/_layout.scss */
+/* line 103, ../sass/_layout.scss */
 #pref-tabs-content {
   width: 66.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 109, ../sass/_layout.scss */
+  /* line 103, ../sass/_layout.scss */
   #pref-tabs-content {
     float: none;
     width: auto;
@@ -8059,27 +8054,27 @@ small {
 
 /* Static Pages (footer utility links) */
 /*Start: static-container*/
-/* line 114, ../sass/_layout.scss */
+/* line 108, ../sass/_layout.scss */
 .static-container ul, .static-container ol {
   padding: 0 0 0 30px;
 }
-/* line 118, ../sass/_layout.scss */
+/* line 112, ../sass/_layout.scss */
 .static-container li {
   margin: 10px 0 0;
 }
-/* line 121, ../sass/_layout.scss */
+/* line 115, ../sass/_layout.scss */
 .static-container span {
   font-size: 14px;
   float: left;
   clear: both;
   width: 100%;
 }
-/* line 127, ../sass/_layout.scss */
+/* line 121, ../sass/_layout.scss */
 .static-container p.phone {
   font-size: 14px;
   line-height: 22px;
 }
-/* line 131, ../sass/_layout.scss */
+/* line 125, ../sass/_layout.scss */
 .static-container p {
   font-family: inherit;
   font-size: 14px;
@@ -8087,7 +8082,7 @@ small {
   line-height: 24px;
   margin-bottom: 26px;
 }
-/* line 138, ../sass/_layout.scss */
+/* line 132, ../sass/_layout.scss */
 .static-container span.bolder {
   font-size: 14px;
   float: none;
@@ -8095,28 +8090,28 @@ small {
   font-weight: bold;
   width: auto;
 }
-/* line 145, ../sass/_layout.scss */
+/* line 139, ../sass/_layout.scss */
 .static-container h2 {
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0 0 15px;
 }
-/* line 151, ../sass/_layout.scss */
+/* line 145, ../sass/_layout.scss */
 .static-container h3 {
   font-size: 18px;
   font-weight: normal;
   margin: 0 0 6px;
 }
-/* line 157, ../sass/_layout.scss */
+/* line 151, ../sass/_layout.scss */
 .static-container h4, .static-container .channel-title {
   font-size: 16px;
 }
-/* line 160, ../sass/_layout.scss */
+/* line 154, ../sass/_layout.scss */
 .static-container p.phone-contact {
   margin: -30px 0 26px;
 }
-/* line 163, ../sass/_layout.scss */
+/* line 157, ../sass/_layout.scss */
 .static-container .links {
   margin: 0 20px 20px 0;
 }
@@ -8442,7 +8437,7 @@ ul.side-nav li a:hover {
   background: rgba(255, 255, 255, 0.8);
 }
 /* line 22, ../sass/_module.scss */
-.panel.radius, .flag-container .panel.flag, .flag-container .flag.query-no-results, .flag-container .flag.cta, .query-no-results, .radius.cta, .cta.query-no-results {
+.panel.radius, .query-no-results, .radius.cta, .cta.query-no-results {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -8579,7 +8574,7 @@ ul.side-nav li a:hover {
 }
 
 /* line 103, ../sass/_module.scss */
-.expert-photo .label, .expert-photo .flag-container .flag, .flag-container .expert-photo .flag {
+.expert-photo .label, .expert-photo .badge, .expert-photo .flag {
   display: none;
 }
 
@@ -8617,7 +8612,7 @@ ul.side-nav li a:hover {
   }
 }
 /* line 112, ../sass/_module.scss */
-.item-source-container .label, .item-source-container .flag-container .flag, .flag-container .item-source-container .flag {
+.item-source-container .label, .item-source-container .badge, .item-source-container .flag {
   color: #D6E03D;
   line-height: 1;
   text-transform: uppercase;
@@ -9371,22 +9366,42 @@ body {
 
 /*  !UI ELEMENTS */
 /* line 56, ../sass/_theme.scss */
-.flag {
-  border-top: 1ps solid white;
+.badge {
+  border-radius: 50%;
   color: white;
+  padding: 4.66667px;
+  background: #f3b727;
+}
+/* line 62, ../sass/_theme.scss */
+.badge.featured {
+  padding: 5.6px 7px;
+  background: #6cb0c3;
+}
+/* line 66, ../sass/_theme.scss */
+.badge.story-of-the-week {
+  padding: 5.6px 9.33333px;
+  background: #70cf8d;
+}
+
+/* line 71, ../sass/_theme.scss */
+.flag {
+  background: transparent;
+  color: #f3b727;
+  font-size: 14px;
+  text-transform: uppercase;
   font-family: "proxima-nova-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
-/* line 62, ../sass/_theme.scss */
+/* line 80, ../sass/_theme.scss */
 .flag.featured {
-  background: #70cf8d;
+  color: #6cb0c3;
 }
-/* line 65, ../sass/_theme.scss */
+/* line 83, ../sass/_theme.scss */
 .flag.story-of-the-week {
-  background: #f3b727;
+  color: #70cf8d;
 }
 
-/* line 70, ../sass/_theme.scss */
+/* line 91, ../sass/_theme.scss */
 #RegisterDiv {
   *zoom: 1;
   background-color: white;
@@ -9408,17 +9423,17 @@ body {
 /* ================================ */
 /* ================================ */
 /* typography */
-/* line 83, ../sass/_theme.scss */
+/* line 104, ../sass/_theme.scss */
 body {
   white-space-collapse: collapse;
 }
 
-/* line 89, ../sass/_theme.scss */
+/* line 110, ../sass/_theme.scss */
 h3 {
   font-family: "proxima-nova-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-/* line 92, ../sass/_theme.scss */
+/* line 113, ../sass/_theme.scss */
 .page-banner-container, .page-footer-container {
   background-color: #1d7999;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
@@ -9428,35 +9443,35 @@ h3 {
   padding-bottom: 1em;
   z-index: 10;
 }
-/* line 93, ../sass/_theme.scss */
+/* line 114, ../sass/_theme.scss */
 .page-banner-container, .page-banner-container label, .page-banner-container .form-title, .page-banner-container .cta-title, .page-footer-container, .page-footer-container label, .page-footer-container .form-title, .page-footer-container .cta-title {
   color: white;
 }
 
-/* line 107, ../sass/_theme.scss */
+/* line 128, ../sass/_theme.scss */
 .page-banner p {
   font-family: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 108, ../sass/_theme.scss */
+/* line 129, ../sass/_theme.scss */
 .page-banner .account-question {
   background: transparent;
   border: none;
 }
 
-/* line 114, ../sass/_theme.scss */
+/* line 135, ../sass/_theme.scss */
 .brand-container {
   padding-bottom: 1em;
 }
-/* line 115, ../sass/_theme.scss */
+/* line 136, ../sass/_theme.scss */
 .brand-container p {
   color: white;
 }
-/* line 116, ../sass/_theme.scss */
+/* line 137, ../sass/_theme.scss */
 .brand-container .tagline {
   font-size: 17px;
 }
 
-/* line 121, ../sass/_theme.scss */
+/* line 142, ../sass/_theme.scss */
 .brand-name {
   text-transform: lowercase;
   font-family: "museo-slab", serif;
@@ -9464,128 +9479,128 @@ h3 {
   font-size: 59px;
 }
 @media only screen and (max-width: 1279px) {
-  /* line 121, ../sass/_theme.scss */
+  /* line 142, ../sass/_theme.scss */
   .brand-name {
     font-size: 37px;
   }
 }
 
-/* line 130, ../sass/_theme.scss */
+/* line 151, ../sass/_theme.scss */
 .brand-name-practice {
   text-transform: capitalize;
 }
 
-/* line 131, ../sass/_theme.scss */
+/* line 152, ../sass/_theme.scss */
 .brand-name-update {
   text-transform: capitalize;
 }
 
-/* line 133, ../sass/_theme.scss */
+/* line 154, ../sass/_theme.scss */
 .login-register-container {
   width: 50%;
   padding-top: 7px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 133, ../sass/_theme.scss */
+  /* line 154, ../sass/_theme.scss */
   .login-register-container {
     float: none;
     width: auto;
   }
 }
 
-/* line 138, ../sass/_theme.scss */
+/* line 159, ../sass/_theme.scss */
 .login-register {
   margin: 0;
   padding-top: 7px;
 }
-/* line 141, ../sass/_theme.scss */
+/* line 162, ../sass/_theme.scss */
 .login-register .cta.account-question {
   margin-top: 7px;
   padding: 7px 0;
 }
 
-/* line 148, ../sass/_theme.scss */
+/* line 169, ../sass/_theme.scss */
 .journal .item-title, .feed .item-title {
   font-size: 14px;
   font-family: "proxima-nova";
 }
 
-/* line 153, ../sass/_theme.scss */
+/* line 174, ../sass/_theme.scss */
 .journal-title, .feed-title {
   color: #172e54;
   font-size: 17px;
 }
 
-/* line 158, ../sass/_theme.scss */
+/* line 179, ../sass/_theme.scss */
 .item-title, .item-type, .item-pub-date {
   font-family: "proxima-nova-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 162, ../sass/_theme.scss */
+/* line 183, ../sass/_theme.scss */
 .journal .item-citation, .feed .item-citation {
   font-size: 11.9px;
   color: #948b7c;
 }
 
-/* line 167, ../sass/_theme.scss */
+/* line 188, ../sass/_theme.scss */
 .recommended h5, .recommended .form-title, .recommended .cta-title {
   font-size: 17px;
   margin: 0;
   font-weight: normal;
 }
 
-/* line 173, ../sass/_theme.scss */
+/* line 194, ../sass/_theme.scss */
 .subheader, .user-title, .form-description {
   color: #887e6f;
 }
 
-/* line 176, ../sass/_theme.scss */
+/* line 197, ../sass/_theme.scss */
 article.single-item h2 {
   text-transform: uppercase;
   font-family: "proxima-nova";
   font-size: 23px;
 }
-/* line 181, ../sass/_theme.scss */
+/* line 202, ../sass/_theme.scss */
 article.single-item h3 {
   text-transform: uppercase;
   font-size: 17px;
 }
 
-/* line 187, ../sass/_theme.scss */
+/* line 208, ../sass/_theme.scss */
 #formLogin {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 187, ../sass/_theme.scss */
+  /* line 208, ../sass/_theme.scss */
   #formLogin {
     float: none;
     width: auto;
   }
 }
 
-/* line 193, ../sass/_theme.scss */
+/* line 214, ../sass/_theme.scss */
 #formRegisterPrompt {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 193, ../sass/_theme.scss */
+  /* line 214, ../sass/_theme.scss */
   #formRegisterPrompt {
     float: none;
     width: auto;
   }
 }
 
-/* line 195, ../sass/_theme.scss */
+/* line 216, ../sass/_theme.scss */
 .beta-accept, .subscribe-container {
   text-align: center;
 }
-/* line 197, ../sass/_theme.scss */
+/* line 218, ../sass/_theme.scss */
 .beta-accept input.error, .subscribe-container input.error {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* line 200, ../sass/_theme.scss */
+/* line 221, ../sass/_theme.scss */
 .beta-accept-lead, .subscribe-lead {
   color: #88cbdf;
   font-size: 17px;
@@ -9593,7 +9608,7 @@ article.single-item h3 {
   margin-bottom: 7px;
 }
 
-/* line 207, ../sass/_theme.scss */
+/* line 228, ../sass/_theme.scss */
 .beta-accept-button, .subscribe-button {
   color: #005596;
   font-weight: normal;
@@ -9609,7 +9624,7 @@ article.single-item h3 {
   box-shadow: 0 0 4px #c1cd23, 0 1px 0 white inset;
   text-transform: uppercase;
 }
-/* line 211, ../sass/_theme.scss */
+/* line 232, ../sass/_theme.scss */
 .beta-accept-button:hover, .subscribe-button:hover {
   color: #005596;
   *zoom: 1;
@@ -9623,30 +9638,30 @@ article.single-item h3 {
   background: linear-gradient(bottom, #1d1f05, #c1cd23);
 }
 
-/* line 218, ../sass/_theme.scss */
+/* line 239, ../sass/_theme.scss */
 .beta-accept-sub {
   display: none;
 }
 
-/* line 220, ../sass/_theme.scss */
+/* line 241, ../sass/_theme.scss */
 .specialty-name, .brand-name {
   color: white;
   margin-bottom: 0;
 }
 
-/* line 224, ../sass/_theme.scss */
+/* line 245, ../sass/_theme.scss */
 .specialty-name {
   font-size: 59px;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 767px) {
-  /* line 224, ../sass/_theme.scss */
+  /* line 245, ../sass/_theme.scss */
   .specialty-name {
     font-size: 44px;
   }
 }
 
-/* line 231, ../sass/_theme.scss */
+/* line 252, ../sass/_theme.scss */
 .tagline {
   color: #1d7998;
   font-family: "proxima-nova";
@@ -9654,33 +9669,33 @@ article.single-item h3 {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 236, ../sass/_theme.scss */
+  /* line 257, ../sass/_theme.scss */
   .tagline-str2 {
     display: block;
   }
 }
 
-/* line 243, ../sass/_theme.scss */
+/* line 264, ../sass/_theme.scss */
 .page-content-first {
   padding-top: 1em;
   padding-bottom: 2em;
   z-index: -5;
 }
 
-/* line 250, ../sass/_theme.scss */
+/* line 271, ../sass/_theme.scss */
 .copy-header {
   font-family: "museo-slab", serif;
   font-size: 37px;
   color: #172e54;
 }
 
-/* line 256, ../sass/_theme.scss */
+/* line 277, ../sass/_theme.scss */
 .expert-letter {
   margin-top: 28px;
   overflow: visible;
 }
 
-/* line 261, ../sass/_theme.scss */
+/* line 282, ../sass/_theme.scss */
 .expert-letter-copy {
   background-color: white;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -9691,12 +9706,12 @@ article.single-item h3 {
   border-radius: 2px;
 }
 
-/* line 271, ../sass/_theme.scss */
+/* line 292, ../sass/_theme.scss */
 .letter-illustration {
   margin-top: 21px;
 }
 @media screen and (min-width: 768px) {
-  /* line 271, ../sass/_theme.scss */
+  /* line 292, ../sass/_theme.scss */
   .letter-illustration {
     margin-top: 56px;
     margin-left: auto;
@@ -9704,38 +9719,38 @@ article.single-item h3 {
   }
 }
 
-/* line 279, ../sass/_theme.scss */
+/* line 300, ../sass/_theme.scss */
 .letter-body {
   font-size: 17px;
   line-height: 2;
 }
 
-/* line 288, ../sass/_theme.scss */
+/* line 309, ../sass/_theme.scss */
 .illustration-container {
   text-align: center;
 }
-/* line 290, ../sass/_theme.scss */
+/* line 311, ../sass/_theme.scss */
 .illustration-container img {
   max-width: 85px;
   margin: auto;
 }
 
-/* line 295, ../sass/_theme.scss */
+/* line 316, ../sass/_theme.scss */
 .page-content-second {
   margin-top: 28px;
   padding-bottom: 14px;
 }
 
-/* line 296, ../sass/_theme.scss */
+/* line 317, ../sass/_theme.scss */
 .site-benefits {
   margin-top: 28px;
 }
-/* line 298, ../sass/_theme.scss */
+/* line 319, ../sass/_theme.scss */
 .site-benefits .copy-header {
   text-align: center;
   padding-bottom: 28px;
 }
-/* line 302, ../sass/_theme.scss */
+/* line 323, ../sass/_theme.scss */
 .site-benefits h3 {
   color: #1d7998;
   font-family: "museo-slab", serif;
@@ -10349,7 +10364,7 @@ line {
   }
 
   /* line 779, ../sass/_my-custom-style.scss */
-  table .label, table .flag-container .flag, .flag-container table .flag {
+  table .label, table .badge, table .flag {
     white-space: pre-wrap;
   }
 }

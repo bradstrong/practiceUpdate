@@ -53,17 +53,38 @@ body{
 
 //Flag
 
-.flag{
-	border-top:1ps solid $white;
+.badge{
+	@extend .label;
+	border-radius:50%;
 	color: $white;
+	padding: $baseFontSize / 3;
+	background:$sec-orange;
+	&.featured{
+		padding: $baseFontSize / 2.5 $baseFontSize / 2;
+		background:$sec-ltBlue;
+	}
+	&.story-of-the-week{
+		padding: $baseFontSize / 2.5 $baseFontSize / 1.5;
+		background:$sec-green;
+	}
+}
+.flag{
+	@extend .label;
+	background: transparent;
+	color:$sec-orange;
+	font-size: ms(0);
+	text-transform:uppercase;
 	font-family:$titleFontFamily;
 	font-weight: normal;
 	//@include elementBoxShadow;
 	&.featured{
-		background:$sec-green;
+		color:$sec-ltBlue;
 	}
 	&.story-of-the-week{
-		background:$sec-orange;
+		color:$sec-green;
+	}
+	i{
+		
 	}
 }
 
@@ -151,7 +172,7 @@ padding-top: $baseFontSize/2;
 }
 
 .journal-title, .feed-title{
-	color: $sec-blue;
+	color: $sec-dkBlue;
 	font-size:ms(1);
 }
 
@@ -250,7 +271,7 @@ article.single-item{
 .copy-header{
 	font-family: $serifFontFamily;
 	font-size: ms(4);
-	color:$sec-blue;
+	color:$sec-dkBlue;
 }
 
 .expert-letter{

@@ -75,7 +75,7 @@
 
 ul.side-nav{
 	.nav-header{
-		color: $sec-blue;
+		color: $sec-dkBlue;
 		font-family: $headerFontFamily;
 		font-weight: 500;
 		//border-bottom: 1px solid $ter-ltTan;
@@ -83,7 +83,7 @@ ul.side-nav{
 		margin:10px 0 0;
 		& > a{
 			&.trigger, &.activetrigger{
-				color: $sec-blue;
+				color: $sec-dkBlue;
 				padding-left: 0px;
 			}
 			&:hover{background:transparent; border: none;}

@@ -24,7 +24,7 @@ $pri-tan:rgba(136,126,111,1); // pantone 404
 $sec-orange:rgba(250,166,52,1); // pantone 1375
 // $sec-green:rgba(214,224,61,1); // pantone 381
 $sec-purple:rgba(154,78,158,1); // pantone 513
-//$sec-blue:rgba(0,132,169,1); // pantone 314
+//$sec-dkBlue:rgba(0,132,169,1); // pantone 314
 $sec-red:rgba(181,9,56,1); // pantone 7427
 
 // TERTIARY
@@ -42,7 +42,8 @@ $bodyBackground: rgb(247,242,228);
 $pri-blue: 		rgb(29,121,152); //#
 $pri-orange: 	rgb(216,102,84); //#
 
-$sec-blue: 		rgb(23,46,84); //#
+$sec-ltBlue: 		rgb(108,176,195); //#
+$sec-dkBlue: 		rgb(23,46,84); //#
 $sec-green: 	rgb(112,207,141); //#
 $sec-orange: 	rgb(243,183,39); //#
 
@@ -118,7 +119,7 @@ $rowWidth: 1440px;// 100%sets site to fluid grid
 
 // Colors Settings
 
-$mainColor: $pri-orange;//logo orange Previously: //rgb(16,112,144);//$sec-blue;
+$mainColor: $pri-orange;//logo orange Previously: //rgb(16,112,144);//$sec-dkBlue;
 $secondaryColor: rgb(201,193,184);//$ter-dkTan;
 $alertColor: $ter-red;
 $successColor: $sec-green;
