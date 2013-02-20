@@ -54,15 +54,51 @@
     };
     var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
   })();
+
+/*-- Panel - make dismissable --*/
+;(function ($, window, undefined) {
+  'use strict';
   
-(function siteInit(){
+  $.fn.practiceupdatePanel = function (options) {
+    var settings = $.extend({
+      callback: $.noop
+    }, options);
+    
+    $(document).on("click", ".panel a.close", function (e) {
+      e.preventDefault();
+      $(this).closest(".panel").fadeOut(function () {
+        $(this).remove();
+        // Do something else after the alert closes
+        settings.callback();
+      });
+    });
+    
+  };
+
+})(jQuery, this);
+
+/*-- END Panel --*/
+
+/*-- PracticeUpdate Site Initialize --*/
+
+;(function siteInit($, window, undefined) {
+  'use strict';
+
+  var $doc = $(document);
+
+  $(document).ready(function() {
+    $.fn.practiceupdatePanel           ? $doc.practiceupdatePanel() : null;
+  });
+
+
+//(function siteInit(){
 //'use strict';
 
 //drawer interaction function
 // .drawer .drawer-menu, .drawer-toggle > a
 //TODO: correct transition animation
 //TODO: setup options, so this can easily be applied to any element as a function
-(function($) {
+;(function($) {
   $.fn.practiceupdateDrawer = function(options) {
     options = {};
   $('ul.drawer-menu').addClass('is-collapsed');
@@ -80,7 +116,7 @@
 //TODO: make async
 //NOTE: http://stackoverflow.com/questions/1531693/ajax-async-false-request-is-still-firing-asynchronously
 
-//TODO: Load all 
+//TODO: Load all
 //NOTE: http://stackoverflow.com/questions/11675702/nested-partials-in-mustache-and-loading-partials-from-external-file
 // // json1.js
 // var user = {
@@ -175,7 +211,8 @@
       $('body').append(html);
     });
 
-  })();
+//  })();
+})(jQuery, this);
 
 //disable .disabled links
   $(document).ready(function() {

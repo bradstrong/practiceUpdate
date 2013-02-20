@@ -1,0 +1,23 @@
+.eic-welcome{
+	@extend .secondary;
+	.alert-header-text{
+		font-size:ms(2);
+	}
+	.alert-body{
+		@include innerRow();
+	}
+	.eic-profile{@include column(5);}
+	.eic-message{@include column(7);}
+	figure{
+		
+		//background-color:$white;
+		//@include elementBoxShadow;
+		padding: 0 $baseFontSize;
+		img{
+			// padding: $baseFontSize;
+		}
+		figcaption{
+			font-weight: normal;
+		}
+	}
+}

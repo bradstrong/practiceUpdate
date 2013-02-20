@@ -124,7 +124,14 @@
 
 /* Page Specific Styles*/
 /* Single Item page elements*/
-.single-item{@include innerRow();}
+.single-item{@include innerRow();
+ .take-home-message{
+ 	.source-container{
+ 		display: none;
+ 	}
+ }
+ }
+
 
 /* !Update Page Elements */
 /* !stream */
@@ -174,6 +181,7 @@
 }
 
 @import "_module-cta";
+@import "_module-eic-welcome";
 
 // WIDGETS
 .widget{
