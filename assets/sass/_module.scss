@@ -29,6 +29,7 @@
 .item-header{@include innerRow();
 	padding-top:$baseFontSize/2;}
 .item-title-container{@include column(12);}
+.action-bar{@include column(12);}
 .item-type{@include column(7);}
 @media only screen and (max-width: $topBarBreakPoint) {
 	.item-title-container, .item-type{
@@ -201,6 +202,14 @@
 .widget.els-description{@include column(6); @include mobileColumn(3); @include mobilePull(1);}
 .widget.powered-by{@include column(3); @include mobileColumn(1); @include mobilePush(3);}
 @import "_module-explore-section";
+// @import "_module-faq";
+.faq-key{padding-left: 0;}
+.faq-list{padding-bottom:$baseFontSize;}
+.faq-q{font-weight: bold;}
+.faq-a{
+	line-height:2;
+	padding-bottom:$baseFontSize;
+}
 
 // CME modals
 .cme-image{
