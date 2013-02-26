@@ -19,6 +19,7 @@
 	<!-- Include CSS Files -->
 	<link rel="stylesheet" href="assets/css/app.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.css">
+	<link rel="stylesheet" href="assets/css/joyride-2.0.3.css">
 	<!-- Include Modernizr -->
 	<script src="assets/js/foundation/modernizr.foundation.js"></script>
 
@@ -120,6 +121,10 @@
 				<p><!-- Meet Our Experts --> Become a member to customize this page.<p>
 				<a class="button cta-button" href="#action-register">Register for free</a>
 			</div><!--/.panel.cta.register-->
+			<div class="cta take-tour">
+				<p><!-- Meet Our Experts --> Learn more about PracticeUpdate features<p>
+				<a id="start-tour" class="button cta-button" href="#">Start Feature Tour</a>
+			</div><!--/.panel.cta.register-->
 			<div class="component user-console">
 			</div><!--/.component.user-console-->
 			<div class="component user-topic">
@@ -151,9 +156,82 @@
 	<script src="assets/js/foundation/jquery.placeholder.js"></script>
 	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
 
+	<script src="assets/js/foundation/jquery.foundation.joyride.js"></script>
+
 	<script src="assets/js/foundation/app.js"></script>
 
 	<script src="assets/js/mustache.js"></script>
+
+
+	<ol id="practiceupdate-tour">
+<!-- 
+Stop 1: Update tab
+ Header: Update
+ Content: A personalized view of the latest news, journal scans, and expert commentaries
+ hand selected for your specialty(s)
+ Button: Next – Experts
+-->
+	<li data-id="li_update" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">A personalized view of the latest news, journal scans, and expert commentaries</li>
+<!-- 
+Stop 2: Meet our Experts button
+	Header: Meet our Experts
+	Content: World-renowned experts that hand select content related to your chosen
+	specialty(s)
+	Button: Next – Profile and Settings
+	-->
+	<li data-class="meet-experts" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">World-renowned experts that hand select content related to your chosen</li>
+<!-- 
+Stop 3: Profile and Settings button
+ Header: Profile & Settings
+ Content: Update your specialty(s), interests, and notification settings
+ Button: Next – Specialty / All My Channels
+ -->
+	<li data-id="UserConsolePreferences" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">Update your specialty(s), interests, and notification settings</li>
+<!-- 
+ Stop 4: Specialty / All My Channels
+ Header: Specialty Channels
+ Content: The customized view of your selected interests
+ Button: Next – Spotlights
+-->
+	<li data-id="ul-specialties" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">The customized view of your selected interests</li>
+<!-- 
+ Stop 5: Spotlights
+ Header: Spotlights
+ Content: Highlighted topics related to your specialty
+ Button: Next – Explore
+-->
+	<li data-id="ul_spotlight" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">Highlighted topics related to your specialty</li>
+<!-- 
+ Stop 6: Explore tab
+ Header: Explore
+ Content: News, Research, Reviews, and Expert Opinions from across your specialty channel.
+ Button: Next – Learn
+-->
+	<li data-id="li_explore" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">News, Research, Reviews, and Expert Opinions from across your specialty channel.</li>
+<!-- 
+Stop 7: Learn tab
+ Header: Learn
+ Content: CME opportunities and seminal articles
+ Button: Next – End
+-->
+	<li data-id="li_explore" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">CME opportunities and seminal articles</li>
+</ol>
+<!--/#practiceupdate-tour-->
+<!-- documentation refernce 
+	http://www.zurb.com/playground/jquery-joyride-feature-tour-plugin
+-->
+
+<!-- /* Launching joyride when to page is loaded */ -->
+<script>
+  $(window).load(function() {
+  	$('#start-tour').click(function(){
+			$("#practiceupdate-tour").joyride({
+			/* Options will go here */
+			})
+  	})
+  });
+</script>
+
 
 	<!-- Mustache - homepage feed template -->
 	<script>
@@ -251,6 +329,8 @@
 		});
 
 	</script>
+
+
 
 </body>
 </html>
