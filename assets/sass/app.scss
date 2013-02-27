@@ -104,4 +104,7 @@ html.lt-ie9{
 		padding-left:15px !important;
 		padding-right:15px !important;
 	}
+	#li_update, #li_explore, #li_learn, 	#li_update a, #li_explore a, #li_learn a{
+		text-transform: uppercase !important;
+	}
 }

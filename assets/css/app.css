@@ -10486,3 +10486,7 @@ html.lt-ie9 .login-register {
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
+/* line 107, ../sass/app.scss */
+html.lt-ie9 #li_update, html.lt-ie9 #li_explore, html.lt-ie9 #li_learn, html.lt-ie9 #li_update a, html.lt-ie9 #li_explore a, html.lt-ie9 #li_learn a {
+  text-transform: uppercase !important;
+}
