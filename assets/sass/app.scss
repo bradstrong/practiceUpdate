@@ -82,4 +82,26 @@ html.lt-ie9{
 		margin-left:0 !important;
 		margin-right:0 !important;
 	}
+
+	.footer-section,
+	.pref-content,
+	.channel-list,
+	.alert-body,
+	.section-widget,
+	.checked-list,
+	.user-directory-header,
+	.user-directory,
+	.user-profile-header,
+	.profile-card,
+	.profile-details,
+	.user-detail-list,
+	.item-header,
+	.item-content,
+	.single-item,
+	.in-stream,
+	.password-signin,
+	.login-register{
+		padding-left:15px !important;
+		padding-right:15px !important;
+	}
 }

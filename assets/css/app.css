@@ -10464,3 +10464,25 @@ html.lt-ie9 .login-register {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+/* line 103, ../sass/app.scss */
+html.lt-ie9 .footer-section,
+html.lt-ie9 .pref-content,
+html.lt-ie9 .channel-list,
+html.lt-ie9 .alert-body,
+html.lt-ie9 .section-widget,
+html.lt-ie9 .checked-list,
+html.lt-ie9 .user-directory-header,
+html.lt-ie9 .user-directory,
+html.lt-ie9 .user-profile-header,
+html.lt-ie9 .profile-card,
+html.lt-ie9 .profile-details,
+html.lt-ie9 .user-detail-list,
+html.lt-ie9 .item-header,
+html.lt-ie9 .item-content,
+html.lt-ie9 .single-item,
+html.lt-ie9 .in-stream,
+html.lt-ie9 .password-signin,
+html.lt-ie9 .login-register {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
