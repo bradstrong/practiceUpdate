@@ -58,3 +58,28 @@
 @import "state";
 @import "theme";
 @import "my-custom-style";
+
+/* InnerRow() negative margin override for IE7 + 8 */
+html.lt-ie9{
+	.footer-section,
+	.pref-content,
+	.channel-list,
+	.alert-body,
+	.section-widget,
+	.checked-list,
+	.user-directory-header,
+	.user-directory,
+	.user-profile-header,
+	.profile-card,
+	.profile-details,
+	.user-detail-list,
+	.item-header,
+	.item-content,
+	.single-item,
+	.in-stream,
+	.password-signin,
+	.login-register{
+		margin-left:0 !important;
+		margin-right:0 !important;
+	}
+}

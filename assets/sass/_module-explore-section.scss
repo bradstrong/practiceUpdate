@@ -1,12 +1,13 @@
 .explore-sections{
 	@include column(12);
-	section{
-		@include innerRow();
-		margin-bottom:$columnGutter/3;
-	}
 }
 .section-widget{
-	@include column(12, collapse);
+	// 	section{
+		
+	// }
+	@include innerRow();
+		margin-bottom:$columnGutter/3;
+	// @include column(12);
 	li{list-style: none;}
 	.meta.title{
 		font-weight: bold;

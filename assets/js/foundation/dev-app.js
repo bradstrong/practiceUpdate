@@ -24,4 +24,12 @@
       $('body').toggleClass('experimental-b');
     }
   });
+
+// Jira Issue Collector
+jQuery.ajax({
+    url: "https://practiceupdate.atlassian.net/s/en_US-pdztjn-418945332/6030/31/1.3.4/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?collectorId=38933578",
+    type: "get",
+    cache: true,
+    dataType: "script"
+});
 })();
