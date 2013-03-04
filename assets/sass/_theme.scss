@@ -151,11 +151,6 @@ h3{
 .brand-name-practice{text-transform:capitalize;}
 .brand-name-update{text-transform:capitalize;}
 
-.login-register-container{
-	@include column(6);
-padding-top: $baseFontSize/2;
-}
-
 .login-register{
 	@include innerRow(collapse);
 	padding-top: $baseFontSize/2;
@@ -209,6 +204,13 @@ article.single-item{
 //	.form-action{@include innerRow(collapse);}
 //	.form-submit{@include column(6);}
 //	.remember-me{@include column(6);}
+
+	.remember-forgot{
+			& {@media screen and (max-width: 768px){
+				padding-top: $baseFontSize;
+		}}
+	.forgot{color: $white;}
+}
 	.forgot-password-link{}
 }
 #formRegisterPrompt{@include column(6);}

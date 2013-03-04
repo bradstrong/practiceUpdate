@@ -2,12 +2,8 @@
 	@include column(12);
 }
 .section-widget{
-	// 	section{
-		
-	// }
 	@include innerRow();
-		margin-bottom:$columnGutter/3;
-	// @include column(12);
+	margin-bottom:$columnGutter/3;
 	li{list-style: none;}
 	.meta.title{
 		font-weight: bold;

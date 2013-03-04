@@ -2,21 +2,21 @@
 /* !Type */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .login-register-container, #formLogin, #formRegisterPrompt {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
   float: left;
 }
 
 /* line 55, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */
-.page-content, .page-footer, .footer-section-container .footer-section, .channel-list, .pref-content, .item-header, .item-content, .single-item, .in-stream, .password-signin, .user-profile-header, .profile-card, .profile-details, .user-detail-list, .user-directory-header, .user-directory, .checked-list, .eic-welcome .alert-body, .section-widget, .login-register {
+.page-content, .page-footer, .footer-section-container .footer-section, .page-banner, .channel-list, .pref-content, .item-header, .item-content, .single-item, .in-stream, .password-signin, .user-profile-header, .profile-card, .profile-details, .user-detail-list, .user-directory-header, .user-directory, .checked-list, .eic-welcome .alert-body, .section-widget, .login-register {
   *zoom: 1;
 }
 /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_clearfix.scss */
-.page-content:before, .page-footer:before, .footer-section-container .footer-section:before, .channel-list:before, .pref-content:before, .item-header:before, .item-content:before, .single-item:before, .in-stream:before, .password-signin:before, .user-profile-header:before, .profile-card:before, .profile-details:before, .user-detail-list:before, .user-directory-header:before, .user-directory:before, .checked-list:before, .eic-welcome .alert-body:before, .section-widget:before, .login-register:before, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .channel-list:after, .pref-content:after, .item-header:after, .item-content:after, .single-item:after, .in-stream:after, .password-signin:after, .user-profile-header:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .user-directory-header:after, .user-directory:after, .checked-list:after, .eic-welcome .alert-body:after, .section-widget:after, .login-register:after {
+.page-content:before, .page-footer:before, .footer-section-container .footer-section:before, .page-banner:before, .channel-list:before, .pref-content:before, .item-header:before, .item-content:before, .single-item:before, .in-stream:before, .password-signin:before, .user-profile-header:before, .profile-card:before, .profile-details:before, .user-detail-list:before, .user-directory-header:before, .user-directory:before, .checked-list:before, .eic-welcome .alert-body:before, .section-widget:before, .login-register:before, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .page-banner:after, .channel-list:after, .pref-content:after, .item-header:after, .item-content:after, .single-item:after, .in-stream:after, .password-signin:after, .user-profile-header:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .user-directory-header:after, .user-directory:after, .checked-list:after, .eic-welcome .alert-body:after, .section-widget:after, .login-register:after {
   content: " ";
   display: table;
 }
 /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_clearfix.scss */
-.page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .channel-list:after, .pref-content:after, .item-header:after, .item-content:after, .single-item:after, .in-stream:after, .password-signin:after, .user-profile-header:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .user-directory-header:after, .user-directory:after, .checked-list:after, .eic-welcome .alert-body:after, .section-widget:after, .login-register:after {
+.page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .page-banner:after, .channel-list:after, .pref-content:after, .item-header:after, .item-content:after, .single-item:after, .in-stream:after, .password-signin:after, .user-profile-header:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .user-directory-header:after, .user-directory:after, .checked-list:after, .eic-welcome .alert-body:after, .section-widget:after, .login-register:after {
   clear: both;
 }
 
@@ -28,7 +28,7 @@
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .login-register-container, #formLogin, #formRegisterPrompt {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -7970,19 +7970,62 @@ small {
 
 /* Page Specific Styles */
 /* Update Page */
-/* Channel Listing Page */
+/*Marketing PAges */
 /* line 93, ../sass/_layout.scss */
+.page-banner {
+  width: 1440px;
+  max-width: 100%;
+  min-width: 768px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  /* line 93, ../sass/_layout.scss */
+  .page-banner {
+    width: auto;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* line 97, ../sass/_layout.scss */
+.brand-container {
+  width: 50%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 97, ../sass/_layout.scss */
+  .brand-container {
+    float: none;
+    width: auto;
+  }
+}
+
+/* line 101, ../sass/_layout.scss */
+.login-register-container {
+  width: 50%;
+  padding-top: 7px;
+}
+@media only screen and (max-width: 767px) {
+  /* line 101, ../sass/_layout.scss */
+  .login-register-container {
+    float: none;
+    width: auto;
+  }
+}
+
+/* Channel Listing Page */
+/* line 107, ../sass/_layout.scss */
 .channel-list {
   margin: 0 -15px;
 }
 
-/* line 96, ../sass/_layout.scss */
+/* line 110, ../sass/_layout.scss */
 .single-channel {
   padding: 0;
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 96, ../sass/_layout.scss */
+  /* line 110, ../sass/_layout.scss */
   .single-channel {
     float: none;
     width: auto;
@@ -7990,19 +8033,19 @@ small {
 }
 
 /* Preferences*/
-/* line 100, ../sass/_layout.scss */
+/* line 114, ../sass/_layout.scss */
 .pref-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 100, ../sass/_layout.scss */
+  /* line 114, ../sass/_layout.scss */
   .pref-container {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 100, ../sass/_layout.scss */
+  /* line 114, ../sass/_layout.scss */
   .pref-container {
     width: auto;
     min-width: 0;
@@ -8021,31 +8064,31 @@ small {
   }
 }
 
-/* line 101, ../sass/_layout.scss */
+/* line 115, ../sass/_layout.scss */
 .pref-content {
   margin: 0 -15px;
   padding-top: 14px;
   padding-bottom: 14px;
 }
 
-/* line 102, ../sass/_layout.scss */
+/* line 116, ../sass/_layout.scss */
 #pref-tabs {
   width: 25%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 102, ../sass/_layout.scss */
+  /* line 116, ../sass/_layout.scss */
   #pref-tabs {
     float: none;
     width: auto;
   }
 }
 
-/* line 103, ../sass/_layout.scss */
+/* line 117, ../sass/_layout.scss */
 #pref-tabs-content {
   width: 66.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 103, ../sass/_layout.scss */
+  /* line 117, ../sass/_layout.scss */
   #pref-tabs-content {
     float: none;
     width: auto;
@@ -8054,23 +8097,23 @@ small {
 
 /* Static Pages (footer utility links) */
 /*Start: static-container*/
-/* line 112, ../sass/_layout.scss */
+/* line 126, ../sass/_layout.scss */
 .static-container li {
   margin: 10px 0 0;
 }
-/* line 115, ../sass/_layout.scss */
+/* line 129, ../sass/_layout.scss */
 .static-container span {
   font-size: 14px;
   float: left;
   clear: both;
   width: 100%;
 }
-/* line 121, ../sass/_layout.scss */
+/* line 135, ../sass/_layout.scss */
 .static-container p.phone {
   font-size: 14px;
   line-height: 22px;
 }
-/* line 125, ../sass/_layout.scss */
+/* line 139, ../sass/_layout.scss */
 .static-container p {
   font-family: inherit;
   font-size: 14px;
@@ -8078,7 +8121,7 @@ small {
   line-height: 24px;
   margin-bottom: 26px;
 }
-/* line 132, ../sass/_layout.scss */
+/* line 146, ../sass/_layout.scss */
 .static-container span.bolder {
   font-size: 14px;
   float: none;
@@ -8086,28 +8129,28 @@ small {
   font-weight: bold;
   width: auto;
 }
-/* line 139, ../sass/_layout.scss */
+/* line 153, ../sass/_layout.scss */
 .static-container h2 {
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0 0 15px;
 }
-/* line 145, ../sass/_layout.scss */
+/* line 159, ../sass/_layout.scss */
 .static-container h3 {
   font-size: 18px;
   font-weight: normal;
   margin: 0 0 6px;
 }
-/* line 151, ../sass/_layout.scss */
+/* line 165, ../sass/_layout.scss */
 .static-container h4, .static-container .channel-title {
   font-size: 16px;
 }
-/* line 154, ../sass/_layout.scss */
+/* line 168, ../sass/_layout.scss */
 .static-container p.phone-contact {
   margin: -30px 0 26px;
 }
-/* line 157, ../sass/_layout.scss */
+/* line 171, ../sass/_layout.scss */
 .static-container .links {
   margin: 0 20px 20px 0;
 }
@@ -9298,37 +9341,37 @@ ul.side-nav li a:hover {
   margin: 0 -15px;
   margin-bottom: 10px;
 }
-/* line 11, ../sass/_module-explore-section.scss */
+/* line 7, ../sass/_module-explore-section.scss */
 .section-widget li {
   list-style: none;
 }
-/* line 12, ../sass/_module-explore-section.scss */
+/* line 8, ../sass/_module-explore-section.scss */
 .section-widget .meta.title {
   font-weight: bold;
 }
-/* line 15, ../sass/_module-explore-section.scss */
+/* line 11, ../sass/_module-explore-section.scss */
 .section-widget .section-header {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 15, ../sass/_module-explore-section.scss */
+  /* line 11, ../sass/_module-explore-section.scss */
   .section-widget .section-header {
     float: none;
     width: auto;
   }
 }
-/* line 18, ../sass/_module-explore-section.scss */
+/* line 14, ../sass/_module-explore-section.scss */
 .section-widget .section-content {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 18, ../sass/_module-explore-section.scss */
+  /* line 14, ../sass/_module-explore-section.scss */
   .section-widget .section-content {
     float: none;
     width: auto;
   }
 }
-/* line 21, ../sass/_module-explore-section.scss */
+/* line 17, ../sass/_module-explore-section.scss */
 .section-widget .section-content .entry {
   border-bottom: 1px solid white;
 }
@@ -9362,6 +9405,11 @@ ul.side-nav li a:hover {
 /* line 218, ../sass/_module.scss */
 .cme-details dt {
   font-weight: bold;
+}
+
+/* line 259, ../sass/_module.scss */
+#atlwdg-trigger, .atlwdg-trigger {
+  z-index: 100;
 }
 
 /* line 18, ../sass/_state.scss */
@@ -9556,111 +9604,108 @@ h3 {
 }
 
 /* line 154, ../sass/_theme.scss */
-.login-register-container {
-  width: 50%;
-  padding-top: 7px;
-}
-@media only screen and (max-width: 767px) {
-  /* line 154, ../sass/_theme.scss */
-  .login-register-container {
-    float: none;
-    width: auto;
-  }
-}
-
-/* line 159, ../sass/_theme.scss */
 .login-register {
   margin: 0;
   padding-top: 7px;
 }
-/* line 162, ../sass/_theme.scss */
+/* line 157, ../sass/_theme.scss */
 .login-register .cta.account-question {
   margin-top: 7px;
   padding: 7px 0;
 }
 
-/* line 169, ../sass/_theme.scss */
+/* line 164, ../sass/_theme.scss */
 .journal .item-title, .feed .item-title {
   font-size: 14px;
   font-family: "proxima-nova";
 }
 
-/* line 174, ../sass/_theme.scss */
+/* line 169, ../sass/_theme.scss */
 .journal-title, .feed-title {
   color: #172e54;
   font-size: 17px;
 }
 
-/* line 179, ../sass/_theme.scss */
+/* line 174, ../sass/_theme.scss */
 .item-title, .item-type, .item-pub-date {
   font-family: "proxima-nova-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 183, ../sass/_theme.scss */
+/* line 178, ../sass/_theme.scss */
 .journal .item-citation, .feed .item-citation {
   font-size: 11.9px;
   color: #948b7c;
 }
 
-/* line 188, ../sass/_theme.scss */
+/* line 183, ../sass/_theme.scss */
 .recommended h5, .recommended .form-title, .recommended .cta-title {
   font-size: 17px;
   margin: 0;
   font-weight: normal;
 }
 
-/* line 194, ../sass/_theme.scss */
+/* line 189, ../sass/_theme.scss */
 .subheader, .user-title, .form-description {
   color: #887e6f;
 }
 
-/* line 197, ../sass/_theme.scss */
+/* line 192, ../sass/_theme.scss */
 article.single-item h2 {
   text-transform: uppercase;
   font-family: "proxima-nova";
   font-size: 23px;
 }
-/* line 202, ../sass/_theme.scss */
+/* line 197, ../sass/_theme.scss */
 article.single-item h3 {
   text-transform: uppercase;
   font-size: 17px;
 }
 
-/* line 208, ../sass/_theme.scss */
+/* line 203, ../sass/_theme.scss */
 #formLogin {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 208, ../sass/_theme.scss */
+  /* line 203, ../sass/_theme.scss */
   #formLogin {
     float: none;
     width: auto;
   }
 }
+@media screen and (max-width: 768px) {
+  /* line 209, ../sass/_theme.scss */
+  #formLogin .remember-forgot {
+    padding-top: 14px;
+  }
+}
+/* line 212, ../sass/_theme.scss */
+#formLogin .remember-forgot .forgot {
+  color: white;
+}
 
-/* line 214, ../sass/_theme.scss */
+/* line 216, ../sass/_theme.scss */
 #formRegisterPrompt {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 214, ../sass/_theme.scss */
+  /* line 216, ../sass/_theme.scss */
   #formRegisterPrompt {
     float: none;
     width: auto;
   }
 }
 
-/* line 216, ../sass/_theme.scss */
+/* line 218, ../sass/_theme.scss */
 .beta-accept, .subscribe-container {
   text-align: center;
 }
-/* line 218, ../sass/_theme.scss */
+/* line 220, ../sass/_theme.scss */
 .beta-accept input.error, .subscribe-container input.error {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* line 221, ../sass/_theme.scss */
+/* line 223, ../sass/_theme.scss */
 .beta-accept-lead, .subscribe-lead {
   color: #88cbdf;
   font-size: 17px;
@@ -9668,7 +9713,7 @@ article.single-item h3 {
   margin-bottom: 7px;
 }
 
-/* line 228, ../sass/_theme.scss */
+/* line 230, ../sass/_theme.scss */
 .beta-accept-button, .subscribe-button {
   color: #005596;
   font-weight: normal;
@@ -9684,7 +9729,7 @@ article.single-item h3 {
   box-shadow: 0 0 4px #c1cd23, 0 1px 0 white inset;
   text-transform: uppercase;
 }
-/* line 232, ../sass/_theme.scss */
+/* line 234, ../sass/_theme.scss */
 .beta-accept-button:hover, .subscribe-button:hover {
   color: #005596;
   *zoom: 1;
@@ -9698,30 +9743,30 @@ article.single-item h3 {
   background: linear-gradient(bottom, #1d1f05, #c1cd23);
 }
 
-/* line 239, ../sass/_theme.scss */
+/* line 241, ../sass/_theme.scss */
 .beta-accept-sub {
   display: none;
 }
 
-/* line 241, ../sass/_theme.scss */
+/* line 243, ../sass/_theme.scss */
 .specialty-name, .brand-name {
   color: white;
   margin-bottom: 0;
 }
 
-/* line 245, ../sass/_theme.scss */
+/* line 247, ../sass/_theme.scss */
 .specialty-name {
   font-size: 59px;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 767px) {
-  /* line 245, ../sass/_theme.scss */
+  /* line 247, ../sass/_theme.scss */
   .specialty-name {
     font-size: 44px;
   }
 }
 
-/* line 252, ../sass/_theme.scss */
+/* line 254, ../sass/_theme.scss */
 .tagline {
   color: #1d7998;
   font-family: "proxima-nova";
@@ -9729,33 +9774,33 @@ article.single-item h3 {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 257, ../sass/_theme.scss */
+  /* line 259, ../sass/_theme.scss */
   .tagline-str2 {
     display: block;
   }
 }
 
-/* line 264, ../sass/_theme.scss */
+/* line 266, ../sass/_theme.scss */
 .page-content-first {
   padding-top: 1em;
   padding-bottom: 2em;
   z-index: -5;
 }
 
-/* line 271, ../sass/_theme.scss */
+/* line 273, ../sass/_theme.scss */
 .copy-header {
   font-family: "museo-slab", serif;
   font-size: 37px;
   color: #172e54;
 }
 
-/* line 277, ../sass/_theme.scss */
+/* line 279, ../sass/_theme.scss */
 .expert-letter {
   margin-top: 28px;
   overflow: visible;
 }
 
-/* line 282, ../sass/_theme.scss */
+/* line 284, ../sass/_theme.scss */
 .expert-letter-copy {
   background-color: white;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -9766,12 +9811,12 @@ article.single-item h3 {
   border-radius: 2px;
 }
 
-/* line 292, ../sass/_theme.scss */
+/* line 294, ../sass/_theme.scss */
 .letter-illustration {
   margin-top: 21px;
 }
 @media screen and (min-width: 768px) {
-  /* line 292, ../sass/_theme.scss */
+  /* line 294, ../sass/_theme.scss */
   .letter-illustration {
     margin-top: 56px;
     margin-left: auto;
@@ -9779,38 +9824,38 @@ article.single-item h3 {
   }
 }
 
-/* line 300, ../sass/_theme.scss */
+/* line 302, ../sass/_theme.scss */
 .letter-body {
   font-size: 17px;
   line-height: 2;
 }
 
-/* line 309, ../sass/_theme.scss */
+/* line 311, ../sass/_theme.scss */
 .illustration-container {
   text-align: center;
 }
-/* line 311, ../sass/_theme.scss */
+/* line 313, ../sass/_theme.scss */
 .illustration-container img {
   max-width: 85px;
   margin: auto;
 }
 
-/* line 316, ../sass/_theme.scss */
+/* line 318, ../sass/_theme.scss */
 .page-content-second {
   margin-top: 28px;
   padding-bottom: 14px;
 }
 
-/* line 317, ../sass/_theme.scss */
+/* line 319, ../sass/_theme.scss */
 .site-benefits {
   margin-top: 28px;
 }
-/* line 319, ../sass/_theme.scss */
+/* line 321, ../sass/_theme.scss */
 .site-benefits .copy-header {
   text-align: center;
   padding-bottom: 28px;
 }
-/* line 323, ../sass/_theme.scss */
+/* line 325, ../sass/_theme.scss */
 .site-benefits h3 {
   color: #1d7998;
   font-family: "museo-slab", serif;
@@ -10442,6 +10487,12 @@ line {
 }
 
 /* InnerRow() negative margin override for IE7 + 8 */
+/* line 63, ../sass/app.scss */
+html.lt-ie9 {
+  /* Marketing Pages */
+  /* Sitewide layout containers */
+  /* Preferences + Registration */
+}
 /* line 81, ../sass/app.scss */
 html.lt-ie9 .footer-section,
 html.lt-ie9 .pref-content,
@@ -10487,4 +10538,63 @@ html.lt-ie9 .login-register {
 /* line 107, ../sass/app.scss */
 html.lt-ie9 #li_update, html.lt-ie9 #li_explore, html.lt-ie9 #li_learn, html.lt-ie9 #li_update a, html.lt-ie9 #li_explore a, html.lt-ie9 #li_learn a {
   text-transform: uppercase !important;
+}
+/* line 111, ../sass/app.scss */
+html.lt-ie9 .footer-row {
+  width: 33.33333%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 111, ../sass/app.scss */
+  html.lt-ie9 .footer-row {
+    float: none;
+    width: auto;
+  }
+}
+/* line 116, ../sass/app.scss */
+html.lt-ie9 .login-register-container {
+  float: left;
+}
+/* line 119, ../sass/app.scss */
+html.lt-ie9 .login-register-container .password-signin {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+/* line 121, ../sass/app.scss */
+html.lt-ie9 #formLogin {
+  float: left;
+}
+/* line 122, ../sass/app.scss */
+html.lt-ie9 #formRegisterPrompt {
+  float: right;
+}
+/* line 136, ../sass/app.scss */
+html.lt-ie9 .stream-container,
+html.lt-ie9 .explore-container,
+html.lt-ie9 .cme-container,
+html.lt-ie9 .single-item-container,
+html.lt-ie9 .register-container,
+html.lt-ie9 .user-directory-container,
+html.lt-ie9 .user-profile-container,
+html.lt-ie9 .channel-list-container,
+html.lt-ie9 .static-container {
+  float: left;
+}
+/* line 139, ../sass/app.scss */
+html.lt-ie9 #aux, html.lt-ie9 .aux, html.lt-ie9 .recommended {
+  float: right;
+}
+/* line 143, ../sass/app.scss */
+html.lt-ie9 .pref-container .pref-tabs {
+  float: left;
+}
+/* line 144, ../sass/app.scss */
+html.lt-ie9 .pref-container .pref-tabs-right {
+  float: right;
+}
+
+/* End lt-ie9 */
+/* Display fixes for IE6 + 7 */
+/* line 150, ../sass/app.scss */
+html.lt-ie8 body, html.lt-ie8 .page-header, html.lt-ie8 .page-content, html.lt-ie8 .page-footer-container {
+  min-width: 1000px;
 }

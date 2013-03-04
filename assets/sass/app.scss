@@ -107,4 +107,51 @@ html.lt-ie9{
 	#li_update, #li_explore, #li_learn, 	#li_update a, #li_explore a, #li_learn a{
 		text-transform: uppercase !important;
 	}
+
+	.footer-row {
+	@include column(4);
+	}
+
+	/* Marketing Pages */
+	.login-register-container{
+		float: left;
+
+		.password-signin{padding-left:0px !important; padding-right:0px !important;}
+	}
+	#formLogin{float: left;}
+	#formRegisterPrompt{
+		float: right;
+	}
+
+	/* Sitewide layout containers */
+
+.stream-container,
+.explore-container,
+.cme-container,
+.single-item-container,
+.register-container,
+.user-directory-container,
+.user-profile-container,
+.channel-list-container,
+.static-container{
+	float: left;
 }
+#aux, .aux, .recommended{float: right;}
+
+/* Preferences + Registration */
+.pref-container{
+	.pref-tabs{float: left;}
+	.pref-tabs-right{float: right;}
+}
+} /* End lt-ie9 */
+
+/* Display fixes for IE6 + 7 */
+html.lt-ie8{
+	body, .page-header, .page-content, .page-footer-container{ min-width:1000px;}
+}
+
+//TODO: 
+// - float issues on 7 + 8
+// - fix the main nav background color in ie
+// - correct the footer layout in ie 7 + 8 (related to the float issue)
+// - correct the login page layout in ie 7 + 8 (I'm hoping will be fixed once i correct for the float issue)

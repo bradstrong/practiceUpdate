@@ -89,6 +89,20 @@
 //	padding-bottom:$baseFontSize;
 //}
 
+/*Marketing PAges */
+.page-banner{
+	@include outerRow();
+}
+
+.brand-container{
+	@include column(6);
+}
+
+.login-register-container{
+	@include column(6);
+	padding-top: $baseFontSize/2;
+}
+
 /* Channel Listing Page */
 .channel-list{
 	@include innerRow();
