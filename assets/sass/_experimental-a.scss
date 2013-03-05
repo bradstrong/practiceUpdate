@@ -13,51 +13,74 @@
 
 //Type Variables
 
-$serifFontFamily: "museo-slab", serif;
-$sansFontFamily: "proxima-nova";
-$sansCondensedFontFamily: "proxima-nova-condensed";
+// $serifFontFamily: "museo-slab", serif;
+// $sansFontFamily: "proxima-nova";
+// $sansCondensedFontFamily: "proxima-nova-condensed";
 
-//Type changes
-&{color: darken($txtColor, 10%);}
+// //Type changes
+// &{color: darken($txtColor, 10%);}
 
-p{
-	font-family: $sansFontFamily !important;
-}
-.item-type, .item-pub-date{
-	font-size: ms(0) !important;
-	font-family: $serifFontFamily !important;
-}
-.item-title{
-	font-size: ms(2) !important;
-	font-family: $sansCondensedFontFamily !important;
-}
-.expert-name{}
-.journal-title, .feed-title{
-	color: $mainColor !important;
-	font-size: ms(2) !important;
-	font-family: $sansCondensedFontFamily !important;
-	//font-weight: bold !important;
-}
-.journal .item-title, .feed .item-title{
-	font-size: ms(0) !important;
-	font-family: $sansFontFamily !important;
-	//font-family: $sansCondensedFontFamily !important;
-}
-.journal .item-citation, .feed .item-citation{
-	font-size: ms(0)*.85 !important;
-	font-family: $sansFontFamily !important;
-}
+// p{
+// 	font-family: $sansFontFamily !important;
+// }
+// .item-type, .item-pub-date{
+// 	font-size: ms(0) !important;
+// 	font-family: $serifFontFamily !important;
+// }
+// .item-title{
+// 	font-size: ms(2) !important;
+// 	font-family: $sansCondensedFontFamily !important;
+// }
+// .expert-name{}
+// .journal-title, .feed-title{
+// 	color: $mainColor !important;
+// 	font-size: ms(2) !important;
+// 	font-family: $sansCondensedFontFamily !important;
+// 	//font-weight: bold !important;
+// }
+// .journal .item-title, .feed .item-title{
+// 	font-size: ms(0) !important;
+// 	font-family: $sansFontFamily !important;
+// 	//font-family: $sansCondensedFontFamily !important;
+// }
+// .journal .item-citation, .feed .item-citation{
+// 	font-size: ms(0)*.85 !important;
+// 	font-family: $sansFontFamily !important;
+// }
 
-.ad-title-text{
-	font-size: ms(0)*.85 !important;
-	letter-spacing:2px;
-}
+// .ad-title-text{
+// 	font-size: ms(0)*.85 !important;
+// 	letter-spacing:2px;
+// }
 
-// Navigation
-.page-header.fixed{
-	background-color:transparent;
-	@include elementBoxShadow;
-	.top-bar{
-			background-color:rgba(255,255,255,.95);
-	}
-}
+// // Navigation
+// .page-header.fixed{
+// 	background-color:transparent;
+// 	@include elementBoxShadow;
+// 	.top-bar{
+// 			background-color:rgba(255,255,255,.95);
+// 	}
+// }
+
+
+/* Corrections for Axel 2013-02-27 */
+// - decrease top and bottom padding on update page items
+
+// .in-stream .item-source .source-citation{
+// 	.journal-title{display: none !important;}
+// 	.feed-title{display: none !important;}
+// 	margin-bottom:0px !important;
+// }
+
+// .in-stream .item-content  .source-container{
+// 	figure[class$="-photo"]{
+// 		@include column(2);
+// 	}
+// 	div[class$="-name"]{
+// 		@include column(6);
+// 	}
+// }
+
+// x hide journal title on update page items
+// - float citation next to commenting doctor on story of the week items
+// - float 

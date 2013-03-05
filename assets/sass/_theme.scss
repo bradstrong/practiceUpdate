@@ -167,8 +167,9 @@ h3{
 }
 
 .journal-title, .feed-title{
-	color: $sec-dkBlue;
-	font-size:ms(1);
+	display: none;
+	// color: $sec-dkBlue;
+	// font-size:ms(1);
 }
 
 .item-title, .item-type, .item-pub-date{
