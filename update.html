@@ -306,9 +306,39 @@ Stop 7: Learn tab
 <!-- /* Launching joyride when to page is loaded */ -->
 <script>
   $(window).load(function() {
+
+	  var mobileView = $(window).width() < 768;
+
+	  if (mobileView) {
+		setTimeout(function(){
+		  $('.top-bar .toggle-topbar a').click(); }, 500
+		);
+	  }		
+	  
+	  setTimeout(function(){
 		$("#practiceupdate-tour").joyride({
 		/* Options will go here */
+			'postStepCallback': function(idx){
+
+				// After UPDATE for MEET EXPERTS
+				if (idx == 0) {
+				  if (mobileView) {
+					$('.top-bar .toggle-topbar a').click();
+					$('#sidebarButton').click();
+				  }	
+				}
+				
+				// After SPECIALITY / CHANELS for EXPLORE
+				if (idx == 3) {
+				  if (mobileView) {
+					$('.top-bar .toggle-topbar a').click();
+					$('#sidebarButton').click();
+				  }	
+				}
+				
+			}
 		});
+	  }, 1000);
   });	
 </script>	
 	
