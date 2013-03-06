@@ -10501,46 +10501,88 @@ line {
 }
 
 /************************************/
-/* line 1, ../sass/_joyride.scss */
-body#update .joyride-tip-guide.joyride-stop-update {
-  margin-left: -40px;
+@media (min-width: 768px) {
+  /* line 2, ../sass/_joyride.scss */
+  body#update .joyride-stop-update {
+    margin-left: -40px;
+  }
+
+  /* line 6, ../sass/_joyride.scss */
+  body#update .joyride-stop-update .joyride-nub.top {
+    margin-left: 40px;
+  }
+
+  /* line 10, ../sass/_joyride.scss */
+  body#update .joyride-stop-experts {
+    margin-top: -20px;
+  }
+
+  /* line 14, ../sass/_joyride.scss */
+  body#update .joyride-stop-explore {
+    margin-left: -115px;
+  }
+
+  /* line 18, ../sass/_joyride.scss */
+  body#update .joyride-stop-explore .joyride-nub.top {
+    margin-left: 130px;
+  }
+
+  /* line 22, ../sass/_joyride.scss */
+  body#update .joyride-stop-learn {
+    margin-left: -225px;
+  }
+
+  /* line 26, ../sass/_joyride.scss */
+  body#update .joyride-stop-learn .joyride-nub.top {
+    margin-left: 230px;
+  }
+}
+/* line 31, ../sass/_joyride.scss */
+.lt-ie9 body#update .joyride-stop-update {
+  margin-left: -60px;
 }
 
-/* line 5, ../sass/_joyride.scss */
-body#update .joyride-tip-guide.joyride-stop-update .joyride-nub.top {
-  margin-left: 40px;
+/* line 35, ../sass/_joyride.scss */
+.lt-ie9 body#update .joyride-stop-update .joyride-nub.top {
+  margin-left: 60px;
 }
 
-/* line 9, ../sass/_joyride.scss */
-body#update .joyride-tip-guide.joyride-stop-experts {
+/* line 39, ../sass/_joyride.scss */
+.lt-ie9 body#update .joyride-stop-experts {
   margin-top: -20px;
 }
 
-/* line 13, ../sass/_joyride.scss */
-body#update .joyride-tip-guide.joyride-stop-explore {
-  margin-left: -115px;
+/* line 43, ../sass/_joyride.scss */
+.lt-ie9 body#update .joyride-stop-explore {
+  margin-left: -145px;
 }
 
-/* line 17, ../sass/_joyride.scss */
-body#update .joyride-tip-guide.joyride-stop-explore .joyride-nub.top {
-  margin-left: 130px;
+/* line 47, ../sass/_joyride.scss */
+.lt-ie9 body#update .joyride-stop-explore .joyride-nub.top {
+  margin-left: 145px;
 }
 
-/* line 21, ../sass/_joyride.scss */
-body#update .joyride-tip-guide.joyride-stop-learn {
-  margin-left: -225px;
+/* line 51, ../sass/_joyride.scss */
+.lt-ie9 body#update .joyride-stop-learn {
+  margin-left: -235px;
 }
 
-/* line 25, ../sass/_joyride.scss */
-body#update .joyride-tip-guide.joyride-stop-learn .joyride-nub.top {
-  margin-left: 230px;
+/* line 55, ../sass/_joyride.scss */
+.lt-ie9 body#update .joyride-stop-learn .joyride-nub.top {
+  margin-left: 235px;
 }
 
-/* line 28, ../sass/_joyride.scss */
+/* line 59, ../sass/_joyride.scss */
 .joyride-stoplist {
   display: none;
 }
 
+@media (max-width: 767px) {
+  /* line 64, ../sass/_joyride.scss */
+  body#update .joyride-stop-update {
+    margin-top: 0 !important;
+  }
+}
 /* InnerRow() negative margin override for IE7 + 8 */
 /* line 84, ../sass/app.scss */
 html.lt-ie9 .footer-section,
