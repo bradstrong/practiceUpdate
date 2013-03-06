@@ -7,8 +7,17 @@
 .form-description{@extend .subheader;}
 .form-action{}
 
-.form-submit{@extend .button; @extend .primary;}
-.form-cancel{@extend .button; @extend .secondary;}
+.form-submit{@extend .button; @extend .success;}
+.form-cancel{
+	// @extend .button; @extend .secondary;
+@media only screen and (max-width: $topBarBreakPoint) {
+	margin-top: $baseFontSize/2;
+	padding-top: $baseFontSize/2;
+	padding-bottom: $baseFontSize/2;
+	display: block;
+	text-align: center;
+	}
+}
 
 .help-block{
 	display: block; padding: 6px 4px; margin-top: -($formSpacing) - 1; margin-bottom: $formSpacing; font-size: ms(0) - 2;
@@ -18,4 +27,8 @@
 .checked-list{
 	@include innerRow();
 	li{@include column(6);}
+}
+
+.form-row{
+	@include innerRow();
 }

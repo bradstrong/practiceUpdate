@@ -53,8 +53,8 @@
                     <header class="form-header">
                         <h3 class="form-title">Create Login</h3>
 
-                        <p class="form-description">Create a username and password to access qualty, updated, relevant
-                            content in PracticeUpdate.</p>
+<!--                         <p class="form-description">Create a username and password to access qualty, updated, relevant
+                            content in PracticeUpdate.</p> -->
                         <div class="os-user-message">
                         	<div class="panel">
                         		<p>To make this easy, we've brough your <strong>OncologySTAT</strong> information over to <strong>PracticeUpdate</strong>. Please confirm your details and enter a password to continue registration.</p>
@@ -62,38 +62,54 @@
                         </div><!--/.os-user-message-->
                     </header>
                     <!--/.form-header-->
-
-                    <input id="Email" name="Email" placeholder="Email" type="text">
+										<label for="Email">Email</label>
+                    <input id="Email" name="Email" placeholder="Enter your email" type="text">
                     <small class="error">Email required</small>
                     <small class="error">Not a valid email address</small>
-                    <input id="Password" name="Password" placeholder="Password" type="password">
+                    <label for="Password">Password </label>
+                    <input id="Password" name="Password" placeholder="Choose a password" type="password">
                     <small class="error">Invalid Password</small>
-                    <small class="help-block">Password must be 6-20 characters (letters, numbers and hyphens are
-                        accepted but not spaces)
-                    </small>
                     <input id="VerifyPassword" name="VerifyPassword" placeholder="Verify Password" type="password">
                     <small class="error">Passwords do not match</small>
-
+										<small class="help-block">* must be 6-20 characters (letters, numbers and hyphens are accepted but not spaces)</small>
                     <hr>
+<div class="form-row">
+	<div class="six columns">
+		<!-- <label for="Password">Name</label> -->
+		<input id="FirstName" name="FirstName" placeholder="First Name" type="text">
+    <small class="error">First name required</small>
 
-                    <input id="FirstName" name="FirstName" placeholder="FirstName" type="text">
-                    <small class="error">First name required</small>
-                    <input id="LastName" name="LastName" placeholder="LastName" type="text">
-                    <small class="error">Last name required</small>
-                    <select id="CountryId" name="CountryId" class="error">
-                        <option value="0">Country of Residence</option>
-                    </select>
-                    <small class="error">Country required</small>
-                    <select id="TempState" name="TempState" class="error">
-                        <option value="0">State / Territory</option>
-                    </select>
+	</div><!--/.six.columns-->
+	<div class="six columns">
+		
+		<input id="LastName" name="LastName" placeholder="Last Name" type="text">
+    <small class="error">Last name required</small>
 
-                    <div class="hide">
-                        <input type="text" id="StateId" name="StateId">
-                    </div>
-                    <!--/.hide-->
-                    <small class="error">State or Territory required</small>
+	</div><!--/.six.columns-->
+</div><!--/.form-row-->
 
+<div class="form-row">
+	<div class="six columns">
+		
+	  <select id="CountryId" name="CountryId">
+	      <option value="0">Country of Residence</option>
+	  </select>
+	  <small class="error">Country required</small>
+
+	</div><!--/.six.columns-->
+	<div class="six columns">
+		
+	  <select id="TempState" name="TempState">
+	      <option value="0">State / Territory</option>
+	  </select>
+	  <div class="hide">
+	      <input type="text" id="StateId" name="StateId">
+	  </div><!--/.hide-->
+	  <small class="error">State or Territory required</small>
+
+
+	</div><!--/.six.columns-->
+</div><!--/.form-row-->
                     <div class="row hide" id="ErrorDiv">
                         <div id="ErrorDivMsg"></div>
                     </div>
