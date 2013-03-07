@@ -273,7 +273,7 @@ Stop 3: Profile and Settings button
  Content: Highlighted topics related to your specialty
  Button: Next – Explore
 -->
-	<li data-id="ul_spotlight" data-options="tipLocation:top;tipAnimation:fade" data-button="Next – Explore">
+	<li data-class="topic-spotlight" data-options="tipLocation:top;tipAnimation:fade" data-button="Next – Explore">
 		<h1>Spotlights</h1>
 		<p>Highlighted topics related to your specialty</p>
 	</li>
@@ -309,6 +309,8 @@ Stop 7: Learn tab
 
 	  var mobileView = $(window).width() < 768;
 
+	  var isHeaderFixed = $('.page-header').hasClass('fixed');
+
 	  if (mobileView) {
 		setTimeout(function(){
 		  $('.top-bar .toggle-topbar a').click(); }, 500
@@ -318,7 +320,12 @@ Stop 7: Learn tab
 	  setTimeout(function(){
 		$("#practiceupdate-tour").joyride({
 		/* Options will go here */
+			'scrollSpeed': 300,
 			'postStepCallback': function(idx){
+
+				setTimeout(function(){
+					$('.joyride-tip-guide[data-index="'+(idx+1)+'"]').addClass('joyride-ready');
+				},100);	
 
 				// After UPDATE for MEET EXPERTS
 				if (idx == 0) {
@@ -333,12 +340,16 @@ Stop 7: Learn tab
 				  if (mobileView) {
 					$('.top-bar .toggle-topbar a').click();
 					$('#sidebarButton').click();
-				  }	
+				  }
 				}
-				
 			}
 		});
+		
+		$('.joyride-tip-guide[data-index="0"]').addClass('joyride-ready');
+		
 	  }, 1000);
+	  
+	  
   });	
 </script>	
 	
