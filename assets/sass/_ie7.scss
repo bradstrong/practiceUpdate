@@ -7,12 +7,12 @@
 	float:left;
 	overflow:hidden;
 }
-.lt-ie9 .footer-row .utility-links,
-.lt-ie9 .footer-row .policy-links {
+.lt-ie9.lt-ie8 .footer-row .utility-links,
+.lt-ie9.lt-ie8 .footer-row .policy-links {
 	margin:0;
 }
-.lt-ie9 .footer-row .utility-links li,
-.lt-ie9 .footer-row .policy-links li {
+.lt-ie9.lt-ie8 .footer-row .utility-links li,
+.lt-ie9.lt-ie8 .footer-row .policy-links li {
 	float: left;
 }
 .lt-ie9 .footer-row .utility-links li:first-child,
@@ -52,7 +52,7 @@
 	height:22px;
 	padding:10px 6px 4px;
 }
-.lt-ie9 #formLogin .password{
+.lt-ie9.lt-ie8 #formLogin .password{
 	margin:0 16px 0 -15px;
 	float:left;
 	width:166px;
