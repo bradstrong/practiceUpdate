@@ -4,6 +4,8 @@
 	@extend h5;
 	padding: .25em 0;
 }
+.form-row{@include innerRow(collapse);}
+.form-row-label{padding:0;}
 .form-description{@extend .subheader;}
 .form-action{}
 
