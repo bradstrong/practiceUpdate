@@ -14,10 +14,6 @@
 		margin-left: 40px;
 	}
 
-	body#update .joyride-ready.joyride-stop-experts {
-		margin-top: -20px;
-	}
-
 	body#update .joyride-ready.joyride-stop-explore {
 		margin-left: -115px;
 		top: 195px !important;
@@ -46,34 +42,39 @@
 		position: fixed !important;
 	}
 
+	body#update .joyride-ready.joyride-stop-help {
+		margin-left: -25px;
+		margin-top: -25px;
+	}
 }
 
-.lt-ie9 body#update .joyride-stop-update {
+.lt-ie9 body#update .joyride-ready.joyride-stop-update {
     margin-left: -60px;
 }
 
-.lt-ie9 body#update .joyride-stop-update .joyride-nub.top {
+.lt-ie9 body#update .joyride-ready.joyride-stop-update .joyride-nub.top {
     margin-left: 60px;
 }
 
-.lt-ie9 body#update .joyride-stop-experts {
-    margin-top: -20px;
-}
-
-.lt-ie9 body#update .joyride-stop-explore {
+.lt-ie9 body#update .joyride-ready.joyride-stop-explore {
     margin-left: -145px;
 }
 
-.lt-ie9 body#update .joyride-stop-explore .joyride-nub.top {
+.lt-ie9 body#update .joyride-ready.joyride-stop-explore .joyride-nub.top {
     margin-left: 145px;
 }
 
-.lt-ie9 body#update .joyride-stop-learn {
+.lt-ie9 body#update .joyride-ready.joyride-stop-learn {
     margin-left: -235px;
 }
 
-.lt-ie9 body#update .joyride-stop-learn .joyride-nub.top {
+.lt-ie9 body#update .joyride-ready.joyride-stop-learn .joyride-nub.top {
     margin-left: 235px;
+}
+
+.lt-ie9 body#update .joyride-ready.joyride-ready.joyride-stop-help {
+	margin-left: -25px;
+	margin-top: -25px;
 }
 
 .joyride-stoplist {
