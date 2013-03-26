@@ -37,6 +37,12 @@
 	<div class="page-header container">
 	</div><!--/.page-header-->
 	<div class="page-content">
+		<div class="page-notification row">
+			<div class="notification-container twelve columns">
+				<div class="alert-box alert">We were unable to verify your email address. Please <a href="#" class="">click here to correct the issue.</a>
+				<a href="" class="close">&times;</a></div>
+			</div>
+		</div>
 		<section role="main">
 			<div class="register-container">
 			<div id="RegisterDiv">
@@ -53,8 +59,12 @@
                     <header class="form-header">
                         <h3 class="form-title">Create Login</h3>
 
+<<<<<<< HEAD
 <!--                         <p class="form-description">Create a username and password to access qualty, updated, relevant
                             content in PracticeUpdate.</p> -->
+=======
+                        <p class="form-description">Create a username and password to access qualty, updated, relevant content from PracticeUpdate.</p>
+>>>>>>> dev-nix
                         <div class="os-user-message">
                         	<div class="panel">
                         		<p>To make this easy, we've brough your <strong>OncologySTAT</strong> information over to <strong>PracticeUpdate</strong>. Please confirm your details and enter a password to continue registration.</p>
@@ -62,6 +72,7 @@
                         </div><!--/.os-user-message-->
                     </header>
                     <!--/.form-header-->
+<<<<<<< HEAD
 										<label for="Email">Email</label>
                     <input id="Email" name="Email" placeholder="Enter your email" type="text">
                     <small class="error">Email required</small>
@@ -110,9 +121,82 @@
 
 	</div><!--/.six.columns-->
 </div><!--/.form-row-->
+=======
+<fieldset>
+	<legend>Email &amp; Password</legend>
+							<div class="form-row">
+								<div class="twelve columns">
+		            	<label>Email</label>
+	                <input id="Email" name="Email" placeholder="Email" type="text">
+	                <small class="error">Email required</small>
+	                <small class="error">Not a valid email address</small>
+	              </div><!--/.twelve.columns-->
+              </div><!--/.form-row-->
+              <div class="form-row">
+              	<div class="twelve columns">
+              	<div class="form-row">
+								<div class="twelve columns form-row-label">
+									<label>Password</label>
+								</div>
+							</div>
+						</div>
+								<div class="form-row">
+	            <div class="six columns">
+<input id="Password" name="Password" placeholder="Password" type="password">
+                    <small class="error">Invalid Password</small>
+              </div><!--/.six.columns-->
+              <div class="six columns">
+                    <input id="VerifyPassword" name="VerifyPassword" placeholder="Verify Password" type="password">
+                    <small class="error">Passwords do not match</small>
+              </div><!--/.six.columns-->
+              </div><!--/.form-row-->
+							<div class="form-row">
+								<div class="twelve columns">
+							<small class="help-block">Password must be 6-20 characters (letters, numbers and hyphens are ccepted but not spaces)</small>
+	              </div><!--/.twelve.columns-->
+              </div><!--/.form-row-->
+</fieldset><!--/Professional Information-->
+
+
+                    <hr>
+<fieldset>
+	<legend>Personal Information</legend>
+						<div class="form-row">
+	            <div class="six columns">
+                    <input id="FirstName" name="FirstName" placeholder="First Name" type="text" value="">
+                    <small id="FirstNameerror" class="error">First name is required</small>
+                </div>
+                <div class="six columns">
+                    <input id="LastName" name="LastName" placeholder="Last Name" type="text" value="">
+                    <small id="LastNameerror" class="error">Last name is required</small>
+                </div>
+            </div>
+						<div class="form-row">
+                <div class="six columns">
+                    <select data-val="true" data-val-number="The field CountryId must be a number." id="CountryId" name="CountryId"><option value="">Country of Residence</option>
+                    </select>
+                    <small id="CountryIderror" class="error ">Country is required</small>
+                </div>
+                <div class="six columns">
+                    <div id="StateRow" class="">
+                        <select data-val="true" data-val-number="The field StateId must be a number." id="TempState" name="StateId"><option value="">Select State or Territory</option>
+                        </select>
+                        <small id="TempStateerror" class="error">State or Territory is required</small>
+                        <div class="is-hidden">
+                            <input type="text" id="StateId" name="StateId">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  
+
+>>>>>>> dev-nix
                     <div class="row hide" id="ErrorDiv">
                         <div id="ErrorDivMsg"></div>
                     </div>
+                  </fieldset><!--/Personal Information -->
+
+
                     <div class="form-action">
                         <a id="Submit" class="form-submit">Register</a>
                         <a id="Cancel" class="form-cancel" data-reveal-id="modal-password-reset-confirmation"

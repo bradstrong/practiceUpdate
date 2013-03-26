@@ -194,6 +194,51 @@
 						<option>Select area of practice</option>
 					</select>
 					<small class="error">Primary area of practice is required</small>
+
+
+
+<!-- HCP VALIDATION FLOW -->
+
+<fieldset id="PVstatus2">
+<legend>License Info</legend>
+<br/>
+<div class="alert">
+	<!-- <button class="close" data-dismiss="alert">×</button> -->
+<strong>Hmmm... this isn't working.</strong> Please provide some information about yourself so that we can confirm your status as a US physician.
+</div><!--/.alert-->
+
+<div class="alert-box alert">
+	<!-- <button class="close" data-dismiss="alert">×</button> -->
+	<span>Oops!</span>
+	Still not working. We’re sorry.  We’re not able to match your information against the databases we have access to. Please review the information above for accuracy. If everything looks correct and the problem persists, please contact an official PracticeUpdate human by emailing us at <a href="mailto:practiceupdate@elsevier.com" target="_blank">practiceupdate@elsevier.com</a>.
+</div><!--/.alert-box-->
+
+<!-- radio -->
+<div class="control-group">
+  <label class="control-label" for="pvidnumRadio">Please indicate which number you will provide:</label>
+  <div class="controls">
+    <label class="radio inline">
+      <input type="radio" name="pvidnumRadio" id="pvidnumRadio1" value="npi"> NPI Number
+    </label>
+    <label class="radio inline">
+      <input type="radio" name="pvidnumRadio" id="pvidnumRadio2" value="license"> License Number
+    </label>
+  </div><!--/.controls-->
+</div><!--/.control-group-->
+<div class="control-group">
+	<!-- <label class="control-label" for="input06">License Number</label> -->
+  <div class="controls">
+    <input type="text" class="input-xlarge disabled" id="input06" placeholder="Choose from the options above" disabled="Make a selection above">
+    <!-- <span class="help-inline">Please enter your License number.</span> -->
+    <!-- <p class="help-block">Enter your License number.</p> -->
+  </div>
+</div>
+<!-- end radio -->
+</fieldset>
+
+<!-- END HCP VALIDATION FLOW -->
+
+
 					<div class="form-action">
 						<a id="Submit" class="form-submit">Save</a>
 						<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Cancel</a>
@@ -205,6 +250,9 @@
 					<div class="form-action">
 						<a id="Submit" class="form-submit">Complete Registration</a>
 					</div>
+                    <hr>
+
+
 					</form>
 				</li>
 				<li id="simple4Tab">

@@ -138,6 +138,13 @@ p{margin-bottom:$baseFontSize/2;}
  		display: none;
  	}
  }
+ .item-content{
+ 	figure{
+ 		float:left;
+ 		max-width: 33%;
+ 		padding-right:17px;
+ 	}
+ }
  }
 
 
