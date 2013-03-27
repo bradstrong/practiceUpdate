@@ -83,6 +83,23 @@
 
 @media (max-width:767px) {
 	body#update .joyride-ready.joyride-stop-update {
-		margin-top: 0 !important;
+		margin-top: 15px !important;
+	}
+	
+	body#update .joyride-ready.joyride-stop-profile {
+		margin-top: 15px !important;
+	}
+	
+	body#update .joyride-ready.joyride-stop-experts {
+		margin-top: 15px !important;
+	}
+
+	body#update .joyride-ready.joyride-stop-help {
+		margin-top: -15px !important;
+	}
+	
+	body#update .joyride-ready.joyride-stop-help .joyride-nub {
+		left: 45%;
+		margin-left: -120px;
 	}
 }
