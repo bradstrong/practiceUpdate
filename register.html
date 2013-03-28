@@ -42,6 +42,11 @@
 				<div class="alert-box alert">We were unable to verify your email address. Please <a href="#" class="">click here to correct the issue.</a>
 				<a href="" class="close">&times;</a></div>
 			</div>
+			<div class="notification-container twelve columns">
+				<div class="alert-box alert">You have not yet been validated as a physician. <a href="#">Click here to complete validation.</a>
+				<a href="" class="close">&times;</a>
+				</div>
+			</div>
 		</div>
 		<section role="main">
 			<div class="register-container">
@@ -59,12 +64,7 @@
                     <header class="form-header">
                         <h3 class="form-title">Create Login</h3>
 
-<<<<<<< HEAD
-<!--                         <p class="form-description">Create a username and password to access qualty, updated, relevant
-                            content in PracticeUpdate.</p> -->
-=======
                         <p class="form-description">Create a username and password to access qualty, updated, relevant content from PracticeUpdate.</p>
->>>>>>> dev-nix
                         <div class="os-user-message">
                         	<div class="panel">
                         		<p>To make this easy, we've brough your <strong>OncologySTAT</strong> information over to <strong>PracticeUpdate</strong>. Please confirm your details and enter a password to continue registration.</p>
@@ -72,56 +72,6 @@
                         </div><!--/.os-user-message-->
                     </header>
                     <!--/.form-header-->
-<<<<<<< HEAD
-										<label for="Email">Email</label>
-                    <input id="Email" name="Email" placeholder="Enter your email" type="text">
-                    <small class="error">Email required</small>
-                    <small class="error">Not a valid email address</small>
-                    <label for="Password">Password </label>
-                    <input id="Password" name="Password" placeholder="Choose a password" type="password">
-                    <small class="error">Invalid Password</small>
-                    <input id="VerifyPassword" name="VerifyPassword" placeholder="Verify Password" type="password">
-                    <small class="error">Passwords do not match</small>
-										<small class="help-block">* must be 6-20 characters (letters, numbers and hyphens are accepted but not spaces)</small>
-                    <hr>
-<div class="form-row">
-	<div class="six columns">
-		<!-- <label for="Password">Name</label> -->
-		<input id="FirstName" name="FirstName" placeholder="First Name" type="text">
-    <small class="error">First name required</small>
-
-	</div><!--/.six.columns-->
-	<div class="six columns">
-		
-		<input id="LastName" name="LastName" placeholder="Last Name" type="text">
-    <small class="error">Last name required</small>
-
-	</div><!--/.six.columns-->
-</div><!--/.form-row-->
-
-<div class="form-row">
-	<div class="six columns">
-		
-	  <select id="CountryId" name="CountryId">
-	      <option value="0">Country of Residence</option>
-	  </select>
-	  <small class="error">Country required</small>
-
-	</div><!--/.six.columns-->
-	<div class="six columns">
-		
-	  <select id="TempState" name="TempState">
-	      <option value="0">State / Territory</option>
-	  </select>
-	  <div class="hide">
-	      <input type="text" id="StateId" name="StateId">
-	  </div><!--/.hide-->
-	  <small class="error">State or Territory required</small>
-
-
-	</div><!--/.six.columns-->
-</div><!--/.form-row-->
-=======
 <fieldset>
 	<legend>Email &amp; Password</legend>
 							<div class="form-row">
@@ -132,35 +82,37 @@
 	                <small class="error">Not a valid email address</small>
 	              </div><!--/.twelve.columns-->
               </div><!--/.form-row-->
-              <div class="form-row">
-              	<div class="twelve columns">
-              	<div class="form-row">
-								<div class="twelve columns form-row-label">
+            	<div class="form-row">
+								<div class="twelve columns">
 									<label>Password</label>
 								</div>
-							</div>
-						</div>
-								<div class="form-row">
-	            <div class="six columns">
-<input id="Password" name="Password" placeholder="Password" type="password">
-                    <small class="error">Invalid Password</small>
-              </div><!--/.six.columns-->
-              <div class="six columns">
-                    <input id="VerifyPassword" name="VerifyPassword" placeholder="Verify Password" type="password">
-                    <small class="error">Passwords do not match</small>
-              </div><!--/.six.columns-->
+							</div><!--/.form-row-->
+							<div class="form-row">
+		            <div class="six columns">
+									<input id="Password" name="Password" placeholder="Password" type="password">
+                  <small class="error">Invalid Password</small>
+	              </div><!--/.six.columns-->
+	              <div class="six columns">
+                  <input id="VerifyPassword" name="VerifyPassword" placeholder="Verify Password" type="password">
+                  <small class="error">Passwords do not match</small>
+	              </div><!--/.six.columns-->
               </div><!--/.form-row-->
 							<div class="form-row">
 								<div class="twelve columns">
-							<small class="help-block">Password must be 6-20 characters (letters, numbers and hyphens are ccepted but not spaces)</small>
+									<small class="help-block">Password must be 6-20 characters (letters, numbers and hyphens are ccepted but not spaces)</small>
 	              </div><!--/.twelve.columns-->
               </div><!--/.form-row-->
 </fieldset><!--/Professional Information-->
 
 
-                    <hr>
+                    <!-- <hr> -->
 <fieldset>
 	<legend>Personal Information</legend>
+          	<div class="form-row">
+							<div class="twelve columns">
+								<label>Name</label>
+							</div>
+						</div><!--/.form-row-->
 						<div class="form-row">
 	            <div class="six columns">
                     <input id="FirstName" name="FirstName" placeholder="First Name" type="text" value="">
@@ -171,6 +123,11 @@
                     <small id="LastNameerror" class="error">Last name is required</small>
                 </div>
             </div>
+          	<div class="form-row">
+							<div class="twelve columns">
+								<label>Location</label>
+							</div>
+						</div><!--/.form-row-->
 						<div class="form-row">
                 <div class="six columns">
                     <select data-val="true" data-val-number="The field CountryId must be a number." id="CountryId" name="CountryId"><option value="">Country of Residence</option>
@@ -190,7 +147,6 @@
             </div>
                   
 
->>>>>>> dev-nix
                     <div class="row hide" id="ErrorDiv">
                         <div id="ErrorDivMsg"></div>
                     </div>

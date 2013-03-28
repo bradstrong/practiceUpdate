@@ -60,8 +60,8 @@
 @import "my-custom-style";
 @import "ie7";
 @import "ie8";
-@import "joyride";
-@import "module-related-tags";
+// @import "joyride";
+// @import "module-related-tags";
 
 /* InnerRow() negative margin override for IE7 + 8 */
 html.lt-ie9{
@@ -128,25 +128,26 @@ html.lt-ie9{
 	}
 
 	/* Sitewide layout containers */
+	.stream-container,
+	.explore-container,
+	.cme-container,
+	.single-item-container,
+	.register-container,
+	.user-directory-container,
+	.user-profile-container,
+	.channel-list-container,
+	.static-container{
+		float: left;
+	}
+	#aux, .aux, .recommended{float: right;}
 
-.stream-container,
-.explore-container,
-.cme-container,
-.single-item-container,
-.register-container,
-.user-directory-container,
-.user-profile-container,
-.channel-list-container,
-.static-container{
-	float: left;
-}
-#aux, .aux, .recommended{float: right;}
-
-/* Preferences + Registration */
-.pref-container{
-	.pref-tabs{float: left;}
-	.pref-tabs-right{float: right;}
-}
+	/* Preferences + Registration */
+	.pref-container{
+		.pref-tabs{float: left;}
+		.pref-tabs-content{float: right;}
+	}
+	/* Landing Page*/
+	.brand-container{float:left !important;}
 } /* End lt-ie9 */
 
 /* Display fixes for IE6 + 7 */

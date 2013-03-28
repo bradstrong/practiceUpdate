@@ -176,9 +176,11 @@
 				</li>
 				<li id="simple3Tab">
 				<form action="#" method="#">
-					<header class="form-header">
+<fieldset id="PVstatus2">
+<legend>Professional Info</legend>
+<!-- 					<header class="form-header">
 							<h3 class="form-title">Professional Info</h3>
-					</header>
+					</header> -->
 					<label>Workplace</label>
 					<select>
 						<option>Select workplace</option>
@@ -194,40 +196,53 @@
 						<option>Select area of practice</option>
 					</select>
 					<small class="error">Primary area of practice is required</small>
-
+</fieldset>
 
 
 <!-- HCP VALIDATION FLOW -->
 
 <fieldset id="PVstatus2">
 <legend>License Info</legend>
-<br/>
-<div class="alert">
+<div class="panel">
 	<!-- <button class="close" data-dismiss="alert">×</button> -->
-<strong>Hmmm... this isn't working.</strong> Please provide some information about yourself so that we can confirm your status as a US physician.
+Validating as a Physician is optional, but will provide access to physician-only features in the future.
 </div><!--/.alert-->
 
-<div class="alert-box alert">
+<div class="alert-box success">
 	<!-- <button class="close" data-dismiss="alert">×</button> -->
-	<span>Oops!</span>
-	Still not working. We’re sorry.  We’re not able to match your information against the databases we have access to. Please review the information above for accuracy. If everything looks correct and the problem persists, please contact an official PracticeUpdate human by emailing us at <a href="mailto:practiceupdate@elsevier.com" target="_blank">practiceupdate@elsevier.com</a>.
+	You've been successfully validated.
+</div><!--/.alert-box-->
+
+<div class="alert-box">
+	<!-- <button class="close" data-dismiss="alert">×</button> -->
+	Please provide some information about yourself so that we can confirm your status as a US physician. We’re not able to match your information against the databases we have access to. Please review the information above for accuracy.
+</div><!--/.alert-box-->
+
+<div class="alert-box">
+	<!-- <button class="close" data-dismiss="alert">×</button> -->
+	Still not working. We’re sorry.  We’re not able to match your information against the databases we have access to. Please review the information above for accuracy. If everything looks correct and the problem persists, please contact an official PracticeUpdate human by emailing us at <a href="mailto:practiceupdate@elsevier.com" target="_blank">practiceupdate@elsevier.com</a>. Don't know your NPI? Look it up here:https://npiregistry.cms.hhs.gov/NPPESRegistry/NPIRegistrySearch.do?subAction=reset&searchType=ind
 </div><!--/.alert-box-->
 
 <!-- radio -->
-<div class="control-group">
-  <label class="control-label" for="pvidnumRadio">Please indicate which number you will provide:</label>
-  <div class="controls">
+<div class="form-row">
+	<div class="twelve columns">
+  <label for="pvidnumRadio">Please indicate which number you will provide:</label>
+  </div>
+</div>
+<div class="form-row">
+	<div class="six columns">
     <label class="radio inline">
       <input type="radio" name="pvidnumRadio" id="pvidnumRadio1" value="npi"> NPI Number
     </label>
+  </div>
+	<div class="six columns">
     <label class="radio inline">
       <input type="radio" name="pvidnumRadio" id="pvidnumRadio2" value="license"> License Number
     </label>
-  </div><!--/.controls-->
-</div><!--/.control-group-->
-<div class="control-group">
-	<!-- <label class="control-label" for="input06">License Number</label> -->
-  <div class="controls">
+  </div>
+</div>
+<div class="form-row">
+	<div class="twelve columns">
     <input type="text" class="input-xlarge disabled" id="input06" placeholder="Choose from the options above" disabled="Make a selection above">
     <!-- <span class="help-inline">Please enter your License number.</span> -->
     <!-- <p class="help-block">Enter your License number.</p> -->
