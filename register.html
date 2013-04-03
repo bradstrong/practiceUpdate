@@ -26,7 +26,7 @@
     <![endif]-->
 
 </head>
-<body id="update" class="update off-canvas">
+<body id="register" class="page-register update off-canvas">
   <div class="widget ad">
     <div id="leaderboard" class="Breast ad-container">
       <div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
@@ -51,7 +51,7 @@
 		<section role="main">
 			<div class="register-container">
 			<div id="RegisterDiv">
-				<!-- 
+				<!--
 				// While this text is in the wireframe, it seems unnecessary. I'm commenting it out until we reach a final decision.
 				<div>
 					<p>Let's get you started using PracticeUpdate! Just a few steps</p>
@@ -60,20 +60,20 @@
 					<li>Click Register and we will send you an email to confirm and validate your account registration.</li>
 					</ol>
 				</div> -->
-                <form action="/User/Register" id="formRegister" method="post">
-                    <header class="form-header">
-                        <h3 class="form-title">Create Login</h3>
+        <form action="/User/Register" id="formRegister" method="post">
+            <header class="form-header">
+                <h3 class="form-title">Create Login</h3>
 
-                        <p class="form-description">Create a username and password to access qualty, updated, relevant content from PracticeUpdate.</p>
-                        <div class="os-user-message">
-                        	<div class="panel">
-                        		<p>To make this easy, we've brough your <strong>OncologySTAT</strong> information over to <strong>PracticeUpdate</strong>. Please confirm your details and enter a password to continue registration.</p>
-                        	</div><!--/.panel-->
-                        </div><!--/.os-user-message-->
-                    </header>
-                    <!--/.form-header-->
-<fieldset>
-	<legend>Email &amp; Password</legend>
+                <p class="form-description">Create a username and password to access qualty, updated, relevant content from PracticeUpdate.</p>
+                <div class="os-user-message">
+                	<div class="panel">
+                		<p>To make this easy, we've brought your <strong>OncologySTAT</strong> information over to <strong>PracticeUpdate</strong>. Please confirm your details and enter a password to continue registration.</p>
+                	</div><!--/.panel-->
+                </div><!--/.os-user-message-->
+            </header>
+            <!--/.form-header-->
+						<fieldset>
+							<legend>Email &amp; Password</legend>
 							<div class="form-row">
 								<div class="twelve columns">
 		            	<label>Email</label>
@@ -102,64 +102,60 @@
 									<small class="help-block">Password must be 6-20 characters (letters, numbers and hyphens are ccepted but not spaces)</small>
 	              </div><!--/.twelve.columns-->
               </div><!--/.form-row-->
-</fieldset><!--/Professional Information-->
+						</fieldset><!--/Email & Password-->
+
+						<fieldset>
+							<legend>Personal Information</legend>
+		          	<div class="form-row">
+									<div class="twelve columns">
+										<label>Name</label>
+									</div>
+								</div><!--/.form-row-->
+								<div class="form-row">
+			            <div class="six columns">
+		                    <input id="FirstName" name="FirstName" placeholder="First Name" type="text" value="">
+		                    <small id="FirstNameerror" class="error">First name is required</small>
+		                </div>
+		                <div class="six columns">
+		                    <input id="LastName" name="LastName" placeholder="Last Name" type="text" value="">
+		                    <small id="LastNameerror" class="error">Last name is required</small>
+		                </div>
+		            </div>
+		          	<div class="form-row">
+									<div class="twelve columns">
+										<label>Location</label>
+									</div>
+								</div><!--/.form-row-->
+								<div class="form-row">
+		                <div class="six columns">
+		                    <select data-val="true" data-val-number="The field CountryId must be a number." id="CountryId" name="CountryId"><option value="">Country of Residence</option>
+		                    </select>
+		                    <small id="CountryIderror" class="error ">Country is required</small>
+		                </div>
+		                <div class="six columns">
+		                    <div id="StateRow" class="">
+		                        <select data-val="true" data-val-number="The field StateId must be a number." id="TempState" name="StateId"><option value="">Select State or Territory</option>
+		                        </select>
+		                        <small id="TempStateerror" class="error">State or Territory is required</small>
+		                        <div class="is-hidden">
+		                            <input type="text" id="StateId" name="StateId">
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="row hide" id="ErrorDiv">
+		                <div id="ErrorDivMsg"></div>
+		            </div>
+		          </fieldset><!--/Personal Information -->
 
 
-                    <!-- <hr> -->
-<fieldset>
-	<legend>Personal Information</legend>
-          	<div class="form-row">
-							<div class="twelve columns">
-								<label>Name</label>
-							</div>
-						</div><!--/.form-row-->
-						<div class="form-row">
-	            <div class="six columns">
-                    <input id="FirstName" name="FirstName" placeholder="First Name" type="text" value="">
-                    <small id="FirstNameerror" class="error">First name is required</small>
-                </div>
-                <div class="six columns">
-                    <input id="LastName" name="LastName" placeholder="Last Name" type="text" value="">
-                    <small id="LastNameerror" class="error">Last name is required</small>
-                </div>
+            <div class="form-action">
+                <a id="Submit" class="form-submit">Register</a>
+                <a id="Cancel" class="form-cancel" data-reveal-id="modal-password-reset-confirmation"
+                   href="javaScript:void(0);">Cancel</a>
             </div>
-          	<div class="form-row">
-							<div class="twelve columns">
-								<label>Location</label>
-							</div>
-						</div><!--/.form-row-->
-						<div class="form-row">
-                <div class="six columns">
-                    <select data-val="true" data-val-number="The field CountryId must be a number." id="CountryId" name="CountryId"><option value="">Country of Residence</option>
-                    </select>
-                    <small id="CountryIderror" class="error ">Country is required</small>
-                </div>
-                <div class="six columns">
-                    <div id="StateRow" class="">
-                        <select data-val="true" data-val-number="The field StateId must be a number." id="TempState" name="StateId"><option value="">Select State or Territory</option>
-                        </select>
-                        <small id="TempStateerror" class="error">State or Territory is required</small>
-                        <div class="is-hidden">
-                            <input type="text" id="StateId" name="StateId">
-                        </div>
-                    </div>
-                </div>
-            </div>
-                  
-
-                    <div class="row hide" id="ErrorDiv">
-                        <div id="ErrorDivMsg"></div>
-                    </div>
-                  </fieldset><!--/Personal Information -->
-
-
-                    <div class="form-action">
-                        <a id="Submit" class="form-submit">Register</a>
-                        <a id="Cancel" class="form-cancel" data-reveal-id="modal-password-reset-confirmation"
-                           href="javaScript:void(0);">Cancel</a>
-                    </div>
-                    <!--/.form-action-->
-                </form>
+            <!--/.form-action-->
+        </form>
 	      </div><!--/#RegisterDiv-->
   <div id="ConfirmationDiv" class="">
 		<div class="alert-box">
@@ -173,30 +169,26 @@
 
 			</div><!--/.register-container-->
 			<div class="aux">
-				<div class="cta account-question">
-					<div class="cta-title"><span class="cta-title-text">Already have an account?</span></div><!--/.cta-title-->
-					<div class="cta-action">
-						<a class="button" id="LoginNow" href="javaScript:void(0);"><span class="cta-button-text">Log in Now</span></a>
-					</div> <!--/.cta-action-->
-				</div><!--/.account-question-->
 			</div><!--/.aux-->
 	</section><!--/[role="main"]-->
 
 	</div><!--/.page-content-->
-	<footer class="page-footer">
-	</footer><!-- /.page-footer -->
+	<div class="page-footer-container">
+		<footer class="page-footer">
+		</footer><!-- /.page-footer -->
+	</div><!--/.page-footer-container-->
 
 	<!-- Included JS Files (Uncompressed) -->
   <script src="assets/js/foundation/jquery.js"></script>
 <!--   <script src="assets/js/plugins-ck.js"></script> -->
- 
+
 	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>	
+	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.forms.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.navigation.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>	
+	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
@@ -205,77 +197,5 @@
 	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
 	<script src="assets/js/mustache.js"></script>
 	<script src="assets/js/foundation/app.js"></script>
-
-	<!-- Mustache - homepage feed template -->
-	<script>
-
-
-	<!-- Mustache - homepage feed template -->
-	$.getJSON('content/json/feed.json', function(data) {
-		$.get('assets/mustache/feed-item.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.stream-container').html(html);
-		});
-
-	});
-
-	<!-- Mustache - homepage recent template -->
-	$.getJSON('content/json/recent.json', function(data) {
-		$.get('assets/mustache/recent.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.recent').html(html);
-		});
-
-	});
-
-	<!-- Mustache - homepage user-console template -->
-	$.getJSON('content/json/user-console.json', function(data) {
-		$.get('assets/mustache/user-console.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.user-console').html(html);
-		});
-	});
-
-	<!-- Mustache - homepage user-topic template -->
-//	$.getJSON('content/json/user-topic.json', function(data) {
-//		$.get('assets/mustache/user-topic.mustache', function(template) {
-			//alert('Load was performed.');
-//	    var html = Mustache.to_html(template, data);
-//	    $('.user-topic').html(html);
-//		});
-//	});
-
-	<!-- Mustache - homepage topic-spotlight template -->
-	$.getJSON('content/json/topic-spotlight.json', function(data) {
-		$.get('assets/mustache/topic-spotlight.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.topic-spotlight').html(html);
-		});
-	});
-
-		<!-- Mustache - homepage ad template -->
-		$.get('assets/mustache/ad.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.ad').html(html);
-		});
-
-	<!-- Mustache - homepage meet-experts -->
-	$.get('assets/mustache/cta-meet-experts.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.cta.meet-experts').html(html);
-		});
-
-    $.get('assets/mustache/modal-cancel-registration.mustache', function(template) {
-        var html = Mustache.to_html(template);
-        $('body').append(html);
-    });
-
-	</script>
 </body>
 </html>

@@ -13,18 +13,18 @@
 	<meta content="View all the latest news and articles, personalized for you, in a single view" name="description">
 	<meta content="Cardiology, Dermatology, Ophthalmology, Optometry, Internal Medicine, Oncology, Urology" name="keywords">
 	<title>
- Update : PracticeUpdate
+ Preferences : PracticeUpdate
 	</title>
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="assets/css/app.css" type="text/css" />
-	<link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" /> 
+	<link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" />
 
     <script src="assets/js/foundation/jquery.js" type="text/javascript"></script>
     <script src="assets/js/foundation/modernizr.foundation.js" type="text/javascript"></script>
     <script src="assets/js/Common.js" type="text/javascript"></script>
     <script src="assets/js/cookie.js" type="text/javascript"></script>
-    
+
     <script src="assets/js/DART/htmlParser.js" type="text/javascript"></script>
     <script src="assets/js/DART/postscribe.js" type="text/javascript"></script>
     <script src="assets/js/DART/DART.js" type="text/javascript"></script>
@@ -37,7 +37,7 @@
 </head>
 
 <body class="off-canvas slide-nav page-preferences">
-    
+
     <div class="widget ad">
         <div id="leaderboard" class="hide">
 	        <div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
@@ -86,6 +86,7 @@
 				<li><a href="#simple3">Professional Info</a></li>
 				<li class="disabled"><a href="#simple4">Content Preferences</a></li>
 				<li><a href="#simple5">Subscription</a></li>
+				<li><a href="#simple6">HCP only</a></li>
 			</ul>
 		</div><!--/#pref-tabs-->
 	<div id="pref-tabs-content">
@@ -110,6 +111,43 @@
 					<header class="form-header">
 							<h3 class="form-title">Email &amp; Password</h3>
 					</header>
+					<fieldset>
+						<legend>Email &amp; Password</legend>
+						<div class="form-row">
+							<div class="six columns">
+	            	<label>Email</label>
+                <input id="Email" name="Email" placeholder="Email" type="text">
+                <small class="error">Email required</small>
+                <small class="error">Not a valid email address</small>
+               </div><!--/.six.columns-->
+               <div class="six columns">
+               <label>Password</label>
+								<div class="" id="ChangePasswordbtnDiv">
+									<a class="button" id="ChangePasswordbtn">Change Password</a>
+								</div>
+               </div><!--/.six.colums-->
+            </div><!--/.form-row-->
+          	<div class="form-row">
+							<div class="twelve columns">
+								<label>Password</label>
+							</div>
+						</div><!--/.form-row-->
+						<div class="form-row">
+	            <div class="six columns">
+								<input id="Password" name="Password" placeholder="Password" type="password">
+                <small class="error">Invalid Password</small>
+              </div><!--/.six.columns-->
+              <div class="six columns">
+                <input id="VerifyPassword" name="VerifyPassword" placeholder="Verify Password" type="password">
+                <small class="error">Passwords do not match</small>
+              </div><!--/.six.columns-->
+            </div><!--/.form-row-->
+						<div class="form-row">
+							<div class="twelve columns">
+								<small class="help-block">Password must be 6-20 characters (letters, numbers and hyphens are ccepted but not spaces)</small>
+              </div><!--/.twelve.columns-->
+            </div><!--/.form-row-->
+					</fieldset><!--/Email & Password-->
 					<label>Email</label>
 					<span class="help-block">Your email address is your User Name. If you change it, your new User Name will be update.</span>
 					<input type="text" placeholder="Email (User Name)"/>
@@ -176,7 +214,7 @@
 				</li>
 				<li id="simple3Tab">
 				<form action="#" method="#">
-<fieldset id="PVstatus2">
+<fieldset>
 <legend>Professional Info</legend>
 <!-- 					<header class="form-header">
 							<h3 class="form-title">Professional Info</h3>
@@ -197,61 +235,6 @@
 					</select>
 					<small class="error">Primary area of practice is required</small>
 </fieldset>
-
-
-<!-- HCP VALIDATION FLOW -->
-
-<fieldset id="PVstatus2">
-<legend>License Info</legend>
-<div class="panel">
-	<!-- <button class="close" data-dismiss="alert">×</button> -->
-Validating as a Physician is optional, but will provide access to physician-only features in the future.
-</div><!--/.alert-->
-
-<div class="alert-box success">
-	<!-- <button class="close" data-dismiss="alert">×</button> -->
-	You've been successfully validated.
-</div><!--/.alert-box-->
-
-<div class="alert-box">
-	<!-- <button class="close" data-dismiss="alert">×</button> -->
-	Please provide some information about yourself so that we can confirm your status as a US physician. We’re not able to match your information against the databases we have access to. Please review the information above for accuracy.
-</div><!--/.alert-box-->
-
-<div class="alert-box">
-	<!-- <button class="close" data-dismiss="alert">×</button> -->
-	Still not working. We’re sorry.  We’re not able to match your information against the databases we have access to. Please review the information above for accuracy. If everything looks correct and the problem persists, please contact an official PracticeUpdate human by emailing us at <a href="mailto:practiceupdate@elsevier.com" target="_blank">practiceupdate@elsevier.com</a>. Don't know your NPI? Look it up here:https://npiregistry.cms.hhs.gov/NPPESRegistry/NPIRegistrySearch.do?subAction=reset&searchType=ind
-</div><!--/.alert-box-->
-
-<!-- radio -->
-<div class="form-row">
-	<div class="twelve columns">
-  <label for="pvidnumRadio">Please indicate which number you will provide:</label>
-  </div>
-</div>
-<div class="form-row">
-	<div class="six columns">
-    <label class="radio inline">
-      <input type="radio" name="pvidnumRadio" id="pvidnumRadio1" value="npi"> NPI Number
-    </label>
-  </div>
-	<div class="six columns">
-    <label class="radio inline">
-      <input type="radio" name="pvidnumRadio" id="pvidnumRadio2" value="license"> License Number
-    </label>
-  </div>
-</div>
-<div class="form-row">
-	<div class="twelve columns">
-    <input type="text" class="input-xlarge disabled" id="input06" placeholder="Choose from the options above" disabled="Make a selection above">
-    <!-- <span class="help-inline">Please enter your License number.</span> -->
-    <!-- <p class="help-block">Enter your License number.</p> -->
-  </div>
-</div>
-<!-- end radio -->
-</fieldset>
-
-<!-- END HCP VALIDATION FLOW -->
 
 
 					<div class="form-action">
@@ -303,7 +286,7 @@ Validating as a Physician is optional, but will provide access to physician-only
 								<label><input type="checkbox">
 									Cardiology</label>
 							</li>
-							
+
 						</ul>
 						<h4>Topic</h4>
 						<p>Topic
@@ -510,7 +493,75 @@ Each channel features content on many topics. You can select a few or all in eac
 					</div>
 					</form>
 				</li>
-			</ul>			
+				<li id="simple6Tab">
+									<!-- HCP VALIDATION FLOW -->
+					<div class="panel future-features">
+						Healthcare Professionals<br/>
+						You will have the ability to access future features and functionality of PracticeUpdate which are limited to validated healthcare professionals. Stay tuned!
+					</div><!--/.panel-->
+					<div class="panel bcf-invite">
+					Healthcare Professionals<br/>
+<img src="content/img/cta/breast-cancer-forum-cta.png" alt="Breast Cancer Fourm Logo" /> <a href="https://thoughtleaders.within3.com/public/oncologystat_sign_in" title="PraciceUpdate Breast Cancer Forum">Join the conversation</a> with other validated healthcare professionals to discuss all things breast cancer.
+<a class="button" href="/update/" title="PracticeUpdate : Update">Get started with PracticeUpdate</a>
+					</div><!--/.panel-->
+				<form>
+					<fieldset>
+					<legend>License Info</legend>
+					<div class="panel pv-status">
+Gain access to healthcare provider-only resources which will be available to validated professionals only.
+					</div><!--/.panel.pv-status-->
+					<div class="alert-box success">
+						You've been successfully validated.
+					</div><!--/.alert-box-->
+
+					<div class="alert-box alert">
+					We were unable to match your personal information and NPI number. You can review your <a href="http://www.practiceupdate.com/User/Preferences/?Id=2&ftl=0" title="Preferences: Personal Information">Personal Info</a> or re-enter your NPI number and try again.
+					</div><!--/.alert-box-->
+
+					<div class="alert-box alert">
+					We were unable to match your personal information and NPI number at this time. Skip this step for now, we’ll remind you later.
+					</div><!--/.alert-box-->
+					<a class="button" href="/update/" title="PracticeUpdate : Update">Start using PracticeUpdate</a>
+
+					<!-- radio -->
+					<div class="form-row">
+						<div class="twelve columns">
+					  <label for="pvidnumRadio">Please indicate which number you will provide:</label>
+					  </div>
+					</div>
+					<div class="form-row">
+						<div class="six columns">
+					    <label class="radio inline">
+					      <input type="radio" name="pvidnumRadio" id="pvidnumRadio1" value="npi"> NPI Number
+					    </label>
+					  </div>
+						<div class="six columns">
+					    <label class="radio inline">
+					      <input type="radio" name="pvidnumRadio" id="pvidnumRadio2" value="license"> License Number
+					    </label>
+					  </div>
+					</div>
+					<div class="form-row">
+						<div class="twelve columns">
+					    <input type="text" class="disabled" id="input06" placeholder="Choose from the options above" disabled="Make a selection above">
+					    <a href="https://npiregistry.cms.hhs.gov/NPPESRegistry/NPIRegistrySearch.do?subAction=reset&searchType=ind" target="_blank" title="NPI Registry Search">Don't know your NPI? Look it up.</a>
+					    <!-- <span class="help-inline">Please enter your License number.</span> -->
+					    <!-- <p class="help-block">Enter your License number.</p> -->
+					  </div>
+					</div>
+					<!-- end radio -->
+						<div class="form-action">
+							<a id="Submit" class="form-submit">Save</a>
+							<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Skip for now</a>
+						</div>
+					<div class="alert-box success">
+						NPI confirmed!
+					</div><!--/.alert-box-->
+					</fieldset>
+					</form>
+					<!-- END HCP VALIDATION FLOW -->
+				</li>
+			</ul>
 	</div><!--/#pref-tabs-content-->
 </div><!--/.pref-content-->
 	</div><!--/.pref-container-->
@@ -524,23 +575,10 @@ Each channel features content on many topics. You can select a few or all in eac
 	</section><!--/.[role="complimentary"]#sidebar-->
 <!--/.update-block-->
 </div>
-	<footer class="page-footer">
-    <div class="footer-section-container" id="els-global-footer">
-	    <div class="footer-section">
-		    <div class="widget els-branding">			
-			    <img alt="Elsevier Logo" src="/content/img/elsevier_logo.png" class="els-logo">
-		    </div><!--/.els-branding-->
-		    <div class="widget els-description">			
-			    <p>Elsevier is a leading publisher of health science books and journals, helping to advance medicine by delivering superior education, reference information and decision support tools to doctors, nurses, health practitioners and students. With titles available across a variety of media&mdash;print, online and handheld, we are able to supply the information you need in the most convenient format.</p>
-			    <p>Copyright <span class="sc-copy">&copy;</span> 2012 Elsevier Inc. All rights reserved.</p>
-		    </div><!--/.els-description-->
-		    <div class="widget powered-by">
-		    <!-- TODO: ADD Powered By image -->
-			    <img title="2-1.0.707" alt="Powered by OncologySTAT" src="/content/img/powered-by.png">
-		    </div><!--/.powered-by-->
-	    </div><!--/.footer-section-->
-    </div><!--/.footer-section-container-->
-</footer><!-- /.page-footer -->
+	<div class="page-footer-container">
+		<footer class="page-footer">
+		</footer><!-- /.page-footer -->
+	</div><!--/.page-footer-container-->
 
 	<script src="assets/js/foundation/jquery.foundation.accordion.js" type="text/javascript"></script>
 	<script src="assets/js/foundation/jquery.foundation.alerts.js" type="text/javascript"></script>

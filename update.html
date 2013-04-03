@@ -18,8 +18,8 @@
 <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-57@2x-precomposed.png" />
 <link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-touch-icon-72@2x-precomposed.png" />
 
-<meta name="application-name" content="PracticeUpdate"/> 
-<meta name="msapplication-TileColor" content="#3186a4"/> 
+<meta name="application-name" content="PracticeUpdate"/>
+<meta name="msapplication-TileColor" content="#3186a4"/>
 <meta name="msapplication-TileImage" content="c1da1cf2-3190-4f73-87f2-40d3444b0896.png"/>
 
 	<title>PracticeUpdate : Update</title>
@@ -35,7 +35,7 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="assets/js/practiceupdate-ie.min.js"></script>
     <![endif]-->
-    
+
 </head>
 <body id="update" class="update off-canvas page-update">
 	<div class="widget ad" id="leaderboardouter">
@@ -53,7 +53,7 @@
 	</div>
 
 	<div class="widget ad">
-		<div id="leaderboard" class="Breast ad-container">
+		<div id="leaderboard" data-practiceupdate-dartzone="breast" class="ad-container">
 			<div class="ad-title">
 				<span class="ad-title-text">advertisement</span>
 			</div><!--/.ad-title-->
@@ -67,14 +67,17 @@
 		<section role="main">
 			<div class="stream-container">
 			</div><!--/.stream-container-->
-			<div id="aux" class="recommended">
+			<div id="aux" class="aux">
+				<div class="cta meet-experts">
+				</div><!--/.cta/meet-experts-->
 				<div class="widget recent">
 				</div><!--/.widget recent-->
 				<div class="widget ad is-loading">
 				</div><!--/.widget.ad-->
-			</div><!--/.recommended-->
+				<div class="widget ad is-loading">
+				</div><!--/.widget.ad-->
+			</div><!--/#aux.aux-->
 		</section><!--/[role="main"]-->
-
 		<section id="sidebar" role="complementary">
 			<div class="dashboard">
 				<div class="user-console">
@@ -87,8 +90,10 @@
 				</div>
 				<div class="component topic-spotlight">
 				</div><!--/.component.topic-spotlight-->
-				<div class="cta meet-experts">
-				</div><!--/.cta/meet-experts-->
+				<div class="cta bcf-01">
+				</div><!--/.cta.bcf-01-->
+				<div class="cta bcf-02">
+				</div><!--/.cta.bcf-02-->
 				<div class="cta account-question">
 					<div class="cta-title"><span class="cta-title-text">Already have an account?</span></div><!--/.cta-title-->
 					<div class="cta-action">
@@ -106,14 +111,14 @@
 	<!-- Included JS Files (Uncompressed) -->
   <script src="assets/js/foundation/jquery.js"></script>
 <!--   <script src="assets/js/plugins-ck.js"></script> -->
- 
+
 	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>	
+	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.forms.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.navigation.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>	
+	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
 	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
@@ -121,7 +126,7 @@
 	<script src="assets/js/foundation/jquery.placeholder.js"></script>
 	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
 	<script src="assets/js/mustache.js"></script>
-	
+
 	<script src="assets/js/foundation/jquery.foundation.joyride.js"></script>
 
 	<script src="assets/js/foundation/app.js"></script>
@@ -133,15 +138,15 @@
 	<!-- Mustache - homepage feed template -->
 	<script>
 //	(function($){
-//		
+//
 //		var activeLoads = 0;
-//		
+//
 //		window.loadTemplate = function(templateUri, data, callback){
-//			
+//
 //			activeLoads++;
-//			
+//
 //			$.getJSON(templateUri, function(template, data) {
-//				
+//
 //				activeLoads--;
 //
 //				callback(data);
@@ -222,10 +227,28 @@
 	    $('.cta.meet-experts').html(html);
 		});
 
+	<!-- Mustache - homepage bcf-01 -->
+	$.getJSON('content/json/cta-bcf-01.json', function(data) {
+	console.log(data);
+		$.get('assets/mustache/cta.mustache', function(template) {
+	    var html = Mustache.to_html(template, data);
+	    $('.bcf-01').html(html);
+		});
+	});
+
+	<!-- Mustache - homepage bcf-02 -->
+	$.getJSON('content/json/cta-bcf-02.json', function(data) {
+	console.log(data);
+		$.get('assets/mustache/cta.mustache', function(template) {
+	    var html = Mustache.to_html(template, data);
+	    $('.bcf-02').html(html);
+		});
+	});
+
 	</script>
-	
+
 	<ol id="practiceupdate-tour" class="joyride-stoplist">
-<!-- 
+<!--
 Stop 1: Update tab
  Header: Update
  Content: A personalized view of the latest news, journal scans, and expert commentaries
@@ -247,7 +270,7 @@ Stop 2: Meet our Experts button
 		<h1>Meet our Experts</h1>
 		<p>World-renowned experts that hand select content related to your chosen specialty(s)</p>
 	</li>
-<!-- 
+<!--
 Stop 3: Profile and Settings button
  Header: Profile & Settings
  Content: Update your specialty(s), interests, and notification settings
@@ -257,7 +280,7 @@ Stop 3: Profile and Settings button
 		<h1>Profile & Settings</h1>
 		<p>Update your specialty(s), interests, and notification settings</p>
 	</li>
-<!-- 
+<!--
  Stop 4: Specialty / All My Channels
  Header: Specialty Channels
  Content: The customized view of your selected interests
@@ -267,7 +290,7 @@ Stop 3: Profile and Settings button
 		<h1>Specialty Channels</h1>
 		<p>The customized view of your selected interests</p>
 	</li>
-<!-- 
+<!--
  Stop 5: Spotlights
  Header: Spotlights
  Content: Highlighted topics related to your specialty
@@ -277,7 +300,7 @@ Stop 3: Profile and Settings button
 		<h1>Spotlights</h1>
 		<p>Highlighted topics related to your specialty</p>
 	</li>
- <!--	
+ <!--
  Stop 6: Explore tab
  Header: Explore
  Content: News, Research, Reviews, and Expert Opinions from across your specialty channel.
@@ -287,7 +310,7 @@ Stop 3: Profile and Settings button
 		<h1>Explore</h1>
 		<p>News, Research, Reviews, and Expert Opinions from across your specialty channel.</p>
 	</li>
-<!-- 
+<!--
 Stop 7: Learn tab
  Header: Learn
  Content: CME opportunities and seminal articles
@@ -299,7 +322,7 @@ Stop 7: Learn tab
 	</li>
 </ol>
 <!--/#practiceupdate-tour-->
-<!-- documentation refernce 
+<!-- documentation refernce
 	http://www.zurb.com/playground/jquery-joyride-feature-tour-plugin
 -->
 
@@ -315,8 +338,8 @@ Stop 7: Learn tab
 		setTimeout(function(){
 		  $('.top-bar .toggle-topbar a').click(); }, 500
 		);
-	  }		
-	  
+	  }
+
 	  setTimeout(function(){
 		$("#practiceupdate-tour").joyride({
 		/* Options will go here */
@@ -325,16 +348,16 @@ Stop 7: Learn tab
 
 				setTimeout(function(){
 					$('.joyride-tip-guide[data-index="'+(idx+1)+'"]').addClass('joyride-ready');
-				},100);	
+				},100);
 
 				// After UPDATE for MEET EXPERTS
 				if (idx == 0) {
 				  if (mobileView) {
 					$('.top-bar .toggle-topbar a').click();
 					$('#sidebarButton').click();
-				  }	
+				  }
 				}
-				
+
 				// After SPECIALITY / CHANELS for EXPLORE
 				if (idx == 3) {
 				  if (mobileView) {
@@ -344,15 +367,15 @@ Stop 7: Learn tab
 				}
 			}
 		});
-		
+
 		$('.joyride-tip-guide[data-index="0"]').addClass('joyride-ready');
-		
+
 	  }, 1000);
-	  
-	  
-  });	
-</script>	
-	
-	
+
+
+  });
+</script>
+
+
 </body>
 </html>

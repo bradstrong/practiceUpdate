@@ -197,11 +197,19 @@ p{margin-bottom:$baseFontSize/2;}
 @import "_module-form";
 
 // Alert-Box
-
-.alert-title{
-	color: $white;
-//	font-family: $titleFontFamily;
+.alert-box{
+	.alert-title{
+		color: $white;
+	//	font-family: $titleFontFamily;
+	}
+	&.alert{
+		a{
+			color:$white;
+			text-decoration: underline;
+		}
+	}
 }
+
 
 @import "_module-cta";
 @import "_module-eic-welcome";
