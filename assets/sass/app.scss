@@ -1,0 +1,159 @@
+// Your custom settings file to override Foundation defaults
+@import "settings";
+
+// import settings override
+@import "foundation-overrides";
+
+// Comment out this import if you are customizing you imports below
+// @import "foundation";
+
+// ----------------------------------------
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+@import "compass/css3";
+@import "foundation/settings";
+@import "foundation/functions/all";
+
+// Control which mixins you have access too
+
+@import "foundation/mixins/clearfix";
+@import "foundation/mixins/css-triangle";
+@import "foundation/mixins/font-size";
+
+// Must include next two for semantic grid to work
+
+@import "foundation/mixins/respond-to";
+@import "foundation/mixins/semantic-grid";
+
+@import "modular-scale";
+@import "foundation/common/globals";
+
+// Must include the grid for any responsiveness
+
+@import "foundation/components/grid";
+
+// Control which common styles get compiled
+
+@import "foundation/common/typography";
+@import "foundation/common/forms";
+
+// Control which components you get if customizing
+
+@import "foundation/components/modules/buttons";
+@import "foundation/components/modules/tabs";
+@import "foundation/components/modules/ui";
+@import "foundation/components/modules/topbar";
+@import "foundation/components/modules/navbar";
+@import "foundation/components/modules/orbit";
+@import "foundation/components/modules/reveal";
+@import "foundation/components/modules/offcanvas";
+
+// Media Queries Overrides
+@import "foundation/components/modules/mqueries";
+
+@import "base";
+@import "layout";
+@import "module";
+@import "state";
+@import "theme";
+@import "my-custom-style";
+
+
+/* InnerRow() negative margin override for IE7 + 8 */
+html.lt-ie9{
+	.footer-section,
+	.pref-content,
+	.channel-list,
+	.alert-body,
+	.section-widget,
+	.checked-list,
+	.user-directory-header,
+	.user-directory,
+	.user-profile-header,
+	.profile-card,
+	.profile-details,
+	.user-detail-list,
+	.item-header,
+	.item-content,
+	.single-item,
+	.in-stream,
+	.password-signin,
+	.login-register{
+		margin-left:0 !important;
+		margin-right:0 !important;
+	}
+
+	.footer-section,
+	.pref-content,
+	.channel-list,
+	.alert-body,
+	.section-widget,
+	.checked-list,
+	.user-directory-header,
+	.user-directory,
+	.user-profile-header,
+	.profile-card,
+	.profile-details,
+	.user-detail-list,
+	//.item-header,
+	//.item-content,
+	.single-item,
+	.in-stream,
+	.password-signin,
+	.login-register{
+		padding-left:15px !important;
+		padding-right:15px !important;
+	}
+	#li_update, #li_explore, #li_learn, 	#li_update a, #li_explore a, #li_learn a{
+		text-transform: uppercase !important;
+	}
+
+	.footer-row {
+	@include column(4);
+	}
+
+	/* Marketing Pages */
+	.login-register-container{
+		float: left;
+
+		.password-signin{padding-left:0px !important; padding-right:0px !important;}
+	}
+	#formLogin{float: left;}
+	#formRegisterPrompt{
+		float: right;
+	}
+
+	/* Sitewide layout containers */
+	.stream-container,
+	.explore-container,
+	.cme-container,
+	.single-item-container,
+	.register-container,
+	.user-directory-container,
+	.user-profile-container,
+	.channel-list-container,
+	.static-container{
+		float: left;
+	}
+	#aux, .aux, .recommended{float: right;}
+
+	/* Preferences + Registration */
+	.pref-container{
+		.pref-tabs{float: left;}
+		.pref-tabs-content{float: right;}
+	}
+	/* Landing Page*/
+	.brand-container{float:left !important;}
+} /* End lt-ie9 */
+
+/* Display fixes for IE6 + 7 */
+html.lt-ie8{
+	body, .page-header, .page-content, .page-footer-container{ min-width:1000px;}
+}
+
+//TODO:
+// - float issues on 7 + 8
+// - fix the main nav background color in ie
+// - correct the footer layout in ie 7 + 8 (related to the float issue)
+// - correct the login page layout in ie 7 + 8 (I'm hoping will be fixed once i correct for the float issue)

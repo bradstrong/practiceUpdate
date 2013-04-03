@@ -1,0 +1,105 @@
+@media (min-width: 768px) {
+
+	body#update .joyride-ready.joyride-stop-update {
+		top: 195px !important;
+		margin-left: -40px;
+	}
+
+	body#update.topbar-fixed .joyride-ready.joyride-stop-update {
+		top: 75px !important;
+		position: fixed !important;
+	}
+
+	body#update .joyride-ready.joyride-stop-update .joyride-nub.top {
+		margin-left: 40px;
+	}
+
+	body#update .joyride-ready.joyride-stop-explore {
+		margin-left: -115px;
+		top: 195px !important;
+	}
+
+	body#update .joyride-ready.joyride-stop-explore .joyride-nub.top {
+		margin-left: 130px;
+	}
+
+	body#update.topbar-fixed .joyride-ready.joyride-stop-explore {
+		top: 75px !important;
+		position: fixed !important;
+	}
+
+	body#update .joyride-ready.joyride-stop-learn {
+		margin-left: -225px;
+		top: 195px !important;
+	}
+
+	body#update .joyride-ready.joyride-stop-learn .joyride-nub.top {
+		margin-left: 230px;
+	}
+
+	body#update.topbar-fixed .joyride-ready.joyride-stop-learn {
+		top: 75px !important;
+		position: fixed !important;
+	}
+
+	body#update .joyride-ready.joyride-stop-help {
+		margin-left: -25px;
+		margin-top: -25px;
+	}
+}
+
+.lt-ie9 body#update .joyride-ready.joyride-stop-update {
+    margin-left: -60px;
+}
+
+.lt-ie9 body#update .joyride-ready.joyride-stop-update .joyride-nub.top {
+    margin-left: 60px;
+}
+
+.lt-ie9 body#update .joyride-ready.joyride-stop-explore {
+    margin-left: -145px;
+}
+
+.lt-ie9 body#update .joyride-ready.joyride-stop-explore .joyride-nub.top {
+    margin-left: 145px;
+}
+
+.lt-ie9 body#update .joyride-ready.joyride-stop-learn {
+    margin-left: -235px;
+}
+
+.lt-ie9 body#update .joyride-ready.joyride-stop-learn .joyride-nub.top {
+    margin-left: 235px;
+}
+
+.lt-ie9 body#update .joyride-ready.joyride-ready.joyride-stop-help {
+	margin-left: -25px;
+	margin-top: -25px;
+}
+
+.joyride-stoplist {
+	display:none;
+}
+
+@media (max-width:767px) {
+	body#update .joyride-ready.joyride-stop-update {
+		margin-top: 15px !important;
+	}
+	
+	body#update .joyride-ready.joyride-stop-profile {
+		margin-top: 15px !important;
+	}
+	
+	body#update .joyride-ready.joyride-stop-experts {
+		margin-top: 15px !important;
+	}
+
+	body#update .joyride-ready.joyride-stop-help {
+		margin-top: -15px !important;
+	}
+	
+	body#update .joyride-ready.joyride-stop-help .joyride-nub {
+		left: 45%;
+		margin-left: -120px;
+	}
+}

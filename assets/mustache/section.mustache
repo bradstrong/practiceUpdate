@@ -1,0 +1,26 @@
+<section class="{{section-id}} section-widget">
+<header class="section-header">
+		<h2>{{section-title}}</h2>
+		<p>{{section-description}}</p>
+	</header><!--/.section-header-->
+	<div class="section-content">
+				<ul>
+	{{#items}}
+					<li class="entry">
+					<article>
+						<div class="flag-container">
+							{{#featured}}<span class="flag featured"><i class="icon-bolt"></i> featured</span>{{/featured}}
+							{{#story-of-the-week}}<span class="flag story-of-the-week"><i class="icon-bolt"></i> story of the week</span>{{/story-of-the-week}}
+						</div>
+							<p class="meta title"><a href="#">{{title}}</a></p>
+							<p class="meta author">{{#source}}{{source.name.firstName}} {{source.name.lastName}}{{/source}}</p>
+							{{> _articles}}
+					</article>		
+					</li>
+	{{/items}}
+				</ul>
+			<footer class="section-footer">
+				<p><a href="#" class="view-more-button button">view more</a></p>
+			</footer><!--.section-footer-->
+	</div><!--/.section-content-->
+	</section><!--/.section-content-->

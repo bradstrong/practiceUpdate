@@ -1,0 +1,19 @@
+/* icons for use in all elements */
+@import "font-awesome.scss";
+
+/* global elements */
+select{
+	margin: 0 0 $formSpacing;
+}
+
+object, embed{
+	display:block;
+	height:auto;
+	width:auto;
+}
+
+cite{
+	font-style: normal;
+}
+
+small{font-size:85%;}

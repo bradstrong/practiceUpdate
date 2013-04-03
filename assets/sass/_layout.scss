@@ -1,0 +1,174 @@
+//HEADER
+.page-header{
+	//#main-nav{@extend .right;}
+	@extend	.contain-to-grid;
+}
+
+.page-content{
+	@include outerRow();
+	clear: both;
+	padding-bottom: $baseFontSize*2;
+	@media only screen and (max-width: $topBarBreakPoint) {
+		.page-content{margin-top:$topBarHeightMobile;}
+	}
+}
+
+// FOOTER
+.page-footer{
+	@include outerRow();
+	@include mobileRow();
+	padding:$navBarHeight inherit;
+}
+
+.footer-section-container{
+	@include column(12);
+	.footer-section{
+		@include innerRow();
+		@include mobileRow();
+	}
+}
+
+.footnotes a {
+	word-break: break-all;
+	word-break: break-word;
+	hyphens: auto;
+}
+
+// Flag
+.flag-container{
+	//@include innerRow();
+	@include column(12);
+	font-family: $headerFontFamily;
+	line-height:1.5;
+	padding-top: $baseFontSize/2;
+	padding-bottom: $baseFontSize/2;
+}
+
+//Pages
+
+/* Page Layouts */
+/* !Base Layout */
+#dashboard,.dashboard{}
+#sidebar{padding-right:0;}
+#aux, .aux, .recommended{
+	@include column(5); @include mobileColumn(4);
+	@media only screen and (max-width: $topBarBreakPoint) {
+		padding-top: $baseFontSize * 4;
+		}
+}
+
+/* !Update Layout */
+.stream-container{@include column(7, collapse); @include mobileRow();}
+
+/* !Explore Layout */
+.explore-container{@include column(7, collapse); @include mobileRow();}
+
+/* !Learn Layout */
+.cme-container{@include column(12); @include mobileRow();}
+
+/* !Single Item */
+.single-item-container{@include column(7); @include mobileRow();}
+
+/* !Explore Layout */
+.register-container{@include column(7, collapse); @include mobileRow();}
+
+/* !User Directory */
+.user-directory-container{@include column(7, collapse); @include mobileRow();}
+.user-profile-container{@include column(7, collapse); @include mobileRow();}
+.channel-list-container{@include column(7, collapse); @include mobileRow();}
+
+/* !Static pages */
+.static-container{@include column(7, collapse); @include mobileRow();}
+
+/* Page Specific Styles */
+/* Update Page */
+//.load-more{
+//	@include column(6, center);
+//	text-align: center;
+//	padding-top:$baseFontSize;
+//	padding-bottom:$baseFontSize;
+//}
+
+/*Marketing PAges */
+.page-banner{
+	@include outerRow();
+}
+
+.brand-container{
+	@include column(6);
+}
+
+.login-register-container{
+	@include column(6);
+	padding-top: $baseFontSize/2;
+}
+
+/* Channel Listing Page */
+.channel-list{
+	@include innerRow();
+}
+.single-channel{
+	@include column(6, collapse);
+}
+/* Preferences*/
+.pref-container{@include column(12); @include mobileRow();}
+.pref-content{@include innerRow(); padding:{top:$baseFontSize; bottom:$baseFontSize;}}
+#pref-tabs{@include column(3);}
+#pref-tabs-content{@include column(8);}
+
+/* Static Pages (footer utility links) */
+/*Start: static-container*/
+.static-container{
+	// ul,ol {
+	// 	padding:0 0 0 30px;
+	// }
+
+	li{
+		margin:10px 0 0;
+	}
+	span {
+		font-size:14px;
+		float:left;
+		clear:both;
+		width:100%;
+	}
+	p.phone {
+		font-size:14px;
+		line-height: 22px;
+	}
+	p {
+		font-family: inherit;
+	    font-size: 14px;
+	    font-weight: normal;
+	    line-height: 24px;
+	    margin-bottom: 26px;
+	}
+	span.bolder {
+		font-size:14px;
+		float:none;
+		clear:none;
+		font-weight:bold;
+		width:auto;
+	}
+	h2 {
+		font-size:22px;
+		font-weight:bold;
+		text-transform:uppercase;
+		margin:0 0 15px;
+	}
+	h3 {
+		font-size: 18px;
+	    font-weight: normal;
+	    margin: 0 0 6px;
+	}
+
+	h4 {
+		font-size:16px;
+	}
+	p.phone-contact {
+		margin:-30px 0 26px;
+	}
+	.links {
+		margin:0 20px 20px 0;
+	}
+}

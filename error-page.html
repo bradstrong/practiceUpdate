@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	<meta name="description" content="Browse any healthcare topic for related News, Journal Scans and Expert Opinion.">
+	<!-- TODO: Meta Tag descriptions for the Explore page
+	<meta name="description" content="" />
+-->
+	<title>PracticeUpdate : Explore</title>
+
+	<!-- Include CSS Files -->
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+	<!-- Include Modernizr -->
+	<script src="assets/js/foundation/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+
+</head>
+	<body id="page" class="explore off-canvas slide-nav logged-out">
+  <div class="widget ad">
+    <div id="leaderboard" class="Breast ad-container">
+      <div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
+      <div id="leaderboardcontent" class="ad-content">
+			</div><!--.ad-content-->
+		</div><!--/#leaderboard.ad-container-->
+  </div><!--/.widget.ad-->
+	<div class="page-header">
+	</div><!--/.page-header-->
+	<div class="page-content">
+	<section role="main">
+		<div class="explore-container">
+			<div class="explore-feature">
+				<div class="feature-item">
+					<!-- !#story-of-the-week -->
+					<section id="story-of-the-week" class="">
+						<header class="section-header">
+							<h1>HTTP Error 500 Internal server error</h1>
+							<p>{Error message}</p>
+						</header><!--/.section-header-->						
+							
+					</section><!--/#story-of-the-week-->
+				</div><!--/.feature-item-->
+			</div><!--/.explore-feature-->			
+		</div><!--/.explore-container-->
+		<div class="recommended">
+			<div class="widget recent">
+			</div><!--/.widget recent-->
+			<div class="ad">
+				<img src="http://placehold.it/300x250" align="ad" title="ad" />
+			</div><!--/.ad-->
+		</div><!--/.recommended-->
+	</section><!--/[role="main"]-->
+	<section id="sidebar" role="complementary">
+		<div class="dashboard">
+			<div class="panel cta register">
+				<p><!-- Meet Our Experts --> Become a member to customize this page.<p>
+				<a class="button" href="#action-register">Register for free</a>
+			</div><!--/.panel.cta.register-->
+			<div class="component user-console">
+			</div><!--/.component.user-console-->
+			<div class="component user-topic">
+			</div><!--/.component.user-topic-->
+			<div class="component topic-spotlight">
+			</div><!--/.component.topic-spotlight-->
+			<div class="cta meet-experts">
+			</div><!--/.cta/meet-experts-->
+		</div><!--/.sidebar-->
+	</section><!--/.[role="complimentary"]-->
+	</div><!--/.page-content-->
+	<div class="page-footer-container">
+		<footer class="page-footer">
+		</footer><!-- /.page-footer -->
+	</div><!-- /.page-footer-container -->
+
+	<!-- Included JS Files (Uncompressed) -->
+  <script src="assets/js/foundation/jquery.js"></script>
+
+	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>	
+	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.forms.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.navigation.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>	
+	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.tooltips.js"></script>
+	<script src="assets/js/foundation/jquery.placeholder.js"></script>
+	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
+
+	<script src="assets/js/foundation/app.js"></script>
+
+	<script src="assets/js/mustache.js"></script>
+
+	<!-- Mustache - homepage feed template -->
+	<script>
+	//<!-- Mustache - Explore News template -->
+	$.getJSON('content/json/explore_news.json', function(data) {
+		$.get('assets/mustache/section.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.explore-sections').prepend(html);
+		});
+	});
+
+	//<!-- Mustache - Explore Research template -->
+	$.getJSON('content/json/explore_research.json', function(data) {
+		$.get('assets/mustache/section.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.explore-sections').prepend(html);
+		});
+	});
+
+	//<!-- Mustache - Explore Research template -->
+	$.getJSON('content/json/explore_review.json', function(data) {
+		$.get('assets/mustache/section.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.explore-sections').prepend(html);
+		});
+	});
+
+	//<!-- Mustache - Explore Expert Opinion template -->
+	$.getJSON('content/json/explore_expert-opinion.json', function(data) {
+		$.get('assets/mustache/section.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.explore-sections').prepend(html);
+		});
+	});
+
+	//<!-- Mustache - homepage recent template -->
+	$.getJSON('content/json/recent.json', function(data) {
+		$.get('assets/mustache/recent.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.recent').html(html);
+		});
+	});
+
+	<!-- Mustache - homepage user-console template -->
+	$.getJSON('content/json/user-console.json', function(data) {
+		$.get('assets/mustache/user-console.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.user-console').html(html);
+		});
+	});
+
+	<!-- Mustache - homepage user-topic template -->
+	$.getJSON('content/json/user-topic.json', function(data) {
+		$.get('assets/mustache/user-topic.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.user-topic').html(html);
+		});
+	});
+
+	<!-- Mustache - homepage topic-spotlight template -->
+	$.getJSON('content/json/topic-spotlight.json', function(data) {
+		$.get('assets/mustache/topic-spotlight.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.topic-spotlight').html(html);
+		});
+	});	
+
+			<!-- Mustache - homepage ad template -->
+		$.get('assets/mustache/ad.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template);
+	    $('.ad').html(html);
+		});
+
+	<!-- Mustache - homepage footer template -->
+	$.get('assets/mustache/page-footer.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template);
+	    $('.page-footer').html(html);
+		});
+
+	<!-- Mustache - homepage meet-experts -->
+	$.get('assets/mustache/cta-meet-experts.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template);
+	    $('.cta.meet-experts').html(html);
+		});
+
+	</script>
+
+</body>
+</html>

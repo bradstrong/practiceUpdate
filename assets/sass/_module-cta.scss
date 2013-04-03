@@ -1,0 +1,43 @@
+// CTA
+
+// <div class="cta meet-experts">
+//     <div class="cta-title">
+//             <span class="cta-title-text"></span>
+//     </div>
+//     <div class="cta-img-container">
+//         <img src=""/>
+//     </div>
+//     <div class="cta-content">
+//         <p></p>
+//     </div>
+//     <div class="cta-action">
+//         <a class="cta-button button" href=""><span class="cta-button-text"></span></a>
+//     </div>
+// </div>
+
+.cta{
+	@extend .panel;
+	margin-top:$baseFontSize;
+}
+.cta-title{
+	@extend h5;
+	margin:15px 0 7px;
+	padding: 0.25em 0;
+}
+.cta-title-text{
+	font-size:ms(1);
+	text-transform:capitalize;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+	.cta-img-container{
+		padding:.25em;
+		text-align:center;
+		img{
+			border:1px solid $ter-dkTan;
+			@include single-box-shadow($white, 0, 1px, 1px);
+		}
+	}
+
+	.cta-content{}
+	.cta-actions{}

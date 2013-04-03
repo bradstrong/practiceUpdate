@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	<meta name="description" content="View all the latest news and articles, personalized for you, in a single view.">
+
+	<title>PracticeUpdate : Register</title>
+
+	<!-- Include CSS Files -->
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+	<!-- Include Modernizr -->
+	<script src="assets/js/foundation/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body id="update" class="update off-canvas">
+  <div class="widget ad">
+    <div id="leaderboard" class="Breast ad-container">
+      <div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
+      <div id="leaderboardcontent" class="ad-content">
+			</div><!--.ad-content-->
+		</div><!--/#leaderboard.ad-container-->
+  </div><!--/.widget.ad-->
+	<div class="page-header container">
+	</div><!--/.page-header-->
+	<div class="page-content">
+			<section id="sidebar" role="complementary">
+		</section>
+        <section role="main">
+            <div class="content-menu">
+                <p>PracticeUpdate content is displayed based on your information and your preferences. You're in control of what content is most relevant to you. Once you have completed your profile & settings, you can begin using the site.</p>
+                <a href="#" class="form-submit">Complete Profile & Settings</a>
+            </div>
+        </section>
+        <!--/[role="main"]-->
+
+	</div><!--/.page-content-->
+	<div class="page-footer-container">
+	<footer class="page-footer">
+	</footer><!-- /.page-footer -->
+	</div><!-- /.page-footer-container -->
+
+	<!-- Included JS Files (Uncompressed) -->
+  <script src="assets/js/foundation/jquery.js"></script>
+<!--   <script src="assets/js/plugins-ck.js"></script> -->
+ 
+	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>	
+	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.forms.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.navigation.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>	
+	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.tooltips.js"></script>
+	<script src="assets/js/foundation/jquery.placeholder.js"></script>
+	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
+	<script src="assets/js/mustache.js"></script>
+	<script src="assets/js/foundation/app.js"></script>
+
+	<!-- Mustache - homepage feed template -->
+	<script>
+
+
+	<!-- Mustache - homepage feed template -->
+	$.getJSON('content/json/feed.json', function(data) {
+		$.get('assets/mustache/feed-item.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.stream-container').html(html);
+		});
+
+	});
+
+	<!-- Mustache - homepage recent template -->
+	$.getJSON('content/json/recent.json', function(data) {
+		$.get('assets/mustache/recent.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.recent').html(html);
+		});
+
+	});
+
+	<!-- Mustache - homepage user-console template -->
+	$.getJSON('content/json/user-console.json', function(data) {
+		$.get('assets/mustache/user-console.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.user-console').html(html);
+		});
+	});
+
+	<!-- Mustache - homepage user-topic template -->
+//	$.getJSON('content/json/user-topic.json', function(data) {
+//		$.get('assets/mustache/user-topic.mustache', function(template) {
+			//alert('Load was performed.');
+//	    var html = Mustache.to_html(template, data);
+//	    $('.user-topic').html(html);
+//		});
+//	});
+
+	<!-- Mustache - homepage topic-spotlight template -->
+	$.getJSON('content/json/topic-spotlight.json', function(data) {
+		$.get('assets/mustache/topic-spotlight.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template, data);
+	    $('.topic-spotlight').html(html);
+		});
+	});
+
+		<!-- Mustache - homepage ad template -->
+		$.get('assets/mustache/ad.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template);
+	    $('.ad').html(html);
+		});
+
+	<!-- Mustache - homepage meet-experts -->
+	$.get('assets/mustache/cta-meet-experts.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template);
+	    $('.cta.meet-experts').html(html);
+		});
+
+    $.get('assets/mustache/modal-cancel-registration.mustache', function(template) {
+        var html = Mustache.to_html(template);
+        $('body').append(html);
+    });
+
+	</script>
+</body>
+</html>

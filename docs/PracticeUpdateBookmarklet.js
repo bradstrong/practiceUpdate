@@ -1,0 +1,1 @@
+(function () {var searchterms = escape(prompt('Enter search for PracticeUpdate'));var query = searchterms + ' site:practiceupdate.com';window.location='http://www.google.com/search?q=' + query;}());
