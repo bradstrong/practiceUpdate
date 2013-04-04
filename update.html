@@ -18,8 +18,8 @@
 <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-57@2x-precomposed.png" />
 <link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-touch-icon-72@2x-precomposed.png" />
 
-<meta name="application-name" content="PracticeUpdate"/> 
-<meta name="msapplication-TileColor" content="#3186a4"/> 
+<meta name="application-name" content="PracticeUpdate"/>
+<meta name="msapplication-TileColor" content="#3186a4"/>
 <meta name="msapplication-TileImage" content="c1da1cf2-3190-4f73-87f2-40d3444b0896.png"/>
 
 	<title>PracticeUpdate : Update</title>
@@ -126,14 +126,13 @@
 	<script src="assets/js/foundation/jquery.placeholder.js"></script>
 	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
 	<script src="assets/js/mustache.js"></script>
+<!-- 	<script src="assets/js/ICanHaz.min.js"></script> -->
 
 	<script src="assets/js/foundation/jquery.foundation.joyride.js"></script>
 
 	<script src="assets/js/foundation/app.js"></script>
 	<script src="assets/js/foundation/dev-app.js"></script>
 	<script src="assets/js/tamingselect.js"></script>
-
-
 
 	<!-- Mustache - homepage feed template -->
 	<script>
@@ -172,79 +171,6 @@
 //
 //	window.mustache = {loads: 0};
 
-
-	<!-- Mustache - homepage feed template -->
-	$.getJSON('content/json/feed.json', function(data) {
-		$.get('assets/mustache/feed-item.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-		//alert(html);
-	    $('.stream-container').html(html);
-		});
-
-	});
-
-	<!-- Mustache - homepage recent template -->
-	$.getJSON('content/json/recent.json', function(data) {
-		$.get('assets/mustache/recent.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.recent').html(html);
-		});
-
-	});
-
-	<!-- Mustache - homepage user-topic template -->
-	$.getJSON('content/json/user-topic.json', function(data) {
-		$.get('assets/mustache/user-topic.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.user-topic').html(html);
-            tamingselect();
-		});
-	});
-
-	<!-- Mustache - homepage topic-spotlight template -->
-	$.getJSON('content/json/topic-spotlight.json', function(data) {
-		$.get('assets/mustache/topic-spotlight.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.topic-spotlight').html(html);
-		});
-	});
-
-		<!-- Mustache - homepage ad template -->
-		// $.get('assets/mustache/ad.mustache', function(template) {
-		// 	//alert('Load was performed.');
-	 //    var html = Mustache.to_html(template);
-	 //    $('.ad').html(html);
-		// });
-
-	<!-- Mustache - homepage meet-experts -->
-	$.get('assets/mustache/cta-meet-experts.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.cta.meet-experts').html(html);
-		});
-
-	<!-- Mustache - homepage bcf-01 -->
-	$.getJSON('content/json/cta-bcf-01.json', function(data) {
-	console.log(data);
-		$.get('assets/mustache/cta.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.bcf-01').html(html);
-		});
-	});
-
-	<!-- Mustache - homepage bcf-02 -->
-	$.getJSON('content/json/cta-bcf-02.json', function(data) {
-	console.log(data);
-		$.get('assets/mustache/cta.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.bcf-02').html(html);
-		});
-	});
-
 	</script>
 
 	<ol id="practiceupdate-tour" class="joyride-stoplist">
@@ -258,7 +184,7 @@ Stop 1: Update tab
 		<h1>Update</h1>
 		<p>Get the updates you need and get on with your day. This tab provides a customized view of the latest news, journal scans, and expert commentaries based on your personal preferences</p>
 	</li>
- <!--	
+ <!--
  Stop 2: Explore tab
  Header: Explore
  Content: Explore everything PracticeUpdate has to offer here. Under the Explore tab, you’ll find News, Research, Reviews, and Expert Opinions from every channel on PracticeUpdate.
@@ -268,17 +194,17 @@ Stop 1: Update tab
 		<h1>Explore</h1>
 		<p>Explore everything PracticeUpdate has to offer here. Under the Explore tab, you’ll find News, Research, Reviews, and Expert Opinions from every channel on PracticeUpdate.</p>
 	</li>
-<!-- 
+<!--
 Stop 3: Learn tab
  Header: Learn
- Content: Access all of the research and educational materials PracticeUpdate offers in one place – under the Learn tab. This section provides CME, Conference Coverage and archived content. 
+ Content: Access all of the research and educational materials PracticeUpdate offers in one place – under the Learn tab. This section provides CME, Conference Coverage and archived content.
  Button: Next – End
 -->
 	<li data-class="top-bar-item-learn" class="joyride-stop-learn" data-button="Next">
 		<h1>Learn</h1>
 		<p>Access all of the research and educational materials PracticeUpdate offers in one place – under the Learn tab. This section provides CME, Conference Coverage and archived content. </p>
 	</li>
-<!-- 
+<!--
 Stop 4: Profile and Settings button
  Header: Profile & Settings
  Content: This is the place to update your personal and professional information, areas of interests, and notification settings. You can also change your content and newsletter preferences here at any time.
@@ -288,7 +214,7 @@ Stop 4: Profile and Settings button
 		<h1>Profile & Settings</h1>
 		<p>This is the place to update your personal and professional information, areas of interests, and notification settings. You can also change your content and newsletter preferences here at any time.</p>
 	</li>
-<!-- 
+<!--
  Stop 5: Specialty / All My Channels
  Header: Channels and Topics
  Content: A customized view showing only the content that relates to your specific areas of interests. This menu is driven by the selections you made during registration – change them any time by going to the Profile and Settings section.
@@ -298,7 +224,7 @@ Stop 4: Profile and Settings button
 		<h1>Channels and Topics</h1>
 		<p>A customized view showing only the content that relates to your specific areas of interest. This menu is driven by the selections you made during registration – change them any time by going to the Profile and Settings section.</p>
 	</li>
-<!-- 
+<!--
  Stop 6: Spotlights
  Header: Spotlights
  Content: Highlighted topics related to your Primary Area of Care or other areas of interest. This list will change from time to time in order to highlight new topics for you to explore.
@@ -319,7 +245,7 @@ Stop 7: Meet our Experts button
 		<h1>Meet our Experts</h1>
 		<p>Here, you can meet the world-renowned experts who meet weekly to review the latest content in every specialty. Together, they hand select the most relevant, practice-changing content to be delivered on PracticeUpdate</p>
 	</li>
-	
+
 <!--
 Stop 8: Help
 Header: Help
@@ -330,7 +256,7 @@ Button: Next
 		<h1>Help</h1>
 		<p>If you run into any problems, go to help. You can browse FAQs or email us your question. While you’re there, feel free to reach out to us at any time with feedback or suggestions. We would love to hear from you!</p>
 	</li>
-	
+
 <!--
 Stop 9: Modal – window is not attached to any specific element
 Header: Get going!
@@ -391,7 +317,7 @@ Content: Now that you know your way around, start exploring PracticeUpdate so yo
 				  if (mobileView) {
 					$('.top-bar .toggle-topbar a').click();
 					$('#sidebarButton').click();
-				
+
 			}
 		});
 

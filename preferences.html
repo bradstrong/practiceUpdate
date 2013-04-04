@@ -499,29 +499,12 @@ Each channel features content on many topics. You can select a few or all in eac
 						Healthcare Professionals<br/>
 						You will have the ability to access future features and functionality of PracticeUpdate which are limited to validated healthcare professionals. Stay tuned!
 					</div><!--/.panel-->
-					<div class="panel bcf-invite">
-					Healthcare Professionals<br/>
-<img src="content/img/cta/breast-cancer-forum-cta.png" alt="Breast Cancer Fourm Logo" /> <a href="https://thoughtleaders.within3.com/public/oncologystat_sign_in" title="PraciceUpdate Breast Cancer Forum">Join the conversation</a> with other validated healthcare professionals to discuss all things breast cancer.
-<a class="button" href="/update/" title="PracticeUpdate : Update">Get started with PracticeUpdate</a>
-					</div><!--/.panel-->
 				<form>
 					<fieldset>
 					<legend>License Info</legend>
-					<div class="panel pv-status">
-Gain access to healthcare provider-only resources which will be available to validated professionals only.
+					<div class="panel pv-status no-current-offer">
+            Gain access to healthcare provider-only resources which will be available to validated professionals only.
 					</div><!--/.panel.pv-status-->
-					<div class="alert-box success">
-						You've been successfully validated.
-					</div><!--/.alert-box-->
-
-					<div class="alert-box alert">
-					We were unable to match your personal information and NPI number. You can review your <a href="http://www.practiceupdate.com/User/Preferences/?Id=2&ftl=0" title="Preferences: Personal Information">Personal Info</a> or re-enter your NPI number and try again.
-					</div><!--/.alert-box-->
-
-					<div class="alert-box alert">
-					We were unable to match your personal information and NPI number at this time. Skip this step for now, we’ll remind you later.
-					</div><!--/.alert-box-->
-					<a class="button" href="/update/" title="PracticeUpdate : Update">Start using PracticeUpdate</a>
 
 					<!-- radio -->
 					<div class="form-row">
@@ -544,22 +527,52 @@ Gain access to healthcare provider-only resources which will be available to val
 					<div class="form-row">
 						<div class="twelve columns">
 					    <input type="text" class="disabled" id="input06" placeholder="Choose from the options above" disabled="Make a selection above">
-					    <a href="https://npiregistry.cms.hhs.gov/NPPESRegistry/NPIRegistrySearch.do?subAction=reset&searchType=ind" target="_blank" title="NPI Registry Search">Don't know your NPI? Look it up.</a>
+					    <small class="help-block"><a href="https://npiregistry.cms.hhs.gov/NPPESRegistry/NPIRegistrySearch.do?subAction=reset&searchType=ind" target="_blank" title="NPI Registry Search">Don't know your NPI? Look it up.</a></small>
 					    <!-- <span class="help-inline">Please enter your License number.</span> -->
 					    <!-- <p class="help-block">Enter your License number.</p> -->
 					  </div>
 					</div>
 					<!-- end radio -->
+					<div class="form-response">
+					<div class="alert-box alert error-hcp-npi">
+					We were unable to confirm your NPI number. Please re-enter your number and try again. <a href="https://npiregistry.cms.hhs.gov/NPPESRegistry/NPIRegistrySearch.do?subAction=reset&searchType=ind" target="_blank" title="NPI Registry Search">Don't know your NPI? Look it up.</a>
+					</div><!--/.alert-box-->
+					<div class="alert-box alert error-hcp-license">
+					We were unable to confirm your License number. Please re-enter your number and try again.
+					</div><!--/.alert-box-->
+
+					<div class="alert-box alert">
+					We were unable to confirm your information at this time. <a id="Cancel" href="javaScript:void(0);">Skip this step for now</a>, we’ll remind you later.
+					</div><!--/.alert-box-->
+  					<div class="alert-box success">
+  						NPI confirmed!
+  					</div><!--/.alert-box-->
+					</div>
 						<div class="form-action">
 							<a id="Submit" class="form-submit">Save</a>
 							<a id="Cancel" class="form-cancel" href="javaScript:void(0);">Skip for now</a>
 						</div>
-					<div class="alert-box success">
-						NPI confirmed!
-					</div><!--/.alert-box-->
 					</fieldset>
 					</form>
+					<table class="twelve hcp-offer-table">
+					<thead>
+  					<tr>
+    					<th colspan="3">Healthcare Professionals</th>
+  					</tr>
+					</thead>
+  					<tbody>
+  					<tr>
+    					<td class="hcp-offer-image"><img src="content/img/cta/breast-cancer-forum-cta.png" alt="Breast Cancer Fourm Logo" /></td>
+    					<td class="hcp-offer-desc"> <small><a href="https://thoughtleaders.within3.com/public/oncologystat_sign_in" title="PraciceUpdate Breast Cancer Forum">Join the conversation</a> with other validated healthcare professionals to discuss all things breast cancer.</small></td>
+    					<td class="hcp-offer-access"><a class="button small" href="https://thoughtleaders.within3.com/public/oncologystat_sign_in" title="PracticeUpdate Breast Cancer Forum Registration | Login">Visit the Forum</a></td>
+  					</tr>
+  					</tbody>
+					</table>
 					<!-- END HCP VALIDATION FLOW -->
+					<hr/>
+					<a class="button" href="/update/" title="PracticeUpdate : Update">Continue to PracticeUpdate</a>
+					<hr/>
+					<a class="button" href="/update/" title="PracticeUpdate : Update">Return to PracticeUpdate</a>
 				</li>
 			</ul>
 	</div><!--/#pref-tabs-content-->

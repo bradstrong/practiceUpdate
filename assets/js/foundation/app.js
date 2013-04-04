@@ -58,12 +58,12 @@
 /*-- Panel - make dismissable --*/
 ;(function ($, window, undefined) {
   'use strict';
-  
+
   $.fn.practiceupdatePanel = function (options) {
     var settings = $.extend({
       callback: $.noop
     }, options);
-    
+
     $(document).on("click", ".panel a.close", function (e) {
       e.preventDefault();
       $(this).closest(".panel").fadeOut(function () {
@@ -72,7 +72,7 @@
         settings.callback();
       });
     });
-    
+
   };
 
 })(jQuery, this);
@@ -175,10 +175,73 @@
     });
   });
 
+  /* Mustache - homepage feed template */
+	$.getJSON('content/json/feed.json', function(data) {
+		$.get('assets/mustache/feed-item.mustache', function(template) {
+	    var html = Mustache.to_html(template, data);
+	    $('.stream-container').html(html);
+		});
+	});
+
+	/* Mustache - homepage recent template */
+	$.getJSON('content/json/recent.json', function(data) {
+		$.get('assets/mustache/recent.mustache', function(template) {
+	    var html = Mustache.to_html(template, data);
+	    $('.recent').html(html);
+		});
+
+	});
+
+	/* Mustache - homepage user-topic template */
+	$.getJSON('content/json/user-topic.json', function(data) {
+		$.get('assets/mustache/user-topic.mustache', function(template) {
+	    var html = Mustache.to_html(template, data);
+	    $('.user-topic').html(html);
+      tamingselect();
+		});
+	});
+
+  /* Mustache - homepage topic-spotlight template */
+	$.getJSON('content/json/topic-spotlight.json', function(data) {
+		$.get('assets/mustache/topic-spotlight.mustache', function(template) {
+	    var html = Mustache.to_html(template, data);
+	    $('.topic-spotlight').html(html);
+		});
+	});
+
+  /* Mustache - homepage ad template */
+		// $.get('assets/mustache/ad.mustache', function(template) {
+		// 	//alert('Load was performed.');
+	 //    var html = Mustache.to_html(template);
+	 //    $('.ad').html(html);
+		// });
+
+  /* Mustache - homepage meet-experts */
+	$.get('assets/mustache/cta-meet-experts.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template);
+	    $('.cta.meet-experts').html(html);
+		});
+
+  /* Mustache - homepage bcf-01 */
+	$.getJSON('content/json/cta-bcf-01.json', function(data) {
+		$.get('assets/mustache/cta.mustache', function(template) {
+	    var html = Mustache.to_html(template, data);
+	    $('.bcf-01').html(html);
+		});
+	});
+
+  /* Mustache - homepage bcf-02 */
+	$.getJSON('content/json/cta-bcf-02.json', function(data) {
+		$.get('assets/mustache/cta.mustache', function(template) {
+	    var html = Mustache.to_html(template, data);
+	    $('.bcf-02').html(html);
+		});
+	});
+
   /* Mustache - homepage user-console template */
   $.getJSON('content/json/user-console.json', function(data) {
     $.get('assets/mustache/user-console.mustache', function(template) {
-      //alert('Load was performed.');
       var html = Mustache.to_html(template, data);
       $('.user-console').html(html);
       $('.user-console').practiceupdateDrawer();
@@ -191,27 +254,24 @@
 
     /* Mustache - homepage footer template */
     $.get('assets/mustache/page-footer.mustache', function(template) {
-      //alert('Load was performed.');
       var html = Mustache.to_html(template);
       $('.page-footer').html(html);
     });
 
     /* Mustache - explore slider template */
     $('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
-    //   console.log("explore slider initialized");
+
     /*-- Modals --*/
     //Import Modals
     $.get('assets/mustache/modals.mustache', function(template) {
       var html = Mustache.to_html(template);
       $('body').append(html);
     });
-  
+
   $.get('assets/mustache/modals-forgot-password.mustache', function(template) {
       var html = Mustache.to_html(template);
       $('body').append(html);
     });
-
-//  })();
 })(jQuery, this);
 
 //disable .disabled links
