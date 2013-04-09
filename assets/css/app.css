@@ -10447,16 +10447,18 @@ line {
 /*Start: page with sidebar*/
 /* line 69, ../sass/_ie7.scss */
 .lt-ie9 #sidebar {
-  width: 255px;
+  width: 20%;
   margin: 0;
+  padding: 0;
 }
 
-/* line 73, ../sass/_ie7.scss */
+/* line 74, ../sass/_ie7.scss */
 .lt-ie9 [role="main"] {
-  width: 1140px;
+  width: 77%;
+  paddin: 0 1%;
 }
 
-/* line 77, ../sass/_ie7.scss */
+/* line 79, ../sass/_ie7.scss */
 .lt-ie9 .explore-container,
 .lt-ie9 .stream-container {
   float: left;
@@ -10464,7 +10466,7 @@ line {
   margin: 0 20px 0 0;
 }
 
-/* line 83, ../sass/_ie7.scss */
+/* line 85, ../sass/_ie7.scss */
 .lt-ie9 #aux.recommended,
 .lt-ie9 .recommended {
   width: 360px;
@@ -10472,7 +10474,7 @@ line {
 }
 
 /*Start: sidebar*/
-/* line 88, ../sass/_ie7.scss */
+/* line 90, ../sass/_ie7.scss */
 .lt-ie9 .drawer-toggle-button.edit-user-settings {
   background: url("../img/arrow.jpg") no-repeat center 0 white;
   float: left;
@@ -10480,7 +10482,7 @@ line {
   width: 100%;
 }
 
-/* line 94, ../sass/_ie7.scss */
+/* line 96, ../sass/_ie7.scss */
 .lt-ie9 .icon-angle-down.icon-large {
   display: none;
 }
@@ -10612,7 +10614,28 @@ line {
 @media (max-width: 767px) {
   /* line 85, ../sass/_joyride.scss */
   body#update .joyride-ready.joyride-stop-update {
-    margin-top: 0 !important;
+    margin-top: 15px !important;
+  }
+
+  /* line 89, ../sass/_joyride.scss */
+  body#update .joyride-ready.joyride-stop-profile {
+    margin-top: 15px !important;
+  }
+
+  /* line 93, ../sass/_joyride.scss */
+  body#update .joyride-ready.joyride-stop-experts {
+    margin-top: 15px !important;
+  }
+
+  /* line 97, ../sass/_joyride.scss */
+  body#update .joyride-ready.joyride-stop-help {
+    margin-top: -15px !important;
+  }
+
+  /* line 101, ../sass/_joyride.scss */
+  body#update .joyride-ready.joyride-stop-help .joyride-nub {
+    left: 45%;
+    margin-left: -120px;
   }
 }
 /* line 1, ../sass/_module-related-tags.scss */
