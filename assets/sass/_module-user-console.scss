@@ -4,7 +4,7 @@
 // <div class="current-user">
 // 	<div class="user-details">
 // 		<p class="user-name">brad strong</p>
-// 		<p class="user-title">Physician</p>                    
+// 		<p class="user-title">Physician</p>
 // 	</div>
 // </div><!--/.current-user-->
 // <div class="drawer">
@@ -75,7 +75,7 @@
 	text-transform: capitalize;
 	margin-bottom: $baseFontSize/2;
 }
-.user-title{@extend .subheader;}  
+.user-title{@extend .subheader;}
 .edit-user-settings{}
 .user-settings-menu{
 	margin-bottom:0;
@@ -87,3 +87,23 @@
 	overflow: hidden;
 	}
 }
+.pv-status-indicator{
+  @media(max-width:$screenSmall){
+    visibility: hidden;
+  }
+  a:link, a:visited, a:active{
+    color:#CCC;
+  }
+  &.is-validated{
+    a:link, a:visited, a:active{
+      color:#000;
+    }
+  }
+}
+/*
+<div class="current-user">
+	<div class="user-details">
+		<p class="user-name">brad strong <span>Validated</span></p>
+		<p class="user-title">Physician <span class="pv-status-indicator"><a href="#" class="has-tip tip-right" title="Click to become a validated physician."><i class="icon-user-md"></i></a></span></p>
+	</div>
+*/

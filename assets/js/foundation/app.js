@@ -248,6 +248,7 @@
       if($('body').hasClass('page-preferences')){
         $('.user-settings-menu').toggleClass('is-collapsed is-expanded');
         $('.user-settings-menu li:first').addClass('active');
+/*         $(document).foundationTooltips(); */
       }
     });
   });

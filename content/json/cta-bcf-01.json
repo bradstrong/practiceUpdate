@@ -1,13 +1,8 @@
 {
-  "cta-title":{
-    "cta-title-text":"Join the Breast Cancer Forum"
-  },
+  "cta-id":"cta-bcf-01",
   "cta-img":{
-    "cta-img-url":"content/img/cta/breast-cancer-forum-cta.png",
+    "cta-img-url":"content/img/cta/img-cta-bcf.png",
     "cta-img-alt":"breast cancer forum logo"
-  },
-  "cta-content":{
-    "cta-content-html":"<p>A new, physician-only area dedicated to discussing breast cancer news, cases, and challenges.</p>"
   },
   "cta-button":{
     "cta-button-text":"Get in on the Discussion!",

@@ -8953,6 +8953,28 @@ p {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  /* line 90, ../sass/_module-user-console.scss */
+  .pv-status-indicator {
+    visibility: hidden;
+  }
+}
+/* line 94, ../sass/_module-user-console.scss */
+.pv-status-indicator a:link, .pv-status-indicator a:visited, .pv-status-indicator a:active {
+  color: #CCC;
+}
+/* line 98, ../sass/_module-user-console.scss */
+.pv-status-indicator.is-validated a:link, .pv-status-indicator.is-validated a:visited, .pv-status-indicator.is-validated a:active {
+  color: #000;
+}
+
+/*
+<div class="current-user">
+	<div class="user-details">
+		<p class="user-name">brad strong <span>Validated</span></p>
+		<p class="user-title">Physician <span class="pv-status-indicator"><a href="#" class="has-tip tip-right" title="Click to become a validated physician."><i class="icon-user-md"></i></a></span></p>
+	</div>
+*/
 /* line 170, ../sass/_module.scss */
 .password-signin {
   margin: 0 -15px;
@@ -9235,6 +9257,19 @@ p {
   -webkit-box-shadow: 0 1px 1px white;
   -moz-box-shadow: 0 1px 1px white;
   box-shadow: 0 1px 1px white;
+}
+
+/* line 45, ../sass/_module-cta.scss */
+.cta.bcf-01 {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+/* line 50, ../sass/_module-cta.scss */
+.cta.bcf-01 .cta-img-container img {
+  border-width: 0;
+  border: none;
+  box-shadow: none;
 }
 
 /* line 3, ../sass/_module-eic-welcome.scss */

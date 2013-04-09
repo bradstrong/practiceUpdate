@@ -41,3 +41,16 @@
 
 	.cta-content{}
 	.cta-actions{}
+
+.cta.bcf-01{
+  border: none;
+  background: transparent;
+  padding:0;
+  .cta-img-container{
+    img{
+      border-width: 0;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
