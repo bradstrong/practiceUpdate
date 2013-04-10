@@ -1,17 +1,123 @@
-.lt-ie9 #formLogin .signin {
-	margin:0;
-	float:left;
-	width:100px;
+.lt-ie9{/*Start: Home*/
+	.off-canvas-control {
+		display:none;
+	}
+	.top-bar section {
+		width:auto;
+	}
+	.top-bar ul li {
+		&.active {
+			background-color: #CB442E;
+			a {
+				color:#fff;
+			}
+		}
+		&:hover {
+			background-color: #1D7998;
+			a {
+				color:#fff;
+			}
+		}		
+	}
+	.top-bar li a {
+		text-transform:uppercase;
+	}
+	.brand-container.six.columns {
+		width:48%;
+	}
+	.login-register-container {
+		float:left;
+		width:50%;
+		.alert-box.alert {
+			width:100%;
+		}
+		#formLogin {
+			float:left;
+			width:50%;
+			padding: 0 15px;
+			.password-signin{
+				padding:0 !important;
+				.password{
+					float:left;
+					width:44%;
+					.password input{
+						margin:0;
+						float:left;
+						width:90%;
+						padding:8px 6px;
+						height:34px;
+					}
+				}				
+				.signin {
+					margin:0;
+					float:right;
+				}
+			}
+		}
+		#formRegisterPrompt {
+			float:left;
+			padding:0 15px;
+		}
+	}
+	.four{
+		width: 30%;
+	}
+	.footer-row{
+		width: 30%;
+		float:left;
+		overflow:hidden;
+		.utility-links, .policy-links{
+			margin:0;
+			& li{
+				float: left;
+				&:first-child{
+				margin:0;
+				}
+			}
+		}
+		.social-links {
+			background: url("../img/social.jpg") no-repeat scroll 33px 2px transparent;
+		}
+	}/*End: Home*/
+	/*Start: main page*/
+	[role="main"] {
+		width:78%;
+		paddin:0 0 0 2%;
+		.explore-container, .stream-container {
+			float:left;
+			width:57%;
+			.alert-body {
+				padding:0 !important;
+				.eic-profile {
+					float:left;
+				}
+				.eic-message {
+					float:left;
+					width:58%;
+				}
+			}
+		}
+		#aux, .recommended{
+			width:40%;
+			margin:0 0 0 3% !important;
+			float:left;
+		}
+	}
+	#sidebar {
+		width:20%;
+		margin:0;
+		padding:0;
+		.drawer-toggle-button{
+			&.edit-user-settings {
+				background: url("../img/arrow.jpg") no-repeat center 0 #fff;
+				float:left;
+				height:23px;
+				width:100%;
+				.icon-angle-down.icon-large {
+					display:none;
+				}
+			}
+		}
+	}
+	/*End: main page*/
 }
-.lt-ie9 #formLogin input[type="text"],
-.lt-ie9 #formLogin .password input {
-	width:90%;
-	padding:8px 6px;
-	height:34px;
-}
-.lt-ie9 #formLogin .password{
-	margin:0 5px 0 -15px;
-	float:left;
-	width:166px;
-}
-/************************************/
