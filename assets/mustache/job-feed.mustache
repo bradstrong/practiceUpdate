@@ -1,0 +1,18 @@
+{{! JobPosting microdata reference: http://schema.org/JobPosting }}
+{{#Jobs}}
+<ul>
+  {{#.}}
+  <li>
+    <div class="job-posting" itemscope itemtype="http://schema.org/JobPosting">
+        <a href="{{Url}}" class="job-posting-ul">
+        {{NormalizedJobTitle}}
+        <span class="job-posting-ul" itemprop="title">{{JobTitle}}</span>
+
+        </a>
+        <span class="job-posting-city"itemprop="addressLocality">{{City}},</span>
+        <span class="job-posting-state"itemprop="addressRegion">{{State}}</span>
+    </div><!--/.job-posting-->
+  </li>
+  {{/.}}
+</ul>
+{{/Jobs}}

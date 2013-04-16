@@ -9261,15 +9261,25 @@ p {
 
 /* line 45, ../sass/_module-cta.scss */
 .cta.bcf-01 {
-  border: none;
-  background: transparent;
-  padding: 0;
+  /*   border: none; */
+  background: white;
+  padding: .5em;
 }
 /* line 50, ../sass/_module-cta.scss */
 .cta.bcf-01 .cta-img-container img {
   border-width: 0;
   border: none;
   box-shadow: none;
+}
+/* line 56, ../sass/_module-cta.scss */
+.cta.bcf-01 .cta-button {
+  background-color: #1d7998;
+  color: white;
+  border: 1px solid #114658;
+}
+/* line 58, ../sass/_module-cta.scss */
+.cta.bcf-01 .cta-button:hover, .cta.bcf-01 .cta-button:focus {
+  background-color: #15576d;
 }
 
 /* line 3, ../sass/_module-eic-welcome.scss */

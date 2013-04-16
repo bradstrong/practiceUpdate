@@ -43,14 +43,18 @@
 	.cta-actions{}
 
 .cta.bcf-01{
-  border: none;
-  background: transparent;
-  padding:0;
+/*   border: none; */
+  background: $white;
+  padding:.5em;
   .cta-img-container{
     img{
       border-width: 0;
       border: none;
       box-shadow: none;
     }
+  }
+  .cta-button{
+    background-color: $pri-blue; color: lighten(($pri-blue), 80%); border: 1px solid darken(($pri-blue), 15%);
+    &:hover, &:focus { background-color: darken(($pri-blue), 10%); }
   }
 }

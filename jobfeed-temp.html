@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+			<script src="assets/js/foundation/modernizr.foundation.js"></script>
+	</head>
+	<body>
+
+<div class="component module job-feed"></div><!--/.job-feed-->
+
+  <script src="assets/js/foundation/jquery.js"></script>
+	<script src="assets/js/mustache.js"></script>
+<!--
+../pu/practiceUpdate/assets/mustache/job-feed.mustache
+../pu/practiceUpdate/content/json/job-feed.json
+-->
+
+<script>
+<!--   /* Mustache - homepage user-console template */ -->
+  $.getJSON('content/json/job-feed.json', function(data) {
+    $.get('assets/mustache/job-feed.mustache', function(template) {
+      var html = Mustache.to_html(template, data);
+      $('.job-feed').html(html);
+    });
+  });
+</script>
+	</body>
+</html>
