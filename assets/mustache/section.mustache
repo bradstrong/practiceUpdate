@@ -1,7 +1,7 @@
 <section class="{{section-id}} section-widget">
 <header class="section-header">
-		<h2>{{section-title}}</h2>
-		<p>{{section-description}}</p>
+		<h2 class="section-title">{{section-title}}</h2>
+		<p class="section-description">{{section-description}}</p>
 	</header><!--/.section-header-->
 	<div class="section-content">
 				<ul>
@@ -12,10 +12,10 @@
 							{{#featured}}<span class="flag featured"><i class="icon-bolt"></i> featured</span>{{/featured}}
 							{{#story-of-the-week}}<span class="flag story-of-the-week"><i class="icon-bolt"></i> story of the week</span>{{/story-of-the-week}}
 						</div>
-							<p class="meta title"><a href="#">{{title}}</a></p>
-							<p class="meta author">{{#source}}{{source.name.firstName}} {{source.name.lastName}}{{/source}}</p>
+							<h1 class="item-title"><a href="#">{{title}}</a></h1>
+							<p class="item-citation">{{#source}}{{source.name.firstName}} {{source.name.lastName}}{{/source}}</p>
 							{{> _articles}}
-					</article>		
+					</article>
 					</li>
 	{{/items}}
 				</ul>

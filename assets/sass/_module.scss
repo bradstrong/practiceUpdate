@@ -44,7 +44,10 @@
 	.commentary-container{@include column(12);}
 	.source-title{font-size:ms(0);}
 }
-.item-title{font-size:ms(1);}
+.item-title{
+  font-size:ms(1);
+  a:hover{ text-decoration: underline;}
+}
 .item-content-container{@include column(12);}
 .item-content{@include innerRow();}
 .item-content-section{@include column(12);}
@@ -155,7 +158,7 @@ p{margin-bottom:$baseFontSize/2;}
 .stream-item-container{
 	margin-bottom: $columnGutter/3;
 }
-.in-stream{
+.stream-item.in-stream{
 	@include innerRow(collapse);
 }
 

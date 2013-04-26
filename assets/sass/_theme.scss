@@ -8,13 +8,22 @@ ul li{
 	@include elementBoxShadow;
 }
 
-.in-list{
+/* 3 dimensional "leap" for card items on hover */
+/*
+.stream-item-container:hover{
+  margin-top: -2px;
+  margin-bottom: 12px;
 }
+.in-stream:hover{
+  @include elementBoxShadow($black, 0px, 4px, 6px, 0px);
+}
+*/
+
 
 body{
 	color: darken($txtColor, 10%);
-	// @include noise(lighten($ter-ltTan, 10%), 0.02);
-	@include noise($bodyBackground, 0.02);
+	background-color: $bodyBackground;
+/* 	@include noise($bodyBackground, 0.02); */
 }
 
 .page-header{
@@ -76,7 +85,8 @@ body{
 	text-transform:uppercase;
 	font-family:$titleFontFamily;
 	font-weight: normal;
-	//@include elementBoxShadow;
+	padding: 0;
+
 	&.featured{
 		color:$sec-ltBlue;
 	}
@@ -84,7 +94,7 @@ body{
 		color:$sec-green;
 	}
 	i{
-		
+
 	}
 }
 
@@ -306,7 +316,7 @@ article.single-item{
 	@media screen and (min-width: 768px){
 		//padding:1em 1em 2em;
 	}
-	
+
 }
 
 .illustration-container{

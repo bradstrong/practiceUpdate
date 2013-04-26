@@ -17,6 +17,7 @@
 
 .cta{
 	@extend .panel;
+	background: $pri-lt-grey;
 	margin-top:$baseFontSize;
 }
 .cta-title{

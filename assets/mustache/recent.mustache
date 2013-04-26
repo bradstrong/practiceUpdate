@@ -1,37 +1,29 @@
 <div class="">
 	<h5>Recently Updated</h5>
-	
+
 		<ul>
 		{{#items}}
 			<li>
 				<article class="in-list">
-					<hgroup class="pub-meta meta">
-						<h1 class="item-title"><a href="{{url}}">{{title}}</a></h1>
-					</hgroup><!--/.pub-meta-->
-						{{#source}}
-					<div class="item-source">
-						<dl class="source-citation">
-						{{! show expert name if commentary exists}}
-							{{#expert}}
+  				<h1 class="item-title"><a href="{{url}}">{{title}}</a></h1>
+					{{#source}}
+						{{#expert}}
+							<p class="item-citation">
 								{{#name}}
-									<dt class="fn n {{source.type}}-name">
-											<span class="given-name">{{firstName}}</span>
-											<span class="additional-name">{{middleName}}</span>
-											<span class="family-name">{{lastName}}</span>
-											<span class="honorific-suffix">{{honorific}}</span>
-									</dt><!--/.fn-->
+								<span class="given-name">{{firstName}}</span>
+								<span class="additional-name">{{middleName}}</span>
+								<span class="family-name">{{lastName}}</span>
+								<span class="honorific-suffix">{{honorific}}</span>
 								{{/name}}
-							{{/expert}}
-						{{! if no commentary commentary, show feed or journal citation}}
+							</p>
+						{{/expert}}
 						{{#journal}}
-								<dt class="item-citation">{{source.citation}}</dt>					
+								<p class="item-citation">{{source.citation}}</p>
 						{{/journal}}
 						{{#feed}}
-								<dd class="item-citation">{{source.citation}}</dd>
+								<p class="item-citation">{{source.citation}}</p>
 						{{/feed}}
-						{{/source}}
-						</dl><!-- /.source-citation -->
-					</div><!-- /.item-source -->
+					{{/source}}
 				</article>
 			</li><!--/.item-container-->
 		{{/items}}

@@ -7,6 +7,7 @@
 $experimental-support-for-svg: true; //support SVG in IE
 
 // Colors
+
 $grey: #ededed;
 $blue:#00aeff;
 $green:#dae348;
@@ -41,6 +42,9 @@ $bodyBackground: rgb(247,242,228);
 
 $pri-blue: 		rgb(29,121,152); //#
 $pri-orange: 	rgb(216,102,84); //#
+
+$pri-mid-grey: #b7b7b7;
+$pri-lt-grey: #e6e7e8;
 
 $sec-ltBlue: 		rgb(108,176,195); //#
 $sec-dkBlue: 		rgb(23,46,84); //#
@@ -97,7 +101,7 @@ $titleFontFamily: $sansCondensedFontFamily, "Helvetica Neue", "Helvetica", Helve
 	}
 	/* TODO: Fix color code to match PSD */
 	@include background(linear-gradient(top, $color, $color2), inline-image("../img/noise.jpg"));
-}       
+}
 
 @mixin site-gradient($color:$pri-blue, $colorDif:10%, $shinyEdge:"false", $ie-compat:"true"){
 	@if $ie-compat == "true"{

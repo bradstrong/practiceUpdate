@@ -24,7 +24,12 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
+<style>
+.event-detail-list{}
+  .detail-icon{width:20px; margin:0; float: left;}
+  .detail-content{margin-left:26px;
+  }
+</style>
 </head>
 <body id="learn" class="learn off-canvas page-learn">
 
@@ -65,12 +70,11 @@
 	<div class="page-content">
 		<section role="main">
 			<div class="single-item-container">
-                <article class="type-conference single-item">
+        <article class="type-conference single-item" itemscope itemtype="http://schema.org/Event">
 					<div class="item-header-container">
 						<header class="item-header">
 							<hgroup class="item-title-container">
-								<h1 class="item-title">ASCO GI 2013</h1>
-								<p class="item-citation">January 24-26 2013 San Francisco, CA</p>
+								<h1 class="item-title" itemprop="name">American Urological Association 2013 Annual Meeting</h1>
 							</hgroup>
 						</header><!--/.section-header-->
 					</div>
@@ -78,14 +82,109 @@
 						<div class="item-content">
 							<div class="item-content-section">
 								<div class="item-content-section-wrapper">
-                  <span itemprop="description">The American Urological Association (AUA) extends a special invitation to urology professionals around the world to join us in San Diego, CA for the 2013 AUA Annual Meeting. Now in its 108th year, the AUA Annual Meeting is the largest gathering of urologists in the world, providing unparalleled access to groundbreaking research, new guidelines and the latest advances in urologic medicine.</span>
+
+  								<div class="event-summary panel">
+                    <ul class="event-detail-list">
+                      <li class="event-location">
+                        <div class="detail-icon">
+                          <i class="icon-map-marker"></i>
+                        </div>
+                        <div class="detail-content" itemprop="location" itemscope itemtype="http://schema.org/Place">
+                          <span itemprop="name">San Diego Convention Center</span><br>
+                          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">111 W. Harbor Drive</span><br>
+                            <span itemprop="addressLocality">San Diego</span>,
+                            <span itemprop="addressRegion">CA</span>
+                            <span itemprop="postalCode">92101</span>
+                          </span>
+                        </div>
+                      </li>
+                      <li class="event-date">
+                        <div class="detail-icon">
+                          <i class="icon-calendar"></i>
+                        </div>
+                        <div class="detail-content">
+                          <meta itemprop="startDate" content="2013-05-04">
+                          <meta itemprop="startDate" content="2013-05-08">
+                          4–8 May 2013
+                        </div>
+                      </li>
+                      <li class="event-host">
+                        <div class="detail-icon">
+                          <i class="icon-building"></i>
+                        </div>
+                        <div class="detail-content" itemprop="performer" itemscope="" itemtype="http://schema.org/Organization">
+                          <span itemprop="name">
+                            <a href="auanet.org" itemprop="url" target="_blank">American Urological Association</a>
+                          </span>
+                        </div>
+                      </li>
+                      <li class="event-description">
+                        <div class="detail-icon">
+                          <i class="icon-align-justify"></i>
+                        </div>
+                        <div class="detail-content" itemprop="description">
+                          <p>The American Urological Association (AUA) extends a special invitation to urology professionals around the world to join us in San Diego, CA for the 2013 AUA Annual Meeting. Now in its 108th year, the AUA Annual Meeting is the largest gathering of urologists in the world, providing unparalleled access to groundbreaking research, new guidelines and the latest advances in urologic medicine.</p>
+                        </div>
+                      </li>
+                      <li class="event-url">
+                        <div class="detail-icon">
+                          <i class="icon-external-link"></i>
+                        </div>
+                        <div class="detail-content">
+                          Visit the<a itemprop="url" href="http://www.aua2013.org/">conference website</a>for more details.
+                        </div>
+                      </li>
+                    </ul>
+
+
+  								</div><!--/.event-details-->
   							</div><!--/.item-content-section-wrapper-->
 							</div><!--/.item-content-section-->
+
+
+							<div class="item-content-section">
+								<div class="item-content-section-wrapper">
+
+Video 264 and 265: Mesh removal, how to do it, a hot topic
+
+<h3>Basic Science</h3>
+
+<ul>
+  <li>277-phosphodiesterase effect on ischemic bladder</li>
+  <li>292-melatonin effect on ischemic bladder</li>
+  <li>278-metabotropic glutamate receptor subtype 5 antagonist increases bladder capacity</li>
+  <li>286-bladder overactivity following mutation of CaD ATPase inhibitory domain</li>
+  <li>1945- the TRPV4 channel in urothelial transduction of pressure</li>
+  <li>283-effects  of combining antimuscarinics and a beta 3 agonist on rat isolated bladder strip contractions</li>
+</ul>
+
+
+<h3>Clinical</h3>
+
+<ul>
+  <li>1359-deterioration after TOT</li>
+  <li>1357 and 1717-repeated effect of Botox A</li>
+  <li>1372-pooled results of mirabegron</li>
+  <li>1714-urodynamics utility in patients with multiple sclerosis</li>
+  <li>2143-robotic and laparoscopic sacro colpopexy effectiveness at one year</li>
+  <li>558-10 year experience at one institution with sacral neuromodulation</li>
+  <li>564-combined artificial urinary sphincter and inflatable penile prosthesis insertion</li>
+  <li>1033-documenting leakage amount in post prostatectomy incontinence with a questionnaire (instead of pad weights)</li>
+  <li>1040-worsening storage symptoms after sling surgery for stress incontinence</li>
+  <li>28-the HCN 2  gene as a marker for interstitial cystitis/bladder pain syndrome</li>
+  <li>115-why anticholinergics fail: A shift from muscarinic to purinergic transmission</li>
+  <li>1954-why do people void at night?</li>
+  <li>1953-treatment of nocturia in women with desmopressin</li>
+  <li>1958-combination treatment with mirabegron and solifenacin</li>
+</ul>
+
+  							</div><!--/.item-content-section-wrapper-->
+							</div><!--/.item-content-section-->
+
+
 						</div><!--/.item-content-->
 					</div><!--/.item-content-container-->
-					<div class="meta pub-meta">
-						<span class="item-type">Visit the <a href="http://gicasym.asco.org/">conference website</a> for more details.</span>
-					</div>
 				</article>
 			</div><!--/.single-item-container -->
 			<div id="aux" class="recommended">

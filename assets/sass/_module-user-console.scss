@@ -61,6 +61,7 @@
 	// @include innerRow(collapse);
 	// transition: height 2s;
 	background: lighten($ter-ltTan, 15%);
+	border: 1px solid $pri-lt-grey;
 	p{
 		color: $sec-dkBlue;
 	}
