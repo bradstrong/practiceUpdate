@@ -2,33 +2,33 @@
 /* !Type */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
   float: left;
 }
 
 /* line 55, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */
-.page-content, .page-footer, .footer-section-container .footer-section, .page-banner, .channel-list, .pref-content, .item-header, .item-content, .single-item, .stream-item.in-stream, .password-signin, .user-profile-header, .profile-card, .profile-details, .user-detail-list, .user-directory-header, .user-directory, .form-row, .checked-list, .eic-welcome .alert-body, .section-widget, .login-register {
+.page-content, .page-footer, .footer-section-container .footer-section, .page-banner, .channel-list, .pref-content, .item-header, .item-content, .single-item, .stream-item.in-stream, .password-signin, .user-profile-header, .profile-card, .profile-details, .user-detail-list, .user-directory-header, .user-directory, .form-row, .checked-list, .eic-welcome .alert-body, .event-notification .alert-body, .section-widget, .login-register {
   *zoom: 1;
 }
 /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_clearfix.scss */
-.page-content:before, .page-footer:before, .footer-section-container .footer-section:before, .page-banner:before, .channel-list:before, .pref-content:before, .item-header:before, .item-content:before, .single-item:before, .stream-item.in-stream:before, .password-signin:before, .user-profile-header:before, .profile-card:before, .profile-details:before, .user-detail-list:before, .user-directory-header:before, .user-directory:before, .form-row:before, .checked-list:before, .eic-welcome .alert-body:before, .section-widget:before, .login-register:before, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .page-banner:after, .channel-list:after, .pref-content:after, .item-header:after, .item-content:after, .single-item:after, .stream-item.in-stream:after, .password-signin:after, .user-profile-header:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .user-directory-header:after, .user-directory:after, .form-row:after, .checked-list:after, .eic-welcome .alert-body:after, .section-widget:after, .login-register:after {
+.page-content:before, .page-footer:before, .footer-section-container .footer-section:before, .page-banner:before, .channel-list:before, .pref-content:before, .item-header:before, .item-content:before, .single-item:before, .stream-item.in-stream:before, .password-signin:before, .user-profile-header:before, .profile-card:before, .profile-details:before, .user-detail-list:before, .user-directory-header:before, .user-directory:before, .form-row:before, .checked-list:before, .eic-welcome .alert-body:before, .event-notification .alert-body:before, .section-widget:before, .login-register:before, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .page-banner:after, .channel-list:after, .pref-content:after, .item-header:after, .item-content:after, .single-item:after, .stream-item.in-stream:after, .password-signin:after, .user-profile-header:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .user-directory-header:after, .user-directory:after, .form-row:after, .checked-list:after, .eic-welcome .alert-body:after, .event-notification .alert-body:after, .section-widget:after, .login-register:after {
   content: " ";
   display: table;
 }
 /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_clearfix.scss */
-.page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .page-banner:after, .channel-list:after, .pref-content:after, .item-header:after, .item-content:after, .single-item:after, .stream-item.in-stream:after, .password-signin:after, .user-profile-header:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .user-directory-header:after, .user-directory:after, .form-row:after, .checked-list:after, .eic-welcome .alert-body:after, .section-widget:after, .login-register:after {
+.page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .page-banner:after, .channel-list:after, .pref-content:after, .item-header:after, .item-content:after, .single-item:after, .stream-item.in-stream:after, .password-signin:after, .user-profile-header:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .user-directory-header:after, .user-directory:after, .form-row:after, .checked-list:after, .eic-welcome .alert-body:after, .event-notification .alert-body:after, .section-widget:after, .login-register:after {
   clear: both;
 }
 
 /* line 59, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container .footer-section, .channel-list, .pref-content, .item-header, .item-content, .single-item, .stream-item.in-stream, .password-signin, .user-profile-header, .profile-card, .profile-details, .user-detail-list, .user-directory-header, .user-directory, .form-row, .checked-list, .eic-welcome .alert-body, .section-widget, .login-register {
+.footer-section-container .footer-section, .channel-list, .pref-content, .item-header, .item-content, .single-item, .stream-item.in-stream, .password-signin, .user-profile-header, .profile-card, .profile-details, .user-detail-list, .user-directory-header, .user-directory, .form-row, .checked-list, .eic-welcome .alert-body, .event-notification .alert-body, .section-widget, .login-register {
   width: auto;
   max-width: none;
   min-width: 0;
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -1481,13 +1481,13 @@ form.custom .custom.disabled {
   background-color: #db2d0c;
 }
 /* line 26, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-.button.secondary, .secondary.form-submit, .form-submit.eic-welcome, .button.eic-welcome, .eic-welcome.load-more-button, .secondary.load-more-button {
+.button.secondary, .secondary.form-submit, .form-submit.eic-welcome, .form-submit.event-notification, .button.eic-welcome, .eic-welcome.load-more-button, .button.event-notification, .event-notification.load-more-button, .secondary.load-more-button {
   background-color: #c9c1b8;
   color: black;
   border: 1px solid #a89b8d;
 }
 /* line 27, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-.button.secondary:hover, .secondary.form-submit:hover, .form-submit.eic-welcome:hover, .button.eic-welcome:hover, .eic-welcome.load-more-button:hover, .secondary.load-more-button:hover, .button.secondary:focus, .secondary.form-submit:focus, .form-submit.eic-welcome:focus, .button.eic-welcome:focus, .eic-welcome.load-more-button:focus, .secondary.load-more-button:focus {
+.button.secondary:hover, .secondary.form-submit:hover, .form-submit.eic-welcome:hover, .form-submit.event-notification:hover, .button.eic-welcome:hover, .eic-welcome.load-more-button:hover, .button.event-notification:hover, .event-notification.load-more-button:hover, .secondary.load-more-button:hover, .button.secondary:focus, .secondary.form-submit:focus, .form-submit.eic-welcome:focus, .form-submit.event-notification:focus, .button.eic-welcome:focus, .eic-welcome.load-more-button:focus, .button.event-notification:focus, .event-notification.load-more-button:focus, .secondary.load-more-button:focus {
   background-color: #b3a89b;
 }
 /* line 31, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
@@ -1550,11 +1550,11 @@ form.custom .custom.disabled {
   outline: none;
 }
 /* line 48, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-.button.disabled.secondary, .disabled.secondary.form-submit, .disabled.form-submit.eic-welcome, .button.disabled.eic-welcome, .disabled.eic-welcome.load-more-button, .disabled.secondary.load-more-button, .button[disabled].secondary, [disabled].secondary.form-submit, [disabled].form-submit.eic-welcome, .button[disabled].eic-welcome, [disabled].eic-welcome.load-more-button, [disabled].secondary.load-more-button {
+.button.disabled.secondary, .disabled.secondary.form-submit, .disabled.form-submit.eic-welcome, .disabled.form-submit.event-notification, .button.disabled.eic-welcome, .disabled.eic-welcome.load-more-button, .button.disabled.event-notification, .disabled.event-notification.load-more-button, .disabled.secondary.load-more-button, .button[disabled].secondary, [disabled].secondary.form-submit, [disabled].form-submit.eic-welcome, [disabled].form-submit.event-notification, .button[disabled].eic-welcome, [disabled].eic-welcome.load-more-button, .button[disabled].event-notification, [disabled].event-notification.load-more-button, [disabled].secondary.load-more-button {
   background-color: #c9c1b8;
 }
 /* line 49, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-.button.disabled.secondary:hover, .disabled.secondary.form-submit:hover, .disabled.form-submit.eic-welcome:hover, .button.disabled.eic-welcome:hover, .disabled.eic-welcome.load-more-button:hover, .disabled.secondary.load-more-button:hover, .button.disabled.secondary:focus, .disabled.secondary.form-submit:focus, .disabled.form-submit.eic-welcome:focus, .button.disabled.eic-welcome:focus, .disabled.eic-welcome.load-more-button:focus, .disabled.secondary.load-more-button:focus, .button[disabled].secondary:hover, [disabled].secondary.form-submit:hover, [disabled].form-submit.eic-welcome:hover, .button[disabled].eic-welcome:hover, [disabled].eic-welcome.load-more-button:hover, [disabled].secondary.load-more-button:hover, .button[disabled].secondary:focus, [disabled].secondary.form-submit:focus, [disabled].form-submit.eic-welcome:focus, .button[disabled].eic-welcome:focus, [disabled].eic-welcome.load-more-button:focus, [disabled].secondary.load-more-button:focus {
+.button.disabled.secondary:hover, .disabled.secondary.form-submit:hover, .disabled.form-submit.eic-welcome:hover, .disabled.form-submit.event-notification:hover, .button.disabled.eic-welcome:hover, .disabled.eic-welcome.load-more-button:hover, .button.disabled.event-notification:hover, .disabled.event-notification.load-more-button:hover, .disabled.secondary.load-more-button:hover, .button.disabled.secondary:focus, .disabled.secondary.form-submit:focus, .disabled.form-submit.eic-welcome:focus, .disabled.form-submit.event-notification:focus, .button.disabled.eic-welcome:focus, .disabled.eic-welcome.load-more-button:focus, .button.disabled.event-notification:focus, .disabled.event-notification.load-more-button:focus, .disabled.secondary.load-more-button:focus, .button[disabled].secondary:hover, [disabled].secondary.form-submit:hover, [disabled].form-submit.eic-welcome:hover, [disabled].form-submit.event-notification:hover, .button[disabled].eic-welcome:hover, [disabled].eic-welcome.load-more-button:hover, .button[disabled].event-notification:hover, [disabled].event-notification.load-more-button:hover, [disabled].secondary.load-more-button:hover, .button[disabled].secondary:focus, [disabled].secondary.form-submit:focus, [disabled].form-submit.eic-welcome:focus, [disabled].form-submit.event-notification:focus, .button[disabled].eic-welcome:focus, [disabled].eic-welcome.load-more-button:focus, .button[disabled].event-notification:focus, [disabled].event-notification.load-more-button:focus, [disabled].secondary.load-more-button:focus {
   background-color: #c9c1b8;
   outline: none;
 }
@@ -1760,7 +1760,7 @@ input[type=submit].button, input[type=submit].form-submit, input[type=submit].lo
   background-color: #70cf8d;
 }
 /* line 108, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary:hover, .dropdown.split.secondary.form-submit:hover, .dropdown.split.form-submit.eic-welcome:hover, .button.dropdown.split.eic-welcome:hover, .dropdown.split.eic-welcome.load-more-button:hover, .dropdown.split.secondary.load-more-button:hover, .button.dropdown.split.secondary:focus, .dropdown.split.secondary.form-submit:focus, .dropdown.split.form-submit.eic-welcome:focus, .button.dropdown.split.eic-welcome:focus, .dropdown.split.eic-welcome.load-more-button:focus, .dropdown.split.secondary.load-more-button:focus {
+.button.dropdown.split.secondary:hover, .dropdown.split.secondary.form-submit:hover, .dropdown.split.form-submit.eic-welcome:hover, .dropdown.split.form-submit.event-notification:hover, .button.dropdown.split.eic-welcome:hover, .dropdown.split.eic-welcome.load-more-button:hover, .button.dropdown.split.event-notification:hover, .dropdown.split.event-notification.load-more-button:hover, .dropdown.split.secondary.load-more-button:hover, .button.dropdown.split.secondary:focus, .dropdown.split.secondary.form-submit:focus, .dropdown.split.form-submit.eic-welcome:focus, .dropdown.split.form-submit.event-notification:focus, .button.dropdown.split.eic-welcome:focus, .dropdown.split.eic-welcome.load-more-button:focus, .button.dropdown.split.event-notification:focus, .dropdown.split.event-notification.load-more-button:focus, .dropdown.split.secondary.load-more-button:focus {
   background-color: #c9c1b8;
 }
 /* line 111, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
@@ -1836,7 +1836,7 @@ input[type=submit].button, input[type=submit].form-submit, input[type=submit].lo
   margin-top: -2px;
 }
 /* line 123, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary > span:after, .dropdown.split.secondary.form-submit > span:after, .dropdown.split.form-submit.eic-welcome > span:after, .button.dropdown.split.eic-welcome > span:after, .dropdown.split.eic-welcome.load-more-button > span:after, .dropdown.split.secondary.load-more-button > span:after {
+.button.dropdown.split.secondary > span:after, .dropdown.split.secondary.form-submit > span:after, .dropdown.split.form-submit.eic-welcome > span:after, .dropdown.split.form-submit.event-notification > span:after, .button.dropdown.split.eic-welcome > span:after, .dropdown.split.eic-welcome.load-more-button > span:after, .button.dropdown.split.event-notification > span:after, .dropdown.split.event-notification.load-more-button > span:after, .dropdown.split.secondary.load-more-button > span:after {
   content: "";
   display: block;
   width: 0;
@@ -1900,12 +1900,12 @@ input[type=submit].button, input[type=submit].form-submit, input[type=submit].lo
   border-left-color: #3db662;
 }
 /* line 136, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary > span, .dropdown.split.secondary.form-submit > span, .dropdown.split.form-submit.eic-welcome > span, .button.dropdown.split.eic-welcome > span, .dropdown.split.eic-welcome.load-more-button > span, .dropdown.split.secondary.load-more-button > span {
+.button.dropdown.split.secondary > span, .dropdown.split.secondary.form-submit > span, .dropdown.split.form-submit.eic-welcome > span, .dropdown.split.form-submit.event-notification > span, .button.dropdown.split.eic-welcome > span, .dropdown.split.eic-welcome.load-more-button > span, .button.dropdown.split.event-notification > span, .dropdown.split.event-notification.load-more-button > span, .dropdown.split.secondary.load-more-button > span {
   background-color: #c9c1b8;
   border-left-color: #a89b8d;
 }
 /* line 137, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary > a, .dropdown.split.secondary.form-submit > a, .dropdown.split.form-submit.eic-welcome > a, .button.dropdown.split.eic-welcome > a, .dropdown.split.eic-welcome.load-more-button > a, .dropdown.split.secondary.load-more-button > a {
+.button.dropdown.split.secondary > a, .dropdown.split.secondary.form-submit > a, .dropdown.split.form-submit.eic-welcome > a, .dropdown.split.form-submit.event-notification > a, .button.dropdown.split.eic-welcome > a, .dropdown.split.eic-welcome.load-more-button > a, .button.dropdown.split.event-notification > a, .dropdown.split.event-notification.load-more-button > a, .dropdown.split.secondary.load-more-button > a {
   color: black;
 }
 /* line 139, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
@@ -1917,7 +1917,7 @@ input[type=submit].button, input[type=submit].form-submit, input[type=submit].lo
   background-color: #4ac26f;
 }
 /* line 141, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary > a:hover, .dropdown.split.secondary.form-submit > a:hover, .dropdown.split.form-submit.eic-welcome > a:hover, .button.dropdown.split.eic-welcome > a:hover, .dropdown.split.eic-welcome.load-more-button > a:hover, .dropdown.split.secondary.load-more-button > a:hover, .button.dropdown.split.secondary > span:hover, .dropdown.split.secondary.form-submit > span:hover, .dropdown.split.form-submit.eic-welcome > span:hover, .button.dropdown.split.eic-welcome > span:hover, .dropdown.split.eic-welcome.load-more-button > span:hover, .dropdown.split.secondary.load-more-button > span:hover, .button.dropdown.split.secondary > a:focus, .dropdown.split.secondary.form-submit > a:focus, .dropdown.split.form-submit.eic-welcome > a:focus, .button.dropdown.split.eic-welcome > a:focus, .dropdown.split.eic-welcome.load-more-button > a:focus, .dropdown.split.secondary.load-more-button > a:focus, .button.dropdown.split.secondary > span:focus, .dropdown.split.secondary.form-submit > span:focus, .dropdown.split.form-submit.eic-welcome > span:focus, .button.dropdown.split.eic-welcome > span:focus, .dropdown.split.eic-welcome.load-more-button > span:focus, .dropdown.split.secondary.load-more-button > span:focus {
+.button.dropdown.split.secondary > a:hover, .dropdown.split.secondary.form-submit > a:hover, .dropdown.split.form-submit.eic-welcome > a:hover, .dropdown.split.form-submit.event-notification > a:hover, .button.dropdown.split.eic-welcome > a:hover, .dropdown.split.eic-welcome.load-more-button > a:hover, .button.dropdown.split.event-notification > a:hover, .dropdown.split.event-notification.load-more-button > a:hover, .dropdown.split.secondary.load-more-button > a:hover, .button.dropdown.split.secondary > span:hover, .dropdown.split.secondary.form-submit > span:hover, .dropdown.split.form-submit.eic-welcome > span:hover, .dropdown.split.form-submit.event-notification > span:hover, .button.dropdown.split.eic-welcome > span:hover, .dropdown.split.eic-welcome.load-more-button > span:hover, .button.dropdown.split.event-notification > span:hover, .dropdown.split.event-notification.load-more-button > span:hover, .dropdown.split.secondary.load-more-button > span:hover, .button.dropdown.split.secondary > a:focus, .dropdown.split.secondary.form-submit > a:focus, .dropdown.split.form-submit.eic-welcome > a:focus, .dropdown.split.form-submit.event-notification > a:focus, .button.dropdown.split.eic-welcome > a:focus, .dropdown.split.eic-welcome.load-more-button > a:focus, .button.dropdown.split.event-notification > a:focus, .dropdown.split.event-notification.load-more-button > a:focus, .dropdown.split.secondary.load-more-button > a:focus, .button.dropdown.split.secondary > span:focus, .dropdown.split.secondary.form-submit > span:focus, .dropdown.split.form-submit.eic-welcome > span:focus, .dropdown.split.form-submit.event-notification > span:focus, .button.dropdown.split.eic-welcome > span:focus, .dropdown.split.eic-welcome.load-more-button > span:focus, .button.dropdown.split.event-notification > span:focus, .dropdown.split.event-notification.load-more-button > span:focus, .dropdown.split.secondary.load-more-button > span:focus {
   background-color: #b3a89b;
 }
 
@@ -2316,7 +2316,7 @@ div.alert-box.alert {
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
 }
 /* line 31, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-div.alert-box.secondary, div.alert-box.eic-welcome {
+div.alert-box.secondary, div.alert-box.eic-welcome, div.alert-box.event-notification {
   background-color: #c9c1b8;
   color: #2d2822;
   text-shadow: 0 1px rgba(255, 255, 255, 0.3);
@@ -2378,7 +2378,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   background-color: #70cf8d;
 }
 /* line 48, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-.label.secondary, .label.eic-welcome, .eic-welcome.badge, .eic-welcome.flag, .secondary.badge, .secondary.flag {
+.label.secondary, .label.eic-welcome, .eic-welcome.badge, .eic-welcome.flag, .label.event-notification, .event-notification.badge, .event-notification.flag, .secondary.badge, .secondary.flag {
   background-color: #c9c1b8;
   color: #2d2822;
 }
@@ -3016,7 +3016,7 @@ div.progress .meter {
   width: 50%;
 }
 /* line 270, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-div.progress.secondary .meter, div.progress.eic-welcome .meter {
+div.progress.secondary .meter, div.progress.eic-welcome .meter, div.progress.event-notification .meter {
   background: #c9c1b8;
 }
 /* line 271, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
@@ -9326,6 +9326,73 @@ p {
 }
 /* line 19, ../sass/_module-eic-welcome.scss */
 .eic-welcome figure figcaption {
+  font-weight: normal;
+}
+
+/* line 27, ../sass/_module-eic-welcome.scss */
+.event-notification .alert-header-text {
+  font-size: 23px;
+}
+/* line 30, ../sass/_module-eic-welcome.scss */
+.event-notification .alert-body {
+  margin: 0 -15px;
+}
+/* line 33, ../sass/_module-eic-welcome.scss */
+.event-notification .event-badge {
+  width: 8.33333%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 33, ../sass/_module-eic-welcome.scss */
+  .event-notification .event-badge {
+    float: none;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 33, ../sass/_module-eic-welcome.scss */
+  .event-notification .event-badge {
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 33, ../sass/_module-eic-welcome.scss */
+  .event-notification .event-badge {
+    left: 75%;
+  }
+}
+/* line 34, ../sass/_module-eic-welcome.scss */
+.event-notification .event-message {
+  width: 91.66667%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 34, ../sass/_module-eic-welcome.scss */
+  .event-notification .event-message {
+    float: none;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 34, ../sass/_module-eic-welcome.scss */
+  .event-notification .event-message {
+    float: left;
+    width: 75%;
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 34, ../sass/_module-eic-welcome.scss */
+  .event-notification .event-message {
+    right: 25%;
+  }
+}
+/* line 35, ../sass/_module-eic-welcome.scss */
+.event-notification figure {
+  padding: 0 14px;
+}
+/* line 43, ../sass/_module-eic-welcome.scss */
+.event-notification figure figcaption {
   font-weight: normal;
 }
 

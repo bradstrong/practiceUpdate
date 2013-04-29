@@ -9,7 +9,31 @@
 	.eic-profile{@include column(5);}
 	.eic-message{@include column(7);}
 	figure{
-		
+
+		//background-color:$white;
+		//@include elementBoxShadow;
+		padding: 0 $baseFontSize;
+		img{
+			// padding: $baseFontSize;
+		}
+		figcaption{
+			font-weight: normal;
+		}
+	}
+}
+
+.event-notification{
+	@extend .secondary;
+	.alert-header-text{
+		font-size:ms(2);
+	}
+	.alert-body{
+		@include innerRow();
+	}
+	.event-badge{@include column(1); @include mobileColumn(1); @include mobilePush(3);}
+	.event-message{@include column(11); @include mobileColumn(3);  @include mobilePull(1);}
+	figure{
+
 		//background-color:$white;
 		//@include elementBoxShadow;
 		padding: 0 $baseFontSize;
