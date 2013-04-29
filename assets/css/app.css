@@ -9330,26 +9330,30 @@ p {
 }
 
 /* line 27, ../sass/_module-eic-welcome.scss */
+.event-notification.alert-box {
+  background-color: #e6e7e8 !important;
+}
+/* line 28, ../sass/_module-eic-welcome.scss */
 .event-notification .alert-header-text {
   font-size: 23px;
 }
-/* line 30, ../sass/_module-eic-welcome.scss */
+/* line 31, ../sass/_module-eic-welcome.scss */
 .event-notification .alert-body {
   margin: 0 -15px;
 }
-/* line 33, ../sass/_module-eic-welcome.scss */
+/* line 34, ../sass/_module-eic-welcome.scss */
 .event-notification .event-badge {
   width: 8.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 33, ../sass/_module-eic-welcome.scss */
+  /* line 34, ../sass/_module-eic-welcome.scss */
   .event-notification .event-badge {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 33, ../sass/_module-eic-welcome.scss */
+  /* line 34, ../sass/_module-eic-welcome.scss */
   .event-notification .event-badge {
     float: left;
     width: 25%;
@@ -9357,24 +9361,24 @@ p {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 33, ../sass/_module-eic-welcome.scss */
+  /* line 34, ../sass/_module-eic-welcome.scss */
   .event-notification .event-badge {
     left: 75%;
   }
 }
-/* line 34, ../sass/_module-eic-welcome.scss */
+/* line 35, ../sass/_module-eic-welcome.scss */
 .event-notification .event-message {
   width: 91.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 34, ../sass/_module-eic-welcome.scss */
+  /* line 35, ../sass/_module-eic-welcome.scss */
   .event-notification .event-message {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 34, ../sass/_module-eic-welcome.scss */
+  /* line 35, ../sass/_module-eic-welcome.scss */
   .event-notification .event-message {
     float: left;
     width: 75%;
@@ -9382,16 +9386,16 @@ p {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 34, ../sass/_module-eic-welcome.scss */
+  /* line 35, ../sass/_module-eic-welcome.scss */
   .event-notification .event-message {
     right: 25%;
   }
 }
-/* line 35, ../sass/_module-eic-welcome.scss */
+/* line 36, ../sass/_module-eic-welcome.scss */
 .event-notification figure {
   padding: 0 14px;
 }
-/* line 43, ../sass/_module-eic-welcome.scss */
+/* line 44, ../sass/_module-eic-welcome.scss */
 .event-notification figure figcaption {
   font-weight: normal;
 }

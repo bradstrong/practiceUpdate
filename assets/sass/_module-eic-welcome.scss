@@ -24,6 +24,7 @@
 
 .event-notification{
 	@extend .secondary;
+	&.alert-box{background-color: $pri-lt-grey !important;}
 	.alert-header-text{
 		font-size:ms(2);
 	}
