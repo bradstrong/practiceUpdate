@@ -30,10 +30,10 @@ ul{@extend .right;}
 
 .page-header{background-color:transparent;}
 .page-header.fixed{
-  background-color:transparent;
+  background-color:$bodyBackground;
   @include elementBoxShadow;
   .top-bar{
-      @include noise($bodyBackground, 0.02);
+      background-color:$bodyBackground;
   }
 }
 
