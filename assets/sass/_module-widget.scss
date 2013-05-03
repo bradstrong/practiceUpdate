@@ -1,0 +1,18 @@
+// WIDGETS
+.widget{
+  .list-widget-title{
+    margin-bottom: 0;
+  }
+  .list-widget-list{
+  	list-style:none;
+  }
+	.list-widget-item{
+  	border-bottom: 1px solid lighten($txtColor, 33);
+  	&:last-child{border-bottom: none;}
+	}
+	.in-list{
+		background: transparent;
+		padding-top:.5em;
+		padding-bottom:.5em;
+	}
+}

@@ -145,12 +145,19 @@ p{margin-bottom:$baseFontSize/2;}
  	}
  }
  .item-content{
- 	figure{
- 		float:left;
- 		max-width: 33%;
- 		padding-right:17px;
+    .story-image-group{
+    float:left;
+    	max-width: 33%;
+    	padding:0 16px 8px 0;
+
+    }
+    figure{
+      border: 1px solid $pri-lt-grey;
+      margin:4px 0;
+    	padding:8px;
+    	text-align: center;
+    }
  	}
- }
  }
 
 
@@ -217,18 +224,9 @@ p{margin-bottom:$baseFontSize/2;}
 
 
 @import "_module-cta";
-@import "_module-eic-welcome";
+@import "_module-prompt";
 
-// WIDGETS
-.widget{
-	ul{
-		list-style:none;
-	}
-	article{
-		background: transparent;
-	}
-}
-@import "_module-recent";
+@import "_module-widget";
 
 // ADs
 @import "_module-ad";

@@ -18,7 +18,7 @@
 <script>
 <!--   /* Mustache - homepage user-console template */ -->
   $.getJSON('content/json/job-feed.json', function(data) {
-    $.get('assets/mustache/job-feed.mustache', function(template) {
+    $.get('assets/mustache/module-job-feed.mustache', function(template) {
       var html = Mustache.to_html(template, data);
       $('.job-feed').html(html);
     });
