@@ -2,7 +2,7 @@
 /* !Type */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
   float: left;
 }
 
@@ -28,7 +28,7 @@
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .top-bar section, .top-bar ul li.name, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -96,7 +96,7 @@ p a, p a:visited {
 }
 
 /* line 20, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/common/_globals.scss */
-.right, .top-bar section ul {
+.right {
   float: right;
 }
 
@@ -3134,7 +3134,7 @@ div.progress.round .meter {
 /* Element that controls breakpoint, no need to change this ever */
 /* line 16, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_topbar.scss */
 .top-bar-js-breakpoint {
-  width: 768px !important;
+  width: 769px !important;
   visibility: hidden;
 }
 
@@ -3502,19 +3502,19 @@ div.progress.round .meter {
   margin-bottom: 0;
 }
 /* line 132, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_topbar.scss */
-.top-bar ul.right, .top-bar section ul {
+.top-bar ul.right {
   float: right;
   width: auto;
   margin-bottom: 0;
   /* Dropdown Right Side Alignment */
 }
 /* line 134, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_topbar.scss */
-.top-bar ul.right .has-dropdown .dropdown, .top-bar section ul .has-dropdown .dropdown {
+.top-bar ul.right .has-dropdown .dropdown {
   left: auto;
   right: 0px;
 }
 /* line 135, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_topbar.scss */
-.top-bar ul.right .has-dropdown .dropdown li.has-dropdown > .dropdown, .top-bar section ul .has-dropdown .dropdown li.has-dropdown > .dropdown {
+.top-bar ul.right .has-dropdown .dropdown li.has-dropdown > .dropdown {
   right: 100%;
   left: auto;
   width: 100%;
@@ -3731,7 +3731,7 @@ div.progress.round .meter {
   top: -1px;
 }
 /* line 39, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
-.nav-bar.vertical > li .flyout.right, .nav-bar.vertical > li .top-bar section ul.flyout, .top-bar section .nav-bar.vertical > li ul.flyout {
+.nav-bar.vertical > li .flyout.right {
   left: auto;
   right: 100%;
 }
@@ -3783,7 +3783,7 @@ div.progress.round .meter {
   width: 437.5px;
 }
 /* line 57, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
-.flyout.right, .top-bar section ul.flyout {
+.flyout.right {
   left: auto;
   right: -2px;
 }
@@ -4204,211 +4204,7 @@ ul.orbit-bullets li.active.has-thumb {
     background: #fff;
   }
 }
-/* Off canvas layout CSS/JS provided by or adapted from work by Jason Weaver and Luke Wroblewski
-   Requires
-   globals.css
-   grid.css */
-/* line 6, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-body.off-canvas {
-  padding: 0;
-  margin: 0;
-}
-
-/* line 8, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-.container {
-  width: 100%;
-}
-
-/* line 9, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-.row {
-  overflow: hidden;
-}
-
-/* line 10, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-.row .row {
-  overflow: visible;
-}
-
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-.paneled .container {
-  overflow: hidden;
-}
-
-/* line 13, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-.paneled .row {
-  width: 100%;
-}
-
-/* line 15, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-[role="main"]:before {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 18, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-[role="complementary"],
-[role="main"] {
-  width: 100%;
-  padding: 0 15px;
-  display: block;
-  position: relative;
-  z-index: 1;
-  -webkit-transition: 0.25s all ease-in;
-  -moz-transition: 0.25s all ease-in;
-  -o-transition: 0.25s all ease-in;
-  transition: 0.25s all ease-in;
-}
-
-/* line 20, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-.paneled [role="main"] {
-  padding: 0;
-}
-
-/* line 21, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-.page-panel {
-  width: 100%;
-  padding: 0 15px;
-  -webkit-transition: 0.3s margin ease-in-out;
-  -moz-transition: 0.3s margin ease-in-out;
-  -o-transition: 0.3s margin ease-in-out;
-  transition: 0.3s margin ease-in-out;
-  background: #fff;
-}
-
-/* line 22, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-#switchPanels {
-  margin: 0 -15px;
-}
-
-/* line 24, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-.hide-extras [role="complementary"] {
-  display: block;
-}
-
-/* line 26, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-[role="navigation"]#topMenu {
-  -webkit-transition: 0.25s all ease-in;
-  -moz-transition: 0.25s all ease-in;
-  -o-transition: 0.25s all ease-in;
-  transition: 0.25s all ease-in;
-}
-
-/* line 27, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-[role="navigation"]#topMenu ul {
-  margin-top: 0;
-}
-
-/* line 29, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-[role="complementary"] {
-  margin-left: -100%;
-  width: 80%;
-  float: left;
-  z-index: 2;
-}
-
-/* line 30, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-[role="main"] {
-  margin-left: 0;
-  float: right;
-  z-index: 1;
-  position: relative;
-}
-
-/* line 32, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-.paneled [role="main"] {
-  background: #fff;
-  width: 500%;
-  overflow: hidden;
-  float: none;
-  position: relative;
-  left: 0;
-  -webkit-transition: 0.15s all ease-in;
-  -moz-transition: 0.15s all ease-in;
-  -o-transition: 0.15s all ease-in;
-  transition: 0.15s all ease-in;
-}
-
-/* line 33, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-.page-panel {
-  min-height: 400px;
-  float: left;
-  margin: 0;
-  width: 20%;
-}
-
-/* line 36, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-.active [role="complementary"] {
-  margin-left: 0;
-}
-
-/* line 37, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-.active [role="main"] {
-  margin-right: -80%;
-}
-
-/* line 39, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-.active-menu [role="navigation"]#topMenu {
-  margin-top: 0 !important;
-}
-
-@media all and (min-width: 768px) {
-  /* line 43, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-  menu-button, .sidebar-button {
-    display: none;
-  }
-
-  /* line 44, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-  [role="complementary"] {
-    width: 20%;
-    margin-left: 0;
-    float: left;
-    padding: 0 15px;
-  }
-
-  /* line 45, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-  [role="main"] {
-    width: 80%;
-    padding: 0 15px;
-  }
-
-  /* line 47, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-  .paneled [role="main"] {
-    width: 100%;
-    padding: 0;
-    background: #f4f4f4;
-    left: 0 !important;
-  }
-
-  /* line 48, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-  .page-panel {
-    display: block;
-    min-height: 800px;
-    float: none;
-    margin: 0;
-    width: 100%;
-    background: #f4f4f4;
-  }
-
-  /* line 50, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-  .hide-extras [role="main"] {
-    width: 100%;
-  }
-
-  /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-  .hide-extras [role="complementary"] {
-    display: none;
-  }
-
-  /* line 53, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_offcanvas.scss */
-  [role="navigation"]#topMenu {
-    display: none;
-  }
-}
+/* @import "foundation/components/modules/offcanvas"; */
 /* Visibility Classes ---------------------- */
 /*                                           */
 /* Standard (large) display targeting */
@@ -4670,7 +4466,7 @@ table.hide-for-medium {
   /* Global Misc --- */
   /*                 */
   /* line 172, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
-  .left, .right, .top-bar section ul {
+  .left, .right {
     float: none;
   }
 
@@ -5360,7 +5156,7 @@ table.hide-for-medium {
     border-width: 1px 1px 0 1px;
   }
   /* line 286, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
-  .flyout.right, .top-bar section ul.flyout {
+  .flyout.right {
     float: none;
     right: auto;
     left: -1px;
@@ -5538,7 +5334,7 @@ table.hide-for-medium {
   }
 
   /* line 343, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
-  .tooltip > .nub, .tooltip.top > .nub, .tooltip.left > .nub, .tooltip.right > .nub, .top-bar section ul.tooltip > .nub {
+  .tooltip > .nub, .tooltip.top > .nub, .tooltip.left > .nub, .tooltip.right > .nub {
     border-color: transparent transparent black transparent;
     border-color: transparent transparent rgba(0, 0, 0, 0.85) transparent;
     top: -12px;
@@ -5546,7 +5342,7 @@ table.hide-for-medium {
   }
 }
 /* Topbar Specific Breakpoint that you can customize */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   /* line 354, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
   .top-bar {
     margin-bottom: 0;
@@ -5823,18 +5619,18 @@ table.hide-for-medium {
     display: block;
   }
   /* line 438, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul.left, .top-bar ul.right, .top-bar section ul {
+  .top-bar ul.left, .top-bar ul.right {
     float: none;
     width: 100%;
   }
   /* line 439, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul.left > li, .top-bar ul.right > li, .top-bar section ul > li {
+  .top-bar ul.left > li, .top-bar ul.right > li {
     display: block;
     float: none;
     margin: 0 !important;
   }
   /* line 441, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul.left > li.has-dropdown .dropdown, .top-bar ul.right > li.has-dropdown .dropdown, .top-bar section ul > li.has-dropdown .dropdown {
+  .top-bar ul.left > li.has-dropdown .dropdown, .top-bar ul.right > li.has-dropdown .dropdown {
     left: 100% !important;
     top: 0;
     right: auto !important;
@@ -7540,7 +7336,7 @@ small {
     margin-right: 0;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   /* line 12, ../sass/_layout.scss */
   .page-content .page-content {
     margin-top: 60px;
@@ -7670,7 +7466,7 @@ small {
     padding: 0 15px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   /* line 55, ../sass/_layout.scss */
   #aux, .aux, .recommended {
     padding-top: 56px;
@@ -8157,39 +7953,242 @@ small {
   margin: 0 20px 20px 0;
 }
 
+/* Off canvas layout CSS/JS provided by or adapted from work by Jason Weaver and Luke Wroblewski
+   Requires
+   globals.css
+   grid.css */
+/* line 183, ../sass/_layout.scss */
+body.off-canvas {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 185, ../sass/_layout.scss */
+.container {
+  width: 100%;
+}
+
+/* line 186, ../sass/_layout.scss */
+.row {
+  overflow: hidden;
+}
+
+/* line 187, ../sass/_layout.scss */
+.row .row {
+  overflow: visible;
+}
+
+/* line 189, ../sass/_layout.scss */
+.paneled .container {
+  overflow: hidden;
+}
+
+/* line 190, ../sass/_layout.scss */
+.paneled .row {
+  width: 100%;
+}
+
+/* line 192, ../sass/_layout.scss */
+[role="main"]:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 195, ../sass/_layout.scss */
+[role="complementary"],
+[role="main"] {
+  width: 100%;
+  padding: 0 15px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.25s all ease-in;
+  -moz-transition: 0.25s all ease-in;
+  -o-transition: 0.25s all ease-in;
+  transition: 0.25s all ease-in;
+}
+
+/* line 197, ../sass/_layout.scss */
+.paneled [role="main"] {
+  padding: 0;
+}
+
+/* line 198, ../sass/_layout.scss */
+.page-panel {
+  width: 100%;
+  padding: 0 15px;
+  -webkit-transition: 0.3s margin ease-in-out;
+  -moz-transition: 0.3s margin ease-in-out;
+  -o-transition: 0.3s margin ease-in-out;
+  transition: 0.3s margin ease-in-out;
+  background: #fff;
+}
+
+/* line 199, ../sass/_layout.scss */
+#switchPanels {
+  margin: 0 -15px;
+}
+
+/* line 201, ../sass/_layout.scss */
+.hide-extras [role="complementary"] {
+  display: block;
+}
+
+/* line 203, ../sass/_layout.scss */
+[role="navigation"]#topMenu {
+  -webkit-transition: 0.25s all ease-in;
+  -moz-transition: 0.25s all ease-in;
+  -o-transition: 0.25s all ease-in;
+  transition: 0.25s all ease-in;
+}
+
+/* line 204, ../sass/_layout.scss */
+[role="navigation"]#topMenu ul {
+  margin-top: 0;
+}
+
+/* line 206, ../sass/_layout.scss */
+[role="complementary"] {
+  margin-left: -100%;
+  width: 80%;
+  float: left;
+  z-index: 2;
+}
+
+/* line 207, ../sass/_layout.scss */
+[role="main"] {
+  margin-left: 0;
+  float: right;
+  z-index: 1;
+  position: relative;
+}
+
+/* line 209, ../sass/_layout.scss */
+.paneled [role="main"] {
+  background: #fff;
+  width: 500%;
+  overflow: hidden;
+  float: none;
+  position: relative;
+  left: 0;
+  -webkit-transition: 0.15s all ease-in;
+  -moz-transition: 0.15s all ease-in;
+  -o-transition: 0.15s all ease-in;
+  transition: 0.15s all ease-in;
+}
+
+/* line 210, ../sass/_layout.scss */
+.page-panel {
+  min-height: 400px;
+  float: left;
+  margin: 0;
+  width: 20%;
+}
+
+/* line 213, ../sass/_layout.scss */
+.active [role="complementary"] {
+  margin-left: 0;
+}
+
+/* line 214, ../sass/_layout.scss */
+.active [role="main"] {
+  margin-right: -80%;
+}
+
+/* line 216, ../sass/_layout.scss */
+.active-menu [role="navigation"]#topMenu {
+  margin-top: 0 !important;
+}
+
+@media all and (min-width: 769px) {
+  /* line 220, ../sass/_layout.scss */
+  menu-button, .sidebar-button {
+    display: none;
+  }
+
+  /* line 221, ../sass/_layout.scss */
+  [role="complementary"] {
+    width: 20%;
+    margin-left: 0;
+    float: left;
+    padding: 0 15px;
+  }
+
+  /* line 222, ../sass/_layout.scss */
+  [role="main"] {
+    width: 80%;
+    padding: 0 15px;
+  }
+
+  /* line 224, ../sass/_layout.scss */
+  .paneled [role="main"] {
+    width: 100%;
+    padding: 0;
+    background: #f4f4f4;
+    left: 0 !important;
+  }
+
+  /* line 225, ../sass/_layout.scss */
+  .page-panel {
+    display: block;
+    min-height: 800px;
+    float: none;
+    margin: 0;
+    width: 100%;
+    background: #f4f4f4;
+  }
+
+  /* line 227, ../sass/_layout.scss */
+  .hide-extras [role="main"] {
+    width: 100%;
+  }
+
+  /* line 228, ../sass/_layout.scss */
+  .hide-extras [role="complementary"] {
+    display: none;
+  }
+
+  /* line 230, ../sass/_layout.scss */
+  [role="navigation"]#topMenu {
+    display: none;
+  }
+}
 /* !Top Bar */
-/* line 2, ../sass/_module-top-bar.scss */
+@media only screen and (min-width: 770px) {
+  /* line 4, ../sass/_module-top-bar.scss */
+  .top-bar section {
+    /* 		@include column(9); */
+    width: 100%;
+  }
+  /* line 7, ../sass/_module-top-bar.scss */
+  .top-bar section #main-nav {
+    margin-bottom: 0;
+    padding-right: 30px;
+  }
+  /* line 8, ../sass/_module-top-bar.scss */
+  .top-bar section ul {
+    float: right;
+  }
+  /* line 11, ../sass/_module-top-bar.scss */
+  .top-bar ul li.name {
+    /*   		@include column(3); */
+    width: 25%;
+  }
+}
+/* line 21, ../sass/_module-top-bar.scss */
 .top-bar {
   background-color: transparent;
-  /* Setting up the sliding area */
 }
-/* line 5, ../sass/_module-top-bar.scss */
-.top-bar section {
-  width: 75%;
-}
-@media only screen and (max-width: 767px) {
-  /* line 5, ../sass/_module-top-bar.scss */
-  .top-bar section {
-    float: none;
-    width: auto;
-  }
-}
-/* line 10, ../sass/_module-top-bar.scss */
-.top-bar ul li.name {
-  width: 25%;
-}
-@media only screen and (max-width: 767px) {
-  /* line 10, ../sass/_module-top-bar.scss */
-  .top-bar ul li.name {
-    float: none;
-    width: auto;
-  }
-}
-/* line 13, ../sass/_module-top-bar.scss */
+/* line 24, ../sass/_module-top-bar.scss */
 .top-bar ul li:not(.name) {
   text-transform: uppercase;
 }
-/* line 15, ../sass/_module-top-bar.scss */
+/* line 26, ../sass/_module-top-bar.scss */
 .top-bar ul li:not(.name).active {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFD86654', endColorstr='#FFCB442E');
@@ -8200,73 +8199,73 @@ small {
   background: -moz-linear-gradient(bottom, #cb442e, #d86654);
   background: -o-linear-gradient(bottom, #cb442e, #d86654);
   background: linear-gradient(bottom, #cb442e, #d86654);
+  background-color: #d86654;
 }
-/* line 18, ../sass/_module-top-bar.scss */
+/* line 30, ../sass/_module-top-bar.scss */
 .top-bar ul li:not(.name):hover {
   background-color: #1d7998;
 }
-/* line 22, ../sass/_module-top-bar.scss */
+/* line 34, ../sass/_module-top-bar.scss */
 .top-bar ul li:not(.name).active a, .top-bar ul li:not(.name):hover a {
   color: white;
 }
 
-/* line 31, ../sass/_module-top-bar.scss */
+/* line 42, ../sass/_module-top-bar.scss */
 .page-header {
   background-color: transparent;
 }
 
-/* line 32, ../sass/_module-top-bar.scss */
+/* line 43, ../sass/_module-top-bar.scss */
 .page-header.fixed {
   background-color: #f7f2e4;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
-/* line 35, ../sass/_module-top-bar.scss */
+/* line 46, ../sass/_module-top-bar.scss */
 .page-header.fixed .top-bar {
   background-color: #f7f2e4;
 }
 
-@media only screen and (max-width: 768px) {
-  /* line 41, ../sass/_module-top-bar.scss */
+@media only screen and (max-width: 769px) {
+  /* line 51, ../sass/_module-top-bar.scss */
   .top-bar {
     background: transparent;
   }
-  /* line 44, ../sass/_module-top-bar.scss */
+  /* line 54, ../sass/_module-top-bar.scss */
   .top-bar ul li.toggle-topbar {
     width: 80px;
   }
-  /* line 46, ../sass/_module-top-bar.scss */
+  /* line 56, ../sass/_module-top-bar.scss */
   .top-bar ul li.toggle-topbar:hover {
     background-color: #e7e1da;
   }
-  /* line 48, ../sass/_module-top-bar.scss */
+  /* line 58, ../sass/_module-top-bar.scss */
   .top-bar ul li.name {
     text-align: center;
   }
-  /* line 50, ../sass/_module-top-bar.scss */
+  /* line 60, ../sass/_module-top-bar.scss */
   .top-bar ul li.name:hover {
     background: transparent;
   }
-  /* line 51, ../sass/_module-top-bar.scss */
+  /* line 61, ../sass/_module-top-bar.scss */
   .top-bar ul li.name .site-branding {
     max-width: 30%;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 56, ../sass/_module-top-bar.scss */
+  /* line 66, ../sass/_module-top-bar.scss */
   .top-bar ul li.name .site-branding a {
     padding: 0;
   }
-  /* line 60, ../sass/_module-top-bar.scss */
+  /* line 70, ../sass/_module-top-bar.scss */
   .top-bar .off-canvas-control {
     position: absolute;
-    top: 10px;
     left: 15px;
     z-index: 10;
   }
-  /* line 65, ../sass/_module-top-bar.scss */
+  /* line 74, ../sass/_module-top-bar.scss */
   .top-bar .off-canvas-control #sidebarButton {
     color: #d86654;
     *zoom: 1;
@@ -8397,13 +8396,13 @@ ul.side-nav li a:hover {
     width: auto;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   /* line 4, ../sass/_module-page-footer.scss */
   .footer-row:nth-child(3) {
     left: 8.33333%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   /* line 4, ../sass/_module-page-footer.scss */
   .footer-row:nth-child(3) {
     text-align: center;
@@ -8418,7 +8417,7 @@ ul.side-nav li a:hover {
   float: none;
   display: inline-block;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   /* line 23, ../sass/_module-page-footer.scss */
   .footer-row ul.social-links {
     text-align: center;
@@ -8429,7 +8428,7 @@ ul.side-nav li a:hover {
     display: inline-block;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   /* line 33, ../sass/_module-page-footer.scss */
   .footer-row .els-logo {
     text-align: center;
@@ -8647,7 +8646,7 @@ ul.side-nav li a:hover {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   /* line 38, ../sass/_module.scss */
   .item-title-container, .item-type {
     display: block;
@@ -9194,7 +9193,7 @@ p {
   padding: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   /* line 13, ../sass/_module-form.scss */
   .form-cancel {
     margin-top: 7px;

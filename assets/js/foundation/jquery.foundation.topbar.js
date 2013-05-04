@@ -27,6 +27,7 @@
 
           var breakpoint = $("<div class='top-bar-js-breakpoint'/>").appendTo("body");
           settings.breakPoint = breakpoint.width();
+          console.log(settings.breakPoint);
           breakpoint.remove();
 
           if (!settings.initialized) {
