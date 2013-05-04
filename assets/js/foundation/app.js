@@ -55,7 +55,7 @@
     var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
   })();
 
-/*-- Panel - make dismissable --*/
+/*-- Panel & Prompt - make dismissable --*/
 ;(function ($, window, undefined) {
   'use strict';
 
@@ -68,7 +68,14 @@
       e.preventDefault();
       $(this).closest(".panel").fadeOut(function () {
         $(this).remove();
-        // Do something else after the alert closes
+        settings.callback();
+      });
+    });
+
+    $(document).on("click", ".prompt a.close", function (e) {
+      e.preventDefault();
+      $(this).closest(".prompt").fadeOut(function () {
+        $(this).remove();
         settings.callback();
       });
     });
@@ -76,6 +83,7 @@
   };
 
 })(jQuery, this);
+
 
 /*-- END Panel --*/
 
@@ -185,7 +193,7 @@
 
 	/* Mustache - homepage recent template */
 	$.getJSON('content/json/recent.json', function(data) {
-		$.get('assets/mustache/recent.mustache', function(template) {
+		$.get('assets/mustache/module-recent.mustache', function(template) {
 	    var html = Mustache.to_html(template, data);
 	    $('.recent').html(html);
 		});
@@ -250,6 +258,22 @@
         $('.user-settings-menu li:first').addClass('active');
 /*         $(document).foundationTooltips(); */
       }
+    });
+  });
+
+<!--   /* Mustache - job feed */ -->
+  $.getJSON('content/json/job-feed.json', function(data) {
+    $.get('assets/mustache/module-job-feed.mustache', function(template) {
+      var html = Mustache.to_html(template, data);
+      $('.most-read').html(html);
+    });
+  });
+
+<!--   /* Mustache - most read */ -->
+  $.getJSON('content/json/recent.json', function(data) {
+    $.get('assets/mustache/module-most-read.mustache', function(template) {
+      var html = Mustache.to_html(template, data);
+      $('.job-feed').html(html);
     });
   });
 
