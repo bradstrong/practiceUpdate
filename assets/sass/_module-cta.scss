@@ -42,6 +42,22 @@
 
 	.cta-content{}
 	.cta-actions{}
+/* 	Meet Our Experts */
+.cta.meet-experts{
+  .cta-title{display: none;}
+  @media only screen and (min-width: $topBarBreakPoint){
+    .cta-img-container{
+      float:left;
+      padding-right: 1em;
+      width: 50%;
+    }
+    .cta-action a{
+      margin-top: .5em;
+    }
+  }
+}
+
+/* Breast Cancer Forum */
 
 .cta.bcf-01{
 /*   border: none; */

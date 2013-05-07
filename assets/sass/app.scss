@@ -157,3 +157,38 @@ html.lt-ie8{
 // - fix the main nav background color in ie
 // - correct the footer layout in ie 7 + 8 (related to the float issue)
 // - correct the login page layout in ie 7 + 8 (I'm hoping will be fixed once i correct for the float issue)
+
+/* Animated Swipe Menu */
+
+.top-level-nest{
+.counter{padding-left: 2em;}
+.child-indicator{position: relative;
+  right:1;
+}
+  font-size: 12px;
+  /* line-height: 18px; */
+  overflow: hidden;
+  transition-property: height;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  .current{font-weight: bold;}
+  ul{
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  ul{
+    top:0;
+    visibility: hidden;
+    &.current-child{visibility: visible;}
+  }
+  ul, li{width: 100%;}
+  position:relative;
+    ul{
+      margin-left:100%;
+      position: absolute;
+/*       &.current-child{position: relative;} */
+    }
+  }
+
+}
+
+.tier-two{left:-100%;}

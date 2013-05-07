@@ -2,7 +2,7 @@
 /* !Type */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
   float: left;
 }
 
@@ -28,7 +28,7 @@
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .footer-row:nth-child(1), .footer-row:nth-child(2), .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -2804,21 +2804,21 @@ ul.breadcrumbs li.unavailable:hover a, ul.breadcrumbs li.unavailable a:focus {
 
 /* Inline Link List */
 /* line 193, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-ul.inline-list, ul.link-list, .footer-row ul {
+ul.inline-list, ul.link-list, .page-footer .footer-row ul {
   margin: 0 0 17px -22px;
   padding: 0;
   list-style: none;
   overflow: hidden;
 }
 /* line 195, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-ul.inline-list > li, ul.link-list > li, .footer-row ul > li {
+ul.inline-list > li, ul.link-list > li, .page-footer .footer-row ul > li {
   list-style: none;
   float: left;
   margin-left: 22px;
   display: block;
 }
 /* line 197, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-ul.inline-list > li > *, ul.link-list > li > *, .footer-row ul > li > * {
+ul.inline-list > li > *, ul.link-list > li > *, .page-footer .footer-row ul > li > * {
   display: block;
 }
 
@@ -5843,11 +5843,11 @@ ul.icons li [class*=" icon-"] {
 }
 
 /* line 159, ../sass/font-awesome.scss */
-.icon-2x, .footer-row .social-links i {
+.icon-2x, .page-footer .footer-row .social-links i, .site-footer .footer-row ul.social-links i {
   font-size: 2em;
 }
 /* line 161, ../sass/font-awesome.scss */
-.icon-2x.icon-border, .footer-row .social-links i.icon-border {
+.icon-2x.icon-border, .page-footer .footer-row .social-links i.icon-border, .site-footer .footer-row ul.social-links i.icon-border {
   border-width: 2px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -5900,13 +5900,17 @@ ul.icons li [class*=" icon-"] {
 }
 
 /* line 202, ../sass/font-awesome.scss */
-.btn [class^="icon-"].pull-left.icon-2x, .btn .footer-row .social-links i[class^="icon-"].pull-left, .footer-row .social-links .btn i[class^="icon-"].pull-left, .btn [class^="icon-"].pull-right.icon-2x, .btn .footer-row .social-links i[class^="icon-"].pull-right, .footer-row .social-links .btn i[class^="icon-"].pull-right,
+.btn [class^="icon-"].pull-left.icon-2x, .btn .page-footer .footer-row .social-links i[class^="icon-"].pull-left, .page-footer .footer-row .social-links .btn i[class^="icon-"].pull-left, .btn .site-footer .footer-row ul.social-links i[class^="icon-"].pull-left, .site-footer .footer-row ul.social-links .btn i[class^="icon-"].pull-left, .btn [class^="icon-"].pull-right.icon-2x, .btn .page-footer .footer-row .social-links i[class^="icon-"].pull-right, .page-footer .footer-row .social-links .btn i[class^="icon-"].pull-right, .btn .site-footer .footer-row ul.social-links i[class^="icon-"].pull-right, .site-footer .footer-row ul.social-links .btn i[class^="icon-"].pull-right,
 .btn [class*=" icon-"].pull-left.icon-2x,
-.btn .footer-row .social-links i[class*=" icon-"].pull-left,
-.footer-row .social-links .btn i[class*=" icon-"].pull-left,
+.btn .page-footer .footer-row .social-links i[class*=" icon-"].pull-left,
+.page-footer .footer-row .social-links .btn i[class*=" icon-"].pull-left,
+.btn .site-footer .footer-row ul.social-links i[class*=" icon-"].pull-left,
+.site-footer .footer-row ul.social-links .btn i[class*=" icon-"].pull-left,
 .btn [class*=" icon-"].pull-right.icon-2x,
-.btn .footer-row .social-links i[class*=" icon-"].pull-right,
-.footer-row .social-links .btn i[class*=" icon-"].pull-right {
+.btn .page-footer .footer-row .social-links i[class*=" icon-"].pull-right,
+.page-footer .footer-row .social-links .btn i[class*=" icon-"].pull-right,
+.btn .site-footer .footer-row ul.social-links i[class*=" icon-"].pull-right,
+.site-footer .footer-row ul.social-links .btn i[class*=" icon-"].pull-right {
   margin-top: .18em;
 }
 /* line 204, ../sass/font-awesome.scss */
@@ -5916,13 +5920,17 @@ ul.icons li [class*=" icon-"] {
 }
 
 /* line 212, ../sass/font-awesome.scss */
-.btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small .footer-row .social-links i[class^="icon-"].pull-left, .footer-row .social-links .btn.btn-small i[class^="icon-"].pull-left, .btn.btn-small [class^="icon-"].pull-right.icon-2x, .btn.btn-small .footer-row .social-links i[class^="icon-"].pull-right, .footer-row .social-links .btn.btn-small i[class^="icon-"].pull-right,
+.btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small .page-footer .footer-row .social-links i[class^="icon-"].pull-left, .page-footer .footer-row .social-links .btn.btn-small i[class^="icon-"].pull-left, .btn.btn-small .site-footer .footer-row ul.social-links i[class^="icon-"].pull-left, .site-footer .footer-row ul.social-links .btn.btn-small i[class^="icon-"].pull-left, .btn.btn-small [class^="icon-"].pull-right.icon-2x, .btn.btn-small .page-footer .footer-row .social-links i[class^="icon-"].pull-right, .page-footer .footer-row .social-links .btn.btn-small i[class^="icon-"].pull-right, .btn.btn-small .site-footer .footer-row ul.social-links i[class^="icon-"].pull-right, .site-footer .footer-row ul.social-links .btn.btn-small i[class^="icon-"].pull-right,
 .btn.btn-small [class*=" icon-"].pull-left.icon-2x,
-.btn.btn-small .footer-row .social-links i[class*=" icon-"].pull-left,
-.footer-row .social-links .btn.btn-small i[class*=" icon-"].pull-left,
+.btn.btn-small .page-footer .footer-row .social-links i[class*=" icon-"].pull-left,
+.page-footer .footer-row .social-links .btn.btn-small i[class*=" icon-"].pull-left,
+.btn.btn-small .site-footer .footer-row ul.social-links i[class*=" icon-"].pull-left,
+.site-footer .footer-row ul.social-links .btn.btn-small i[class*=" icon-"].pull-left,
 .btn.btn-small [class*=" icon-"].pull-right.icon-2x,
-.btn.btn-small .footer-row .social-links i[class*=" icon-"].pull-right,
-.footer-row .social-links .btn.btn-small i[class*=" icon-"].pull-right {
+.btn.btn-small .page-footer .footer-row .social-links i[class*=" icon-"].pull-right,
+.page-footer .footer-row .social-links .btn.btn-small i[class*=" icon-"].pull-right,
+.btn.btn-small .site-footer .footer-row ul.social-links i[class*=" icon-"].pull-right,
+.site-footer .footer-row ul.social-links .btn.btn-small i[class*=" icon-"].pull-right {
   margin-top: .25em;
 }
 
@@ -5932,27 +5940,35 @@ ul.icons li [class*=" icon-"] {
   margin-top: 0;
 }
 /* line 222, ../sass/font-awesome.scss */
-.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large .footer-row .social-links i[class^="icon-"].pull-left, .footer-row .social-links .btn.btn-large i[class^="icon-"].pull-left, .btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large .footer-row .social-links i[class^="icon-"].pull-right, .footer-row .social-links .btn.btn-large i[class^="icon-"].pull-right,
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large .page-footer .footer-row .social-links i[class^="icon-"].pull-left, .page-footer .footer-row .social-links .btn.btn-large i[class^="icon-"].pull-left, .btn.btn-large .site-footer .footer-row ul.social-links i[class^="icon-"].pull-left, .site-footer .footer-row ul.social-links .btn.btn-large i[class^="icon-"].pull-left, .btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large .page-footer .footer-row .social-links i[class^="icon-"].pull-right, .page-footer .footer-row .social-links .btn.btn-large i[class^="icon-"].pull-right, .btn.btn-large .site-footer .footer-row ul.social-links i[class^="icon-"].pull-right, .site-footer .footer-row ul.social-links .btn.btn-large i[class^="icon-"].pull-right,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x,
-.btn.btn-large .footer-row .social-links i[class*=" icon-"].pull-left,
-.footer-row .social-links .btn.btn-large i[class*=" icon-"].pull-left,
+.btn.btn-large .page-footer .footer-row .social-links i[class*=" icon-"].pull-left,
+.page-footer .footer-row .social-links .btn.btn-large i[class*=" icon-"].pull-left,
+.btn.btn-large .site-footer .footer-row ul.social-links i[class*=" icon-"].pull-left,
+.site-footer .footer-row ul.social-links .btn.btn-large i[class*=" icon-"].pull-left,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x,
-.btn.btn-large .footer-row .social-links i[class*=" icon-"].pull-right,
-.footer-row .social-links .btn.btn-large i[class*=" icon-"].pull-right {
+.btn.btn-large .page-footer .footer-row .social-links i[class*=" icon-"].pull-right,
+.page-footer .footer-row .social-links .btn.btn-large i[class*=" icon-"].pull-right,
+.btn.btn-large .site-footer .footer-row ul.social-links i[class*=" icon-"].pull-right,
+.site-footer .footer-row ul.social-links .btn.btn-large i[class*=" icon-"].pull-right {
   margin-top: .05em;
 }
 /* line 224, ../sass/font-awesome.scss */
-.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large .footer-row .social-links i[class^="icon-"].pull-left, .footer-row .social-links .btn.btn-large i[class^="icon-"].pull-left,
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large .page-footer .footer-row .social-links i[class^="icon-"].pull-left, .page-footer .footer-row .social-links .btn.btn-large i[class^="icon-"].pull-left, .btn.btn-large .site-footer .footer-row ul.social-links i[class^="icon-"].pull-left, .site-footer .footer-row ul.social-links .btn.btn-large i[class^="icon-"].pull-left,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x,
-.btn.btn-large .footer-row .social-links i[class*=" icon-"].pull-left,
-.footer-row .social-links .btn.btn-large i[class*=" icon-"].pull-left {
+.btn.btn-large .page-footer .footer-row .social-links i[class*=" icon-"].pull-left,
+.page-footer .footer-row .social-links .btn.btn-large i[class*=" icon-"].pull-left,
+.btn.btn-large .site-footer .footer-row ul.social-links i[class*=" icon-"].pull-left,
+.site-footer .footer-row ul.social-links .btn.btn-large i[class*=" icon-"].pull-left {
   margin-right: .2em;
 }
 /* line 225, ../sass/font-awesome.scss */
-.btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large .footer-row .social-links i[class^="icon-"].pull-right, .footer-row .social-links .btn.btn-large i[class^="icon-"].pull-right,
+.btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large .page-footer .footer-row .social-links i[class^="icon-"].pull-right, .page-footer .footer-row .social-links .btn.btn-large i[class^="icon-"].pull-right, .btn.btn-large .site-footer .footer-row ul.social-links i[class^="icon-"].pull-right, .site-footer .footer-row ul.social-links .btn.btn-large i[class^="icon-"].pull-right,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x,
-.btn.btn-large .footer-row .social-links i[class*=" icon-"].pull-right,
-.footer-row .social-links .btn.btn-large i[class*=" icon-"].pull-right {
+.btn.btn-large .page-footer .footer-row .social-links i[class*=" icon-"].pull-right,
+.page-footer .footer-row .social-links .btn.btn-large i[class*=" icon-"].pull-right,
+.btn.btn-large .site-footer .footer-row ul.social-links i[class*=" icon-"].pull-right,
+.site-footer .footer-row ul.social-links .btn.btn-large i[class*=" icon-"].pull-right {
   margin-left: .2em;
 }
 
@@ -8364,80 +8380,109 @@ ul.side-nav li a:hover {
 }
 
 /* line 2, ../sass/_module-page-footer.scss */
-.footer-row:nth-child(1) {
+.page-footer .footer-row:nth-child(1) {
   width: 16.66667%;
 }
 @media only screen and (max-width: 767px) {
   /* line 2, ../sass/_module-page-footer.scss */
-  .footer-row:nth-child(1) {
+  .page-footer .footer-row:nth-child(1) {
     float: none;
     width: auto;
   }
 }
 /* line 3, ../sass/_module-page-footer.scss */
-.footer-row:nth-child(2) {
+.page-footer .footer-row:nth-child(2) {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
   /* line 3, ../sass/_module-page-footer.scss */
-  .footer-row:nth-child(2) {
+  .page-footer .footer-row:nth-child(2) {
     float: none;
     width: auto;
   }
 }
 /* line 4, ../sass/_module-page-footer.scss */
-.footer-row:nth-child(3) {
+.page-footer .footer-row:nth-child(3) {
   width: 25%;
 }
 @media only screen and (max-width: 767px) {
   /* line 4, ../sass/_module-page-footer.scss */
-  .footer-row:nth-child(3) {
+  .page-footer .footer-row:nth-child(3) {
     float: none;
     width: auto;
   }
 }
 @media only screen and (min-width: 769px) {
   /* line 4, ../sass/_module-page-footer.scss */
-  .footer-row:nth-child(3) {
+  .page-footer .footer-row:nth-child(3) {
     left: 8.33333%;
   }
 }
 @media only screen and (max-width: 769px) {
   /* line 4, ../sass/_module-page-footer.scss */
-  .footer-row:nth-child(3) {
+  .page-footer .footer-row:nth-child(3) {
     text-align: center;
   }
 }
 /* line 16, ../sass/_module-page-footer.scss */
-.footer-row ul.utility-links, .footer-row ul.policy-links {
+.page-footer .footer-row ul.utility-links, .page-footer .footer-row ul.policy-links {
   text-align: center;
 }
 /* line 18, ../sass/_module-page-footer.scss */
-.footer-row ul.utility-links li, .footer-row ul.policy-links li {
+.page-footer .footer-row ul.utility-links li, .page-footer .footer-row ul.policy-links li {
   float: none;
   display: inline-block;
 }
 @media only screen and (max-width: 769px) {
   /* line 23, ../sass/_module-page-footer.scss */
-  .footer-row ul.social-links {
+  .page-footer .footer-row ul.social-links {
     text-align: center;
   }
   /* line 26, ../sass/_module-page-footer.scss */
-  .footer-row ul.social-links li {
+  .page-footer .footer-row ul.social-links li {
     float: none;
     display: inline-block;
   }
 }
 @media only screen and (max-width: 769px) {
   /* line 33, ../sass/_module-page-footer.scss */
-  .footer-row .els-logo {
+  .page-footer .footer-row .els-logo {
     text-align: center;
   }
   /* line 36, ../sass/_module-page-footer.scss */
-  .footer-row .els-logo img {
+  .page-footer .footer-row .els-logo img {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/* ----------------
+experimental footer - left sidebar
+-------------------
+
+<div class="component exp-footer-container">
+	<footer class="site-footer">
+	</footer><!-- /.site-footer -->
+</div><!--/.exp-footer-container-->
+
+------------------ */
+/* .exp-footer-container{} */
+/* line 65, ../sass/_module-page-footer.scss */
+.site-footer .footer-row a {
+  color: #1d7999;
+}
+/* line 66, ../sass/_module-page-footer.scss */
+.site-footer .footer-row ul {
+  text-align: center;
+}
+/* line 68, ../sass/_module-page-footer.scss */
+.site-footer .footer-row ul li {
+  float: none;
+  display: inline-block;
+}
+/* line 76, ../sass/_module-page-footer.scss */
+.site-footer .footer-row p.copyright {
+  text-align: center;
 }
 
 /* line 2, ../sass/_module-marketing-landing.scss */
@@ -9277,25 +9322,44 @@ p {
   box-shadow: 0 1px 1px white;
 }
 
-/* line 46, ../sass/_module-cta.scss */
+/* 	Meet Our Experts */
+/* line 47, ../sass/_module-cta.scss */
+.cta.meet-experts .cta-title {
+  display: none;
+}
+@media only screen and (min-width: 769px) {
+  /* line 49, ../sass/_module-cta.scss */
+  .cta.meet-experts .cta-img-container {
+    float: left;
+    padding-right: 1em;
+    width: 50%;
+  }
+  /* line 54, ../sass/_module-cta.scss */
+  .cta.meet-experts .cta-action a {
+    margin-top: .5em;
+  }
+}
+
+/* Breast Cancer Forum */
+/* line 62, ../sass/_module-cta.scss */
 .cta.bcf-01 {
   /*   border: none; */
   background: white;
   padding: .5em;
 }
-/* line 51, ../sass/_module-cta.scss */
+/* line 67, ../sass/_module-cta.scss */
 .cta.bcf-01 .cta-img-container img {
   border-width: 0;
   border: none;
   box-shadow: none;
 }
-/* line 57, ../sass/_module-cta.scss */
+/* line 73, ../sass/_module-cta.scss */
 .cta.bcf-01 .cta-button {
   background-color: #1d7998;
   color: white;
   border: 1px solid #114658;
 }
-/* line 59, ../sass/_module-cta.scss */
+/* line 75, ../sass/_module-cta.scss */
 .cta.bcf-01 .cta-button:hover, .cta.bcf-01 .cta-button:focus {
   background-color: #15576d;
 }
@@ -10146,33 +10210,34 @@ article.single-item h3 {
     padding-top: 14px;
   }
 }
-/* line 223, ../sass/_theme.scss */
-#formLogin .remember-forgot .forgot {
-  color: white;
-}
 
-/* line 227, ../sass/_theme.scss */
+/* line 226, ../sass/_theme.scss */
 #formRegisterPrompt {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 227, ../sass/_theme.scss */
+  /* line 226, ../sass/_theme.scss */
   #formRegisterPrompt {
     float: none;
     width: auto;
   }
 }
 
-/* line 229, ../sass/_theme.scss */
+/* line 227, ../sass/_theme.scss */
+.page-banner .forgot {
+  color: white;
+}
+
+/* line 228, ../sass/_theme.scss */
 .beta-accept, .subscribe-container {
   text-align: center;
 }
-/* line 231, ../sass/_theme.scss */
+/* line 230, ../sass/_theme.scss */
 .beta-accept input.error, .subscribe-container input.error {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* line 234, ../sass/_theme.scss */
+/* line 233, ../sass/_theme.scss */
 .beta-accept-lead, .subscribe-lead {
   color: #88cbdf;
   font-size: 17px;
@@ -10180,7 +10245,7 @@ article.single-item h3 {
   margin-bottom: 7px;
 }
 
-/* line 241, ../sass/_theme.scss */
+/* line 240, ../sass/_theme.scss */
 .beta-accept-button, .subscribe-button {
   color: #005596;
   font-weight: normal;
@@ -10196,7 +10261,7 @@ article.single-item h3 {
   box-shadow: 0 0 4px #c1cd23, 0 1px 0 white inset;
   text-transform: uppercase;
 }
-/* line 245, ../sass/_theme.scss */
+/* line 244, ../sass/_theme.scss */
 .beta-accept-button:hover, .subscribe-button:hover {
   color: #005596;
   *zoom: 1;
@@ -10210,30 +10275,30 @@ article.single-item h3 {
   background: linear-gradient(bottom, #1d1f05, #c1cd23);
 }
 
-/* line 252, ../sass/_theme.scss */
+/* line 251, ../sass/_theme.scss */
 .beta-accept-sub {
   display: none;
 }
 
-/* line 254, ../sass/_theme.scss */
+/* line 253, ../sass/_theme.scss */
 .specialty-name, .brand-name {
   color: white;
   margin-bottom: 0;
 }
 
-/* line 258, ../sass/_theme.scss */
+/* line 257, ../sass/_theme.scss */
 .specialty-name {
   font-size: 59px;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 767px) {
-  /* line 258, ../sass/_theme.scss */
+  /* line 257, ../sass/_theme.scss */
   .specialty-name {
     font-size: 44px;
   }
 }
 
-/* line 265, ../sass/_theme.scss */
+/* line 264, ../sass/_theme.scss */
 .tagline {
   color: #1d7998;
   font-family: "proxima-nova";
@@ -10241,33 +10306,33 @@ article.single-item h3 {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 270, ../sass/_theme.scss */
+  /* line 269, ../sass/_theme.scss */
   .tagline-str2 {
     display: block;
   }
 }
 
-/* line 277, ../sass/_theme.scss */
+/* line 276, ../sass/_theme.scss */
 .page-content-first {
   padding-top: 1em;
   padding-bottom: 2em;
   z-index: -5;
 }
 
-/* line 284, ../sass/_theme.scss */
+/* line 283, ../sass/_theme.scss */
 .copy-header {
   font-family: "museo-slab", serif;
   font-size: 37px;
   color: #172e54;
 }
 
-/* line 290, ../sass/_theme.scss */
+/* line 289, ../sass/_theme.scss */
 .expert-letter {
   margin-top: 28px;
   overflow: visible;
 }
 
-/* line 295, ../sass/_theme.scss */
+/* line 294, ../sass/_theme.scss */
 .expert-letter-copy {
   background-color: white;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -10278,12 +10343,12 @@ article.single-item h3 {
   border-radius: 2px;
 }
 
-/* line 305, ../sass/_theme.scss */
+/* line 304, ../sass/_theme.scss */
 .letter-illustration {
   margin-top: 21px;
 }
 @media screen and (min-width: 768px) {
-  /* line 305, ../sass/_theme.scss */
+  /* line 304, ../sass/_theme.scss */
   .letter-illustration {
     margin-top: 56px;
     margin-left: auto;
@@ -10291,45 +10356,45 @@ article.single-item h3 {
   }
 }
 
-/* line 313, ../sass/_theme.scss */
+/* line 312, ../sass/_theme.scss */
 .letter-body {
   font-size: 17px;
   line-height: 2;
 }
 
-/* line 322, ../sass/_theme.scss */
+/* line 321, ../sass/_theme.scss */
 .illustration-container {
   text-align: center;
 }
-/* line 324, ../sass/_theme.scss */
+/* line 323, ../sass/_theme.scss */
 .illustration-container img {
   max-width: 85px;
   margin: auto;
 }
 
-/* line 329, ../sass/_theme.scss */
+/* line 328, ../sass/_theme.scss */
 .page-content-second {
   margin-top: 28px;
   padding-bottom: 14px;
 }
 
-/* line 330, ../sass/_theme.scss */
+/* line 329, ../sass/_theme.scss */
 .site-benefits {
   margin-top: 28px;
 }
-/* line 332, ../sass/_theme.scss */
+/* line 331, ../sass/_theme.scss */
 .site-benefits .copy-header {
   text-align: center;
   padding-bottom: 28px;
 }
-/* line 336, ../sass/_theme.scss */
+/* line 335, ../sass/_theme.scss */
 .site-benefits h3 {
   color: #1d7998;
   font-family: "museo-slab", serif;
   font-size: 17px;
 }
 
-/* line 344, ../sass/_theme.scss */
+/* line 343, ../sass/_theme.scss */
 body.experimental-a {
   /* Corrections for Axel 2013-02-27 */
 }
@@ -11013,4 +11078,58 @@ html.lt-ie9 .brand-container {
 /* line 152, ../sass/app.scss */
 html.lt-ie8 body, html.lt-ie8 .page-header, html.lt-ie8 .page-content, html.lt-ie8 .page-footer-container {
   min-width: 1000px;
+}
+
+/* Animated Swipe Menu */
+/* line 163, ../sass/app.scss */
+.top-level-nest {
+  font-size: 12px;
+  /* line-height: 18px; */
+  overflow: hidden;
+  transition-property: height;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+/* line 164, ../sass/app.scss */
+.top-level-nest .counter {
+  padding-left: 2em;
+}
+/* line 165, ../sass/app.scss */
+.top-level-nest .child-indicator {
+  position: relative;
+  right: 1;
+}
+/* line 174, ../sass/app.scss */
+.top-level-nest .current {
+  font-weight: bold;
+}
+/* line 175, ../sass/app.scss */
+.top-level-nest ul {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  position: relative;
+}
+/* line 178, ../sass/app.scss */
+.top-level-nest ul ul {
+  top: 0;
+  visibility: hidden;
+}
+/* line 181, ../sass/app.scss */
+.top-level-nest ul ul.current-child {
+  visibility: visible;
+}
+/* line 183, ../sass/app.scss */
+.top-level-nest ul ul, .top-level-nest ul li {
+  width: 100%;
+}
+/* line 185, ../sass/app.scss */
+.top-level-nest ul ul {
+  margin-left: 100%;
+  position: absolute;
+  /*       &.current-child{position: relative;} */
+}
+
+/* line 194, ../sass/app.scss */
+.tier-two {
+  left: -100%;
 }

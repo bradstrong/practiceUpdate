@@ -220,12 +220,11 @@ article.single-item{
 			& {@media screen and (max-width: 768px){
 				padding-top: $baseFontSize;
 		}}
-	.forgot{color: $white;}
 }
 	.forgot-password-link{}
 }
 #formRegisterPrompt{@include column(6);}
-
+.page-banner .forgot{color: $white;}
 .beta-accept, .subscribe-container{
 	text-align:center;
 	input.error{background-color:rgba(255,255,255,0.9);}

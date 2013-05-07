@@ -1,4 +1,4 @@
-.footer-row {
+.page-footer .footer-row {
 	&:nth-child(1){@include column(2);}
 	&:nth-child(2){@include column(6);}
 	&:nth-child(3){
@@ -46,5 +46,34 @@
 	.page-footer .copyright {
 		// width:100%;
 		// padding:0;
+	}
+}
+
+/* ----------------
+experimental footer - left sidebar
+-------------------
+
+<div class="component exp-footer-container">
+	<footer class="site-footer">
+	</footer><!-- /.site-footer -->
+</div><!--/.exp-footer-container-->
+
+------------------ */
+/* .exp-footer-container{} */
+
+.site-footer .footer-row {
+  a{color: #1d7999;}
+	ul{
+    text-align: center;
+    li{
+      float:none;
+      display:inline-block;
+  	}
+  	&.social-links {
+  	 i{@extend .icon-2x;}
+  	}
+	}
+	p.copyright{
+  	text-align: center;
 	}
 }

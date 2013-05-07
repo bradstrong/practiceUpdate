@@ -297,6 +297,12 @@
       var html = Mustache.to_html(template);
       $('body').append(html);
     });
+
+    /* Mustache - homepage exp-footer template */
+    $.get('assets/mustache/page-footer.mustache', function(template) {
+      var html = Mustache.to_html(template);
+      $('.site-footer').html(html);
+    });
 })(jQuery, this);
 
 //disable .disabled links
@@ -305,3 +311,33 @@
       e.preventDefault();
     });
   });
+
+function menuInit() {
+/*   $('.top-level-nest a').preventDefault(); */
+  var menuParentHeight;
+
+  $('.top-level-nest ul ul').prepend('<li><a href="#" class="back-button button small">back</a></li>');
+  $('.top-level-nest ul:first').addClass('menu-parent');
+  menuParentHeight = $('.menu-parent').height();
+  $('.top-level-nest ul:first a').not('.all-topics').click(function() {
+  $('.current-child a').not('.back-button').not('current').click(function(){
+    $('.current-child .current').removeClass('current');
+    $(this).toggleClass('current');
+  });
+  $(this).siblings('ul:first').addClass('current-child');
+    $('.current-child .topic-all a').addClass('current');
+    var curChildHeight = $(this).siblings('ul:first').height();
+    $('.top-level-nest').height(curChildHeight);
+    $('.menu-parent').addClass('tier-two');
+    }
+  );
+
+/*   $('.top-level-nest ul ul a').click(function() {}); */
+  $('a.back-button').click(function(){
+    $('.top-level-nest').height(menuParentHeight);
+    $('.current-child').removeClass('current-child');
+    $('.menu-parent').removeClass('tier-two');
+  });
+
+};
+menuInit();
