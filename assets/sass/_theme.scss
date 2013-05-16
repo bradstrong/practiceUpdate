@@ -116,6 +116,9 @@ body{white-space-collapse: collapse;}
 	padding-bottom:1em;
 	z-index: 10;
 }
+.page-footer-container{
+  box-shadow: none;
+}
 
 .page-banner{
 	p{font-family:$headerFontFamily;}

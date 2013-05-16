@@ -118,26 +118,6 @@
   };
 })(jQuery);
 
-//MUSTACHE CALLS
-//ONLY NECESSARY FOR LOCAL FRONT-END DEV
-
-//TODO: make async
-//NOTE: http://stackoverflow.com/questions/1531693/ajax-async-false-request-is-still-firing-asynchronously
-
-//TODO: Load all
-//NOTE: http://stackoverflow.com/questions/11675702/nested-partials-in-mustache-and-loading-partials-from-external-file
-// // json1.js
-// var user = {
-//     fname: 'joe',
-//     lname: 'blogs',
-// }
-// // json2.js
-// var translations = {
-//     someword: 'its translation'
-// }
-
-//NOTE: use local storage for tempaltes: https://github.com/jarednova/jquery-total-storage
-
 // $.get('test.mustache', function(templates) {
 //     var json = $.extend(user, translations),
 //         one = $(templates).filter('#tpl-one').html(),
@@ -184,7 +164,8 @@
   });
 
 var waxMustache = function(){
-
+//TODO: add support for partials
+//TODO: check if target element exists before attempting to render
   var dataPath = "content/json/";
   var templatePath = "assets/mustache/";
   var mustacheList = [
@@ -245,11 +226,11 @@ function menuInit() {
   menuParentHeight = $('.menu-parent').height();
   $('.top-level-nest ul:first a').not('.all-topics').click(function() {
   $('.current-child a').not('.back-button').not('current').click(function(){
-    $('.current-child .current').removeClass('current');
-    $(this).toggleClass('current');
+    $('.top-level-nest ul .current').toggleClass('current');
+    $(this).addClass('current');
   });
   $(this).siblings('ul:first').addClass('current-child');
-    $('.current-child .topic-all a').addClass('current');
+    $('.current-child .topic-all a').toggleClass('current');
     var curChildHeight = $(this).siblings('ul:first').height();
     $('.top-level-nest').height(curChildHeight);
     $('.menu-parent').addClass('tier-two');

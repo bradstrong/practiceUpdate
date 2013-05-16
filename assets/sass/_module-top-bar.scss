@@ -23,15 +23,20 @@
   ul {
     li:not(.name) {
     	text-transform:uppercase;
+    	a{color:$white;}
       &.active {
       	@include site-gradient($pri-orange);
       	background-color: $pri-orange;
 			}
 			&:hover{
-				background-color:$pri-blue;
+  			color: $pri-blue;
+				background-color:$white;
 			}
-			&.active, &:hover{
+			&.active{
 				& a{color:$white;}
+			}
+			&:hover{
+        & a{color: $pri-blue;}
 			}
     }
     li a:not(.button){
@@ -41,10 +46,10 @@
 
 .page-header{background-color:transparent;}
 .page-header.fixed{
-  background-color:$bodyBackground;
+/*   background-color:$bodyBackground; */
   @include elementBoxShadow;
   .top-bar{
-      background-color:$bodyBackground;
+/*       background-color:$bodyBackground; */
   }
 }
 @media only screen and (max-width: $topBarBreakPoint) {
