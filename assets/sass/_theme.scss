@@ -116,10 +116,12 @@ body{white-space-collapse: collapse;}
 // h1, h2, h3, h4, h5, h6{
 // 	text-transform: capitalize;
 // }
+/*
 
 h3{
 	font-family:$titleFontFamily;
 }
+*/
 .page-banner-container, .page-footer-container{
 		&, & label, & .form-title, & .cta-title{color: rgb(255,255,255);}
 	// @include site-gradient(rgb(29,121,153));//logo blue rgb(29,121,153); //#1d7999

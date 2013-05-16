@@ -183,126 +183,73 @@
     });
   });
 
-  /* Mustache - homepage feed template */
-	$.getJSON('content/json/feed.json', function(data) {
-		$.get('assets/mustache/feed-item.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.stream-container').html(html);
-		});
-	});
+var waxMustache = function(){
 
-	/* Mustache - homepage recent template */
-	$.getJSON('content/json/recent.json', function(data) {
-		$.get('assets/mustache/module-recent.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.recent').html(html);
-		});
-
-	});
-
-	/* Mustache - homepage user-topic template */
-	$.getJSON('content/json/user-topic.json', function(data) {
-		$.get('assets/mustache/user-topic.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.user-topic').html(html);
-      tamingselect();
-		});
-	});
-
-  /* Mustache - homepage topic-spotlight template */
-	$.getJSON('content/json/topic-spotlight.json', function(data) {
-		$.get('assets/mustache/topic-spotlight.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.topic-spotlight').html(html);
-		});
-	});
-
-  /* Mustache - homepage ad template */
-		// $.get('assets/mustache/ad.mustache', function(template) {
-		// 	//alert('Load was performed.');
-	 //    var html = Mustache.to_html(template);
-	 //    $('.ad').html(html);
-		// });
-
-  /* Mustache - homepage meet-experts */
-	$.get('assets/mustache/cta-meet-experts.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.cta.meet-experts').html(html);
-		});
-
-  /* Mustache - homepage bcf-01 */
-	$.getJSON('content/json/cta-bcf-01.json', function(data) {
-		$.get('assets/mustache/cta.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.bcf-01').html(html);
-		});
-	});
-
-  /* Mustache - homepage bcf-02 */
-	$.getJSON('content/json/cta-bcf-02.json', function(data) {
-		$.get('assets/mustache/cta.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.bcf-02').html(html);
-		});
-	});
-
-  /* Mustache - homepage user-console template */
-  $.getJSON('content/json/user-console.json', function(data) {
-    $.get('assets/mustache/user-console.mustache', function(template) {
-      var html = Mustache.to_html(template, data);
-      $('.user-console').html(html);
-      $('.user-console').practiceupdateDrawer();
-      if($('body').hasClass('page-preferences')){
-        $('.user-settings-menu').toggleClass('is-collapsed is-expanded');
-        $('.user-settings-menu li:first').addClass('active');
-/*         $(document).foundationTooltips(); */
-      }
-    });
-  });
-
-<!--   /* Mustache - job feed */ -->
-  $.getJSON('content/json/job-feed.json', function(data) {
-    $.get('assets/mustache/module-job-feed.mustache', function(template) {
-      var html = Mustache.to_html(template, data);
-      $('.most-read').html(html);
-    });
-  });
-
-<!--   /* Mustache - most read */ -->
-  $.getJSON('content/json/recent.json', function(data) {
-    $.get('assets/mustache/module-most-read.mustache', function(template) {
-      var html = Mustache.to_html(template, data);
-      $('.job-feed').html(html);
-    });
-  });
-
-    /* Mustache - homepage footer template */
-    $.get('assets/mustache/page-footer.mustache', function(template) {
-      var html = Mustache.to_html(template);
-      $('.page-footer').html(html);
-    });
-
-    /* Mustache - explore slider template */
-    $('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
-
-    /*-- Modals --*/
-    //Import Modals
-    $.get('assets/mustache/modals.mustache', function(template) {
-      var html = Mustache.to_html(template);
-      $('body').append(html);
-    });
-
-  $.get('assets/mustache/modals-forgot-password.mustache', function(template) {
-      var html = Mustache.to_html(template);
-      $('body').append(html);
-    });
-
-    /* Mustache - homepage exp-footer template */
-    $.get('assets/mustache/page-footer.mustache', function(template) {
-      var html = Mustache.to_html(template);
-      $('.site-footer').html(html);
-    });
+  var dataPath = "content/json/";
+  var templatePath = "assets/mustache/";
+  var targetElem = "";
+  var htmlMethod = "html";
+  var mustacheList = [
+  ["feed","feed-item",".stream-container", "append"],
+  ["recent","module-recent",".recent", "html"],
+  ["user-topic","user-topic",".user-topic", "html"],
+  ["cta-meet-experts",".cta.meet-experts", "html"],
+  ["cta-bcf-01", "cta", ".bcf-01", "html"],
+  ["user-console", "user-console", ".user-console", "html"],
+  ["job-feed", "module-job-feed", ".job-feed", "html"],
+  ["recent", "module-most-read", ".most-read", "html"],
+  ["page-footer", ".page-footer", "html"],
+  ["modals", "body", "append"],
+  ["modals-forgot-password", "body", "append"],
+  ["page-footer", ".site-footer", "html"]
+  ];
+  var curData;
+  var curTemplate;
+  var curTarget;
+  var curMethod;
+  var mustacheLength = mustacheList.length;
+  console.log("mustacheLength is equal to " + mustacheLength);
+  for(var i=0; i<mustacheLength; i++){
+    var curSet = mustacheList[i];
+    console.log(i);
+    console.log(curSet);
+    console.log("curSet Length is equal to " +curSet.length);
+    if(curSet.length === 4){//build templates with json data
+      curData = dataPath + curSet[0] + ".json";
+      curTemplate = templatePath + curSet[1]+ ".mustache";
+      curTarget = curSet[2];
+      curMethod = curSet[3];
+      console.log(curTarget.length);
+        $.getJSON(curData, function(data) {
+      		$.get(curTemplate, function(template) {
+      	    var html = Mustache.to_html(template, data);
+      	    console.log(html);
+      	    if(curMethod === "html"){
+        	    $(curTarget).html(html);
+      	    } else if(curMethod === "append"){
+        	    $(curTarget).append(html);
+      	    }
+      		});
+      	});
+        console.log("Data: " + curData + ", Template: " + curTemplate + ", Target: " + curTarget);
+    } else if(curSet.length === 3){//build templates with no json data
+      curTemplate = templatePath + curSet[0]+ ".mustache";
+      curTarget = curSet[1];
+      curMethod = curSet[2];
+    		$.get(curTemplate, function(template) {
+    	    var html = Mustache.to_html(template);
+    	    console.log(html);
+    	    if(curMethod === "html"){
+      	    $(curTarget).html(html);
+    	    } else if(curMethod === "append"){
+      	    $(curTarget).append(html);
+    	    }
+    		});
+        console.log("Template: " + curTemplate + ", Target: " + curTarget);
+    }
+  }
+};
+waxMustache();
 })(jQuery, this);
 
 //disable .disabled links

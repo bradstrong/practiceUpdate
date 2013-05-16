@@ -3,8 +3,10 @@
 @import "_module-conference";
 
 @import "_module-user-topic";
+@import "_module-user-topic-nest";
 @import "_module-page-footer";
-@import "_module-marketing-landing";
+@import "_module-landing-marketing";
+@import "_module-landing-utility";
 @import "_module-tooltip";
 
 /* Panels ---------------------- */
@@ -158,6 +160,12 @@ p{margin-bottom:$baseFontSize/2;}
     	text-align: center;
     }
  	}
+&.type-conference{
+  .section-conference-coverage{
+    border: none;
+    box-shadow: none;
+  }
+}
  }
 
 
