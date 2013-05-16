@@ -19,18 +19,14 @@ ul li{
 }
 */
 
-
 body{
 	color: darken($txtColor, 10%);
 	background-color: $bodyBackground;
-/* 	@include noise($bodyBackground, 0.02); */
 }
+nav a:hover{text-decoration: none;}
 
 .page-header{
-	border-bottom:3px solid $pri-blue;
-}
-.page-content{
-	padding-top: $baseFontSize;
+  background-color: $pri-blue;
 }
 
 .section-widget{
@@ -39,12 +35,12 @@ body{
 }
 
 .page-footer{
-//	border-top:2px solid $white;
 	a{color:rgb(255,255,255);}
 }
 
 
 // BUTTONS
+.button:hover{text-decoration: none;}
 .load-more-button, .view-more-button, .view-more{
 	@extend .full-width;
 	@extend .success;
@@ -54,7 +50,6 @@ body{
 	@extend .full-width;
 }
 
-/*  !UI ELEMENTS */
 .load-more-button{
 	@extend .button;
 	@extend .full-width;
@@ -113,27 +108,13 @@ body{
 /* typography */
 body{white-space-collapse: collapse;}
 
-// h1, h2, h3, h4, h5, h6{
-// 	text-transform: capitalize;
-// }
-/*
-
-h3{
-	font-family:$titleFontFamily;
-}
-*/
 .page-banner-container, .page-footer-container{
 		&, & label, & .form-title, & .cta-title{color: rgb(255,255,255);}
-	// @include site-gradient(rgb(29,121,153));//logo blue rgb(29,121,153); //#1d7999
 		background-color: rgb(29,121,153);
 	@include box-shadow(0px 5px 10px 0px rgba(0,0,0,0.3));
 	padding-top:1em;
 	padding-bottom:1em;
 	z-index: 10;
-}
-
-.page-footer-container{
-
 }
 
 .page-banner{

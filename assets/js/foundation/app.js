@@ -187,8 +187,6 @@ var waxMustache = function(){
 
   var dataPath = "content/json/";
   var templatePath = "assets/mustache/";
-  var targetElem = "";
-  var htmlMethod = "html";
   var mustacheList = [
   ["feed","feed-item",".stream-container", "append"],
   ["recent","module-recent",".recent", "html"],
@@ -203,51 +201,30 @@ var waxMustache = function(){
   ["modals-forgot-password", "body", "append"],
   ["page-footer", ".site-footer", "html"]
   ];
-  var curData;
-  var curTemplate;
-  var curTarget;
-  var curMethod;
-  var mustacheLength = mustacheList.length;
-  console.log("mustacheLength is equal to " + mustacheLength);
-  for(var i=0; i<mustacheLength; i++){
-    var curSet = mustacheList[i];
-    console.log(i);
-    console.log(curSet);
-    console.log("curSet Length is equal to " +curSet.length);
-    if(curSet.length === 4){//build templates with json data
-      curData = dataPath + curSet[0] + ".json";
-      curTemplate = templatePath + curSet[1]+ ".mustache";
-      curTarget = curSet[2];
-      curMethod = curSet[3];
-      console.log(curTarget.length);
-        $.getJSON(curData, function(data) {
-      		$.get(curTemplate, function(template) {
+
+  $.each(mustacheList, function(i, v){
+    if(v.length===4){
+      $.getJSON(dataPath+v[0]+".json", function(data) {
+      		$.get(templatePath+v[1]+".mustache", function(template) {
       	    var html = Mustache.to_html(template, data);
-      	    console.log(html);
-      	    if(curMethod === "html"){
-        	    $(curTarget).html(html);
-      	    } else if(curMethod === "append"){
-        	    $(curTarget).append(html);
+      	    if(v[3] === "html"){
+        	    $(v[2]).html(html);
+      	    } else if(v[3] === "append"){
+        	    $(v[2]).append(html);
       	    }
       		});
       	});
-        console.log("Data: " + curData + ", Template: " + curTemplate + ", Target: " + curTarget);
-    } else if(curSet.length === 3){//build templates with no json data
-      curTemplate = templatePath + curSet[0]+ ".mustache";
-      curTarget = curSet[1];
-      curMethod = curSet[2];
-    		$.get(curTemplate, function(template) {
-    	    var html = Mustache.to_html(template);
-    	    console.log(html);
-    	    if(curMethod === "html"){
-      	    $(curTarget).html(html);
-    	    } else if(curMethod === "append"){
-      	    $(curTarget).append(html);
-    	    }
-    		});
-        console.log("Template: " + curTemplate + ", Target: " + curTarget);
+    } else {
+      $.get(templatePath+v[0]+".mustache", function(template) {
+  	    var html = Mustache.to_html(template);
+  	    if(v[2] === "html"){
+    	    $(v[1]).html(html);
+  	    } else if(v[2] === "append"){
+    	    $(v[1]).append(html);
+  	    }
+  		});
     }
-  }
+  });
 };
 waxMustache();
 })(jQuery, this);
