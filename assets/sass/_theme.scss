@@ -23,7 +23,7 @@ body{
 	color: darken($txtColor, 10%);
 	background-color: $bodyBackground;
 }
-nav a:hover{text-decoration: none;}
+nav a:hover, .drawer a:hover{text-decoration: none;}
 
 .page-header{
   background-color: $pri-blue;

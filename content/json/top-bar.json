@@ -1,13 +1,16 @@
 {
 	"pages":[
 		{
-			"page-id": "update"
+			"page-id": "update",
+			"page-description": "Your personalized content feed"
 		},
 		{
-			"page-id": "explore"
+			"page-id": "explore",
+			"page-description": "Browse everything on the site"
 		},
 		{
-			"page-id": "learn"
+			"page-id": "learn",
+			"page-description": "CME, Conferences and Reference"
 		}
 	]
 }

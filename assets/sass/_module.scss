@@ -174,8 +174,15 @@ p{margin-bottom:$baseFontSize/2;}
 .stream-item-container{
 	margin-bottom: $columnGutter/3;
 }
-.stream-item.in-stream{
+.stream-item.in-stream, topic-filter-helper{
 	@include innerRow(collapse);
+}
+.stream-header{
+  @include clearfix();
+  margin-bottom: 20px;
+}
+.current-filter-banner{
+  font-family: $serifFontFamily;
 }
 
 /* !Explore Page Elements*/

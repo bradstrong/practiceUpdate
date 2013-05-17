@@ -33,7 +33,7 @@
 				background-color:$white;
 			}
 			&.active{
-				& a{color:$white;}
+				& a, & a:hover{color:$white;}
 			}
 			&:hover{
         & a{color: $pri-blue;}

@@ -10,7 +10,8 @@
       <article class="job-posting in-list" itemscope itemtype="http://schema.org/JobPosting">
           <a class="job-posting-url" href="{{Url}}" rel="external" target="_blank"><span class="job-posting-title" itemprop="title">{{NormalizedJobTitle}}</span></a>
           <span class="job-posting-location" itemprop="jobLocation" itemscope itemtype="http://schema.org/Place">
-            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><br>
+            <span class="job-posting-company" itemprop="hiringOrganization">{{Company}}</span> |
               <span class="job-posting-city" itemprop="addressLocality">{{City}},</span>
               <span class="job-posting-state" itemprop="addressRegion">{{State}}</span>
             </span>

@@ -49,7 +49,7 @@
 
 .prompt{
 /*   @extend .alert-box; */
-  @include innerRow();
+/*   @include innerRow(); */
   font-weight: normal;
   padding: 6px 7px 7px;
   background-color: #fff;
