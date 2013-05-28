@@ -179,6 +179,12 @@ Stop 7: Learn tab
 	<!-- Mustache - homepage feed template -->
 	<script>
 	//<!-- Mustache - Explore News template -->
+
+	$.get('assets/mustache/from-industry.mustache', function(template) {
+    var html = Mustache.to_html(template);
+    $('.explore-sections').prepend(html);
+	});
+
 	$.getJSON('content/json/explore_news.json', function(data) {
 		$.get('assets/mustache/section.mustache', function(template) {
 			//alert('Load was performed.');
