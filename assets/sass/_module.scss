@@ -158,6 +158,12 @@ p{margin-bottom:$baseFontSize/2;}
     	text-align: center;
     }
  	}
+  &.type-conference{
+    .section-conference-coverage{
+      border: none;
+      box-shadow: none;
+    }
+  }
  }
 
 
