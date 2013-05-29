@@ -118,39 +118,6 @@
   };
 })(jQuery);
 
-//MUSTACHE CALLS
-//ONLY NECESSARY FOR LOCAL FRONT-END DEV
-
-//TODO: make async
-//NOTE: http://stackoverflow.com/questions/1531693/ajax-async-false-request-is-still-firing-asynchronously
-
-//TODO: Load all
-//NOTE: http://stackoverflow.com/questions/11675702/nested-partials-in-mustache-and-loading-partials-from-external-file
-// // json1.js
-// var user = {
-//     fname: 'joe',
-//     lname: 'blogs',
-// }
-// // json2.js
-// var translations = {
-//     someword: 'its translation'
-// }
-
-//NOTE: use local storage for tempaltes: https://github.com/jarednova/jquery-total-storage
-
-// $.get('test.mustache', function(templates) {
-//     var json = $.extend(user, translations),
-//         one = $(templates).filter('#tpl-one').html(),
-//         three = $(templates).filter('#tpl-three').html(),
-//         two = $(templates).filter('#tpl-two').html(),
-//         partials = {
-//             "tplThree": three,
-//             "tplTwo": two
-//         };
-
-//     var html = Mustache.to_html(one, json, partials);
-//     $('#mustacheContainer').html(html);
-// }, "html");
   /*-- Mustache - Top-bar --*/
    $.getJSON('content/json/top-bar.json', function(data) {
     $.get('assets/mustache/top-bar.mustache', function(template) {
@@ -183,126 +150,59 @@
     });
   });
 
-  /* Mustache - homepage feed template */
-	$.getJSON('content/json/feed.json', function(data) {
-		$.get('assets/mustache/feed-item.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.stream-container').html(html);
-		});
-	});
+var waxMustache = function(){
+//TODO: add support for partials
+//TODO: check if target element exists before attempting to render
+  var dataPath = "content/json/";
+  var templatePath = "assets/mustache/";
+  var mustacheList = [
+  ["feed","feed-item",".stream-container", "append"],
+  ["recent","module-recent",".recent", "html"],
+  ["user-topic","user-topic",".user-topic", "html"],
+  ["topic-spotlight","topic-spotlight",".topic-spotlight", "html"],
+  ["cta-meet-experts",".cta.meet-experts", "html"],
+  ["cta-bcf-01", "cta", ".bcf-01", "html"],
+  ["user-console", "user-console", ".user-console", "html"],
+  ["job-feed", "module-job-feed", ".job-feed", "html"],
+  ["recent", "module-most-read", ".most-read", "html"],
+  ["page-footer", ".page-footer", "html"],
+  ["modals", "body", "append"],
+  ["modals-forgot-password", "body", "append"],
+  ["page-footer", ".site-footer", "html"]
+  ];
 
-	/* Mustache - homepage recent template */
-	$.getJSON('content/json/recent.json', function(data) {
-		$.get('assets/mustache/module-recent.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.recent').html(html);
-		});
-
-	});
-
-	/* Mustache - homepage user-topic template */
-	$.getJSON('content/json/user-topic.json', function(data) {
-		$.get('assets/mustache/user-topic.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.user-topic').html(html);
-      tamingselect();
-		});
-	});
-
-  /* Mustache - homepage topic-spotlight template */
-	$.getJSON('content/json/topic-spotlight.json', function(data) {
-		$.get('assets/mustache/topic-spotlight.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.topic-spotlight').html(html);
-		});
-	});
-
-  /* Mustache - homepage ad template */
-		// $.get('assets/mustache/ad.mustache', function(template) {
-		// 	//alert('Load was performed.');
-	 //    var html = Mustache.to_html(template);
-	 //    $('.ad').html(html);
-		// });
-
-  /* Mustache - homepage meet-experts */
-	$.get('assets/mustache/cta-meet-experts.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.cta.meet-experts').html(html);
-		});
-
-  /* Mustache - homepage bcf-01 */
-	$.getJSON('content/json/cta-bcf-01.json', function(data) {
-		$.get('assets/mustache/cta.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.bcf-01').html(html);
-		});
-	});
-
-  /* Mustache - homepage bcf-02 */
-	$.getJSON('content/json/cta-bcf-02.json', function(data) {
-		$.get('assets/mustache/cta.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.bcf-02').html(html);
-		});
-	});
-
-  /* Mustache - homepage user-console template */
-  $.getJSON('content/json/user-console.json', function(data) {
-    $.get('assets/mustache/user-console.mustache', function(template) {
-      var html = Mustache.to_html(template, data);
-      $('.user-console').html(html);
-      $('.user-console').practiceupdateDrawer();
-      if($('body').hasClass('page-preferences')){
-        $('.user-settings-menu').toggleClass('is-collapsed is-expanded');
-        $('.user-settings-menu li:first').addClass('active');
-/*         $(document).foundationTooltips(); */
-      }
-    });
+  $.each(mustacheList, function(i, v){
+    if(v.length===4){
+      $.getJSON(dataPath+v[0]+".json", function(data) {
+      		$.get(templatePath+v[1]+".mustache", function(template) {
+      	    var html = Mustache.to_html(template, data);
+      	    if(v[3] === "html"){
+        	    $(v[2]).html(html);
+      	    } else if(v[3] === "append"){
+        	    $(v[2]).append(html);
+      	    }
+      		});
+      	});
+    } else {
+      $.get(templatePath+v[0]+".mustache", function(template) {
+  	    var html = Mustache.to_html(template);
+  	    if(v[2] === "html"){
+    	    $(v[1]).html(html);
+  	    } else if(v[2] === "append"){
+    	    $(v[1]).append(html);
+  	    }
+  		});
+    }
   });
-
-<!--   /* Mustache - job feed */ -->
-  $.getJSON('content/json/job-feed.json', function(data) {
-    $.get('assets/mustache/module-job-feed.mustache', function(template) {
-      var html = Mustache.to_html(template, data);
-      $('.most-read').html(html);
-    });
+  menuInit();
+  $('ul.drawer-menu').addClass('is-collapsed');
+  //$('li.active > a, dd.active > a').append('<span class="active-item-indicator"><i class="icon-chevron-right"></i></span>');
+  $('.drawer-toggle-button').click(function (){
+    $('ul.drawer-menu').toggleClass('is-collapsed is-expanded');
+    $('.drawer-toggle-button i').toggleClass('icon-angle-down icon-angle-up');
   });
-
-<!--   /* Mustache - most read */ -->
-  $.getJSON('content/json/recent.json', function(data) {
-    $.get('assets/mustache/module-most-read.mustache', function(template) {
-      var html = Mustache.to_html(template, data);
-      $('.job-feed').html(html);
-    });
-  });
-
-    /* Mustache - homepage footer template */
-    $.get('assets/mustache/page-footer.mustache', function(template) {
-      var html = Mustache.to_html(template);
-      $('.page-footer').html(html);
-    });
-
-    /* Mustache - explore slider template */
-    $('.explore-feature').orbit({pauseOnHover: false, directionalNav: false, bullets: true, fluid: '16x9'});
-
-    /*-- Modals --*/
-    //Import Modals
-    $.get('assets/mustache/modals.mustache', function(template) {
-      var html = Mustache.to_html(template);
-      $('body').append(html);
-    });
-
-  $.get('assets/mustache/modals-forgot-password.mustache', function(template) {
-      var html = Mustache.to_html(template);
-      $('body').append(html);
-    });
-
-    /* Mustache - homepage exp-footer template */
-    $.get('assets/mustache/page-footer.mustache', function(template) {
-      var html = Mustache.to_html(template);
-      $('.site-footer').html(html);
-    });
+};
+waxMustache();
 })(jQuery, this);
 
 //disable .disabled links
@@ -313,19 +213,40 @@
   });
 
 function menuInit() {
+/*   $.fn.practiceupdatePanel           ? $doc.practiceupdatePanel() : null; */
 /*   $('.top-level-nest a').preventDefault(); */
   var menuParentHeight;
-
+  var initActiveTitle = $('.all-topics').text();
+  $('.current-filter-banner').text(initActiveTitle);
   $('.top-level-nest ul ul').prepend('<li><a href="#" class="back-button button small">back</a></li>');
   $('.top-level-nest ul:first').addClass('menu-parent');
   menuParentHeight = $('.menu-parent').height();
   $('.top-level-nest ul:first a').not('.all-topics').click(function() {
   $('.current-child a').not('.back-button').not('current').click(function(){
-    $('.current-child .current').removeClass('current');
+    var curActiveTitle = $(this).text();
+    $('.stream-container').animate({
+      opacity: 0,
+    }, 50, function() {
+      $('.current-filter-banner').text(curActiveTitle);
+      $('.stream-container').animate({
+      opacity: 1,
+    }, 150)
+    });
+    $('.top-level-nest ul .current').toggleClass('current');
     $(this).toggleClass('current');
   });
   $(this).siblings('ul:first').addClass('current-child');
     $('.current-child .topic-all a').addClass('current');
+    var curTopicAll = $('.current-child .topic-all a').text();
+$('.stream-container').animate({
+      opacity: 0,
+    }, 50, function() {
+      $('.current-filter-banner').text(curTopicAll);
+      $('.stream-container').animate({
+      opacity: 1,
+    }, 150)
+    });
+
     var curChildHeight = $(this).siblings('ul:first').height();
     $('.top-level-nest').height(curChildHeight);
     $('.menu-parent').addClass('tier-two');
@@ -334,10 +255,18 @@ function menuInit() {
 
 /*   $('.top-level-nest ul ul a').click(function() {}); */
   $('a.back-button').click(function(){
+  $(this).siblings('a').removeClass('current');
+    $('.stream-container').animate({
+      opacity: 0,
+    }, 50, function() {
+      $('.current-filter-banner').text('All items');
+      $('.stream-container').animate({
+      opacity: 1,
+    }, 150)
+    });
     $('.top-level-nest').height(menuParentHeight);
     $('.current-child').removeClass('current-child');
     $('.menu-parent').removeClass('tier-two');
   });
 
 };
-menuInit();

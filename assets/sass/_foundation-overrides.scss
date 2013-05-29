@@ -11,7 +11,7 @@ $experimental-support-for-svg: true; //support SVG in IE
 $grey: #ededed;
 $blue:#00aeff;
 $green:#dae348;
-$bodyBackground: rgb(255,252,240);
+$bodyBackground: #faf9f4; //rgb(255,252,240);
 $itemBackground: #fcfcfa;
 
 $juneoblue: #43A1DA;
@@ -38,7 +38,7 @@ $ter-green:rgba(163,165,16,1); // pantone 294
 // Additional
 
 // Rebrand
-$bodyBackground: rgb(247,242,228);
+$bodyBackground: #faf9f4; //rgb(247,242,228);
 
 $pri-blue: 		rgb(29,121,152); //#
 $pri-orange: 	rgb(216,102,84); //#
@@ -140,9 +140,9 @@ $buttonRadius: 3px;
 
 // Top Bar Settings
 
-$topBarBgColor: $bodyBackground;
-$topBarHeight: 60px;
-$topBarHeightMobile: 60px;
+$topBarBgColor: $pri-blue;
+$topBarHeight: 40px;
+$topBarHeightMobile: 40px;
 $topBarBtmMargin: 0px;
 $topBarLinkColor: $pri-blue;
 $topBarDropBgColor: #fff;
