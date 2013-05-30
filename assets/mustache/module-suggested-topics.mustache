@@ -4,7 +4,7 @@
 <div class="widget-body">
   <ul class="suggested-topic-list list-widget-list">
   {{#suggested-topics}}
-  	<li class="suggested-topic-item list-widget-item entry"><a href="{{topic-url}}">{{topic-name}}</a> <span class="small"> <br>supported by amgen <img src="http://placehold.it/20x20"></span></li>
+  	<li class="suggested-topic-item list-widget-item entry"><a href="{{topic-url}}">{{topic-name}}</a> {{#sponsor}}<br><span class="small"> supported by {{sponsor-name}} <img src="{{sponsor-image}}"></span>{{/sponsor}}</li>
   {{/suggested-topics}}
   </ul>
 </div>

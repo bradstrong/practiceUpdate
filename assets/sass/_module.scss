@@ -4,6 +4,7 @@
 
 @import "_module-user-topic";
 @import "_module-user-topic-nest";
+@import "_module-topic-spotlight";
 @import "_module-page-footer";
 @import "_module-landing-marketing";
 @import "_module-landing-utility";
@@ -240,9 +241,7 @@ p{margin-bottom:$baseFontSize/2;}
 
 @import "_module-cta";
 @import "_module-prompt";
-
 @import "_module-widget";
-
 // ADs
 @import "_module-ad";
 

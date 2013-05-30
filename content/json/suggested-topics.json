@@ -3,7 +3,11 @@
 	"suggested-topics": [
 		{
     "topic-name" : "Atrial Fibrillation",
-    "topic-url" : "#"
+    "topic-url" : "#",
+    "sponsor" : true,
+    "sponsor-name" : "Amgen",
+    "sponsor-url" : "#",
+    "sponsor-image": "http://placehold.it/20x20"
 		},
 		{
     "topic-name" : "Infiltrative Cardiomyopathy",
