@@ -217,6 +217,18 @@ article.single-item{
 		text-transform: uppercase;
 		font-size: ms(1);
 	}
+	section.take-home-message{
+  	ul, ul li{
+    	list-style-type: disc;
+    	list-style-position: inside;
+    	margin-left: 0px;
+  	}
+  	ol, ol li{
+    	list-style-type: decimal;
+    	list-style-position: inside;
+    	margin-left: 0px;
+  	}
+	}
 }
 
 #formLogin{@include column(6);
