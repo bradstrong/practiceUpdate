@@ -153,6 +153,7 @@
 var waxMustache = function(){
 //TODO: add support for partials
 //TODO: check if target element exists before attempting to render
+//TODO: return success when all templates have been successfully built
   var dataPath = "content/json/";
   var templatePath = "assets/mustache/";
   var mustacheList = [
@@ -168,7 +169,8 @@ var waxMustache = function(){
   ["page-footer", ".page-footer", "html"],
   ["modals", "body", "append"],
   ["modals-forgot-password", "body", "append"],
-  ["page-footer", ".site-footer", "html"]
+  ["page-footer", ".site-footer", "html"],
+  ["suggested-topics", "module-suggested-topics", ".suggested-topics", "html"]
   ];
 
   $.each(mustacheList, function(i, v){
@@ -211,6 +213,14 @@ waxMustache();
       e.preventDefault();
     });
   });
+function hyphenateString(str){
+  //trim trailing and leading whitespace, replace remaining spaces with hyphens
+  return str.replace(/^\s+|\s+$/g,'').replace(/\s+/g, '-').toLowerCase();
+}
+
+  function marketingMenu(targetNav){
+    $(targetNav).children().slideToggle();
+  }
 
 function menuInit() {
 /*   $.fn.practiceupdatePanel           ? $doc.practiceupdatePanel() : null; */
@@ -218,10 +228,11 @@ function menuInit() {
   var menuParentHeight;
   var initActiveTitle = $('.all-topics').text();
   $('.current-filter-banner').text(initActiveTitle);
-  $('.top-level-nest ul ul').prepend('<li><a href="#" class="back-button button small">back</a></li>');
+  $('.top-level-nest ul ul').prepend('<li><a href="#" class="back-button button small"><i class="icon-chevron-left"></i> back</a></li>');
   $('.top-level-nest ul:first').addClass('menu-parent');
   menuParentHeight = $('.menu-parent').height();
   $('.top-level-nest ul:first a').not('.all-topics').click(function() {
+  var justClicked = $(this);
   $('.current-child a').not('.back-button').not('current').click(function(){
     var curActiveTitle = $(this).text();
     $('.stream-container').animate({

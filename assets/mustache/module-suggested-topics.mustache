@@ -1,0 +1,12 @@
+<header class="widget-header">
+  <h3 class="list-widget-title">Suggested {{channel-name}} Topics</h3>
+</header>
+<div class="widget-body">
+  <ul class="suggested-topic-list list-widget-list">
+  {{#suggested-topics}}
+  	<li class="suggested-topic-item list-widget-item entry"><a href="{{topic-url}}">{{topic-name}}</a> <span class="small"> <br>supported by amgen <img src="http://placehold.it/20x20"></span></li>
+  {{/suggested-topics}}
+  </ul>
+</div>
+<footer class="widget-footer">
+</footer>

@@ -90,18 +90,50 @@
 </div><!--/.alert-box.eic-welcome-->
 }}
 
+<script>
+  $('#cardio-user-list').hide();
+  function toggleMarketing(){
+      $('#cardio-user-list').slideToggle();
+  }
+  $('.current-topic-header .show-button').click(function(){
+    toggleMarketing();
+  });
+  $('.header-marketing-toggle').click(function(){
+    toggleMarketing();
+  });
+
+
+//    $('.show-button').toggle(
+//      function () {
+//        $('.show-button').text("hide");
+//      },
+//      function () {
+//        $('.show-button').text("show");
+//      }
+//    );
+//  });
+/*   marketingMenu('#cardio-marketing-list'); */
+</script>
+
 <div class="stream-header">
-  <div class="topic-filter-helper">
+  <div class="topic-filter-helper" style="background:#1d7998; color: white; padding-top:5px;">
+  <div class="twelve columns">
+  <div class="">
   <div class="eight columns">
-  <span class="current-filter-banner">All Topics</span>
+  <div><b class="current-filter-banner">current topic</b></div>
   </div>
 
-  <div class="four columns">
-  <a href="explore.html" class="button small">Explore this topic</a>
+  <div class="two columns">
+  <a href="explore.html" class="small radius button"><i class="icon-share"></i></a>
   </div>
-  <hr>
+  <div class="two columns">
+  <a class="header-marketing-toggle" style="color:white; font-size:2em; display: block; text-align: right;"><i class="icon-sort"></i></a>
   </div>
-<div id="user-topic-filter-sub">
+  </div>
+  </div>
+<span style="width:0px; height:0px; color: #1d7998;">.</span>
+  </div>
+{{!<div id="user-topic-filter-sub">
 	<dl class="sub-nav">
 	<dt style="height: auto; line-height: 1.2em;">Popular Topics</dt>
 		<dd class="active"><a href="#simple1">Topic Name</a></dd>
@@ -111,7 +143,30 @@
 		<dd><a href="#simple5">Topic Named Topic</a></dd>
 		<dd><a href="#simple6">SHRT</a></dd>
 	</dl>
-</div><!--/#user-topic-filter-sub-->
+</div><!--/#user-topic-filter-sub-->}}
+
+<div class="current-topic-header">
+<!-- <img src="http://placehold.it/60x60"> -->
+
+<ul id="cardio-user-list" class="side-nav">
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+<li><a href="#">one</a></li>
+</ul>
+<div class="show-button" style="display:block; text-align: center;">show / hide</div>
+</div>
 </div>
 
 {{#items}}

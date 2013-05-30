@@ -1,0 +1,29 @@
+{
+  "channel-name" : "Cardiology",
+	"suggested-topics": [
+		{
+    "topic-name" : "Atrial Fibrillation",
+    "topic-url" : "#"
+		},
+		{
+    "topic-name" : "Infiltrative Cardiomyopathy",
+    "topic-url" : "#"
+		},
+		{
+    "topic-name" : "Hypoplastic Left Heart Syndrome",
+    "topic-url" : "#"
+		},
+		{
+    "topic-name" : "Atrial Septal Defects and Patent Foramen Ovale Closure",
+    "topic-url" : "#"
+		},
+		{
+    "topic-name" : "Mitral Valve Prolapse",
+    "topic-url" : "#"
+		},
+		{
+    "topic-name" : "Isolated Congenital Complete Heart Block",
+    "topic-url" : "#"
+		}
+	]
+}
