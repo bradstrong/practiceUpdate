@@ -59,10 +59,10 @@ nav a:hover, .drawer a:hover{text-decoration: none;}
 
 .badge{
 	@extend .label;
-	border-radius:50%;
-	color: $white;
-	padding: $baseFontSize / 3;
 	background:$sec-orange;
+	border-radius:100%;
+	color: $white;
+	display: inline-block;
 	&.featured{
 		padding: $baseFontSize / 2.5 $baseFontSize / 2;
 		background:$sec-ltBlue;
@@ -70,6 +70,14 @@ nav a:hover, .drawer a:hover{text-decoration: none;}
 	&.story-of-the-week{
 		padding: $baseFontSize / 2.5 $baseFontSize / 1.5;
 		background:$sec-green;
+	}
+	&.badge-bcf-steps{
+  	background: rgb(96,96,96);
+  	height: 3em;
+  	padding-top: .3em;
+  	margin-top: 4px;
+  	margin-right: 8px;
+  	width: 3em;
 	}
 }
 .flag{
@@ -194,6 +202,18 @@ article.single-item{
 	h3{
 		text-transform: uppercase;
 		font-size: ms(1);
+	}
+	section.take-home-message{
+  	ul, ul li{
+    	list-style-type: disc;
+    	list-style-position: inside;
+    	margin-left: 0px;
+  	}
+  	ol, ol li{
+    	list-style-type: decimal;
+    	list-style-position: inside;
+    	margin-left: 0px;
+  	}
 	}
 }
 
@@ -331,5 +351,9 @@ body.experimental-a{
 }
 body.experimental-b{
 	@import '_experimental-b';
+}
+
+.references ul.accordion ol li{
+  list-style: decimal;
 }
 
