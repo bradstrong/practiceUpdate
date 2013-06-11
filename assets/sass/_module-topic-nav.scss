@@ -1,0 +1,52 @@
+/*
+<nav class="topic-nav">
+  <ul class="side-nav channel-list multi-channel">
+    <li class="channel-all"><a href="#">All Items</a></li>
+    <ul class="aat-list">
+      <li class="channel-aat-all"><a href="#">All Items</a></li>
+      <li class=""></li>
+    </ul>
+  </ul>
+</nav>
+*/
+
+nav.topic-nav{
+  font-size: 12px;
+  overflow: hidden;
+  transition-property: height;
+  transition-property: position;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+
+  ul.channel-list{padding: 0;}
+  .counter{
+    @extend .badge;
+    text-align: right;
+    display: none; //until we have a final design
+  }
+  .child-indicator{
+    position: relative;
+    float: right;
+  }
+  .current{font-weight: bold;}
+
+  ul{
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+
+  ul, li{width: 100%;}
+  position:relative;
+  }
+  ul.aat-list{
+    margin-left:100%;
+    position: absolute;
+    top:0;
+    visibility: hidden;
+    &.current-child{visibility: visible;}
+  }
+
+}
+
+.tier-two{left:-100%;}
+
+/* <span class="nav-header" style="padding: 7px; display: block; border: 1px solid #e3dcd4; margin-top: 14px; background-color: white; color: #172e54; font-family: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 500; padding: 7px 7px 2px;margin: 10px 0 0;">My Topics</span> */
