@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="url" id="longUrl-input">
+    </form>
+    <a href="#" type="submit" id="submit-url">submit</a>
+<div id="results"></div>
+    <script>
+$(document).ready(function(){
+
+//ow.ly reference
+//'http://ow.ly/api/1.1/url/shorten?apiKey='+ apiKey +'&longUrl=' + $longUrlVal
+
+  apiKey = 'Z33BO6i7s1F8YjtVxZjjK';
+
+  $('#submit-url').on('click', function(){
+    $longUrlVal = $('#longUrl-input').val();
+    longUrlencoded = encodeURIComponent($longUrlVal);
+
+    //var requestUrl =
+    $.post("http://ow.ly/api/1.1/url/shorten", { apiKey: apiKey, longUrl: longUrlencoded }).done(function( html ) {
+  console.log(html);
+  $("#results").append(html);
+});
+  });
+});
+    </script>
+  </body>
+</html>
