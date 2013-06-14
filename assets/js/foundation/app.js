@@ -47,7 +47,7 @@
  --*/
 
  /*-- TypeKit--*/
-(function() {
+;(function() {
     var config = {
       kitId: 'zwv8ekz',
       scriptTimeout: 3000
@@ -98,6 +98,32 @@
     $.fn.practiceupdatePanel           ? $doc.practiceupdatePanel() : null;
   });
 
+//dev build - use to read url params to mimick states
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++)
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam)
+        {
+            return sParameterName[1];
+        }
+    }
+}
+
+// read known url parameters
+var recipParam = GetURLParameter('recip');
+var userParam = GetURLParameter('user');
+var statusParam = GetURLParameter('status');
+
+//if recip=mike, make crazy happen
+if(recipParam==='mike'){
+  $('.page-content').on('hover', 'a', function(){
+    $(this).parent().hide('fast');
+  });
+}
 
 //(function siteInit(){
 //'use strict';
@@ -157,6 +183,7 @@ var waxMustache = function(){
   var dataPath = "content/json/";
   var templatePath = "assets/mustache/";
   var mustacheList = [
+  ["module-content-header",".stream-container", "append"],
   ["feed","feed-item",".stream-container", "append"],
   ["recent","module-recent",".recent", "html"],
   ["user-topic","user-topic",".user-topic", "html"],
@@ -281,3 +308,59 @@ $('.stream-container').animate({
   });
 
 };
+
+////////////////////////////////////////////////////////////////////////////////////////
+// topic nav
+////////////////////////////////////////////////////////////////////////////////////////
+
+function topicNavInit() {
+/*   $.fn.practiceupdatePanel           ? $doc.practiceupdatePanel() : null; */
+/*   $('.top-level-nest a').preventDefault(); */
+  var childIndicator = '<i class="icon-chevron-right child-indicator"></i>';
+  var topicNavBackButton = '<li><a href="#" class="back-button button small"><i class="icon-chevron-left"></i> back</a></li>';
+  var menuParentHeight;
+  var navHeaderHeight = $('.topic-nav .nav-header').height();
+  var initActiveTitle = $('.all-topics').text();
+  var curTopicAll = $('.current-child .topic-all a').text();
+
+  var transitionActive = function(){
+    $('.stream-container').animate({opacity: 0}, 50, function() {
+      $('.current-filter-banner').text(curActiveTitle);
+      $('.stream-container').animate({opacity: 1}, 150)
+    });
+  };
+
+  $('.current-filter-banner').text(initActiveTitle);
+
+  // determine whether this list contains more than one channel
+  if($('.topic-nav .channel-list').hasClass('multi-channel')){
+    menuParentHeight = $('.topic-nav .channel-list').height();
+
+    $('.topic-nav .channel-list .channel-all>a').toggleClass('current');
+    $('.topic-nav .channel-list .channel>a').append(childIndicator);
+    $('.topic-nav .channel-list .aat-list').prepend(topicNavBackButton);
+    $('.topic-nav .channel-list li.channel>a').on("click", function(event){
+      $('.channel-list').addClass('tier-two');
+      $(this).closest('.channel').toggleClass('current-channel');
+      var curChildHeight = $(this).siblings('.aat-list').height();
+      $('.topic-nav-inner').height(curChildHeight);
+    });
+    $('.topic-nav .channel-list a.back-button').on("click", function(event){
+/*       $('.current-filter-banner').text('All items'); */
+      $('.topic-nav-inner').height(menuParentHeight);
+      $('.current-channel').removeClass('current-channel');
+      $('.channel-list').removeClass('tier-two');
+    });
+    $('.topic-nav .channel-list .aat-list a').not('.back-button').on("click", function(event){
+      $('.channel-list .current').toggleClass('current');
+      $(this).toggleClass('current');
+    });
+  } else {// user only subscribes to single-channel
+    $('.topic-nav .channel-list .channel>a, .channel-list .channel-all>a').on("click", function(event){
+      $('.channel-list .current').toggleClass('current');
+      $(this).toggleClass('current');
+    });
+  }
+
+};
+topicNavInit();

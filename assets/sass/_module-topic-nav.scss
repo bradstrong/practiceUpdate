@@ -12,13 +12,39 @@
 
 nav.topic-nav{
   font-size: 12px;
-  overflow: hidden;
-  transition-property: height;
-  transition-property: position;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.3s;
 
-  ul.channel-list{padding: 0;}
+  .topic-nav-header, .nav-header{}
+
+  .topic-nav-inner{
+    overflow: hidden;
+    transition-property: height;
+    transition-property: position;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+  }
+
+  ul{
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    position:relative;
+
+    ul, li{width: 100%;}
+  }
+
+  ul.channel-list{
+    padding: 0;
+    &.tier-two{left:-100%;}
+  }
+
+  ul.aat-list{
+    margin-left:100%;
+    position: absolute;
+    top:0;
+    visibility: hidden;
+  }
+
+  .current-channel ul.aat-list{visibility: visible;}
+
   .counter{
     @extend .badge;
     text-align: right;
@@ -30,23 +56,6 @@ nav.topic-nav{
   }
   .current{font-weight: bold;}
 
-  ul{
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.3s;
-
-  ul, li{width: 100%;}
-  position:relative;
-  }
-  ul.aat-list{
-    margin-left:100%;
-    position: absolute;
-    top:0;
-    visibility: hidden;
-    &.current-child{visibility: visible;}
-  }
-
 }
-
-.tier-two{left:-100%;}
 
 /* <span class="nav-header" style="padding: 7px; display: block; border: 1px solid #e3dcd4; margin-top: 14px; background-color: white; color: #172e54; font-family: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 500; padding: 7px 7px 2px;margin: 10px 0 0;">My Topics</span> */
