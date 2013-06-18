@@ -1,14 +1,23 @@
 .widget{
 	/* !Ads */
 	&.ad{
+		object, embed{
+  		display:block;
+  		height: 100%;
+  		width: 100%;
+  	}
 		.ad-container{
 			text-align: center;
 			.ad-title{
+  			background-color: #afa298;
+			  color: #fff;
 				text-align:left;
-				margin: $baseFontSize;
+				padding: 0px 7px 2px;
+				margin: 0 auto 1px;
 				.ad-title-text{
-					font-size: ms(0)*.85;
-					letter-spacing:2px;
+					font-size: 10px;
+					font-weight: bold;
+					letter-spacing:1px;
 					text-transform:uppercase;
 				}
 			}
@@ -16,65 +25,33 @@
 				background:transparent;
 				display:block;
 				overflow:hidden;
-
+    		&>a{}
 			}
 		}
 	}
 }
 
-
 .page-content .widget.ad{
-	padding:$baseFontSize 0;
+	padding:0 0 $baseFontSize;
 }
 
-#leaderboardouter{min-height:104px;}
 #leaderboard{
-	.ad-title{
-		margin:0 auto;
-		width: 728px;
-		text-align:left;
-		.ad-title-text{
-			text-transform:uppercase;
-		}
-	}
-	object, embed{
-		display:block;
-		height: 90px;
-		width: 728px;
-	}
+  max-width: 728px;
+  margin:0 auto $baseFontSize/2;
 }
-#leaderboardcontent{}
-#leaderboardcontentinner{ max-width: 728px; margin: 0 auto; max-height: 90px; }
+#leaderboardcontent{max-width: 728px; margin: 0 auto; max-height: 90px;}
 
-#boombox1{
-	object, embed{
-		display:block;
-		height: 250px;
-		width: 300px;
-	}
-}
-#boombox1content{}
-#boombox1contentinner{float: left; max-width: 300px; margin: 0 auto; max-height: 250px; }
+#boombox1{max-width: 300px;}
+#boombox1content{max-width: 300px; margin: 0 auto; max-height: 250px;}
 
-#boombox2{
-	object, embed{
-		display:block;
-		height: 250px;
-		width: 300px;
-	}
-}
-/* #boombox2content{} */
-#boombox2contentinner{float: left; max-width: 300px; margin: 0 auto; max-height: 250px;}
+#boombox2{max-width: 300px;}
+#boombox2content{max-width: 300px; margin: 0 auto; max-height: 250px;}
 
-#skyscraper{
-	object, embed{
-		display:block;
-		height: 600px;
-		width: 160px;
-	}
-}
-#skyscrapercontent{}
-#skyscrapercontentinner{float: left;	max-width: 160px; margin: 0 auto; max-height: 600px;}
+#skyscraper{max-width: 160px;}
+#skyscrapercontent{max-width: 160px; margin: 0 auto; max-height: 600px;}
+
+#filmstrip1{max-width: 300px;}
+#filmstrip1content{max-width: 300px; margin: 0 auto; max-height: 600px;}
 
 // Hide leaderboard containers on mobile
 #leaderboardouter, #leaderboard{@media only screen and (max-width: $screenSmall) {display:none;}}
