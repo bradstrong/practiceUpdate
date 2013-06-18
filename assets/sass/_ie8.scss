@@ -1,17 +1,117 @@
-.lt-ie9 #formLogin{
-	.signin {
-	margin:0;
-	float:left;
-	width:100px;
+/* InnerRow() negative margin override for IE7 + 8 */
+html.lt-ie9{
+	.footer-section,
+	.pref-content,
+	.channel-list,
+	.alert-body,
+	.section-widget,
+	.checked-list,
+	.user-directory-header,
+	.user-directory,
+	.user-profile-header,
+	.profile-card,
+	.profile-details,
+	.user-detail-list,
+	.item-header,
+	.item-content,
+	.single-item,
+	.in-stream,
+	.password-signin,
+	.login-register{
+		margin-left:0 !important;
+		margin-right:0 !important;
 	}
-	input[type="text"],.password input{
-		width:90%;
-		padding:8px 6px;
-		height:34px;
+
+	.footer-section,
+	.pref-content,
+	.channel-list,
+	.alert-body,
+	.section-widget,
+	.checked-list,
+	.user-directory-header,
+	.user-directory,
+	.user-profile-header,
+	.profile-card,
+	.profile-details,
+	.user-detail-list,
+	//.item-header,
+	//.item-content,
+	.single-item,
+	.in-stream,
+	.password-signin,
+	.login-register{
+		padding-left:15px !important;
+		padding-right:15px !important;
 	}
-	.password{
-	margin:0 5px 0 -15px;
-	float:left;
-	width:166px;
+	#li_update, #li_explore, #li_learn, 	#li_update a, #li_explore a, #li_learn a{
+		text-transform: uppercase !important;
 	}
-} 
+
+// - fix the main nav background color in ie
+  .top-bar{}
+
+  .page-footer{// - correct the footer layout in ie 7 + 8 (related to the float issue)
+    .footer-row {
+      float: none;
+      left: 0;
+    	width: auto;
+    	text-align: center;
+    	ul{
+      	text-align: center;
+      	li{
+        	float: none;
+        	display: inline-block;
+      	}
+    	}
+    }
+  }
+
+	/* Marketing Pages */
+	.login-register-container{
+		float: left;
+		.password-signin{padding-left:0px !important; padding-right:0px !important;}
+	}
+
+  #formLogin{
+  	.signin {
+  	margin:0;
+  	float:left;
+  	width:100px;
+  	}
+  	input[type="text"],.password input{
+  		width:90%;
+  		padding:8px 6px;
+  		height:34px;
+  	}
+  	.password{
+  	margin:0 5px 0 -15px;
+  	float:left;
+  	width:166px;
+  	}
+  }
+	#formRegisterPrompt{
+		float: right;
+	}
+
+	/* Sitewide layout containers */
+	.stream-container,
+	.explore-container,
+	.cme-container,
+	.single-item-container,
+	.register-container,
+	.user-directory-container,
+	.user-profile-container,
+	.channel-list-container,
+	.static-container{
+		float: left;
+	}
+	#aux, .aux, .recommended{float: right; padding-left: 15px;}// - fixes spacing issues on 7 + 8
+
+	/* Preferences + Registration */
+	.pref-container{
+		.pref-tabs{float: left;}
+		.pref-tabs-content{float: right;}
+	}
+	/* Landing Page*/
+	.brand-container{float:left !important;}
+} /* End lt-ie9 */

@@ -1,3 +1,8 @@
+/* Display fixes for IE6 + 7 */
+html.lt-ie8{
+	body, .page-header, .page-content, .page-footer-container{ min-width:1000px;}
+}
+
 /*Start: footer*/
 .lt-ie9 .four, .lt-ie8 .row .four {
     width: 30%;

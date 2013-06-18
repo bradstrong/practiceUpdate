@@ -2,7 +2,7 @@
 /* !Type */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt {
   float: left;
 }
 
@@ -28,7 +28,7 @@
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt, html.lt-ie9 .footer-row {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .item-title-container, .action-bar, .item-type, .item-pub-date, .item-container .commentary-container, .item-content-container, .item-content-section, .item-footer, .commentary-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, #formLogin, #formRegisterPrompt {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -11251,14 +11251,14 @@ line {
 }
 
 /* InnerRow() negative margin override for IE7 + 8 */
-/* line 64, ../sass/app.scss */
+/* line 2, ../sass/_ie8.scss */
 html.lt-ie9 {
   /* Marketing Pages */
   /* Sitewide layout containers */
   /* Preferences + Registration */
   /* Landing Page*/
 }
-/* line 82, ../sass/app.scss */
+/* line 20, ../sass/_ie8.scss */
 html.lt-ie9 .footer-section,
 html.lt-ie9 .pref-content,
 html.lt-ie9 .channel-list,
@@ -11280,7 +11280,7 @@ html.lt-ie9 .login-register {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
-/* line 104, ../sass/app.scss */
+/* line 42, ../sass/_ie8.scss */
 html.lt-ie9 .footer-section,
 html.lt-ie9 .pref-content,
 html.lt-ie9 .channel-list,
@@ -11300,39 +11300,58 @@ html.lt-ie9 .login-register {
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
-/* line 108, ../sass/app.scss */
+/* line 46, ../sass/_ie8.scss */
 html.lt-ie9 #li_update, html.lt-ie9 #li_explore, html.lt-ie9 #li_learn, html.lt-ie9 #li_update a, html.lt-ie9 #li_explore a, html.lt-ie9 #li_learn a {
   text-transform: uppercase !important;
 }
-/* line 112, ../sass/app.scss */
-html.lt-ie9 .footer-row {
-  width: 33.33333%;
+/* line 54, ../sass/_ie8.scss */
+html.lt-ie9 .page-footer .footer-row {
+  float: none;
+  left: 0;
+  width: auto;
+  text-align: center;
 }
-@media only screen and (max-width: 767px) {
-  /* line 112, ../sass/app.scss */
-  html.lt-ie9 .footer-row {
-    float: none;
-    width: auto;
-  }
+/* line 59, ../sass/_ie8.scss */
+html.lt-ie9 .page-footer .footer-row ul {
+  text-align: center;
 }
-/* line 117, ../sass/app.scss */
+/* line 61, ../sass/_ie8.scss */
+html.lt-ie9 .page-footer .footer-row ul li {
+  float: none;
+  display: inline-block;
+}
+/* line 70, ../sass/_ie8.scss */
 html.lt-ie9 .login-register-container {
   float: left;
 }
-/* line 120, ../sass/app.scss */
+/* line 72, ../sass/_ie8.scss */
 html.lt-ie9 .login-register-container .password-signin {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-/* line 122, ../sass/app.scss */
-html.lt-ie9 #formLogin {
+/* line 76, ../sass/_ie8.scss */
+html.lt-ie9 #formLogin .signin {
+  margin: 0;
   float: left;
+  width: 100px;
 }
-/* line 123, ../sass/app.scss */
+/* line 81, ../sass/_ie8.scss */
+html.lt-ie9 #formLogin input[type="text"], html.lt-ie9 #formLogin .password input {
+  width: 90%;
+  padding: 8px 6px;
+  height: 34px;
+}
+/* line 86, ../sass/_ie8.scss */
+html.lt-ie9 #formLogin .password {
+  margin: 0 5px 0 -15px;
+  float: left;
+  width: 166px;
+}
+/* line 92, ../sass/_ie8.scss */
 html.lt-ie9 #formRegisterPrompt {
   float: right;
 }
-/* line 136, ../sass/app.scss */
+/* line 105, ../sass/_ie8.scss */
 html.lt-ie9 .stream-container,
 html.lt-ie9 .explore-container,
 html.lt-ie9 .cme-container,
@@ -11344,26 +11363,22 @@ html.lt-ie9 .channel-list-container,
 html.lt-ie9 .static-container {
   float: left;
 }
-/* line 139, ../sass/app.scss */
+/* line 108, ../sass/_ie8.scss */
 html.lt-ie9 #aux, html.lt-ie9 .aux, html.lt-ie9 .recommended {
   float: right;
+  padding-left: 15px;
 }
-/* line 143, ../sass/app.scss */
+/* line 112, ../sass/_ie8.scss */
 html.lt-ie9 .pref-container .pref-tabs {
   float: left;
 }
-/* line 144, ../sass/app.scss */
+/* line 113, ../sass/_ie8.scss */
 html.lt-ie9 .pref-container .pref-tabs-content {
   float: right;
 }
-/* line 147, ../sass/app.scss */
+/* line 116, ../sass/_ie8.scss */
 html.lt-ie9 .brand-container {
   float: left !important;
 }
 
 /* End lt-ie9 */
-/* Display fixes for IE6 + 7 */
-/* line 152, ../sass/app.scss */
-html.lt-ie8 body, html.lt-ie8 .page-header, html.lt-ie8 .page-content, html.lt-ie8 .page-footer-container {
-  min-width: 1000px;
-}
