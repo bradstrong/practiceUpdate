@@ -55,3 +55,31 @@
 
 // Hide leaderboard containers on mobile
 #leaderboardouter, #leaderboard{@media only screen and (max-width: $screenSmall) {display:none;}}
+
+//fix for ie8 and below
+html.lt-ie9{
+  .widget.ad.leaderboard{
+    .ad-content, object, embed{
+      height: 7280px;
+      width: 90px;
+    }
+  }
+  .widget.ad.boombox{
+    .ad-content, object, embed{
+      height: 250px;
+      width: 300px;
+    }
+  }
+  .widget.ad.skyscraper{
+    .ad-content, object, embed{
+      height: 160px;
+      width: 600px;
+    }
+  }
+  .widget.ad.filmstrip{
+    .ad-content, object, embed{
+      height: 600px;
+      width: 300px;
+    }
+  }
+}

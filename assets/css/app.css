@@ -9981,6 +9981,27 @@ p {
   }
 }
 
+/* line 62, ../sass/_module-ad.scss */
+html.lt-ie9 .widget.ad.leaderboard .ad-content, html.lt-ie9 .widget.ad.leaderboard object, html.lt-ie9 .widget.ad.leaderboard embed {
+  height: 7280px;
+  width: 90px;
+}
+/* line 68, ../sass/_module-ad.scss */
+html.lt-ie9 .widget.ad.boombox .ad-content, html.lt-ie9 .widget.ad.boombox object, html.lt-ie9 .widget.ad.boombox embed {
+  height: 250px;
+  width: 300px;
+}
+/* line 74, ../sass/_module-ad.scss */
+html.lt-ie9 .widget.ad.skyscraper .ad-content, html.lt-ie9 .widget.ad.skyscraper object, html.lt-ie9 .widget.ad.skyscraper embed {
+  height: 160px;
+  width: 600px;
+}
+/* line 80, ../sass/_module-ad.scss */
+html.lt-ie9 .widget.ad.filmstrip .ad-content, html.lt-ie9 .widget.ad.filmstrip object, html.lt-ie9 .widget.ad.filmstrip embed {
+  height: 600px;
+  width: 300px;
+}
+
 /* line 249, ../sass/_module.scss */
 .widget.els-branding {
   width: 25%;
