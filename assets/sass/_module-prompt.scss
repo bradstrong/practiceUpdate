@@ -105,10 +105,18 @@
 
 .ifi-prompt{
   padding: 0;
+/*   border:4px solid green; */
   .section-widget{
+    background: lighten(#e6e7e8, 5%);
     margin: 0;
     box-shadow: none;
     border: none;
+    .section-header{
+      .section-title{
+        color: $txtColor;
+        font-size: ms(0);
+      }
+    }
   }
 }
 

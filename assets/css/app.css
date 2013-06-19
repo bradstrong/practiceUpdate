@@ -9771,37 +9771,44 @@ p {
 /* line 106, ../sass/_module-prompt.scss */
 .ifi-prompt {
   padding: 0;
+  /*   border:4px solid green; */
 }
-/* line 108, ../sass/_module-prompt.scss */
+/* line 109, ../sass/_module-prompt.scss */
 .ifi-prompt .section-widget {
+  background: #f3f4f4;
   margin: 0;
   box-shadow: none;
   border: none;
 }
-
 /* line 115, ../sass/_module-prompt.scss */
+.ifi-prompt .section-widget .section-header .section-title {
+  color: #887e6f;
+  font-size: 14px;
+}
+
+/* line 123, ../sass/_module-prompt.scss */
 .access-prompt-header {
   border-bottom: 1px solid;
   padding-bottom: 7px;
 }
 
-/* line 122, ../sass/_module-prompt.scss */
+/* line 130, ../sass/_module-prompt.scss */
 .scheduled-prompt .prompt-header-text {
   font-size: 17px;
 }
-/* line 128, ../sass/_module-prompt.scss */
+/* line 136, ../sass/_module-prompt.scss */
 .scheduled-prompt .event-badge {
   width: 8.33333%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 128, ../sass/_module-prompt.scss */
+  /* line 136, ../sass/_module-prompt.scss */
   .scheduled-prompt .event-badge {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 128, ../sass/_module-prompt.scss */
+  /* line 136, ../sass/_module-prompt.scss */
   .scheduled-prompt .event-badge {
     float: left;
     width: 25%;
@@ -9809,24 +9816,24 @@ p {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 128, ../sass/_module-prompt.scss */
+  /* line 136, ../sass/_module-prompt.scss */
   .scheduled-prompt .event-badge {
     left: 75%;
   }
 }
-/* line 129, ../sass/_module-prompt.scss */
+/* line 137, ../sass/_module-prompt.scss */
 .scheduled-prompt .event-message {
   width: 91.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 129, ../sass/_module-prompt.scss */
+  /* line 137, ../sass/_module-prompt.scss */
   .scheduled-prompt .event-message {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 129, ../sass/_module-prompt.scss */
+  /* line 137, ../sass/_module-prompt.scss */
   .scheduled-prompt .event-message {
     float: left;
     width: 75%;
@@ -9834,16 +9841,16 @@ p {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 129, ../sass/_module-prompt.scss */
+  /* line 137, ../sass/_module-prompt.scss */
   .scheduled-prompt .event-message {
     right: 25%;
   }
 }
-/* line 130, ../sass/_module-prompt.scss */
+/* line 138, ../sass/_module-prompt.scss */
 .scheduled-prompt figure {
   padding: 0 14px;
 }
-/* line 135, ../sass/_module-prompt.scss */
+/* line 143, ../sass/_module-prompt.scss */
 .scheduled-prompt figure figcaption {
   font-weight: normal;
 }
