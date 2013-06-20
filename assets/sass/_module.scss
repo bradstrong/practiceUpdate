@@ -33,18 +33,21 @@
 /* item card */
 
 .item-header-container{@include column(12);}
-.item-header{@include innerRow();
-	padding-top:$baseFontSize/2;}
+.item-header{
+  @include innerRow();
+	padding-top:$baseFontSize/2;
+	}
+	.pub-meta{@include column(12);}
 .item-title-container{@include column(12);}
 .action-bar{@include column(12);}
-.item-type{@include column(7);}
+.socialshare-actions{margin-bottom: $baseFontSize;}
+
 @media only screen and (max-width: $topBarBreakPoint) {
 	.item-title-container, .item-type{
 		display: block;
 		text-align: left;
 	}
 }
-.item-pub-date{@include column(5); text-align: right;} //TODO: reformat date - http://css-tricks.com/date-display-with-sprites/
 .item-container{
 	.commentary-container{@include column(12);}
 	.source-title{font-size:ms(0);}
@@ -156,10 +159,14 @@ p{margin-bottom:$baseFontSize/2;}
 
     }
     figure{
+      background-color: $pri-lt-grey;
       border: 1px solid $pri-lt-grey;
       margin:4px 0;
     	padding:8px;
     	text-align: center;
+    	figcaption{
+      	padding:7px 0 0px;
+    	}
     }
  	}
   &.type-conference{

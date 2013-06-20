@@ -78,12 +78,12 @@
 
 		<div class="action-bar" style="padding-bottom:17px;">
 			<div class="socialshare-actions">
-					<span class='ss_facebook'><i class="icon-facebook-sign"></i></span>
-					<span class='ss_twitter'><i class="icon-twitter-sign"></i></span>
-					<span class='ss_googleplus'><i class="icon-google-plus-sign"></i></span>
-					<span class='ss_linkedin'><i class="icon-linkedin-sign"></i></span>
-					<span class='ss_email'><i class="icon-envelope-alt"></i></span>
-					<span class='ss_print'><i class="icon-print"></i></span>
+					<span class='ss_facebook has-tip tip-top' title="share on facebook"><i class="icon-facebook-sign"></i></span>
+					<span class='ss_twitter has-tip tip-top' title="share on facebook"><i class="icon-twitter-sign"></i></span>
+					<span class='ss_googleplus has-tip tip-top' title="share on facebook"><i class="icon-google-plus-sign"></i></span>
+					<span class='ss_linkedin has-tip tip-top' title="share on facebook"><i class="icon-linkedin-sign"></i></span>
+					<span class='ss_email has-tip tip-top' title="send this via email"><i class="icon-envelope-alt"></i></span>
+					<span class='ss_print has-tip tip-top' title="print this page"><i class="icon-print"></i></span>
 			</div><!--/.ssocialshare-actions-->
 		</div><!--/.action-bar-->
 
@@ -171,9 +171,10 @@
 		</div><!--/.sidebar-->
 	</section><!--/.[role="complimentary"]-->
 </div><!--/.page-content-->
-	<footer class="page-footer">
-	</footer><!-- /.page-footer -->
-
+	<div class="page-footer-container">
+  	<footer class="page-footer">
+  	</footer><!-- /.page-footer -->
+	</div><!-- /.page-footer-container -->
 	<!-- Included JS Files (Uncompressed) -->
   <script src="assets/js/foundation/jquery.js"></script>
 
@@ -198,55 +199,6 @@
 
 	<!-- Placeholder - for replacing placeholder images -->
 	<script src="assets/js/holder.js"></script>
-
-	<!-- Mustache - homepage feed template -->
-	<script>
-	$.getJSON('content/json/feed.json', function(data) {
-		$.get('assets/mustache/feed-item.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.stream-container').html(html);
-		});
-
-	});
-
-	<!-- Mustache - homepage recent template -->
-	$.getJSON('content/json/recent.json', function(data) {
-		$.get('assets/mustache/recent.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.recent').html(html);
-		});
-
-	});
-
-	<!-- Mustache - homepage user-console template -->
-	$.getJSON('content/json/user-console.json', function(data) {
-		$.get('assets/mustache/user-console.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.user-console').html(html);
-		});
-	});
-
-		<!-- Mustache - homepage user-topic template -->
-	$.getJSON('content/json/user-topic.json', function(data) {
-		$.get('assets/mustache/user-topic.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.user-topic').html(html);
-		});
-	});
-
-	<!-- Mustache - homepage topic-spotlight template -->
-	$.getJSON('content/json/topic-spotlight.json', function(data) {
-		$.get('assets/mustache/topic-spotlight.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.topic-spotlight').html(html);
-		});
-	});
-	</script>
 
 	<!-- Page Modal -->
 	<div id="modal-video-ad" class="reveal-modal">

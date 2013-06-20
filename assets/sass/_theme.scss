@@ -176,10 +176,6 @@ body{white-space-collapse: collapse;}
 	// font-size:ms(1);
 }
 
-.item-title, .item-type, .item-pub-date{
-	font-family:$titleFontFamily;
-	font-weight:normal;
-}
 .journal .item-citation, .feed .item-citation{
 	font-size: ms(0)*.85;
 	color: lighten($txtColor, 5%);
@@ -192,19 +188,48 @@ body{white-space-collapse: collapse;}
 }
 
 .subheader{ color:$headerFontColor;}
-
+.socialshare-actions{
+  span,i{font-size: $baseFontSize*1.5}
+  i{
+    color:$pri-mid-grey;
+    &:hover{
+      color: $txtColor;
+      cursor: pointer;
+    }
+  }
+}
 article.single-item{
 	h2{
-		text-transform: uppercase;
-		font-family: $sansFontFamily;
+  	color: $pri-ltBlue;
+		text-transform: capitalize;
+		font-family: $serifFontFamily;
 		font-size: ms(2);
 	}
 	h3{
 		text-transform: uppercase;
 		font-size: ms(1);
 	}
+	.item-title-container{
+  	.item-title{
+    	color:$pri-orange;
+    	font-family: $serifFontFamily;
+    	font-size: ms(1);
+    	font-weight: bold;
+  	}
+	}
 	section.take-home-message{
-  	ul, ul li{
+  	background-color: $pri-ltBlue;
+  	color: $white;
+  	margin-bottom:$baseFontSize;
+  	padding: $baseFontSize/2 $baseFontSize;
+  	h2{
+    	color: $white;
+    	font-family: $serifFontFamily;
+    	border-bottom: 1px solid tint($pri-ltBlue, 75%);
+    	padding-bottom: $baseFontSize;
+    	text-transform: capitalize;
+  	}
+	  	ul, ul li{
     	list-style-type: disc;
     	list-style-position: inside;
     	margin-left: 0px;
@@ -215,7 +240,30 @@ article.single-item{
     	margin-left: 0px;
   	}
 	}
-}
+  section.editors-note, section.eo-description, section.video-description{
+    	background-color: $pri-lt-grey;
+    	color: $txtColor;
+    	margin-bottom:$baseFontSize;
+    	padding: $baseFontSize/2 $baseFontSize;
+    	h2{
+      	color: $txtColor;
+      	font-family: $serifFontFamily;
+      	border-bottom: 1px solid tint($txtColor, 25%);
+      	padding-bottom: $baseFontSize;
+      	text-transform: capitalize;
+    	}
+  	  	ul, ul li{
+      	list-style-type: disc;
+      	list-style-position: inside;
+      	margin-left: 0px;
+    	}
+    	ol, ol li{
+      	list-style-type: decimal;
+      	list-style-position: inside;
+      	margin-left: 0px;
+    	}
+  	}
+  }
 
 #formLogin{@include column(6);
 //	.form-action{@include innerRow(collapse);}
