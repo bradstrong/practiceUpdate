@@ -2,7 +2,6 @@
 html.lt-ie9{
 	.footer-section,
 	.pref-content,
-	.channel-list,
 	.alert-body,
 	.section-widget,
 	.checked-list,
@@ -24,7 +23,6 @@ html.lt-ie9{
 
 	.footer-section,
 	.pref-content,
-	.channel-list,
 	.alert-body,
 	.section-widget,
 	.checked-list,
@@ -48,7 +46,13 @@ html.lt-ie9{
 	}
 
 // - fix the main nav background color in ie
-  .top-bar{}
+  .top-bar{
+    section ul li:hover{color: #196883;}
+    section ul li.active, section ul li.active:hover{
+      background: $pri-orange;
+      color: #fff;
+    }
+  }
 
   .page-footer{// - correct the footer layout in ie 7 + 8 (related to the float issue)
     .footer-row {

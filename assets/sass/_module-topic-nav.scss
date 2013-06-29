@@ -1,19 +1,55 @@
-/*
-<nav class="topic-nav">
-  <ul class="side-nav channel-list multi-channel">
-    <li class="channel-all"><a href="#">All Items</a></li>
-    <ul class="aat-list">
-      <li class="channel-aat-all"><a href="#">All Items</a></li>
-      <li class=""></li>
-    </ul>
-  </ul>
-</nav>
-*/
+.nav-header, li.nav-header{
+  background-color: $pri-lt-grey;
+	color: $sec-dkBlue;
+	font-family: $serifFontFamily;
+	font-size: $baseFontSize;
+	font-weight: 500;
+	line-height: 1;
+	padding:$baseFontSize/2;
+	margin:0;
+}
+
+ul.side-nav{
+  .nav-header, li.nav-header{
+    background-color: $pri-lt-grey;
+  	color: $sec-dkBlue;
+  	font-family: $serifFontFamily;
+  	font-size: $baseFontSize;
+  	font-weight: 500;
+  	line-height: 1;
+  	padding:$baseFontSize/2;
+  	margin:0;
+  }
+	li{
+		background-color: $white;
+	  border: 1px solid $pri-lt-grey;
+		border-top:none;
+		margin-bottom:0;
+		&.active{
+			a{
+				background: $pri-orange;
+				color: $white;
+			}
+		}
+		a{
+		color: #6d6457;
+		padding:$baseFontSize/2;
+			&:hover{
+				background: $pri-lt-grey;
+				color: $pri-orange;
+			}
+			&.current{
+  			background-color: $pri-orange;
+  			color: #fff;
+			}
+		}
+		a.current-aat{border-left: 3px solid #d75142;}
+	}
+}
 
 nav.topic-nav{
   font-size: 12px;
-
-  .topic-nav-header, .nav-header{}
+  /* .topic-nav-header, .nav-header{} */
 
   .topic-nav-inner{
     overflow: hidden;
@@ -22,39 +58,46 @@ nav.topic-nav{
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
   }
-
+  .back-button{
+    background: transparent;
+    border: none;
+    padding: 7px;
+    color: $pri-orange;
+    text-align: left;
+  }
   ul{
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
     position:relative;
-
-    ul, li{width: 100%;}
+    ul, li{
+      width: 100%;
+    }
   }
-
   ul.channel-list{
     padding: 0;
     &.tier-two{left:-100%;}
   }
-
   ul.aat-list{
     margin-left:100%;
     position: absolute;
     top:0;
     visibility: hidden;
+    li{
+      margin-left: -1px;
+    }
   }
-
   .current-channel ul.aat-list{visibility: visible;}
-
   .counter{
     @extend .badge;
     text-align: right;
     display: none; //until we have a final design
   }
   .child-indicator{
+    margin-top: 4px;
     position: relative;
     float: right;
   }
-  .current{font-weight: bold;}
+/*   .current{font-weight: bold;} */
 
 }
 

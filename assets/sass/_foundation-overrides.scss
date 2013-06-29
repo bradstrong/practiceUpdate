@@ -42,7 +42,9 @@ $bodyBackground: #faf9f4; //rgb(247,242,228);
 
 $pri-blue: 		rgb(29,121,152); //#
 $pri-ltBlue: rgb(2, 177, 201); //#02b1c9
-$pri-orange: 	rgb(216,102,84); //#
+$pri-orange: rgb(215,81, 66);
+/* $pri-orange: 	rgb(216,102,84); //# */
+/* $pri-orange: 	rgb(234,60,47); //# */
 
 $pri-mid-grey: #b7b7b7;
 $pri-lt-grey: #e6e7e8;
@@ -145,8 +147,8 @@ $topBarBgColor: $pri-blue;
 $topBarHeight: 40px;
 $topBarHeightMobile: 40px;
 $topBarBtmMargin: 0px;
-$topBarLinkColor: $pri-blue;
-$topBarDropBgColor: #fff;
+$topBarLinkColor: #fff;
+$topBarDropBgColor: $pri-blue;
 $topBarDropLinkColor: $pri-blue;
 $topBarDropToggleColor: $pri-blue;
 $topBarDropToggleAlpha: 1;

@@ -19,7 +19,6 @@
 -->
 
 	<link rel="stylesheet" href="assets/css/app.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.css">
 	<link rel="stylesheet" href="assets/css/fc-webicons.css">
 	<link rel="stylesheet" href="assets/css/foundation-icons-general.css">
 
@@ -433,50 +432,11 @@
 	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>
 	<script src="assets/js/foundation/jquery.placeholder.js"></script>
 
+	<script src="assets/js/mustache.js"></script>
 
 	<script src="assets/js/foundation/app.js"></script>
 	<script src="assets/js/foundation/dev-app.js"></script>
 	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
-
-	<script src="assets/js/mustache.js"></script>
-
-	<!-- Mustache - homepage feed template -->
-	<script>
-	<!-- Mustache - homepage feed template -->
-	$.getJSON('content/json/feed.json', function(data) {
-		$.get('assets/mustache/feed-item.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.stream-container').html(html);
-		});
-
-	});
-
-	<!-- Mustache - homepage recent template -->
-	$.getJSON('content/json/recent.json', function(data) {
-		$.get('assets/mustache/recent.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.recent').html(html);
-		});
-
-	});
-
-	<!-- Mustache - homepage user-console template -->
-	$.get('assets/mustache/user-console.mustache', function(template) {
-		//alert('Load was performed.');
-    var html = Mustache.to_html(template);
-    $('.user-console').html(html);
-	});
-
-		<!-- Mustache - homepage user-topic template -->
-	$.get('assets/mustache/user-topic.mustache', function(template) {
-		//alert('Load was performed.');
-    var html = Mustache.to_html(template);
-    $('.user-topic').html(html);
-	});
-
-	</script>
 
 </body>
 </html>

@@ -39,7 +39,7 @@
   max-width: 728px;
   margin:0 auto $baseFontSize/2;
 }
-#leaderboardcontent{max-width: 728px; margin: 0 auto; max-height: 90px;}
+#leaderboardcontent{height: 90px; max-width: 728px; margin: 0 auto; max-height: 90px;}
 
 #boombox1{max-width: 300px;}
 #boombox1content{max-width: 300px; margin: 0 auto; max-height: 250px;}
@@ -60,8 +60,8 @@
 html.lt-ie9{
   .widget.ad.leaderboard{
     .ad-content, object, embed{
-      height: 7280px;
-      width: 90px;
+      height: 90px;
+      width: 728px;
     }
   }
   .widget.ad.boombox{

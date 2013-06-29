@@ -1,4 +1,6 @@
 /* !variables */
+/* $pri-orange: 	rgb(216,102,84); //# */
+/* $pri-orange: 	rgb(234,60,47); //# */
 /* !Type */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_semantic-grid.scss */
@@ -69,19 +71,19 @@ a img {
 
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
 a {
-  color: #d86654;
+  color: #d75142;
   text-decoration: none;
   line-height: inherit;
 }
 
 /* line 13, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
 a:hover {
-  color: #d3533f;
+  color: #d33e2d;
 }
 
 /* line 14, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
 a:focus {
-  color: #d3533f;
+  color: #d33e2d;
 }
 
 /* line 15, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */
@@ -710,7 +712,7 @@ hr {
 }
 
 /* line 36, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
-.subheader, .user-title, .form-description {
+.subheader, .form-description {
   line-height: 1.3;
   color: #cec9c2;
   font-weight: 300;
@@ -1390,8 +1392,8 @@ form.custom .custom.disabled {
 /* line 3, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button, .form-submit, .load-more-button {
   width: auto;
-  background: #d86654;
-  border: 1px solid #b63d2a;
+  background: #d75142;
+  border: 1px solid #a93124;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -1421,7 +1423,7 @@ form.custom .custom.disabled {
 /* line 6, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button:hover, .form-submit:hover, .load-more-button:hover, .button:focus, .form-submit:focus, .load-more-button:focus {
   color: white;
-  background-color: #cb442e;
+  background-color: #be3728;
 }
 /* line 7, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button:active, .form-submit:active, .load-more-button:active {
@@ -1455,12 +1457,12 @@ form.custom .custom.disabled {
 }
 /* line 17, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.primary, .primary.form-submit, .primary.load-more-button {
-  background-color: #d86654;
-  border: 1px solid #b63d2a;
+  background-color: #d75142;
+  border: 1px solid #a93124;
 }
 /* line 18, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.primary:hover, .primary.form-submit:hover, .primary.load-more-button:hover, .button.primary:focus, .primary.form-submit:focus, .primary.load-more-button:focus {
-  background-color: #cb442e;
+  background-color: #be3728;
 }
 /* line 20, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.success, .password-signin .signin .button#SignIn, .password-signin .signin #SignIn.form-submit, .password-signin .signin #SignIn.load-more-button, .logout-container .button#Login, .logout-container #Login.form-submit, .logout-container #Login.load-more-button, .form-submit, .load-more-button, .button.view-more-button, .view-more-button.form-submit, .view-more-button.load-more-button, .button.view-more, .view-more.form-submit, .view-more.load-more-button {
@@ -1522,14 +1524,14 @@ form.custom .custom.disabled {
 .button.disabled, .disabled.form-submit, .disabled.load-more-button, .button[disabled], [disabled].form-submit, [disabled].load-more-button {
   opacity: 0.6;
   cursor: default;
-  background: #d86654;
+  background: #d75142;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 /* line 40, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.disabled:hover, .disabled.form-submit:hover, .disabled.load-more-button:hover, .button[disabled]:hover, [disabled].form-submit:hover, [disabled].load-more-button:hover {
-  background: #d86654;
+  background: #d75142;
 }
 /* line 42, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.disabled.success, .password-signin .signin .button.disabled#SignIn, .password-signin .signin .disabled#SignIn.form-submit, .password-signin .signin .disabled#SignIn.load-more-button, .logout-container .button.disabled#Login, .logout-container .disabled#Login.form-submit, .logout-container .disabled#Login.load-more-button, .disabled.form-submit, .disabled.load-more-button, .button.disabled.view-more-button, .button.disabled.view-more, .button[disabled].success, .password-signin .signin .button[disabled]#SignIn, .password-signin .signin [disabled]#SignIn.form-submit, .password-signin .signin [disabled]#SignIn.load-more-button, .logout-container .button[disabled]#Login, .logout-container [disabled]#Login.form-submit, .logout-container [disabled]#Login.load-more-button, [disabled].form-submit, [disabled].load-more-button, .button[disabled].view-more-button, .button[disabled].view-more {
@@ -1749,7 +1751,7 @@ input[type=submit].button, input[type=submit].form-submit, input[type=submit].lo
 }
 /* line 105, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split:hover, .dropdown.split.form-submit:hover, .dropdown.split.load-more-button:hover, .button.dropdown.split:focus, .dropdown.split.form-submit:focus, .dropdown.split.load-more-button:focus {
-  background-color: #d86654;
+  background-color: #d75142;
 }
 /* line 106, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split.alert:hover, .dropdown.split.alert.form-submit:hover, .dropdown.split.alert.load-more-button:hover, .button.dropdown.split.alert:focus, .dropdown.split.alert.form-submit:focus, .dropdown.split.alert.load-more-button:focus {
@@ -1777,7 +1779,7 @@ input[type=submit].button, input[type=submit].form-submit, input[type=submit].lo
 }
 /* line 112, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > a:hover, .dropdown.split.form-submit > a:hover, .dropdown.split.load-more-button > a:hover, .button.dropdown.split > a:focus, .dropdown.split.form-submit > a:focus, .dropdown.split.load-more-button > a:focus {
-  background-color: #cb442e;
+  background-color: #be3728;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -1802,13 +1804,13 @@ input[type=submit].button, input[type=submit].form-submit, input[type=submit].lo
 }
 /* line 119, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > span, .dropdown.split.form-submit > span, .dropdown.split.load-more-button > span {
-  background-color: #d86654;
+  background-color: #d75142;
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
   width: 30px;
-  border-left: 1px solid #b63d2a;
+  border-left: 1px solid #a93124;
   -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -1819,7 +1821,7 @@ input[type=submit].button, input[type=submit].form-submit, input[type=submit].lo
 }
 /* line 120, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > span:hover, .dropdown.split.form-submit > span:hover, .dropdown.split.load-more-button > span:hover, .button.dropdown.split > span:focus, .dropdown.split.form-submit > span:focus, .dropdown.split.load-more-button > span:focus {
-  background-color: #cb442e;
+  background-color: #be3728;
 }
 /* line 121, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > span:after, .dropdown.split.form-submit > span:after, .dropdown.split.load-more-button > span:after {
@@ -2086,11 +2088,11 @@ div.button-bar ul.button-group:last-child {
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_tabs.scss */
 .tabs dd a:focus, .tabs li a:focus {
   font-weight: bold;
-  color: #d86654;
+  color: #d75142;
 }
 /* line 14, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_tabs.scss */
 .tabs dd.active, .tabs li.active {
-  border-top: 3px solid #d86654;
+  border-top: 3px solid #d75142;
   margin-top: -3px;
 }
 /* line 15, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_tabs.scss */
@@ -2191,7 +2193,7 @@ div.button-bar ul.button-group:last-child {
 }
 /* line 39, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_tabs.scss */
 .tabs.pill dd.active a, .tabs.pill li.active a {
-  background-color: #d86654;
+  background-color: #d75142;
   border: none;
   color: #fff;
 }
@@ -2292,7 +2294,7 @@ div.alert-box {
   font-weight: bold;
   font-size: 14px;
   color: white;
-  background-color: #d86654;
+  background-color: #d75142;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 12px;
   -webkit-border-radius: 3px;
@@ -2350,7 +2352,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   position: relative;
   bottom: 1px;
   color: #fff;
-  background: #d86654;
+  background: #d75142;
 }
 /* line 43, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 .label.radius, .label.query-no-results, .query-no-results.badge, .top-level-nest .query-no-results.counter, nav.topic-nav .query-no-results.counter, .query-no-results.flag, .radius.badge, .top-level-nest .radius.counter, nav.topic-nav .radius.counter, .radius.flag {
@@ -2393,8 +2395,8 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 }
 /* line 56, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 .has-tip:hover, .has-tip:focus {
-  border-bottom: dotted 1px #a13625;
-  color: #d86654;
+  border-bottom: dotted 1px #942b1f;
+  color: #d75142;
 }
 /* line 57, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 .has-tip.tip-left, .has-tip.tip-right {
@@ -2472,8 +2474,8 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 }
 /* line 73, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 .tooltip.opened {
-  color: #d86654 !important;
-  border-bottom: dotted 1px #a13625 !important;
+  color: #d75142 !important;
+  border-bottom: dotted 1px #942b1f !important;
 }
 
 /* line 77, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
@@ -2503,9 +2505,9 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 }
 /* line 86, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 .panel.callout, .callout.query-no-results, .callout.cta {
-  background: #d86654;
+  background: #d75142;
   color: #fff;
-  border-color: #cb442e;
+  border-color: #be3728;
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
@@ -2518,7 +2520,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 .panel.callout .button, .callout.query-no-results .button, .callout.cta .button, .panel.callout .form-submit, .callout.query-no-results .form-submit, .callout.cta .form-submit, .panel.callout .load-more-button, .callout.query-no-results .load-more-button, .callout.cta .load-more-button {
   background: white;
   border: none;
-  color: #d86654;
+  color: #d75142;
   text-shadow: none;
 }
 /* line 90, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
@@ -2584,7 +2586,7 @@ ul.accordion > li .content {
 }
 /* line 112, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 ul.accordion > li.active {
-  border-top: 3px solid #d86654;
+  border-top: 3px solid #d75142;
 }
 /* line 114, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 ul.accordion > li.active .title {
@@ -2673,7 +2675,7 @@ dl.sub-nav dd a {
 /* line 144, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 dl.sub-nav dd.active a {
   font-weight: bold;
-  background: #d86654;
+  background: #d75142;
   color: #fff;
   padding: 3px 9px;
   cursor: default;
@@ -2716,14 +2718,14 @@ ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
 }
 /* line 158, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 ul.pagination li.current a {
-  background: #d86654;
+  background: #d75142;
   color: white;
   font-weight: bold;
   cursor: default;
 }
 /* line 159, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 ul.pagination li.current a:hover, ul.pagination li.current a:focus {
-  background: #d86654;
+  background: #d75142;
 }
 
 /* line 165, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
@@ -2866,9 +2868,9 @@ ul.inline-list > li > *, ul.link-list > li > *, .page-footer .footer-row ul > li
 }
 /* line 209, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 .th:hover img, .th:focus img {
-  -webkit-box-shadow: 0 0 6px 1px rgba(216, 102, 84, 0.5);
-  -moz-box-shadow: 0 0 6px 1px rgba(216, 102, 84, 0.5);
-  box-shadow: 0 0 6px 1px rgba(216, 102, 84, 0.5);
+  -webkit-box-shadow: 0 0 6px 1px rgba(215, 81, 66, 0.5);
+  -moz-box-shadow: 0 0 6px 1px rgba(215, 81, 66, 0.5);
+  box-shadow: 0 0 6px 1px rgba(215, 81, 66, 0.5);
 }
 
 /* Video - Mad props to http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ ---------------------- */
@@ -3010,7 +3012,7 @@ div.progress {
 }
 /* line 269, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 div.progress .meter {
-  background: #d86654;
+  background: #d75142;
   height: 100%;
   display: block;
   width: 50%;
@@ -3228,7 +3230,7 @@ div.progress.round .meter {
 }
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .top-bar ul > li a:not(.button) {
-  color: #1d7998;
+  color: white;
   display: block;
   font-size: 13px;
   font-weight: bold;
@@ -3242,7 +3244,7 @@ div.progress.round .meter {
 }
 /* line 54, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .top-bar ul > li:not(.name):hover a, .top-bar ul > li:not(.name).active a, .top-bar ul > li:not(.name):focus a {
-  color: #114658;
+  color: #d9d9d9;
 }
 /* line 59, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .top-bar ul > li.divider {
@@ -3415,7 +3417,7 @@ div.progress.round .meter {
 }
 /* line 102, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .top-bar ul > li.has-dropdown .dropdown {
-  background: white;
+  background: #1d7998;
   left: 0;
   margin: 0;
   padding: 8px 0 0 0;
@@ -3425,7 +3427,7 @@ div.progress.round .meter {
 }
 /* line 103, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .top-bar ul > li.has-dropdown .dropdown li {
-  background: white;
+  background: #1d7998;
   line-height: 1;
   min-width: 100%;
   padding-bottom: 5px;
@@ -3445,11 +3447,11 @@ div.progress.round .meter {
 }
 /* line 106, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .top-bar ul > li.has-dropdown .dropdown li a:hover, .top-bar ul > li.has-dropdown .dropdown li a:focus {
-  background: white;
+  background: #259bc3;
 }
 /* line 108, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .top-bar ul > li.has-dropdown .dropdown li label {
-  color: white;
+  color: #6bc5e3;
   font-size: 10px;
   font-weight: bold;
   margin: 0;
@@ -3458,7 +3460,7 @@ div.progress.round .meter {
 }
 /* line 109, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .top-bar ul > li.has-dropdown .dropdown li.divider {
-  border-top: solid 1px #cccccc;
+  border-top: solid 1px #0d3542;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
@@ -3542,7 +3544,7 @@ div.progress.round .meter {
 /* IE8 Fixes */
 /* line 150, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .lt-ie9 .top-bar ul li a {
-  color: #1d7998;
+  color: white;
   display: block;
   font-weight: bold;
   font-size: 13px;
@@ -3564,7 +3566,7 @@ div.progress.round .meter {
 
 /* line 158, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .lt-ie9 .top-bar section > ul > li a:hover, .lt-ie9 .top-bar section > ul > li a:focus {
-  color: #0d3542;
+  color: #cccccc;
 }
 /* line 160, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .lt-ie9 .top-bar section > ul > li:hover, .lt-ie9 .top-bar section > ul > li:focus {
@@ -3577,7 +3579,7 @@ div.progress.round .meter {
 /* line 162, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .lt-ie9 .top-bar section > ul > li.active {
   background: #114658;
-  color: #114658;
+  color: #d9d9d9;
 }
 
 /* line 164, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
@@ -3626,8 +3628,8 @@ div.progress.round .meter {
 }
 /* line 8, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li.active {
-  background: #d86654;
-  border-color: #cb442e;
+  background: #d75142;
+  border-color: #be3728;
 }
 /* line 9, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li.active > a {
@@ -3636,7 +3638,7 @@ div.progress.round .meter {
 }
 /* line 10, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li.active:hover {
-  background: #d86654;
+  background: #d75142;
   cursor: default;
 }
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_navbar.scss */
@@ -3737,7 +3739,7 @@ div.progress.round .meter {
 }
 /* line 41, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_navbar.scss */
 .nav-bar.vertical > li.active {
-  border-right: solid 1px #cb442e;
+  border-right: solid 1px #be3728;
 }
 /* line 42, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_navbar.scss */
 .nav-bar.vertical > li:last-child {
@@ -5281,7 +5283,7 @@ table.hide-for-medium {
   /* line 321, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_mqueries.scss */
   .tabs.mobile dd a.active, .tabs.mobile li a.active {
     border: none;
-    background: #d86654;
+    background: #d75142;
     color: #fff;
     margin: 0;
     position: static;
@@ -5348,7 +5350,7 @@ table.hide-for-medium {
     margin-bottom: 0;
     overflow: hidden;
     height: 40px;
-    background: white;
+    background: #1d7998;
     /* Override contain to grid stuff for breakpoint */
     /* Setting up the sliding area */
     /* When the Small Nav is Showing */
@@ -5390,7 +5392,7 @@ table.hide-for-medium {
   }
   /* line 364, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_mqueries.scss */
   .top-bar ul > li.active, .top-bar ul > li:hover {
-    background: #f2f2f2;
+    background: #196883;
   }
   /* line 366, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_mqueries.scss */
   .top-bar ul > li.name {
@@ -5402,7 +5404,7 @@ table.hide-for-medium {
   }
   /* line 368, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_mqueries.scss */
   .top-bar ul > li.name h1 a {
-    color: #1d7998;
+    color: white;
     display: block;
     line-height: 40px !important;
     padding-left: 13.33333px;
@@ -5433,7 +5435,7 @@ table.hide-for-medium {
     width: 0;
     height: 0;
     border: solid 8px;
-    border-color: #d86654 transparent transparent transparent;
+    border-color: #d75142 transparent transparent transparent;
     padding: 0;
     position: absolute;
     top: 50%;
@@ -5450,8 +5452,8 @@ table.hide-for-medium {
   }
   /* line 383, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_mqueries.scss */
   .top-bar ul > li.divider {
-    border-bottom: solid 1px white;
-    border-top: solid 1px #d9d9d9;
+    border-bottom: solid 1px #259bc3;
+    border-top: solid 1px #114658;
     clear: both;
     height: 1px !important;
     margin: 8px 0 !important;
@@ -5650,7 +5652,7 @@ table.hide-for-medium {
     width: 0;
     height: 0;
     border: solid 8px;
-    border-color: transparent transparent #a13625 transparent;
+    border-color: transparent transparent #942b1f transparent;
     top: auto;
     bottom: 50%;
     margin-bottom: -4px;
@@ -8925,36 +8927,32 @@ body.off-canvas {
     float: right;
   }
 }
-/* line 14, ../sass/_module-top-bar.scss */
-.top-bar {
-  background-color: transparent;
-}
-/* line 17, ../sass/_module-top-bar.scss */
+/* line 16, ../sass/_module-top-bar.scss */
 .top-bar ul li:not(.name) {
   text-transform: uppercase;
 }
-/* line 19, ../sass/_module-top-bar.scss */
+/* line 18, ../sass/_module-top-bar.scss */
 .top-bar ul li:not(.name) a {
   color: white;
 }
-/* line 20, ../sass/_module-top-bar.scss */
+/* line 19, ../sass/_module-top-bar.scss */
 .top-bar ul li:not(.name).active {
   *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFD86654', endColorstr='#FFCB442E');
-  background-color: #d86654;
-  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NiNDQyZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q4NjY1NCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #cb442e), color-stop(100%, #d86654));
-  background: -webkit-linear-gradient(bottom, #cb442e, #d86654);
-  background: -moz-linear-gradient(bottom, #cb442e, #d86654);
-  background: -o-linear-gradient(bottom, #cb442e, #d86654);
-  background: linear-gradient(bottom, #cb442e, #d86654);
-  background-color: #d86654;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFD75142', endColorstr='#FFBE3728');
+  background-color: #d75142;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2JlMzcyOCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q3NTE0MiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #be3728), color-stop(100%, #d75142));
+  background: -webkit-linear-gradient(bottom, #be3728, #d75142);
+  background: -moz-linear-gradient(bottom, #be3728, #d75142);
+  background: -o-linear-gradient(bottom, #be3728, #d75142);
+  background: linear-gradient(bottom, #be3728, #d75142);
+  background-color: #d75142;
 }
-/* line 23, ../sass/_module-top-bar.scss */
+/* line 22, ../sass/_module-top-bar.scss */
 .top-bar ul li:not(.name).active a, .top-bar ul li:not(.name).active a:hover {
   color: white;
 }
-/* line 25, ../sass/_module-top-bar.scss */
+/* line 24, ../sass/_module-top-bar.scss */
 .top-bar ul li:not(.name):hover {
   			/*
         color: $pri-blue;
@@ -8963,20 +8961,20 @@ body.off-canvas {
  				*/
   background-color: #196883;
 }
-/* line 32, ../sass/_module-top-bar.scss */
+/* line 31, ../sass/_module-top-bar.scss */
 .top-bar ul li:not(.name):hover a {
   color: white;
 }
-/* line 37, ../sass/_module-top-bar.scss */
+/* line 36, ../sass/_module-top-bar.scss */
 .top-bar ul li.name .site-branding img {
   max-height: 32px;
 }
 
-/* line 44, ../sass/_module-top-bar.scss */
+/* line 43, ../sass/_module-top-bar.scss */
 .page-header {
   background-color: transparent;
 }
-/* line 46, ../sass/_module-top-bar.scss */
+/* line 45, ../sass/_module-top-bar.scss */
 .page-header.fixed {
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
@@ -8984,37 +8982,37 @@ body.off-canvas {
 }
 
 @media only screen and (max-width: 769px) {
-  /* line 54, ../sass/_module-top-bar.scss */
+  /* line 53, ../sass/_module-top-bar.scss */
   .top-bar ul li.toggle-topbar {
     width: 60px;
   }
-  /* line 56, ../sass/_module-top-bar.scss */
+  /* line 55, ../sass/_module-top-bar.scss */
   .top-bar ul li.toggle-topbar:hover {
     background-color: #196883;
   }
-  /* line 57, ../sass/_module-top-bar.scss */
+  /* line 56, ../sass/_module-top-bar.scss */
   .top-bar ul li.toggle-topbar a {
     border-color: white transparent transparent transparent;
   }
-  /* line 59, ../sass/_module-top-bar.scss */
+  /* line 58, ../sass/_module-top-bar.scss */
   .top-bar ul li.name {
     text-align: center;
   }
-  /* line 61, ../sass/_module-top-bar.scss */
+  /* line 60, ../sass/_module-top-bar.scss */
   .top-bar ul li.name:hover {
     background: transparent;
   }
-  /* line 66, ../sass/_module-top-bar.scss */
+  /* line 65, ../sass/_module-top-bar.scss */
   .top-bar.expanded ul li.toggle-topbar a {
     border-color: transparent transparent white transparent;
   }
-  /* line 71, ../sass/_module-top-bar.scss */
+  /* line 70, ../sass/_module-top-bar.scss */
   .top-bar .off-canvas-control {
     position: absolute;
     left: 15px;
     z-index: 10;
   }
-  /* line 75, ../sass/_module-top-bar.scss */
+  /* line 74, ../sass/_module-top-bar.scss */
   .top-bar .off-canvas-control .sidebar-button {
     background: transparent;
     border: none;
@@ -9023,7 +9021,7 @@ body.off-canvas {
     width: 40px;
     padding: 10px 0 0;
   }
-  /* line 82, ../sass/_module-top-bar.scss */
+  /* line 81, ../sass/_module-top-bar.scss */
   .top-bar .off-canvas-control .sidebar-button:hover {
     background-color: #196883;
   }
@@ -9039,71 +9037,44 @@ body.off-canvas {
   margin-left: 26px;
 }
 
-/* line 77, ../sass/_module-user-topic.scss */
-ul.side-nav .nav-header {
-  color: #172e54;
-  font-family: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  padding: 7px 7px 2px;
-  margin: 10px 0 0;
+/*
+ul.side-nav{
+  .nav-header, li.nav-header{
+    background-color: $pri-lt-grey;
+  	color: $sec-dkBlue;
+  	font-family: $serifFontFamily;
+  	font-size: $baseFontSize;
+  	font-weight: 500;
+  	line-height: 1;
+  	padding:$baseFontSize/2;
+  	margin:0;
+  }
+	li{
+		background-color: $white;
+	  border: 1px solid darken($ter-ltTan, 2%);
+		border-top:none;
+		margin-bottom:0;
+		&.active{
+			a{
+				background: $pri-orange;
+				color: $white;
+			}
+		}
+		a{
+		color: #6d6457;
+		padding:$baseFontSize/2;
+			&:hover{
+				background: $pri-lt-grey;
+				color: $pri-orange;
+			}
+			&.current{
+  			background-color: $pri-orange;
+  			color: #fff;
+			}
+		}
+	}
 }
-/* line 85, ../sass/_module-user-topic.scss */
-ul.side-nav .nav-header > a.trigger, ul.side-nav .nav-header > a.activetrigger {
-  color: #172e54;
-  padding-left: 0px;
-}
-/* line 89, ../sass/_module-user-topic.scss */
-ul.side-nav .nav-header > a:hover {
-  background: transparent;
-  border: none;
-}
-/* line 90, ../sass/_module-user-topic.scss */
-ul.side-nav .nav-header > a.trigger {
-  background: transparent url("../img/right-select.png") no-repeat 100% center;
-}
-/* line 93, ../sass/_module-user-topic.scss */
-ul.side-nav .nav-header > a.activetrigger {
-  background: url("../img/bottom-select.png") no-repeat scroll 100% center transparent;
-  transition: all 0.15s linear 0s;
-}
-/* line 99, ../sass/_module-user-topic.scss */
-ul.side-nav li {
-  background-color: white;
-  border: 1px solid #e3dcd4;
-  border-top: none;
-  margin-bottom: 0;
-}
-/* line 105, ../sass/_module-user-topic.scss */
-ul.side-nav li.active a {
-  background: #d86654;
-  color: white;
-}
-/* line 110, ../sass/_module-user-topic.scss */
-ul.side-nav li a {
-  padding: 7px;
-}
-/* line 112, ../sass/_module-user-topic.scss */
-ul.side-nav li a:hover {
-  border-left: 3px solid #d86654;
-  background: #ebe6e0;
-  color: #d86654;
-  padding-left: 4px;
-}
-
-/* line 123, ../sass/_module-user-topic.scss */
-.dropdownhidden {
-  display: none;
-}
-
-/* line 126, ../sass/_module-user-topic.scss */
-.dropdownvisible {
-  margin: 0 0 10px;
-}
-/* line 128, ../sass/_module-user-topic.scss */
-.dropdownvisible li {
-  margin: 0 0;
-}
-
+*/
 /* Animated Swipe Menu */
 /* line 3, ../sass/_module-user-topic-nest.scss */
 .top-level-nest {
@@ -9163,22 +9134,68 @@ ul.side-nav li a:hover {
   left: -100%;
 }
 
-/*
-<nav class="topic-nav">
-  <ul class="side-nav channel-list multi-channel">
-    <li class="channel-all"><a href="#">All Items</a></li>
-    <ul class="aat-list">
-      <li class="channel-aat-all"><a href="#">All Items</a></li>
-      <li class=""></li>
-    </ul>
-  </ul>
-</nav>
-*/
+/* line 1, ../sass/_module-topic-nav.scss */
+.nav-header, li.nav-header {
+  background-color: #e6e7e8;
+  color: #172e54;
+  font-family: "museo-slab", serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 7px;
+  margin: 0;
+}
+
 /* line 13, ../sass/_module-topic-nav.scss */
+ul.side-nav .nav-header, ul.side-nav li.nav-header {
+  background-color: #e6e7e8;
+  color: #172e54;
+  font-family: "museo-slab", serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 7px;
+  margin: 0;
+}
+/* line 23, ../sass/_module-topic-nav.scss */
+ul.side-nav li {
+  background-color: white;
+  border: 1px solid #e6e7e8;
+  border-top: none;
+  margin-bottom: 0;
+}
+/* line 29, ../sass/_module-topic-nav.scss */
+ul.side-nav li.active a {
+  background: #d75142;
+  color: white;
+}
+/* line 34, ../sass/_module-topic-nav.scss */
+ul.side-nav li a {
+  color: #6d6457;
+  padding: 7px;
+}
+/* line 37, ../sass/_module-topic-nav.scss */
+ul.side-nav li a:hover {
+  background: #e6e7e8;
+  color: #d75142;
+}
+/* line 41, ../sass/_module-topic-nav.scss */
+ul.side-nav li a.current {
+  background-color: #d75142;
+  color: #fff;
+}
+/* line 46, ../sass/_module-topic-nav.scss */
+ul.side-nav li a.current-aat {
+  border-left: 3px solid #d75142;
+}
+
+/* line 50, ../sass/_module-topic-nav.scss */
 nav.topic-nav {
   font-size: 12px;
+  /* .topic-nav-header, .nav-header{} */
+  /*   .current{font-weight: bold;} */
 }
-/* line 18, ../sass/_module-topic-nav.scss */
+/* line 54, ../sass/_module-topic-nav.scss */
 nav.topic-nav .topic-nav-inner {
   overflow: hidden;
   transition-property: height;
@@ -9186,48 +9203,57 @@ nav.topic-nav .topic-nav-inner {
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
 }
-/* line 26, ../sass/_module-topic-nav.scss */
+/* line 61, ../sass/_module-topic-nav.scss */
+nav.topic-nav .back-button {
+  background: transparent;
+  border: none;
+  padding: 7px;
+  color: #d75142;
+  text-align: left;
+}
+/* line 68, ../sass/_module-topic-nav.scss */
 nav.topic-nav ul {
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
   position: relative;
 }
-/* line 31, ../sass/_module-topic-nav.scss */
+/* line 72, ../sass/_module-topic-nav.scss */
 nav.topic-nav ul ul, nav.topic-nav ul li {
   width: 100%;
 }
-/* line 34, ../sass/_module-topic-nav.scss */
+/* line 76, ../sass/_module-topic-nav.scss */
 nav.topic-nav ul.channel-list {
   padding: 0;
 }
-/* line 36, ../sass/_module-topic-nav.scss */
+/* line 78, ../sass/_module-topic-nav.scss */
 nav.topic-nav ul.channel-list.tier-two {
   left: -100%;
 }
-/* line 39, ../sass/_module-topic-nav.scss */
+/* line 80, ../sass/_module-topic-nav.scss */
 nav.topic-nav ul.aat-list {
   margin-left: 100%;
   position: absolute;
   top: 0;
   visibility: hidden;
 }
-/* line 46, ../sass/_module-topic-nav.scss */
+/* line 85, ../sass/_module-topic-nav.scss */
+nav.topic-nav ul.aat-list li {
+  margin-left: -1px;
+}
+/* line 89, ../sass/_module-topic-nav.scss */
 nav.topic-nav .current-channel ul.aat-list {
   visibility: visible;
 }
-/* line 48, ../sass/_module-topic-nav.scss */
+/* line 90, ../sass/_module-topic-nav.scss */
 nav.topic-nav .counter {
   text-align: right;
   display: none;
 }
-/* line 53, ../sass/_module-topic-nav.scss */
+/* line 95, ../sass/_module-topic-nav.scss */
 nav.topic-nav .child-indicator {
+  margin-top: 4px;
   position: relative;
   float: right;
-}
-/* line 57, ../sass/_module-topic-nav.scss */
-nav.topic-nav .current {
-  font-weight: bold;
 }
 
 /* <span class="nav-header" style="padding: 7px; display: block; border: 1px solid #e3dcd4; margin-top: 14px; background-color: white; color: #172e54; font-family: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 500; padding: 7px 7px 2px;margin: 10px 0 0;">My Topics</span> */
@@ -9239,7 +9265,6 @@ nav.topic-nav .current {
 /* line 6, ../sass/_module-topic-spotlight.scss */
 .topic-spotlight li.nav-header {
   margin-top: 0;
-  padding-top: 0;
 }
 
 /* line 2, ../sass/_module-page-footer.scss */
@@ -9538,9 +9563,9 @@ experimental footer - left sidebar
 }
 /* line 21, ../sass/_module.scss */
 .panel.callout, .callout.query-no-results, .callout.cta {
-  background: #d86654;
+  background: #d75142;
   color: #fff;
-  border-color: #cb442e;
+  border-color: #be3728;
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
@@ -9553,7 +9578,7 @@ experimental footer - left sidebar
 .panel.callout .button, .callout.query-no-results .button, .callout.cta .button, .panel.callout .form-submit, .callout.query-no-results .form-submit, .callout.cta .form-submit, .panel.callout .load-more-button, .callout.query-no-results .load-more-button, .callout.cta .load-more-button {
   background: white;
   border: none;
-  color: #d86654;
+  color: #d75142;
   text-shadow: none;
 }
 /* line 25, ../sass/_module.scss */
@@ -9569,202 +9594,221 @@ experimental footer - left sidebar
   border-radius: 3px;
 }
 
+/* Content-Header ---------------- */
+/* line 34, ../sass/_module.scss */
+.content-header {
+  background: #02b1c9;
+  margin-bottom: 14px;
+}
+
+/* line 38, ../sass/_module.scss */
+.topic-filter-helper {
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.2;
+  padding: 14px 7px;
+}
+
 /* item card */
-/* line 35, ../sass/_module.scss */
+/* line 47, ../sass/_module.scss */
 .item-header-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 35, ../sass/_module.scss */
+  /* line 47, ../sass/_module.scss */
   .item-header-container {
     float: none;
     width: auto;
   }
 }
 
-/* line 36, ../sass/_module.scss */
+/* line 48, ../sass/_module.scss */
 .item-header {
   margin: 0 -15px;
   padding-top: 7px;
 }
 
-/* line 40, ../sass/_module.scss */
+/* line 52, ../sass/_module.scss */
 .pub-meta {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 40, ../sass/_module.scss */
+  /* line 52, ../sass/_module.scss */
   .pub-meta {
     float: none;
     width: auto;
   }
 }
 
-/* line 41, ../sass/_module.scss */
+/* line 53, ../sass/_module.scss */
 .item-title-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 41, ../sass/_module.scss */
+  /* line 53, ../sass/_module.scss */
   .item-title-container {
     float: none;
     width: auto;
   }
 }
 
-/* line 42, ../sass/_module.scss */
+/* line 54, ../sass/_module.scss */
 .action-bar {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 42, ../sass/_module.scss */
+  /* line 54, ../sass/_module.scss */
   .action-bar {
     float: none;
     width: auto;
   }
 }
 
-/* line 43, ../sass/_module.scss */
+/* line 55, ../sass/_module.scss */
 .socialshare-actions {
   margin-bottom: 14px;
 }
+/* line 57, ../sass/_module.scss */
+.socialshare-actions a:hover {
+  text-decoration: none;
+}
 
 @media only screen and (max-width: 769px) {
-  /* line 46, ../sass/_module.scss */
+  /* line 64, ../sass/_module.scss */
   .item-title-container, .item-type {
     display: block;
     text-align: left;
   }
 }
-/* line 52, ../sass/_module.scss */
+/* line 70, ../sass/_module.scss */
 .item-container .commentary-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 52, ../sass/_module.scss */
+  /* line 70, ../sass/_module.scss */
   .item-container .commentary-container {
     float: none;
     width: auto;
   }
 }
-/* line 53, ../sass/_module.scss */
+/* line 71, ../sass/_module.scss */
 .item-container .source-title {
   font-size: 14px;
 }
 
-/* line 55, ../sass/_module.scss */
+/* line 73, ../sass/_module.scss */
 .item-title {
   font-size: 17px;
 }
-/* line 57, ../sass/_module.scss */
+/* line 75, ../sass/_module.scss */
 .item-title a:hover {
   text-decoration: underline;
 }
 
-/* line 59, ../sass/_module.scss */
+/* line 77, ../sass/_module.scss */
 .item-content-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 59, ../sass/_module.scss */
+  /* line 77, ../sass/_module.scss */
   .item-content-container {
     float: none;
     width: auto;
   }
 }
 
-/* line 60, ../sass/_module.scss */
+/* line 78, ../sass/_module.scss */
 .item-content {
   margin: 0 -15px;
 }
 
-/* line 61, ../sass/_module.scss */
+/* line 79, ../sass/_module.scss */
 .item-content-section {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 61, ../sass/_module.scss */
+  /* line 79, ../sass/_module.scss */
   .item-content-section {
     float: none;
     width: auto;
   }
 }
 
-/* line 62, ../sass/_module.scss */
+/* line 80, ../sass/_module.scss */
 .item-footer {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 62, ../sass/_module.scss */
+  /* line 80, ../sass/_module.scss */
   .item-footer {
     float: none;
     width: auto;
   }
 }
 
-/* line 117, ../sass/_module.scss */
+/* line 135, ../sass/_module.scss */
 .commentary-container figure[class$="-photo"] {
   width: 16.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 117, ../sass/_module.scss */
+  /* line 135, ../sass/_module.scss */
   .commentary-container figure[class$="-photo"] {
     float: none;
     width: auto;
   }
 }
 
-/* line 122, ../sass/_module.scss */
+/* line 140, ../sass/_module.scss */
 p {
   margin-bottom: 7px;
 }
 
-/* line 123, ../sass/_module.scss */
+/* line 141, ../sass/_module.scss */
 .expert-photo .label, .expert-photo .badge, .expert-photo .top-level-nest .counter, .top-level-nest .expert-photo .counter, .expert-photo nav.topic-nav .counter, nav.topic-nav .expert-photo .counter, .expert-photo .flag {
   display: none;
 }
 
-/* line 124, ../sass/_module.scss */
+/* line 142, ../sass/_module.scss */
 .item-source-container {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 124, ../sass/_module.scss */
+  /* line 142, ../sass/_module.scss */
   .item-source-container {
     float: none;
     width: auto;
   }
 }
-/* line 126, ../sass/_module.scss */
+/* line 144, ../sass/_module.scss */
 .item-source-container figure[class$="-photo"] {
   width: 16.66667%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 126, ../sass/_module.scss */
+  /* line 144, ../sass/_module.scss */
   .item-source-container figure[class$="-photo"] {
     float: none;
     width: auto;
   }
 }
-/* line 129, ../sass/_module.scss */
+/* line 147, ../sass/_module.scss */
 .item-source-container div[class$="-name"] {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 129, ../sass/_module.scss */
+  /* line 147, ../sass/_module.scss */
   .item-source-container div[class$="-name"] {
     float: none;
     width: auto;
   }
 }
-/* line 132, ../sass/_module.scss */
+/* line 150, ../sass/_module.scss */
 .item-source-container .label, .item-source-container .badge, .item-source-container .top-level-nest .counter, .top-level-nest .item-source-container .counter, .item-source-container nav.topic-nav .counter, nav.topic-nav .item-source-container .counter, .item-source-container .flag {
   color: #D6E03D;
   line-height: 1;
   text-transform: uppercase;
 }
 
-/* line 139, ../sass/_module.scss */
+/* line 157, ../sass/_module.scss */
 .item-source {
   padding-bottom: 14px;
   *zoom: 1;
@@ -9779,28 +9823,28 @@ p {
 .item-source:after {
   clear: both;
 }
-/* line 143, ../sass/_module.scss */
+/* line 161, ../sass/_module.scss */
 .item-source .source-citation {
   margin-bottom: 0px;
 }
 
 /* Page Specific Styles*/
 /* Single Item page elements*/
-/* line 148, ../sass/_module.scss */
+/* line 166, ../sass/_module.scss */
 .single-item {
   margin: 0 -15px;
 }
-/* line 150, ../sass/_module.scss */
+/* line 168, ../sass/_module.scss */
 .single-item .take-home-message .source-container {
   display: none;
 }
-/* line 155, ../sass/_module.scss */
+/* line 173, ../sass/_module.scss */
 .single-item .item-content .story-image-group {
   float: left;
   max-width: 33%;
   padding: 0 16px 8px 0;
 }
-/* line 161, ../sass/_module.scss */
+/* line 179, ../sass/_module.scss */
 .single-item .item-content figure {
   background-color: #e6e7e8;
   border: 1px solid #e6e7e8;
@@ -9808,11 +9852,11 @@ p {
   padding: 8px;
   text-align: center;
 }
-/* line 167, ../sass/_module.scss */
+/* line 185, ../sass/_module.scss */
 .single-item .item-content figure figcaption {
   padding: 7px 0 0px;
 }
-/* line 173, ../sass/_module.scss */
+/* line 191, ../sass/_module.scss */
 .single-item.type-conference .section-conference-coverage {
   border: none;
   box-shadow: none;
@@ -9820,17 +9864,17 @@ p {
 
 /* !Update Page Elements */
 /* !stream */
-/* line 183, ../sass/_module.scss */
+/* line 201, ../sass/_module.scss */
 .stream-item-container {
   margin-bottom: 10px;
 }
 
-/* line 186, ../sass/_module.scss */
+/* line 204, ../sass/_module.scss */
 .stream-item.in-stream, topic-filter-helper {
   margin: 0;
 }
 
-/* line 189, ../sass/_module.scss */
+/* line 207, ../sass/_module.scss */
 .stream-header {
   *zoom: 1;
   margin-bottom: 20px;
@@ -9845,7 +9889,7 @@ p {
   clear: both;
 }
 
-/* line 193, ../sass/_module.scss */
+/* line 211, ../sass/_module.scss */
 .current-filter-banner {
   font-family: "museo-slab", serif;
 }
@@ -9902,85 +9946,87 @@ p {
 }
 /* line 30, ../sass/_module-user-console.scss */
 .drawer-toggle-button:hover {
-  background: #d86654;
+  background: #d75142;
   color: white;
   cursor: pointer;
 }
 
 /* line 36, ../sass/_module-user-console.scss */
 .drawer-menu {
-  background: #f5f3f0;
+  background: #fff;
 }
 /* line 38, ../sass/_module-user-console.scss */
 .drawer-menu.is-expanded {
-  border-top: 1px solid #ebe6e0;
-  border-bottom: 1px solid #ebe6e0;
+  border-top: 1px solid #e6e7e8;
+  border-bottom: 1px solid #e6e7e8;
 }
 /* line 43, ../sass/_module-user-console.scss */
 .drawer-menu li a {
+  color: #6d6457;
   display: block;
   padding: 7px;
 }
-/* line 46, ../sass/_module-user-console.scss */
+/* line 47, ../sass/_module-user-console.scss */
 .drawer-menu li a:hover {
-  border-left: 3px solid #d86654;
-  background: #ebe6e0;
-  color: #d86654;
-  padding-left: 4px;
+  background: #e6e7e8;
+  color: #d75142;
 }
-/* line 53, ../sass/_module-user-console.scss */
+/* line 52, ../sass/_module-user-console.scss */
 .drawer-menu li.active a {
-  background: #d86654;
+  background: #d75142;
   color: white;
 }
 
-/* line 60, ../sass/_module-user-console.scss */
+/* line 59, ../sass/_module-user-console.scss */
 .user-console {
-  background: white;
+  background: #fff;
   border: 1px solid #e6e7e8;
 }
-/* line 65, ../sass/_module-user-console.scss */
-.user-console p {
-  color: #172e54;
-}
 
-/* line 71, ../sass/_module-user-console.scss */
+/* line 65, ../sass/_module-user-console.scss */
 .user-details {
+  color: #02b1c9;
   padding: 7px;
 }
 
-/* line 74, ../sass/_module-user-console.scss */
+/* line 69, ../sass/_module-user-console.scss */
 .user-name, .user-title {
-  color: #1d7998;
+  color: #02b1c9;
   text-transform: capitalize;
   margin-bottom: 7px;
 }
 
-/* line 81, ../sass/_module-user-console.scss */
+/* line 74, ../sass/_module-user-console.scss */
+.user-title {
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+/* line 79, ../sass/_module-user-console.scss */
 .user-settings-menu {
   margin-bottom: 0;
 }
-/* line 83, ../sass/_module-user-console.scss */
+/* line 81, ../sass/_module-user-console.scss */
 .user-settings-menu.is-expanded {
   -webkit-transition: all 0.5s ease;
 }
-/* line 86, ../sass/_module-user-console.scss */
+/* line 84, ../sass/_module-user-console.scss */
 .user-settings-menu.is-collapsed {
   height: 0px;
   overflow: hidden;
 }
 
 @media (max-width: 768px) {
-  /* line 91, ../sass/_module-user-console.scss */
+  /* line 89, ../sass/_module-user-console.scss */
   .pv-status-indicator {
     visibility: hidden;
   }
 }
-/* line 95, ../sass/_module-user-console.scss */
+/* line 93, ../sass/_module-user-console.scss */
 .pv-status-indicator a:link, .pv-status-indicator a:visited, .pv-status-indicator a:active {
   color: #CCC;
 }
-/* line 99, ../sass/_module-user-console.scss */
+/* line 97, ../sass/_module-user-console.scss */
 .pv-status-indicator.is-validated a:link, .pv-status-indicator.is-validated a:visited, .pv-status-indicator.is-validated a:active {
   color: #000;
 }
@@ -9992,34 +10038,34 @@ p {
 		<p class="user-title">Physician <span class="pv-status-indicator"><a href="#" class="has-tip tip-right" title="Click to become a validated physician."><i class="icon-user-md"></i></a></span></p>
 	</div>
 */
-/* line 205, ../sass/_module.scss */
+/* line 223, ../sass/_module.scss */
 .password-signin {
   margin: 0 -15px;
 }
-/* line 207, ../sass/_module.scss */
+/* line 225, ../sass/_module.scss */
 .password-signin .password {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 207, ../sass/_module.scss */
+  /* line 225, ../sass/_module.scss */
   .password-signin .password {
     float: none;
     width: auto;
   }
 }
-/* line 208, ../sass/_module.scss */
+/* line 226, ../sass/_module.scss */
 .password-signin .signin {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 208, ../sass/_module.scss */
+  /* line 226, ../sass/_module.scss */
   .password-signin .signin {
     float: none;
     width: auto;
   }
 }
 
-/* line 219, ../sass/_module.scss */
+/* line 237, ../sass/_module.scss */
 .remember-forgot .remember, .remember-forgot .separator, .remember-forgot .forgot {
   display: inline;
 }
@@ -10234,11 +10280,11 @@ p {
   margin: 0 -15px;
 }
 
-/* line 237, ../sass/_module.scss */
+/* line 255, ../sass/_module.scss */
 .alert-box .alert-title {
   color: white;
 }
-/* line 242, ../sass/_module.scss */
+/* line 260, ../sass/_module.scss */
 .alert-box.alert a {
   color: white;
   text-decoration: underline;
@@ -10656,6 +10702,7 @@ p {
 
 /* line 42, ../sass/_module-ad.scss */
 #leaderboardcontent {
+  height: 90px;
   max-width: 728px;
   margin: 0 auto;
   max-height: 90px;
@@ -10718,8 +10765,8 @@ p {
 
 /* line 62, ../sass/_module-ad.scss */
 html.lt-ie9 .widget.ad.leaderboard .ad-content, html.lt-ie9 .widget.ad.leaderboard object, html.lt-ie9 .widget.ad.leaderboard embed {
-  height: 7280px;
-  width: 90px;
+  height: 90px;
+  width: 728px;
 }
 /* line 68, ../sass/_module-ad.scss */
 html.lt-ie9 .widget.ad.boombox .ad-content, html.lt-ie9 .widget.ad.boombox object, html.lt-ie9 .widget.ad.boombox embed {
@@ -10737,19 +10784,19 @@ html.lt-ie9 .widget.ad.filmstrip .ad-content, html.lt-ie9 .widget.ad.filmstrip o
   width: 300px;
 }
 
-/* line 256, ../sass/_module.scss */
+/* line 274, ../sass/_module.scss */
 .widget.els-branding {
   width: 25%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 256, ../sass/_module.scss */
+  /* line 274, ../sass/_module.scss */
   .widget.els-branding {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 256, ../sass/_module.scss */
+  /* line 274, ../sass/_module.scss */
   .widget.els-branding {
     float: left;
     width: 25%;
@@ -10757,25 +10804,25 @@ html.lt-ie9 .widget.ad.filmstrip .ad-content, html.lt-ie9 .widget.ad.filmstrip o
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 256, ../sass/_module.scss */
+  /* line 274, ../sass/_module.scss */
   .widget.els-branding {
     left: 75%;
   }
 }
 
-/* line 257, ../sass/_module.scss */
+/* line 275, ../sass/_module.scss */
 .widget.els-description {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 257, ../sass/_module.scss */
+  /* line 275, ../sass/_module.scss */
   .widget.els-description {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 257, ../sass/_module.scss */
+  /* line 275, ../sass/_module.scss */
   .widget.els-description {
     float: left;
     width: 75%;
@@ -10783,25 +10830,25 @@ html.lt-ie9 .widget.ad.filmstrip .ad-content, html.lt-ie9 .widget.ad.filmstrip o
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 257, ../sass/_module.scss */
+  /* line 275, ../sass/_module.scss */
   .widget.els-description {
     right: 25%;
   }
 }
 
-/* line 258, ../sass/_module.scss */
+/* line 276, ../sass/_module.scss */
 .widget.powered-by {
   width: 25%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 258, ../sass/_module.scss */
+  /* line 276, ../sass/_module.scss */
   .widget.powered-by {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 258, ../sass/_module.scss */
+  /* line 276, ../sass/_module.scss */
   .widget.powered-by {
     float: left;
     width: 25%;
@@ -10809,7 +10856,7 @@ html.lt-ie9 .widget.ad.filmstrip .ad-content, html.lt-ie9 .widget.ad.filmstrip o
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 258, ../sass/_module.scss */
+  /* line 276, ../sass/_module.scss */
   .widget.powered-by {
     left: 75%;
   }
@@ -10895,38 +10942,38 @@ html.lt-ie9 .widget.ad.filmstrip .ad-content, html.lt-ie9 .widget.ad.filmstrip o
   margin-bottom: 0;
 }
 
-/* line 261, ../sass/_module.scss */
+/* line 279, ../sass/_module.scss */
 .faq-key {
   padding-left: 0;
 }
 
-/* line 262, ../sass/_module.scss */
+/* line 280, ../sass/_module.scss */
 .faq-list {
   padding-bottom: 14px;
 }
 
-/* line 263, ../sass/_module.scss */
+/* line 281, ../sass/_module.scss */
 .faq-q {
   font-weight: bold;
 }
 
-/* line 264, ../sass/_module.scss */
+/* line 282, ../sass/_module.scss */
 .faq-a {
   line-height: 2;
   padding-bottom: 14px;
 }
 
-/* line 270, ../sass/_module.scss */
+/* line 288, ../sass/_module.scss */
 .cme-image {
   display: none;
 }
 
-/* line 273, ../sass/_module.scss */
+/* line 291, ../sass/_module.scss */
 .cme-details dt {
   font-weight: bold;
 }
 
-/* line 314, ../sass/_module.scss */
+/* line 332, ../sass/_module.scss */
 #atlwdg-trigger, .atlwdg-trigger {
   z-index: 100;
 }
@@ -11175,7 +11222,7 @@ body {
 }
 
 /* line 190, ../sass/_theme.scss */
-.subheader, .user-title, .form-description {
+.subheader, .form-description {
   color: #887e6f;
 }
 
@@ -11207,7 +11254,7 @@ article.single-item h3 {
 }
 /* line 213, ../sass/_theme.scss */
 article.single-item .item-title-container .item-title {
-  color: #d86654;
+  color: #d75142;
   font-family: "museo-slab", serif;
   font-size: 17px;
   font-weight: bold;
@@ -12051,10 +12098,9 @@ html.lt-ie9 {
   /* Preferences + Registration */
   /* Landing Page*/
 }
-/* line 20, ../sass/_ie8.scss */
+/* line 19, ../sass/_ie8.scss */
 html.lt-ie9 .footer-section,
 html.lt-ie9 .pref-content,
-html.lt-ie9 .channel-list,
 html.lt-ie9 .alert-body,
 html.lt-ie9 .section-widget,
 html.lt-ie9 .checked-list,
@@ -12073,10 +12119,9 @@ html.lt-ie9 .login-register {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
-/* line 42, ../sass/_ie8.scss */
+/* line 40, ../sass/_ie8.scss */
 html.lt-ie9 .footer-section,
 html.lt-ie9 .pref-content,
-html.lt-ie9 .channel-list,
 html.lt-ie9 .alert-body,
 html.lt-ie9 .section-widget,
 html.lt-ie9 .checked-list,
@@ -12093,58 +12138,67 @@ html.lt-ie9 .login-register {
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
-/* line 46, ../sass/_ie8.scss */
+/* line 44, ../sass/_ie8.scss */
 html.lt-ie9 #li_update, html.lt-ie9 #li_explore, html.lt-ie9 #li_learn, html.lt-ie9 #li_update a, html.lt-ie9 #li_explore a, html.lt-ie9 #li_learn a {
   text-transform: uppercase !important;
 }
-/* line 54, ../sass/_ie8.scss */
+/* line 50, ../sass/_ie8.scss */
+html.lt-ie9 .top-bar section ul li:hover {
+  color: #196883;
+}
+/* line 51, ../sass/_ie8.scss */
+html.lt-ie9 .top-bar section ul li.active, html.lt-ie9 .top-bar section ul li.active:hover {
+  background: #d75142;
+  color: #fff;
+}
+/* line 58, ../sass/_ie8.scss */
 html.lt-ie9 .page-footer .footer-row {
   float: none;
   left: 0;
   width: auto;
   text-align: center;
 }
-/* line 59, ../sass/_ie8.scss */
+/* line 63, ../sass/_ie8.scss */
 html.lt-ie9 .page-footer .footer-row ul {
   text-align: center;
 }
-/* line 61, ../sass/_ie8.scss */
+/* line 65, ../sass/_ie8.scss */
 html.lt-ie9 .page-footer .footer-row ul li {
   float: none;
   display: inline-block;
 }
-/* line 70, ../sass/_ie8.scss */
+/* line 74, ../sass/_ie8.scss */
 html.lt-ie9 .login-register-container {
   float: left;
 }
-/* line 72, ../sass/_ie8.scss */
+/* line 76, ../sass/_ie8.scss */
 html.lt-ie9 .login-register-container .password-signin {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-/* line 76, ../sass/_ie8.scss */
+/* line 80, ../sass/_ie8.scss */
 html.lt-ie9 #formLogin .signin {
   margin: 0;
   float: left;
   width: 100px;
 }
-/* line 81, ../sass/_ie8.scss */
+/* line 85, ../sass/_ie8.scss */
 html.lt-ie9 #formLogin input[type="text"], html.lt-ie9 #formLogin .password input {
   width: 90%;
   padding: 8px 6px;
   height: 34px;
 }
-/* line 86, ../sass/_ie8.scss */
+/* line 90, ../sass/_ie8.scss */
 html.lt-ie9 #formLogin .password {
   margin: 0 5px 0 -15px;
   float: left;
   width: 166px;
 }
-/* line 92, ../sass/_ie8.scss */
+/* line 96, ../sass/_ie8.scss */
 html.lt-ie9 #formRegisterPrompt {
   float: right;
 }
-/* line 105, ../sass/_ie8.scss */
+/* line 109, ../sass/_ie8.scss */
 html.lt-ie9 .stream-container,
 html.lt-ie9 .explore-container,
 html.lt-ie9 .cme-container,
@@ -12156,22 +12210,75 @@ html.lt-ie9 .channel-list-container,
 html.lt-ie9 .static-container {
   float: left;
 }
-/* line 108, ../sass/_ie8.scss */
+/* line 112, ../sass/_ie8.scss */
 html.lt-ie9 #aux, html.lt-ie9 .aux, html.lt-ie9 .recommended {
   float: right;
   padding-left: 15px;
 }
-/* line 112, ../sass/_ie8.scss */
+/* line 116, ../sass/_ie8.scss */
 html.lt-ie9 .pref-container .pref-tabs {
   float: left;
 }
-/* line 113, ../sass/_ie8.scss */
+/* line 117, ../sass/_ie8.scss */
 html.lt-ie9 .pref-container .pref-tabs-content {
   float: right;
 }
-/* line 116, ../sass/_ie8.scss */
+/* line 120, ../sass/_ie8.scss */
 html.lt-ie9 .brand-container {
   float: left !important;
 }
 
 /* End lt-ie9 */
+@media print {
+  /* line 2, ../sass/_print.scss */
+  * {
+    background-color: transparent;
+    background-image: none;
+  }
+
+  /* line 6, ../sass/_print.scss */
+  .ad, .page-header, .aux, #aux, .recommended, #sidebar, .access-prompt-footer, .socialshare-actions, .publisher-access, .page-footer {
+    display: none;
+    visibility: hidden;
+  }
+
+  /* line 10, ../sass/_print.scss */
+  .single-item-container,
+  .stream-container,
+  .explore-container,
+  .learn-container {
+    display: block;
+    visibility: visible;
+    width: auto;
+  }
+
+  /* line 15, ../sass/_print.scss */
+  section[role="main"] {
+    float: none;
+    width: auto;
+  }
+
+  /* line 19, ../sass/_print.scss */
+  .item-content-section ul.accordion {
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+  }
+  /* line 24, ../sass/_print.scss */
+  .item-content-section ul.accordion .title {
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+  }
+  /* line 30, ../sass/_print.scss */
+  .item-content-section ul.accordion .content {
+    display: block !important;
+  }
+  /* line 31, ../sass/_print.scss */
+  .item-content-section ul.accordion li.active div.title:after, .item-content-section ul.accordion li div.title:after, .item-content-section ul.accordion .title:after {
+    border: none !important;
+    border-color: transparent !important;
+  }
+}

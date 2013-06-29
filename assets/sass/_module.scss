@@ -30,6 +30,18 @@
 
 }
 
+/* Content-Header ---------------- */
+.content-header{
+  background: $pri-ltBlue;
+  margin-bottom: 14px;
+}
+.topic-filter-helper{
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.2;
+  padding: 14px 7px;
+}
+
 /* item card */
 
 .item-header-container{@include column(12);}
@@ -40,7 +52,13 @@
 	.pub-meta{@include column(12);}
 .item-title-container{@include column(12);}
 .action-bar{@include column(12);}
-.socialshare-actions{margin-bottom: $baseFontSize;}
+.socialshare-actions{
+  margin-bottom: $baseFontSize;
+  a:hover{
+    text-decoration: none;
+  }
+}
+
 
 @media only screen and (max-width: $topBarBreakPoint) {
 	.item-title-container, .item-type{
