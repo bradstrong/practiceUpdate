@@ -9,9 +9,9 @@
 	clear: both;
 	padding-top: $baseFontSize;
 	padding-bottom: $baseFontSize*2;
-	@media only screen and (max-width: $topBarBreakPoint) {
-		.page-content{margin-top:$topBarHeightMobile;}
-	}
+}
+@media only screen and (max-width: $topBarBreakPoint) {
+  .page-content{margin-top:$topBarHeightMobile;}
 }
 
 // FOOTER

@@ -364,3 +364,17 @@ function topicNavInit() {
 
 };
 topicNavInit();
+
+function puScrollSpy(){
+  //data-pu-iid
+
+	$(document).on('scrollSpy:enter','.stream-item', function() {
+		console.log('enter:', $(this).attr('data-pu-iid'));
+	});
+
+	$(document).on('scrollSpy:enter','.stream-item', function() {
+		console.log('exit:', $(this).attr('data-pu-iid'));
+	});
+
+  $.scrollSpy($(document));
+}

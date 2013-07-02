@@ -10,7 +10,7 @@
 
 ;(function ($, window, undefined) {
   'use strict';
-  
+
   var settings = {
       bodyHeight : 0,
       selector : '.has-tip',
@@ -32,7 +32,7 @@
 
           if (Modernizr.touch) {
             $body.on('click.tooltip touchstart.tooltip touchend.tooltip', settings.selector, function (e) {
-              e.preventDefault();
+/*               e.preventDefault(); */ //updated by brad 2013-07-02
               $(settings.tooltipClass).hide();
               methods.showOrCreateTip($(this));
             });
@@ -169,7 +169,7 @@
                 return el;
               }
           }).join(' ') : '';
-          
+
         return $.trim(filtered);
       },
       show : function ($target) {

@@ -3,6 +3,10 @@
     background-color: transparent;
     background-image: none;
   }
+  .tooltip{
+    display: none !important;
+    visibility: hidden !important;
+  }
   .ad, .page-header, .aux, #aux, .recommended, #sidebar, .access-prompt-footer, .socialshare-actions, .publisher-access, .page-footer{display: none; visibility: hidden;}
   .single-item-container,
   .stream-container,

@@ -8089,13 +8089,13 @@ small {
     margin-right: 0;
   }
 }
+
 @media only screen and (max-width: 769px) {
-  /* line 13, ../sass/_layout.scss */
-  .page-content .page-content {
+  /* line 14, ../sass/_layout.scss */
+  .page-content {
     margin-top: 40px;
   }
 }
-
 /* line 18, ../sass/_layout.scss */
 .page-footer {
   width: 1440px;
@@ -9545,6 +9545,13 @@ experimental footer - left sidebar
   border-bottom: none;
 }
 
+@media only screen and (max-width: 769px) {
+  /* line 11, ../sass/_module-tooltip.scss */
+  .top-bar .tool-tip {
+    display: none;
+    visibility: hidden;
+  }
+}
 /* Panels ---------------------- */
 /* line 16, ../sass/_module.scss */
 .panel, .query-no-results, .cta {
@@ -12237,12 +12244,18 @@ html.lt-ie9 .brand-container {
   }
 
   /* line 6, ../sass/_print.scss */
+  .tooltip {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* line 10, ../sass/_print.scss */
   .ad, .page-header, .aux, #aux, .recommended, #sidebar, .access-prompt-footer, .socialshare-actions, .publisher-access, .page-footer {
     display: none;
     visibility: hidden;
   }
 
-  /* line 10, ../sass/_print.scss */
+  /* line 14, ../sass/_print.scss */
   .single-item-container,
   .stream-container,
   .explore-container,
@@ -12252,31 +12265,31 @@ html.lt-ie9 .brand-container {
     width: auto;
   }
 
-  /* line 15, ../sass/_print.scss */
+  /* line 19, ../sass/_print.scss */
   section[role="main"] {
     float: none;
     width: auto;
   }
 
-  /* line 19, ../sass/_print.scss */
+  /* line 23, ../sass/_print.scss */
   .item-content-section ul.accordion {
     border-top: none !important;
     border-right: none !important;
     border-bottom: none !important;
     border-left: none !important;
   }
-  /* line 24, ../sass/_print.scss */
+  /* line 28, ../sass/_print.scss */
   .item-content-section ul.accordion .title {
     border-top: none !important;
     border-right: none !important;
     border-bottom: none !important;
     border-left: none !important;
   }
-  /* line 30, ../sass/_print.scss */
+  /* line 34, ../sass/_print.scss */
   .item-content-section ul.accordion .content {
     display: block !important;
   }
-  /* line 31, ../sass/_print.scss */
+  /* line 35, ../sass/_print.scss */
   .item-content-section ul.accordion li.active div.title:after, .item-content-section ul.accordion li div.title:after, .item-content-section ul.accordion .title:after {
     border: none !important;
     border-color: transparent !important;
