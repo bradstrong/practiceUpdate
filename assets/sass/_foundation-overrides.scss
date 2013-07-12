@@ -122,8 +122,8 @@ $titleFontFamily: $sansCondensedFontFamily, "Helvetica Neue", "Helvetica", Helve
 
 // Grid Settings
 
-$rowWidth: 1440px;// 100%sets site to fluid grid
-
+//$rowWidth: 1440px;// 100%sets site to fluid grid
+$rowWidth: 100%;
 // Colors Settings
 
 $mainColor: $pri-orange;//logo orange Previously: //rgb(16,112,144);//$sec-dkBlue;

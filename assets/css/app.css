@@ -161,7 +161,7 @@ figure {
 /* The Grid ---------------------- */
 /* line 3, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/_grid.scss */
 .row {
-  width: 1440px;
+  width: 100%;
   max-width: 100%;
   min-width: 768px;
   margin: 0 auto;
@@ -3184,7 +3184,7 @@ div.progress.round .meter {
 }
 /* line 33, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .contain-to-grid .top-bar, .page-header .top-bar {
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
 }
 /* line 38, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
@@ -8053,26 +8053,32 @@ a:hover {
   text-decoration: underline;
 }
 
-/* line 11, ../sass/_base.scss */
+/* line 10, ../sass/_base.scss */
+a {
+  word-wrap: break-word;
+  -ms-hyphens: auto;
+}
+
+/* line 12, ../sass/_base.scss */
 object, embed {
   display: block;
   height: auto;
   width: auto;
 }
 
-/* line 17, ../sass/_base.scss */
+/* line 18, ../sass/_base.scss */
 cite {
   font-style: normal;
 }
 
-/* line 21, ../sass/_base.scss */
+/* line 22, ../sass/_base.scss */
 small {
   font-size: 85%;
 }
 
 /* line 7, ../sass/_layout.scss */
 .page-content {
-  width: 1440px;
+  width: 100%;
   max-width: 100%;
   min-width: 768px;
   margin: 0 auto;
@@ -8098,7 +8104,7 @@ small {
 }
 /* line 18, ../sass/_layout.scss */
 .page-footer {
-  width: 1440px;
+  width: 100%;
   max-width: 100%;
   min-width: 768px;
   margin: 0 auto;
@@ -8195,11 +8201,7 @@ small {
 
 /* Page Layouts */
 /* !Base Layout */
-/* line 55, ../sass/_layout.scss */
-#sidebar {
-  padding-right: 0;
-}
-
+/* #sidebar{padding-right:0;} */
 /* line 56, ../sass/_layout.scss */
 #aux, .aux, .recommended {
   width: 41.66667%;
@@ -8524,7 +8526,7 @@ small {
 /*Marketing PAges */
 /* line 96, ../sass/_layout.scss */
 .page-banner {
-  width: 1440px;
+  width: 100%;
   max-width: 100%;
   min-width: 768px;
   margin: 0 auto;
@@ -10770,27 +10772,36 @@ p {
   }
 }
 
+/* html.lt-ie9{ */
 /* line 62, ../sass/_module-ad.scss */
-html.lt-ie9 .widget.ad.leaderboard .ad-content, html.lt-ie9 .widget.ad.leaderboard object, html.lt-ie9 .widget.ad.leaderboard embed {
+.widget.ad.leaderboard .ad-content, .widget.ad.leaderboard object, .widget.ad.leaderboard embed {
   height: 90px;
   width: 728px;
-}
-/* line 68, ../sass/_module-ad.scss */
-html.lt-ie9 .widget.ad.boombox .ad-content, html.lt-ie9 .widget.ad.boombox object, html.lt-ie9 .widget.ad.boombox embed {
-  height: 250px;
-  width: 300px;
-}
-/* line 74, ../sass/_module-ad.scss */
-html.lt-ie9 .widget.ad.skyscraper .ad-content, html.lt-ie9 .widget.ad.skyscraper object, html.lt-ie9 .widget.ad.skyscraper embed {
-  height: 160px;
-  width: 600px;
-}
-/* line 80, ../sass/_module-ad.scss */
-html.lt-ie9 .widget.ad.filmstrip .ad-content, html.lt-ie9 .widget.ad.filmstrip object, html.lt-ie9 .widget.ad.filmstrip embed {
-  height: 600px;
-  width: 300px;
+  max-width: 100% !important;
 }
 
+/* line 69, ../sass/_module-ad.scss */
+.widget.ad.boombox .ad-content, .widget.ad.boombox object, .widget.ad.boombox embed {
+  height: 250px;
+  width: 300px;
+  max-width: 100% !important;
+}
+
+/* line 76, ../sass/_module-ad.scss */
+.widget.ad.skyscraper .ad-content, .widget.ad.skyscraper object, .widget.ad.skyscraper embed {
+  height: 600px;
+  width: 160px;
+  max-width: 100% !important;
+}
+
+/* line 83, ../sass/_module-ad.scss */
+.widget.ad.filmstrip .ad-content, .widget.ad.filmstrip object, .widget.ad.filmstrip embed {
+  height: 600px;
+  width: 300px;
+  max-width: 100% !important;
+}
+
+/* } */
 /* line 274, ../sass/_module.scss */
 .widget.els-branding {
   width: 25%;
@@ -10978,11 +10989,6 @@ html.lt-ie9 .widget.ad.filmstrip .ad-content, html.lt-ie9 .widget.ad.filmstrip o
 /* line 291, ../sass/_module.scss */
 .cme-details dt {
   font-weight: bold;
-}
-
-/* line 332, ../sass/_module.scss */
-#atlwdg-trigger, .atlwdg-trigger {
-  z-index: 100;
 }
 
 /* line 18, ../sass/_state.scss */

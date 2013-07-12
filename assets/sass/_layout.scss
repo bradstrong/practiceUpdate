@@ -52,7 +52,7 @@
 /* Page Layouts */
 /* !Base Layout */
 #dashboard,.dashboard{}
-#sidebar{padding-right:0;}
+/* #sidebar{padding-right:0;} */
 #aux, .aux, .recommended{
 	@include column(5); @include mobileColumn(4);
 	@media only screen and (max-width: $topBarBreakPoint) {

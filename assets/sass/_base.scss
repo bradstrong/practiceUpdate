@@ -7,6 +7,7 @@ select{
 }
 
 a:hover{text-decoration: underline;}
+a{ word-wrap: break-word;-ms-hyphens: auto;}
 
 object, embed{
 	display:block;

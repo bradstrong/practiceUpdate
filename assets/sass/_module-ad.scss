@@ -57,29 +57,33 @@
 #leaderboardouter, #leaderboard{@media only screen and (max-width: $screenSmall) {display:none;}}
 
 //fix for ie8 and below
-html.lt-ie9{
+/* html.lt-ie9{ */
   .widget.ad.leaderboard{
     .ad-content, object, embed{
       height: 90px;
       width: 728px;
+      max-width: 100% !important;
     }
   }
   .widget.ad.boombox{
     .ad-content, object, embed{
       height: 250px;
       width: 300px;
+      max-width: 100% !important;
     }
   }
   .widget.ad.skyscraper{
     .ad-content, object, embed{
-      height: 160px;
-      width: 600px;
+      height: 600px;
+      width: 160px;
+      max-width: 100% !important;
     }
   }
   .widget.ad.filmstrip{
     .ad-content, object, embed{
       height: 600px;
       width: 300px;
+      max-width: 100% !important;
     }
   }
-}
+/* } */
