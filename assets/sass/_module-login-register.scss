@@ -1,0 +1,16 @@
+.password-signin{
+	@include innerRow();
+	.password{@include column(6);}
+	.signin{
+		@include column(6);
+		#SignIn{@extend .success;}
+	}
+}
+
+.logout-container{
+	#Login{@extend .success;}
+}
+
+.remember-forgot{
+	.remember, .separator, .forgot{display: inline;}
+}

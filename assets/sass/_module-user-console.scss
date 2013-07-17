@@ -59,6 +59,9 @@
 .user-console{
 	background: #fff;
 	border: 1px solid $pri-lt-grey;
+	ul{
+  	list-style-type: none;
+	}
 }
 .current-user{
 }
