@@ -42,6 +42,12 @@
 	<div class="page-content">
 		<section role="main">
 			<div class="explore-container">
+			<div id="featured">
+<img src="../images/orbit-demo/demo1.jpg" />
+<img src="../images/orbit-demo/demo2.jpg" />
+<img src="../images/orbit-demo/demo3.jpg" />
+</div>
+
 <div class="stream-header">
   <div class="topic-filter-helper">
   <div class="eight columns">
@@ -350,7 +356,11 @@ Stop 7: Learn tab
 	});
 	</script>
 
-
+<script type="text/javascript">
+   $(window).load(function() {
+       $("#featured").orbit();
+   });
+</script>
 
 </body>
 </html>
