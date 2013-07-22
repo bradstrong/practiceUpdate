@@ -81,6 +81,9 @@
 .user-profile-container{@include column(7, collapse); @include mobileRow();}
 .channel-list-container{@include column(7, collapse); @include mobileRow();}
 
+/* !Single-Item Pages */
+article.single-item{@include innerRow();}
+
 /* !Static pages */
 .static-container{@include column(7, collapse); @include mobileRow();}
 

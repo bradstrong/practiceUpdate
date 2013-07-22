@@ -1,0 +1,23 @@
+/* Content lists 	 */
+/* For Juneo, list styles must be wrapped in .contentpanel to avoid impacting UI  */
+.contentpanel ul,
+.contentpanel ul ul
+.contentpanel ol,
+.contentpanel ol ol{
+  margin-left: 17px;
+}
+
+.contentpanel ul,
+.contentpanel ul li{
+  list-style-type: disc;
+}
+
+.contentpanel ol,
+.contentpanel ol li{
+  list-style-type: decimal;
+}
+
+.contentpanel ul.disc, .contentpanel ul.disc li{list-style-type: disc;}//.disc - ul default
+.contentpanel ul.circle, .contentpanel ul.circle li{list-style-type: circle;}//.circle - tinyMCE option "circle"
+.contentpanel ul.square, .contentpanel ul.square li{list-style-type: square;}//.square - tineMCE option "square"
+.contentpanel ul.no-bullet, .contentpanel ul.no-bullet li{list-style-type: none;}//.no-bullet - tonyMCE option "no bullet"

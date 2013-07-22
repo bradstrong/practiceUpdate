@@ -1,0 +1,402 @@
+﻿@using PracticeUpdate.Web;
+@using PracticeUpdate.Web.Mappers;
+@model PracticeUpdate.Web.ViewModels.JournalArticleViewModel
+@{
+    if (@Model.JournalArticle != null)
+    {
+        ViewBag.Title = @Model.JournalArticle.Title;
+    }
+}
+@Scripts.Render("~/assets/js/Views/Explore/JournalScans")
+@Scripts.Render("~/assets/js/socialshare")
+@Scripts.Render("~/assets/js/SearchEngineFCF")
+@if (@Model.JournalArticle != null)
+{
+    <div class="single-item-container">
+
+        @*BEGIN SharedSearchEngine*@
+        @{
+
+
+            string strSearchEngine = string.Empty;
+            string SearchEngineFCFViewsRemaining = string.Empty;
+            bool SearchEngine = false;
+            bool SearchEngineFCF = false;
+            string strUserAgent = null;
+            string strUrlReferrer = null;
+
+            if (!HttpContext.Current.User.Identity.IsAuthenticated && ViewBag.isTokenValid==0)
+            {
+
+                if ( Request.UserAgent != null){
+                    strUserAgent = Request.UserAgent.ToString().ToLower();
+                }
+
+                if (Request.UrlReferrer != null)
+                {
+                    strUrlReferrer = Request.UrlReferrer.ToString().ToLower();
+                }
+
+                DateTime CookieExpire = DateTime.Now.AddDays(1);
+
+                if (strUserAgent != null)
+                {
+                    if (strUserAgent.Contains("googlebot")) {
+                        SearchEngine = true;
+                    }
+                }
+                if (strUrlReferrer != null)
+                {
+                    if (strUrlReferrer.Contains(".google.") || strUrlReferrer.Contains("localhost/dev"))
+                    {
+                        SearchEngineFCF = true;
+                        strSearchEngine = "Google";
+                        SearchEngineFCFViewsRemaining = "4";
+                    }
+                    if (strUrlReferrer.Contains(".facebook."))
+                    {
+                        SearchEngineFCF = true;
+                        strSearchEngine = "Facebook";
+                        SearchEngineFCFViewsRemaining = "4";
+                    }
+                    if (strUrlReferrer.Contains("juneo.practiceupdate.") || strUrlReferrer.Contains("juneodev.practiceupdate."))
+                    {
+                        SearchEngineFCF = true;
+                        strSearchEngine = "Juneo";
+                        SearchEngineFCFViewsRemaining = "999";
+                    }
+
+                    if(SearchEngineFCF){
+                        if (Request.Cookies[strSearchEngine] != null){
+                            SearchEngineFCFViewsRemaining = Request.Cookies[strSearchEngine]["counter"];
+                            CookieExpire = Convert.ToDateTime(Request.Cookies[strSearchEngine]["exp"]);
+                            int numVal = Convert.ToInt32(SearchEngineFCFViewsRemaining);
+                            if (numVal >= 0) {
+                                //decrement the counter by 1
+                                numVal = numVal - 1;
+                                if (numVal == -1) {
+                                    SearchEngineFCF = false;
+                                }
+                                SearchEngineFCFViewsRemaining = numVal.ToString();
+                                Response.Cookies[strSearchEngine]["counter"] = SearchEngineFCFViewsRemaining;
+                                Response.Cookies[strSearchEngine]["exp"] = CookieExpire.ToString();
+                                Response.Cookies[strSearchEngine].Path = "/";
+                                Response.Cookies[strSearchEngine].Expires = CookieExpire;
+                            }
+                            else{
+                                //All view used for today
+                                SearchEngineFCF = false;
+                                SearchEngineFCFViewsRemaining = "-1";
+                            }
+                        }
+                        else{
+                            //Nothing exists, so initialize a cookie
+                            Response.Cookies[strSearchEngine]["counter"] = SearchEngineFCFViewsRemaining;
+                            Response.Cookies[strSearchEngine]["exp"] = CookieExpire.ToString();
+                            Response.Cookies[strSearchEngine].Path = "/";
+                            Response.Cookies[strSearchEngine].Expires = CookieExpire;
+                        }
+                    }
+                }
+
+                if (strSearchEngine.Contains("Google") || strSearchEngine.Contains("Juneo") || strSearchEngine.Contains("Facebook"))
+                {
+                    <div id="searchengineprompt" class="prompt access-prompt active-access is-hidden">
+	                    <div class="prompt-body access-prompt-body">
+  	                    <p>You're enjoying temporary access to this content because it was accessed via @strSearchEngine.</p>
+                        @if (strSearchEngine.Contains("Google") || strSearchEngine.Contains("Facebook"))
+                        {
+                            <p><a href="/User/Register">Create a free account</a> to gain permanent access to all PracticeUpdate content.</p>
+                            <p>Number of views remaining for today: @SearchEngineFCFViewsRemaining</p>
+                        }
+	                    </div>
+                        @if (strSearchEngine.Contains("Google") || strSearchEngine.Contains("Facebook"))
+                        {
+	                        <div class="prompt-footer access-prompt-footer">
+                                <a class="button small" href="/User/Register">Register Now</a>
+	                        </div>
+                        }
+                    </div>
+                    <div id="searchenginenoaccess" class="prompt access-prompt active-access is-hidden">
+	                    <div class="prompt-body access-prompt-body">
+  	                    <p>Sorry, but you have used all of your views for content today.  <a href="/User/Register">Create a free account</a> to gain permanent access to all PracticeUpdate content.</p>
+	                    </div>
+	                    <div class="prompt-footer access-prompt-footer">
+                    <a class="button small" href="/User/Register">Register Now</a>
+	                    </div>
+                    </div>
+                }
+            }
+        }
+        @*END SharedSearchEngine*@
+
+        @if (!HttpContext.Current.User.Identity.IsAuthenticated )
+        {
+            @Html.Partial("_socialshareprompt")
+        }
+        <article class="type-blog featured single-item">
+            <div class="item-header-container">
+                <header class="item-header">
+                    @if ((@Model.JournalArticle.Featured) || (@Model.JournalArticle.EditorsChoice))
+                    {
+                        <div class="flag-container">
+                            @if (@Model.JournalArticle.EditorsChoice)
+                            {
+                                <span class="flag story-of-the-week"><i class="icon-bookmark"></i> story of the week</span>
+                            }
+                            else if (@Model.JournalArticle.Featured)
+                            {
+                                <span class="flag featured"><i class="icon-star"></i> featured</span>
+                            }
+                        </div>
+                    }
+                    <div class="meta pub-meta">
+                        <span class="item-type">@Model.JournalArticle.ArticleTypeName</span>
+                        <span class="item-pub-date">@Model.JournalArticle.PublishedDate</span>
+                    </div>
+                    <hgroup class="item-title-container">
+                        <h1 class="item-title">@Model.JournalArticle.Title</h1>
+                        <p class="item-citation">@Model.JournalArticle.JournalContent</p>
+                    </hgroup>
+                    @if (HttpContext.Current.User.Identity.IsAuthenticated)
+                    {
+                        @Html.Partial("_socialshare")
+                    }
+                </header>
+            </div>
+            <!--/.item-header-container-->
+
+            <div class="item-content-container">
+                @if ((HttpContext.Current.User.Identity.IsAuthenticated) || (ViewBag.isTokenValid == 1) || (SearchEngine) || (SearchEngineFCF))
+                {
+                    <div class="item-content">
+                        @if (@Model.JournalArticle.ArticleTypeId != 1 && @Model.JournalArticle.TakeHomeMessage != null)
+                        {
+                            <div class="item-content-section">
+                                <section class="take-home-message">
+                                    <h2>TAKE-HOME MESSAGE</h2>
+                                    @{
+                                        if (String.Compare(@Model.JournalArticle.TakeHomeMessage.Substring(0, 2), "<p") == 0)
+                                        { @MvcHtmlString.Create(@Model.JournalArticle.TakeHomeMessage)}
+                                        else
+                                        { <p>@MvcHtmlString.Create(@Model.JournalArticle.TakeHomeMessage)</p>}
+                                    }
+                                </section>
+                                <!--/.take-home-message-->
+                            </div>
+                            <!--/.item-content-section-->
+                        }
+                        @if (@Model.JournalArticle.Commentary != null)
+                        {
+                            <div class="item-content-section">
+                                <section class="commentary">
+                                    <div class="commentary-container">
+                                        @if (@Model.JournalArticle.CommentaryAuthorId == null)
+                                        {
+                                            <h2>Commentary</h2>
+                                        }
+                                        else
+                                        {
+                                            <h2>Commentary by</h2>
+                                            <div class="source-container">
+                                                <div class="vcard">
+                                                    <div class="expert-photo">
+                                                        <img class="photo" src="@Url.Action("GetThumbNail", new { id = Model.JournalArticle.CommentaryAuthorId })" />
+                                                    </div>
+                                                    <div class="expert-name">
+                                                        <a class="fn" href="/Profile/@Model.JournalArticle.CommentaryAuthorId">
+                                                            <span class="n">
+                                                                <span id="commentaryfirstname" class="given-name">@Model.JournalArticle.CommentaryAuthorFirstName</span>
+                                                                @if (!string.IsNullOrEmpty(@Model.JournalArticle.CommentaryAuthorMiddleName))
+                                                                {
+                                                                    <span class="additional-name">@Model.JournalArticle.CommentaryAuthorMiddleName</span>
+                                                                }
+                                                                <span id="commentarylastname" class="family-name">@Model.JournalArticle.CommentaryAuthorLastName</span>@if (!string.IsNullOrEmpty(@Model.JournalArticle.CommentaryAuthorSuffix))
+                                                                                                                                                {<span class="honorific-suffix">,&nbsp;@Model.JournalArticle.CommentaryAuthorSuffix</span>}
+                                                            </span>
+                                                        </a>
+                                                        <!--/.fn-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/.source-container-->
+                                        }
+                                        @{
+                                            if (String.Compare(Model.JournalArticle.Commentary.Substring(0, 2), "<p") == 0)
+                                            { @MvcHtmlString.Create(Model.JournalArticle.Commentary)}
+                                            else
+                                            { <p>@MvcHtmlString.Create(Model.JournalArticle.Commentary)</p>}
+                                        }
+                                    </div>
+                                    <!--/.commentary-container-->
+                                </section>
+                                <!-- /.commentary-->
+                            </div>
+                        }
+                        <hr />
+                        @if (!string.IsNullOrEmpty(@Model.JournalArticle.Summary))
+                        {
+                            <div id="SummaryDiv" class="item-content-section">
+                                <section class="summary">
+                                    <h2>SUMMARY</h2>
+                                    <div class="source-container">
+                                        <div class="vcard">
+                                            <div class="expert-name">
+                                                <span class="n">
+                                                    <p>PracticeUpdate Editorial Team</p>
+                                                </span>
+                                            </div>
+                                            <!--/.expert-name-->
+                                        </div>
+                                        <!--/.vcard-->
+                                    </div>
+                                    <!--/.source-container-->
+                                    @{
+                                        if (String.Compare(@Model.JournalArticle.Summary.Substring(0, 2), "<p") == 0)
+                                        { @MvcHtmlString.Create(@Model.JournalArticle.Summary)}
+                                        else
+                                        { <p>@MvcHtmlString.Create(@Model.JournalArticle.Summary)</p>}
+                                    }
+                                </section>
+                            </div>
+                            <!--/.item-content-section-->
+                        }
+                        @if (!string.IsNullOrEmpty(@Model.JournalArticle.Abstract))
+                        {
+                            <div id="AbstractDiv" class="item-content-section">
+                                <section class="abstract">
+                                    <h2>ABSTRACT</h2>
+                                    @{
+                                        if (String.Compare(@Model.JournalArticle.Abstract.Substring(0, 2), "<p") == 0)
+                                        { @MvcHtmlString.Create(@Model.JournalArticle.Abstract)}
+                                        else
+                                        { <p>@MvcHtmlString.Create(@Model.JournalArticle.Abstract)</p>}
+                                    }
+                                </section>
+                                <!--/.abstract-->
+                            </div>
+                            <!--/.item-content-section-->
+                        }
+                        <hr />
+                        <div class="item-content-section">
+                            <div class="item-source">
+                                <div class="vcard">
+                                    <div class="journal">
+                                        <span class="n">
+                                            <span class="given-name">@Model.JournalArticle.JournalName</span>
+                                        </span>
+                                        <h6 class="item-title">@Model.JournalArticle.ArticleTitle</h6>
+                                        <cite class="subheader">@Model.JournalArticle.JournalContent</cite>
+                                    </div>
+                                </div>
+                                <!--/.vcard-->
+                            </div>
+                            <!--/.item-source -->
+
+                            <div class="user-actions">
+                                <div class="publisher-access">
+                                    <div id="FullTextType1" class="is-hidden">
+                                        <div class="panel abstract">
+                                            <p>This abstract is available on the publisher's site.</p>
+                                            <a id="FreeAbstractURL" href="@Model.JournalArticle.Url" target="_blank" class="button">Access this abstract now</a>
+                                        </div>
+                                        <!--/.panel-->
+                                    </div>
+                                    <div id="FullTextType2" class="is-hidden">
+                                        <div class="panel free">
+                                            <p>This article is open access.</p>
+                                            <a href="@Model.JournalArticle.Url" target="_blank" class="button">Access this article now</a>
+                                        </div>
+                                        <!--/.panel-->
+                                    </div>
+                                    <div id="FullTextType3" class="is-hidden">
+                                        <div class="panel free-thirty">
+                                            <p>The publisher has made this article available for free until @Model.JournalArticle.ValueAddedPublishedDate .</p>
+                                            <a id="TPSURL" href="@Model.JournalArticle.Url" target="_blank" class ="button">Access this article now</a>
+                                        </div>
+                                        <!--/.panel-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.user-actions -->
+
+                            @if (Model.RelatedItems.Count > 0)
+                            {
+                                <section class="related">
+                                    <div class="related-container">
+                                        <ul class="accordion">
+                                            <li>
+                                                <div class="title">
+                                                    <h5 class="section-title">Related Items</h5>
+                                                </div>
+                                                <div class="content">
+                                                    <ol>
+                                                        <!--{{BEGIN Loop for all ExpertOpinionRelatedItems for this item}}-->
+                                                        @foreach (var item in Model.RelatedItems)
+                                                        {
+                                                            <li>
+                                                                <p>
+                                                                    @switch (item.ToTypeId)
+                                                                    {
+                                                                        case 1:
+                                                                        <a href="/Explore/JournalScan/?id=@item.ToItemId">@item.ToItemTitle</a>
+                                                                            break;
+                                                                        case 2:
+                                                                        <a href="/Explore/News/?id=@item.ToItemId">@item.ToItemTitle</a>
+                                                                            break;
+                                                                        case 3:
+                                                                        <a href="/Explore/ExpertOpinion/?id=@item.ToItemId">@item.ToItemTitle</a>
+                                                                            break;
+                                                                    }
+                                                                </p>
+                                                            </li>
+                                                        }
+                                                        <!--{{END Loop}}-->
+                                                    </ol>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                                <!-- /.related -->
+                            }
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="item-content no-access">
+                        @{
+                    PracticeUpdate.Web.ViewModels.LogOnViewModel logOnViewModel = new PracticeUpdate.Web.ViewModels.LogOnViewModel();
+                            @Html.Partial("~/Views/Shared/_Login.cshtml", logOnViewModel, new ViewDataDictionary { { "IsReturnUrl", "true" } });
+                        }
+                    </div>
+                }
+                <div class="is-hidden">
+                    <input type="text" id="SearchEngineFCF" value="@SearchEngineFCFViewsRemaining" />
+                    <input type="text" id="SearchEngineFCFType" value="@strSearchEngine" />
+                    <input type="text" id="authors" value="@Model.JournalArticle.Authors"/>
+                    <input type="text" id="Source" value="@Model.JournalArticle.Source"/>
+                    <input type="text" id="FullTextType" value="@Model.JournalArticle.JournalFullTextTypeId"/>
+                    <input type="text" id="Override" value="@Model.JournalArticle.FullTextTypeId" />
+                    <input type="text" id="PII" value="@Model.JournalArticle.PII" />
+                    <input type="text" id="TPSToken" value="@ViewBag.TPSToken" />
+                    <input type="text" id="ItemSpecialtyId" value="@Model.JournalArticle.SpecialtyId" />
+                    <input type="text" id="TokenIsValid" value="@ViewBag.isTokenValid" />
+                    <input type="text" id="TokenExpirationDate" value="@ViewBag.TokenExpirationDate" />
+                    <input type="text" id="JournalScanId" value="@ViewBag.JournalScanId" />
+                    <input type="text" id="Type" value="1" />
+                </div>
+            </div>
+            <footer class="copyright item-footer">
+                <p>Copyright &copy; @DateTime.Now.Year Elsevier Inc. All rights reserved.</p>
+            </footer>
+        </article>
+    </div>
+}
+else
+{
+    //TODO: Show Error Message
+    @Html.Display("Sorry No Record Found");
+
+}
