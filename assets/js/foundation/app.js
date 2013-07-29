@@ -378,3 +378,7 @@ function puScrollSpy(){
 
   $.scrollSpy($(document));
 }
+
+//events list xml http://www.globaleventslist.elsevier.com/rss.aspx?filterYears=2013&disciplineIds=68&specialtyIds=247
+//jquery parse xml http://api.jquery.com/jQuery.parseXML/
+
