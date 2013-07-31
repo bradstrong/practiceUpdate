@@ -7,7 +7,6 @@
 .page-content{
 	@include outerRow();
 	clear: both;
-	margin-top: 40px;
 	padding-top: $baseFontSize;
 	padding-bottom: $baseFontSize*2;
 }
@@ -82,7 +81,8 @@
 .channel-list-container{@include column(7, collapse); @include mobileRow();}
 
 /* !Single-Item Pages */
-article.single-item{@include innerRow();}
+/* article.single-item{@include innerRow();} */
+article.single-item{@include clearfix();}
 
 /* !Static pages */
 .static-container{@include column(7, collapse); @include mobileRow();}
