@@ -188,16 +188,19 @@ body{white-space-collapse: collapse;}
 	font-weight:normal;
 }
 
+a i[class^="icon-"],
+i[class^="icon-"] {
+  color:$pri-mid-grey;
+}
+
+a:hover i[class^="icon-"]{
+  color: $txtColor;
+  cursor: pointer;
+}
+
 .subheader{ color:$headerFontColor;}
 .socialshare-actions{
   span,i{font-size: $baseFontSize*1.5}
-  i{
-    color:$pri-mid-grey;
-    &:hover{
-      color: $txtColor;
-      cursor: pointer;
-    }
-  }
 }
 
 #formLogin{@include column(6);
