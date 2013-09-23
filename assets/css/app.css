@@ -11023,7 +11023,7 @@ article.single-item section.section-conference-coverage ul li {
 /* html.lt-ie9{ */
 /* line 62, ../sass/_module-ad.scss */
 .widget.ad.leaderboard .ad-content, .widget.ad.leaderboard object, .widget.ad.leaderboard embed {
-  height: 90px;
+  /*       height: 90px; */
   width: 728px;
   max-width: 100% !important;
 }
