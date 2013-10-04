@@ -54,14 +54,17 @@
 
 	<div class="page-header sticky">
 	</div><!--/.page-header-->
-	<div class="notification-container row">
-  	<div class="twelve columns">
-    	<div class="notification alert-box">
-      	<strong>Uh oh! The email address you've provided during registration, {{user email address}},  is not valid. Please update your settings with a valid address.</strong>
-    	</div>
-  	</div>
-	</div>
 	<div class="page-content">
+  	<div class="notification-container">
+    	<div class="twelve columns">
+      	<div class="notification alert-box secondary">
+        	<span class="alert-text">The email address you provided during registration, {{user email address}},  is not valid. Please <a class="alert-link" href="#">update your settings</a> with a valid address before {{end date}} to continue using PracticeUpdate.</span>
+      	</div>
+      	<div class="notification alert-box alert">
+        	<span class="alert-text">The email address you provided during registration, {{user email address}},  is not valid. Please <a class="alert-link" href="#">update your settings</a> with a valid address before {{end date}} to continue using PracticeUpdate.</span>
+      	</div>
+    	</div><!--/.twelve.columns -->
+  	</div><!-- /.notification-container -->
 		<section role="main">
 			<div class="stream-container">
 			</div><!--/.stream-container-->
