@@ -51,9 +51,9 @@
 
 <div class="user-profile-container">
 	<div class="user-profile-header">
+	<a class="button" href="#"></i> View all oncology board members</a>
 	</div><!--/.user-profile-header-->
 	<div class="user-profile">
-	</div><!--/.user-profile -->
 	<section class="user-profile-section user-profile-social">
   <h3>Elsewhere</h3>
   <ul class="profile-list no-bullet">
@@ -66,6 +66,7 @@
 
   </ul><!--/.profile-list-->
 </section><!--/.user-profile-social-->
+	</div><!--/.user-profile -->
 </div><!-- /.user-profile-container -->
 
 	<div class="recommended">
@@ -150,7 +151,7 @@
 	$.getJSON('content/json/user-profile.json', function(data) {
 		$.get('assets/mustache/user-profile.mustache', function(template) {
 	    var html = Mustache.to_html(template, data);
-	    $('.user-profile').html(html);
+	    $('.user-profile').prepend(html);
 		});
 	});
 
