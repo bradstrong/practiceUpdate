@@ -33,14 +33,7 @@
     <![endif]-->
 
 </head>
-<body id="landing-error" class="off-canvas page-landing utility page-landing-error"> <!-- .custom-mockup -->
-  <div class="page-header ">
-      <nav class="top-bar">
-        <ul>
-          <li class="name"><div class="site-branding"><a href="/"><img alt="PracticeUpdate Logo" src="/assets/img/logo-practiceupdate-inverse.png"></a></div><!--/.site-branding--></li>
-        </ul>
-      </nav><!--/.top-bar-->
-  </div>
+<body id="landing-login" class="off-canvas page-landing utility page-landing-login"> <!-- .custom-mockup -->
 	<div class="landing-page-container">
 		<div class="row">
 			<div class="eight columns push-two">
@@ -52,23 +45,46 @@
 								<div class="twelve columns">
 									<div class="landing-card-content">
 										<div class="row">
+<!--
 											<div class="twelve columns">
 												<h1><img src="content/img/page/img-banner-oops@2x.png" /></h1>
 												<p>It looks like you may have taken a wrong turn. Don't Worry, you can use these links to get back on track&hellip;</p>
 											</div>
+-->
 										</div>
 										<div class="row">
 											<div class="twelve columns">
-											<ul class="block-grid three-up mobile-one-up">
-												<li><a href="href="http://practiceupdate.com/update/" class="button">Update</a></li>
-												<li><a href="http://practiceupdate.com/explore/"" class="button">Explore</a></li>
-												<li><a href="http://practiceupdate.com/learn/" class="button">Learn</a></li>
-											</ul>
+											<form id="formLogin">
+		<header class="form-header">
+			<div class="form-title">
+				<span class="form-title-text">Already Registered?</span>
+			</div>
+		</header>
+		<input type="text" placeholder="Email" tabindex="2"/>
+		<div class="form-action">
+      <div class="password-signin">
+        <div class="password">
+          <input type="password" id="signin-password" placeholder="password" class="text-input" name="session[password]" title="Password" tabindex="2">
+        </div><!--/.password-->
+        <div class="signin">
+					<a id="SignIn" class="submit button full-width" href="javascript:void(0);">Sign in</a>
+				</div><!--/.sign-in-->
+      </div><!--/password-signin-->
+		<div class="remember-sigin">
+          <label class="remember">
+            <input type="checkbox" value="1" name="remember_me" tabindex="3" checked>
+            <span>Remember me</span>
+          </label>
+          <span class="separator">·</span>
+
+        </div>
+		</div><!--/.form-action-->
+	</form>
 											</div>
 										</div>
 										<div class="row">
 											<div class="twelve columns">
-												<p class="right">Already have an account?<a href="http://practiceupdate.com/login"> Login here.</a></p>
+												<p><a class="pw-reset" href="reset-password.html">Can't access your account?</a></a></p>
 											</div>
 										</div>
 									</div>
@@ -106,6 +122,25 @@
 	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
 	<script src="assets/js/mustache.js"></script>
 	<script src="assets/js/foundation/app.js"></script>
+    <script>
+    jQuery(function($) {
+        $.get('assets/mustache/modal-password-reset-confirmation.mustache', function(template) {
+            var html = Mustache.to_html(template);
+            $('body').append(html);
+
+            var modal = $('#modals-forgot-password');
+            modal.find('#Submit').click(function() {
+                $('#modal-password-reset-confirmation').reveal()
+            })
+        });
+    })
+	<!-- Mustache - landing pages login-register -->
+	$.get('assets/mustache/login-register.mustache', function(template) {
+			//alert('Load was performed.');
+	    var html = Mustache.to_html(template);
+	    $('.login-register-container').html(html);
+		});
+    </script>
 
 </body>
 </html>

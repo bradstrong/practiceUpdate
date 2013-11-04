@@ -28,6 +28,13 @@
 
 </head>
 	<body id="update" class="update off-canvas logged-out">
+		 <div id="page-leaderboard">
+			<div class="row">
+			<div class="ad centered eight columns hide-for-small">
+				<img src="http://placehold.it/728x90" class="ad" title="ad" />
+			</div> <!--/.ad -->
+		 </div> <!--/.row -->
+		 </div> <!--/#page-leaderboard -->
 		<div class="contain-to-grid">
 		<nav class="top-bar">
 		</nav><!--/.container.top-bar-->
@@ -43,22 +50,63 @@
 	<section role="main">
 
 <div class="user-profile-container">
-	<div class="user-profile-header">
-	<a class="button" href="#"></i> View all oncology board members</a>
-	</div><!--/.user-profile-header-->
 	<div class="user-profile">
-	<section class="user-profile-section user-profile-social">
-  <h3>Elsewhere</h3>
-  <ul class="profile-list no-bullet">
-    <li class="profile-facebook"><i class="icon-facebook-sign icon-2x"></i> <a rel="external" href="https://www.facebook.com/{{profile-facebook-userid}}">facebook</a></li>
-    <li class="profile-linkedin"><i class="icon-linkedin-sign icon-2x"></i> <a rel="external" href="http://www.linkedin.com/in/{{profile-linkedin-userid}}">LinkedIn</a></li>
-    <li class="profile-googleplus"><i class="icon-google-plus-sign icon-2x"></i> <a rel="external" href="https://plus.google.com/{{profile-googleplus-userid}}">google+</a></li>
-    <li class="profile-elsevierauthor"><img src="assets/img/icon-elsevier-author.png"/> <a rel="external" href="http://elsevierauthors.com/{{profile-elsevierauthor-userid}}">Elsevier Author Profile</a></li>
-    <li class="profile-twitter"><i class="icon-twitter-sign icon-2x"></i> <a rel="external" href="https://twitter.com/{{profile-twitter-userid}}">@userid</a></li>
-    <li class="profile-homepage"><i class="icon-globe icon-2x"></i> <a rel="external" href="{{profile-homepage-url}}">homepage</a></li>
+<table>
+<thead>
+  <td></td>
+  <td></td>
+  <td></td>
+</thead>
+<tr>
+  <td>conference short code</td>
+  <td>.label-conference-abbr</td>
+  <td> <span class="label label-conference-abbr">ASCO</span></td>
+</tr>
+<tr>
+  <td>new</td>
+  <td>.label-meta-new</td>
+  <td><span class="label label-meta-new">new</span></td>
+</tr>
+<tr>
+  <td>updated</td>
+  <td>.label-meta-update</td>
+  <td><span class="label label-meta-update">updated</span></td>
+</tr>
+<tr>
+  <td>free</td>
+  <td>.label-meta-free</td>
+  <td><span class="label label-meta-free">free</span></td>
+</tr>
+<tr>
+  <td>free for 30 days</td>
+  <td>.label-meta-free30</td>
+  <td><span class="label label-meta-free30">free for 30 days</span></td>
+</tr>
+<tr>
+  <td>video</td>
+  <td>.label-media-video</td>
+  <td><span class="label label-media-video"><i class="icon-youtube-play"></i></span></td>
+</tr>
+<tr>
+  <td>audio</td>
+  <td>.label-media-audio</td>
+  <td><span class="label label-media-audio"><i class="icon-volume-up"></i></span></td>
+</tr>
+<tr>
+  <td>article type</td>
+  <td> .label-item-type</td>
+  <td><span class="label label-item-type">{{ArticleTypeName}}</span></td>
+</tr>
+<tr>
+  <td>eo-section</td>
+  <td>.label-item-section</td>
+  <td><span class="label label-item-section">{{PublicationInfo}}</span></td>
+</tr>
+  <tbody>
+  </tbody>
+</table>
 
-  </ul><!--/.profile-list-->
-</section><!--/.user-profile-social-->
+
 	</div><!--/.user-profile -->
 </div><!-- /.user-profile-container -->
 
@@ -139,14 +187,6 @@
 		});
 	});
 
-	<!-- Mustache - homepage experts template -->
-
-	$.getJSON('content/json/user-profile.json', function(data) {
-		$.get('assets/mustache/user-profile.mustache', function(template) {
-	    var html = Mustache.to_html(template, data);
-	    $('.user-profile').prepend(html);
-		});
-	});
 
 	</script>
 </body>

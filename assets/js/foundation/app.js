@@ -183,7 +183,8 @@ var waxMustache = function(){
   var dataPath = "content/json/";
   var templatePath = "assets/mustache/";
   var mustacheList = [
-  ["module-content-header",".stream-container", "append"],
+  ["module-update-carousel",".stream-container", "append"],
+  ["module-editors-picks",".stream-container", "append"],
   ["feed","feed-item",".stream-container", "append"],
   ["recent","module-recent",".recent", "html"],
   ["user-topic","user-topic",".user-topic", "html"],

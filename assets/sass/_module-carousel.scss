@@ -1,0 +1,30 @@
+// override foundation orbit styles
+.orbit-wrapper .orbit-caption{
+ text-align: left;
+ padding: 7px;
+ a{
+   color: #fff;
+ }
+ .author-list{
+   margin-bottom: 0;
+ }
+}
+
+//Content Carousel
+/*
+.content-carousel .feature-item{background: $white;}
+.content-carousel img { display: none; }
+.content-carousel { background: url( /assets/img/orbit/loading.gif) center center #f4f4f4; height: 300px;}
+.content-carousel.orbit { background: none; }
+.content-carousel.orbit img { display: block; }
+.content-carousel.orbit {
+	section{ padding:$columnGutter/3;}
+	article{ padding:$columnGutter/3;}
+}
+*/
+
+.content-carousel { background: #f4f4f4; height: 300px; }
+.content-carousel img { display: none; }
+
+.content-carousel { background: none; }
+.content-carousel img { display: block; }

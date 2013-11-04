@@ -56,6 +56,7 @@ $sec-orange: 	rgb(243,183,39); //#
 
 $ter-ltTan: 	rgb(231,225,218); //#
 $ter-red: 		rgb(243,71,39); //#
+$ter-orange: 		rgb(249, 209, 29); //#
 // background tan rgb(255,250,240); //#fffcf0
 
 // text dark blue rgb(0,4,69); //#003045
@@ -133,7 +134,7 @@ $juneo-content: false !default;
 // Grid Settings
 
 //$rowWidth: 1440px;// 100%sets site to fluid grid
-$rowWidth: 100%;
+$rowWidth: 1440px;
 // Colors Settings
 
 $mainColor: $pri-orange;//logo orange Previously: //rgb(16,112,144);//$sec-dkBlue;

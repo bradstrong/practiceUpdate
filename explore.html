@@ -42,29 +42,70 @@
 	<div class="page-content">
 		<section role="main">
 			<div class="explore-container">
-
-<div class="stream-header">
-  <div class="topic-filter-helper">
-  <div class="eight columns">
-  <span class="current-filter-banner">All Topics</span>
-  </div>
-  <hr>
-  </div>
-<div id="user-topic-filter-sub">
-	<dl class="sub-nav">
-	<dt style="height: auto; line-height: 1.2em;">Popular Topics</dt>
-		<dd class="active"><a href="#simple1">Topic Name</a></dd>
-		<dd><a href="#simple2">Topic</a></dd>
-		<dd><a href="#simple3">NamedTopic</a></dd>
-		<dd><a href="#simple4">Topical</a></dd>
-		<dd><a href="#simple5">Topic Named Topic</a></dd>
-		<dd><a href="#simple6">SHRT</a></dd>
-	</dl>
-</div><!--/#user-topic-filter-sub-->
-</div>
 				<div class="explore-sections">
-				{{}}
 				</div><!--/.explore-sections-->
+<div class="clear-fix"></div>
+<div class="explore-experts panel">
+<header class="section-header">
+    <p class="lead">PracticeUpdate is guided by a world-renowned Editorial and Advisory Board that represents community practitioners and academic specialists with cross-disciplinary expertise.</p>
+  <p>We currently cover the following specialties with more specialties being added during the year:</p>
+</header>
+<div class="channel-container">
+<h5><a class="channel-title" href="#">Cardiology</a></h5>
+  <div class="editor-container">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+</div>
+<div class="channel-container">
+<h5><a class="channel-title" href="#">Dermatology</a></h5>
+  <div class="editor-container">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+</div>
+<div class="clear-fix hide-for-small"></div>
+<div class="channel-container">
+<h5><a class="channel-title" href="#">Eye Care</a></h5>
+  <div class="editor-container" style="float:left; clear:left; padding-left:50px;">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+  <div class="editor-container" style="float:left; clear:left; padding-left:50px;">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+</div>
+<div class="channel-container">
+<h5><a class="channel-title" href="#">Oncology</a></h5>
+  <div class="editor-container">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+</div>
+<div class="clear-fix hide-for-small"></div>
+<div class="channel-container">
+<h5><a class="channel-title" href="#">Primary Care</a></h5>
+  <div class="editor-container">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+</div>
+<div class="channel-container">
+<h5><a class="channel-title" href="#">Urology</a></h5>
+  <div class="editor-container">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+</div>
+</div><!--/.explore-experts-->
 			</div><!--/.explore-container-->
 			<div class="recommended">
 				<div class="widget recent">
@@ -285,50 +326,10 @@ Stop 7: Learn tab
 <!-- documentation refernce
 	http://www.zurb.com/playground/jquery-joyride-feature-tour-plugin
 -->
-
-<!-- /* Launching joyride when to page is loaded */ -->
-<script>
-  $(window).load(function() {
-  	$('#start-tour').click(function(){
-			$("#practiceupdate-tour").joyride({
-			/* Options will go here */
-			})
-  	})
-  });
-</script>
-
-
 	<!-- Mustache - homepage feed template -->
 	<script>
 
-	$.getJSON('content/json/explore_news.json', function(data) {
-		$.get('assets/mustache/section.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.explore-sections').prepend(html);
-		});
-	});
-
-	//<!-- Mustache - Explore Research template -->
-	$.getJSON('content/json/explore_research.json', function(data) {
-		$.get('assets/mustache/section.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.explore-sections').prepend(html);
-		});
-	});
-
-	//<!-- Mustache - Explore Research template -->
-	$.getJSON('content/json/explore_review.json', function(data) {
-		$.get('assets/mustache/section.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.explore-sections').prepend(html);
-		});
-	});
-
-	//<!-- Mustache - Explore Expert Opinion template -->
-	$.getJSON('content/json/explore_expert-opinion.json', function(data) {
+	$.getJSON('content/json/feed-item.json', function(data) {
 		$.get('assets/mustache/section.mustache', function(template) {
 			//alert('Load was performed.');
 	    var html = Mustache.to_html(template, data);
@@ -349,6 +350,12 @@ Stop 7: Learn tab
 	$.get('assets/mustache/from-industry.mustache', function(template) {
     var html = Mustache.to_html(template);
     $('.explore-sections').prepend(html);
+	});
+
+		//<!-- Mustache - Explore IFI -->
+	$.get('assets/mustache/module-explore-carousel.mustache', function(template) {
+    var html = Mustache.to_html(template);
+    $('.explore-container').prepend(html);
 	});
 	</script>
 

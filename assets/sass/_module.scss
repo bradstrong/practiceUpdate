@@ -15,10 +15,13 @@
 @import "_module-single-item";
 @import "_module-media";
 @import "_module-button";
-
+@import "_module-avatar";
+@import "_module-author";
+@import "_module-carousel";
 
 /* !Update Page Elements */
 /* !stream */
+@import "_module-editors-picks";
 .stream-item-container{
 	margin-bottom: $columnGutter/3;
 }
@@ -31,7 +34,7 @@
 }
 
 /* !Explore Page Elements*/
-@import "_module-explore-carousel";
+@import "_module-explore-experts";
 
 /* !COMPONENTS */
 @import "_module-user-console";
@@ -46,7 +49,6 @@
 	@extend .radius;
 	// @extend .callout;
 }
-
 @import "_module-form";
 @import "_module-alert-box";
 @import "_module-cta";

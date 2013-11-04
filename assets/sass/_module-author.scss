@@ -1,0 +1,20 @@
+.author-list{
+  dt, dd{
+    display: inline;
+    font-weight: normal;
+  }
+  dt{
+    font-style: italic;
+    padding-left:5px;
+  }
+  dt:first-child{
+    padding-left: 0;
+  }
+  .vcard{
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .vcard-inline{}
+  .list-label{white-space: nowrap;}
+}

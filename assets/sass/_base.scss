@@ -20,3 +20,26 @@ cite{
 }
 
 small{font-size:85%;}
+
+blockquote{
+  border-color: #02b1c9;
+  color: #6e6d7b;
+  &.bq-right{
+    float: right;
+    margin-left: 1em;
+    width: 40%;
+  }
+  &.bq-left{
+    border-right: 1px solid #ddd;
+    border-left: none;
+    float: left;
+    margin-right: 1em;
+    padding-left: 0;
+    text-align: right;
+    width: 40%;
+  }
+  p{
+    color:#6e6d7b;
+    font-style: italic;
+  }
+}

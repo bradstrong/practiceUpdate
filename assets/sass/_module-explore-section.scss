@@ -6,6 +6,12 @@
 	border: 1px solid $pri-lt-grey;
 	margin-bottom:$columnGutter/3;
 	padding-bottom: 7px;
+	.section-filter{
+  	margin:14px 0 7px;
+  	dt{
+    	margin-left: 0;
+  	}
+	}
 	.section-header{
 		@include column(12);
 		.section-title{
@@ -23,10 +29,15 @@
 		@include column(12);
 		li{list-style: none;}
 		.entry{
+  		@include clearfix();
 			border-bottom:1px solid $pri-lt-grey;
     	padding-top: 14px;
     	padding-bottom: 7px;
     	&:last-child{border-bottom: none;}
+    	.item-title-container, .pub-meta, .item-source-container{
+      	padding-right: 0;
+      	padding-left: 0;
+    	}
 		}
 		.flag-container{
   		padding-top:0;
@@ -34,9 +45,5 @@
   		padding-bottom:0;
   		padding-left:0;
 		}
-  	.item-title{
-      margin-top:0;
-      margin-bottom:0;
-  	}
 	}
 }

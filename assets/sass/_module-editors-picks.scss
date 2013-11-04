@@ -1,0 +1,19 @@
+/*
+.feature-grid-variant {
+  position: relative;
+  clear:left;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.feature-grid-variant:nth-child(even){
+
+}
+*/
+.page-section.update-section{
+  background-color:$white;
+  @include elementBoxShadow;
+}
