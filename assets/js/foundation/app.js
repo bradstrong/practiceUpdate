@@ -184,6 +184,7 @@ var waxMustache = function(){
   var templatePath = "assets/mustache/";
   var mustacheList = [
   ["module-update-carousel",".stream-container", "append"],
+  ["module-update-carousel",".explore-sections", "prepend"],
   ["module-editors-picks",".stream-container", "append"],
   ["feed","feed-item",".stream-container", "append"],
   ["recent","module-recent",".recent", "html"],

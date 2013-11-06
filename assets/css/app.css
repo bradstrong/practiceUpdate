@@ -10146,7 +10146,12 @@ img.avatar .as50 {
   right: -40px;
 }
 
-/* line 20, ../sass/_module-carousel.scss */
+/* line 21, ../sass/_module-carousel.scss */
+.explore-sections .carousel-container {
+  margin: 0 -15px;
+}
+
+/* line 26, ../sass/_module-carousel.scss */
 .carousel-container {
   background-color: white;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
@@ -10155,7 +10160,7 @@ img.avatar .as50 {
   margin-bottom: 15px;
 }
 
-/* line 25, ../sass/_module-carousel.scss */
+/* line 31, ../sass/_module-carousel.scss */
 .slide-caption {
   color: #fff;
   position: absolute;
@@ -10164,31 +10169,31 @@ img.avatar .as50 {
   text-align: left;
   padding: 7px 7px 10px;
 }
-/* line 32, ../sass/_module-carousel.scss */
+/* line 38, ../sass/_module-carousel.scss */
 .slide-caption a {
   color: #fff;
 }
-/* line 35, ../sass/_module-carousel.scss */
+/* line 41, ../sass/_module-carousel.scss */
 .slide-caption .author-list {
   margin-bottom: 0;
 }
-/* line 38, ../sass/_module-carousel.scss */
+/* line 44, ../sass/_module-carousel.scss */
 .slide-caption img.avatar {
   display: inline-block !important;
 }
 
-/* line 44, ../sass/_module-carousel.scss */
+/* line 50, ../sass/_module-carousel.scss */
 .pager-container {
   margin: 7px 45px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 44, ../sass/_module-carousel.scss */
+  /* line 50, ../sass/_module-carousel.scss */
   .pager-container {
     display: none;
   }
 }
 
-/* line 52, ../sass/_module-carousel.scss */
+/* line 58, ../sass/_module-carousel.scss */
 .pager-thumb .title-tiny, .pager-thumb .title-thumbnail {
   font-size: 12px;
 }
@@ -10204,23 +10209,23 @@ img.avatar .as50 {
 	article{ padding:$columnGutter/3;}
 }
 */
-/* line 68, ../sass/_module-carousel.scss */
+/* line 74, ../sass/_module-carousel.scss */
 .content-carousel {
   background: #f4f4f4;
   height: 300px;
 }
 
-/* line 69, ../sass/_module-carousel.scss */
+/* line 75, ../sass/_module-carousel.scss */
 .content-carousel img {
   display: none;
 }
 
-/* line 71, ../sass/_module-carousel.scss */
+/* line 77, ../sass/_module-carousel.scss */
 .content-carousel {
   background: none;
 }
 
-/* line 72, ../sass/_module-carousel.scss */
+/* line 78, ../sass/_module-carousel.scss */
 .content-carousel img {
   display: block;
 }

@@ -16,6 +16,12 @@
   right:-40px;
 }
 
+//Correct for Explore page padding
+.explore-sections{
+  .carousel-container {
+    margin: 0 -15px;
+  }
+}
 // custom carousel styles
 .carousel-container{
   background-color:$white;
