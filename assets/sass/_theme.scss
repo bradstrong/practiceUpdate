@@ -1,5 +1,8 @@
 ul li{
-	list-style: none;
+/* 	list-style: none; */
+}
+ul.checked-list{
+  list-style-type: none;
 }
 //article{
 //TODO:  add background and dropshadow for .static-container. content container needs to be added to those pages.
@@ -55,7 +58,73 @@ nav a:hover, .drawer a:hover{text-decoration: none;}
 	@extend .full-width;
 }
 
-//Flag
+//label
+.label-conference-abbr{
+  background-color: transparent;
+  color: $pri-blue;
+  border: 1px solid $pri-blue;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.label-meta-new{
+  background-color: transparent;
+  border: 1px solid $ter-orange;
+  border-radius: 5px;
+  color: $ter-orange;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.label-meta-update{
+  background-color: transparent;
+  border: 1px solid $ter-orange;
+  border-radius: 5px;
+  color: $ter-orange;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.label-meta-free{
+  background-color: transparent;
+  border: 1px solid $sec-green;
+  border-radius: 5px;
+  color: $sec-green;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.label-meta-free30{
+  background-color: transparent;
+  border: 1px solid $sec-green;
+  border-radius: 5px;
+  color: $sec-green;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.label-media-video{
+  background-color: transparent;
+/*   border: 1px solid $txtColor; */
+  border-radius: 5px;
+  color: lighten($txtColor, 5%);
+}
+.label-media-audio{
+  background-color: transparent;
+/*   border: 1px solid $txtColor; */
+  border-radius: 5px;
+  color: lighten($txtColor, 5%);
+}
+
+.label-item-type{
+  background-color: transparent;
+  color: inherit;
+  font-weight: inherit;
+}
+.label-item-section{
+  background-color: transparent;
+  color: inherit;
+  font-weight: inherit;
+}
+
+//badge
 
 .badge{
 	@extend .label;
@@ -80,6 +149,9 @@ nav a:hover, .drawer a:hover{text-decoration: none;}
   	width: 3em;
 	}
 }
+
+//Flag
+
 .flag{
 	@extend .label;
 	background: transparent;
@@ -126,6 +198,9 @@ body{white-space-collapse: collapse;}
 }
 .page-footer-container{
   box-shadow: none;
+  &.footer-compact{
+    background-color:transparent;
+  }
 }
 
 .page-banner{
@@ -165,6 +240,11 @@ body{white-space-collapse: collapse;}
 }
 
 //type
+
+h1.item-title{
+  margin-top:7px;
+  margin-bottom:7px;
+}
 .journal .item-title, .feed .item-title{
 	font-size: ms(0);
 	font-family: $sansFontFamily;
@@ -172,14 +252,8 @@ body{white-space-collapse: collapse;}
 
 .journal-title, .feed-title{
 	display: none;
-	// color: $sec-dkBlue;
-	// font-size:ms(1);
 }
 
-.item-title, .item-type, .item-pub-date{
-	font-family:$titleFontFamily;
-	font-weight:normal;
-}
 .journal .item-citation, .feed .item-citation{
 	font-size: ms(0)*.85;
 	color: lighten($txtColor, 5%);
@@ -191,30 +265,18 @@ body{white-space-collapse: collapse;}
 	font-weight:normal;
 }
 
-.subheader{ color:$headerFontColor;}
+a i[class^="icon-"]{
+  color:$pri-mid-grey;
+}
 
-article.single-item{
-	h2{
-		text-transform: uppercase;
-		font-family: $sansFontFamily;
-		font-size: ms(2);
-	}
-	h3{
-		text-transform: uppercase;
-		font-size: ms(1);
-	}
-	section.take-home-message{
-  	ul, ul li{
-    	list-style-type: disc;
-    	list-style-position: inside;
-    	margin-left: 0px;
-  	}
-  	ol, ol li{
-    	list-style-type: decimal;
-    	list-style-position: inside;
-    	margin-left: 0px;
-  	}
-	}
+a:hover i[class^="icon-"]{
+  color: $txtColor;
+  cursor: pointer;
+}
+
+.subheader{ color:$headerFontColor;}
+.socialshare-actions{
+  span,i{font-size: $baseFontSize*1.5}
 }
 
 #formLogin{@include column(6);
@@ -273,7 +335,6 @@ article.single-item{
 	font-size: ms(1);
 }
 .tagline-str2{
-	// color:$ter-ltBlue;
 	@media only screen and (max-width: 767px) {
 		display:block;
 	}
@@ -321,7 +382,6 @@ article.single-item{
 	@media screen and (min-width: 768px){
 		//padding:1em 1em 2em;
 	}
-
 }
 
 .illustration-container{

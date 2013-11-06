@@ -34,6 +34,13 @@
 
 </head>
 <body id="landing-unsubscribe" class="off-canvas page-landing utility page-landing-unsubscribe"> <!-- .custom-mockup -->
+  <div class="page-header ">
+      <nav class="top-bar">
+        <ul>
+          <li class="name"><div class="site-branding"><a href="/"><img alt="PracticeUpdate Logo" src="/assets/img/logo-practiceupdate-inverse.png"></a></div><!--/.site-branding--></li>
+        </ul>
+      </nav><!--/.top-bar-->
+  </div>
 	<div class="landing-page-container">
 		<div class="row">
 			<div class="eight columns push-two">
@@ -44,24 +51,75 @@
 							<div class="row">
 								<div class="twelve columns">
 									<div class="landing-card-content">
-										<div class="row">
+										<div class="row unsubscribe-request">
 											<div class="twelve columns">
-												<h1><img src="content/img/page/img-banner-oops@2x.png" /></h1>
-												<p>It looks like you may have taken a wrong turn. Don't Worry, you can use these links to get back on track&hellip;</p>
+												<h1>Too much email? <br><small>We hate to see you go, but we understand.</small></h1>
+												<p>Please Enter the email address you'd like to remove from the <b>{{channel-name}}: {{newsletter-name}}</b> mailing list.</p>
+												<form id="form-pu-unsubscribe">
+  												<input type="email" placeholder="Email address" value="user@email.com">
+  												<small class="error">This is not a valid email address.</small>
+  												<small class="error">We couldn't find that email address.</small>
+  												<input type="submit" class="button" action="#" value="Unsubscribe me" />
+												</form>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row unsubscribe-success">
 											<div class="twelve columns">
-											<ul class="block-grid three-up mobile-one-up">
-												<li><a class="button">Update</a></li>
-												<li><a class="button">Explore</a></li>
-												<li><a class="button">Learn</a></li>
-											</ul>
+  											<div class="panel">
+    											<h1>Taken care of!</h1>
+    											<p>You will no longer receive <b>{{channel-name}}: {{newsletter-name}}</b> at <b>{{email-address}}</b>.<br><em>Please allow 24 hours for this change to take effect.</em></p>
+    											<div class="pu-unsubscribe-feedback">
+      											<hr>
+      											<p>If you have a moment, please let us know why you unsubscribed:</p>
+      											<form id="form-pu-unsubscribe-feedback">
+        											<fieldset>
+                                <label>
+                                <input type="radio">
+                                I don't find these emails useful or informative
+                                </label>
+                                <label>
+                                <input type="radio">
+                                I receive too much communication from PracticeUpdate
+                                </label>
+                                <label>
+                                <input type="radio">
+                                I don't recall subscribing to this newsletter
+                                </label>
+                                <input type="radio">
+                                other (fill in reason below)
+                                </label>
+                              </fieldset>
+                              <!-- form submit eror message -->
+                              <small class="error">You must select one of the options above to submit the form.</small>
+                              <input type="submit" class="button" action="#" value="Submit form">
+                            </form>
+                            <p align=center>–or–</p>
+    											</div>
+                          <!--On successful feedback submit, hide the form above and display this div-->
+                          <div class="pu-unsubscribe-feedback-success">
+                            <p class="lead">Thank you, your feedback will help us make PracticeUpdate better.</p>
+                          </div>
+                          <p><a href="http://www.practiceupdate.com" class="button success">Return to PracticeUpdate</a></p>
+  											</div>
+  										</div>
+										</div>
+										<div class="row unsubscribe-footer">
+											<div class="twelve columns">
+											<p>To adjust your subscription preferences for all PracticeUpdate newsletters, please visit the <a href="http://www.practiceupdate.com/User/Preferences/?id=4">Subscriptions</a> section of your <a href="http://www.practiceupdate.com/User/Preferences/">Profile & Settings</a> page.</p>
 											</div>
 										</div>
-										<div class="row">
+										<!-- We'll need to review with Allison before implimenting this, I think -->
+                    <div class="row unsubscribe-all">
 											<div class="twelve columns">
-												<p class="right">Already have an account?<a href=""> Login here.</a></p>
+											<p>If you wish to Unsubscribe from All PracticeUpdate newsletters, please use the form below.</p>
+<!-- 											<small>After unsubscribing from all newsletters, you will only be contacted by PracticeUpdate regarding updates to your account.</small> -->
+											<form>
+											<label>
+  											<input type="checkbox"/>
+  											Remove {{email-address}} from all PracticeUpdate Mailing lists
+											</label>
+  											<p><a href="#">unsubscribe from all</a></p>
+											</form>
 											</div>
 										</div>
 									</div>
@@ -74,7 +132,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="page-footer-container">
+	<div class="page-footer-container footer-compact">
 		<footer class="page-footer">
 		</footer><!-- /.page-footer -->
 	</div><!--/.page-footer-container-->
@@ -99,25 +157,6 @@
 	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
 	<script src="assets/js/mustache.js"></script>
 	<script src="assets/js/foundation/app.js"></script>
-    <script>
-    jQuery(function($) {
-        $.get('assets/mustache/modal-password-reset-confirmation.mustache', function(template) {
-            var html = Mustache.to_html(template);
-            $('body').append(html);
-
-            var modal = $('#modals-forgot-password');
-            modal.find('#Submit').click(function() {
-                $('#modal-password-reset-confirmation').reveal()
-            })
-        });
-    })
-	<!-- Mustache - landing pages login-register -->
-	$.get('assets/mustache/login-register.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.login-register-container').html(html);
-		});
-    </script>
 
 </body>
 </html>

@@ -34,17 +34,31 @@
 {{!
 <div class="alert-box event-notification">
 	<a class="close">&#215;</a>
-	<div class="alert-header">
-		<h1 class="alert-header-text">Information from Industry</h1>
+	<div class="section-content">
+				<ul>
 	</div>
 	<div class="alert-body">
 
-		<div class="event-message">
-			<p class="item-title"><a href="industry-ajc.html" class="button small">Visit our resource center</a> to learn more about treating women with Cardiovascular disease.
-		</div>
-	</div>
-	<div class="alert-footer"></div>
-</div><!--/.alert-box.eic-welcome-->
+					<li class="entry">
+					<div>
+							<h1 class="item-title"><a href="http://www.halaven.com/assets/halaven-brochure.pdf" rel="external" target="_blank">Halaven Brochure</a> <i class="icon-file-alt"></i></h1>
+							<p class="item-citation">Key information about Halaven for physicians.</p>
+					</div>
+					</li>
+					<li class="entry">
+										<div>
+							<h1 class="item-title"><a href="http://www.halaven.com/assets/halaven-reimbursement-guide.pdf" rel="external" target="_blank">Halaven Reimbursement Guide</a> <i class="icon-file-alt"></i></h1>
+							<p class="item-citation">Information to help you through the reimbursement process.</p>
+					</div>
+					</li>
+
+				</ul>
+			<footer class="section-footer">
+		<p class="section-disclaimer">This site is sponsored by Eisai  <img src="content/img/client/client-logo-eisai.png" alt="client-logo-eisai" width="25" height="17" />. Eisai does not control any content.</p>
+			</footer><!--.section-footer-->
+	</div><!--/.section-content-->
+</section><!--/.section-content-->
+
 }}
 {{!
 <div class="alert-box eic-welcome">
@@ -76,33 +90,40 @@
 </div><!--/.alert-box.eic-welcome-->
 }}
 
-<div class="stream-header">
-  <div class="topic-filter-helper">
-  <div class="eight columns">
-  <span class="current-filter-banner">All Topics</span>
-  </div>
+<script>
+  $('#cardio-user-list').hide();
+  function toggleMarketing(){
+      $('#cardio-user-list').slideToggle();
+  }
+  $('.current-topic-header .show-button').click(function(){
+    toggleMarketing();
+  });
+  $('.header-marketing-toggle').click(function(){
+    toggleMarketing();
+  });
 
-  <div class="four columns">
-  <a href="explore.html" class="button small">Explore this topic</a>
-  </div>
+
+//    $('.show-button').toggle(
+//      function () {
+//        $('.show-button').text("hide");
   <hr>
   </div>
 <div id="user-topic-filter-sub">
 	<dl class="sub-nav">
-	<dt style="height: auto; line-height: 1.2em;">Popular Topics</dt>
+//      },
 		<dd class="active"><a href="#simple1">Topic Name</a></dd>
-		<dd><a href="#simple2">Topic</a></dd>
-		<dd><a href="#simple3">NamedTopic</a></dd>
-		<dd><a href="#simple4">Topical</a></dd>
+//      function () {
+//        $('.show-button').text("show");
+//      }
 		<dd><a href="#simple5">Topic Named Topic</a></dd>
-		<dd><a href="#simple6">SHRT</a></dd>
-	</dl>
-</div><!--/#user-topic-filter-sub-->
-</div>
+//    );
+//  });
+/*   marketingMenu('#cardio-marketing-list'); */
+</script>
 
 {{#items}}
 <div class="stream-item-container">
-	<article class="stream-item in-stream {{#featured}}featured{{/featured}}">
+	<article class="stream-item in-stream {{#featured}}featured{{/featured}}" data-pu-iid="{{id}}">
 		<div class="item-container">
 			<div class="item-header-container">
 				<header class="item-header">
@@ -112,48 +133,52 @@
 						{{#story-of-the-week}}<span class="flag story-of-the-week"><i class="icon-bookmark"></i> story of the week</span>{{/story-of-the-week}}
 					</div>
 					{{/flag}}
-					<div class="pub-meta">
-						<span class="item-type">{{type}}</span>
-						<span class="item-pub-date">{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</span>
-					</div><!-- /.pub-meta -->
+
 					<hgroup class="item-title-container">
 						<h1 class="item-title"><a href="{{url}}">{{title}}</a></h1>
-					</hgroup><!--/.pub-meta-->
+					</hgroup><!--/.item-title-container-->
+					<div class="pub-meta">
+						<span class="item-type">{{type}}</span>
+						<span class="separator-middot">&middot;</span>
+						<span class="item-pub-date">{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</span>
+						<span class="label label-conference-abbr">ASCO</span>
+  					<span class="label label-meta-new">new</span>
+  					<span class="label label-meta-free">free</span>
+    				<span class="label label-media-video"><i class="icon-youtube-play"></i></span>
+					</div><!-- /.pub-meta -->
 				</header>
 			</div><!--/.item-header-container-->
 			{{#item-content}}
 			<div class="item-content-container">
 				<div class="item-content">
 					{{#commentary}}
-					<div class="commentary-container">
-						<p>Commentary by:</p>
+					<div class="expert-comment-container">
+					<div class="comment-meta">
+						<h5><i class="icon-comment"></i>&nbsp;Expert Comment</h5>
 						{{#source}}
-						<div class="source-container">
-							{{#expert}}
-							<dl class="vcard">
-								{{#name}}
-								<dt class="{{source.type}}-name">
-									<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
-									<a class="fn n" href="#">
-										<!-- <span class="honorific-prefix">Dr.</span> -->
-										<span class="given-name">{{firstName}}</span>
-										<abbr class="additional-name">{{middleName}}</abbr>
-										<span class="family-name">{{lastName}}</span>
-										<span class="honorific-suffix">{{honorific}}</span>
-									</a><!--/.fn-->
-								</dt><!--/.{{source.type}}-name-->
-								{{/name}}
-								<dd class="source-photo">
-									<figure class="{{source.type}}-photo">
-										<img class="photo" src="{{{img.url}}}"/>
-										<figcaption class="label">Expert</figcaption>
-									</figure><!--/.{{source.type}}-photo-->
-								</dd>
-							</dl><!--/.vcard-->
-							{{/expert}}
-						</div><!--/.source-container-->
+						<dl class="author-list author-list-compact">
+    <dt class="list-label">Written by</dt>
+    {{#expert}}
+    <dd>
+      <span class="vcard vcard-inline">
+        <img class="avatar a20" src="{{{img.url}}}"/>
+        <!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
+        {{#name}}
+        <a class="fn n {{source.type}}-name" href="#">
+          <!-- <span class="honorific-prefix">Dr.</span> -->
+          <span class="given-name">{{firstName}}</span>
+          <span class="additional-name">{{middleName}}</span>
+          <span class="family-name">{{lastName}}</span>
+          <span class="honorific-suffix">{{honorific}}</span>
+        </a><!--/.fn-->
+        {{/name}}
+      </span><!--/.vcard-->
+    </dd>
+    {{/expert}}
+<dl><!-- /.author-list-->
 						{{/source}}
-					</div><!--/.commentary-container-->
+						</div><!--/.comment-meta-->
+					</div><!--/.expert-comment-container-->
 					{{/commentary}}
 					<!-- <div class="take-home-message"><p>{{{take-home-message}}}</p></div> --><!--/.take-home-message-->
 					<!-- <div class="item-teaser"><p>{{{item-teaser}}}</p></div> --><!--/.item-teaser-->
@@ -170,9 +195,10 @@
 					{{#journal}}
 					<div class="journal">
 						<dl class="source-citation">
+
 							<dt class="journal-title">{{title}}</dt>
 							<dt class="item-title"><cite>{{source.title}}</cite></dt>
-							<dd class="item-citation">{{source.citation}}</dd>
+							<dd class="item-citation"><span class="label label-item-type">ArticleTypeName</span> <span class="separator-middot">&middot;</span> {{source.citation}}</dd>
 						</dl>
 					</div><!--/.journal-->
 					{{/journal}}
@@ -180,7 +206,6 @@
 					<div class="feed">
 						<dl class="source-citation">
 							<dt class="feed-title">{{title}}</dt>
-							<dd class="pub-date"><date>{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</date></dd>
 							<dd class="item-citation">{{source.citation}}</dd>
 						</dl><!--/.source-citation-->
 					</div><!--/.feed-->
@@ -209,3 +234,6 @@
 	<div class="load-more">
 		<a href="#" class="load-more-button">Load More</a>
 	</div><!--/.load-more-->
+	<script>
+  puScrollSpy();
+	</script>

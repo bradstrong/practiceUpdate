@@ -33,7 +33,14 @@
     <![endif]-->
 
 </head>
-<body id="landing-unsubscribe" class="off-canvas page-landing utility page-landing-unsubscribe"> <!-- .custom-mockup -->
+<body id="landing-error" class="off-canvas page-landing utility page-landing-error"> <!-- .custom-mockup -->
+  <div class="page-header ">
+      <nav class="top-bar">
+        <ul>
+          <li class="name"><div class="site-branding"><a href="/"><img alt="PracticeUpdate Logo" src="/assets/img/logo-practiceupdate-inverse.png"></a></div><!--/.site-branding--></li>
+        </ul>
+      </nav><!--/.top-bar-->
+  </div>
 	<div class="landing-page-container">
 		<div class="row">
 			<div class="eight columns push-two">
@@ -53,15 +60,15 @@
 										<div class="row">
 											<div class="twelve columns">
 											<ul class="block-grid three-up mobile-one-up">
-												<li><a class="button">Update</a></li>
-												<li><a class="button">Explore</a></li>
-												<li><a class="button">Learn</a></li>
+												<li><a href="href="http://practiceupdate.com/update/" class="button">Update</a></li>
+												<li><a href="http://practiceupdate.com/explore/"" class="button">Explore</a></li>
+												<li><a href="http://practiceupdate.com/learn/" class="button">Learn</a></li>
 											</ul>
 											</div>
 										</div>
 										<div class="row">
 											<div class="twelve columns">
-												<p class="right">Already have an account?<a href=""> Login here.</a></p>
+												<p class="right">Already have an account?<a href="http://practiceupdate.com/login"> Login here.</a></p>
 											</div>
 										</div>
 									</div>
@@ -74,7 +81,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="page-footer-container">
+	<div class="page-footer-container footer-compact">
 		<footer class="page-footer">
 		</footer><!-- /.page-footer -->
 	</div><!--/.page-footer-container-->
@@ -99,25 +106,6 @@
 	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
 	<script src="assets/js/mustache.js"></script>
 	<script src="assets/js/foundation/app.js"></script>
-    <script>
-    jQuery(function($) {
-        $.get('assets/mustache/modal-password-reset-confirmation.mustache', function(template) {
-            var html = Mustache.to_html(template);
-            $('body').append(html);
-
-            var modal = $('#modals-forgot-password');
-            modal.find('#Submit').click(function() {
-                $('#modal-password-reset-confirmation').reveal()
-            })
-        });
-    })
-	<!-- Mustache - landing pages login-register -->
-	$.get('assets/mustache/login-register.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template);
-	    $('.login-register-container').html(html);
-		});
-    </script>
 
 </body>
 </html>

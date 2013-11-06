@@ -7,7 +7,7 @@
 $experimental-support-for-svg: true; //support SVG in IE
 
 // Colors
-
+$white: #ffffff;
 $grey: #ededed;
 $blue:#00aeff;
 $green:#dae348;
@@ -41,7 +41,10 @@ $ter-green:rgba(163,165,16,1); // pantone 294
 $bodyBackground: #faf9f4; //rgb(247,242,228);
 
 $pri-blue: 		rgb(29,121,152); //#
-$pri-orange: 	rgb(216,102,84); //#
+$pri-ltBlue: rgb(2, 177, 201); //#02b1c9
+$pri-orange: rgb(215,81, 66);
+/* $pri-orange: 	rgb(216,102,84); //# */
+/* $pri-orange: 	rgb(234,60,47); //# */
 
 $pri-mid-grey: #b7b7b7;
 $pri-lt-grey: #e6e7e8;
@@ -53,6 +56,7 @@ $sec-orange: 	rgb(243,183,39); //#
 
 $ter-ltTan: 	rgb(231,225,218); //#
 $ter-red: 		rgb(243,71,39); //#
+$ter-orange: 		rgb(249, 209, 29); //#
 // background tan rgb(255,250,240); //#fffcf0
 
 // text dark blue rgb(0,4,69); //#003045
@@ -114,13 +118,23 @@ $titleFontFamily: $sansCondensedFontFamily, "Helvetica Neue", "Helvetica", Helve
 		}
 }
 
+//export style to separate stylesheet for Juneo
+$juneo-content: false !default;
+@mixin juneo-content {
+    // Only use this content if we're dealing with old IE
+    @if $juneo-content {
+        @content;
+    }
+}
+
+
 // ----------------------------------------
 // Overrides for Foundation settings (_settings.scss)
 
 // Grid Settings
 
-$rowWidth: 1440px;// 100%sets site to fluid grid
-
+//$rowWidth: 1440px;// 100%sets site to fluid grid
+$rowWidth: 1440px;
 // Colors Settings
 
 $mainColor: $pri-orange;//logo orange Previously: //rgb(16,112,144);//$sec-dkBlue;
@@ -144,8 +158,8 @@ $topBarBgColor: $pri-blue;
 $topBarHeight: 40px;
 $topBarHeightMobile: 40px;
 $topBarBtmMargin: 0px;
-$topBarLinkColor: $pri-blue;
-$topBarDropBgColor: #fff;
+$topBarLinkColor: #fff;
+$topBarDropBgColor: $pri-blue;
 $topBarDropLinkColor: $pri-blue;
 $topBarDropToggleColor: $pri-blue;
 $topBarDropToggleAlpha: 1;

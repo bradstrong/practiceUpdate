@@ -49,7 +49,7 @@
 
 .prompt{
 /*   @extend .alert-box; */
-/*   @include innerRow(); */
+  @include innerRow(collapse);
   font-weight: normal;
   padding: 6px 7px 7px;
   background-color: #fff;
@@ -98,6 +98,23 @@
       border-color: saturate(darken($sec-ltBlue, 25), 15);
       &:hover{
         background-color: saturate(darken($sec-ltBlue, 15), 15);
+      }
+    }
+  }
+}
+
+.ifi-prompt{
+  padding: 0;
+/*   border:4px solid green; */
+  .section-widget{
+    background: lighten(#e6e7e8, 5%);
+    margin: 0;
+    box-shadow: none;
+    border: none;
+    .section-header{
+      .section-title{
+        color: $txtColor;
+        font-size: ms(0);
       }
     }
   }

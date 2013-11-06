@@ -1,0 +1,118 @@
+p{margin-bottom: 17px;}
+/* Single Item page elements*/
+/* line 3, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item {
+  margin: 0 -15px;
+}
+/* line 5, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item h2 {
+  color: #02b1c9;
+  text-transform: capitalize;
+  font-family: "museo-slab", serif;
+  font-size: 23px;
+}
+/* line 11, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item h3 {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+/* line 16, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item .item-title-container .item-title {
+  color: #d75142;
+  font-family: "museo-slab", serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+/* line 23, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item section.take-home-message {
+  background-color: #02b1c9;
+  color: white;
+  margin-bottom: 14px;
+  padding: 7px 14px;
+}
+/* line 28, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item section.take-home-message h2 {
+  color: white;
+  font-family: "museo-slab", serif;
+  border-bottom: 1px solid #bfebf1;
+  padding-bottom: 14px;
+  text-transform: capitalize;
+}
+/* line 35, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item section.take-home-message .source-container {
+  display: none;
+}
+/* line 38, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item section.take-home-message ul {
+  margin-left: 20px;
+}
+/* line 42, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item section.editors-note, article.single-item section.eo-description, article.single-item section.video-description {
+  background-color: #e6e7e8;
+  color: #887e6f;
+  margin-bottom: 14px;
+  padding: 7px 14px;
+}
+/* line 47, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item section.editors-note h2, article.single-item section.eo-description h2, article.single-item section.video-description h2 {
+  color: #887e6f;
+  font-family: "museo-slab", serif;
+  border-bottom: 1px solid #a59e93;
+  padding-bottom: 14px;
+  text-transform: capitalize;
+}
+/* line 54, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item section.editors-note ul, article.single-item section.eo-description ul, article.single-item section.video-description ul {
+  margin-left: 20px;
+}
+/* line 57, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item section.editors-note ul, article.single-item section.editors-note ul li, article.single-item section.eo-description ul, article.single-item section.eo-description ul li, article.single-item section.video-description ul, article.single-item section.video-description ul li {
+  list-style-type: disc;
+}
+/* line 60, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item section.editors-note ol, article.single-item section.editors-note ol li, article.single-item section.eo-description ol, article.single-item section.eo-description ol li, article.single-item section.video-description ol, article.single-item section.video-description ol li {
+  list-style-type: decimal;
+}
+/* line 65, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item .item-content .story-image-group {
+  float: left;
+  max-width: 33%;
+  padding: 0 16px 8px 0;
+}
+/* line 71, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item .item-content figure {
+  background-color: #e6e7e8;
+  border: 1px solid #e6e7e8;
+  margin: 4px 0;
+  padding: 8px;
+  text-align: center;
+}
+/* line 77, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item .item-content figure figcaption {
+  padding: 7px 0 0px;
+}
+/* line 81, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item .item-content ul, article.single-item .item-content ul li {
+  list-style-type: disc;
+}
+/* line 84, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item .item-content ul.accordion, article.single-item .item-content ul.accordion li {
+  list-style-type: none;
+}
+/* line 86, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item .item-content ul.accordion .content ol, article.single-item .item-content ul.accordion .content ol li, article.single-item .item-content ul.accordion li .content ol, article.single-item .item-content ul.accordion li .content ol li {
+  list-style-type: decimal;
+}
+/* line 89, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item .item-content ul.accordion .content ul, article.single-item .item-content ul.accordion .content ul li, article.single-item .item-content ul.accordion li .content ul, article.single-item .item-content ul.accordion li .content ul li {
+  list-style-type: disc;
+}
+/* line 93, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item .item-content ol, article.single-item .item-content ol li {
+  list-style-type: decimal;
+}
+/* line 98, /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss */
+article.single-item.type-conference .section-conference-coverage {
+  border: none;
+  box-shadow: none;
+}

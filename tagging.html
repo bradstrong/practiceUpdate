@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="View all the latest news and articles, personalized for you, in a single view.">
+
+<link href="assets/ico/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link rel="apple-touch-icon" href="assets/ico/apple-touch-icon-precomposed.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-57@2x-precomposed.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-touch-icon-72@2x-precomposed.png" />
+
+<meta name="application-name" content="PracticeUpdate"/>
+<meta name="msapplication-TileColor" content="#3186a4"/>
+<meta name="msapplication-TileImage" content="c1da1cf2-3190-4f73-87f2-40d3444b0896.png"/>
+
+	<title>Juneo : Tagging</title>
+
+	<!-- Include CSS Files -->
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="assets/css/joyride-2.0.3.css">
+	<!-- Include Modernizr -->
+	<script src="assets/js/foundation/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="assets/js/practiceupdate-ie.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<!-- <div id="TagModal" class="reveal-modal xlarge open" style="top: 352px; opacity: 1; visibility: visible; display: block;"> -->
+<div class="row">
+  <div class="seven columns">
+<div class="row">
+<div class="four columns">
+      <label for="radio4"><input name="radio2" type="radio" id="radio4"> Show user tags</label>
+    </div>
+    <div class="four columns">
+      <label for="radio4"><input name="radio2" type="radio" id="radio4"> Show search tags</label>
+    </div>
+
+    <!-- Custom Checkbox -->
+    <div class="four columns">
+      <label for="radio4"><input name="radio2" type="radio" id="radio4"> Show all tags</label>
+    </div>
+</div>
+<div class="row">&nbsp;</div>
+    <div class="row">
+      <dl class="tabs">
+        <dd class="active"><a href="#simple1">Browse by type</a></dd>
+        <dd><a href="#simple2">browse Alphabetically</a></dd>
+        <dd class="hide-for-small"><a href="#simple3">Search</a></dd>
+      </dl>
+    </div>
+    <div class="row">
+      <ul class="tabs-content">
+        <li class="active" id="simple1Tab">
+      <label>Input with a postfix action (button)</label>
+      <div class="row collapse">
+        <div class="ten columns">
+          <input type="text" placeholder="" />
+        </div>
+        <div class="two columns">
+          <a class="button expand postfix">Search</a>
+        </div>
+      </div><!--/.row-->
+          <div class="row">
+            <div class="twelve columns">
+              <dl id="TagTabs" class="tabs pill">
+                <dd class="dynamicremove TagType5"><a class="tagtitle">Anatomical Structure</a></dd>
+                <dd class="dynamicremove TagType6"><a class="tagtitle">Anatomical System</a></dd>
+                <dd class="dynamicremove TagType7"><a class="tagtitle">Aspect</a></dd>
+                <dd class="dynamicremove TagType1"><a class="tagtitle">Condition</a></dd>
+                <dd class="dynamicremove TagType9"><a class="tagtitle">Devices</a></dd>
+                <dd class="dynamicremove TagType15"><a class="tagtitle">Procedure</a></dd>
+                <dd class="dynamicremove TagType17"><a class="tagtitle">Risk Factor</a></dd>
+                <dd class="dynamicremove TagType18"><a class="tagtitle">Sign or Symptom</a></dd>
+                <dd class="dynamicremove TagType22"><a class="tagtitle">Specialty</a></dd>
+                <dd class="dynamicremove TagType20"><a class="tagtitle">Test</a></dd>
+                <dd class="dynamicremove TagType2"><a class="tagtitle">Therapy</a></dd>
+              </dl>
+            </div>
+          </div>
+        <div class="row">
+        <div class="twelve columns">
+          <div style="max-height:400px; overflow:scroll;">
+<h4>Anatomical Structure<h4>
+            <ul>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor <i class="icon-user"></i></span>
+                <ul>
+                  <li>synonym search tag</li>
+                  <li>sub-topic search tag</li>
+                </ul>
+              </li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+            </ul>
+<h4>Anatomical System<h4>
+            <ul>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+            </ul>
+<h4>Aspect<h4>
+<h4>Condition<h4>
+<h4>Device<h4>
+<h4>Procedure<h4>
+<h4>Risk Factor<h4>
+<h4>Sign or Symptom<h4>
+<h4>Specialty<h4>
+<h4>Test<h4>
+<h4>Therapy<h4>
+          </div><!--/scroll container-->
+        </div>
+    </div><!--/.row-->
+
+    </li>
+    <li id="simple2Tab">
+      <div class="row">
+        <div class="twelve columns">
+          <dl id="TagTabs" class="tabs pill">
+            <dd><a class="tagtitle">A</a></dd>
+            <dd><a class="tagtitle">B</a></dd>
+            <dd><a class="tagtitle">C</a></dd>
+            <dd><a class="tagtitle">D</a></dd>
+            <dd><a class="tagtitle">E</a></dd>
+            <dd><a class="tagtitle">F</a></dd>
+            <dd><a class="tagtitle">G</a></dd>
+            <dd><a class="tagtitle">H</a></dd>
+            <dd><a class="tagtitle">I</a></dd>
+            <dd><a class="tagtitle">J</a></dd>
+            <dd><a class="tagtitle">K</a></dd>
+            <dd><a class="tagtitle">L</a></dd>
+            <dd><a class="tagtitle">M</a></dd>
+            <dd><a class="tagtitle">N</a></dd>
+            <dd><a class="tagtitle">O</a></dd>
+            <dd><a class="tagtitle">P</a></dd>
+            <dd><a class="tagtitle">Q</a></dd>
+            <dd><a class="tagtitle">R</a></dd>
+            <dd><a class="tagtitle">S</a></dd>
+            <dd><a class="tagtitle">T</a></dd>
+            <dd><a class="tagtitle">U</a></dd>
+            <dd><a class="tagtitle">V</a></dd>
+            <dd><a class="tagtitle">W</a></dd>
+            <dd><a class="tagtitle">X</a></dd>
+            <dd><a class="tagtitle">Y</a></dd>
+            <dd><a class="tagtitle">Z</a></dd>
+          </dl>
+        </div>
+      </div><!--/.row-->
+      <div class="row">
+        <div class="twelve columns">
+          <div style="max-height:600px; overflow:scroll;">
+            <ul>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor - <span>condition</span></span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+              <li><span class="tagitem" id="">adrenocorticotropic hormone-producing pituitary tumor</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li id="simple3Tab">
+      <label>Input with a postfix action (button)</label>
+      <div class="row collapse">
+        <div class="ten columns">
+          <input type="text" placeholder="" />
+        </div>
+        <div class="two columns">
+          <a class="button expand postfix">Search</a>
+        </div>
+      </div><!--/.row-->
+    </li>
+  </ul>
+</div>
+
+</div>
+  <div class="five columns">
+    <div class="row">
+      <div class="twelve columns">
+        <h4>Current Tags:</h4>
+        <div>
+          <span class="round success label"><i class="icon-user"></i> User Topic Topic name <a href="" class="close">&times;</a></span>
+          <span class="round secondary label">Search Tag name <a href="" class="close">&times;</a></span>
+        </div>
+      </div>
+    </div><!--/.row-->
+    <div class="row">
+      <div class="twelve columns">
+        <h4>This item will be visible in:</h4>
+      <div>
+        <span class="">Round Label</span>
+      </div>
+      </div>
+    </div><!--/.row-->
+
+    <div class="row hr">&nbsp;
+      <hr/>
+    </div>
+    <div class="panel">
+<div class="row">
+    <div class="twelve columns">
+      <label for="radio1"><input name="radio1" type="radio"> Mark this item for review</label>
+    </div>
+</div>
+  <div class="row">
+    <div class="twelve columns">
+      <label>Please enter suggested tags, separated by a comma.</label>
+      <div class="row collapse">
+        <div class="ten columns">
+          <input type="text" placeholder="" />
+        </div>
+        <div class="two columns">
+          <a class="button expand postfix">Submit</a>
+        </div>
+      </div><!--/.row-->
+    </div>
+  </div>
+    <div class="row">
+      <div class="twelve columns">
+        <h4>You have recommended the following tags for review:</h4>
+      <div>
+        <span class="round secondary label">Round Label <a href="" class="close">&times;</a></span>
+      </div>
+      </div>
+    </div><!--/.row-->
+    </div><!--/.panel-->
+
+  </div>
+  </div>
+</div>
+
+<!--
+    <div class="row">
+        <div class="twelve columns">
+            <a class="right button small radius" id="TagModalClose">Close</a>
+        </div>
+    </div>
+    <a class="close-reveal-modal">×</a>
+-->
+<!-- </div> -->
+	<!-- Included JS Files (Uncompressed) -->
+  <script src="assets/js/foundation/jquery.js"></script>
+<!--   <script src="assets/js/plugins-ck.js"></script> -->
+
+	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.forms.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.navigation.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.tooltips.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.magellan.js"></script>
+	<script src="assets/js/foundation/jquery.placeholder.js"></script>
+	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
+	<script src="assets/js/mustache.js"></script>
+<!-- 	<script src="assets/js/ICanHaz.min.js"></script> -->
+
+	<script src="assets/js/foundation/jquery.foundation.joyride.js"></script>
+
+	<script src="assets/js/foundation/app.js"></script>
+	<script src="assets/js/foundation/dev-app.js"></script>
+	<script src="assets/js/tamingselect.js"></script>
+
+
+</body>
+</html>

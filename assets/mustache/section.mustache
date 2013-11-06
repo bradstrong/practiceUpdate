@@ -1,7 +1,12 @@
 <section class="{{section-id}} section-widget">
 <header class="section-header">
-		<h2 class="section-title">{{section-title}}</h2>
-		<p class="section-description">{{section-description}}</p>
+<dl class="sub-nav section-filter">
+  <dt>Browse:</dt>
+  <dd class="active"><a href="#">All</a></dd>
+  <dd><a href="#">Expert Opinion</a></dd>
+  <dd><a href="#">Journal Scans</a></dd>
+  <dd><a href="#">News</a></dd>
+</dl>
 	</header><!--/.section-header-->
 	<div class="section-content">
 				<ul>
@@ -12,7 +17,9 @@
 							{{#featured}}<span class="flag featured"><i class="icon-bolt"></i> featured</span>{{/featured}}
 							{{#story-of-the-week}}<span class="flag story-of-the-week"><i class="icon-bolt"></i> story of the week</span>{{/story-of-the-week}}
 						</div>
+						<hgroup class="item-title-container">
 							<h1 class="item-title"><a href="#">{{title}}</a></h1>
+						</hgroup><!-- /.item-title-container-->
 							<p class="item-citation">{{#source}}{{source.name.firstName}} {{source.name.lastName}}{{/source}}</p>
 							{{> _articles}}
 					</article>
@@ -20,7 +27,19 @@
 	{{/items}}
 				</ul>
 			<footer class="section-footer">
-				<p><a href="#" class="view-more-button button">view more</a></p>
+  			<div class="pagination-centered">
+  				<ul class="pagination">
+            <li class="arrow unavailable"><a href="">&laquo;</a></li>
+            <li class="current"><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li class="unavailable"><a href="">&hellip;</a></li>
+            <li><a href="">12</a></li>
+            <li><a href="">13</a></li>
+            <li class="arrow"><a href="">&raquo;</a></li>
+          </ul>
+        </div>
 			</footer><!--.section-footer-->
 	</div><!--/.section-content-->
 	</section><!--/.section-content-->

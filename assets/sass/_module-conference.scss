@@ -1,5 +1,11 @@
 .event-summary{
-  .event-detail-list{}
+  .event-detail-list{
+    list-style-type: none;
+    li{
+      list-style-type: none;
+    }
+  }
+
   .detail-icon{width:20px; margin:0; float: left;}
   .detail-content{margin-left:26px;
   }

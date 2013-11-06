@@ -1,5 +1,5 @@
 /*
- * jQuery Foundation Top Bar 2.0.3
+ * jQuery Foundation Top Bar 2.0.4
  * http://foundation.zurb.com
  * Copyright 2012, ZURB
  * Free to use under the MIT license.
@@ -27,7 +27,6 @@
 
           var breakpoint = $("<div class='top-bar-js-breakpoint'/>").appendTo("body");
           settings.breakPoint = breakpoint.width();
-          console.log(settings.breakPoint);
           breakpoint.remove();
 
           if (!settings.initialized) {
@@ -43,7 +42,7 @@
             $('body').css('padding-top',settings.$topbar.outerHeight())
           }
 
-          $('.top-bar .toggle-topbar').die('click.fndtn').live('click.fndtn', function (e) {
+          $('.top-bar .toggle-topbar').off('click.fndtn').on('click.fndtn', function (e) {
             e.preventDefault();
 
             if (methods.breakpoint()) {
@@ -60,7 +59,7 @@
           });
 
           // Show the Dropdown Levels on Click
-          $('.top-bar .has-dropdown>a').die('click.fndtn').live('click.fndtn', function (e) {
+          $('.top-bar .has-dropdown>a').off('click.fndtn').on('click.fndtn', function (e) {
             if (Modernizr.touch || methods.breakpoint())
               e.preventDefault();
 
@@ -85,7 +84,7 @@
           });
 
           // Go up a level on Click
-          $('.top-bar .has-dropdown .back').die('click.fndtn').live('click.fndtn', function (e) {
+          $('.top-bar .has-dropdown .back').off('click.fndtn').on('click.fndtn', function (e) {
             e.preventDefault();
 
             var $this = $(this),
@@ -164,12 +163,10 @@
       $window.scroll(function() {
         if ( $window.scrollTop() >= distance ) {
            $(".sticky").addClass("fixed");
-           $("body").addClass("topbar-fixed"); //added by @bradstrong 2013-01-20
         }
 
        else if ( $window.scrollTop() < distance ) {
           $(".sticky").removeClass("fixed");
-          $("body").removeClass("topbar-fixed"); //added by @bradstrong 2013-01-20
        }
     });
   }

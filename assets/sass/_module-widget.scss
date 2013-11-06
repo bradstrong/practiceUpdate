@@ -17,3 +17,8 @@
 		padding-bottom:.5em;
 	}
 }
+
+// specific widgets
+.widget.els-branding{@include column(3); @include mobileColumn(1); @include mobilePush(3);}
+.widget.els-description{@include column(6); @include mobileColumn(3); @include mobilePull(1);}
+.widget.powered-by{@include column(3); @include mobileColumn(1); @include mobilePush(3);}

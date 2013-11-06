@@ -9,9 +9,9 @@
 	clear: both;
 	padding-top: $baseFontSize;
 	padding-bottom: $baseFontSize*2;
-	@media only screen and (max-width: $topBarBreakPoint) {
-		.page-content{margin-top:$topBarHeightMobile;}
-	}
+}
+@media only screen and (max-width: $topBarBreakPoint) {
+  .page-content{margin-top:$topBarHeightMobile;}
 }
 
 // FOOTER
@@ -46,13 +46,16 @@
 	padding-bottom: $baseFontSize/2;
 	padding-left: 15px;
 }
+.flag-container.flag-container-compact{
+  padding:0;
+}
 
 //Pages
 
 /* Page Layouts */
 /* !Base Layout */
 #dashboard,.dashboard{}
-#sidebar{padding-right:0;}
+/* #sidebar{padding-right:0;} */
 #aux, .aux, .recommended{
 	@include column(5); @include mobileColumn(4);
 	@media only screen and (max-width: $topBarBreakPoint) {
@@ -79,6 +82,10 @@
 .user-directory-container{@include column(7, collapse); @include mobileRow();}
 .user-profile-container{@include column(7, collapse); @include mobileRow();}
 .channel-list-container{@include column(7, collapse); @include mobileRow();}
+
+/* !Single-Item Pages */
+/* article.single-item{@include innerRow();} */
+article.single-item{@include clearfix();}
 
 /* !Static pages */
 .static-container{@include column(7, collapse); @include mobileRow();}

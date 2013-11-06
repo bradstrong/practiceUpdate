@@ -26,4 +26,5 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  modular-scale
   zurb-foundation (= 3.2.5)

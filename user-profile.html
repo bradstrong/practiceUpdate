@@ -11,7 +11,7 @@
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 
-	<title>PracticeUpdate : MEET OUR EXPERTS</title>
+	<title>PracticeUpdate : labels</title>
 
 
 	<link rel="stylesheet" href="assets/css/app.css">
@@ -28,13 +28,6 @@
 
 </head>
 	<body id="update" class="update off-canvas logged-out">
-		 <div id="page-leaderboard">
-			<div class="row">
-			<div class="ad centered eight columns hide-for-small">
-				<img src="http://placehold.it/728x90" class="ad" title="ad" />
-			</div> <!--/.ad -->
-		 </div> <!--/.row -->
-		 </div> <!--/#page-leaderboard -->
 		<div class="contain-to-grid">
 		<nav class="top-bar">
 		</nav><!--/.container.top-bar-->
@@ -51,8 +44,21 @@
 
 <div class="user-profile-container">
 	<div class="user-profile-header">
+	<a class="button" href="#"></i> View all oncology board members</a>
 	</div><!--/.user-profile-header-->
 	<div class="user-profile">
+	<section class="user-profile-section user-profile-social">
+  <h3>Elsewhere</h3>
+  <ul class="profile-list no-bullet">
+    <li class="profile-facebook"><i class="icon-facebook-sign icon-2x"></i> <a rel="external" href="https://www.facebook.com/{{profile-facebook-userid}}">facebook</a></li>
+    <li class="profile-linkedin"><i class="icon-linkedin-sign icon-2x"></i> <a rel="external" href="http://www.linkedin.com/in/{{profile-linkedin-userid}}">LinkedIn</a></li>
+    <li class="profile-googleplus"><i class="icon-google-plus-sign icon-2x"></i> <a rel="external" href="https://plus.google.com/{{profile-googleplus-userid}}">google+</a></li>
+    <li class="profile-elsevierauthor"><img src="assets/img/icon-elsevier-author.png"/> <a rel="external" href="http://elsevierauthors.com/{{profile-elsevierauthor-userid}}">Elsevier Author Profile</a></li>
+    <li class="profile-twitter"><i class="icon-twitter-sign icon-2x"></i> <a rel="external" href="https://twitter.com/{{profile-twitter-userid}}">@userid</a></li>
+    <li class="profile-homepage"><i class="icon-globe icon-2x"></i> <a rel="external" href="{{profile-homepage-url}}">homepage</a></li>
+
+  </ul><!--/.profile-list-->
+</section><!--/.user-profile-social-->
 	</div><!--/.user-profile -->
 </div><!-- /.user-profile-container -->
 
@@ -138,7 +144,7 @@
 	$.getJSON('content/json/user-profile.json', function(data) {
 		$.get('assets/mustache/user-profile.mustache', function(template) {
 	    var html = Mustache.to_html(template, data);
-	    $('.user-profile').html(html);
+	    $('.user-profile').prepend(html);
 		});
 	});
 

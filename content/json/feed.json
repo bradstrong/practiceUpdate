@@ -6,7 +6,7 @@
 				"featured": true,
 				"story-of-the-week": true
 			},
-			"type": "Journal Scan: Research",
+			"type": "Research",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "March", "day": "19"},
@@ -101,7 +101,7 @@
 				"featured": false,
 				"story-of-the-week": false
 			},
-			"type": "Journal Scan: Research",
+			"type": "Research",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "September", "day": "18"},
@@ -134,7 +134,7 @@
 				"featured": false,
 				"story-of-the-week": false
 			},
-			"type": "Journal Scan: Research",
+			"type": "Research",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "September", "day": "18"},
@@ -166,7 +166,7 @@
 				"featured": false,
 				"story-of-the-week": false
 			},
-			"type": "Journal Scan: Review",
+			"type": "Review",
 			"pub-date": {
 				"date": {
 					"year": "2012", "month": "September", "day": "18"},
@@ -223,7 +223,7 @@
 				"citation": "Clin Cancer Res. 2012 Mar 29;[Epub Ahead of Print], DN Finegold, CJ Baty, KZ Knickelbein, S Perschke, SE Noon, D Campbell, JM Karlsson, D Huang, MA Kimak, EC Lawrence, E Feingold, SD Meriney, AM Brufsky, RE Ferrell"
 			},
 			"item-content": {}
-		},		
+		},
 		{
 			"id": "0007",
 			"flag": {

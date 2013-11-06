@@ -21,10 +21,10 @@
   });
 
   // UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
-  // $('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'both'});
-  // $('.block-grid.three-up>li:nth-child(3n+1)').css({clear: 'both'});
-  // $('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'both'});
-  // $('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'both'});
+   $('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'both'});
+   $('.block-grid.three-up>li:nth-child(3n+1)').css({clear: 'both'});
+   $('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'both'});
+   $('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'both'});
 
   // Hide address bar on mobile devices (except if #hash present, so we don't mess up deep linking).
   if (Modernizr.touch && !window.location.hash) {
@@ -47,7 +47,7 @@
  --*/
 
  /*-- TypeKit--*/
-(function() {
+;(function() {
     var config = {
       kitId: 'zwv8ekz',
       scriptTimeout: 3000
@@ -98,6 +98,32 @@
     $.fn.practiceupdatePanel           ? $doc.practiceupdatePanel() : null;
   });
 
+//dev build - use to read url params to mimick states
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++)
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam)
+        {
+            return sParameterName[1];
+        }
+    }
+}
+
+// read known url parameters
+var recipParam = GetURLParameter('recip');
+var userParam = GetURLParameter('user');
+var statusParam = GetURLParameter('status');
+
+//if recip=mike, make crazy happen
+if(recipParam==='mike'){
+  $('.page-content').on('hover', 'a', function(){
+    $(this).parent().hide('fast');
+  });
+}
 
 //(function siteInit(){
 //'use strict';
@@ -153,9 +179,13 @@
 var waxMustache = function(){
 //TODO: add support for partials
 //TODO: check if target element exists before attempting to render
+//TODO: return success when all templates have been successfully built
   var dataPath = "content/json/";
   var templatePath = "assets/mustache/";
   var mustacheList = [
+  ["module-update-carousel",".stream-container", "append"],
+  ["module-update-carousel",".explore-sections", "prepend"],
+  ["module-editors-picks",".stream-container", "append"],
   ["feed","feed-item",".stream-container", "append"],
   ["recent","module-recent",".recent", "html"],
   ["user-topic","user-topic",".user-topic", "html"],
@@ -168,7 +198,8 @@ var waxMustache = function(){
   ["page-footer", ".page-footer", "html"],
   ["modals", "body", "append"],
   ["modals-forgot-password", "body", "append"],
-  ["page-footer", ".site-footer", "html"]
+  ["page-footer", ".site-footer", "html"],
+  ["suggested-topics", "module-suggested-topics", ".suggested-topics", "html"]
   ];
 
   $.each(mustacheList, function(i, v){
@@ -211,6 +242,14 @@ waxMustache();
       e.preventDefault();
     });
   });
+function hyphenateString(str){
+  //trim trailing and leading whitespace, replace remaining spaces with hyphens
+  return str.replace(/^\s+|\s+$/g,'').replace(/\s+/g, '-').toLowerCase();
+}
+
+  function marketingMenu(targetNav){
+    $(targetNav).children().slideToggle();
+  }
 
 function menuInit() {
 /*   $.fn.practiceupdatePanel           ? $doc.practiceupdatePanel() : null; */
@@ -218,10 +257,11 @@ function menuInit() {
   var menuParentHeight;
   var initActiveTitle = $('.all-topics').text();
   $('.current-filter-banner').text(initActiveTitle);
-  $('.top-level-nest ul ul').prepend('<li><a href="#" class="back-button button small">back</a></li>');
+  $('.top-level-nest ul ul').prepend('<li><a href="#" class="back-button button small"><i class="icon-chevron-left"></i> back</a></li>');
   $('.top-level-nest ul:first').addClass('menu-parent');
   menuParentHeight = $('.menu-parent').height();
   $('.top-level-nest ul:first a').not('.all-topics').click(function() {
+  var justClicked = $(this);
   $('.current-child a').not('.back-button').not('current').click(function(){
     var curActiveTitle = $(this).text();
     $('.stream-container').animate({
@@ -270,3 +310,76 @@ $('.stream-container').animate({
   });
 
 };
+
+////////////////////////////////////////////////////////////////////////////////////////
+// topic nav
+////////////////////////////////////////////////////////////////////////////////////////
+
+function topicNavInit() {
+/*   $.fn.practiceupdatePanel           ? $doc.practiceupdatePanel() : null; */
+/*   $('.top-level-nest a').preventDefault(); */
+  var childIndicator = '<i class="icon-chevron-right child-indicator"></i>';
+  var topicNavBackButton = '<li><a href="#" class="back-button button small"><i class="icon-chevron-left"></i> back</a></li>';
+  var menuParentHeight;
+  var navHeaderHeight = $('.topic-nav .nav-header').height();
+  var initActiveTitle = $('.all-topics').text();
+  var curTopicAll = $('.current-child .topic-all a').text();
+
+  var transitionActive = function(){
+    $('.stream-container').animate({opacity: 0}, 50, function() {
+      $('.current-filter-banner').text(curActiveTitle);
+      $('.stream-container').animate({opacity: 1}, 150)
+    });
+  };
+
+  $('.current-filter-banner').text(initActiveTitle);
+
+  // determine whether this list contains more than one channel
+  if($('.topic-nav .channel-list').hasClass('multi-channel')){
+    menuParentHeight = $('.topic-nav .channel-list').height();
+
+    $('.topic-nav .channel-list .channel-all>a').toggleClass('current');
+    $('.topic-nav .channel-list .channel>a').append(childIndicator);
+    $('.topic-nav .channel-list .aat-list').prepend(topicNavBackButton);
+    $('.topic-nav .channel-list li.channel>a').on("click", function(event){
+      $('.channel-list').addClass('tier-two');
+      $(this).closest('.channel').toggleClass('current-channel');
+      var curChildHeight = $(this).siblings('.aat-list').height();
+      $('.topic-nav-inner').height(curChildHeight);
+    });
+    $('.topic-nav .channel-list a.back-button').on("click", function(event){
+/*       $('.current-filter-banner').text('All items'); */
+      $('.topic-nav-inner').height(menuParentHeight);
+      $('.current-channel').removeClass('current-channel');
+      $('.channel-list').removeClass('tier-two');
+    });
+    $('.topic-nav .channel-list .aat-list a').not('.back-button').on("click", function(event){
+      $('.channel-list .current').toggleClass('current');
+      $(this).toggleClass('current');
+    });
+  } else {// user only subscribes to single-channel
+    $('.topic-nav .channel-list .channel>a, .channel-list .channel-all>a').on("click", function(event){
+      $('.channel-list .current').toggleClass('current');
+      $(this).toggleClass('current');
+    });
+  }
+
+};
+topicNavInit();
+
+function puScrollSpy(){
+  //data-pu-iid
+
+	$(document).on('scrollSpy:enter','.stream-item', function() {
+		console.log('enter:', $(this).attr('data-pu-iid'));
+	});
+
+	$(document).on('scrollSpy:enter','.stream-item', function() {
+		console.log('exit:', $(this).attr('data-pu-iid'));
+	});
+
+  $.scrollSpy($(document));
+}
+//events list xml http://www.globaleventslist.elsevier.com/rss.aspx?filterYears=2013&disciplineIds=68&specialtyIds=247
+//jquery parse xml http://api.jquery.com/jQuery.parseXML/
+

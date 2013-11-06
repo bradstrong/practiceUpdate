@@ -19,7 +19,7 @@
 	<!-- Include CSS Files -->
 	<link rel="stylesheet" href="assets/css/app.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.css">
-	<link rel="stylesheet" href="assets/css/joyride-2.0.3.css">
+	<link rel="stylesheet" href="assets/css/jquery.bxslider.css">
 	<!-- Include Modernizr -->
 	<script src="assets/js/foundation/modernizr.foundation.js"></script>
 
@@ -42,27 +42,70 @@
 	<div class="page-content">
 		<section role="main">
 			<div class="explore-container">
-<div class="stream-header">
-  <div class="topic-filter-helper">
-  <div class="eight columns">
-  <span class="current-filter-banner">All Topics</span>
-  </div>
-  <hr>
-  </div>
-<div id="user-topic-filter-sub">
-	<dl class="sub-nav">
-	<dt style="height: auto; line-height: 1.2em;">Popular Topics</dt>
-		<dd class="active"><a href="#simple1">Topic Name</a></dd>
-		<dd><a href="#simple2">Topic</a></dd>
-		<dd><a href="#simple3">NamedTopic</a></dd>
-		<dd><a href="#simple4">Topical</a></dd>
-		<dd><a href="#simple5">Topic Named Topic</a></dd>
-		<dd><a href="#simple6">SHRT</a></dd>
-	</dl>
-</div><!--/#user-topic-filter-sub-->
-</div>
 				<div class="explore-sections">
 				</div><!--/.explore-sections-->
+<div class="clear-fix"></div>
+<div class="explore-experts panel">
+<header class="section-header">
+    <p class="lead">PracticeUpdate is guided by a world-renowned Editorial and Advisory Board that represents community practitioners and academic specialists with cross-disciplinary expertise.</p>
+  <p>We currently cover the following specialties with more specialties being added during the year:</p>
+</header>
+<div class="channel-container">
+<h5><a class="channel-title" href="#">Cardiology</a></h5>
+  <div class="editor-container">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+</div>
+<div class="channel-container">
+<h5><a class="channel-title" href="#">Dermatology</a></h5>
+  <div class="editor-container">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+</div>
+<div class="clear-fix hide-for-small"></div>
+<div class="channel-container">
+<h5><a class="channel-title" href="#">Eye Care</a></h5>
+  <div class="editor-container" style="float:left; clear:left; padding-left:50px;">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+  <div class="editor-container" style="float:left; clear:left; padding-left:50px;">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+</div>
+<div class="channel-container">
+<h5><a class="channel-title" href="#">Oncology</a></h5>
+  <div class="editor-container">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+</div>
+<div class="clear-fix hide-for-small"></div>
+<div class="channel-container">
+<h5><a class="channel-title" href="#">Primary Care</a></h5>
+  <div class="editor-container">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+</div>
+<div class="channel-container">
+<h5><a class="channel-title" href="#">Urology</a></h5>
+  <div class="editor-container">
+    <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+    <span class="title">Editor in Chief</span><br>
+    <a class="editor-name" href="#">Name Name. MD</a>
+  </div>
+</div>
+</div><!--/.explore-experts-->
 			</div><!--/.explore-container-->
 			<div class="recommended">
 				<div class="widget recent">
@@ -217,140 +260,35 @@
 	<script src="assets/js/foundation/jquery.placeholder.js"></script>
 	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
 
-	<script src="assets/js/foundation/jquery.foundation.joyride.js"></script>
-
+	<script src="assets/js/jquery.bxslider.js"></script>
 	<script src="assets/js/foundation/app.js"></script>
 	<script src="assets/js/foundation/dev-app.js"></script>
 	<script src="assets/js/tamingselect.js"></script>
 
 	<script src="assets/js/mustache.js"></script>
 
-
-	<ol id="practiceupdate-tour" class="joyride-stoplist">
-<!--
-Stop 1: Update tab
- Header: Update
- Content: A personalized view of the latest news, journal scans, and expert commentaries
- hand selected for your specialty(s)
- Button: Next – Experts
--->
-	<li data-id="li_update" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">A personalized view of the latest news, journal scans, and expert commentaries</li>
-<!--
-Stop 2: Meet our Experts button
-	Header: Meet our Experts
-	Content: World-renowned experts that hand select content related to your chosen
-	specialty(s)
-	Button: Next – Profile and Settings
-	-->
-	<li data-class="meet-experts" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">World-renowned experts that hand select content related to your chosen</li>
-<!--
-Stop 3: Profile and Settings button
- Header: Profile & Settings
- Content: Update your specialty(s), interests, and notification settings
- Button: Next – Specialty / All My Channels
- -->
-	<li data-id="UserConsolePreferences" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">Update your specialty(s), interests, and notification settings</li>
-<!--
- Stop 4: Specialty / All My Channels
- Header: Specialty Channels
- Content: The customized view of your selected interests
- Button: Next – Spotlights
--->
-	<li data-id="ul-specialties" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">The customized view of your selected interests</li>
-<!--
- Stop 5: Spotlights
- Header: Spotlights
- Content: Highlighted topics related to your specialty
- Button: Next – Explore
--->
-	<li data-id="ul_spotlight" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">Highlighted topics related to your specialty</li>
-<!--
- Stop 6: Explore tab
- Header: Explore
- Content: News, Research, Reviews, and Expert Opinions from across your specialty channel.
- Button: Next – Learn
--->
-	<li data-id="li_explore" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">News, Research, Reviews, and Expert Opinions from across your specialty channel.</li>
-<!--
-Stop 7: Learn tab
- Header: Learn
- Content: CME opportunities and seminal articles
- Button: Next – End
--->
-	<li data-id="li_explore" data-options="tipLocation:top;tipAnimation:fade" data-button="Second Button">CME opportunities and seminal articles</li>
-</ol>
-<!--/#practiceupdate-tour-->
-<!-- documentation refernce
-	http://www.zurb.com/playground/jquery-joyride-feature-tour-plugin
--->
-
-<!-- /* Launching joyride when to page is loaded */ -->
-<script>
-  $(window).load(function() {
-  	$('#start-tour').click(function(){
-			$("#practiceupdate-tour").joyride({
-			/* Options will go here */
-			})
-  	})
-  });
-</script>
-
-
 	<!-- Mustache - homepage feed template -->
 	<script>
 
 	$.getJSON('content/json/explore_news.json', function(data) {
 		$.get('assets/mustache/section.mustache', function(template) {
-			//alert('Load was performed.');
 	    var html = Mustache.to_html(template, data);
-	    $('.explore-sections').prepend(html);
-		});
-	});
-
-	//<!-- Mustache - Explore Research template -->
-	$.getJSON('content/json/explore_research.json', function(data) {
-		$.get('assets/mustache/section.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.explore-sections').prepend(html);
-		});
-	});
-
-	//<!-- Mustache - Explore Research template -->
-	$.getJSON('content/json/explore_review.json', function(data) {
-		$.get('assets/mustache/section.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.explore-sections').prepend(html);
-		});
-	});
-
-	//<!-- Mustache - Explore Expert Opinion template -->
-	$.getJSON('content/json/explore_expert-opinion.json', function(data) {
-		$.get('assets/mustache/section.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.explore-sections').prepend(html);
-		});
-	});
-
-	//<!-- Mustache - homepage recent template -->
-	$.getJSON('content/json/recent.json', function(data) {
-		$.get('assets/mustache/recent.mustache', function(template) {
-			//alert('Load was performed.');
-	    var html = Mustache.to_html(template, data);
-	    $('.recent').html(html);
+	    $('.explore-sections').append(html);
 		});
 	});
 
 	//<!-- Mustache - Explore IFI -->
 	$.get('assets/mustache/from-industry.mustache', function(template) {
     var html = Mustache.to_html(template);
-    $('.explore-sections').prepend(html);
+    $('.explore-sections').append(html);
 	});
 	</script>
 
-
+<script type="text/javascript">
+   $(window).load(function() {
+       $("#featured").orbit();
+   });
+</script>
 
 </body>
 </html>

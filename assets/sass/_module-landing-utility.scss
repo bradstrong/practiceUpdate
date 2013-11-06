@@ -4,8 +4,8 @@
 	font-family: "proxima-nova-condensed",sans-serif;
 }
 
-/* Unsubscribe Page */
-.page-landing-unsubscribe{
+/* landing utility Pag stylese */
+.page-landing-unsubscribe, .page-landing-error, .page-landing-login{
 	background:url(../../assets/img/misc/ospu-bg.png) #1c7893;
 	background-repeat:no-repeat;
 	background-position: center -68px;
@@ -16,6 +16,7 @@
 		.button{margin-top:0px; margin-bottom:0px; display:block;}
 	}
 }
+
 .landing-card{
 	background-color:$white;
 	@include elementBoxShadow;

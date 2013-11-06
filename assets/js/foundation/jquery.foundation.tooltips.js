@@ -10,7 +10,7 @@
 
 ;(function ($, window, undefined) {
   'use strict';
-  
+
   var settings = {
       bodyHeight : 0,
       selector : '.has-tip',
@@ -32,7 +32,7 @@
 
           if (Modernizr.touch) {
             $body.on('click.tooltip touchstart.tooltip touchend.tooltip', settings.selector, function (e) {
-              e.preventDefault();
+/*               e.preventDefault(); */ //updated by brad 2013-07-02
               $(settings.tooltipClass).hide();
               methods.showOrCreateTip($(this));
             });
@@ -120,13 +120,21 @@
         objPos(nub, -nubHeight, 'auto', 'auto', 10);
 
         if ($(window).width() < 767) {
-          column = target.closest('.columns');
-
-          if (column.length < 0) {
-            // if not using Foundation
-            column = $('body');
+          if (target.data('mobile-width')) {
+            tip.width(target.data('mobile-width')).css('left', 15).addClass('tip-override');
+          } else {
+            column = target.closest('.columns');
+            if (column.length < 0) {
+              // if not using Foundation
+              column = $('body');
+            }
+            if (column.outerWidth()) {
+              tip.width(column.outerWidth() - 25).css('left', 15).addClass('tip-override');
+            } else {
+              var tmp_width = Math.ceil($(window).width() * 0.9);
+              tip.width(tmp_width).css('left', 15).addClass('tip-override');
+            }
           }
-          tip.width(column.outerWidth() - 25).css('left', 15).addClass('tip-override');
           objPos(nub, -nubHeight, 'auto', 'auto', target.offset().left);
         } else {
           if (classes && classes.indexOf('tip-top') > -1) {
@@ -161,7 +169,7 @@
                 return el;
               }
           }).join(' ') : '';
-          
+
         return $.trim(filtered);
       },
       show : function ($target) {
