@@ -16,4 +16,21 @@
 .page-section.update-section{
   background-color:$white;
   @include elementBoxShadow;
+  padding: 15px;
+  margin-bottom: 15px;
+  .item-citation{
+    padding-bottom: 7px;
+  }
 }
+.section-grid{
+  @extend .block-grid;
+  @extend .two-up;
+  @extend .mobile-one-up;
+}
+
+.section-grid-item{
+  padding: 0 !important;
+}
+
+.slide, .small-title{}
+.tn-title, .tiny-title{}

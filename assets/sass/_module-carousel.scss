@@ -1,13 +1,55 @@
-// override foundation orbit styles
-.orbit-wrapper .orbit-caption{
- text-align: left;
- padding: 7px;
- a{
+// override bxSlider styles
+.carousel-container .bx-wrapper .bx-viewport{
+  border: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  left:0;
+}
+.bx-controls{
+}
+.bx-controls-direction{}
+.bx-wrapper .bx-controls .bx-controls-direction .bx-prev{
+  left:-40px;
+}
+.bx-wrapper .bx-controls .bx-controls-direction .bx-next{
+  right:-40px;
+}
+
+// custom carousel styles
+.carousel-container{
+  background-color:$white;
+  @include elementBoxShadow;
+  margin-bottom: 15px;
+}
+.slide-caption{
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  text-align: left;
+  padding: 7px 7px 10px;
+  a{
    color: #fff;
- }
- .author-list{
-   margin-bottom: 0;
- }
+  }
+  .author-list{
+     margin-bottom: 0;
+  }
+  img.avatar{
+    display: inline-block !important;
+  }
+}
+
+//Pager styles
+.pager-container{
+  margin:7px 45px;
+  @media only screen and (max-width: $screenSmall - 1) {
+    display: none;
+  }
+}
+
+.pager-thumb{
+  .title-tiny, .title-thumbnail{font-size: 12px;}
 }
 
 //Content Carousel
