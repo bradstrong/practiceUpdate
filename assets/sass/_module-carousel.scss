@@ -25,7 +25,6 @@
 // custom carousel styles
 .carousel-container{
   background-color:$white;
-  @include elementBoxShadow;
   margin-bottom: 15px;
 }
 .slide-caption{
@@ -49,7 +48,7 @@
 //Pager styles
 .pager-container{
   margin:7px 45px;
-  @media only screen and (max-width: $screenSmall - 1) {
+  @media only screen and (max-width: 768px - 1) {
     display: none;
   }
 }
@@ -58,21 +57,20 @@
   .title-tiny, .title-thumbnail{font-size: 12px;}
 }
 
-//Content Carousel
-/*
-.content-carousel .feature-item{background: $white;}
-.content-carousel img { display: none; }
-.content-carousel { background: url( /assets/img/orbit/loading.gif) center center #f4f4f4; height: 300px;}
-.content-carousel.orbit { background: none; }
-.content-carousel.orbit img { display: block; }
-.content-carousel.orbit {
-	section{ padding:$columnGutter/3;}
-	article{ padding:$columnGutter/3;}
-}
-*/
-
 .content-carousel { background: #f4f4f4; height: 300px; }
 .content-carousel img { display: none; }
 
 .content-carousel { background: none; }
 .content-carousel img { display: block; }
+
+/* ======================================== */
+.classified-ad-container{
+
+  .bx-wrapper .bx-controls .bx-controls-direction .bx-prev{
+    left:0px;
+  }
+  .bx-wrapper .bx-controls .bx-controls-direction .bx-next{
+    right:0px;
+  }
+
+}

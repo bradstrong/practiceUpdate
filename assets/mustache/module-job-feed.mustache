@@ -1,25 +1,16 @@
-<header class="widget-header">
-  <h3 class="list-widget-title">Channel Jobs <br><small>Provided by <a href="http://ehealthcareers.com" rel="external" target="blank" title="eHealthCareers Homepage">eHealthCareers.com</a></small></h3>
-</header>
-<div class="widget-body">
-  {{! JobPosting microdata reference: http://schema.org/JobPosting }}
-  <ul class="job-posting-list list-widget-list">
-  {{#Jobs}}
-    {{#.}}
-    <li class="job-posting-item list-widget-item entry">
-      <article class="job-posting in-list" itemscope itemtype="http://schema.org/JobPosting">
-          <a class="job-posting-url" href="{{Url}}" rel="external" target="_blank"><span class="job-posting-title" itemprop="title">{{NormalizedJobTitle}}</span></a>
-          <span class="job-posting-location" itemprop="jobLocation" itemscope itemtype="http://schema.org/Place">
-            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><br>
-            <span class="job-posting-company" itemprop="hiringOrganization">{{Company}}</span> |
-              <span class="job-posting-city" itemprop="addressLocality">{{City}},</span>
-              <span class="job-posting-state" itemprop="addressRegion">{{State}}</span>
-            </span>
-          </span>
-      </article><!--/.job-posting-->
-    </li>
-    {{/.}}
-  {{/Jobs}}
-  </ul>
+<div class="classified-ad-container">
+  <section class="carousel-container">
+    <div id="jobCarousel" class="carousel">
+      <div class="slide"><a href="http://ehealthcareers.com/"><img src="content/classified/slider-image-page1.jpeg" alt="" /></a></div>
+      <div class="slide"><a href="http://ehealthcareers.com/"><img src="content/classified/slider-image-page2.jpeg" alt="" /></a></div>
+      <div class="slide"><a href="http://ehealthcareers.com/"><img src="content/classified/slider-image-page3.jpeg" alt="" /></a></div>
+      <div class="slide"><a href="http://ehealthcareers.com/"><img src="content/classified/slider-image-page4.jpeg" alt="" /></a></div>
+    </div>
+  </section>
 </div>
-<footer class="widget-footer"></footer>
+<script type='text/javascript'>
+
+$(function(){
+  var jobCarousel = $('#jobCarousel').bxSlider({slideSelector: 'div.slide', preloadImages: 'all', auto: true, controls: true, pager: false});
+});
+</script>
