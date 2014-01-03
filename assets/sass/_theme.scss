@@ -133,7 +133,7 @@ nav a:hover, .drawer a:hover{text-decoration: none;}
 
 .label-media-video{
   background-color: transparent;
-/*   border: 1px solid $txtColor; */
+  border: 1px solid $txtColor;
   border-radius: 5px;
   color: lighten($txtColor, 5%);
 }
