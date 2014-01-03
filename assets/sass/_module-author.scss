@@ -16,5 +16,9 @@
   }
   .vcard-inline{}
   .list-label{white-space: nowrap;}
-  .at-wrtby{display: none;}
+  .list-label.at-wrtby{display: none;}
+}
+
+.author-list-compact{
+  margin-bottom: 3px;
 }

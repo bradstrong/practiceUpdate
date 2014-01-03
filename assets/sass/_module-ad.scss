@@ -57,7 +57,7 @@
 #leaderboardouter, #leaderboard{@media only screen and (max-width: $screenSmall) {display:none;}}
 
 //fix for ie8 and below
-/* html.lt-ie9{ */
+html.lt-ie9{
   .widget.ad.leaderboard{
     .ad-content, object, embed{
 /*       height: 90px; */
@@ -86,4 +86,4 @@
       max-width: 100% !important;
     }
   }
-/* } */
+}

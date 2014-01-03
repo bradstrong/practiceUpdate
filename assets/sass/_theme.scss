@@ -4,6 +4,16 @@ ul li{
 ul.checked-list{
   list-style-type: none;
 }
+
+#UpdateStream .page-section-heading{
+/*
+background-color:$white;
+@include elementBoxShadow;
+*/
+	padding-left: 14px;
+	margin-bottom: 7px;
+}
+
 //article{
 //TODO:  add background and dropshadow for .static-container. content container needs to be added to those pages.
 .in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container{
@@ -275,7 +285,7 @@ h1.item-title{
 	display: none;
 }
 
-.journal .item-citation, .feed .item-citation{
+.journal .item-citation, .feed .item-citation, .expertopinion .item-citation{
 	font-size: ms(0)*.85;
 	color: lighten($txtColor, 5%);
 }
@@ -437,4 +447,3 @@ body.experimental-b{
 .references ul.accordion ol li{
   list-style: decimal;
 }
-

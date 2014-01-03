@@ -47,3 +47,6 @@
 		}
 	}
 }
+.exploresectionentry .item-content-container{
+  @include column(12, collapse);
+}

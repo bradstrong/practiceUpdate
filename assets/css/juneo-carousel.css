@@ -1,9 +1,14 @@
+// contain juneo preview to max size of PracticeUpdate carousel
+.carousel-container{
+  max-width: 740px;
+}
+
 // override bxSlider styles
 .carousel-container .bx-wrapper .bx-viewport{
-  left:0;
+  left:0 !important;
   border: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
   box-shadow: none;
 }
 .bx-controls{
@@ -23,8 +28,8 @@
 
 // custom carousel styles
 .carousel-container{
-  margin-bottom: 15px;
-  background-color:$white;
+  padding-bottom: 15px;
+  background-color:#FFF;
 }
 .slide-caption{
   position: absolute;
@@ -58,6 +63,9 @@
   }
 }
 
+.pager-container .bx-wrapper .bx-viewport{
+  height: auto !important;
+}
 
 .pager-thumb .title-tiny, .pager-thumb .title-thumbnail{font-size: 12px;}
 
@@ -93,6 +101,7 @@
 }
 .author-list .list-label{
     font-style: italic;
+    padding-right:5px;
 }
 .author-list .list-item{
     padding-right:5px;

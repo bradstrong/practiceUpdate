@@ -4,6 +4,11 @@
 	font-family: "proxima-nova-condensed",sans-serif;
 }
 
+//hack for IE8
+.lt-ie9 .page-landing .row{
+/*   max-width: 767px; */
+}
+
 .page-landing-bcf{
 	background: #cacaca; /* Old browsers */
 	background: -moz-linear-gradient(left,  #cacaca 0%, #feffff 40%, #feffff 60%, #cacaca 100%); /* FF3.6+ */
@@ -44,4 +49,149 @@
 
 .ribbon-container{
 	padding-top:102px;
+}
+
+
+.page-landing .marketing{
+  background-color:#FFF;
+  color:rgb(90,91,94);
+}
+
+.page-landing .hero p.tagline{
+  font-size:30px;
+}
+.hero-image-caption{
+  text-align: center;
+  padding-top:5px;
+  @media screen and (min-width:1024px){
+      padding-top:5px;
+      padding-right:17px;
+      padding-left:9em;
+  }
+
+  .expert-name{
+    display:inline-block;
+    padding-left:5px;
+    padding-right: 5px;
+    width:30%;
+    @media screen and (min-width:768px){
+      color:rgb(54,60,70)!important;
+    }
+  }
+}
+
+.page-header-marketing{
+  background-color:#1d7998;
+  color:#FFF;
+  vertical-align: middle;
+  padding-top:.5em;
+  padding-bottom:.5em;
+  @media screen and (max-width: $screenSmall){
+    text-align:center;
+  }
+}
+
+.pres-by-els{
+  text-align: right;
+  @media screen and (max-width: $screenSmall){
+    padding-top: 1em;
+    text-align:center;
+  }
+}
+
+/*
+
+channel specific styles
+
+*/
+
+//BEGIN HERO
+
+//Cardiology
+
+.page-landing-cardiology .hero .page-banner{
+  background-color: rgb(54,60,70);
+  background-image: url('../../content/marketing/cardiology-landing/cardio-ed-board-hero.jpg');
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: contain;
+  behavior: url(assets/css/PIE-2.0beta1/PIE.htc);
+
+  @media screen and (min-width:1201px){
+    background-position-x: 100%;
+  }
+  @media screen and (max-width:1200px){
+    background-position-x: 115%;
+  }
+  @media screen and (max-width:1024px){
+  background-size: 70%;
+  background-position-x: 105%;
+  background-position-y: bottom;
+  }
+/*
+  @media screen and (max-width:1000px){
+  background-size: 60%;
+  background-position-x: 100%;
+  background-position-y: bottom;
+  }
+*/
+  @media screen and (max-width: $screenSmall){
+background-image: none;
+  }
+}
+
+// Urology
+.page-landing-urology .hero .page-banner{
+  background-color: rgb(54,60,70);
+  background-image: url('../../content/marketing/urology-landing/urology-ed-board-hero.jpg');
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: contain;
+  behavior: url(assets/css/PIE.htc);
+
+  @media screen and (min-width:1201px){
+    background-position-x: 100%;
+  }
+  @media screen and (max-width:1200px){
+    background-position-x: 115%;
+  }
+  @media screen and (max-width:1024px){
+  background-size: 70%;
+  background-position-x: 105%;
+  background-position-y: bottom;
+  }
+/*
+  @media screen and (max-width:1000px){
+  background-size: 60%;
+  background-position-x: 100%;
+  background-position-y: bottom;
+  }
+*/
+  @media screen and (max-width: $screenSmall){
+background-image: none;
+  }
+}
+
+
+//END HERO
+
+.brand-container .tagline{
+  color:rgb(216,102,84);
+  font-size:30px;
+  padding-top:30px;
+}
+
+.brand-container .tagline.inverse {
+  color:#FFFFFF;
+  padding-top:0px;
+}
+
+.brand-container{
+  margin-bottom:40px;
+}
+.hero-image-caption{
+  color: #FFF;
+}
+.page-content{
+  margin-top:40px;
 }

@@ -31,9 +31,11 @@
   color: #fff;
   position: absolute;
   bottom: 0;
+  background: rgb(0,0,0); // Fallback for IE8
   background: rgba(0,0,0,0.7);
   text-align: left;
   padding: 7px 7px 10px;
+  width: 100%;
   a{
    color: #fff;
   }
