@@ -4,7 +4,7 @@
 /* !Type */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .pub-meta, .item-title-container, .action-bar, .item-container .expert-comment-container, .item-content-container, .item-content-section, .item-footer, .expert-comment-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .exploresectionentry .item-content-container, #formLogin, #formRegisterPrompt {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .badge-container.feed-badge-container, .item-title-container, .action-bar, .item-container .expert-comment-container, .item-content-container, .item-content-section, .item-footer, .expert-comment-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .exploresectionentry .item-content-container, #formLogin, #formRegisterPrompt {
   float: left;
 }
 
@@ -30,7 +30,7 @@
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .pub-meta, .item-title-container, .action-bar, .item-container .expert-comment-container, .item-content-container, .item-content-section, .item-footer, .expert-comment-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .exploresectionentry .item-content-container, #formLogin, #formRegisterPrompt {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .badge-container.feed-badge-container, .item-title-container, .action-bar, .item-container .expert-comment-container, .item-content-container, .item-content-section, .item-footer, .expert-comment-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .exploresectionentry .item-content-container, #formLogin, #formRegisterPrompt {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -9895,7 +9895,7 @@ channel specific styles
 }
 
 /* line 8, ../sass/_module-stream-item.scss */
-.pub-meta {
+.badge-container.feed-badge-container {
   width: 100%;
   line-height: 1.4;
   padding-top: 7px;
@@ -9903,7 +9903,7 @@ channel specific styles
 }
 @media only screen and (max-width: 767px) {
   /* line 8, ../sass/_module-stream-item.scss */
-  .pub-meta {
+  .badge-container.feed-badge-container {
     float: none;
     width: auto;
   }
@@ -11603,7 +11603,7 @@ html.lt-ie9 .widget.ad.filmstrip .ad-content, html.lt-ie9 .widget.ad.filmstrip o
   border-bottom: none;
 }
 /* line 37, ../sass/_module-explore-section.scss */
-.section-widget .section-content .entry .item-title-container, .section-widget .section-content .entry .pub-meta, .section-widget .section-content .entry .item-source-container {
+.section-widget .section-content .entry .item-title-container, .section-widget .section-content .entry .badge-container.feed-badge-container, .section-widget .section-content .entry .item-source-container {
   padding-right: 0;
   padding-left: 0;
 }
@@ -11845,7 +11845,7 @@ nav a:hover, .drawer a:hover {
 /* line 160, ../sass/_theme.scss */
 .badge, .top-level-nest .counter, nav.topic-nav .counter {
   background: #f3b727;
-  border-radius: 100%;
+  border-radius: 10px;
   color: white;
   display: inline-block;
 }
@@ -11869,7 +11869,12 @@ nav a:hover, .drawer a:hover {
   width: 3em;
 }
 
-/* line 186, ../sass/_theme.scss */
+/* line 184, ../sass/_theme.scss */
+.label-block, .badge-block {
+  display: inline-block;
+}
+
+/* line 190, ../sass/_theme.scss */
 .flag {
   background: transparent;
   color: #f3b727;
@@ -11879,16 +11884,16 @@ nav a:hover, .drawer a:hover {
   font-weight: normal;
   padding: 0;
 }
-/* line 196, ../sass/_theme.scss */
+/* line 200, ../sass/_theme.scss */
 .flag.featured {
   color: #6cb0c3;
 }
-/* line 199, ../sass/_theme.scss */
+/* line 203, ../sass/_theme.scss */
 .flag.story-of-the-week {
   color: #70cf8d;
 }
 
-/* line 207, ../sass/_theme.scss */
+/* line 211, ../sass/_theme.scss */
 #RegisterDiv {
   *zoom: 1;
   background-color: white;
@@ -11910,12 +11915,12 @@ nav a:hover, .drawer a:hover {
 /* ================================ */
 /* ================================ */
 /* typography */
-/* line 220, ../sass/_theme.scss */
+/* line 224, ../sass/_theme.scss */
 body {
   white-space-collapse: collapse;
 }
 
-/* line 222, ../sass/_theme.scss */
+/* line 226, ../sass/_theme.scss */
 .page-banner-container, .page-footer-container {
   background-color: #1d7999;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
@@ -11925,44 +11930,44 @@ body {
   padding-bottom: 1em;
   z-index: 10;
 }
-/* line 223, ../sass/_theme.scss */
+/* line 227, ../sass/_theme.scss */
 .page-banner-container, .page-banner-container label, .page-banner-container .form-title, .page-banner-container .cta-title, .page-footer-container, .page-footer-container label, .page-footer-container .form-title, .page-footer-container .cta-title {
   color: white;
 }
 
-/* line 230, ../sass/_theme.scss */
+/* line 234, ../sass/_theme.scss */
 .page-footer-container {
   box-shadow: none;
 }
-/* line 232, ../sass/_theme.scss */
+/* line 236, ../sass/_theme.scss */
 .page-footer-container.footer-compact {
   background-color: transparent;
 }
 
-/* line 238, ../sass/_theme.scss */
+/* line 242, ../sass/_theme.scss */
 .page-banner p {
   font-family: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 239, ../sass/_theme.scss */
+/* line 243, ../sass/_theme.scss */
 .page-banner .account-question {
   background: transparent;
   border: none;
 }
 
-/* line 245, ../sass/_theme.scss */
+/* line 249, ../sass/_theme.scss */
 .brand-container {
   padding-bottom: 1em;
 }
-/* line 246, ../sass/_theme.scss */
+/* line 250, ../sass/_theme.scss */
 .brand-container p {
   color: white;
 }
-/* line 247, ../sass/_theme.scss */
+/* line 251, ../sass/_theme.scss */
 .brand-container .tagline {
   font-size: 17px;
 }
 
-/* line 252, ../sass/_theme.scss */
+/* line 256, ../sass/_theme.scss */
 .brand-name {
   text-transform: lowercase;
   font-family: "museo-slab", serif;
@@ -11970,129 +11975,129 @@ body {
   font-size: 59px;
 }
 @media only screen and (max-width: 1279px) {
-  /* line 252, ../sass/_theme.scss */
+  /* line 256, ../sass/_theme.scss */
   .brand-name {
     font-size: 37px;
   }
 }
 
-/* line 261, ../sass/_theme.scss */
+/* line 265, ../sass/_theme.scss */
 .brand-name-practice {
   text-transform: capitalize;
 }
 
-/* line 262, ../sass/_theme.scss */
+/* line 266, ../sass/_theme.scss */
 .brand-name-update {
   text-transform: capitalize;
 }
 
-/* line 264, ../sass/_theme.scss */
+/* line 268, ../sass/_theme.scss */
 .login-register {
   margin: 0;
   padding-top: 7px;
 }
-/* line 267, ../sass/_theme.scss */
+/* line 271, ../sass/_theme.scss */
 .login-register .cta.account-question {
   margin-top: 7px;
   padding: 7px 0;
 }
 
-/* line 275, ../sass/_theme.scss */
+/* line 279, ../sass/_theme.scss */
 h1.item-title {
   margin-top: 7px;
   margin-bottom: 7px;
 }
 
-/* line 279, ../sass/_theme.scss */
+/* line 283, ../sass/_theme.scss */
 .journal .item-title, .feed .item-title {
   font-size: 14px;
   font-family: "proxima-nova";
 }
 
-/* line 284, ../sass/_theme.scss */
+/* line 288, ../sass/_theme.scss */
 .journal-title, .feed-title {
   display: none;
 }
 
-/* line 288, ../sass/_theme.scss */
+/* line 292, ../sass/_theme.scss */
 .journal .item-citation, .feed .item-citation, .expertopinion .item-citation {
   font-size: 11.9px;
   color: #948b7c;
 }
 
-/* line 293, ../sass/_theme.scss */
+/* line 297, ../sass/_theme.scss */
 .recommended h5, .recommended .form-title, .recommended .cta-title {
   font-size: 17px;
   margin: 0;
   font-weight: normal;
 }
 
-/* line 299, ../sass/_theme.scss */
+/* line 303, ../sass/_theme.scss */
 a i[class^="icon-"] {
   color: #b7b7b7;
 }
 
-/* line 303, ../sass/_theme.scss */
+/* line 307, ../sass/_theme.scss */
 a:hover i[class^="icon-"] {
   color: #887e6f;
   cursor: pointer;
 }
 
-/* line 308, ../sass/_theme.scss */
+/* line 312, ../sass/_theme.scss */
 .subheader, .form-description {
   color: #887e6f;
 }
 
-/* line 310, ../sass/_theme.scss */
+/* line 314, ../sass/_theme.scss */
 .socialshare-actions span, .socialshare-actions i {
   font-size: 21px;
 }
 
-/* line 313, ../sass/_theme.scss */
+/* line 317, ../sass/_theme.scss */
 #formLogin {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 313, ../sass/_theme.scss */
+  /* line 317, ../sass/_theme.scss */
   #formLogin {
     float: none;
     width: auto;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 319, ../sass/_theme.scss */
+  /* line 323, ../sass/_theme.scss */
   #formLogin .remember-forgot {
     padding-top: 14px;
   }
 }
 
-/* line 325, ../sass/_theme.scss */
+/* line 329, ../sass/_theme.scss */
 #formRegisterPrompt {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 325, ../sass/_theme.scss */
+  /* line 329, ../sass/_theme.scss */
   #formRegisterPrompt {
     float: none;
     width: auto;
   }
 }
 
-/* line 326, ../sass/_theme.scss */
+/* line 330, ../sass/_theme.scss */
 .page-banner .forgot {
   color: white;
 }
 
-/* line 327, ../sass/_theme.scss */
+/* line 331, ../sass/_theme.scss */
 .beta-accept, .subscribe-container {
   text-align: center;
 }
-/* line 329, ../sass/_theme.scss */
+/* line 333, ../sass/_theme.scss */
 .beta-accept input.error, .subscribe-container input.error {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* line 332, ../sass/_theme.scss */
+/* line 336, ../sass/_theme.scss */
 .beta-accept-lead, .subscribe-lead {
   color: #88cbdf;
   font-size: 17px;
@@ -12100,7 +12105,7 @@ a:hover i[class^="icon-"] {
   margin-bottom: 7px;
 }
 
-/* line 339, ../sass/_theme.scss */
+/* line 343, ../sass/_theme.scss */
 .beta-accept-button, .subscribe-button {
   color: #005596;
   font-weight: normal;
@@ -12116,7 +12121,7 @@ a:hover i[class^="icon-"] {
   box-shadow: 0 0 4px #c1cd23, 0 1px 0 white inset;
   text-transform: uppercase;
 }
-/* line 343, ../sass/_theme.scss */
+/* line 347, ../sass/_theme.scss */
 .beta-accept-button:hover, .subscribe-button:hover {
   color: #005596;
   *zoom: 1;
@@ -12130,30 +12135,30 @@ a:hover i[class^="icon-"] {
   background: linear-gradient(bottom, #1d1f05, #c1cd23);
 }
 
-/* line 350, ../sass/_theme.scss */
+/* line 354, ../sass/_theme.scss */
 .beta-accept-sub {
   display: none;
 }
 
-/* line 352, ../sass/_theme.scss */
+/* line 356, ../sass/_theme.scss */
 .specialty-name, .brand-name {
   color: white;
   margin-bottom: 0;
 }
 
-/* line 356, ../sass/_theme.scss */
+/* line 360, ../sass/_theme.scss */
 .specialty-name {
   font-size: 59px;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 767px) {
-  /* line 356, ../sass/_theme.scss */
+  /* line 360, ../sass/_theme.scss */
   .specialty-name {
     font-size: 44px;
   }
 }
 
-/* line 363, ../sass/_theme.scss */
+/* line 367, ../sass/_theme.scss */
 .tagline {
   color: #1d7998;
   font-family: "proxima-nova";
@@ -12161,33 +12166,33 @@ a:hover i[class^="icon-"] {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 368, ../sass/_theme.scss */
+  /* line 372, ../sass/_theme.scss */
   .tagline-str2 {
     display: block;
   }
 }
 
-/* line 374, ../sass/_theme.scss */
+/* line 378, ../sass/_theme.scss */
 .page-content-first {
   padding-top: 1em;
   padding-bottom: 2em;
   z-index: -5;
 }
 
-/* line 381, ../sass/_theme.scss */
+/* line 385, ../sass/_theme.scss */
 .copy-header {
   font-family: "museo-slab", serif;
   font-size: 37px;
   color: #172e54;
 }
 
-/* line 387, ../sass/_theme.scss */
+/* line 391, ../sass/_theme.scss */
 .expert-letter {
   margin-top: 28px;
   overflow: visible;
 }
 
-/* line 392, ../sass/_theme.scss */
+/* line 396, ../sass/_theme.scss */
 .expert-letter-copy {
   background-color: white;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -12200,12 +12205,12 @@ a:hover i[class^="icon-"] {
   border-radius: 2px;
 }
 
-/* line 402, ../sass/_theme.scss */
+/* line 406, ../sass/_theme.scss */
 .letter-illustration {
   margin-top: 21px;
 }
 @media screen and (min-width: 768px) {
-  /* line 402, ../sass/_theme.scss */
+  /* line 406, ../sass/_theme.scss */
   .letter-illustration {
     margin-top: 56px;
     margin-left: auto;
@@ -12213,45 +12218,45 @@ a:hover i[class^="icon-"] {
   }
 }
 
-/* line 410, ../sass/_theme.scss */
+/* line 414, ../sass/_theme.scss */
 .letter-body {
   font-size: 17px;
   line-height: 2;
 }
 
-/* line 418, ../sass/_theme.scss */
+/* line 422, ../sass/_theme.scss */
 .illustration-container {
   text-align: center;
 }
-/* line 420, ../sass/_theme.scss */
+/* line 424, ../sass/_theme.scss */
 .illustration-container img {
   max-width: 85px;
   margin: auto;
 }
 
-/* line 425, ../sass/_theme.scss */
+/* line 429, ../sass/_theme.scss */
 .page-content-second {
   margin-top: 28px;
   padding-bottom: 14px;
 }
 
-/* line 426, ../sass/_theme.scss */
+/* line 430, ../sass/_theme.scss */
 .site-benefits {
   margin-top: 28px;
 }
-/* line 428, ../sass/_theme.scss */
+/* line 432, ../sass/_theme.scss */
 .site-benefits .copy-header {
   text-align: center;
   padding-bottom: 28px;
 }
-/* line 432, ../sass/_theme.scss */
+/* line 436, ../sass/_theme.scss */
 .site-benefits h3 {
   color: #1d7998;
   font-family: "museo-slab", serif;
   font-size: 17px;
 }
 
-/* line 440, ../sass/_theme.scss */
+/* line 444, ../sass/_theme.scss */
 body.experimental-a {
   /* Corrections for Axel 2013-02-27 */
 }
@@ -12335,7 +12340,7 @@ body.experimental-b .page-header.fixed .top-bar {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
-/* line 447, ../sass/_theme.scss */
+/* line 451, ../sass/_theme.scss */
 .references ul.accordion ol li {
   list-style: decimal;
 }

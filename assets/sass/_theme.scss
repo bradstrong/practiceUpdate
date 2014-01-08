@@ -160,7 +160,7 @@ nav a:hover, .drawer a:hover{text-decoration: none;}
 .badge{
 	@extend .label;
 	background:$sec-orange;
-	border-radius:100%;
+	border-radius:10px;
 	color: $white;
 	display: inline-block;
 	&.featured{
@@ -179,6 +179,10 @@ nav a:hover, .drawer a:hover{text-decoration: none;}
   	margin-right: 8px;
   	width: 3em;
 	}
+}
+
+.label-block, .badge-block{
+  display: inline-block;
 }
 
 //Flag

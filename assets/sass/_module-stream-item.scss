@@ -5,7 +5,7 @@
   @include innerRow();
 	padding-top:$baseFontSize/2;
 	}
-	.pub-meta{
+	.badge-container.feed-badge-container{
 	@include column(12);
 	line-height: 1.4;
 	padding-top: 7px;
