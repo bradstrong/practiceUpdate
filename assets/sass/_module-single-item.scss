@@ -54,7 +54,14 @@ article.single-item{
   	ul.circle, ul.circle li{list-style-type: circle;}//.circle - tinyMCE option "circle"
   	ul.square, ul.square li{list-style-type: square;}//.square - tineMCE option "square"
   	ul.no-bullet, ul.no-bullet li{list-style-type: none;}//.no-bullet - tonyMCE option "no bullet"
-
+  .item-header{
+    .pub-meta{
+    	@include column(12);
+    	line-height: 1.4;
+    	padding-top: 7px;
+    	padding-bottom: 7px;
+    }
+  }
  .item-content{
   .story-image-group{
       float:left;

@@ -4,7 +4,7 @@
 /* !Type */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .badge-container.feed-badge-container, .item-title-container, .action-bar, .item-container .expert-comment-container, .item-content-container, .item-content-section, .item-footer, .expert-comment-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .exploresectionentry .item-content-container, #formLogin, #formRegisterPrompt {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .badge-container.feed-badge-container, .item-title-container, .action-bar, .item-container .expert-comment-container, .item-content-container, .item-content-section, .item-footer, .expert-comment-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], article.single-item .item-header .pub-meta, .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .exploresectionentry .item-content-container, #formLogin, #formRegisterPrompt {
   float: left;
 }
 
@@ -30,7 +30,7 @@
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .badge-container.feed-badge-container, .item-title-container, .action-bar, .item-container .expert-comment-container, .item-content-container, .item-content-section, .item-footer, .expert-comment-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .exploresectionentry .item-content-container, #formLogin, #formRegisterPrompt {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .badge-container.feed-badge-container, .item-title-container, .action-bar, .item-container .expert-comment-container, .item-content-container, .item-content-section, .item-footer, .expert-comment-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], article.single-item .item-header .pub-meta, .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .exploresectionentry .item-content-container, #formLogin, #formRegisterPrompt {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -10154,13 +10154,27 @@ article.single-item ul.square, article.single-item ul.square li {
 article.single-item ul.no-bullet, article.single-item ul.no-bullet li {
   list-style-type: none;
 }
-/* line 59, ../sass/_module-single-item.scss */
+/* line 58, ../sass/_module-single-item.scss */
+article.single-item .item-header .pub-meta {
+  width: 100%;
+  line-height: 1.4;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+@media only screen and (max-width: 767px) {
+  /* line 58, ../sass/_module-single-item.scss */
+  article.single-item .item-header .pub-meta {
+    float: none;
+    width: auto;
+  }
+}
+/* line 66, ../sass/_module-single-item.scss */
 article.single-item .item-content .story-image-group {
   float: left;
   max-width: 33%;
   padding: 0 16px 8px 0;
 }
-/* line 65, ../sass/_module-single-item.scss */
+/* line 72, ../sass/_module-single-item.scss */
 article.single-item .item-content figure {
   background-color: #e6e7e8;
   border: 1px solid #e6e7e8;
@@ -10168,18 +10182,18 @@ article.single-item .item-content figure {
   padding: 8px;
   text-align: center;
 }
-/* line 71, ../sass/_module-single-item.scss */
+/* line 78, ../sass/_module-single-item.scss */
 article.single-item .item-content figure figcaption {
   padding: 7px 0 0px;
 }
-/* line 76, ../sass/_module-single-item.scss */
+/* line 83, ../sass/_module-single-item.scss */
 article.single-item section.take-home-message {
   background-color: #02b1c9;
   color: white;
   margin-bottom: 14px;
   padding: 7px 14px;
 }
-/* line 81, ../sass/_module-single-item.scss */
+/* line 88, ../sass/_module-single-item.scss */
 article.single-item section.take-home-message h2 {
   color: white;
   font-family: "museo-slab", serif;
@@ -10187,18 +10201,18 @@ article.single-item section.take-home-message h2 {
   padding-bottom: 14px;
   text-transform: capitalize;
 }
-/* line 88, ../sass/_module-single-item.scss */
+/* line 95, ../sass/_module-single-item.scss */
 article.single-item section.take-home-message .source-container {
   display: none;
 }
-/* line 94, ../sass/_module-single-item.scss */
+/* line 101, ../sass/_module-single-item.scss */
 article.single-item section.editors-note, article.single-item section.eo-description, article.single-item section.video-description {
   background-color: #e6e7e8;
   color: #887e6f;
   margin-bottom: 14px;
   padding: 7px 14px;
 }
-/* line 99, ../sass/_module-single-item.scss */
+/* line 106, ../sass/_module-single-item.scss */
 article.single-item section.editors-note h2, article.single-item section.eo-description h2, article.single-item section.video-description h2 {
   color: #887e6f;
   font-family: "museo-slab", serif;
@@ -10206,12 +10220,12 @@ article.single-item section.editors-note h2, article.single-item section.eo-desc
   padding-bottom: 14px;
   text-transform: capitalize;
 }
-/* line 107, ../sass/_module-single-item.scss */
+/* line 114, ../sass/_module-single-item.scss */
 article.single-item section.section-conference-coverage {
   border: none;
   box-shadow: none;
 }
-/* line 112, ../sass/_module-single-item.scss */
+/* line 119, ../sass/_module-single-item.scss */
 article.single-item section.section-conference-coverage ul,
 article.single-item section.section-conference-coverage ul ul,
 article.single-item section.section-conference-coverage ul li {
@@ -11492,31 +11506,37 @@ img.avatar .as50 {
   }
 }
 
-/* line 62, ../sass/_module-ad.scss */
-html.lt-ie9 .widget.ad.leaderboard .ad-content, html.lt-ie9 .widget.ad.leaderboard object, html.lt-ie9 .widget.ad.leaderboard embed {
-  /*       height: 90px; */
-  width: 728px;
-  max-width: 100% !important;
-}
-/* line 69, ../sass/_module-ad.scss */
-html.lt-ie9 .widget.ad.boombox .ad-content, html.lt-ie9 .widget.ad.boombox object, html.lt-ie9 .widget.ad.boombox embed {
-  height: 250px;
-  width: 300px;
-  max-width: 100% !important;
-}
-/* line 76, ../sass/_module-ad.scss */
-html.lt-ie9 .widget.ad.skyscraper .ad-content, html.lt-ie9 .widget.ad.skyscraper object, html.lt-ie9 .widget.ad.skyscraper embed {
-  height: 600px;
-  width: 160px;
-  max-width: 100% !important;
-}
-/* line 83, ../sass/_module-ad.scss */
-html.lt-ie9 .widget.ad.filmstrip .ad-content, html.lt-ie9 .widget.ad.filmstrip object, html.lt-ie9 .widget.ad.filmstrip embed {
-  height: 600px;
-  width: 300px;
-  max-width: 100% !important;
-}
-
+/* html.lt-ie9{
+  .widget.ad.leaderboard{
+    .ad-content, object, embed{
+/*       height: 90px; */
+                        /*
+     width: 728px;
+     max-width: 100% !important;
+   }
+ }
+ .widget.ad.boombox{
+   .ad-content, object, embed{
+     height: 250px;
+     width: 300px;
+     max-width: 100% !important;
+   }
+ }
+ .widget.ad.skyscraper{
+   .ad-content, object, embed{
+     height: 600px;
+     width: 160px;
+     max-width: 100% !important;
+   }
+ }
+ .widget.ad.filmstrip{
+   .ad-content, object, embed{
+     height: 600px;
+     width: 300px;
+     max-width: 100% !important;
+   }
+ }
+} */
 /* line 1, ../sass/_module-explore-section.scss */
 .explore-sections {
   width: 100%;

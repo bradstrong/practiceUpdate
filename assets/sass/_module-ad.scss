@@ -56,11 +56,12 @@
 // Hide leaderboard containers on mobile
 #leaderboardouter, #leaderboard{@media only screen and (max-width: $screenSmall) {display:none;}}
 
+//Removed 2014-01-10 due to conflicts with expandable boombox ad units
 //fix for ie8 and below
-html.lt-ie9{
+/* html.lt-ie9{
   .widget.ad.leaderboard{
     .ad-content, object, embed{
-/*       height: 90px; */
+/*       height: 90px; *//*
       width: 728px;
       max-width: 100% !important;
     }
@@ -86,4 +87,4 @@ html.lt-ie9{
       max-width: 100% !important;
     }
   }
-}
+ } */

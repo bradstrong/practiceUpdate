@@ -1,144 +1,104 @@
-/* !variables */
-/* $pri-orange: 	rgb(216,102,84); //# */
-/* $pri-orange: 	rgb(234,60,47); //# */
-/* !Type */
-/* !mixins */
-/* Single Item page elements*/
-/* line 3, ../sass/_module-single-item.scss */
-article.single-item {
-  /* Content lists 	 */
-  /* For Juneo, list styles must be wrapped in .contentpanel to avoid impacting UI  */
-  /* Accordion lists */
-}
-/* line 4, ../sass/_module-single-item.scss */
-article.single-item h2 {
-  color: #02b1c9;
-  text-transform: capitalize;
-  font-family: "museo-slab", serif;
-  font-size: ms(2);
-}
-/* line 10, ../sass/_module-single-item.scss */
-article.single-item h3 {
-  text-transform: uppercase;
-  font-size: ms(1);
-}
-/* line 15, ../sass/_module-single-item.scss */
-article.single-item .item-title-container .item-title {
-  color: #d75142;
-  font-family: "museo-slab", serif;
-  font-size: ms(1);
-  font-weight: bold;
-}
-/* line 27, ../sass/_module-single-item.scss */
-article.single-item ul,
-article.single-item ul ul
-ol,
-article.single-item ol ol {
-  margin-left: 17px;
-}
-/* line 32, ../sass/_module-single-item.scss */
-article.single-item ul,
-article.single-item ul li {
-  list-style-type: disc;
-}
-/* line 37, ../sass/_module-single-item.scss */
-article.single-item ol,
-article.single-item ol li {
-  list-style-type: decimal;
-}
-/* line 41, ../sass/_module-single-item.scss */
-article.single-item ul.accordion {
-  margin-left: 0;
-}
-/* line 44, ../sass/_module-single-item.scss */
-article.single-item ul.accordion, article.single-item ul.accordion li {
-  list-style-type: none;
-}
-/* line 46, ../sass/_module-single-item.scss */
-article.single-item ul.accordion .content ol, article.single-item ul.accordion .content ol li, article.single-item ul.accordion li .content ol, article.single-item ul.accordion li .content ol li {
-  list-style-type: decimal;
-}
-/* line 49, ../sass/_module-single-item.scss */
-article.single-item ul.accordion .content ul, article.single-item ul.accordion .content ul li, article.single-item ul.accordion li .content ul, article.single-item ul.accordion li .content ul li {
-  list-style-type: disc;
-}
-/* line 53, ../sass/_module-single-item.scss */
-article.single-item ul.disc, article.single-item ul.disc li {
-  list-style-type: disc;
-}
-/* line 54, ../sass/_module-single-item.scss */
-article.single-item ul.circle, article.single-item ul.circle li {
-  list-style-type: circle;
-}
-/* line 55, ../sass/_module-single-item.scss */
-article.single-item ul.square, article.single-item ul.square li {
-  list-style-type: square;
-}
-/* line 56, ../sass/_module-single-item.scss */
-article.single-item ul.no-bullet, article.single-item ul.no-bullet li {
-  list-style-type: none;
-}
-/* line 59, ../sass/_module-single-item.scss */
-article.single-item .item-content .story-image-group {
-  float: left;
-  max-width: 33%;
-  padding: 0 16px 8px 0;
-}
-/* line 65, ../sass/_module-single-item.scss */
-article.single-item .item-content figure {
-  background-color: #e6e7e8;
-  border: 1px solid #e6e7e8;
-  margin: 4px 0;
-  padding: 8px;
-  text-align: center;
-}
-/* line 71, ../sass/_module-single-item.scss */
-article.single-item .item-content figure figcaption {
-  padding: 7px 0 0px;
-}
-/* line 76, ../sass/_module-single-item.scss */
-article.single-item section.take-home-message {
-  background-color: #02b1c9;
-  color: white;
-  margin-bottom: 14px;
-  padding: 7px 14px;
-}
-/* line 81, ../sass/_module-single-item.scss */
-article.single-item section.take-home-message h2 {
-  color: white;
-  font-family: "museo-slab", serif;
-  border-bottom: 1px solid #bfebf1;
-  padding-bottom: 14px;
-  text-transform: capitalize;
-}
-/* line 88, ../sass/_module-single-item.scss */
-article.single-item section.take-home-message .source-container {
-  display: none;
-}
-/* line 94, ../sass/_module-single-item.scss */
-article.single-item section.editors-note, article.single-item section.eo-description, article.single-item section.video-description {
-  background-color: #e6e7e8;
-  color: #887e6f;
-  margin-bottom: 14px;
-  padding: 7px 14px;
-}
-/* line 99, ../sass/_module-single-item.scss */
-article.single-item section.editors-note h2, article.single-item section.eo-description h2, article.single-item section.video-description h2 {
-  color: #887e6f;
-  font-family: "museo-slab", serif;
-  border-bottom: 1px solid #a59e93;
-  padding-bottom: 14px;
-  text-transform: capitalize;
-}
-/* line 107, ../sass/_module-single-item.scss */
-article.single-item section.section-conference-coverage {
-  border: none;
-  box-shadow: none;
-}
-/* line 112, ../sass/_module-single-item.scss */
-article.single-item section.section-conference-coverage ul,
-article.single-item section.section-conference-coverage ul ul,
-article.single-item section.section-conference-coverage ul li {
-  list-style-type: none;
-  margin-left: 0;
-}
+/*
+Syntax error: Undefined mixin 'column'.
+        on line 59 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss, in `column'
+        from line 59 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss
+        from line 6 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/juneo-content.scss
+
+Backtrace:
+/Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss:59:in `column'
+/Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss:59
+/Users/brad/Sites/pu/practiceUpdate/assets/sass/juneo-content.scss:6
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:249:in `visit_mixin'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `map'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:316:in `visit_rule'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `map'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:316:in `visit_rule'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `map'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:316:in `visit_rule'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:224:in `block in visit_import'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:224:in `map'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:224:in `visit_import'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `map'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/root_node.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/engine.rb:315:in `_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/engine.rb:262:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/usr/local/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+/usr/local/bin/compass:23:in `load'
+/usr/local/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'column'.\A         on line 59 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss, in `column'\A         from line 59 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss\A         from line 6 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/juneo-content.scss"; }
