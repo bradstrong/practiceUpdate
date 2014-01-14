@@ -179,6 +179,17 @@ nav a:hover, .drawer a:hover{text-decoration: none;}
   	margin-right: 8px;
   	width: 3em;
 	}
+	&.badge-muted{
+    background: lighten($txtColor, 30%);
+	}
+}
+
+// badge in context
+.highlight .badge{
+  background-color:#1d7998;
+}
+.entry .badge{
+  margin-top: 7px;
 }
 
 .label-block, .badge-block{
