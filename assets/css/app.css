@@ -11030,6 +11030,21 @@ img.avatar .as50 {
   background-color: #15576d;
 }
 
+/* line 3, ../sass/_module-modal.scss */
+html.lt-ie9 .reveal-modal a.close-reveal-modal {
+  font-size: 2.2em;
+  line-height: .5;
+  position: relative;
+  float: right;
+  top: 0px;
+  right: 0px;
+  color: #aaa;
+}
+/* line 11, ../sass/_module-modal.scss */
+html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
+  cursor: pointer;
+}
+
 /* line 3, ../sass/_module-prompt.scss */
 .eic-welcome .alert-header-text {
   font-size: 23px;

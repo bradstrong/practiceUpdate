@@ -1,0 +1,16 @@
+html.lt-ie9{
+  .reveal-modal{
+    a.close-reveal-modal{
+    	font-size:2.2em;
+    	line-height: .5;
+    	position: relative;
+    	float:right;
+    	top: 0px;
+    	right: 0px;
+    	color: #aaa;
+    	&:hover{
+      	cursor: pointer;
+    	}
+    }
+  }
+}
