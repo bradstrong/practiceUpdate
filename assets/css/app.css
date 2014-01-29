@@ -9602,12 +9602,29 @@ experimental footer - left sidebar
   }
 }
 
+/* 
+
+mobile app landing
+
+*/
+@media screen and (max-width: 768px) {
+  /* line 109, ../sass/_module-landing-marketing.scss */
+  #landing-mobile-app .row .block-grid li, #landing-mobile-app .row .section-grid li {
+    float: none;
+  }
+
+  /* line 112, ../sass/_module-landing-marketing.scss */
+  #landing-mobile-app .row .block-grid li, #landing-mobile-app .row .section-grid li, #landing-mobile-app .row .section-grid li {
+    min-width: 140px;
+    max-width: 140px;
+  }
+}
 /*
 
 channel specific styles
 
 */
-/* line 112, ../sass/_module-landing-marketing.scss */
+/* line 128, ../sass/_module-landing-marketing.scss */
 .page-landing-cardiology .hero .page-banner {
   background-color: #363c46;
   background-image: url("../../content/marketing/cardiology-landing/cardio-ed-board-hero.jpg");
@@ -9624,19 +9641,19 @@ channel specific styles
   */
 }
 @media screen and (min-width: 1201px) {
-  /* line 112, ../sass/_module-landing-marketing.scss */
+  /* line 128, ../sass/_module-landing-marketing.scss */
   .page-landing-cardiology .hero .page-banner {
     background-position-x: 100%;
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 112, ../sass/_module-landing-marketing.scss */
+  /* line 128, ../sass/_module-landing-marketing.scss */
   .page-landing-cardiology .hero .page-banner {
     background-position-x: 115%;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 112, ../sass/_module-landing-marketing.scss */
+  /* line 128, ../sass/_module-landing-marketing.scss */
   .page-landing-cardiology .hero .page-banner {
     background-size: 70%;
     background-position-x: 105%;
@@ -9644,13 +9661,13 @@ channel specific styles
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 112, ../sass/_module-landing-marketing.scss */
+  /* line 128, ../sass/_module-landing-marketing.scss */
   .page-landing-cardiology .hero .page-banner {
     background-image: none;
   }
 }
 
-/* line 144, ../sass/_module-landing-marketing.scss */
+/* line 160, ../sass/_module-landing-marketing.scss */
 .page-landing-urology .hero .page-banner {
   background-color: #363c46;
   background-image: url("../../content/marketing/urology-landing/urology-ed-board-hero.jpg");
@@ -9667,19 +9684,19 @@ channel specific styles
   */
 }
 @media screen and (min-width: 1201px) {
-  /* line 144, ../sass/_module-landing-marketing.scss */
+  /* line 160, ../sass/_module-landing-marketing.scss */
   .page-landing-urology .hero .page-banner {
     background-position-x: 100%;
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 144, ../sass/_module-landing-marketing.scss */
+  /* line 160, ../sass/_module-landing-marketing.scss */
   .page-landing-urology .hero .page-banner {
     background-position-x: 115%;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 144, ../sass/_module-landing-marketing.scss */
+  /* line 160, ../sass/_module-landing-marketing.scss */
   .page-landing-urology .hero .page-banner {
     background-size: 70%;
     background-position-x: 105%;
@@ -9687,36 +9704,36 @@ channel specific styles
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 144, ../sass/_module-landing-marketing.scss */
+  /* line 160, ../sass/_module-landing-marketing.scss */
   .page-landing-urology .hero .page-banner {
     background-image: none;
   }
 }
 
-/* line 178, ../sass/_module-landing-marketing.scss */
+/* line 194, ../sass/_module-landing-marketing.scss */
 .brand-container .tagline {
   color: #d86654;
   font-size: 30px;
   padding-top: 30px;
 }
 
-/* line 184, ../sass/_module-landing-marketing.scss */
+/* line 200, ../sass/_module-landing-marketing.scss */
 .brand-container .tagline.inverse {
   color: #FFFFFF;
   padding-top: 0px;
 }
 
-/* line 189, ../sass/_module-landing-marketing.scss */
+/* line 205, ../sass/_module-landing-marketing.scss */
 .brand-container {
   margin-bottom: 40px;
 }
 
-/* line 192, ../sass/_module-landing-marketing.scss */
+/* line 208, ../sass/_module-landing-marketing.scss */
 .hero-image-caption {
   color: #FFF;
 }
 
-/* line 195, ../sass/_module-landing-marketing.scss */
+/* line 211, ../sass/_module-landing-marketing.scss */
 .page-content {
   margin-top: 40px;
 }

@@ -99,6 +99,22 @@
   }
 }
 
+/* 
+
+mobile app landing
+
+*/
+
+@media screen and (max-width: $screenSmall){    
+    #landing-mobile-app .row .block-grid li {
+      float:none;
+    }
+    #landing-mobile-app .row .block-grid li, #landing-mobile-app .row .section-grid li {
+      min-width: 140px;
+      max-width: 140px;
+    }
+}
+
 /*
 
 channel specific styles
