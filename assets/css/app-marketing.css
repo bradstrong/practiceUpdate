@@ -10006,48 +10006,6 @@ fieldset[disabled] .cta-button.active {
   font-family: "proxima-nova-condensed", sans-serif;
 }
 
-
-
-/* Channel Specific */
-.page-landing-dermatology .hero-image-caption {
-  text-align: left;
-  padding-left: 170px;
-}
-
-.page-landing-dermatology .hero-image-caption-container .expert-name {
-  width: 160px;
-  text-align: center;
-  margin: 0px 29px 0px 0px;
-}
-
-.page-landing-eyecare .hero-image-caption {
-  text-align: left;
-  padding-left: 140px;
-}
-
-.page-landing-eyecare .hero-image-caption-container .expert-name {
-  font-size:13px;
-  width: 125px;
-  text-align: center;
-  margin: 0px 28px 0px 0px;
-  padding:0px;
-}
-
-.page-landing-oncology .hero-image-caption {
-  text-align: left;
-  padding-left: 179px;
-}
-
-.page-landing-oncology .hero-image-caption-container .expert-name {
-  width: 165px;
-  text-align: center;
-  margin: 0px 29px 0px 0px;
-}
-
-.page-landing-oncology .hero-image-caption-container .expert-name:nth-child(2) {
-  margin: 0px 10px 0px 0px;
-}
-
 .page-heading-marketing {
   padding-top: .5em;
   padding-bottom: .5em;
@@ -10132,22 +10090,6 @@ fieldset[disabled] .cta-button.active {
   .page-banner-action .btn-cta {
     margin-top: -40px;
   }
-
-  .page-landing-oncology .hero-image-caption {
-    text-align: left;
-    padding-left: 125px;
-  }
-
-  .page-landing-oncology .hero-image-caption-container .expert-name {
-    margin: 0px 10px 0px 0px;
-    font-size:12px;
-  }
-  .page-landing-oncology .hero-image-caption-container .expert-name:nth-child(2) {
-    width:135px;
-    margin: 0px 0px 0px 0px;
-    font-size:12px;
-  }  
-
 }
 
 @media (max-width: 992px) {
