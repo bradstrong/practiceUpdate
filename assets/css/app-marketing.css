@@ -10088,7 +10088,7 @@ fieldset[disabled] .cta-button.active {
 
 @media (max-width: 1200px) {
   .page-banner-action .btn-cta {
-    margin-top: -40px;
+    margin-top: -20px;
   }
 }
 
