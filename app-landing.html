@@ -59,7 +59,10 @@ footer{
   background-color: rgb(149,148,160);
   color: rgb(255,255,255);
 }
-.row{max-width:1000px;}
+.row{
+  max-width:1000px;
+}
+
 .panel{
   background-color: rgb(29,121,152);
 }
@@ -100,6 +103,13 @@ footer a, footer a:hover{
   font-weight: bold;
   padding:5px;
 }
+
+@media (max-width: 1024px) {
+  .row{
+    max-width:100%;
+  }
+}
+
 </style>
 </head>
 <body id="landing-mobile-app" class="page-landing marketing"> <!-- .custom-mockup -->
