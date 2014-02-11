@@ -49,11 +49,23 @@ article.single-item{
     	.content ul, .content ul li{
       	list-style-type: disc;
     	}
+    	.content ul.accordion > li{
+      	list-style-type: none;
+    	}
   	}
   	ul.disc, ul.disc li{list-style-type: disc;}//.disc - ul defaukt
   	ul.circle, ul.circle li{list-style-type: circle;}//.circle - tinyMCE option "circle"
   	ul.square, ul.square li{list-style-type: square;}//.square - tineMCE option "square"
   	ul.no-bullet, ul.no-bullet li{list-style-type: none;}//.no-bullet - tonyMCE option "no bullet"
+
+  	/* Accordion components */
+.accordion-footer  {
+  padding: 7px 15px;
+  border-left: 1px solid #c9c1b8;
+  border-right: 1px solid #c9c1b8;
+}
+
+
   .item-header{
     .pub-meta{
     	@include column(12);
@@ -97,7 +109,9 @@ article.single-item{
     }
  	}
  	.expert-comment-content{}
-
+  .expert-comment-count{
+    color: #fff;
+  }
   section.editors-note, section.eo-description, section.video-description{
     	background-color: $pri-lt-grey;
     	color: $txtColor;
@@ -120,5 +134,17 @@ article.single-item{
       list-style-type: none;
       margin-left: 0;
     }
+  }
+  .publisher-access-inline{
+    @media only screen and (min-width: $screenSmall) {
+      float: right;
+      margin-left:15px;
+      width:50%;
+    }
+  }
+  /* external link to medline in item-source */
+  .link-medline{
+    margin-top:15px;
+    display: inline-block;
   }
 }

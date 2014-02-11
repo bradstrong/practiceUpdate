@@ -380,6 +380,12 @@ function puScrollSpy(){
 
   $.scrollSpy($(document));
 }
+
+// collapse additional authors in single-item-view
+$('#et-al-trigger').on('click', function(){
+  $('#et-al-content').fadeToggle( "slow", "swing" );
+  $('#et-al-trigger').fadeToggle( "fast", "swing" );
+});
 //events list xml http://www.globaleventslist.elsevier.com/rss.aspx?filterYears=2013&disciplineIds=68&specialtyIds=247
 //jquery parse xml http://api.jquery.com/jQuery.parseXML/
 

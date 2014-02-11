@@ -1,12 +1,12 @@
 /*
 Syntax error: Undefined mixin 'column'.
-        on line 59 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss, in `column'
-        from line 59 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss
+        on line 71 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss, in `column'
+        from line 71 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss
         from line 6 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/juneo-content.scss
 
 Backtrace:
-/Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss:59:in `column'
-/Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss:59
+/Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss:71:in `column'
+/Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss:71
 /Users/brad/Sites/pu/practiceUpdate/assets/sass/juneo-content.scss:6
 /usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:249:in `visit_mixin'
 /usr/local/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `visit'
@@ -101,4 +101,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'column'.\A         on line 59 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss, in `column'\A         from line 59 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss\A         from line 6 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/juneo-content.scss"; }
+  content: "Syntax error: Undefined mixin 'column'.\A         on line 71 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss, in `column'\A         from line 71 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-single-item.scss\A         from line 6 of /Users/brad/Sites/pu/practiceUpdate/assets/sass/juneo-content.scss"; }
