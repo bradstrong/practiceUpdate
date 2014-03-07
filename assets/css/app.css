@@ -8042,52 +8042,104 @@ a .icon-flip-vertical:before {
   content: "\f18b";
 }
 
+@font-face {
+  font-family: 'pu-icons';
+  src: url("../font/pu-icons.eot?-yn44y5");
+  src: url("../font/pu-icons.eot?#iefix-yn44y5") format("embedded-opentype"), url("../font/pu-icons.woff?-yn44y5") format("woff"), url("../font/pu-icons.ttf?-yn44y5") format("truetype"), url("../font/pu-icons.svg?-yn44y5#pu-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, ../sass/pu-icons.scss */
+[class^="pu-icon-"], [class*=" pu-icon-"] {
+  font-family: 'pu-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 26, ../sass/pu-icons.scss */
+.pu-icon-cardiology:before {
+  content: "\e600";
+}
+
+/* line 29, ../sass/pu-icons.scss */
+.pu-icon-dermatology:before {
+  content: "\e601";
+}
+
+/* line 32, ../sass/pu-icons.scss */
+.pu-icon-eyecare:before {
+  content: "\e602";
+}
+
+/* line 35, ../sass/pu-icons.scss */
+.pu-icon-oncology:before {
+  content: "\e603";
+}
+
+/* line 38, ../sass/pu-icons.scss */
+.pu-icon-primarycare:before {
+  content: "\e604";
+}
+
+/* line 41, ../sass/pu-icons.scss */
+.pu-icon-urology:before {
+  content: "\e605";
+}
+
 /* global elements */
-/* line 5, ../sass/_base.scss */
+/* line 6, ../sass/_base.scss */
 select {
   margin: 0 0 12px;
 }
 
-/* line 9, ../sass/_base.scss */
+/* line 10, ../sass/_base.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 10, ../sass/_base.scss */
+/* line 11, ../sass/_base.scss */
 a {
   word-wrap: break-word;
   -ms-hyphens: auto;
 }
 
-/* line 12, ../sass/_base.scss */
+/* line 13, ../sass/_base.scss */
 object, embed {
   display: block;
   height: auto;
   width: auto;
 }
 
-/* line 18, ../sass/_base.scss */
+/* line 19, ../sass/_base.scss */
 cite {
   /* 	font-style: normal; */
 }
 
-/* line 22, ../sass/_base.scss */
+/* line 23, ../sass/_base.scss */
 small {
   font-size: 85%;
 }
 
-/* line 24, ../sass/_base.scss */
+/* line 25, ../sass/_base.scss */
 blockquote {
   border-color: #02b1c9;
   color: #6e6d7b;
 }
-/* line 27, ../sass/_base.scss */
+/* line 28, ../sass/_base.scss */
 blockquote.bq-right {
   float: right;
   margin-left: 1em;
   width: 40%;
 }
-/* line 32, ../sass/_base.scss */
+/* line 33, ../sass/_base.scss */
 blockquote.bq-left {
   border-right: 1px solid #ddd;
   border-left: none;
@@ -8097,13 +8149,13 @@ blockquote.bq-left {
   text-align: right;
   width: 40%;
 }
-/* line 41, ../sass/_base.scss */
+/* line 42, ../sass/_base.scss */
 blockquote p {
   color: #6e6d7b;
   font-style: italic;
 }
 
-/* line 46, ../sass/_base.scss */
+/* line 47, ../sass/_base.scss */
 .comment-meta h5, .comment-meta .form-title, .comment-meta .cta-title {
   margin-top: 0px;
   margin-bottom: 7px;
@@ -11481,31 +11533,45 @@ html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
   margin: 0 auto 1px;
 }
 /* line 17, ../sass/_module-ad.scss */
+.widget.ad .ad-container .ad-title .ad-title-text:before {
+  content: "advertisement";
+}
+/* line 20, ../sass/_module-ad.scss */
 .widget.ad .ad-container .ad-title .ad-title-text {
   font-size: 10px;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-/* line 24, ../sass/_module-ad.scss */
+/* line 27, ../sass/_module-ad.scss */
 .widget.ad .ad-container .ad-content {
   background: transparent;
   display: block;
   overflow: hidden;
 }
 
-/* line 34, ../sass/_module-ad.scss */
+/* line 38, ../sass/_module-ad.scss */
+.entry.ad.ps-leaderboard .ad-title {
+  background-color: transparent;
+  color: #afa298;
+}
+
+/* line 45, ../sass/_module-ad.scss */
 .page-content .widget.ad {
   padding: 0 0 14px;
 }
+/* line 47, ../sass/_module-ad.scss */
+.page-content .widget.ad.banner {
+  padding: 0;
+}
 
-/* line 38, ../sass/_module-ad.scss */
+/* line 55, ../sass/_module-ad.scss */
 #leaderboard {
   max-width: 728px;
   margin: 0 auto 7px;
 }
 
-/* line 42, ../sass/_module-ad.scss */
+/* line 56, ../sass/_module-ad.scss */
 #leaderboardcontent {
   height: 90px;
   max-width: 728px;
@@ -11513,56 +11579,76 @@ html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
   max-height: 90px;
 }
 
-/* line 44, ../sass/_module-ad.scss */
+/* line 58, ../sass/_module-ad.scss */
+#ps3leaderboard {
+  height: auto;
+  max-width: 728px;
+  margin: 0 auto;
+  max-height: 90px;
+}
+
+/* line 62, ../sass/_module-ad.scss */
 #boombox1 {
   max-width: 300px;
 }
 
-/* line 45, ../sass/_module-ad.scss */
+/* line 63, ../sass/_module-ad.scss */
 #boombox1content {
   max-width: 300px;
   margin: 0 auto;
   max-height: 250px;
 }
 
-/* line 47, ../sass/_module-ad.scss */
+/* line 65, ../sass/_module-ad.scss */
 #boombox2 {
   max-width: 300px;
 }
 
-/* line 48, ../sass/_module-ad.scss */
+/* line 66, ../sass/_module-ad.scss */
 #boombox2content {
   max-width: 300px;
   margin: 0 auto;
   max-height: 250px;
 }
 
-/* line 50, ../sass/_module-ad.scss */
+/* line 69, ../sass/_module-ad.scss */
 #skyscraper {
   max-width: 160px;
 }
 
-/* line 51, ../sass/_module-ad.scss */
+/* line 70, ../sass/_module-ad.scss */
 #skyscrapercontent {
   max-width: 160px;
   margin: 0 auto;
   max-height: 600px;
 }
 
-/* line 53, ../sass/_module-ad.scss */
+/* line 73, ../sass/_module-ad.scss */
 #filmstrip1 {
   max-width: 300px;
 }
 
-/* line 54, ../sass/_module-ad.scss */
+/* line 74, ../sass/_module-ad.scss */
 #filmstrip1content {
   max-width: 300px;
   margin: 0 auto;
   max-height: 600px;
 }
 
+/* line 76, ../sass/_module-ad.scss */
+#jobboardfilmstrip {
+  max-width: 300px;
+}
+
+/* line 77, ../sass/_module-ad.scss */
+#jobboardfilmstripcontent {
+  max-width: 300px;
+  margin: 0 auto;
+  max-height: 600px;
+}
+
 @media only screen and (max-width: 768px) {
-  /* line 57, ../sass/_module-ad.scss */
+  /* line 82, ../sass/_module-ad.scss */
   #leaderboardouter, #leaderboard {
     display: none;
   }

@@ -14,6 +14,9 @@
 				text-align:left;
 				padding: 0px 7px 2px;
 				margin: 0 auto 1px;
+				.ad-title-text:before{
+      		content: "advertisement";
+    		}
 				.ad-title-text{
 					font-size: 10px;
 					font-weight: bold;
@@ -31,27 +34,49 @@
 	}
 }
 
+// customize titles for page section leaderboard ads
+.entry.ad.ps-leaderboard .ad-title{
+  background-color: transparent;
+  color: #afa298;
+}
+
+
+// provide padding for ads within page flow
 .page-content .widget.ad{
 	padding:0 0 $baseFontSize;
+	&.banner{//remove padding for job board banner ad
+  	padding:0;
+	}
 }
 
-#leaderboard{
-  max-width: 728px;
-  margin:0 auto $baseFontSize/2;
-}
+// setup base styles for formats
+
+//leaderboard 728x90
+#leaderboard{ max-width: 728px; margin:0 auto $baseFontSize/2;}
 #leaderboardcontent{height: 90px; max-width: 728px; margin: 0 auto; max-height: 90px;}
 
+#ps3leaderboard{height: auto; max-width: 728px; margin: 0 auto; max-height: 90px;}
+#ps3leaderboardcontent{}
+
+//boombox 300x250
 #boombox1{max-width: 300px;}
 #boombox1content{max-width: 300px; margin: 0 auto; max-height: 250px;}
 
 #boombox2{max-width: 300px;}
 #boombox2content{max-width: 300px; margin: 0 auto; max-height: 250px;}
 
+//skyscraper 160x600
 #skyscraper{max-width: 160px;}
 #skyscrapercontent{max-width: 160px; margin: 0 auto; max-height: 600px;}
 
+//filmstrip 300x600
 #filmstrip1{max-width: 300px;}
 #filmstrip1content{max-width: 300px; margin: 0 auto; max-height: 600px;}
+
+#jobboardfilmstrip{max-width: 300px;}
+#jobboardfilmstripcontent{max-width: 300px; margin: 0 auto; max-height: 600px;}
+
+
 
 // Hide leaderboard containers on mobile
 #leaderboardouter, #leaderboard{@media only screen and (max-width: $screenSmall) {display:none;}}

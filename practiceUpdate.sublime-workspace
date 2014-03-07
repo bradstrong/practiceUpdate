@@ -4,12 +4,36 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
 				"font",
-				"font-family"
+				"font-size"
 			],
 			[
 				"margin-",
-				"margin-top"
+				"margin-bottom"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"bowe",
+				"bower_components"
 			],
 			[
 				"_module-u",
@@ -22,10 +46,6 @@
 			[
 				"fun",
 				"function"
-			],
-			[
-				"padd",
-				"padding-left"
 			],
 			[
 				"mar",
@@ -110,10 +130,6 @@
 			[
 				"mo",
 				"mobileRow"
-			],
-			[
-				"bac",
-				"background"
 			],
 			[
 				"pre",
@@ -204,10 +220,6 @@
 				"addClass"
 			],
 			[
-				"margin",
-				"margin-bottom"
-			],
-			[
 				"backgro",
 				"background-color"
 			],
@@ -231,29 +243,45 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/brad/Sites/pu/practiceupdate/404.html",
-			"settings":
-			{
-				"buffer_size": 7224,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/brad/Sites/pu/practiceupdate/update.html",
-			"settings":
-			{
-				"buffer_size": 18580,
-				"line_ending": "Unix"
-			}
-		}
 	],
-	"build_system": "Packages/SASS/SASS (OSX).sublime-build",
+	"build_system": "",
 	"command_palette":
 	{
-		"height": 267.0,
+		"height": 67.0,
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insg",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"prett",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"gist",
+				"GitHub: Public Gist from Selection"
+			],
 			[
 				"new",
 				"File: New File Relative to Current View"
@@ -264,14 +292,6 @@
 			],
 			[
 				"pret",
-				"HTMLPrettify: Prettify"
-			],
-			[
-				"gist",
-				"GitHub: Public Gist from Selection"
-			],
-			[
-				"prett",
 				"HTMLPrettify: Prettify"
 			],
 			[
@@ -291,27 +311,24 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"Snippet: ",
 				"Snippet: mustache_include"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
 			],
 			[
 				"packa",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 575.0
+		"width": 655.0
 	},
 	"console":
 	{
-		"height": 125.0
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')"
+		]
 	},
 	"distraction_free":
 	{
@@ -324,144 +341,151 @@
 	},
 	"file_history":
 	[
-		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Users/brad/Sites/pu/practiceupdate/404.html",
-		"/Users/brad/Sites/pu/practiceUpdate/practiceUpdate.sublime-project",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-profile.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-profile.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-console.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_experimental-b.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_layout.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-user-directory.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/update.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/story-of-the-week.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_experimental-a.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_theme.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/news-item.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-recent.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/learn.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-top-bar.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/dev-app.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/app.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/topic-spotlight.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-page-footer.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/page-footer.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-ad.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_ad.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-explore-section.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/recent.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/foundation-overrides.css",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.topbar.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_my-custom-style.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/app.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_settings.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_state.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/css/app.css",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/feed-item.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-topic.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/preferences.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/top-bar.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/ad.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-explore-carousel.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.accordion.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/journal-scan-single-item.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/user-profile.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-form.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/news-single-item.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/_articles.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/sass/_module-user-console.scss",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/addthis.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/bio_experimental.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/login-register.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/sass/_module-user-topic.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/user-console.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_base.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-footer.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.offcanvas.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_module-cta.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/raphael.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/register.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/practiceupdate-ie.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/respond.src.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/practiceupdate-it.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/plugins.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/oncology.html",
-		"/Users/brad/.rnd",
-		"/Users/brad/.profile",
-		"/Users/brad/.bash_profile",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/404.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/registration-confirmation.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/explore.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/tamingselect.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/section.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/cta-meet-experts.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/modal-cme-onc-001.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/index.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/urology.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/primarycare.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/dermatology.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/cardiology.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/eyecare.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/modal-cme-onc-003.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/modal-cme-onc-002.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/modal-cme-onc-004.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/.gitignore",
-		"/Users/brad/Dropbox/Elsevier/_project/PracticeUpdate/Copy/ux-copy-changes.md",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/seminal-article-item.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/personal-info.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/help.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/posters.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/expert-opinion-item.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/experts.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/channel-list.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/channel-list.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/channel-list.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/user-profile.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/experts-copy.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/experts.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/experts-channel-list.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/feed.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/channel-list.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/mustache/author-meta.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/sass/_ad.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/marketing.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/_foundation-overrides-marketing.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/marketing.js",
-		"/etc/hosts",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/de3225710d60b15d0a6df5c356cb618685603156/_opacity.scssc",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/c41bfe3e0594ee6743c257e86d2cf5507d6658bd/_foundation-overrides.scssc",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/experts.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/sass/foundation-overrides.scss",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/c41bfe3e0594ee6743c257e86d2cf5507d6658bd/foundation-overrides.scssc",
-		"/Users/brad/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/.sass-cache/9446bd9a038f52b6135aaf4d34353a575830dcf0/_semantic-grid.scssc",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/cta-meet-experts.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/updates_2012-10-23.html",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/img/section/editorial_board_group.jpg",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/page-footer.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/experts.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_news.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/img/users/oncologyStat.png",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/content/json/ad.json",
-		"/Users/brad/Sites/pn-foundation/practiceUpdate/assets/mustache/ad.mustache",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/recent.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/content/json/explore_expert-opinion.json",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/plugins-ck.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/modernizr.foundation-ck.js",
-		"/Users/brad/Sites/pn-foundation/practiceupdate/assets/js/foundation/jquery.foundation.buttons.js"
+		"/Users/brad/Sites/pu-fe/app/asset/less/app.less",
+		"/Users/brad/Sites/pu-fe/app/_partial/ad.hbs",
+		"/Users/brad/Sites/pu-fe/bower_components/Font-Awesome/src/assets/less/site/layout.less",
+		"/Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss",
+		"/Users/brad/Sites/pu-fe/app/asset/less/layout.less",
+		"/Users/brad/Sites/pu-fe/app/_page/learn.hbs",
+		"/Users/brad/Sites/pu-fe/app/_layout/default.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/script.hbs",
+		"/Users/brad/Sites/pu-fe/app/asset/scss/_module-content-header.scss",
+		"/Users/brad/Sites/pu-fe/app/_partial/content-header.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/conference.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/cta.hbs",
+		"/Users/brad/Sites/pu-fe/node_modules/grunt-contrib-less/node_modules/less/test/less/errors/property-interp-not-defined.txt",
+		"/Users/brad/Sites/pu-fe/node_modules/grunt-contrib-less/node_modules/less/test/less/errors/property-interp-not-defined.less",
+		"/Users/brad/Sites/pu-fe/node_modules/grunt-contrib-watch/test/fixtures/multiTargets/lib/interrupt.js",
+		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/to/node_modules/htmlparser/tests/13-comment_in_text.js",
+		"/Users/brad/Sites/pu-fe/node_modules/grunt-contrib-less/node_modules/less/test/less/errors/comment-in-selector.less",
+		"/Users/brad/Sites/pu-fe/package.json",
+		"/Users/brad/Sites/pu-fe/app/_partial/nav-bar.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/section-sow.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/explore-unregistered.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/module-content-header.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/explore-editors.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/author-meta.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/update.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/journalscan-accordion.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/journalscan-accordion-single.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/discuss.hbs",
+		"/Users/brad/Sites/pu-fe/Gruntfile.js",
+		"/Users/brad/Sites/pu-fe/app/_data/cta-bcf-02.json",
+		"/Users/brad/Sites/pu-fe/app/_data/cta-bcf-01.json",
+		"/Users/brad/Sites/pu-fe/bower.json",
+		"/Users/brad/Sites/pu-fe/.sass-cache/de3225710d60b15d0a6df5c356cb618685603156/_background-clip.scssc",
+		"/Users/brad/Sites/pu-fe/node_modules/grunt-bower-requirejs/tasks/bower-requirejs.js",
+		"/Users/brad/Sites/pu-fe/node_modules/assemble/test/collection_tests.js",
+		"/Users/brad/Sites/pu-fe/app/_layout/layout-learn.hbs",
+		"/Users/brad/Sites/pu-fe/app/index.html",
+		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/test/helpers/i18n_test.js",
+		"/Users/brad/Sites/pu-fe/node_modules/grunt-contrib-less/node_modules/less/test/less/import/import-test-e.less",
+		"/Users/brad/Sites/pu-fe/node_modules/grunt-peon-gui/app/assets/tmpl/accordian.ejs",
+		"/Users/brad/Sites/pu-fe/app/_partial/account-question.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/action-bar.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/faq.hbs",
+		"/Users/brad/Sites/pu-fe/node_modules/bower/node_modules/handlebars/lib/handlebars/browser-suffix.js",
+		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/.bin/html-beautify",
+		"/Users/brad/Sites/pu-fe/app/_partial/head.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/user-profile-1.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/directory-board.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/directory-channel.hbs",
+		"/Users/brad/Sites/pu-fe/app/_data/experts.json",
+		"/Users/brad/Sites/pu-fe/app/_partial/experts.hbs",
+		"/Users/brad/Sites/pu-fe/app/asset/less/module/_ad.less",
+		"/Users/brad/Sites/pu-fe/app/_partial/channel-list-alt.hbs",
+		"/Users/brad/Library/Application Support/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/Users/brad/Sites/pu-fe/node_modules/grunt-contrib-concat/test/expected/default_options",
+		"/Users/brad/Sites/pu-fe/app/_partial/gtm.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/vcard.hbs",
+		"/Users/brad/Sites/pu-fe/app/_layout/layout-directory.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/vcard-inline.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/user-directory.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/user-nav.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/explore.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/channel-list.hbs",
+		"/Users/brad/Sites/pu-fe/app/_data/channel-list.json",
+		"/Users/brad/Sites/pu-fe/node_modules/permalinks/node_modules/moment/test/moment/days_in_month.js",
+		"/Users/brad/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/brad/Sites/pu-fe/app/_layout/layout-explore.hbs",
+		"/Users/brad/Sites/pu-fe/app/_layout/layout-profile.hbs",
+		"/Users/brad/Sites/pu-fe/app/_layout/layout-utility.hbs",
+		"/Users/brad/Sites/pu-fe/app/_layout/layout-update.hbs",
+		"/Users/brad/Sites/pu-fe/app/asset/less/module/_widget.less",
+		"/Users/brad/Sites/pu-fe/app/_data/user-profile.json",
+		"/Users/brad/Sites/pu-fe/app/_partial/user-console.hbs",
+		"/Users/brad/Sites/pu-fe/app/_data/ad.json",
+		"/Users/brad/Sites/pu-fe/node_modules/assemble/test/actual/assets_dot_slash.html",
+		"/Users/brad/Sites/pu-fe/app/_data/ad-boombox1.json",
+		"/Users/brad/Sites/pu-fe/app/_data/ad-leaderboard.json",
+		"/Users/brad/Sites/pu-fe/app/_partial/password-reset.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/profile-details.hbs",
+		"/Users/brad/Sites/pu-fe/node_modules/bower/lib/commands/update.js",
+		"/Users/brad/Sites/pu-fe/bower_components/bootstrap/less/wells.less",
+		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/to/node_modules/htmlparser/profile.getelement.js",
+		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/to/node_modules/htmlparser/profileresults.txt",
+		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/to/node_modules/htmlparser/profile.js",
+		"/Users/brad/Sites/pu-fe/node_modules/grunt-contrib-concat/test/expected/process_function",
+		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/to/node_modules/htmlparser/profile",
+		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/highlight.js/profile.js",
+		"/Users/brad/Sites/pu-fe/app/_partial/profile-card.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/profile.hbs",
+		"/Users/brad/Sites/pu-fe/app/asset/less/module/_page-section.less",
+		"/Users/brad/Sites/pu-fe/app/asset/less/theme.less",
+		"/Users/brad/Sites/pu-fe/app/_partial/top-bar.hbs",
+		"/Users/brad/Sites/pu-fe/node_modules/bower/node_modules/mout/date/totalDaysInYear.js",
+		"/Users/brad/Sites/pu-fe/node_modules/recess/node_modules/less/test/less/import/import-test-d.css",
+		"/Users/brad/Sites/pu-fe/node_modules/bower/node_modules/mout/number/toInt.js",
+		"/Users/brad/Sites/pu-fe/node_modules/assemble/README.md",
+		"/Users/brad/Downloads/daily-digest-2/subscription-daily-digest-primary-care.html",
+		"/Users/brad/Downloads/daily-digest-2/subscription-daily-digest-oncology.html",
+		"/Users/brad/Downloads/daily-digest-2/subscription-daily-digest-eyecare.html",
+		"/Users/brad/Downloads/daily-digest-2/subscription-daily-digest-dermatology.html",
+		"/Users/brad/Downloads/daily-digest-2/subscription-daily-digest-cardiology.html",
+		"/Users/brad/Downloads/daily-digest-2/subscription-daily-digest-urology.html",
+		"/Users/brad/Sites/pu-fe/app/_partial/feature-grid.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/editors-description.hbs",
+		"/Users/brad/Sites/pu-fe/app/_layout/layout-conference.hbs",
+		"/Users/brad/Sites/pu-fe/app/_layout/layout-single-item.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/full-text-access.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/journalscan.hbs",
+		"/Users/brad/Sites/pu-nl/dev/subscription-expert-insight.html",
+		"/Users/brad/Sites/pu-fe/app/_partial/modals.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/journalscan-tabs.hbs",
+		"/Users/brad/Sites/pu-fe/bower_components/bootstrap/less/variables.less",
+		"/Users/brad/Sites/pu-fe/bower_components/bootstrap/less/buttons.less",
+		"/Users/brad/Sites/pu-fe/bower_components/bootstrap/less/mixins.less",
+		"/Users/brad/Sites/pu-fe/app/asset/less/module/_landing-marketing.less",
+		"/Users/brad/Sites/pu-fe/dev/primarycare/primarycare.html",
+		"/Users/brad/Sites/pu-fe/dev/urology/urology.html",
+		"/Users/brad/Sites/pu-fe/dev/cardiology/cardiology.html",
+		"/Users/brad/Sites/pu-fe/app/_page/cardiology.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/urology.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/primarycare.hbs",
+		"/Users/brad/Sites/pu-fe/app/_page/primary-care.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/page-footer.hbs",
+		"/Users/brad/Sites/pu-fe/app/asset/less/module/_page-footer.less",
+		"/Users/brad/Sites/pu-fe/app/_partial/page-heading-marketing.hbs",
+		"/Users/brad/Sites/pu-fe/app/_layout/layout-marketing.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/carousel.hbs",
+		"/Users/brad/Sites/pu-fe/app/_partial/bio_experimental.hbs"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 106.0,
 		"where_history":
 		[
+			"*.hbs",
+			"*.less",
+			"*.hbs",
+			"*.less",
+			"*.hbs",
+			"*.less",
+			"*.scss",
 			""
 		]
 	},
@@ -470,134 +494,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"ms(",
-			"h3",
+			"<!",
+			"placehold.it",
+			"img src=\"",
+			"data-src",
+			"&text=",
+			"text=",
+			"data-src=\"holder.js/",
+			"section-sow",
+			"{{> section-sow",
+			"data-src=\"holder.js/",
+			"src=\"http://placehold.it/",
+			"src=\"http://placehold.it",
+			"icon-",
+			"publi",
+			"&",
+			"?",
+			"channel",
+			"#aux",
+			"colla",
+			".aux",
+			"user",
+			"content/img/users/Lee_Schwartzberg_2009_REVIS_tcm8-199719.jpg",
+			"single-channel",
 			"section-header",
-			"user-directory",
-			"user-group",
-			"item-source",
-			"title",
-			"user-detail-list",
-			"channel-list-container",
-			"footer-row",
-			"test",
-			"test.mustache",
-			"drawer",
-			"ad.scss",
-			"ad",
-			"baseFontSize",
-			"fixed",
-			"scroll",
-			"115px",
-			"95px",
-			"71px",
-			"59",
-			"h1",
-			"simple5",
-			"simple4",
-			"simple3",
-			"simple2",
-			"simple1",
-			".gif",
-			"load",
-			"news",
-			"mobile",
-			".static-container",
-			"@import",
-			".static-container",
-			"comment",
-			"sizset",
-			"login",
-			"footer",
-			"dashb",
-			"options",
-			"ul.accordion",
-			"title:after",
-			"div.title::after",
-			"rec",
-			"accor",
-			"border",
-			"border: none!important;",
-			".nav-header",
-			"extend",
-			"active",
-			"left",
-			"sticky",
+			"watch",
+			"each",
+			"page-section",
+			"theme",
+			"ul",
+			"false",
+			"h3",
+			"user-profile",
+			"div",
+			"true",
+			"default",
+			"{{#if bootstrap}}",
+			"confer",
+			"Alan W Partin MD",
+			"Alan J Wein MD",
+			"Roger R Dmochowski MD",
+			"urology",
+			"cardiology",
+			"band",
+			"default",
+			"container",
+			"padding-left",
+			"family",
+			"serifFontFamily",
+			"small",
 			"page-banner",
-			"page-banner-container",
-			"sidebar",
-			"#sidebar",
-			"margin",
-			"respond",
-			"float",
-			"cta",
-			"float",
-			"sidebar",
-			"pref",
-			"checked",
-			"channel-title",
-			"help-",
-			"buttons",
-			"load",
-			"sign",
-			"sidebar",
-			"view",
-			"dashboard",
-			"meet",
-			".view-more-button",
-			"section-widget",
-			"journal-title",
-			"cite",
-			"checked",
-			"floationg",
-			"reg-block",
-			"personal-info-wrapper",
-			"markrting",
-			"width100",
-			"user-profile-section-title",
-			"user-profile-section",
-			"item-title",
-			"extend",
-			"header",
-			"ltTan",
-			"pub",
-			".pub",
-			"form-header",
-			"name",
-			"<span class=\"help-block\">",
-			"name",
-			"<span class=\"help-block\">",
-			"<small class=\"help-text\">",
-			"help-text",
-			"help-block",
-			"cta-title",
-			"help-block",
-			"legend",
-			"primary",
-			"accord",
-			"form>",
-			"form",
-			"tabs",
-			"console",
-			"page-",
-			"main-nav",
-			"commentary",
-			"item-source",
+			"banner",
+			"true",
+			"small",
+			"brand",
+			"four columns",
+			"grunt.loadNpmTasks",
+			"@btn-default-bg;",
+			".alert-default;",
+			"panel",
+			"li class=\"entry\"",
+			"asco",
+			"cme",
+			"<p><a class=\"item-title tiny-title\">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a></p>",
+			"        <p>...</p>\n        <p><a href=\"#\" class=\"btn btn-primary\">Button</a> <a href=\"#\" class=\"btn btn-default\">Button</a></p>",
+			"<h3><a class=\"item-title tiny-title\">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a></h3>",
+			"Thumbnail label",
+			"media-list",
+			"media",
+			"asco",
+			"Seminal Articles—",
+			"aux",
+			"background-",
+			"ul",
+			"page-header",
+			".page-header",
+			"collapse in",
+			"video",
+			"div",
+			"span",
+			"a",
+			"</li>",
+			"<li>",
+			"button",
+			"li",
+			"list-widget-list",
+			"container",
+			"list",
+			"inline",
+			"$base-font-size",
+			"each",
+			"if",
+			"{{assets}}",
+			"img",
+			"p",
+			"</p>",
+			"stream",
+			"bower",
+			"dd",
+			"sprite",
+			"botstrap",
+			"dev",
 			"$",
-			"$widthpopup",
-			"$exploresectionBottomborder",
+			"assets",
+			"main",
+			"off",
+			"}}\n",
+			"Pellentesque",
+			"flag-",
+			"content",
+			"commentary",
+			"stream-item-container",
+			"enter your",
+			"page-content",
+			"3",
+			"bottom",
+			"{{",
+			"{{>",
+			"sidebar",
+			"top-bar",
+			"sgream",
+			"stream",
+			"$$topbar-breakpoint",
+			"topBarBreakPoint",
+			"$headerFontFamily",
+			"$base-font-size",
+			"padding-bottom",
 			"top",
-			"4d4d4d",
-			"side",
-			"active",
-			"side-nav",
-			"bold",
-			"extend",
-			"border-left",
-			"border",
-			"size",
-			"text",
-			"base"
+			"js//usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/lib/../templates/upgrade/../../"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -605,6 +629,21 @@
 		"regex": false,
 		"replace_history":
 		[
+			"data-src=\"holder.js/",
+			"$topbar-breakpoint",
+			"$header-font-family",
+			".inline-list",
+			"$medium-screen",
+			"grid-column",
+			"$small-screen",
+			"$column-gutter",
+			"@include grid-column(",
+			"grid-column(",
+			"$topbar-height",
+			"grid-row(collapse)",
+			"grid-row(nest)",
+			"grid-row",
+			"$base-font-size",
 			"pref5",
 			"pref4",
 			"pref3",
@@ -626,70 +665,14 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/brad/Sites/pu/practiceupdate/404.html",
-					"settings":
-					{
-						"buffer_size": 7224,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1983.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/brad/Sites/pu/practiceupdate/update.html",
-					"settings":
-					{
-						"buffer_size": 18580,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3451.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -722,9 +705,14 @@
 	{
 		"height": 100.0
 	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "practiceUpdate.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -733,328 +721,516 @@
 		"selected_items":
 		[
 			[
-				"news",
-				"news-item.html"
+				"app.j",
+				"app/asset/js/app.js"
 			],
 			[
-				"theme",
-				"assets/sass/_theme.scss"
+				"layout-u",
+				"app/_layout/layout-update.hbs"
 			],
 			[
-				"story",
-				"story-of-the-week.html"
+				"defa",
+				"app/_layout/default.hbs"
 			],
 			[
-				"exper",
-				"assets/sass/_experimental-a.scss"
+				"sugg",
+				"app/_partial/suggested-topics.hbs"
 			],
 			[
-				"overr",
-				"assets/sass/_foundation-overrides.scss"
-			],
-			[
-				"foundat",
-				"assets/sass/_foundation-overrides.scss"
+				"content-",
+				"app/_partial/content-header.hbs"
 			],
 			[
 				"upd",
-				"update.html"
+				"app/_page/update.hbs"
 			],
 			[
-				"module.",
-				"assets/sass/_module.scss"
+				"app.less",
+				"app/asset/less/app.less"
+			],
+			[
+				"bcf",
+				"app/_data/cta-bcf-02.json"
+			],
+			[
+				"cta",
+				"app/_partial/cta.hbs"
+			],
+			[
+				"ad.",
+				"app/_partial/ad.hbs"
+			],
+			[
+				"layout.",
+				"app/asset/less/layout.less"
+			],
+			[
+				"accor",
+				"app/_page/journalscan-accordion.hbs"
+			],
+			[
+				"acco",
+				"app/_page/journalscan-accordion.hbs"
+			],
+			[
+				".hbs",
+				"app/_partial/cta.hbs"
+			],
+			[
+				"lay",
+				"app/asset/less/layout.less"
 			],
 			[
 				"direc",
-				"assets/sass/_module-user-directory.scss"
+				"app/_page/directory-channel.hbs"
 			],
 			[
-				"footer",
-				"assets/mustache/page-footer.mustache"
-			],
-			[
-				"update",
-				"update.html"
-			],
-			[
-				"expe",
-				"assets/sass/_experimental-b.scss"
-			],
-			[
-				"modul",
-				"assets/sass/_module.scss"
-			],
-			[
-				"module-ad",
-				"assets/sass/_module-ad.scss"
-			],
-			[
-				"ad",
-				"assets/sass/_ad.scss"
-			],
-			[
-				"module",
-				"assets/sass/_module-explore-section.scss"
-			],
-			[
-				"experiment",
-				"assets/sass/_experimental-b.scss"
-			],
-			[
-				"layou",
-				"assets/sass/_layout.scss"
-			],
-			[
-				"mod",
-				"assets/sass/_module.scss"
-			],
-			[
-				"recent",
-				"assets/mustache/recent.mustache"
-			],
-			[
-				"layo",
-				"assets/sass/_layout.scss"
-			],
-			[
-				"prof",
-				"assets/sass/_module-user-profile.scss"
+				"vca",
+				"app/_partial/vcard.hbs"
 			],
 			[
 				"user",
-				"assets/mustache/user-profile.mustache"
+				"app/_page/user-directory.hbs"
 			],
 			[
-				"learn",
-				"learn.html"
+				"experts",
+				"app/_data/experts.json"
 			],
 			[
-				"the",
-				"assets/sass/_theme.scss"
+				"ad.less",
+				"app/asset/less/module/_ad.less"
 			],
 			[
-				"top",
-				"assets/sass/_module-top-bar.scss"
+				"channel-l",
+				"app/_partial/channel-list-alt.hbs"
 			],
 			[
-				"them",
-				"assets/sass/_theme.scss"
+				"update",
+				"app/_page/update.hbs"
 			],
 			[
-				"dev",
-				"assets/js/foundation/dev-app.js"
+				"grunt",
+				"Gruntfile.js"
 			],
 			[
-				"app.js",
-				"assets/js/foundation/app.js"
+				"scrip",
+				"app/_partial/script.hbs"
 			],
 			[
-				"found",
-				"assets/sass/_foundation-overrides.scss"
-			],
-			[
-				"founda",
-				"assets/css/foundation-overrides.css"
-			],
-			[
-				"topic",
-				"assets/mustache/topic-spotlight.mustache"
-			],
-			[
-				"stor",
-				"story-of-the-week.html"
-			],
-			[
-				"upda",
-				"update.html"
-			],
-			[
-				"ad.scss",
-				"assets/sass/_ad.scss"
-			],
-			[
-				"experimen",
-				"assets/sass/_experimental-a.scss"
-			],
-			[
-				"modu",
-				"assets/sass/_module.scss"
-			],
-			[
-				"app",
-				"assets/sass/app.scss"
-			],
-			[
-				"sett",
-				"assets/sass/_settings.scss"
-			],
-			[
-				"state",
-				"assets/sass/_state.scss"
-			],
-			[
-				"topb",
-				"assets/sass/_module-top-bar.scss"
-			],
-			[
-				"feed",
-				"assets/mustache/feed-item.mustache"
-			],
-			[
-				"topi",
-				"assets/mustache/topic-spotlight.mustache"
-			],
-			[
-				"usert",
-				"assets/mustache/user-topic.mustache"
-			],
-			[
-				"prefer",
-				"preferences.html"
-			],
-			[
-				"ad.m",
-				"assets/mustache/ad.mustache"
-			],
-			[
-				"_module",
-				"assets/sass/_module.scss"
-			],
-			[
-				"_module-ad",
-				"assets/sass/_module-ad.scss"
-			],
-			[
-				"foundati",
-				"assets/sass/_foundation-overrides.scss"
-			],
-			[
-				"layout",
-				"assets/sass/_layout.scss"
-			],
-			[
-				"my",
-				"assets/sass/_my-custom-style.scss"
-			],
-			[
-				"page",
-				"assets/sass/_module-page-footer.scss"
-			],
-			[
-				"accordi",
-				"assets/js/foundation/jquery.foundation.accordion.js"
-			],
-			[
-				"login",
-				"assets/mustache/login-register.mustache"
-			],
-			[
-				"_ad",
-				"assets/sass/_ad.scss"
-			],
-			[
-				"oncology",
-				"oncology.html"
-			],
-			[
-				"expl",
-				"explore.html"
-			],
-			[
-				"explore",
-				"explore.html"
-			],
-			[
-				"base",
-				"assets/sass/_base.scss"
-			],
-			[
-				"pref",
-				"preferences.html"
-			],
-			[
-				"over",
-				"assets/sass/_foundation-overrides.scss"
-			],
-			[
-				"up",
-				"update.html"
-			],
-			[
-				"settin",
-				"assets/sass/_settings.scss"
-			],
-			[
-				"uro",
-				"urology.html"
-			],
-			[
-				"eye",
-				"eyecare.html"
-			],
-			[
-				"app.scs",
-				"assets/sass/app.scss"
-			],
-			[
-				"prim",
-				"primarycare.html"
-			],
-			[
-				"inde",
-				"index.html"
-			],
-			[
-				"onco",
-				"oncology.html"
-			],
-			[
-				"_ad.",
-				"assets/sass/_ad.scss"
-			],
-			[
-				"semin",
-				"seminal-article-item.html"
-			],
-			[
-				"gitign",
-				".gitignore"
-			],
-			[
-				"my-c",
-				"assets/sass/_my-custom-style.scss"
-			],
-			[
-				"_mod",
-				"assets/sass/_module.scss"
-			],
-			[
-				"_lay",
-				"assets/sass/_layout.scss"
+				"script",
+				"app/_partial/script.hbs"
 			],
 			[
 				"chann",
-				"assets/mustache/channel-list.mustache"
+				"app/_partial/channel-list.hbs"
 			],
 			[
-				"oncolo",
-				"oncology.html"
+				"layout-expl",
+				"app/_layout/layout-explore.hbs"
 			],
 			[
-				"cardio",
-				"cardiology.html"
+				"user-prof",
+				"app/_page/user-profile-1.hbs"
 			],
 			[
-				"app.scss",
-				"assets/sass/app.scss"
+				"layout-pro",
+				"app/_layout/layout-profile.hbs"
 			],
 			[
-				"_sg",
-				".sass-cache/9446bd9a038f52b6135aaf4d34353a575830dcf0/_semantic-grid.scssc"
+				"layout-upda",
+				"app/_layout/layout-update.hbs"
 			],
 			[
-				"set",
-				"assets/sass/_settings.scss"
+				"layout-up",
+				"app/_layout/layout-update.hbs"
+			],
+			[
+				"widget",
+				"app/asset/less/module/_widget.less"
+			],
+			[
+				"prof",
+				"app/_page/user-profile-1.hbs"
+			],
+			[
+				"theme",
+				"app/asset/less/theme.less"
+			],
+			[
+				"profi",
+				"app/_partial/profile-details.hbs"
+			],
+			[
+				"profile",
+				"app/_partial/profile-card.hbs"
+			],
+			[
+				"upda",
+				"app/_page/update.hbs"
+			],
+			[
+				"user-profi",
+				"app/_data/user-profile.json"
+			],
+			[
+				"user-pro",
+				"app/_partial/user-profile.hbs"
+			],
+			[
+				"confere",
+				"app/_page/conference.hbs"
+			],
+			[
+				"page",
+				"app/_partial/page-footer.hbs"
+			],
+			[
+				"head",
+				"app/_partial/head.hbs"
+			],
+			[
+				"layout",
+				"app/asset/less/layout.less"
+			],
+			[
+				"author",
+				"app/_partial/author-list.hbs"
+			],
+			[
+				"vcard",
+				"app/_partial/vcard-inline.hbs"
+			],
+			[
+				"learn",
+				"app/_page/learn.hbs"
+			],
+			[
+				"vcar",
+				"app/_partial/vcard-inline.hbs"
+			],
+			[
+				"aboutus",
+				"app/_data/aboutus.md"
+			],
+			[
+				"nav",
+				"app/_partial/nav-bar.hbs"
+			],
+			[
+				"job",
+				"app/_partial/module-job-feed.hbs"
+			],
+			[
+				"sugges",
+				"app/_partial/suggested-topics.hbs"
+			],
+			[
+				"suggest",
+				"app/_data/suggested-topics.json"
+			],
+			[
+				"updat",
+				"app/_page/update.hbs"
+			],
+			[
+				"pu-v",
+				"app/asset/less/pu-variables.less"
+			],
+			[
+				"mixins",
+				"bower_components/bootstrap/less/mixins.less"
+			],
+			[
+				"app.l",
+				"app/asset/less/app.less"
+			],
+			[
+				"take",
+				"app/_partial/take-home-message.hbs"
+			],
+			[
+				"journ",
+				"app/_page/journalscan.hbs"
+			],
+			[
+				"layout-le",
+				"app/_layout/layout-learn.hbs"
+			],
+			[
+				"page-footer",
+				"app/_partial/page-footer.hbs"
+			],
+			[
+				"layou",
+				"app/_layout/layout-learn.hbs"
+			],
+			[
+				"avat",
+				"app/asset/less/module/_avatar.less"
+			],
+			[
+				"explore-e",
+				"app/_partial/explore-editors.hbs"
+			],
+			[
+				"mixins.l",
+				"bower_components/bootstrap/less/mixins.less"
+			],
+			[
+				"page-",
+				"app/asset/less/module/_page-footer.less"
+			],
+			[
+				"expl",
+				"app/_page/explore.hbs"
+			],
+			[
+				"conference",
+				"app/asset/less/module/_conference.less"
+			],
+			[
+				"flag.less",
+				"app/asset/less/module/_flag.less"
+			],
+			[
+				"cta.l",
+				"app/asset/less/module/_cta.less"
+			],
+			[
+				"cta.less",
+				"app/asset/less/module/_cta.less"
+			],
+			[
+				"explore",
+				"app/_page/explore.hbs"
+			],
+			[
+				"_ad",
+				"app/asset/less/module/_ad.less"
+			],
+			[
+				"footer",
+				"app/_partial/page-footer.hbs"
+			],
+			[
+				"footer.less",
+				"app/asset/less/module/_page-footer.less"
+			],
+			[
+				"content",
+				"app/_partial/content-header.hbs"
+			],
+			[
+				"pu-",
+				"app/asset/less/pu-variables.less"
+			],
+			[
+				"grun",
+				"Gruntfile.js"
+			],
+			[
+				"layout-s",
+				"app/_layout/layout-single-item.hbs"
+			],
+			[
+				"video",
+				"app/_partial/video-description.hbs"
+			],
+			[
+				"action",
+				"app/_partial/action-bar.hbs"
+			],
+			[
+				"jour",
+				"app/_page/journalscan.hbs"
+			],
+			[
+				"page-s",
+				"app/asset/less/module/_page-section.less"
+			],
+			[
+				"app",
+				"app/asset/less/app.less"
+			],
+			[
+				"page-sec",
+				"app/asset/less/module/_page-section.less"
+			],
+			[
+				"feature",
+				"app/asset/less/module/_feature-grid.less"
+			],
+			[
+				"feed",
+				"app/_partial/feed-item.hbs"
+			],
+			[
+				"feat",
+				"app/_partial/feature-grid.hbs"
+			],
+			[
+				"recent",
+				"app/_partial/module-recent.hbs"
+			],
+			[
+				"channel",
+				"app/_partial/channel-list.hbs"
+			],
+			[
+				"page-filter",
+				"app/_partial/page-filter.hbs"
+			],
+			[
+				"mixin.less",
+				"bower_components/bootstrap/less/mixins.less"
+			],
+			[
+				"nav-",
+				"app/_partial/nav-bar.hbs"
+			],
+			[
+				"content-header",
+				"app/_partial/content-header.hbs"
+			],
+			[
+				"page-f",
+				"app/asset/less/module/_page-footer.less"
+			],
+			[
+				"rmrc",
+				"app/_data/cta-rmrc-test.json"
+			],
+			[
+				"layout-update",
+				"app/_layout/layout-update.hbs"
+			],
+			[
+				"author-list",
+				"app/_partial/author-list.hbs"
+			],
+			[
+				"login-",
+				"app/_partial/login-register.hbs"
+			],
+			[
+				"login",
+				"app/_page/login.hbs"
+			],
+			[
+				"carous",
+				"app/_partial/carousel.hbs"
+			],
+			[
+				"login-reg",
+				"app/_partial/login-register.hbs"
+			],
+			[
+				"top",
+				"app/_partial/top-bar.hbs"
+			],
+			[
+				"authorlist",
+				"app/_partial/author-list.hbs"
+			],
+			[
+				"car",
+				"app/_partial/carousel.hbs"
+			],
+			[
+				"def",
+				"app/_layout/default.hbs"
+			],
+			[
+				"scri",
+				"app/_partial/script.hbs"
+			],
+			[
+				"overr",
+				"app/asset/scss/_foundation-overrides.scss"
+			],
+			[
+				"app.js",
+				"app/asset/js/app.js"
+			],
+			[
+				"carou",
+				"app/_partial/carousel.hbs"
+			],
+			[
+				"filter",
+				"app/_partial/page-filter.hbs"
+			],
+			[
+				"conte-",
+				"app/asset/scss/_module-content-header.scss"
+			],
+			[
+				"caro",
+				"app/_partial/carousel.hbs"
+			],
+			[
+				"top-bar",
+				"app/_data/top-bar.json"
+			],
+			[
+				"header",
+				"app/_partial/content-header.hbs"
+			],
+			[
+				"module-auth",
+				"app/asset/scss/_module-author.scss"
+			],
+			[
+				"module.s",
+				"app/asset/scss/_module.scss"
+			],
+			[
+				"module-str",
+				"app/asset/scss/_module-stream-item.scss"
+			],
+			[
+				"module.scss",
+				"app/asset/scss/_module.scss"
+			],
+			[
+				"stream",
+				"app/asset/scss/_module-stream-item.scss"
+			],
+			[
+				"base",
+				"app/asset/scss/_base.scss"
+			],
+			[
+				"layo",
+				"app/asset/scss/_layout.scss"
+			],
+			[
+				"dash",
+				"app/_partial/dashboard.hbs"
+			],
+			[
+				"layout-",
+				"app/_layout/layout-update.hbs"
+			],
+			[
+				"feed-",
+				"app/_partial/feed-item.hbs"
+			],
+			[
+				"most",
+				"app/_partial/module-most-read.hbs"
+			],
+			[
+				"suggess",
+				"app/_partial/module-suggested-topics.hbs"
+			],
+			[
+				"story",
+				"app/_data/explore_story-of-the-week.json"
+			],
+			[
+				"boomb",
+				"app/_data/ad-boombox1.hbs"
 			]
 		],
 		"width": 0.0
@@ -1067,10 +1243,24 @@
 		],
 		"width": 0.0
 	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 295.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }

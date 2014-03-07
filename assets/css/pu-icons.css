@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'pu-icons';
+  src: url("../font/pu-icons.eot?-yn44y5");
+  src: url("../font/pu-icons.eot?#iefix-yn44y5") format("embedded-opentype"), url("../font/pu-icons.woff?-yn44y5") format("woff"), url("../font/pu-icons.ttf?-yn44y5") format("truetype"), url("../font/pu-icons.svg?-yn44y5#pu-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, ../sass/pu-icons.scss */
+[class^="pu-icon-"], [class*=" pu-icon-"] {
+  font-family: 'pu-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 26, ../sass/pu-icons.scss */
+.pu-icon-cardiology:before {
+  content: "\e600";
+}
+
+/* line 29, ../sass/pu-icons.scss */
+.pu-icon-dermatology:before {
+  content: "\e601";
+}
+
+/* line 32, ../sass/pu-icons.scss */
+.pu-icon-eyecare:before {
+  content: "\e602";
+}
+
+/* line 35, ../sass/pu-icons.scss */
+.pu-icon-oncology:before {
+  content: "\e603";
+}
+
+/* line 38, ../sass/pu-icons.scss */
+.pu-icon-primarycare:before {
+  content: "\e604";
+}
+
+/* line 41, ../sass/pu-icons.scss */
+.pu-icon-urology:before {
+  content: "\e605";
+}
