@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="View all the latest news and articles, personalized for you, in a single view.">
+
+<link href="../assets/ico/favicon.ico'" rel="shortcut icon" type="image/x-icon" />
+<link rel="apple-touch-icon" href="../assets/ico/apple-touch-icon-precomposed.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="../assets/ico/apple-touch-icon-57@2x-precomposed.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="../assets/ico/apple-touch-icon-72@2x-precomposed.png" />
+
+<meta name="application-name" content="PracticeUpdate"/>
+<meta name="msapplication-TileColor" content="#3186a4"/>
+<meta name="msapplication-TileImage" content="c1da1cf2-3190-4f73-87f2-40d3444b0896.png"/>
+
+<title>PracticeUpdate : Refer a Friend</title>
+
+<!-- Include CSS Files -->
+<link rel="stylesheet" href="assets/css/app-marketing.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<!-- Include Modernizr -->
+<script src="assets/js/foundation/modernizr.foundation.js"></script>
+<script>
+(function() {
+  var config = {
+    kitId: 'zwv8ekz',
+    scriptTimeout: 3000
+  };
+  var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+})();
+</script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="assets/js/foundation/practiceupdate-ie.min.js"></script>
+<![endif]-->
+
+<!-- explicit Prefetch for static assets -->
+<link rel="dns-prefetch" href="//s3.amazonaws.com">
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
+
+</head>
+<body id="" class="page-landing-cardiology marketing">
+
+
+<div class="page-heading-band">
+  <!-- PAGE HEADER -->
+<div class="page-heading-container">
+  <header role="banner" class="container page-heading-marketing">
+    <div class="row">
+      <div class="col-sm-6 pu-branding-marketing">
+        <img src="../assets/img/logo-practiceupdate-inverse.png">
+      </div><!--/.pu-branding-marketing-->
+      <div class="col-sm-6 pres-by-els">
+        <span>presented by</span>&nbsp;<img src="../content/marketing/general-landing/elsevier-logo-header@2x.png" />
+      </div><!--/.pres-by-els-->
+    </div><!--/.row-->
+  </header><!--/.container-->
+</div><!--/.page-header-marketing-->
+
+</div><!--/.page-heading-band-->
+
+
+
+<!-- PAGE CONTENT -->
+<div class="page-content-container container">
+  <div class="page-content">
+			<div class="raf-container col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
+  			<div id="rafDiv">
+    			<div class="panel" style="box-shadow: 0px 2px 2px rgba(0,0,0,0.2);">
+      			<div class="panel-heading">
+        			<h4 class="panel-title">Email your PracticeUpdate invitations</h4>
+      			</div><!--/panel-heading-->
+      			<div class="panel-body">
+    	        <p class="lead">Invite as many colleagues as you wish. We’ll notify you when someone has registered.</p>
+              <form class="form-horizontal" role="form" id="formRaf">
+                <div class="form-group">
+                  <label for="rafInputEmail" class="col-sm-2 control-label">To</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="rafInputEmail" name="rafInputEmail" placeholder="Type email addresses (seperated by commas)" tabindex="1">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="rafInputFrom" class="col-sm-2 control-label">From</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="rafInputFrom" name="rafInputFrom" placeholder="Type in your name as you would like it to appear" tabindex="2" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-2">
+                    <a id="rafButtonSubmit" class="btn btn-primary" tabindex="3">Send</a>
+                  </div>
+                  <div class="col-sm-8">
+                    <div id="rafAlertSent" class="alert alert-success alert-sm" style="display:none; margin-bottom:0;">Invite successfully sent.</div>
+                  </div>
+                </div>
+                <hr>
+                <p>Or spread the word by copying and pasting this link into an email to share it with your colleagues.</p>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <label for="rafInputFrom" class="control-label sr-only">From</label>
+                    <input type="text" class="form-control input-lg ignore" id="rafInputLink" name="rafInputLink" value="http://prac.co/######" tabindex="4">
+                  </div><!--/.col-sm-12-->
+                </div>
+              </form>
+      			</div><!--/.panel-body-->
+      			<div class="panel-footer">
+              <a class="btn" data-toggle="modal" data-target="#modal-raftc" target="_blank">Terms &amp; Conditions</a>
+      			</div><!--.panel-footer-->
+    			</div><!--/.panel-->
+        </div><!--/#rafDiv-->
+			</div><!--/.raf-container-->
+  </div><!--/.page-content-->
+</div><!--/.page-content-container-->
+
+<!-- PAGE FOOTER -->
+
+<div class="page-footer-band">
+  <div class="page-footer-container container">
+    <footer class="page-footer">
+    <div class="footer-row">
+  <div class="social-links btn-group">
+  	<a class="btn btn-primary" href="http://www.facebook.com/practiceupdate"><i class="icon-facebook icon-2x"></i></a>
+  	<a class="btn btn-primary" href="http://www.twitter.com/practiceupdate"><i class="icon-twitter icon-2x"></i></a>
+  	<a class="btn btn-primary" href="https://plus.google.com/118384589571934081486" rel="publisher"><i class="icon-google-plus icon-2x"></i></a>
+  </div>
+</div>
+
+<div class="footer-row">
+<ul class="utility-links list-inline">
+    <li><a id="HelpURL" href="http://help.elsevier.com/app/answers/list/p/8398" target="_blank">help</a></li>
+    <li><a id="ContactUsURL" href="http://help.elsevier.com/app/ask_aer/p/8398" target="_blank">contact us</a></li>
+    <li><a href="/General/Advertise/">advertise</a></li>
+    <li><a href="/General/AboutUs/">about us</a></li>
+</ul>
+<ul class="policy-links list-inline">
+  <li><a target="_blank" href="http://www.elsevier.com/legal/privacy-policy">Privacy Policy</a></li>
+  <li><a target="_blank" href="http://www.elsevier.com/legal/elsevier-website-terms-and-conditions">Terms and Conditions</a></li>
+</ul>
+</div><!--/.utility-->
+
+<div class="footer-row legal">
+<div class="els-logo img-responsive"><img src="assets/img/elsevier_logo.png" alt="Elsevier Logo" /></div>
+<p class="copyright">PracticeUpdate&reg; is a registered trademark or Elsevier Inc.</p>
+<p class="copyright">Copyright &copy; 2013 Elsevier Inc. <br />All rights reserved.</p>
+</div>
+
+  </footer><!--/.page-footer-->
+  </div><!--/.page-footer-container-->
+</div><!--/.page-footer-band-->
+
+<!-- modal-raftc -->
+<div class="modal fade" id="modal-raftc" tabindex="-1" role="dialog" aria-labelledby="modal-raf-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="modal-raf-label">Email your PracticeUpdate invitations</h4>
+      </div>
+      <div class="modal-body">
+        <p>PracticeUpdate Refer A Colleague Promotion Official Rules</p>
+        <p>Sponsor: Elsevier Inc., 360 Park Avenue South, New York, NY 10010</p>
+        <p>Eligibility: The PracticeUpdate Refer A Colleague Promotion (the &quot;Promotion&quot;) is open to physicians practicing within the fifty (50) United States and the District of Columbia who are registered users of PracticeUpdate. Employees of Sponsor and its parents, subsidiaries, affiliated companies and agents, and their immediate families or those living in the same household, are not eligible to enter. VOID IN PUERTO RICO, CANADA AND WHERE PROHIBITED OR RESTRICTED.</p>
+        <p>Promotion Period: The Promotion shall commence at 12:01:01 AM EDT on February 1, 2014 and shall end at 11:59:59 PM EDT on December 31, 2014 (&quot;Promotion Period&quot;). Sponsor's server is the official clock for the Promotion.</p>
+        <p>How to Enter: To participate in the Promotion, registered users of PracticeUpdate may refer their colleagues through the link within the &quot;Refer-A-Friend&quot; email communication by providing valid email address(es). Each colleague can be referred only once.</p>
+        <p>Incentive: For every referred colleague who registers for their own PracticeUpdate accounts within three (3) months of referral by entrant, entrant will be eligible to receive a one-time discount code for twenty percent (20%) off select Elsevier products available at <a href="http://www.us.elsevierhealth.com" target="_blank">www.us.elsevierhealth.com</a>. Upon certification by Sponsor as an eligible entrant, the entrant will receive the discount code. No assignment or transfer of discount incentive is permitted.</p>
+        <p>Consent to Use of Personal Information: Submission of referral constitutes entrant's consent for Sponsor to use entrant's email address for purposes of marketing and promotion of Sponsor's products and services. By accepting the discount incentive, the entrant acknowledges compliance with these Official Rules and agrees to permit Sponsor to use their name in any media for any commercial, advertising, publicity or promotional purpose, without limitation or additional compensation or permission, unless prohibited by law.</p>
+        <p>Limitations of Liability/Reserved Rights: Neither Sponsor, its parent, subsidiary or affiliated companies, nor its advertising or promotional agencies shall have any obligation, liability or responsibility with regard to (i) referrals that contain incorrect or inaccurate information or do not comply with these Official Rules, (ii) referrals that are lost, late, incomplete, illegible, unintelligible, damaged or otherwise not received by the Sponsor, in whole or in part, due to computer, technical or other error of any kind, (iii) telephone, electronic, hardware, software, network, Internet or computer malfunctions, failures or difficulties, or (iv) any damages or losses of any kind caused by any incentive or resulting from participation in the Promotion, accessing, uploading or downloading data in connection with the Promotion, or acceptance, possession or use of any incentive. Sponsor, in its sole discretion, further reserves the right to cancel, terminate, suspend or modify the Promotion if the Promotion cannot be completed as planned.</p>
+        <p>Release: BY ENTERING THE PROMOTION, THE ENTRANT AGREES TO RELEASE AND HOLD HARMLESS SPONSOR AND ITS PARENT, SUBSIDIARY, AND AFFILIATED COMPANIES, AND EACH OF THEIR DIRECTORS, OFFICERS, EMPLOYEES, REPRESENTATIVES, VENDORS, AND AGENCIES, FROM ANY AND ALL LIABILITY WHATSOEVER, AND WAIVE ANY AND ALL CAUSES OF ACTION, RELATED TO ANY CLAIMS, COSTS, INJURIES, LOSSES, LIABILITIES, OR DAMAGES OF ANY KIND (INCLUDING, WITHOUT LIMITATION, PERSONAL INJURY, DEATH, DAMAGE TO OR DESTRUCTION OF PROPERTY, RIGHTS OF PUBLICITY OR PRIVACY, DEFAMATION OR PORTRAYAL IN A FALSE LIGHT, WHETHER INTENTIONAL OR UNINTENTIONAL) ARISING OUT OF OR IN CONNECTION WITH THE PROMOTION OR THE ACCEPTANCE, POSSESSION, OR USE OF ANY INCENTIVE, WHETHER UNDER A THEORY OF CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE, WHETHER ACTIVE, PASSIVE, OR IMPUTED), STRICT LIABILITY, PRODUCT LIABILITY, CONTRIBUTION, OR ANY OTHER THEORY, TO THE EXTENT PERMITTED BY LAW.</p>
+        <p>Construction: The construction, validity, interpretation and enforceability of these Official Rules shall be governed by and construed in accordance with the laws of the State of New York, without giving effect to its conflicts of law principles.</p>
+        <p>Rules: By entering the Promotion, entrant agrees to abide by the terms and conditions of these Official Rules, which are final on all matters pertaining to the Promotion, and warrants that he/she is eligible to participate in the Promotion.</p>
+        <p>Elsevierhealth.com Disclaimer</p>
+        <p>20% discount offer applies to all Medicine Reference and Textbooks including print books, PDF, VST &amp; ePub ebooks, as well as Clinics Review Articles subscriptions and individual issues. This offer is not valid on Institutional Video Series, Pageburst titles, HESI Products, Kindle or Nook e-books, select Nursing, Dentistry and Veterinary textbooks, ClincalKey packages, mobile apps, medical clothing or accessories, previous or bulk purchases, clearance titles or in combination with any other promotion. This Special Offer and FREE Shipping only valid for purchases by individual U.S. customers at <a href="http://www.elsevierhealth.com" target="_blank">www.us.elsevierhealth.com.</a> Current prices and offers subject to change without notice.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/#modal-raftc-->
+
+<!-- modal-raftc -->
+<div class="modal fade" id="modal-rafcomplete" tabindex="-1" role="dialog" aria-labelledby="modal-raf-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="modal-raf-label">Your referral has been sent!</h4>
+      </div>
+      <div class="modal-body">
+      <p class="lead text-center">We've emailed you a coupon to claim your 20% off.</p>
+      <p class="text-center">
+        <a class="btn btn-primary btn-lg" href="http://www.practiceupdate.com" title="PracticeUpdate">Return to PracticeUpdate</a>
+      </p>
+      </div>
+      <div class="modal-footer">
+      <div class="progress" style="height:4px; border-radius:2px;">
+        <div class="progress-bar progress-bar-info" id="redirProgBar" role="progressbar" style="width:0%"></div>
+      </div>
+      <p class="text-center lead">You will be redirected to PracticeUpate in</p>
+      <div class="text-center">
+        <span class="fa-stack fa-lg">
+          <span id="timer" class="fa fa-stack-1x"></span>
+          <i class="fa fa-square-o fa-stack-2x"></i>
+        </span>
+      <div>
+      <p class="text-center lead">seconds</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/#modal-raftc-->
+
+<!-- Included JS Files (Uncompressed) -->
+<script src="assets/js/foundation/jquery.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+
+<!-- Refer a friend validation and interactions -->
+<script>
+// Set value of user raf link
+var userRafLink = 'http://prac.co/######';
+// set timer value for redirect
+var rafcount=10;
+
+<!--
+// Form Validation
+// Using Jquery Validation plugin - https://github.com/jzaefferer/jquery-validation
+// Reference for integrating with BS3 validation states http://stackoverflow.com/questions/18754020/bootstrap-3-with-jquery-validation-plugin
+-->
+
+// Set Defaults for all forms
+$.validator.setDefaults({
+  debug: true,
+  success: "valid",
+  errorElement: "span",
+  errorClass: "help-block",
+  highlight: function(element, errorClass, validClass) {
+    $(element).closest('.form-group').addClass('has-error');
+  },
+  unhighlight: function(element, errorClass, validClass) {
+    $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+  },
+  errorPlacement: function(error, element) {
+    if (element.parent('.input-group').length || element.prop('type') === 'checkbox' || element.prop('type') === 'radio') {
+      error.insertAfter(element.parent());
+    } else {
+      error.insertAfter(element);
+    }
+  }
+});
+
+// On document ready, validate forms
+$(document).ready(function(){
+
+// Set #rafInputLink to userRafLink
+$('#rafInputLink').val(userRafLink);
+$('#rafInputLink').attr('placeholder', userRafLink);
+
+// Rules for individual forms
+
+// rules for RAF Modal Form
+var rafValidator = $('#formRaf').validate({
+  ignore: ".ignore",
+  rules: {
+    rafInputFrom: "required",
+    rafInputEmail: {
+      required: true,
+    }
+  },
+  messages: {
+    rafInputFrom: "Please specify your name",
+    rafInputEmail: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    }
+  }
+});
+});
+
+/*-- END Form Validation --*/
+
+// fade raf alert sent
+$('#rafButtonSubmit').on('click', function(){
+  $('#modal-rafcomplete').modal('show');
+  // set timer countdown text
+  $("#timer").text(rafcount);
+});
+
+$('#modal-rafcomplete').on('shown.bs.modal', function () {
+  var curcount = rafcount;
+  var counter=setInterval(timer, 1000); //1 second
+  function timer()
+  {
+    curcount--;
+    if (curcount <= 0)
+    {
+      clearInterval(counter);
+      //counter ended, do something here
+      // redirect to practiceupdate homepage
+      window.location.href = "http://www.practiceupdate.com";
+      return;
+    }
+
+    //Do code for showing the number of seconds here
+    var progcount = (curcount/rafcount)*100;
+    $('#redirProgBar').css( "width", function() {
+    return (100-progcount)+'%';
+    });
+    console.log(progcount);
+    $("#timer").text(curcount); // watch for spelling
+  }
+})
+
+// Select user link on field focus
+$("#rafInputLink").focus(function() {
+    $(this).select();
+});
+$("#rafInputLink").mouseup(function(e){
+  e.preventDefault();
+});
+$("#rafInputLink").focusout(function(e){
+  $(this).val(userRafLink);});
+</script>
+
+</body>
+</html>
