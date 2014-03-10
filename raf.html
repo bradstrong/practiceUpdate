@@ -295,7 +295,7 @@ var rafValidator = $('#formRaf').validate({
 
 // fade raf alert sent
 $('#rafButtonSubmit').on('click', function(){
-  $('#modal-rafcomplete').modal('show');
+  $('#modal-rafcomplete').modal({show: true, backdrop: 'static'});
   // set timer countdown text
   $("#timer").text(rafcount);
 });
