@@ -244,12 +244,13 @@ $.validator.setDefaults({
   debug: true,
   success: "valid",
   errorElement: "span",
-  errorClass: "help-block",
+  errorClass: "has-error",
+  validClass: "has-success",
   highlight: function(element, errorClass, validClass) {
-    $(element).closest('.form-group').addClass('has-error');
+    $(element).closest('.form-group').addClass(errorClass).removeClass(validClass);
   },
   unhighlight: function(element, errorClass, validClass) {
-    $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+    $(element).closest('.form-group').removeClass(errorClass).addClass(validClass);
   },
   errorPlacement: function(error, element) {
     if (element.parent('.input-group').length || element.prop('type') === 'checkbox' || element.prop('type') === 'radio') {
@@ -273,15 +274,18 @@ $('#rafInputLink').attr('placeholder', userRafLink);
 var rafValidator = $('#formRaf').validate({
   ignore: ".ignore",
   rules: {
-    rafInputFrom: "required",
+    rafInputFrom: {
+    required: true
+    },
     rafInputEmail: {
       required: true,
+      email: true
     }
   },
   messages: {
     rafInputFrom: "Please specify your name",
     rafInputEmail: {
-      required: "We need your email address to contact you",
+      required: "At least one email address is required",
       email: "Your email address must be in the format of name@domain.com"
     }
   }
