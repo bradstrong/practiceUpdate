@@ -5,28 +5,36 @@
 
     // DRY up the logic used to determine if the event logic should execute.
     var hasHover = function(accordion) {
-      return accordion.hasClass('hover') && !Modernizr.touch
+      return accordion.hasClass('hover') && !Modernizr.touch;
     };
 
     $(document).on('mouseenter', '.accordion li', function () {
         var p = $(this).parent();
 
         if (hasHover(p)) {
-          var flyout = $(this).children('.content').first();
+          if ($(this).closest('.accordion').hasClass('accordion-expert-comment')){
+          //EXPERT COMMENT ACCORDION DESKTOP FUNCTION
+          } else {
+            var flyout = $(this).children('.content').first();
 
-          $('.content', p).not(flyout).hide().parent('li').removeClass('active');
-          flyout.show(0, function () {
-            flyout.parent('li').addClass('active');
-          });
+            $('.content', p).not(flyout).hide().parent('li').removeClass('active');
+
+            flyout.show(0, function () {
+              flyout.parent('li').addClass('active');
+            });
+          }
         }
       }
     );
 
     $(document).on('click.fndtn', '.accordion li .title', function () {
-        var li = $(this).closest('li'),
-            p = li.parent();
+      var li = $(this).closest('li'),
+          p = li.parent();
 
-        if(!hasHover(p)) {
+      if(!hasHover(p)) {
+        if($(this).closest('.accordion').hasClass('accordion-expert-comment')){
+        //EXPERT COMMENT ACCORDION MOBILE FUNCTION
+        } else {
           var flyout = li.children('.content').first();
 
           if (li.hasClass('active')) {
@@ -39,9 +47,7 @@
           }
         }
       }
-     );
-
+    }
+    );
   };
-
 })( jQuery, this );
-
