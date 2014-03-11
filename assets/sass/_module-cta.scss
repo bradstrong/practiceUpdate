@@ -75,3 +75,10 @@
     &:hover, &:focus { background-color: darken(($pri-blue), 10%); }
   }
 }
+
+/* Refer a friend */
+.cta-raf{
+  .cta-title{
+    margin-top: 0;
+  }
+}
