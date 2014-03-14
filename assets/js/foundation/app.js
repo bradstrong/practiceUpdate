@@ -31,7 +31,7 @@
     $(window).load(function () {
       setTimeout(function () {
         // At load, if user hasn't scrolled more than 20px or so...
-  			if( $(window).scrollTop() < 20 ) {
+        if( $(window).scrollTop() < 20 ) {
           window.scrollTo(0, 1);
         }
       }, 0);
@@ -52,7 +52,7 @@
       kitId: 'zwv8ekz',
       scriptTimeout: 3000
     };
-    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s);
   })();
 
 /*-- Panel & Prompt - make dismissable --*/
@@ -114,16 +114,16 @@ function GetURLParameter(sParam)
 }
 
 // read known url parameters
-var recipParam = GetURLParameter('recip');
-var userParam = GetURLParameter('user');
-var statusParam = GetURLParameter('status');
+// var recipParam = GetURLParameter('recip');
+// var userParam = GetURLParameter('user');
+// var statusParam = GetURLParameter('status');
 
 //if recip=mike, make crazy happen
-if(recipParam==='mike'){
-  $('.page-content').on('hover', 'a', function(){
-    $(this).parent().hide('fast');
-  });
-}
+// if(recipParam==='mike'){
+//   $('.page-content').on('hover', 'a', function(){
+//     $(this).parent().hide('fast');
+//   });
+// }
 
 //(function siteInit(){
 //'use strict';
@@ -210,7 +210,7 @@ var waxMustache = function(){
       	    if(v[3] === "html"){
         	    $(v[2]).html(html);
       	    } else if(v[3] === "append"){
-        	    $(v[2]).append(html);
+        	    // $(v[2]).append(html);
       	    }
       		});
       	});

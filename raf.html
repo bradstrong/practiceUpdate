@@ -78,6 +78,7 @@
   			<div id="rafDiv">
     			<div class="panel" style="box-shadow: 0px 2px 2px rgba(0,0,0,0.2);">
       			<div class="panel-heading">
+              <button type="button" class="close close-raf" aria-hidden="true">&times;</button>
         			<h4 class="panel-title">Email your PracticeUpdate invitations</h4>
       			</div><!--/panel-heading-->
       			<div class="panel-body">
@@ -115,6 +116,7 @@
       			</div><!--/.panel-body-->
       			<div class="panel-footer">
               <a class="btn" data-toggle="modal" data-target="#modal-raftc" target="_blank">Terms &amp; Conditions</a>
+              <a class="btn btn-default pull-right close-raf" aria-hidden="true"><i class="fa fa-arrow-left"></i> cancel</a>
       			</div><!--.panel-footer-->
     			</div><!--/.panel-->
         </div><!--/#rafDiv-->
@@ -199,21 +201,10 @@
       <div class="modal-body">
       <p class="lead text-center">Once one of your colleagues has joined, we will email you a coupon to claim your 20% off.</p>
       <p class="text-center">
-        <a class="btn btn-primary btn-lg" href="http://www.practiceupdate.com" title="PracticeUpdate">Return to PracticeUpdate</a>
+        <a class="btn btn-primary btn-lg close-raf" title="Close window and Return to PracticeUpdate">Close this window and<br><strong>Return to PracticeUpdate</strong></a>
       </p>
       </div>
       <div class="modal-footer">
-      <div class="progress" style="height:4px; border-radius:2px;">
-        <div class="progress-bar progress-bar-info" id="redirProgBar" role="progressbar" style="width:0%"></div>
-      </div>
-      <p class="text-center lead">You will be redirected to PracticeUpate in</p>
-      <div class="text-center">
-        <span class="fa-stack fa-lg">
-          <span id="timer" class="fa fa-stack-1x"></span>
-          <i class="fa fa-square-o fa-stack-2x"></i>
-        </span>
-      <div>
-      <p class="text-center lead">seconds</p>
       </div>
     </div>
   </div>
@@ -228,7 +219,6 @@
 <!-- Refer a friend validation and interactions -->
 <script>
 var userRafLink = 'http://prac.co/######';
-var rafcount=10;
 $.validator.setDefaults({
   debug: true,
   success: "valid",
@@ -274,29 +264,8 @@ var rafValidator = $('#formRaf').validate({
 });
 $('#rafButtonSubmit').on('click', function(){
   $('#modal-rafcomplete').modal({show: true, backdrop: 'static'});
-  $("#timer").text(rafcount);
 });
 
-$('#modal-rafcomplete').on('shown.bs.modal', function () {
-  var curcount = rafcount;
-  var counter=setInterval(timer, 1000);
-  function timer()
-  {
-    curcount--;
-    if (curcount <= 0)
-    {
-      clearInterval(counter);
-      window.location.href = "http://www.practiceupdate.com";
-      return;
-    }
-    var progcount = (curcount/rafcount)*100;
-    $('#redirProgBar').css( "width", function() {
-    return (100-progcount)+'%';
-    });
-    console.log(progcount);
-    $("#timer").text(curcount);
-  }
-});
 $("#rafInputLink").focus(function() {
     $(this).select();
 });
@@ -306,6 +275,13 @@ $("#rafInputLink").mouseup(function(e){
 $("#rafInputLink").focusout(function(e){
   $(this).val(userRafLink);
 });
+
+//
+var closeRaf = function(){
+  window.close();
+};
+
+$('.close-raf').on('click', closeRaf);
 </script>
 
 </body>
