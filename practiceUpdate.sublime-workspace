@@ -341,6 +341,40 @@
 	},
 	"file_history":
 	[
+		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/section.mustache",
+		"/Users/brad/Sites/pu/practiceUpdate/explore.html",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/module-editors-picks.mustache",
+		"/Users/brad/Sites/pu/practiceUpdate/channel-list.html",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/pu-icons.scss",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/app.scss",
+		"/Users/brad/Sites/pu/practiceUpdate/journal-scan.html",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/ad.mustache",
+		"/Users/brad/Sites/pu/practiceUpdate/content/json/ad.json",
+		"/Users/brad/Sites/pu/practiceUpdate/advertise.html",
+		"/Users/brad/Sites/pu/practiceUpdate/seminal-article-Colorectal_Cancer.html",
+		"/Users/brad/Sites/pu/practiceUpdate/seminal-article-Esophageal_and_Gastroesophageal_Junction_Cancer.html",
+		"/Users/brad/Sites/pu/practiceUpdate/survey.html",
+		"/Users/brad/Sites/pu/practiceUpdate/content/json/explore_news.json",
+		"/Users/brad/Sites/pu/practiceUpdate/explore_articles.html",
+		"/Users/brad/Sites/pu/practiceUpdate/experts.html",
+		"/Users/brad/Sites/pu/practiceUpdate/update.html",
+		"/Users/brad/Sites/pu/practiceUpdate/docs/edBoard_11-2012/slideshow.html",
+		"/Users/brad/Sites/pu/practiceUpdate/docs/searchBookMarklet.html",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/_base.scss",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/font/pu-icons.woff",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/font/pu-icons.svg",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/css/pu-icons.css",
+		"/Users/brad/Sites/pu/practiceUpdate/practiceUpdate.sublime-project",
+		"/Users/brad/Sites/pu/practiceUpdate/posters.html",
+		"/Users/brad/Sites/pu/practiceUpdate/index-BCF.html",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/css/app.css",
+		"/Users/brad/Sites/pu/practiceUpdate/.sass-cache/f15e3ae3f29c8ccbc652d0aa5ed3e570cdfb76fb/app.scssc",
+		"/Users/brad/Sites/pu/practiceUpdate/app-landing.html",
+		"/Users/brad/Sites/pu/practiceUpdate/seminal-article-Pancreatic_Cancer.html",
+		"/Users/brad/Sites/pu/practiceUpdate/user-profile.html",
+		"/Users/brad/Sites/pu/practiceUpdate/unsubscribe.html",
+		"/Users/brad/Sites/pu/practiceUpdate/joyride.html",
+		"/Users/brad/Sites/pu/practiceUpdate/sftp-config.json",
 		"/Users/brad/Sites/pu-fe/app/asset/less/app.less",
 		"/Users/brad/Sites/pu-fe/app/_partial/ad.hbs",
 		"/Users/brad/Sites/pu-fe/bower_components/Font-Awesome/src/assets/less/site/layout.less",
@@ -434,45 +468,11 @@
 		"/Users/brad/Sites/pu-fe/app/asset/less/theme.less",
 		"/Users/brad/Sites/pu-fe/app/_partial/top-bar.hbs",
 		"/Users/brad/Sites/pu-fe/node_modules/bower/node_modules/mout/date/totalDaysInYear.js",
-		"/Users/brad/Sites/pu-fe/node_modules/recess/node_modules/less/test/less/import/import-test-d.css",
-		"/Users/brad/Sites/pu-fe/node_modules/bower/node_modules/mout/number/toInt.js",
-		"/Users/brad/Sites/pu-fe/node_modules/assemble/README.md",
-		"/Users/brad/Downloads/daily-digest-2/subscription-daily-digest-primary-care.html",
-		"/Users/brad/Downloads/daily-digest-2/subscription-daily-digest-oncology.html",
-		"/Users/brad/Downloads/daily-digest-2/subscription-daily-digest-eyecare.html",
-		"/Users/brad/Downloads/daily-digest-2/subscription-daily-digest-dermatology.html",
-		"/Users/brad/Downloads/daily-digest-2/subscription-daily-digest-cardiology.html",
-		"/Users/brad/Downloads/daily-digest-2/subscription-daily-digest-urology.html",
-		"/Users/brad/Sites/pu-fe/app/_partial/feature-grid.hbs",
-		"/Users/brad/Sites/pu-fe/app/_partial/editors-description.hbs",
-		"/Users/brad/Sites/pu-fe/app/_layout/layout-conference.hbs",
-		"/Users/brad/Sites/pu-fe/app/_layout/layout-single-item.hbs",
-		"/Users/brad/Sites/pu-fe/app/_partial/full-text-access.hbs",
-		"/Users/brad/Sites/pu-fe/app/_page/journalscan.hbs",
-		"/Users/brad/Sites/pu-nl/dev/subscription-expert-insight.html",
-		"/Users/brad/Sites/pu-fe/app/_partial/modals.hbs",
-		"/Users/brad/Sites/pu-fe/app/_page/journalscan-tabs.hbs",
-		"/Users/brad/Sites/pu-fe/bower_components/bootstrap/less/variables.less",
-		"/Users/brad/Sites/pu-fe/bower_components/bootstrap/less/buttons.less",
-		"/Users/brad/Sites/pu-fe/bower_components/bootstrap/less/mixins.less",
-		"/Users/brad/Sites/pu-fe/app/asset/less/module/_landing-marketing.less",
-		"/Users/brad/Sites/pu-fe/dev/primarycare/primarycare.html",
-		"/Users/brad/Sites/pu-fe/dev/urology/urology.html",
-		"/Users/brad/Sites/pu-fe/dev/cardiology/cardiology.html",
-		"/Users/brad/Sites/pu-fe/app/_page/cardiology.hbs",
-		"/Users/brad/Sites/pu-fe/app/_page/urology.hbs",
-		"/Users/brad/Sites/pu-fe/app/_page/primarycare.hbs",
-		"/Users/brad/Sites/pu-fe/app/_page/primary-care.hbs",
-		"/Users/brad/Sites/pu-fe/app/_partial/page-footer.hbs",
-		"/Users/brad/Sites/pu-fe/app/asset/less/module/_page-footer.less",
-		"/Users/brad/Sites/pu-fe/app/_partial/page-heading-marketing.hbs",
-		"/Users/brad/Sites/pu-fe/app/_layout/layout-marketing.hbs",
-		"/Users/brad/Sites/pu-fe/app/_partial/carousel.hbs",
-		"/Users/brad/Sites/pu-fe/app/_partial/bio_experimental.hbs"
+		"/Users/brad/Sites/pu-fe/node_modules/recess/node_modules/less/test/less/import/import-test-d.css"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -494,6 +494,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"editors",
+			"fonts",
+			"editors",
 			"<!",
 			"placehold.it",
 			"img src=\"",
@@ -618,10 +621,7 @@
 			"$$topbar-breakpoint",
 			"topBarBreakPoint",
 			"$headerFontFamily",
-			"$base-font-size",
-			"padding-bottom",
-			"top",
-			"js//usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/lib/../templates/upgrade/../../"
+			"$base-font-size"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -709,6 +709,10 @@
 	{
 		"height": 0.0
 	},
+	"output.sftp":
+	{
+		"height": 98.0
+	},
 	"project": "practiceUpdate.sublime-project",
 	"replace":
 	{
@@ -720,6 +724,50 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"ad",
+				"content/json/ad.json"
+			],
+			[
+				"ad.",
+				"assets/mustache/ad.mustache"
+			],
+			[
+				"section",
+				"assets/mustache/section.mustache"
+			],
+			[
+				"expl",
+				"explore.html"
+			],
+			[
+				"editors",
+				"assets/mustache/module-editors-picks.mustache"
+			],
+			[
+				"upd",
+				"update.html"
+			],
+			[
+				"pu-",
+				"assets/sass/pu-icons.scss"
+			],
+			[
+				"base",
+				"assets/sass/_base.scss"
+			],
+			[
+				"app",
+				"assets/sass/app.scss"
+			],
+			[
+				"editor",
+				"assets/mustache/module-editors-picks.mustache"
+			],
+			[
+				"journ",
+				"journal-scan.html"
+			],
 			[
 				"app.j",
 				"app/asset/js/app.js"
@@ -741,10 +789,6 @@
 				"app/_partial/content-header.hbs"
 			],
 			[
-				"upd",
-				"app/_page/update.hbs"
-			],
-			[
 				"app.less",
 				"app/asset/less/app.less"
 			],
@@ -755,10 +799,6 @@
 			[
 				"cta",
 				"app/_partial/cta.hbs"
-			],
-			[
-				"ad.",
-				"app/_partial/ad.hbs"
 			],
 			[
 				"layout.",
@@ -949,10 +989,6 @@
 				"app/_partial/take-home-message.hbs"
 			],
 			[
-				"journ",
-				"app/_page/journalscan.hbs"
-			],
-			[
 				"layout-le",
 				"app/_layout/layout-learn.hbs"
 			],
@@ -979,10 +1015,6 @@
 			[
 				"page-",
 				"app/asset/less/module/_page-footer.less"
-			],
-			[
-				"expl",
-				"app/_page/explore.hbs"
 			],
 			[
 				"conference",
@@ -1021,10 +1053,6 @@
 				"app/_partial/content-header.hbs"
 			],
 			[
-				"pu-",
-				"app/asset/less/pu-variables.less"
-			],
-			[
 				"grun",
 				"Gruntfile.js"
 			],
@@ -1047,10 +1075,6 @@
 			[
 				"page-s",
 				"app/asset/less/module/_page-section.less"
-			],
-			[
-				"app",
-				"app/asset/less/app.less"
 			],
 			[
 				"page-sec",
@@ -1197,10 +1221,6 @@
 				"app/asset/scss/_module-stream-item.scss"
 			],
 			[
-				"base",
-				"app/asset/scss/_base.scss"
-			],
-			[
 				"layo",
 				"app/asset/scss/_layout.scss"
 			],
@@ -1215,22 +1235,6 @@
 			[
 				"feed-",
 				"app/_partial/feed-item.hbs"
-			],
-			[
-				"most",
-				"app/_partial/module-most-read.hbs"
-			],
-			[
-				"suggess",
-				"app/_partial/module-suggested-topics.hbs"
-			],
-			[
-				"story",
-				"app/_data/explore_story-of-the-week.json"
-			],
-			[
-				"boomb",
-				"app/_data/ad-boombox1.hbs"
 			]
 		],
 		"width": 0.0

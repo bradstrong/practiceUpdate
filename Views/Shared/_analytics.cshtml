@@ -1,0 +1,15 @@
+﻿<!-- BEGIN: IBM Unica NetInsight Page Tag -->
+@Scripts.Render("~/assets/js/analytics/ntpagetag")
+@if (@System.Configuration.ConfigurationManager.AppSettings["Environment"] == "Prod")
+{
+    <noscript>
+        <img src="//pt000123.unica.com/ntpagetag.gif?js=0&site=practiceupdate" height="1" width="1" border="0" hspace="0" vspace="0" alt="">
+    </noscript>
+}
+else
+{
+    <noscript>
+        <img src="//pt000123.unica.com/ntpagetag.gif?js=0&site=practiceupdatedev" height="1" width="1" border="0" hspace="0" vspace="0" alt="">
+    </noscript>
+}
+<!-- END: IBM Unica NetInsight Page Tag -->

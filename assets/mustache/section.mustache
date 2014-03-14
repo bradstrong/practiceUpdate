@@ -25,8 +25,12 @@
 					</article>
 					</li>
 	{{/items}}
-					<li class="entry ad ad-classified" style="text-align: center">
-					<img src="../../content/img/classified/ELS230_PU_InlineClassifiedAd_3-crop.jpg" alt="ELS230_PU_InlineClassifiedAd_3-crop" width="595" height="150" />
+					<li class="entry ad ad-classified ps-leaderboard" style="text-align: center">
+					{{! <img src="../../content/img/classified/ELS230_PU_InlineClassifiedAd_3-crop.jpg" alt="ELS230_PU_InlineClassifiedAd_3-crop" width="595" height="150" /> }}
+            <div class="widget ad leaderboard is-hidden">
+                <div id="ps{{ContentTypeId}}leaderboard" class="ad-container">
+                </div>
+            </div>
 					</li>
 				</ul>
 			<footer class="section-footer">

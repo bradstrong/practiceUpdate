@@ -1,0 +1,208 @@
+﻿@using PracticeUpdate.Web.Helpers
+@{
+    //Page Setup Defaults
+    var ShowAds = 1;
+    var ShowNav = 1;
+    var ShowSideBar = 1;
+    var ShowRecommended = 1;
+    var ShowFullPage = 0;
+    var ShowRecentlyUpdated = 1;
+    var ShowCTAs = 1;
+    var ShowHeader = 1;
+    var ShowFooter = 1;
+    var ShowCarousel = 0;
+    var canonical = 0;
+
+    if (ViewBag.ShowAds == 0) { ShowAds = 0; }
+    if (ViewBag.ShowNav == 0) { ShowNav = 0; }
+    if (ViewBag.ShowSideBar == 0) { ShowSideBar = 0; }
+    if (ViewBag.ShowRecommended == 0) { ShowRecommended = 0; }
+    if (ViewBag.ShowFullPage == 1) { ShowFullPage = 1; }
+    if (ViewBag.ShowRecentlyUpdated == 0) { ShowRecentlyUpdated = 0; }
+    if (ViewBag.ShowCTAs == 0) { ShowCTAs = 0; }
+    if (ViewBag.ShowHeader == 0) { ShowHeader = 0; }
+    if (ViewBag.ShowFooter == 0) { ShowFooter = 0; }
+    if (ViewBag.canonical == 1) { canonical = 1; }
+    if (ViewBag.ShowCarousel == 1) { ShowCarousel = 1; }
+
+    var isValidClientIP = this.Request.ValidateUserHostAddress();
+    if (!isValidClientIP){
+        ShowAds = 0;
+    }
+}
+
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    @Html.Partial("_SharedMeta")
+
+    @if (canonical == 1)
+    {
+        <link rel="canonical" href="http://www.practiceupdate.com/@ViewBag.canonicalurl"/>
+    }
+
+    <!--[if lt IE 7]>
+        <script type="text/javascript">window.location.href="/content/BrowserSupport.html";</script>
+    <![endif]-->    
+
+    @Styles.Render("~/assets/font/pu-icons")
+    @Styles.Render("~/assets/css/css")
+    @Scripts.Render("~/assets/js/foundation/jquery") 
+    <script src="~/assets/js/foundation/modernizr.foundation.js?v=@System.Configuration.ConfigurationManager.AppSettings["Version"]"></script>
+
+    @if (ShowAds == 1) { 
+        @Scripts.Render("~/assets/js/GPT/GPTADS")
+    }
+
+    @Scripts.Render("~/assets/js/PracticeUpdate")
+
+    @if (ShowCarousel == 1) { 
+        @Styles.Render("~/assets/css/bxslider")
+        @Scripts.Render("~/assets/js/bxslider")     
+    }
+
+    @if (ShowFullPage == 0)
+    { 
+        @Scripts.Render("~/assets/js/ContentPages")
+    }
+
+	<!--[if lt IE 8]>
+        <script src="/assets/js/json2.js?v=@System.Configuration.ConfigurationManager.AppSettings["Version"]"></script>
+	<![endif]-->
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="/assets/js/foundation/practiceupdate-ie.min.js?v=@System.Configuration.ConfigurationManager.AppSettings["Version"]"></script>
+	<![endif]-->
+
+</head>
+<body class="env-@System.Configuration.ConfigurationManager.AppSettings["Environment"].ToLower() off-canvas slide-nav @ViewBag.BodyClass">
+    @if (@System.Configuration.ConfigurationManager.AppSettings["Analytics"] == "true" && isValidClientIP)
+        {
+        @Html.Partial("_analyticsGTM") 
+        }
+    @if (ShowAds == 1)
+    {                
+        <div class="widget ad pushdown is-hidden">
+            <div id="pushdown" class="ad-container"></div>
+        </div>
+        <div class="widget ad leaderboard">
+            <div id="leaderboard" class="ad-container">
+            </div><!--/.ad-container-->
+        </div>
+    }
+    @if (ShowNav == 1)
+    {
+        <div class="page-header sticky ">
+            <nav class="top-bar">
+                <div class="off-canvas-control">
+                    <div class="control-visibility">
+                        <div class="sidebar-button-container">
+                            <a class='sidebar-button button' id="sidebarButton" href="#sidebar">
+                                <i class="icon-reorder"></i>
+                            </a><!--/#sidebarButton -->
+                        </div><!--/.sidebar-button-container -->
+                    </div><!--/.control-visibility-->
+                </div><!--/.off-canvas-control-->
+                <ul>
+                    <li class="name"><div class="site-branding"><a href="/"><img alt="PracticeUpdate Logo" src="/assets/img/logo-practiceupdate-inverse.png?_=@System.Configuration.ConfigurationManager.AppSettings["Version"]"/></a></div><!--/.site-branding--></li>
+                    <li class="toggle-topbar"><a href="#"></a></li>
+                </ul>
+                <section>
+                    <ul id="main-nav">
+                    </ul>
+                </section>
+            </nav><!--/.top-bar-->      
+	    </div><!--/.page-header--> 
+    }
+    else if (ShowHeader == 1)
+    {
+        <div class="page-header ">
+            <nav class="top-bar">
+	            <ul>
+	              <li class="name"><div class="site-branding"><a href="/"><img alt="PracticeUpdate Logo" src="/assets/img/logo-practiceupdate-inverse.png?_=@System.Configuration.ConfigurationManager.AppSettings["Version"]"/></a></div><!--/.site-branding--></li>
+	            </ul>
+            </nav><!--/.top-bar-->        
+        </div><!--/.page-header-->           
+    }
+
+    @if (ShowFullPage == 1)
+    {                
+        @RenderBody()
+    }
+    else
+    {
+        <div class="page-content">
+            @if (HttpContext.Current.User.Identity.IsAuthenticated) {
+                <div class="notification-container">
+                    <div class="twelve columns">
+                        <div id="useremailnotification-inprogress" class="notification alert-box secondary is-hidden">
+                            <span class="alert-text">We have sent a message to the email address you have provided, <span class="useremail"></span>.  If this email is not correct, please <a class="alert-link" href="/User/Preferences/?id=1">update your settings</a> with your correct address.</span>
+                        </div>
+                        <div id="useremailnotification" class="notification alert-box alert is-hidden">
+                            <span class="alert-text">The email address you provided during registration, <span class="useremail"></span>, does not appear to be valid. Please <a class="alert-link" href="/User/Preferences/?id=1">update your settings</a> with a valid address before <span id="emailexpirationdate"></span> to continue using PracticeUpdate.</span>
+                        </div>
+                    </div>
+                </div>
+            }
+            <section role="main">
+                @RenderBody()
+                @if (ShowRecommended == 1)
+                {
+                    @Html.Partial("_recommended")
+                }
+            </section>
+        @if (ShowSideBar == 1)
+        {
+            @Html.Partial("_sideBar")
+        }
+        </div>
+    }
+    
+    @if (ShowAds == 1)
+    {                
+        <div class="widget ad slider is-hidden">
+            <div id="slider" class="ad-container"></div>
+        </div>
+    }
+    @if (ShowFooter == 1)
+    {        
+        @Html.Partial("_footer")
+    }
+        
+    <div class="is-hidden">
+        @if (ShowAds == 1) {<input id="trackingguid" type="text" @Html.Raw(" value=\"" + Guid.NewGuid().ToString() + "\"") /> }
+        <input id="IsAuthenticated" type="text" @if (HttpContext.Current.User.Identity.IsAuthenticated) { @Html.Raw(" value=\"1\" ");} else { @Html.Raw(" value=\"0\" ");} />
+        <input id="ShowAds" type="text" @if (isValidClientIP) { @Html.Raw(" value=" + @System.Configuration.ConfigurationManager.AppSettings["ShowAds"] + ""); } else { @Html.Raw(" value=\"false\" "); } />
+        <input id="Environment" type="text" value="@System.Configuration.ConfigurationManager.AppSettings["Environment"]" />
+        <input id="Version" type="text" value="@System.Configuration.ConfigurationManager.AppSettings["Version"]" />
+        <input id="HCPURL" type="text" value="@System.Configuration.ConfigurationManager.AppSettings["HCPURL"]" />
+        <input id="ccuser" type="text" value="" />
+        <input id="ccsite" type="text" value="" />
+        <input id="ShowRecentlyUpdated" type="text" value="@ShowRecentlyUpdated" />
+        <input id="ShowCTAs" type="text" value="@ShowCTAs" />
+        <input id="ShowNav" type="text" value="@ShowNav" />
+        <input id="countryid" type="text"/>
+        <input id="zoneid" type="text"/>
+        <input id="pageid" type="text"/>
+        <select multiple id="ads"></select>
+        <select multiple id="UserSpecialtyIds"></select>        
+        @if (canonical == 1)
+        {
+            <input type="text" id="canonical" value="@ViewBag.canonicalurl"/>
+        }
+    </div>
+    <div id="zonemodal"></div>
+    @Scripts.Render("~/assets/js/foundation/foundation")
+    
+    @if (@System.Configuration.ConfigurationManager.AppSettings["Analytics"] == "true" && isValidClientIP)
+        {
+        @Html.Partial("_analyticsUnica") 
+        }
+</body>
+</html>
