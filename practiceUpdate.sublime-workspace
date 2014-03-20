@@ -243,13 +243,25 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "preferences.html",
+			"settings":
+			{
+				"buffer_size": 24557,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 67.0,
+		"height": 400.0,
 		"selected_items":
 		[
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -341,15 +353,25 @@
 	},
 	"file_history":
 	[
+		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/password-reset.mustache",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/pu-icons.scss",
+		"/Users/brad/Sites/pu/practiceUpdate/update.html",
+		"/Users/brad/Sites/pu/practiceUpdate/raf.html",
+		"/Users/brad/Sites/pu-fe/app/_partial/creeper.hbs",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/js/foundation/app.js",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/app.scss",
+		"/Users/brad/Sites/pu/practiceUpdate/content/json/ad.json",
+		"/Users/brad/Sites/pu/practiceUpdate/practiceUpdate.sublime-project",
+		"/Users/brad/Sites/pu/practiceUpdate/MIT-LICENSE.txt",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/img/fairhead-icons/fc-webicon-linkedin.svg",
+		"/Users/brad/Sites/pu/practiceUpdate/channel-list.html",
+		"/Users/brad/Sites/pu/practiceUpdate/labels.html",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/css/app.css",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/section.mustache",
 		"/Users/brad/Sites/pu/practiceUpdate/explore.html",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/module-editors-picks.mustache",
-		"/Users/brad/Sites/pu/practiceUpdate/channel-list.html",
-		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/pu-icons.scss",
-		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/app.scss",
 		"/Users/brad/Sites/pu/practiceUpdate/journal-scan.html",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/ad.mustache",
-		"/Users/brad/Sites/pu/practiceUpdate/content/json/ad.json",
 		"/Users/brad/Sites/pu/practiceUpdate/advertise.html",
 		"/Users/brad/Sites/pu/practiceUpdate/seminal-article-Colorectal_Cancer.html",
 		"/Users/brad/Sites/pu/practiceUpdate/seminal-article-Esophageal_and_Gastroesophageal_Junction_Cancer.html",
@@ -357,17 +379,14 @@
 		"/Users/brad/Sites/pu/practiceUpdate/content/json/explore_news.json",
 		"/Users/brad/Sites/pu/practiceUpdate/explore_articles.html",
 		"/Users/brad/Sites/pu/practiceUpdate/experts.html",
-		"/Users/brad/Sites/pu/practiceUpdate/update.html",
 		"/Users/brad/Sites/pu/practiceUpdate/docs/edBoard_11-2012/slideshow.html",
 		"/Users/brad/Sites/pu/practiceUpdate/docs/searchBookMarklet.html",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/_base.scss",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/font/pu-icons.woff",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/font/pu-icons.svg",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/css/pu-icons.css",
-		"/Users/brad/Sites/pu/practiceUpdate/practiceUpdate.sublime-project",
 		"/Users/brad/Sites/pu/practiceUpdate/posters.html",
 		"/Users/brad/Sites/pu/practiceUpdate/index-BCF.html",
-		"/Users/brad/Sites/pu/practiceUpdate/assets/css/app.css",
 		"/Users/brad/Sites/pu/practiceUpdate/.sass-cache/f15e3ae3f29c8ccbc652d0aa5ed3e570cdfb76fb/app.scssc",
 		"/Users/brad/Sites/pu/practiceUpdate/app-landing.html",
 		"/Users/brad/Sites/pu/practiceUpdate/seminal-article-Pancreatic_Cancer.html",
@@ -461,14 +480,7 @@
 		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/to/node_modules/htmlparser/profile.js",
 		"/Users/brad/Sites/pu-fe/node_modules/grunt-contrib-concat/test/expected/process_function",
 		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/to/node_modules/htmlparser/profile",
-		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/highlight.js/profile.js",
-		"/Users/brad/Sites/pu-fe/app/_partial/profile-card.hbs",
-		"/Users/brad/Sites/pu-fe/app/_partial/profile.hbs",
-		"/Users/brad/Sites/pu-fe/app/asset/less/module/_page-section.less",
-		"/Users/brad/Sites/pu-fe/app/asset/less/theme.less",
-		"/Users/brad/Sites/pu-fe/app/_partial/top-bar.hbs",
-		"/Users/brad/Sites/pu-fe/node_modules/bower/node_modules/mout/date/totalDaysInYear.js",
-		"/Users/brad/Sites/pu-fe/node_modules/recess/node_modules/less/test/less/import/import-test-d.css"
+		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/highlight.js/profile.js"
 	],
 	"find":
 	{
@@ -494,6 +506,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"form",
+			"valid",
+			"return to",
+			"cta2b",
+			"<",
+			"recipparam",
 			"editors",
 			"fonts",
 			"editors",
@@ -615,13 +633,7 @@
 			"{{",
 			"{{>",
 			"sidebar",
-			"top-bar",
-			"sgream",
-			"stream",
-			"$$topbar-breakpoint",
-			"topBarBreakPoint",
-			"$headerFontFamily",
-			"$base-font-size"
+			"top-bar"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -665,8 +677,85 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "preferences.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24557,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -724,6 +813,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"prefer",
+				"preferences.html"
+			],
+			[
+				"app.js",
+				"assets/js/foundation/app.js"
+			],
+			[
+				"raf",
+				"raf.html"
+			],
+			[
+				"update",
+				"update.html"
+			],
 			[
 				"ad",
 				"content/json/ad.json"
@@ -843,10 +948,6 @@
 			[
 				"channel-l",
 				"app/_partial/channel-list-alt.hbs"
-			],
-			[
-				"update",
-				"app/_page/update.hbs"
 			],
 			[
 				"grunt",
@@ -1173,10 +1274,6 @@
 				"app/asset/scss/_foundation-overrides.scss"
 			],
 			[
-				"app.js",
-				"app/asset/js/app.js"
-			],
-			[
 				"carou",
 				"app/_partial/carousel.hbs"
 			],
@@ -1227,14 +1324,6 @@
 			[
 				"dash",
 				"app/_partial/dashboard.hbs"
-			],
-			[
-				"layout-",
-				"app/_layout/layout-update.hbs"
-			],
-			[
-				"feed-",
-				"app/_partial/feed-item.hbs"
 			]
 		],
 		"width": 0.0
