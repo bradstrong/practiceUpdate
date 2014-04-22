@@ -26,9 +26,8 @@
 			}
 			.ad-content{
 				background:transparent;
-				display:block;
 				overflow:hidden;
-    		&>a{}
+    		// &>a{}
 			}
 		}
 	}
@@ -52,11 +51,42 @@
 // setup base styles for formats
 
 //leaderboard 728x90
+/*
 #leaderboard{ max-width: 728px; margin:0 auto $baseFontSize/2;}
 #leaderboardcontent{height: 90px; max-width: 728px; margin: 0 auto; max-height: 90px;}
+*/
 
-#ps3leaderboard{height: auto; max-width: 728px; margin: 0 auto; max-height: 90px;}
-#ps3leaderboardcontent{}
+#leaderboard{height: auto; max-width: 728px; margin: 0 auto;}
+#leaderboardcontent{
+  position: relative;
+  padding-bottom: 12.36%;
+  height: 0;
+  overflow: hidden;
+
+  iframe, iframe iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#ps3leaderboard{height: auto; max-width: 728px; margin: 0 auto;}
+#ps3leaderboardcontent{
+  position: relative;
+  padding-bottom: 12.36%;
+  height: 0;
+  overflow: hidden;
+
+  iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 
 //boombox 300x250
 #boombox1{max-width: 300px;}
@@ -76,40 +106,8 @@
 #jobboardfilmstrip{max-width: 300px;}
 #jobboardfilmstripcontent{max-width: 300px; margin: 0 auto; max-height: 600px;}
 
+// IAB RISING STAR FORMATS 2014-03-26
 
-
-// Hide leaderboard containers on mobile
-#leaderboardouter, #leaderboard{@media only screen and (max-width: $screenSmall) {display:none;}}
-
-//Removed 2014-01-10 due to conflicts with expandable boombox ad units
-//fix for ie8 and below
-/* html.lt-ie9{
-  .widget.ad.leaderboard{
-    .ad-content, object, embed{
-/*       height: 90px; *//*
-      width: 728px;
-      max-width: 100% !important;
-    }
-  }
-  .widget.ad.boombox{
-    .ad-content, object, embed{
-      height: 250px;
-      width: 300px;
-      max-width: 100% !important;
-    }
-  }
-  .widget.ad.skyscraper{
-    .ad-content, object, embed{
-      height: 600px;
-      width: 160px;
-      max-width: 100% !important;
-    }
-  }
-  .widget.ad.filmstrip{
-    .ad-content, object, embed{
-      height: 600px;
-      width: 300px;
-      max-width: 100% !important;
-    }
-  }
- } */
+// Pushdown
+#pushdown{ max-width: 970px; margin:0 auto $baseFontSize/2;}
+#pushdowncontent{margin: 0 auto; text-align: center;}
