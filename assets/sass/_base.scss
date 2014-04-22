@@ -10,10 +10,16 @@ select{
 a:hover{text-decoration: underline;}
 a{ word-wrap: break-word;-ms-hyphens: auto;}
 
-object, embed{
-	display:block;
-	height:auto;
-	width:auto;
+// Commenting out to test impact on ad display 2014-03-26
+// object, embed{
+// 	display:block;
+// 	height:auto;
+// 	width:auto;
+// }
+
+// reverting foundation default to accomodate IAB rising star ads 2014-03-26
+embed {
+  max-width: none;
 }
 
 cite{
