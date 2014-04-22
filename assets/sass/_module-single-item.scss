@@ -59,7 +59,7 @@ article.single-item{
   	ul.no-bullet, ul.no-bullet li{list-style-type: none;}//.no-bullet - tonyMCE option "no bullet"
 
   	/* Accordion components */
-.accordion-footer  {
+.accordion-header, .accordion-footer  {
   padding: 7px 15px;
   border-left: 1px solid #c9c1b8;
   border-right: 1px solid #c9c1b8;
@@ -146,5 +146,15 @@ article.single-item{
   .link-medline{
     margin-top:15px;
     display: inline-block;
+  }
+  .item-footer{
+    .copyright-image{
+    float: left;
+    max-width: 50%;
+    padding-right: 1em;
+    }
+    .copyright-text{
+      font-size: 11px;
+    }
   }
 }
