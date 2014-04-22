@@ -389,3 +389,30 @@ $('#et-al-trigger').on('click', function(){
 //events list xml http://www.globaleventslist.elsevier.com/rss.aspx?filterYears=2013&disciplineIds=68&specialtyIds=247
 //jquery parse xml http://api.jquery.com/jQuery.parseXML/
 
+
+/*-- Smooth scroll url fragment links --*/
+(function ( $ ) {
+  $.fn.puSmoothScroll = function(options) {
+    var $this   = $(this);
+    var href    = $this.attr('href');
+    var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) ;//strip for ie7
+
+    // This is the easiest way to have default options.
+    var options = $.extend({
+        // These are the defaults.
+        duration: 500,
+        targetOffset: $('.page-header').height()
+    }, options );
+    if ($target.length) {
+      $('html,body').animate({
+        scrollTop: $target.offset().top - options.targetOffset
+      }, options.duration);
+      return false;
+    }
+  };
+  $(document).on('click', '[data-pu-toggle="scroll"]', function () {
+    $(this).puSmoothScroll();
+  });
+}( jQuery ));
+/*-- END Smooth scroll url fragment links --*/
+
