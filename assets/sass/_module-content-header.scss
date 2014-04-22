@@ -1,4 +1,5 @@
 .content-header{
+  @include innerRow(collapse); @include mobileRow();
   background: $pri-ltBlue;
   margin-bottom: 14px;
 }
