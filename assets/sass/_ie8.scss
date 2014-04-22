@@ -77,10 +77,10 @@ html.lt-ie9{
 	}
 
   #formLogin{
+  float:left;
   	.signin {
   	margin:0;
   	float:left;
-  	width:100px;
   	}
   	input[type="text"],.password input{
   		width:90%;
@@ -88,13 +88,12 @@ html.lt-ie9{
   		height:34px;
   	}
   	.password{
-  	margin:0 5px 0 -15px;
   	float:left;
-  	width:166px;
   	}
   }
 	#formRegisterPrompt{
 		float: right;
+		clear: none;
 	}
 
 	/* Sitewide layout containers */
