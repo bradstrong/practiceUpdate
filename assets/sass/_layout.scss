@@ -70,6 +70,11 @@
 
 /* !Explore Layout */
 .explore-container{@include column(7, collapse); @include mobileRow();}
+/* Explore search */
+.search-container{@include innerRow(collapse); @include mobileRow();}
+.search-input{@include column(10, collapse); @include mobileColumn(3);}
+.search-submit{@include column(2, collapse); @include mobileColumn(1);}
+
 
 /* !Learn Layout */
 .cme-container{@include column(12); @include mobileRow();}
