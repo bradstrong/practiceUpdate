@@ -89,6 +89,17 @@ nav a:hover, .drawer a:hover{text-decoration: none;}
 	@extend .full-width;
 }
 
+// Forms
+
+input[type=search]{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 0;
+  &:focus{
+    outline: none;
+  }
+}
+
 //label
 .label-conference-abbr{
   background-color: transparent;

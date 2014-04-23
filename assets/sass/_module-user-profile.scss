@@ -23,7 +23,7 @@
 // 			<dd>Senior Partner and Medical Director, The West Clinic, Memphis, TN</dd>
 // 			<dt>Member Since:</dt>
 // 			<dd><date>2006 Dec 18</date></dd>
-			
+
 // 			</dl><!--/.user-detail-list -->
 // 		</div><!--/.profile-overview -->
 // 	</div><!-- /.profile-card -->
@@ -67,8 +67,9 @@
 .profile-details{@include innerRow(collapse);
 	.user-cv{@include column(12);}
 }
-.profile-overview{@include column(9);}
-.profile-photo{@include column(3);}
+.profile-overview{@include column(9); @include mobileColumn(3);}
+.profile-photo{@include column(3); @include mobileColumn(1);}
+
 .user-photo{}
 .user-detail-list{
 	@include innerRow();
