@@ -45,6 +45,9 @@ nav a:hover, .drawer a:hover{text-decoration: none;}
 .section-widget{
 	background-color:$white;
 	@include elementBoxShadow;
+	&.section-search-result{
+    background-color: #f2fcff;
+  }
 }
 
 .page-footer{

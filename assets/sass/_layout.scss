@@ -75,7 +75,7 @@
 .search-input{@include column(10, collapse); @include mobileColumn(3); padding: 0 !important;}
 .search-submit{@include column(2, collapse); @include mobileColumn(1); padding: 0 !important;}
 .search-summary{@include innerRow();}
-.search-result-detail{ @include column(12)}
+.search-summary-detail, .search-result-detail{ @include column(12)}
 
 
 /* !Learn Layout */

@@ -4,7 +4,7 @@
 /* !Type */
 /* !mixins */
 /* line 51, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .search-input, .search-submit, .search-result-detail, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .badge-container.feed-badge-container, .item-title-container, .action-bar, .item-container .expert-comment-container, .item-content-container, .item-content-section, .item-footer, .expert-comment-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], article.single-item .item-header .pub-meta, .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .exploresectionentry .item-content-container, #formLogin, #formRegisterPrompt {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .search-input, .search-submit, .search-summary-detail, .search-result-detail, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .badge-container.feed-badge-container, .item-title-container, .action-bar, .item-container .expert-comment-container, .item-content-container, .item-content-section, .item-footer, .expert-comment-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], article.single-item .item-header .pub-meta, .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .exploresectionentry .item-content-container, #formLogin, #formRegisterPrompt {
   float: left;
 }
 
@@ -30,7 +30,7 @@
 }
 
 /* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .search-input, .search-submit, .search-result-detail, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .badge-container.feed-badge-container, .item-title-container, .action-bar, .item-container .expert-comment-container, .item-content-container, .item-content-section, .item-footer, .expert-comment-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], article.single-item .item-header .pub-meta, .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .exploresectionentry .item-content-container, #formLogin, #formRegisterPrompt {
+.footer-section-container, .flag-container, #aux, .aux, .recommended, .stream-container, .explore-container, .search-input, .search-submit, .search-summary-detail, .search-result-detail, .cme-container, .single-item-container, .register-container, .user-directory-container, .user-profile-container, .channel-list-container, .static-container, .brand-container, .login-register-container, .single-channel, .pref-container, #pref-tabs, #pref-tabs-content, .page-footer .footer-row:nth-child(1), .page-footer .footer-row:nth-child(2), .page-footer .footer-row:nth-child(3), .item-header-container, .badge-container.feed-badge-container, .item-title-container, .action-bar, .item-container .expert-comment-container, .item-content-container, .item-content-section, .item-footer, .expert-comment-container figure[class$="-photo"], .item-source-container, .item-source-container figure[class$="-photo"], .item-source-container div[class$="-name"], article.single-item .item-header .pub-meta, .password-signin .password, .password-signin .signin, .profile-details .user-cv, .profile-overview, .profile-photo, .user-detail-list dd, .user-detail-list dt, .user-group, .checked-list li, .eic-welcome .eic-profile, .eic-welcome .eic-message, .event-notification .event-badge, .event-notification .event-message, .scheduled-prompt .event-badge, .scheduled-prompt .event-message, .widget.els-branding, .widget.els-description, .widget.powered-by, .explore-sections, .section-widget .section-header, .section-widget .section-content, .exploresectionentry .item-content-container, #formLogin, #formRegisterPrompt {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
@@ -8440,12 +8440,12 @@ blockquote p {
 }
 
 /* line 78, ../sass/_layout.scss */
-.search-result-detail {
+.search-summary-detail, .search-result-detail {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
   /* line 78, ../sass/_layout.scss */
-  .search-result-detail {
+  .search-summary-detail, .search-result-detail {
     float: none;
     width: auto;
   }
@@ -12017,13 +12017,17 @@ nav a:hover, .drawer a:hover {
   -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
+/* line 48, ../sass/_theme.scss */
+.section-widget.section-search-result {
+  background-color: #f2fcff;
+}
 
-/* line 51, ../sass/_theme.scss */
+/* line 54, ../sass/_theme.scss */
 .page-footer a {
   color: white;
 }
 
-/* line 56, ../sass/_theme.scss */
+/* line 59, ../sass/_theme.scss */
 .entry.highlight {
   margin-left: -15px;
   margin-right: -15px;
@@ -12034,32 +12038,32 @@ nav a:hover, .drawer a:hover {
   font-weight: bold !important;
   background-color: #F4FAFC;
 }
-/* line 66, ../sass/_theme.scss */
+/* line 69, ../sass/_theme.scss */
 .entry.highlight .item-title {
   font-weight: bold;
 }
-/* line 70, ../sass/_theme.scss */
+/* line 73, ../sass/_theme.scss */
 .entry.highlight .item-citation {
   font-style: normal;
 }
 
-/* line 77, ../sass/_theme.scss */
+/* line 80, ../sass/_theme.scss */
 .button:hover, .form-submit:hover, .load-more-button:hover {
   text-decoration: none;
 }
 
-/* line 94, ../sass/_theme.scss */
+/* line 97, ../sass/_theme.scss */
 input[type=search] {
   -moz-appearance: none;
   -webkit-appearance: none;
   padding-right: 0;
 }
-/* line 98, ../sass/_theme.scss */
+/* line 101, ../sass/_theme.scss */
 input[type=search]:focus {
   outline: none;
 }
 
-/* line 104, ../sass/_theme.scss */
+/* line 107, ../sass/_theme.scss */
 .label-conference-abbr {
   background-color: transparent;
   color: #1d7998;
@@ -12069,7 +12073,7 @@ input[type=search]:focus {
   border-radius: 5px;
 }
 
-/* line 112, ../sass/_theme.scss */
+/* line 115, ../sass/_theme.scss */
 .label-meta-new {
   background-color: transparent;
   border: 1px solid #f9d11d;
@@ -12079,7 +12083,7 @@ input[type=search]:focus {
   text-transform: uppercase;
 }
 
-/* line 120, ../sass/_theme.scss */
+/* line 123, ../sass/_theme.scss */
 .label-meta-update {
   background-color: transparent;
   border: 1px solid #f9d11d;
@@ -12089,7 +12093,7 @@ input[type=search]:focus {
   text-transform: uppercase;
 }
 
-/* line 128, ../sass/_theme.scss */
+/* line 131, ../sass/_theme.scss */
 .label-meta-free {
   background-color: transparent;
   border: 1px solid #70cf8d;
@@ -12099,7 +12103,7 @@ input[type=search]:focus {
   text-transform: uppercase;
 }
 
-/* line 136, ../sass/_theme.scss */
+/* line 139, ../sass/_theme.scss */
 .label-meta-free30 {
   background-color: transparent;
   border: 1px solid #70cf8d;
@@ -12109,7 +12113,7 @@ input[type=search]:focus {
   text-transform: uppercase;
 }
 
-/* line 145, ../sass/_theme.scss */
+/* line 148, ../sass/_theme.scss */
 .label-media-video {
   background-color: transparent;
   border: 1px solid #887e6f;
@@ -12117,7 +12121,7 @@ input[type=search]:focus {
   color: #948b7c;
 }
 
-/* line 151, ../sass/_theme.scss */
+/* line 154, ../sass/_theme.scss */
 .label-media-audio {
   background-color: transparent;
   /*   border: 1px solid $txtColor; */
@@ -12125,38 +12129,38 @@ input[type=search]:focus {
   color: #948b7c;
 }
 
-/* line 158, ../sass/_theme.scss */
+/* line 161, ../sass/_theme.scss */
 .label-item-type {
   background-color: transparent;
   color: inherit;
   font-weight: inherit;
 }
 
-/* line 163, ../sass/_theme.scss */
+/* line 166, ../sass/_theme.scss */
 .label-item-section {
   background-color: transparent;
   color: inherit;
   font-weight: inherit;
 }
 
-/* line 171, ../sass/_theme.scss */
+/* line 174, ../sass/_theme.scss */
 .badge, .top-level-nest .counter, nav.topic-nav .counter {
   background: #f3b727;
   border-radius: 10px;
   color: white;
   display: inline-block;
 }
-/* line 177, ../sass/_theme.scss */
+/* line 180, ../sass/_theme.scss */
 .badge.featured, .top-level-nest .featured.counter, nav.topic-nav .featured.counter {
   padding: 5.6px 7px;
   background: #6cb0c3;
 }
-/* line 181, ../sass/_theme.scss */
+/* line 184, ../sass/_theme.scss */
 .badge.story-of-the-week, .top-level-nest .story-of-the-week.counter, nav.topic-nav .story-of-the-week.counter {
   padding: 5.6px 9.33333px;
   background: #70cf8d;
 }
-/* line 185, ../sass/_theme.scss */
+/* line 188, ../sass/_theme.scss */
 .badge.badge-bcf-steps, .top-level-nest .badge-bcf-steps.counter, nav.topic-nav .badge-bcf-steps.counter {
   background: #606060;
   height: 3em;
@@ -12165,27 +12169,27 @@ input[type=search]:focus {
   margin-right: 8px;
   width: 3em;
 }
-/* line 193, ../sass/_theme.scss */
+/* line 196, ../sass/_theme.scss */
 .badge.badge-muted, .top-level-nest .badge-muted.counter, nav.topic-nav .badge-muted.counter {
   background: #cec9c2;
 }
 
-/* line 199, ../sass/_theme.scss */
+/* line 202, ../sass/_theme.scss */
 .highlight .badge, .highlight .top-level-nest .counter, .top-level-nest .highlight .counter, .highlight nav.topic-nav .counter, nav.topic-nav .highlight .counter {
   background-color: #1d7998;
 }
 
-/* line 202, ../sass/_theme.scss */
+/* line 205, ../sass/_theme.scss */
 .entry .badge, .entry .top-level-nest .counter, .top-level-nest .entry .counter, .entry nav.topic-nav .counter, nav.topic-nav .entry .counter {
   margin-top: 7px;
 }
 
-/* line 206, ../sass/_theme.scss */
+/* line 209, ../sass/_theme.scss */
 .label-block, .badge-block {
   display: inline-block;
 }
 
-/* line 212, ../sass/_theme.scss */
+/* line 215, ../sass/_theme.scss */
 .flag {
   background: transparent;
   color: #f3b727;
@@ -12195,16 +12199,16 @@ input[type=search]:focus {
   font-weight: normal;
   padding: 0;
 }
-/* line 222, ../sass/_theme.scss */
+/* line 225, ../sass/_theme.scss */
 .flag.featured {
   color: #6cb0c3;
 }
-/* line 225, ../sass/_theme.scss */
+/* line 228, ../sass/_theme.scss */
 .flag.story-of-the-week {
   color: #70cf8d;
 }
 
-/* line 233, ../sass/_theme.scss */
+/* line 236, ../sass/_theme.scss */
 #RegisterDiv {
   *zoom: 1;
   background-color: white;
@@ -12226,12 +12230,12 @@ input[type=search]:focus {
 /* ================================ */
 /* ================================ */
 /* typography */
-/* line 246, ../sass/_theme.scss */
+/* line 249, ../sass/_theme.scss */
 body {
   white-space-collapse: collapse;
 }
 
-/* line 248, ../sass/_theme.scss */
+/* line 251, ../sass/_theme.scss */
 .page-banner-container, .page-footer-container {
   background-color: #1d7999;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
@@ -12241,44 +12245,44 @@ body {
   padding-bottom: 1em;
   z-index: 10;
 }
-/* line 249, ../sass/_theme.scss */
+/* line 252, ../sass/_theme.scss */
 .page-banner-container, .page-banner-container label, .page-banner-container .form-title, .page-banner-container .cta-title, .page-footer-container, .page-footer-container label, .page-footer-container .form-title, .page-footer-container .cta-title {
   color: white;
 }
 
-/* line 256, ../sass/_theme.scss */
+/* line 259, ../sass/_theme.scss */
 .page-footer-container {
   box-shadow: none;
 }
-/* line 258, ../sass/_theme.scss */
+/* line 261, ../sass/_theme.scss */
 .page-footer-container.footer-compact {
   background-color: transparent;
 }
 
-/* line 264, ../sass/_theme.scss */
+/* line 267, ../sass/_theme.scss */
 .page-banner p {
   font-family: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 265, ../sass/_theme.scss */
+/* line 268, ../sass/_theme.scss */
 .page-banner .account-question {
   background: transparent;
   border: none;
 }
 
-/* line 271, ../sass/_theme.scss */
+/* line 274, ../sass/_theme.scss */
 .brand-container {
   padding-bottom: 1em;
 }
-/* line 272, ../sass/_theme.scss */
+/* line 275, ../sass/_theme.scss */
 .brand-container p {
   color: white;
 }
-/* line 273, ../sass/_theme.scss */
+/* line 276, ../sass/_theme.scss */
 .brand-container .tagline {
   font-size: 17px;
 }
 
-/* line 278, ../sass/_theme.scss */
+/* line 281, ../sass/_theme.scss */
 .brand-name {
   text-transform: lowercase;
   font-family: "museo-slab", serif;
@@ -12286,129 +12290,129 @@ body {
   font-size: 59px;
 }
 @media only screen and (max-width: 1279px) {
-  /* line 278, ../sass/_theme.scss */
+  /* line 281, ../sass/_theme.scss */
   .brand-name {
     font-size: 37px;
   }
 }
 
-/* line 287, ../sass/_theme.scss */
+/* line 290, ../sass/_theme.scss */
 .brand-name-practice {
   text-transform: capitalize;
 }
 
-/* line 288, ../sass/_theme.scss */
+/* line 291, ../sass/_theme.scss */
 .brand-name-update {
   text-transform: capitalize;
 }
 
-/* line 290, ../sass/_theme.scss */
+/* line 293, ../sass/_theme.scss */
 .login-register {
   margin: 0;
   padding-top: 7px;
 }
-/* line 293, ../sass/_theme.scss */
+/* line 296, ../sass/_theme.scss */
 .login-register .cta.account-question {
   margin-top: 7px;
   padding: 7px 0;
 }
 
-/* line 301, ../sass/_theme.scss */
+/* line 304, ../sass/_theme.scss */
 h1.item-title {
   margin-top: 7px;
   margin-bottom: 7px;
 }
 
-/* line 305, ../sass/_theme.scss */
+/* line 308, ../sass/_theme.scss */
 .journal .item-title, .feed .item-title {
   font-size: 14px;
   font-family: "proxima-nova";
 }
 
-/* line 310, ../sass/_theme.scss */
+/* line 313, ../sass/_theme.scss */
 .journal-title, .feed-title {
   display: none;
 }
 
-/* line 314, ../sass/_theme.scss */
+/* line 317, ../sass/_theme.scss */
 .journal .item-citation, .feed .item-citation, .expertopinion .item-citation {
   font-size: 11.9px;
   color: #948b7c;
 }
 
-/* line 319, ../sass/_theme.scss */
+/* line 322, ../sass/_theme.scss */
 .recommended h5, .recommended .form-title, .recommended .cta-title {
   font-size: 17px;
   margin: 0;
   font-weight: normal;
 }
 
-/* line 325, ../sass/_theme.scss */
+/* line 328, ../sass/_theme.scss */
 a i[class^="icon-"] {
   color: #b7b7b7;
 }
 
-/* line 329, ../sass/_theme.scss */
+/* line 332, ../sass/_theme.scss */
 a:hover i[class^="icon-"] {
   color: #887e6f;
   cursor: pointer;
 }
 
-/* line 334, ../sass/_theme.scss */
+/* line 337, ../sass/_theme.scss */
 .subheader, .form-description {
   color: #887e6f;
 }
 
-/* line 336, ../sass/_theme.scss */
+/* line 339, ../sass/_theme.scss */
 .socialshare-actions span, .socialshare-actions i {
   font-size: 21px;
 }
 
-/* line 339, ../sass/_theme.scss */
+/* line 342, ../sass/_theme.scss */
 #formLogin {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 339, ../sass/_theme.scss */
+  /* line 342, ../sass/_theme.scss */
   #formLogin {
     float: none;
     width: auto;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 345, ../sass/_theme.scss */
+  /* line 348, ../sass/_theme.scss */
   #formLogin .remember-forgot {
     padding-top: 14px;
   }
 }
 
-/* line 351, ../sass/_theme.scss */
+/* line 354, ../sass/_theme.scss */
 #formRegisterPrompt {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 351, ../sass/_theme.scss */
+  /* line 354, ../sass/_theme.scss */
   #formRegisterPrompt {
     float: none;
     width: auto;
   }
 }
 
-/* line 352, ../sass/_theme.scss */
+/* line 355, ../sass/_theme.scss */
 .page-banner .forgot {
   color: white;
 }
 
-/* line 353, ../sass/_theme.scss */
+/* line 356, ../sass/_theme.scss */
 .beta-accept, .subscribe-container {
   text-align: center;
 }
-/* line 355, ../sass/_theme.scss */
+/* line 358, ../sass/_theme.scss */
 .beta-accept input.error, .subscribe-container input.error {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* line 358, ../sass/_theme.scss */
+/* line 361, ../sass/_theme.scss */
 .beta-accept-lead, .subscribe-lead {
   color: #88cbdf;
   font-size: 17px;
@@ -12416,7 +12420,7 @@ a:hover i[class^="icon-"] {
   margin-bottom: 7px;
 }
 
-/* line 365, ../sass/_theme.scss */
+/* line 368, ../sass/_theme.scss */
 .beta-accept-button, .subscribe-button {
   color: #005596;
   font-weight: normal;
@@ -12432,7 +12436,7 @@ a:hover i[class^="icon-"] {
   box-shadow: 0 0 4px #c1cd23, 0 1px 0 white inset;
   text-transform: uppercase;
 }
-/* line 369, ../sass/_theme.scss */
+/* line 372, ../sass/_theme.scss */
 .beta-accept-button:hover, .subscribe-button:hover {
   color: #005596;
   *zoom: 1;
@@ -12446,30 +12450,30 @@ a:hover i[class^="icon-"] {
   background: linear-gradient(bottom, #1d1f05, #c1cd23);
 }
 
-/* line 376, ../sass/_theme.scss */
+/* line 379, ../sass/_theme.scss */
 .beta-accept-sub {
   display: none;
 }
 
-/* line 378, ../sass/_theme.scss */
+/* line 381, ../sass/_theme.scss */
 .specialty-name, .brand-name {
   color: white;
   margin-bottom: 0;
 }
 
-/* line 382, ../sass/_theme.scss */
+/* line 385, ../sass/_theme.scss */
 .specialty-name {
   font-size: 59px;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 767px) {
-  /* line 382, ../sass/_theme.scss */
+  /* line 385, ../sass/_theme.scss */
   .specialty-name {
     font-size: 44px;
   }
 }
 
-/* line 389, ../sass/_theme.scss */
+/* line 392, ../sass/_theme.scss */
 .tagline {
   color: #1d7998;
   font-family: "proxima-nova";
@@ -12477,33 +12481,33 @@ a:hover i[class^="icon-"] {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 394, ../sass/_theme.scss */
+  /* line 397, ../sass/_theme.scss */
   .tagline-str2 {
     display: block;
   }
 }
 
-/* line 400, ../sass/_theme.scss */
+/* line 403, ../sass/_theme.scss */
 .page-content-first {
   padding-top: 1em;
   padding-bottom: 2em;
   z-index: -5;
 }
 
-/* line 407, ../sass/_theme.scss */
+/* line 410, ../sass/_theme.scss */
 .copy-header {
   font-family: "museo-slab", serif;
   font-size: 37px;
   color: #172e54;
 }
 
-/* line 413, ../sass/_theme.scss */
+/* line 416, ../sass/_theme.scss */
 .expert-letter {
   margin-top: 28px;
   overflow: visible;
 }
 
-/* line 418, ../sass/_theme.scss */
+/* line 421, ../sass/_theme.scss */
 .expert-letter-copy {
   background-color: white;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -12516,12 +12520,12 @@ a:hover i[class^="icon-"] {
   border-radius: 2px;
 }
 
-/* line 428, ../sass/_theme.scss */
+/* line 431, ../sass/_theme.scss */
 .letter-illustration {
   margin-top: 21px;
 }
 @media screen and (min-width: 768px) {
-  /* line 428, ../sass/_theme.scss */
+  /* line 431, ../sass/_theme.scss */
   .letter-illustration {
     margin-top: 56px;
     margin-left: auto;
@@ -12529,45 +12533,45 @@ a:hover i[class^="icon-"] {
   }
 }
 
-/* line 436, ../sass/_theme.scss */
+/* line 439, ../sass/_theme.scss */
 .letter-body {
   font-size: 17px;
   line-height: 2;
 }
 
-/* line 444, ../sass/_theme.scss */
+/* line 447, ../sass/_theme.scss */
 .illustration-container {
   text-align: center;
 }
-/* line 446, ../sass/_theme.scss */
+/* line 449, ../sass/_theme.scss */
 .illustration-container img {
   max-width: 85px;
   margin: auto;
 }
 
-/* line 451, ../sass/_theme.scss */
+/* line 454, ../sass/_theme.scss */
 .page-content-second {
   margin-top: 28px;
   padding-bottom: 14px;
 }
 
-/* line 452, ../sass/_theme.scss */
+/* line 455, ../sass/_theme.scss */
 .site-benefits {
   margin-top: 28px;
 }
-/* line 454, ../sass/_theme.scss */
+/* line 457, ../sass/_theme.scss */
 .site-benefits .copy-header {
   text-align: center;
   padding-bottom: 28px;
 }
-/* line 458, ../sass/_theme.scss */
+/* line 461, ../sass/_theme.scss */
 .site-benefits h3 {
   color: #1d7998;
   font-family: "museo-slab", serif;
   font-size: 17px;
 }
 
-/* line 466, ../sass/_theme.scss */
+/* line 469, ../sass/_theme.scss */
 body.experimental-a {
   /* Corrections for Axel 2013-02-27 */
 }
@@ -12651,7 +12655,7 @@ body.experimental-b .page-header.fixed .top-bar {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
-/* line 473, ../sass/_theme.scss */
+/* line 476, ../sass/_theme.scss */
 .references ul.accordion ol li {
   list-style: decimal;
 }
