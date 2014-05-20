@@ -13,7 +13,51 @@
   font-family: $serifFontFamily;
 }
 
-.search-container{
-}
+/*
+.search-container{}
 .search-input{}
 .search-submit{}
+*/
+
+.content-header-nav{
+  @include innerRow(collapse); @include mobileRow();
+  background: $pri-ltBlue;
+  margin-bottom: 14px;
+  padding:0;
+  a, a:link, a:visited, a:hover, a:active{
+    color:#FFF;
+  }
+}
+/* .content-header-content{} */
+.content-header-title{
+  color: #FFF;
+  font-size: 17px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 14px 7px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+/* .content-header-subtitle{} */
+.content-header-list{
+  list-style-type: none;
+
+  li a{
+      padding: 7px;
+      display: block;
+      transition: all 0.3s ease;
+      &:hover{
+        background-color: darken($pri-ltBlue, 5%);
+        padding-left: 14px;
+      }
+  }
+}
+
+
+.collapse {
+  display: none;
+  &.in {
+    display: block;
+  }
+}

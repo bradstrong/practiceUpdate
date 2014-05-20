@@ -165,7 +165,7 @@
            $(".sticky").addClass("fixed");
         }
 
-       else if ( $window.scrollTop() < distance ) {
+       else if ( $window.scrollTop() < distance) {
           $(".sticky").removeClass("fixed");
        }
     });

@@ -9,21 +9,21 @@
 }
 
 /* line 55, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_semantic-grid.scss */
-.page-content, .page-footer, .footer-section-container .footer-section, .search-container, .search-summary, .page-banner, .channel-list, .pref-content, .content-header, .item-header, .item-content, .stream-item.in-stream, topic-filter-helper, .password-signin, .user-profile-header, .profile-card, .profile-details, .user-detail-list, .user-directory-header, .user-directory, .form-row, .checked-list, .eic-welcome .alert-body, .event-notification .alert-body, .prompt, .section-widget, .login-register {
+.page-content, .page-footer, .footer-section-container .footer-section, .search-container, .search-summary, .page-banner, .channel-list, .pref-content, .content-header, .content-header-nav, .item-header, .item-content, .stream-item.in-stream, topic-filter-helper, .password-signin, .user-profile-header, .profile-card, .profile-details, .user-detail-list, .user-directory-header, .user-directory, .form-row, .checked-list, .eic-welcome .alert-body, .event-notification .alert-body, .prompt, .section-widget, .login-register {
   *zoom: 1;
 }
 /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_clearfix.scss */
-.page-content:before, .page-footer:before, .footer-section-container .footer-section:before, .search-container:before, .search-summary:before, .page-banner:before, .channel-list:before, .pref-content:before, .content-header:before, .item-header:before, .item-content:before, .stream-item.in-stream:before, topic-filter-helper:before, .password-signin:before, .user-profile-header:before, .profile-card:before, .profile-details:before, .user-detail-list:before, .user-directory-header:before, .user-directory:before, .form-row:before, .checked-list:before, .eic-welcome .alert-body:before, .event-notification .alert-body:before, .prompt:before, .section-widget:before, .login-register:before, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .search-container:after, .search-summary:after, .page-banner:after, .channel-list:after, .pref-content:after, .content-header:after, .item-header:after, .item-content:after, .stream-item.in-stream:after, topic-filter-helper:after, .password-signin:after, .user-profile-header:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .user-directory-header:after, .user-directory:after, .form-row:after, .checked-list:after, .eic-welcome .alert-body:after, .event-notification .alert-body:after, .prompt:after, .section-widget:after, .login-register:after {
+.page-content:before, .page-footer:before, .footer-section-container .footer-section:before, .search-container:before, .search-summary:before, .page-banner:before, .channel-list:before, .pref-content:before, .content-header:before, .content-header-nav:before, .item-header:before, .item-content:before, .stream-item.in-stream:before, topic-filter-helper:before, .password-signin:before, .user-profile-header:before, .profile-card:before, .profile-details:before, .user-detail-list:before, .user-directory-header:before, .user-directory:before, .form-row:before, .checked-list:before, .eic-welcome .alert-body:before, .event-notification .alert-body:before, .prompt:before, .section-widget:before, .login-register:before, .page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .search-container:after, .search-summary:after, .page-banner:after, .channel-list:after, .pref-content:after, .content-header:after, .content-header-nav:after, .item-header:after, .item-content:after, .stream-item.in-stream:after, topic-filter-helper:after, .password-signin:after, .user-profile-header:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .user-directory-header:after, .user-directory:after, .form-row:after, .checked-list:after, .eic-welcome .alert-body:after, .event-notification .alert-body:after, .prompt:after, .section-widget:after, .login-register:after {
   content: " ";
   display: table;
 }
 /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_clearfix.scss */
-.page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .search-container:after, .search-summary:after, .page-banner:after, .channel-list:after, .pref-content:after, .content-header:after, .item-header:after, .item-content:after, .stream-item.in-stream:after, topic-filter-helper:after, .password-signin:after, .user-profile-header:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .user-directory-header:after, .user-directory:after, .form-row:after, .checked-list:after, .eic-welcome .alert-body:after, .event-notification .alert-body:after, .prompt:after, .section-widget:after, .login-register:after {
+.page-content:after, .page-footer:after, .footer-section-container .footer-section:after, .search-container:after, .search-summary:after, .page-banner:after, .channel-list:after, .pref-content:after, .content-header:after, .content-header-nav:after, .item-header:after, .item-content:after, .stream-item.in-stream:after, topic-filter-helper:after, .password-signin:after, .user-profile-header:after, .profile-card:after, .profile-details:after, .user-detail-list:after, .user-directory-header:after, .user-directory:after, .form-row:after, .checked-list:after, .eic-welcome .alert-body:after, .event-notification .alert-body:after, .prompt:after, .section-widget:after, .login-register:after {
   clear: both;
 }
 
 /* line 59, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_semantic-grid.scss */
-.footer-section-container .footer-section, .search-container, .search-summary, .channel-list, .pref-content, .content-header, .item-header, .item-content, .stream-item.in-stream, topic-filter-helper, .password-signin, .user-profile-header, .profile-card, .profile-details, .user-detail-list, .user-directory-header, .user-directory, .form-row, .checked-list, .eic-welcome .alert-body, .event-notification .alert-body, .prompt, .section-widget, .login-register {
+.footer-section-container .footer-section, .search-container, .search-summary, .channel-list, .pref-content, .content-header, .content-header-nav, .item-header, .item-content, .stream-item.in-stream, topic-filter-helper, .password-signin, .user-profile-header, .profile-card, .profile-details, .user-detail-list, .user-directory-header, .user-directory, .form-row, .checked-list, .eic-welcome .alert-body, .event-notification .alert-body, .prompt, .section-widget, .login-register {
   width: auto;
   max-width: none;
   min-width: 0;
@@ -9442,13 +9442,20 @@ nav.topic-nav .child-indicator {
 
 /* <span class="nav-header" style="padding: 7px; display: block; border: 1px solid #e3dcd4; margin-top: 14px; background-color: white; color: #172e54; font-family: "MuseoSlab-500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: 500; padding: 7px 7px 2px;margin: 10px 0 0;">My Topics</span> */
 /* line 2, ../sass/_module-topic-spotlight.scss */
-.topic-spotlight .side-nav {
+.coe .side-nav, .topic-spotlight .side-nav {
   margin-top: 0;
   padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-/* line 6, ../sass/_module-topic-spotlight.scss */
-.topic-spotlight li.nav-header {
+/* line 8, ../sass/_module-topic-spotlight.scss */
+.coe li.nav-header, .topic-spotlight li.nav-header {
   margin-top: 0;
+}
+
+/* line 12, ../sass/_module-topic-spotlight.scss */
+.ul-spotlight, .coe-spotlight {
+  margin-bottom: 0;
 }
 
 /*
@@ -9483,6 +9490,10 @@ nav.topic-nav .child-indicator {
 /* line 35, ../sass/_module-page-section.scss */
 .section-grid-item {
   padding: 0 !important;
+}
+/* line 37, ../sass/_module-page-section.scss */
+.section-grid-item.padded {
+  padding: 7px 15px !important;
 }
 
 /* line 2, ../sass/_module-page-footer.scss */
@@ -10062,6 +10073,82 @@ channel specific styles
 /* line 12, ../sass/_module-content-header.scss */
 .current-filter-banner {
   font-family: "museo-slab", serif;
+}
+
+/*
+.search-container{}
+.search-input{}
+.search-submit{}
+*/
+/* line 22, ../sass/_module-content-header.scss */
+.content-header-nav {
+  margin: 0;
+  background: #02b1c9;
+  margin-bottom: 14px;
+  padding: 0;
+}
+@media only screen and (max-width: 767px) {
+  /* line 22, ../sass/_module-content-header.scss */
+  .content-header-nav {
+    width: auto;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    *zoom: 1;
+  }
+  /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_clearfix.scss */
+  .content-header-nav:before, .content-header-nav:after {
+    content: " ";
+    display: table;
+  }
+  /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_clearfix.scss */
+  .content-header-nav:after {
+    clear: both;
+  }
+}
+/* line 27, ../sass/_module-content-header.scss */
+.content-header-nav a, .content-header-nav a:link, .content-header-nav a:visited, .content-header-nav a:hover, .content-header-nav a:active {
+  color: #FFF;
+}
+
+/* .content-header-content{} */
+/* line 32, ../sass/_module-content-header.scss */
+.content-header-title {
+  color: #FFF;
+  font-size: 17px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 14px 7px;
+}
+/* line 38, ../sass/_module-content-header.scss */
+.content-header-title:hover {
+  cursor: pointer;
+}
+
+/* .content-header-subtitle{} */
+/* line 43, ../sass/_module-content-header.scss */
+.content-header-list {
+  list-style-type: none;
+}
+/* line 46, ../sass/_module-content-header.scss */
+.content-header-list li a {
+  padding: 7px;
+  display: block;
+  transition: all 0.3s ease;
+}
+/* line 50, ../sass/_module-content-header.scss */
+.content-header-list li a:hover {
+  background-color: #029bb0;
+  padding-left: 14px;
+}
+
+/* line 58, ../sass/_module-content-header.scss */
+.collapse {
+  display: none;
+}
+/* line 60, ../sass/_module-content-header.scss */
+.collapse.in {
+  display: block;
 }
 
 /* item card */
@@ -10733,58 +10820,133 @@ img.avatar .a50, img.avatar .as50 {
 }
 
 /* line 23, ../sass/_module-explore-experts.scss */
-.explore-experts {
-  /*
-  	background-color:$white;
-  	@include elementBoxShadow;
-  */
+.explore-faculty, .explore-experts {
   *zoom: 1;
   padding-right: 14px;
   padding-left: 14px;
 }
 /* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_clearfix.scss */
-.explore-experts:before, .explore-experts:after {
+.explore-faculty:before, .explore-faculty:after, .explore-experts:before, .explore-experts:after {
   content: " ";
   display: table;
 }
 /* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_clearfix.scss */
-.explore-experts:after {
+.explore-faculty:after, .explore-experts:after {
   clear: both;
 }
 
-/* line 33, ../sass/_module-explore-experts.scss */
+/* line 29, ../sass/_module-explore-experts.scss */
+.explore-experts .avatar.as50 {
+  float: left;
+  margin-right: 7px;
+  margin-left: -50px;
+}
+
+/* .section-header{} */
+/* line 37, ../sass/_module-explore-experts.scss */
 .channel-container {
   float: left;
   width: 50%;
 }
 @media only screen and (max-width: 769px) {
-  /* line 33, ../sass/_module-explore-experts.scss */
+  /* line 37, ../sass/_module-explore-experts.scss */
   .channel-container {
     width: 100%;
   }
 }
 
-/* line 40, ../sass/_module-explore-experts.scss */
+/* line 44, ../sass/_module-explore-experts.scss */
 .editor-container {
   padding-right: 5px;
   padding-bottom: 7px;
   padding-left: 50px;
 }
 
-/* line 45, ../sass/_module-explore-experts.scss */
+/* line 49, ../sass/_module-explore-experts.scss */
 .avatar.as50 {
-  float: left;
-  margin-right: 7px;
-  margin-left: -50px;
   max-height: 50px;
   max-width: 50px;
 }
 
-/* line 52, ../sass/_module-explore-experts.scss */
+/* line 53, ../sass/_module-explore-experts.scss */
 .editor-name {
   word-break: normal;
 }
 
+/* line 56, ../sass/_module-explore-experts.scss */
+.faculty-grid li {
+  text-align: center;
+}
+/* line 58, ../sass/_module-explore-experts.scss */
+.faculty-grid li a {
+  display: block;
+}
+
+/*
+<div class="clear-fix"></div>
+<div class="explore-faculty panel">
+  <header class="section-header">
+      <p class="lead">RCC Text to come from Aman</p>
+      <br>
+      <p>West Clinic information to come from Aman</p>
+  </header>
+  <h5>RCC Facultyd</h5>
+  <ul class="block-grid three-up mobile-five-up faculty-grid">
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+  </ul>
+
+  <h5>Advisory Board</h5>
+  <ul class="block-grid three-up mobile-five-up faculty-grid">
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+  </ul>
+
+  <h5>Editorial Contributors</h5>
+  <ul class="block-grid three-up mobile-five-up faculty-grid">
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+  </ul>
+</div><!--/.explore-experts-->
+*/
 /* !COMPONENTS */
 /* line 21, ../sass/_module-user-console.scss */
 .drawer-toggle {
@@ -11526,42 +11688,47 @@ html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
 }
 
 /* line 3, ../sass/_module-widget.scss */
-.widget .list-widget-title {
-  /*     font-family:$serifFontFamily; */
+.list-widget-title {
   margin-bottom: 0;
 }
+
 /* line 7, ../sass/_module-widget.scss */
-.widget .list-widget-list {
-  list-style: none;
+.list-widget-list ul {
+  list-style: none !important;
+  list-style-type: none !important;
 }
-/* line 10, ../sass/_module-widget.scss */
-.widget .list-widget-item {
-  border-bottom: 1px solid #d4d1cb;
-}
+
 /* line 12, ../sass/_module-widget.scss */
-.widget .list-widget-item:last-child {
+.list-widget-item {
+  border-bottom: 1px solid #d4d1cb;
+  list-style: none !important;
+  list-style-type: none !important;
+}
+/* line 16, ../sass/_module-widget.scss */
+.list-widget-item:last-child {
   border-bottom: none;
 }
-/* line 14, ../sass/_module-widget.scss */
-.widget .in-list {
+
+/* line 18, ../sass/_module-widget.scss */
+.in-list {
   background: transparent;
   padding-top: .5em;
   padding-bottom: .5em;
 }
 
-/* line 22, ../sass/_module-widget.scss */
+/* line 25, ../sass/_module-widget.scss */
 .widget.els-branding {
   width: 25%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 22, ../sass/_module-widget.scss */
+  /* line 25, ../sass/_module-widget.scss */
   .widget.els-branding {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 22, ../sass/_module-widget.scss */
+  /* line 25, ../sass/_module-widget.scss */
   .widget.els-branding {
     float: left;
     width: 25%;
@@ -11569,25 +11736,25 @@ html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 22, ../sass/_module-widget.scss */
+  /* line 25, ../sass/_module-widget.scss */
   .widget.els-branding {
     left: 75%;
   }
 }
 
-/* line 23, ../sass/_module-widget.scss */
+/* line 26, ../sass/_module-widget.scss */
 .widget.els-description {
   width: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 23, ../sass/_module-widget.scss */
+  /* line 26, ../sass/_module-widget.scss */
   .widget.els-description {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 23, ../sass/_module-widget.scss */
+  /* line 26, ../sass/_module-widget.scss */
   .widget.els-description {
     float: left;
     width: 75%;
@@ -11595,25 +11762,25 @@ html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 23, ../sass/_module-widget.scss */
+  /* line 26, ../sass/_module-widget.scss */
   .widget.els-description {
     right: 25%;
   }
 }
 
-/* line 24, ../sass/_module-widget.scss */
+/* line 27, ../sass/_module-widget.scss */
 .widget.powered-by {
   width: 25%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 24, ../sass/_module-widget.scss */
+  /* line 27, ../sass/_module-widget.scss */
   .widget.powered-by {
     float: none;
     width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 24, ../sass/_module-widget.scss */
+  /* line 27, ../sass/_module-widget.scss */
   .widget.powered-by {
     float: left;
     width: 25%;
@@ -11621,7 +11788,7 @@ html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 24, ../sass/_module-widget.scss */
+  /* line 27, ../sass/_module-widget.scss */
   .widget.powered-by {
     left: 75%;
   }
@@ -11690,6 +11857,7 @@ html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
   height: auto;
   max-width: 728px;
   margin: 0 auto;
+  padding-bottom: 5px;
 }
 
 /* line 60, ../sass/_module-ad.scss */
@@ -11803,6 +11971,12 @@ html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
   text-align: center;
 }
 
+@media only screen and (max-width: 767px) {
+  /* line 116, ../sass/_module-ad.scss */
+  #leaderboard {
+    display: none;
+  }
+}
 /* line 1, ../sass/_module-explore-section.scss */
 .explore-sections {
   width: 100%;
@@ -11912,6 +12086,11 @@ html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
     float: none;
     width: auto;
   }
+}
+
+/* line 54, ../sass/_module-explore-section.scss */
+.section-search-result .user-name span:after {
+  content: ' ';
 }
 
 /* line 1, ../sass/_module-faq.scss */

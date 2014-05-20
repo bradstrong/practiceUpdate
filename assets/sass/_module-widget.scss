@@ -1,22 +1,25 @@
 // WIDGETS
-.widget{
+// .widget{}
   .list-widget-title{
-/*     font-family:$serifFontFamily; */
     margin-bottom: 0;
   }
   .list-widget-list{
-  	list-style:none;
+    & ul{
+      list-style:none !important;
+      list-style-type:none !important;
+    }
   }
-	.list-widget-item{
-  	border-bottom: 1px solid lighten($txtColor, 33);
-  	&:last-child{border-bottom: none;}
-	}
-	.in-list{
-		background: transparent;
-		padding-top:.5em;
-		padding-bottom:.5em;
-	}
-}
+  .list-widget-item{
+    border-bottom: 1px solid lighten($txtColor, 33);
+    list-style:none !important;
+    list-style-type:none !important;
+    &:last-child{border-bottom: none;}
+  }
+  .in-list{
+    background: transparent;
+    padding-top:.5em;
+    padding-bottom:.5em;
+  }
 
 // specific widgets
 .widget.els-branding{@include column(3); @include mobileColumn(1); @include mobilePush(3);}

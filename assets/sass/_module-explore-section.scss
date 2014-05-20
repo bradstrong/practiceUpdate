@@ -50,3 +50,8 @@
 .exploresectionentry .item-content-container{
   @include column(12, collapse);
 }
+.section-search-result{
+  .user-name span:after{
+    content: ' ';
+  }
+}

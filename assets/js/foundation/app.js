@@ -416,3 +416,14 @@ $('#et-al-trigger').on('click', function(){
 }( jQuery ));
 /*-- END Smooth scroll url fragment links --*/
 
+$(document.body).on('click', '.content-header-content h2', function() {
+/* 	$('.content-header-content').on('click', 'h2', function() { */
+	$('.content-header-list').slideToggle("slow");
+});
+
+$(document.body).on('click', '.content-header-list a', function(e) {
+	e.preventDefault();
+	$curSubhead = $(this).html();
+	$('.content-header-content .content-header-subtitle').html($curSubhead);
+	$('.content-header-list').slideToggle("slow");
+});

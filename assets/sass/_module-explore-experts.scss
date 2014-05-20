@@ -20,16 +20,20 @@
 .clear-fix{
   @include clearfix();
 }
-.explore-experts{
-/*
-	background-color:$white;
-	@include elementBoxShadow;
-*/
+.explore-faculty, .explore-experts{
   @include clearfix();
 	padding-right:14px;
 	padding-left:14px;
 }
-.section-header{}
+
+.explore-experts .avatar.as50{
+  float:left;
+  margin-right:7px;
+  margin-left:-50px;
+}
+
+/* .section-header{} */
+
 .channel-container{
   float:left;
   width:50%;
@@ -43,12 +47,81 @@
   padding-left:50px;
 }
 .avatar.as50{
-  float:left;
-  margin-right:7px;
-  margin-left:-50px;
   max-height: 50px;
   max-width: 50px;
 }
 .editor-name{
   word-break: normal;
 }
+.faculty-grid li{
+  text-align: center;
+  a{
+    display: block;
+  }
+}
+
+/*
+<div class="clear-fix"></div>
+<div class="explore-faculty panel">
+  <header class="section-header">
+      <p class="lead">RCC Text to come from Aman</p>
+      <br>
+      <p>West Clinic information to come from Aman</p>
+  </header>
+  <h5>RCC Facultyd</h5>
+  <ul class="block-grid three-up mobile-five-up faculty-grid">
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+  </ul>
+
+  <h5>Advisory Board</h5>
+  <ul class="block-grid three-up mobile-five-up faculty-grid">
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+  </ul>
+
+  <h5>Editorial Contributors</h5>
+  <ul class="block-grid three-up mobile-five-up faculty-grid">
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+    <li>
+      <a href="#"><img class="avatar as50" src="http://placehold.it/60x60"/></a>
+      <a class="editor-name" href="#">Name Name. MD</a>
+    </li>
+  </ul>
+</div><!--/.explore-experts-->
+*/
