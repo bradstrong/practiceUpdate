@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background-color"
+			],
+			[
 				"margin",
 				"margin-bottom"
 			],
@@ -26,10 +30,6 @@
 			[
 				"fon",
 				"font-family"
-			],
-			[
-				"bac",
-				"background-color"
 			],
 			[
 				"bowe",
@@ -250,6 +250,103 @@
 				"buffer_size": 24557,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "update.html",
+			"settings":
+			{
+				"buffer_size": 18193,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/mustache/module-editors-picks.mustache",
+			"settings":
+			{
+				"buffer_size": 17180,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "explore-coe-landing.html",
+			"settings":
+			{
+				"buffer_size": 22347,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "explore-coe-lr.html",
+			"settings":
+			{
+				"buffer_size": 26516,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "explore-coe-tb.html",
+			"settings":
+			{
+				"buffer_size": 23370,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/brad/Sites/pu-fe/Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 8306,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "explore-coe.html",
+			"settings":
+			{
+				"buffer_size": 62662,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "explore-coe-conferences.html",
+			"settings":
+			{
+				"buffer_size": 22940,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "explore-coe-ci.html",
+			"settings":
+			{
+				"buffer_size": 22940,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "textbook.html",
+			"settings":
+			{
+				"buffer_size": 33604,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "case.html",
+			"settings":
+			{
+				"buffer_size": 31602,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "COE Menu    |   done\n\nmodule navigation   |   done\n\nI have this done and in a copy of the explore page. I may tweak the speed of the animation, but I don't anticipate changing the markup.\n\nTumor Boards and Colleague insights (explore page)\n\n- Since these are both Expert Opinion, I don't anticipate changing anything in the cut tent markup, other than duplicating the \"Expert Opinion\" explore-section and putting in the appropriate titles. Do you need me to manually do that?\n\nLiving Resources and Conferences (Explore Page)\n\n- I wasn't sure whether we'd be displaying content from these or just dropping images in. From what Aman said, there will be very little content in these sections at launch, so I was thinking of asking Chris to create an image for each one and basically having CTAs for each section at first.\n\nRCC Faculty list - done-ish\n\nI need text from Aman. I don't see the markup changing. The images and links just need to be added once the experts are all added to Juneo.\n\nDo you have time to talk after this call?",
+			"settings":
+			{
+				"buffer_size": 1031,
+				"line_ending": "Unix",
+				"name": "COE Menu    |   done"
+			}
 		}
 	],
 	"build_system": "",
@@ -259,12 +356,20 @@
 		"selected_items":
 		[
 			[
-				"lint",
-				"SublimeLinter: Lint This View"
+				"prett",
+				"HTMLPrettify: Set Prettify Preferences"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
+			],
+			[
+				"ftp",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
 			],
 			[
 				"ins",
@@ -277,10 +382,6 @@
 			[
 				"remo",
 				"Package Control: Remove Package"
-			],
-			[
-				"prett",
-				"HTMLPrettify: Set Prettify Preferences"
 			],
 			[
 				"inst",
@@ -353,28 +454,62 @@
 	},
 	"file_history":
 	[
-		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/password-reset.mustache",
+		"/Users/brad/Sites/pu/practiceUpdate/test.html",
+		"/Users/brad/Sites/pu/practiceUpdate/tagging.html",
+		"/Users/brad/Sites/pu/practiceUpdate/learn.html",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-topic-spotlight.scss",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-content-header.scss",
+		"/Users/brad/Sites/pu/practiceUpdate/textbook.html",
+		"/Users/brad/Sites/pu/practiceUpdate/journal-scan.html",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-widget.scss",
+		"/Users/brad/Sites/pu/practiceUpdate/labels.html",
+		"/Users/brad/Sites/pu/practiceUpdate/explore-coe.html",
+		"/Users/brad/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Users/brad/Sites/pu/practiceUpdate/seminal-article-Esophageal_and_Gastroesophageal_Junction_Cancer.html",
+		"/Users/brad/Sites/pu/practiceUpdate/seminal-article-Growth_Factor_Support.html",
+		"/Users/brad/Sites/pu/practiceUpdate/Gemfile",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/modals-forgot-password.mustache",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/img/fairhead-icons/fc-webicon-tumblr.svg",
+		"/Users/brad/Sites/pu/practiceUpdate/content/json/feed.json",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-topic-nav.scss",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-top-bar.scss",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-tooltip.scss",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/module-recent.mustache",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/modals.mustache",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/modal-cme-onc-001.mustache",
+		"/Users/brad/Sites/pu/practiceUpdate/MIT-LICENSE.txt",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/img/fairhead-icons/fc-webicon-icloud.svg",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/css/fc-webicons.css",
+		"/Users/brad/Sites/pu/practiceUpdate/resource-center.html",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/module-content-header.mustache",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/css/juneo-content.css",
+		"/Users/brad/Sites/pu/practiceUpdate/contact-us.html",
+		"/Users/brad/Sites/pu/practiceUpdate/config.rb",
+		"/Users/brad/Sites/pu/practiceUpdate/cardiology.html",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/_module-page-section.scss",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/page-footer.mustache",
+		"/Users/brad/Sites/pu/practiceUpdate/conference-page.html",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/pu-icons.scss",
-		"/Users/brad/Sites/pu/practiceUpdate/update.html",
+		"/Users/brad/Sites/pu/practiceUpdate/explore.html",
+		"/Users/brad/Sites/pu/practiceUpdate/content/json/explore_expert-opinion.json",
+		"/Users/brad/Sites/pu/practiceUpdate/expert-opinion-item.html",
+		"/Users/brad/Sites/pu/practiceUpdate/registration-confirmation.html",
 		"/Users/brad/Sites/pu/practiceUpdate/raf.html",
+		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/password-reset.mustache",
+		"/Users/brad/Sites/pu/practiceUpdate/update.html",
 		"/Users/brad/Sites/pu-fe/app/_partial/creeper.hbs",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/js/foundation/app.js",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/sass/app.scss",
 		"/Users/brad/Sites/pu/practiceUpdate/content/json/ad.json",
 		"/Users/brad/Sites/pu/practiceUpdate/practiceUpdate.sublime-project",
-		"/Users/brad/Sites/pu/practiceUpdate/MIT-LICENSE.txt",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/img/fairhead-icons/fc-webicon-linkedin.svg",
 		"/Users/brad/Sites/pu/practiceUpdate/channel-list.html",
-		"/Users/brad/Sites/pu/practiceUpdate/labels.html",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/css/app.css",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/section.mustache",
-		"/Users/brad/Sites/pu/practiceUpdate/explore.html",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/module-editors-picks.mustache",
-		"/Users/brad/Sites/pu/practiceUpdate/journal-scan.html",
 		"/Users/brad/Sites/pu/practiceUpdate/assets/mustache/ad.mustache",
 		"/Users/brad/Sites/pu/practiceUpdate/advertise.html",
 		"/Users/brad/Sites/pu/practiceUpdate/seminal-article-Colorectal_Cancer.html",
-		"/Users/brad/Sites/pu/practiceUpdate/seminal-article-Esophageal_and_Gastroesophageal_Junction_Cancer.html",
 		"/Users/brad/Sites/pu/practiceUpdate/survey.html",
 		"/Users/brad/Sites/pu/practiceUpdate/content/json/explore_news.json",
 		"/Users/brad/Sites/pu/practiceUpdate/explore_articles.html",
@@ -446,41 +581,7 @@
 		"/Users/brad/Sites/pu-fe/app/_data/experts.json",
 		"/Users/brad/Sites/pu-fe/app/_partial/experts.hbs",
 		"/Users/brad/Sites/pu-fe/app/asset/less/module/_ad.less",
-		"/Users/brad/Sites/pu-fe/app/_partial/channel-list-alt.hbs",
-		"/Users/brad/Library/Application Support/Sublime Text 3/Packages/User/Base File.sublime-settings",
-		"/Users/brad/Sites/pu-fe/node_modules/grunt-contrib-concat/test/expected/default_options",
-		"/Users/brad/Sites/pu-fe/app/_partial/gtm.hbs",
-		"/Users/brad/Sites/pu-fe/app/_partial/vcard.hbs",
-		"/Users/brad/Sites/pu-fe/app/_layout/layout-directory.hbs",
-		"/Users/brad/Sites/pu-fe/app/_partial/vcard-inline.hbs",
-		"/Users/brad/Sites/pu-fe/app/_page/user-directory.hbs",
-		"/Users/brad/Sites/pu-fe/app/_partial/user-nav.hbs",
-		"/Users/brad/Sites/pu-fe/app/_page/explore.hbs",
-		"/Users/brad/Sites/pu-fe/app/_partial/channel-list.hbs",
-		"/Users/brad/Sites/pu-fe/app/_data/channel-list.json",
-		"/Users/brad/Sites/pu-fe/node_modules/permalinks/node_modules/moment/test/moment/days_in_month.js",
-		"/Users/brad/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/brad/Sites/pu-fe/app/_layout/layout-explore.hbs",
-		"/Users/brad/Sites/pu-fe/app/_layout/layout-profile.hbs",
-		"/Users/brad/Sites/pu-fe/app/_layout/layout-utility.hbs",
-		"/Users/brad/Sites/pu-fe/app/_layout/layout-update.hbs",
-		"/Users/brad/Sites/pu-fe/app/asset/less/module/_widget.less",
-		"/Users/brad/Sites/pu-fe/app/_data/user-profile.json",
-		"/Users/brad/Sites/pu-fe/app/_partial/user-console.hbs",
-		"/Users/brad/Sites/pu-fe/app/_data/ad.json",
-		"/Users/brad/Sites/pu-fe/node_modules/assemble/test/actual/assets_dot_slash.html",
-		"/Users/brad/Sites/pu-fe/app/_data/ad-boombox1.json",
-		"/Users/brad/Sites/pu-fe/app/_data/ad-leaderboard.json",
-		"/Users/brad/Sites/pu-fe/app/_partial/password-reset.hbs",
-		"/Users/brad/Sites/pu-fe/app/_partial/profile-details.hbs",
-		"/Users/brad/Sites/pu-fe/node_modules/bower/lib/commands/update.js",
-		"/Users/brad/Sites/pu-fe/bower_components/bootstrap/less/wells.less",
-		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/to/node_modules/htmlparser/profile.getelement.js",
-		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/to/node_modules/htmlparser/profileresults.txt",
-		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/to/node_modules/htmlparser/profile.js",
-		"/Users/brad/Sites/pu-fe/node_modules/grunt-contrib-concat/test/expected/process_function",
-		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/to/node_modules/htmlparser/profile",
-		"/Users/brad/Sites/pu-fe/node_modules/handlebars-helpers/node_modules/highlight.js/profile.js"
+		"/Users/brad/Sites/pu-fe/app/_partial/channel-list-alt.hbs"
 	],
 	"find":
 	{
@@ -506,6 +607,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"k kell",
+			"ons",
+			"asco",
+			"textbook",
+			"h3",
+			"view more",
+			"expert opinion",
+			"box-shadow",
+			"500x500",
+			"card",
+			"padding",
+			"section-grid-item card",
+			"14px 7px;",
+			"all channels",
+			"Quisque feugiat dignissim libero sit amet.",
+			"ul class=\"coe-list list-widget-list\">\n            <li class=\"recent-pub-item list-widget-item entry\">\n              <article class=\"recent-pub in-list\">\n                <span class=\"flag featured\"><i class=\"icon-star\"></i></span>\n                \n                <span class=\"recent-pub-title\"><a href=\"\">New Induction Standard for Acute Myeloid Leukemia</a></span>\n              </article>\n            </li><!--/.item-container-->\n            <li class=\"recent-pub-item list-widget-item entry\">\n              <article class=\"recent-pub in-list\">\n                \n                \n                <span class=\"recent-pub-title\"><a href=\"\">PCI-32765 Is One of the Most Exciting Drugs Around</a></span>\n              </article>\n            </li><!--/.item-container-->\n          </ul>",
+			"300x300",
+			"700x300",
+			"<a href=\"#\"><img class=\"avatar as50\" src=\"http://placehold.it/60x60\"/></a>",
+			"tumor",
+			"padded",
+			"article info",
+			"700x150",
+			"view more",
+			"placehold",
+			"Tumor Board",
+			"item-citation",
+			"commentary",
 			"form",
 			"valid",
 			"return to",
@@ -605,35 +734,7 @@
 			"inline",
 			"$base-font-size",
 			"each",
-			"if",
-			"{{assets}}",
-			"img",
-			"p",
-			"</p>",
-			"stream",
-			"bower",
-			"dd",
-			"sprite",
-			"botstrap",
-			"dev",
-			"$",
-			"assets",
-			"main",
-			"off",
-			"}}\n",
-			"Pellentesque",
-			"flag-",
-			"content",
-			"commentary",
-			"stream-item-container",
-			"enter your",
-			"page-content",
-			"3",
-			"bottom",
-			"{{",
-			"{{>",
-			"sidebar",
-			"top-bar"
+			"if"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -672,12 +773,12 @@
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
-		"wrap": false
+		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -706,6 +807,167 @@
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "update.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11847,
+								11847
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 776.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/mustache/module-editors-picks.mustache",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								236
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -714,14 +976,61 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
-								"bh_regex_close",
+								"bh_regex_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML Mustache/Syntaxes/HTMLMustache.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "explore-coe-landing.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -738,22 +1047,728 @@
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "explore-coe-lr.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8666,
+								8666
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2704.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "explore-coe-tb.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8234,
+								8234
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2006.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/brad/Sites/pu-fe/Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1560,
+								1560
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close"
 							],
 							"incomplete_sync": null,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3282.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "explore-coe.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 62662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "explore-coe-conferences.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22940,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7804,
+								7804
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 525.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "explore-coe-ci.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22940,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "textbook.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 33604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2767,
+								2767
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 677.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "case.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31602,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5431,
+								5307
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 947.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1031,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1031,
+								1031
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "COE Menu    |   done",
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
+							],
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -814,6 +1829,54 @@
 		"selected_items":
 		[
 			[
+				"textb",
+				"textbook.html"
+			],
+			[
+				"learn",
+				"learn.html"
+			],
+			[
+				"module-top",
+				"assets/sass/_module-topic-spotlight.scss"
+			],
+			[
+				"widget",
+				"assets/sass/_module-widget.scss"
+			],
+			[
+				"journa",
+				"journal-scan.html"
+			],
+			[
+				"content-he",
+				"assets/sass/_module-content-header.scss"
+			],
+			[
+				"page-se",
+				"assets/sass/_module-page-section.scss"
+			],
+			[
+				"expo",
+				"explore-coe.html"
+			],
+			[
+				"rcc",
+				"resource-center.html"
+			],
+			[
+				"exp",
+				"explore.html"
+			],
+			[
+				"editor",
+				"assets/mustache/module-editors-picks.mustache"
+			],
+			[
+				"upda",
+				"update.html"
+			],
+			[
 				"prefer",
 				"preferences.html"
 			],
@@ -864,10 +1927,6 @@
 			[
 				"app",
 				"assets/sass/app.scss"
-			],
-			[
-				"editor",
-				"assets/mustache/module-editors-picks.mustache"
 			],
 			[
 				"journ",
@@ -986,10 +2045,6 @@
 				"app/_layout/layout-update.hbs"
 			],
 			[
-				"widget",
-				"app/asset/less/module/_widget.less"
-			],
-			[
 				"prof",
 				"app/_page/user-profile-1.hbs"
 			],
@@ -1004,10 +2059,6 @@
 			[
 				"profile",
 				"app/_partial/profile-card.hbs"
-			],
-			[
-				"upda",
-				"app/_page/update.hbs"
 			],
 			[
 				"user-profi",
@@ -1040,10 +2091,6 @@
 			[
 				"vcard",
 				"app/_partial/vcard-inline.hbs"
-			],
-			[
-				"learn",
-				"app/_page/learn.hbs"
 			],
 			[
 				"vcar",
@@ -1292,38 +2339,6 @@
 			[
 				"top-bar",
 				"app/_data/top-bar.json"
-			],
-			[
-				"header",
-				"app/_partial/content-header.hbs"
-			],
-			[
-				"module-auth",
-				"app/asset/scss/_module-author.scss"
-			],
-			[
-				"module.s",
-				"app/asset/scss/_module.scss"
-			],
-			[
-				"module-str",
-				"app/asset/scss/_module-stream-item.scss"
-			],
-			[
-				"module.scss",
-				"app/asset/scss/_module.scss"
-			],
-			[
-				"stream",
-				"app/asset/scss/_module-stream-item.scss"
-			],
-			[
-				"layo",
-				"app/asset/scss/_layout.scss"
-			],
-			[
-				"dash",
-				"app/_partial/dashboard.hbs"
 			]
 		],
 		"width": 0.0
