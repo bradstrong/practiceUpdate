@@ -1,0 +1,66 @@
+.display-none {
+	display:none;
+}
+
+.faculty {
+	text-align:center; 
+	font-weight:normal; 
+	font-size:32px;
+}
+
+.f-24 {
+	text-align:center; 
+	font-weight:normal; 
+	font-size:24px;
+}
+
+.coe-landing-widget {
+	border:none; 
+	box-shadow:none; 
+	background:transparen;t
+}
+
+.section-grid-item {
+	.card {
+		background-color:#fff; 
+		border: 1px solid #ccc; 
+		box-shadow:0 1px 3px rgba(0,0,0,.02); 
+		margin-left:7px; 
+		margin-bottom:7px;
+		
+		p {
+			padding:21px 14px 14px;
+		}
+	}
+}
+
+#ps3leaderboardcontent {
+	div {
+		border: 0pt none;
+	}
+}
+.explore-section-3-ul {
+	.list-header {
+		margin-left: -15px; 
+		border-left: 2px solid #CCC; 
+		padding-left: 13px; 
+		font-size: 16px;
+	
+		span {
+			display: inline-block; 
+			color: #ccc;
+		}
+	}
+}
+
+.upload-placeholder {
+	background-color:#CCC; 
+	color:#000; 
+	height:150px;
+}	
+
+.editor-container {
+	float:left; 
+	clear:left; 
+	padding-left:50px;
+}
