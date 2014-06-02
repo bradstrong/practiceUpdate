@@ -1,0 +1,944 @@
+﻿@{
+    var WebView = Request.QueryString["WebView"];
+    int CustomTypeId = ViewBag.CustomTypeId;
+    var allowUnsubscribe = true;
+    var UnsubscribeLink = System.Configuration.ConfigurationManager.AppSettings["SiteUrl"] + Html.Raw("/unsubscribe/?id=") + ViewBag.NewsletterId +Html.Raw("&") + ViewBag.querystring;
+    var SubscriptionReason = "You're receiving this newsletter because you signed up at PracticeUpdate.com";
+    switch (CustomTypeId)
+        {
+            case 1:     //OncologyStat ACQTarget
+            allowUnsubscribe = false;
+            SubscriptionReason = "You're receiving this newsletter because you signed up at OncologyStat.com";
+            break;
+        }
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width"/>
+		<title>
+			@ViewBag.Title
+		</title>
+        <style type="text/css">
+            @@media only screen and (max-width: 600px) {
+              h1[class="newsletter-title"] {
+                font-size: 26px !important;
+              }
+              .authors {
+                display: block !important; margin: 5px 0 5px 0px !important;
+              }
+              .author {
+                display: block !important; margin: 5px 0 5px 0px !important;
+              }
+              .author-group {
+                display: block !important; margin-bottom: 5px !important;
+              }
+              .author-group-text {
+                display: block !important; margin-bottom: 5px !important;
+              }
+              h1[class="newsletter-title"] {
+                font-size: 26px !important;
+              }
+              .authors {
+                display: block !important; margin: 5px 0 5px 0px !important;
+              }
+              .author {
+                display: block !important; margin: 5px 0 5px 0px !important;
+              }
+              .author-group {
+                display: block !important; margin-bottom: 5px !important;
+              }
+              .author-group-text {
+                display: block !important; margin-bottom: 5px !important;
+              }
+              h1[class="newsletter-title"] {
+                font-size: 26px !important;
+              }
+              .authors {
+                display: block !important; margin: 5px 0 5px 0px !important;
+              }
+              .author {
+                display: block !important; margin: 5px 0 5px 0px !important;
+              }
+              .author-group {
+                display: block !important; margin-bottom: 5px !important;
+              }
+              .author-group-text {
+                display: block !important; margin-bottom: 5px !important;
+              }
+              table[class="body"] img {
+                width: auto !important; height: auto !important;
+              }
+              table[class="body"] center {
+                min-width: 0 !important;
+              }
+              table[class="body"] .container {
+                width: 95% !important;
+              }
+              table[class="body"] .row {
+                display: block !important; width: 100% !important;
+              }
+              table[class="body"] .wrapper {
+                display: block !important; padding-right: 0 !important;
+              }
+              table[class="body"] .columns {
+                display: block !important; float: none !important; width: 100% !important; padding-right: 0 !important; padding-left: 0 !important; table-layout: fixed !important;
+              }
+              table[class="body"] .column {
+                display: block !important; float: none !important; width: 100% !important; padding-right: 0 !important; padding-left: 0 !important; table-layout: fixed !important;
+              }
+              table[class="body"] .wrapper.first .columns {
+                display: table !important;
+              }
+              table[class="body"] .wrapper.first .column {
+                display: table !important;
+              }
+              table[class="body"] table.columns td {
+                width: 100% !important;
+              }
+              table[class="body"] table.column td {
+                width: 100% !important;
+              }
+              table[class="body"] .columns td.one {
+                width: 8.333333% !important;
+              }
+              table[class="body"] .column td.one {
+                width: 8.333333% !important;
+              }
+              table[class="body"] .columns td.two {
+                width: 16.666666% !important;
+              }
+              table[class="body"] .column td.two {
+                width: 16.666666% !important;
+              }
+              table[class="body"] .columns td.three {
+                width: 25% !important;
+              }
+              table[class="body"] .column td.three {
+                width: 25% !important;
+              }
+              table[class="body"] .columns td.four {
+                width: 33.333333% !important;
+              }
+              table[class="body"] .column td.four {
+                width: 33.333333% !important;
+              }
+              table[class="body"] .columns td.five {
+                width: 41.666666% !important;
+              }
+              table[class="body"] .column td.five {
+                width: 41.666666% !important;
+              }
+              table[class="body"] .columns td.six {
+                width: 50% !important;
+              }
+              table[class="body"] .column td.six {
+                width: 50% !important;
+              }
+              table[class="body"] .columns td.seven {
+                width: 58.333333% !important;
+              }
+              table[class="body"] .column td.seven {
+                width: 58.333333% !important;
+              }
+              table[class="body"] .columns td.eight {
+                width: 66.666666% !important;
+              }
+              table[class="body"] .column td.eight {
+                width: 66.666666% !important;
+              }
+              table[class="body"] .columns td.nine {
+                width: 75% !important;
+              }
+              table[class="body"] .column td.nine {
+                width: 75% !important;
+              }
+              table[class="body"] .columns td.ten {
+                width: 83.333333% !important;
+              }
+              table[class="body"] .column td.ten {
+                width: 83.333333% !important;
+              }
+              table[class="body"] .columns td.eleven {
+                width: 91.666666% !important;
+              }
+              table[class="body"] .column td.eleven {
+                width: 91.666666% !important;
+              }
+              table[class="body"] .columns td.twelve {
+                width: 100% !important;
+              }
+              table[class="body"] .column td.twelve {
+                width: 100% !important;
+              }
+              table[class="body"] td.offset-by-one {
+                padding-left: 0 !important;
+              }
+              table[class="body"] td.offset-by-two {
+                padding-left: 0 !important;
+              }
+              table[class="body"] td.offset-by-three {
+                padding-left: 0 !important;
+              }
+              table[class="body"] td.offset-by-four {
+                padding-left: 0 !important;
+              }
+              table[class="body"] td.offset-by-five {
+                padding-left: 0 !important;
+              }
+              table[class="body"] td.offset-by-six {
+                padding-left: 0 !important;
+              }
+              table[class="body"] td.offset-by-seven {
+                padding-left: 0 !important;
+              }
+              table[class="body"] td.offset-by-eight {
+                padding-left: 0 !important;
+              }
+              table[class="body"] td.offset-by-nine {
+                padding-left: 0 !important;
+              }
+              table[class="body"] td.offset-by-ten {
+                padding-left: 0 !important;
+              }
+              table[class="body"] td.offset-by-eleven {
+                padding-left: 0 !important;
+              }
+              table[class="body"] table.columns td.expander {
+                width: 1px !important;
+              }
+              table[class="body"] .right-text-pad {
+                padding-left: 10px !important;
+              }
+              table[class="body"] .text-pad-right {
+                padding-left: 10px !important;
+              }
+              table[class="body"] .left-text-pad {
+                padding-right: 10px !important;
+              }
+              table[class="body"] .text-pad-left {
+                padding-right: 10px !important;
+              }
+              table[class="body"] .hide-for-small {
+                display: none !important;
+              }
+              table[class="body"] .show-for-desktop {
+                display: none !important;
+              }
+              table[class="body"] .show-for-small {
+                display: inherit !important;
+              }
+              table[class="body"] .hide-for-desktop {
+                display: inherit !important;
+              }
+            }
+            body {
+            color: #58595b;
+            }
+            body h1 {
+            color: #776f67;
+            }
+            body h2 {
+            color: #776f67;
+            }
+            body h3 {
+            color: #776f67;
+            }
+            body h4 {
+            color: #776f67;
+            }
+            body h5 {
+            color: #776f67;
+            }
+            body h6 {
+            color: #776f67;
+            }
+            body p {
+            color: #776f67;
+            }
+            body small {
+            color: #776f67;
+            }
+            body span {
+            color: #776f67;
+            }
+            body h3 {
+            font-size: 18px;
+            }
+            body a {
+            color: #16799a;
+            }
+            body .banner {
+            background: #16799a;
+            }
+            body .banner .newsletter-title {
+            font-size: 38px; color: #ffffff;
+            }
+            body .banner .newsletter-channel {
+            font-size: 20px; color: #ffffff;
+            }
+            body .topic-highlight-header {
+            margin-top: 10px; background-color: #d9f6ff;
+            }
+            body .highlight-read-more {
+            text-align: right;
+            }
+            body .topic-highlight {
+            background-color: #F2FCFF;
+            }
+            body .section-header {
+            padding-left: 7px; color: #ffffff; background: #9594a0;
+            }
+            body .item-citation {
+            font-size: 11px;
+            }
+            body .ad-wrapper {
+            padding-top: 0 !important;
+            }
+            body .ad-wrapper .ad-content {
+            padding-bottom: 0 !important;
+            }
+            body .ad-wrapper .ad-title {
+            display: block; margin: 5px 0 5px 0px;
+            }
+            body .ad-wrapper .ad-content {
+            padding-bottom: 0 !important;
+            }
+            body .sotw-content {
+            color: #ffffff;
+            }
+            body .sotw-content .sotw-header {
+            padding: 0 0 0 7px; line-height: 38px; color: #ffffff; background: #02b1c9; border: none;
+            }
+            body .sotw-content .sotw-title {
+            display: inline-block; font-size: 18px; line-height: 22px;
+            }
+            body .panel-sotw .item-citation {
+            font-size: 12px;
+            }
+            body .author-group .author-group-text {
+            font-style: italic;
+            }
+            body .author-group .author-image {
+            display: inline-block; float: none; height: auto; max-width: 26px; vertical-align: middle;
+            }
+            body .nbsp {
+            font-size: 8px; line-height: 8px;
+            }
+            body .center {
+            text-align: center;
+            }
+            body .newsletter-icon {
+            float: none;
+            }
+            body .brand-stripe {
+            height: 7px; margin: 0; background: #dc6650; border: 0;
+            }
+            body .purple-stripe {
+            height: 7px; margin: 0; background: #9594a0; border: 0;
+            }
+            body {
+            color: #58595b;
+            }
+            body h1 {
+            color: #776f67;
+            }
+            body h2 {
+            color: #776f67;
+            }
+            body h3 {
+            color: #776f67;
+            }
+            body h4 {
+            color: #776f67;
+            }
+            body h5 {
+            color: #776f67;
+            }
+            body h6 {
+            color: #776f67;
+            }
+            body p {
+            color: #776f67;
+            }
+            body small {
+            color: #776f67;
+            }
+            body span {
+            color: #776f67;
+            }
+            body h3 {
+            font-size: 18px;
+            }
+            body a {
+            color: #16799a;
+            }
+            body .banner {
+            background: #16799a;
+            }
+            body .brand-stripe {
+            height: 7px; margin: 0; background: #dc6650; border: 0;
+            }
+            body .purple-stripe {
+            height: 7px; margin: 0; background: #9594a0; border: 0;
+            }
+            body .newsletter-title {
+            font-size: 38px; color: #ffffff;
+            }
+            body .newsletter-channel {
+            font-size: 20px; color: #ffffff;
+            }
+            body .section-header {
+            padding-left: 7px; color: #ffffff; background: #9594a0;
+            }
+            body .item-citation {
+            font-size: 11px;
+            }
+            body .legal-disclaimer {
+            color: #ffffff;
+            }
+            body .ad-wrapper {
+            padding-top: 0 !important;
+            }
+            body .ad-wrapper .ad-title {
+            display: block; margin: 5px 0 5px 0px;
+            }
+            body .ad-wrapper .ad-content {
+            padding-bottom: 0 !important;
+            }
+            body .newsletter-icon {
+            float: none;
+            }
+            body td.panel-sotw {
+            color: #ffffff;
+            }
+            body .sotw-header {
+            padding: 0 0 0 7px; line-height: 38px; color: #ffffff; background: #02b1c9; border: none;
+            }
+            body .sotw-title {
+            display: inline-block; font-size: 18px; line-height: 22px;
+            }
+            body .panel-sotw .item-citation {
+            font-size: 12px;
+            }
+            body .author-group-text {
+            font-style: italic;
+            }
+            body .author-image {
+            display: inline-block; float: none; height: auto; max-width: 26px; vertical-align: middle;
+            }
+            body .nbsp {
+            font-size: 8px; line-height: 8px;
+            }
+            body .center {
+            text-align: center;
+            }
+            body {
+            width: 100% !important; min-width: 100%; padding: 0; margin: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+            }
+            .ExternalClass {
+            width: 100%;
+            }
+            .ExternalClass {
+            line-height: 100%;
+            }
+            #backgroundTable {
+            width: 100% !important; padding: 0; margin: 0; line-height: 100% !important;
+            }
+            img {
+            display: block; float: left; width: auto; max-width: 100%; clear: both; text-decoration: none; outline: none; -ms-interpolation-mode: bicubic;
+            }
+            body {
+            padding: 0; margin: 0; font-family: "Helvetica", "Arial", sans-serif; font-weight: normal; line-height: 1.3; color: #222222; text-align: left;
+            }
+            body {
+            font-size: 14px; line-height: 19px;
+            }
+            a:hover {
+            color: #2795b6 !important;
+            }
+            a:active {
+            color: #2795b6 !important;
+            }
+            a:visited {
+            color: #2ba6cb !important;
+            }
+            h1 a:active {
+            color: #2ba6cb !important;
+            }
+            h2 a:active {
+            color: #2ba6cb !important;
+            }
+            h3 a:active {
+            color: #2ba6cb !important;
+            }
+            h4 a:active {
+            color: #2ba6cb !important;
+            }
+            h5 a:active {
+            color: #2ba6cb !important;
+            }
+            h6 a:active {
+            color: #2ba6cb !important;
+            }
+            h1 a:visited {
+            color: #2ba6cb !important;
+            }
+            h2 a:visited {
+            color: #2ba6cb !important;
+            }
+            h3 a:visited {
+            color: #2ba6cb !important;
+            }
+            h4 a:visited {
+            color: #2ba6cb !important;
+            }
+            h5 a:visited {
+            color: #2ba6cb !important;
+            }
+            h6 a:visited {
+            color: #2ba6cb !important;
+            }
+            table.button:hover td {
+            background: #2795b6 !important;
+            }
+            table.button:visited td {
+            background: #2795b6 !important;
+            }
+            table.button:active td {
+            background: #2795b6 !important;
+            }
+            table.button:hover td a {
+            color: #fff !important;
+            }
+            table.button:visited td a {
+            color: #fff !important;
+            }
+            table.button:active td a {
+            color: #fff !important;
+            }
+            table.button:hover td {
+            background: #2795b6 !important;
+            }
+            table.tiny-button:hover td {
+            background: #2795b6 !important;
+            }
+            table.small-button:hover td {
+            background: #2795b6 !important;
+            }
+            table.medium-button:hover td {
+            background: #2795b6 !important;
+            }
+            table.large-button:hover td {
+            background: #2795b6 !important;
+            }
+            table.button:hover td a {
+            color: #ffffff !important;
+            }
+            table.button:active td a {
+            color: #ffffff !important;
+            }
+            table.button td a:visited {
+            color: #ffffff !important;
+            }
+            table.tiny-button:hover td a {
+            color: #ffffff !important;
+            }
+            table.tiny-button:active td a {
+            color: #ffffff !important;
+            }
+            table.tiny-button td a:visited {
+            color: #ffffff !important;
+            }
+            table.small-button:hover td a {
+            color: #ffffff !important;
+            }
+            table.small-button:active td a {
+            color: #ffffff !important;
+            }
+            table.small-button td a:visited {
+            color: #ffffff !important;
+            }
+            table.medium-button:hover td a {
+            color: #ffffff !important;
+            }
+            table.medium-button:active td a {
+            color: #ffffff !important;
+            }
+            table.medium-button td a:visited {
+            color: #ffffff !important;
+            }
+            table.large-button:hover td a {
+            color: #ffffff !important;
+            }
+            table.large-button:active td a {
+            color: #ffffff !important;
+            }
+            table.large-button td a:visited {
+            color: #ffffff !important;
+            }
+            table.secondary:hover td {
+            color: #555; background: #d0d0d0 !important;
+            }
+            table.secondary:hover td a {
+            color: #555 !important;
+            }
+            table.secondary td a:visited {
+            color: #555 !important;
+            }
+            table.secondary:active td a {
+            color: #555 !important;
+            }
+            table.success:hover td {
+            background: #457a1a !important;
+            }
+            table.alert:hover td {
+            background: #970b0e !important;
+            }
+            body.outlook p {
+            display: inline !important;
+            }
+        </style>
+	</head>
+	<body style="font-family: 'Helvetica', 'Arial', sans-serif; -webkit-text-size-adjust: 100%; min-width: 100%; font-weight: normal; color: #222222; line-height: 19px; padding: 0; text-align: left; margin: 0; width: 100% !important; -ms-text-size-adjust: 100%; font-size: 14px;">
+		<table style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; padding: 0; margin: 0; line-height: 19px; width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; height: 100%; font-size: 14px;" class="body">
+			<tbody>
+				<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+					<td valign="top" align="center" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0; margin: 0; -webkit-hyphens: auto; border-collapse: collapse !important; text-align: center; vertical-align: top; font-size: 14px;" class="center">
+						<center style="width: 100%; min-width: 580px;">
+							<table style="border: 0; background: #9594a0; margin: 0; padding: 0; width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; position: relative; height: 7px;" class="row purple-stripe">
+								<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+									<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; font-size: 14px;">
+									</td>
+								</tr>
+							</table>
+							<table style="background: #16799a; padding: 0; width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; position: relative;" class="row banner">
+								<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+									<td valign="top" align="center" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0; margin: 0; -webkit-hyphens: auto; border-collapse: collapse !important; text-align: center; vertical-align: top; font-size: 14px;" class="center">
+										<center style="width: 100%; min-width: 580px;">
+											<table style="margin: 0 auto; padding: 0; width: 580px; text-align: inherit; border-spacing: 0; border-collapse: collapse; vertical-align: top;" class="container">
+												<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+													<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 10px 0 0 0px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; position: relative; font-size: 14px;" class="wrapper last">
+														<table style="margin: 0 auto; padding: 0; width: 580px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;" class="twelve columns">
+															<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; min-width: 0; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0 10px 10px 0px; margin: 0; -webkit-hyphens: auto; width: 66.666666%; text-align: left; border-collapse: collapse !important; vertical-align: top; font-size: 14px;" class="eight sub-columns">
+																	<h1 align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; color: #ffffff; word-break: normal; padding: 0; margin: 0; line-height: 1.3; text-align: left; font-size: 38px;" class="newsletter-title">
+																		@ViewBag.NewsletterTitle
+																	</h1>
+																	<h2 align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; color: #ffffff; word-break: normal; padding: 0; margin: 0; line-height: 1.3; text-align: left; font-size: 20px;" class="newsletter-channel">
+																		@ViewBag.SpecialtyName
+																	</h2>
+																</td>
+																<td valign="middle" align="right" style="font-family: 'Helvetica', 'Arial', sans-serif; min-width: 0; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0 0 10px 0px; margin: 0; -webkit-hyphens: auto; width: 33.333333%; border-collapse: collapse !important; text-align: right; vertical-align: middle; font-size: 14px;" class="four sub-columns last">
+																	<a href="@System.Configuration.ConfigurationManager.AppSettings["SiteUrl"]@Html.Raw("?")@ViewBag.querystring" style="color: #16799a; text-decoration: none;">
+																		<img alt="Practice Update" src="@System.Configuration.ConfigurationManager.AppSettings["CloudFrontImageURL"]/punewsletter/general/logo-practiceupdate-inverse.gif" align="left" width="176" style="clear: both; border: none; max-width: 100%; display: block; outline: none; text-decoration: none; width: auto; float: left; -ms-interpolation-mode: bicubic;" title="Practice Update" height="40" />
+																	</a>
+																</td>
+																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; -webkit-hyphens: auto; visibility: hidden; width: 0; text-align: left; padding: 0; margin: 0; border-collapse: collapse !important; vertical-align: top; font-size: 14px;" class="expander">
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</center>
+									</td>
+								</tr>
+							</table>
+                            <table class="container ad-container ad-leaderboard" style="padding: 0; margin: 0 auto; width: 580px; text-align: inherit; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
+	                            <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+		                            <td valign="top" align="center" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+			                            <center style="width: 100%; min-width: 580px;">
+				                            <table class="row" style="padding: 0; width: 100%; text-align: left; border-spacing: 0; position: relative; border-collapse: collapse; display: block; vertical-align: top;">
+					                            <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+						                            <td valign="top" class="wrapper last ad-wrapper" align="left" style="font-size: 14px; line-height: 19px; text-align: left; position: relative; hyphens: auto; word-break: break-word; margin: 0; padding: 0 0 0 0px; font-weight: normal; border-collapse: collapse !important; -moz-hyphens: auto; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; vertical-align: top; -webkit-hyphens: auto;">
+							                            <table class="twelve columns" style="padding: 0; margin: 0 auto; width: 580px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
+								                            <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+									                            <td valign="top" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0 0px 10px; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+										                            <table style="padding: 0; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
+											                            <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+												                            <td valign="top" class="ad-title" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0 0px 10px; display: block; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 5px 0 5px 0px; -webkit-hyphens: auto; vertical-align: top;">
+													                            <img height="8" width="67" class="ad-notice" align="left" style="display: block; float: left; width: auto; max-width: 100%; clear: both; text-decoration: none; outline: none; -ms-interpolation-mode: bicubic;" src="@System.Configuration.ConfigurationManager.AppSettings["CloudFrontImageURL"]/punewsletter/general/ad-notice.gif" />
+												                            </td>
+											                            </tr>
+											                            <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+												                            <td valign="top" width="100%" class="ad-content" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0 0px; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+                                                                                @Html.Raw(ViewBag.Ad)
+												                            </td>
+											                            </tr>
+										                            </table>
+									                            </td>
+								                            </tr>
+							                            </table>
+						                            </td>
+					                            </tr>
+				                            </table>
+			                            </center>
+		                            </td>
+	                            </tr>
+                            </table>
+                            @if (CustomTypeId==1)
+                            {
+                                <table class="container hero" style="padding: 0; margin: 0 auto; width: 580px; text-align: inherit; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
+	                                <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+		                                <td valign="top" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+			                                <table class="row" style="padding: 0; width: 100%; text-align: left; border-spacing: 0; position: relative; border-collapse: collapse; display: block; vertical-align: top;">
+				                                <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+					                                <td valign="top" class="wrapper last" align="left" style="font-size: 14px; line-height: 19px; text-align: left; position: relative; hyphens: auto; word-break: break-word; margin: 0; padding: 10px 0 0 0px; font-weight: normal; border-collapse: collapse !important; -moz-hyphens: auto; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; vertical-align: top; -webkit-hyphens: auto;">
+						                                <table class="twelve columns" style="padding: 0; margin: 0 auto; width: 580px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
+							                                <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+								                                <td valign="top" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0 0px 10px; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+									                                <table style="padding: 0; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
+										                                <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+											                                <td valign="top" class="panel" align="left" style="line-height: 19px; font-size: 14px; text-align: left; background: #f2f2f2; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 10px; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; border: 1px solid #d9d9d9; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+												                                <table style="padding: 0; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
+													                                <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+														                                <td valign="top" class="twelve sub-columns" align="left" style="font-size: 14px; line-height: 19px; text-align: left; min-width: 0; hyphens: auto; word-break: break-word; margin: 0; padding: 0 10px 10px 0px; font-weight: normal; border-collapse: collapse !important; -moz-hyphens: auto; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; vertical-align: top; -webkit-hyphens: auto;">
+															                                OncologySTAT is now PracticeUpdate. As a previous member of OncologySTAT, you will receive PracticeUpdate's Expert Insight e-newsletter, a weekly dose of the latest unbiased and expert-selected oncology-related information.<br /><br />To gain full access to this enhanced and expanded resource, login to PracticeUpdate today.
+														                                </td>
+														                                <td valign="top" class="expander" align="left" style="font-size: 14px; line-height: 19px; width: 0; text-align: left; visibility: hidden; hyphens: auto; word-break: break-word; margin: 0; padding: 0; font-weight: normal; border-collapse: collapse !important; -moz-hyphens: auto; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; vertical-align: top; -webkit-hyphens: auto;">
+														                                </td>
+													                                </tr>
+												                                </table>
+											                                </td>
+										                                </tr>
+									                                </table>
+								                                </td>
+							                                </tr>
+						                                </table>
+					                                </td>
+				                                </tr>
+			                                </table>
+		                                </td>
+	                                </tr>
+                                </table>
+                            }
+                            @RenderBody()
+                            <!-- Being Job Board Ads -->
+                            <table class="container ad-container ad-classified" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px">
+                                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                                    <td align="center" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-break: break-word" valign="top">
+                                        <center style="min-width: 580px; width: 100%">
+                                            <table class="row" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%">
+                                                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                                                    <td class="wrapper last ad-wrapper" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 0 0 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                                                        <table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px">
+                                                            <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                                                                <td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 0px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                                                                    <table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top">
+                                                                        <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                                                                            <td class="ad-content" width="100%" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                                                                                @Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" style=\"color: #16799a; text-decoration: none\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"100%\" border=\"0\" src=\"http://punewsletter.s3.amazonaws.com/classified/1x1.gif\" alt=\"\" style=\"-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto\" align=\"left\" /></a>")
+                                                                                @Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=1;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" style=\"color: #16799a; text-decoration: none\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"100%\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=1;tile=;sz=728x90;ord=123456789?\" alt=\"\" style=\"-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto\" align=\"left\" /></a>")
+                                                                                @if (ViewBag.SpecialtyId==2){
+                                                                                    <table class="row" style="border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; position: relative; width: 100%; display: block; padding: 0;">
+                                                                                      <tr style="text-align: left; vertical-align: top; padding: 0;" align="left">
+                                                                                        <td class="spacer" style="-webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; word-break: break-word; border-collapse: collapse !important; text-align: left; vertical-align: top; position: relative; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 5px; color: #222222; font-size: 5px; margin: 0; padding: 0 0 0 0px;" align="left" valign="top" height="5px">
+                                                                                        &nbsp;
+                                                                                        </td>
+                                                                                      </tr>
+                                                                                    </table>
+                                                                                }
+                                                                                @Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=2;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" style=\"color: #16799a; text-decoration: none\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"100%\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=2;tile=;sz=728x90;ord=123456789?\" alt=\"\" style=\"-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto\" align=\"left\" /></a>")
+                                                                                @if (ViewBag.SpecialtyId==2){
+                                                                                    <table class="row" style="border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; position: relative; width: 100%; display: block; padding: 0;">
+                                                                                      <tr style="text-align: left; vertical-align: top; padding: 0;" align="left">
+                                                                                        <td class="spacer" style="-webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; word-break: break-word; border-collapse: collapse !important; text-align: left; vertical-align: top; position: relative; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 5px; color: #222222; font-size: 5px; margin: 0; padding: 0 0 0 0px;" align="left" valign="top" height="5px">
+                                                                                        &nbsp;
+                                                                                        </td>
+                                                                                      </tr>
+                                                                                    </table>
+                                                                                }
+                                                                                @Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=3;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" style=\"color: #16799a; text-decoration: none\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"100%\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=3;tile=;sz=728x90;ord=123456789?\" alt=\"\" style=\"-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto\" align=\"left\" /></a>")
+                                                                                @if (ViewBag.SpecialtyId==2){
+                                                                                    <table class="row" style="border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; position: relative; width: 100%; display: block; padding: 0;">
+                                                                                        <tr style="text-align: left; vertical-align: top; padding: 0;" align="left">
+                                                                                        <td class="spacer" style="-webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; word-break: break-word; border-collapse: collapse !important; text-align: left; vertical-align: top; position: relative; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 5px; color: #222222; font-size: 5px; margin: 0; padding: 0 0 0 0px;" align="left" valign="top" height="5px">
+                                                                                        &nbsp;
+                                                                                        </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                }
+                                                                                @Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=4;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" style=\"color: #16799a; text-decoration: none\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"100%\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=4;tile=;sz=728x90;ord=123456789?\" alt=\"\" style=\"-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto\" align=\"left\" /></a>")
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </center>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- End Job Board Ads -->
+
+							<table style="padding: 0; width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; position: relative;" class="row utility">
+								<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+									<td valign="top" align="center" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0; margin: 0; -webkit-hyphens: auto; border-collapse: collapse !important; text-align: center; vertical-align: top; font-size: 14px;" class="center">
+										<center style="width: 100%; min-width: 580px;">
+											<table style="margin: 0 auto; padding: 0; width: 580px; text-align: inherit; border-spacing: 0; border-collapse: collapse; vertical-align: top;" class="container">
+												<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+													<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 10px 0 0 0px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; position: relative; font-size: 14px;" class="wrapper last">
+														<table style="margin: 0 auto; padding: 0; width: 580px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;" class="twelve columns">
+															<tbody>
+																<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+																	<td valign="top" align="center" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0 0px 10px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; font-size: 14px;">
+																		<center style="min-width: 580px; width: 100%;">
+																			<small style="color: #776f67; font-size: 10px;">
+																				@SubscriptionReason
+																			</small><br/>
+                                                                            @if (WebView != "1")
+                                                                            {
+																			<p align="center" style="font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; color: #776f67; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: center; font-size: 14px;">
+																				If you are having trouble viewing this message,
+																				<a href="@System.Configuration.ConfigurationManager.AppSettings["SiteUrl"]@ViewBag.ViewOnWebPath@ViewBag.NewsletterId@Html.Raw("?WebView=1")" style="color: #16799a; text-decoration: none;" target="_blank">
+																					click here to view on the web
+																				</a>
+																			</p>
+                                                                            }
+																			<p align="center" p style="font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; color: #776f67; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: center; font-size: 14px;" class="utility-action-list">
+																				@if (allowUnsubscribe){
+                                                                                    <span style="color: #776f67;" class="utility-action-link">
+																					    <a href="@UnsubscribeLink" style="color: #16799a; text-decoration: none;">
+																						    Unsubscribe
+																					    </a>
+																				    </span>
+																				    <span style="color: #776f67;" class="divider divider-pipe">
+																					    |
+																				    </span>
+                                                                                }
+																				<span style="color: #776f67;" class="utility-action-link">
+																					<a name="contactUs" href="@System.Configuration.ConfigurationManager.AppSettings["SiteUrl"]@Html.Raw("/general/contactus/")" style="color: #16799a; text-decoration: none;">
+																						Contact Us
+																					</a>
+																				</span>
+																				<span style="color: #776f67;" class="divider divider-pipe">
+																					|
+																				</span>
+																				<span style="color: #776f67;" class="utility-action-link">
+																					<a name="privacyPolicy" href="http://www.elsevier.com/legal/privacy-policy" style="color: #16799a; text-decoration: none;">
+																						Privacy Policy
+																					</a>
+																				</span>
+																			</p>
+																		</center>
+																	</td>
+																	<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; -webkit-hyphens: auto; visibility: hidden; width: 0; text-align: left; padding: 0; margin: 0; border-collapse: collapse !important; vertical-align: top; font-size: 14px;" class="expander">
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</center>
+									</td>
+								</tr>
+							</table>
+							<table style="padding: 0; width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; position: relative;" class="row social">
+								<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+									<td valign="top" align="center" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0; margin: 0; -webkit-hyphens: auto; border-collapse: collapse !important; text-align: center; vertical-align: top; font-size: 14px;" class="center">
+										<center style="width: 100%; min-width: 580px;">
+											<table style="margin: 0 auto; padding: 0; width: 580px; text-align: inherit; border-spacing: 0; border-collapse: collapse; vertical-align: top;" class="container">
+												<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+													<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 10px 20px 0 0px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; position: relative; font-size: 14px;" class="wrapper">
+														<table style="margin: 0 auto; padding: 0; width: 180px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;" class="four columns">
+															<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0 0px 10px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; font-size: 14px;">
+																	<table style="width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; padding: 0; overflow: hidden;" class="tiny-button radius secondary">
+																		<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+																			<td valign="top" align="center" style="-webkit-border-radius: 3px; font-family: 'Helvetica', 'Arial', sans-serif; color: #555; hyphens: auto; font-weight: normal; -moz-hyphens: auto; word-break: break-word; border: 1px solid #d0d0d0; background: #e9e9e9; margin: 0; padding: 5px 0 4px; display: block; line-height: 19px; -webkit-hyphens: auto; width: auto !important; text-align: center; border-collapse: collapse !important; -moz-border-radius: 3px; vertical-align: top; border-radius: 3px; font-size: 14px;">
+																				<a href="http://www.facebook.com/practiceupdate" style="font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #555; text-decoration: none; font-size: 12px;">
+																					facebook
+																				</a>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; -webkit-hyphens: auto; visibility: hidden; width: 0; text-align: left; padding: 0; margin: 0; border-collapse: collapse !important; vertical-align: top; font-size: 14px;" class="expander">
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 10px 20px 0 0px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; position: relative; font-size: 14px;" class="wrapper">
+														<table style="margin: 0 auto; padding: 0; width: 180px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;" class="four columns">
+															<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0 0px 10px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; font-size: 14px;">
+																	<table style="width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; padding: 0; overflow: hidden;" class="tiny-button radius secondary">
+																		<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+																			<td valign="top" align="center" style="-webkit-border-radius: 3px; font-family: 'Helvetica', 'Arial', sans-serif; color: #555; hyphens: auto; font-weight: normal; -moz-hyphens: auto; word-break: break-word; border: 1px solid #d0d0d0; background: #e9e9e9; margin: 0; padding: 5px 0 4px; display: block; line-height: 19px; -webkit-hyphens: auto; width: auto !important; text-align: center; border-collapse: collapse !important; -moz-border-radius: 3px; vertical-align: top; border-radius: 3px; font-size: 14px;">
+																				<a href="http://www.twitter.com/practiceupdate" style="font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #555; text-decoration: none; font-size: 12px;">
+																					twitter
+																				</a>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; -webkit-hyphens: auto; visibility: hidden; width: 0; text-align: left; padding: 0; margin: 0; border-collapse: collapse !important; vertical-align: top; font-size: 14px;" class="expander">
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 10px 0 0 0px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; position: relative; font-size: 14px;" class="wrapper last">
+														<table style="margin: 0 auto; padding: 0; width: 180px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;" class="four columns">
+															<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0 0px 10px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; font-size: 14px;">
+																	<table style="width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; padding: 0; overflow: hidden;" class="tiny-button radius secondary">
+																		<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+																			<td valign="top" align="center" style="-webkit-border-radius: 3px; font-family: 'Helvetica', 'Arial', sans-serif; color: #555; hyphens: auto; font-weight: normal; -moz-hyphens: auto; word-break: break-word; border: 1px solid #d0d0d0; background: #e9e9e9; margin: 0; padding: 5px 0 4px; display: block; line-height: 19px; -webkit-hyphens: auto; width: auto !important; text-align: center; border-collapse: collapse !important; -moz-border-radius: 3px; vertical-align: top; border-radius: 3px; font-size: 14px;">
+																				<a href="http://plus.google.com/+practiceupdate" style="font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #555; text-decoration: none; font-size: 12px;">
+																					google+
+																				</a>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; -webkit-hyphens: auto; visibility: hidden; width: 0; text-align: left; padding: 0; margin: 0; border-collapse: collapse !important; vertical-align: top; font-size: 14px;" class="expander">
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</center>
+									</td>
+								</tr>
+							</table>
+							<table style="color: #ffffff; width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; background: #9594a0; position: relative; padding: 0;" class="row footer-corporate">
+								<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+									<td valign="top" align="center" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 10px 0 0 0px; margin: 0; -webkit-hyphens: auto; border-collapse: collapse !important; text-align: center; vertical-align: top; position: relative; font-size: 14px;" class="wrapper last center">
+										<table style="margin: 0 auto; padding: 0; width: 580px; border-spacing: 0; border-collapse: collapse; text-align: center; vertical-align: top;" class="twelve columns center">
+											<tbody>
+												<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
+													<td valign="top" align="center" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0 0px 10px; margin: 0; -webkit-hyphens: auto; border-collapse: collapse !important; text-align: center; vertical-align: top; font-size: 14px;" class="center">
+														<center style="min-width: 580px; width: 100%;">
+															<br> <img alt="Brought to you by Elsevier" src="@System.Configuration.ConfigurationManager.AppSettings["CloudFrontImageURL"]/punewsletter/general/elsevier-logo.gif" align="none" style="clear: both; margin: 0 auto 4px; max-width: 100%; display: block; outline: none; text-decoration: none; width: auto; text-align: center; float: none; -ms-interpolation-mode: bicubic;" title="Brought to you by Elsevier" class="center btyb" /><br />
+															<small style="color: #ffffff; font-size: 10px;" class="legal-disclaimer">
+																PracticeUpdate &#x00AE; is a registered trademark of Elsevier Inc.
+															</small><br>
+															<small style="color: #ffffff; font-size: 10px;" class="legal-disclaimer">
+																Copyright &#x00A9; @DateTime.Now.Year, Elsevier Inc. All rights reserved.
+															</small><br>
+															<small style="color: #ffffff; font-size: 10px;" class="legal-disclaimer">
+																Elsevier Inc., 1600 John F. Kennedy Boulevard, Suite 1800. Philadelphia, PA 19103-2899, USA
+															</small><br><br>
+														</center>
+													</td>
+													<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; -webkit-hyphens: auto; visibility: hidden; width: 0; text-align: left; padding: 0; margin: 0; border-collapse: collapse !important; vertical-align: top; font-size: 14px;" class="expander">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</center>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
