@@ -1,0 +1,62 @@
+#memberDiscussItem .media-list {
+	margin:0;
+}
+
+#memberDiscussItem .media {
+	border-bottom: 1px solid #c9c1b8;
+}
+
+#memberDiscussItem .media-body .post-action {
+	display: none;
+	margin-bottom: 6px;
+	float: right;
+}
+#memberDiscussItem .media.owner:hover .post-action {
+	display: block;
+}
+
+#memberDiscussItem .media-body .post-action p {
+	font-size: 12px;
+	float: left;
+	margin: 5px 6px 0 0;
+}
+
+#memberDiscussItem .panel-footer {
+	margin-top: 16px;
+}
+
+#memberDiscussItem .panel.abstract {
+	background: #fff;
+}
+
+#memberDiscussItem .panel-heading {
+	width:100%;
+}
+#memberDiscussItem .panel-title {
+	float:left;
+}
+
+#memberDiscussItem .post-option {
+	float:right;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
