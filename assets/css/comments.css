@@ -27,7 +27,7 @@ article.single-item #memberDiscussItem ul li {
 	margin-bottom:6px;
 }
 
-#memberDiscussItem .media.owner:hover .post-action {
+.no-touch #memberDiscussItem .media.owner:hover .post-action {
 	display: block;
 }
 
