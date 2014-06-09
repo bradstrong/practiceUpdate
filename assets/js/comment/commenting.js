@@ -34,6 +34,10 @@ PU.comment = (function ($) {
       			      	
       	$('li[data-id=' + id + '] .j-delete').fadeOut(200);
       	$('li[data-id=' + id + '] .j-prompt-deletion').delay(280).fadeIn(200);
+      	
+				setTimeout(function() {
+	      	$('li[data-id=' + id + '] .j-post-delete-action').css('display', 'block');
+				}, 300);
       });
 
       $(document.body).on('click', '.j-delete-selection', function (e) {
@@ -44,11 +48,12 @@ PU.comment = (function ($) {
       			id = $parent.data('id'),
       			no = function() {
 							$('li[data-id=' + id + '] .j-prompt-deletion').fadeOut(200);
-							$('li[data-id=' + id + '] .j-delete').delay(280).fadeIn('fast');      			
+							$('li[data-id=' + id + '] .j-delete').delay(280).fadeIn('fast');     
+							$('li[data-id=' + id + '] .j-post-delete-action').removeAttr('style');						 			
       			},
       			yes = function() {
       				var noPending = function() {
-										$('li.media[data-id=' + id + ']').replaceWith('<li class="media coment comment-deleted alert alert-warning">Comment deleted by user.</li><hr />');
+										$('li.media[data-id=' + id + ']').replaceWith("<li class='media coment comment-deleted alert alert-warning'><blockquote class='bq-default'>Comment deleted by User.</blockquote></li>");
 									},
 									pending = function() {
 										$parent.fadeOut(200);
