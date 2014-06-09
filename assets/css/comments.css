@@ -80,3 +80,16 @@ html[xmlns] .clearfix {
 * html .clearfix {
 	height: 1%;
 }
+
+@media only screen and (max-width: 767px) {
+	#memberDiscussItem .media-body .post-action p {
+		margin: 0;
+	}
+	
+	.prompt-deletion button {
+		margin-left: 12px;
+		margin-top: 6px;
+		width:50px;
+		float:right;
+	}
+}
