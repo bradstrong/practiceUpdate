@@ -23,7 +23,7 @@ PU.comment = (function ($) {
             .val('')
             .fadeOut(200);
 
-          $('.j-msg-comment').delay(280).fadeIn(200);
+          $('.j-msg-comment').delay(280).fadeIn('slow');
         }
       });
 
@@ -58,13 +58,14 @@ PU.comment = (function ($) {
 									pending = function() {
 										$parent.fadeOut(200);
 										
-										$('li[data-id=' + id + '] .j-prompt-deletion').fadeOut(200);
-										$('li[data-id=' + id + '] .j-delete').fadeIn('fast');      			
-
 										$('.j-msg-comment').fadeOut(200);
+
+										$('li[data-id=' + id + '] .j-prompt-deletion').hide(1);
 										
 										$('.j-add-comment')
-											.delay(280).fadeIn(200);
+											.delay(580).fadeIn(200);
+
+										$('li[data-id=' + id + '] .j-delete').delay(600).show(1);
 									};
 							
 							$parent.hasClass('j-pending-template') ? pending() : noPending() ;
