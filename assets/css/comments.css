@@ -2,6 +2,11 @@
 	margin:0;
 }
 
+article.single-item #memberDiscussItem ul,
+article.single-item #memberDiscussItem ul li {
+	list-style-type: none;
+}
+
 #memberDiscussItem .media {
 	border-bottom: 1px solid #c9c1b8;
 }
@@ -81,9 +86,10 @@ html[xmlns] .clearfix {
 	height: 1%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1280px) {
 	#memberDiscussItem .media-body .post-action p {
 		margin: 0;
+		width: 100%;
 	}
 	
 	.prompt-deletion button {
