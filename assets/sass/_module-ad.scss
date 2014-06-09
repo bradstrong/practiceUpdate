@@ -72,8 +72,8 @@
   }
 }
 
-#ps3leaderboard{height: auto; max-width: 728px; margin: 0 auto;}
-#ps3leaderboardcontent{
+#ps1leaderboard, #ps2leaderboard, #ps3leaderboard{height: auto; max-width: 728px; margin: 0 auto;}
+#ps1leaderboardcontent, #ps2leaderboardcontent, #ps3leaderboardcontent{
   position: relative;
   padding-bottom: 12.36%;
   height: 0;
