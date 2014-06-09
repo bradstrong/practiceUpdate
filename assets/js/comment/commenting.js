@@ -3,6 +3,9 @@ var PU = PU || {};
 PU.comment = (function ($) {
   return {
     init: function () {
+    	if ( $('html').hasClass('lt-ie8') )
+    		PU.comment.placeholder();
+    	
 			$.fn.htmlInclusive = function() { 
 				return $('<div />').append($(this).clone()).html(); 
 			}
@@ -89,17 +92,34 @@ PU.comment = (function ($) {
 							elm = $('li[data-id='+id+'] .media-body .post-action'),
 							check = elm.css('visibility'),
 							prompt = $('.j-prompt-deletion');
-
-					console.log( check == 'visible' )
-
-					if($(e.target).closest('button').length){
+	
+					if($(e.target).closest('button').length) {
 						return;
 					}					
 					
-					if( $('html').hasClass('touch') && !prompt.is(":visible") )
-						check == 'visible' ? elm.css('visibility', 'hidden') : elm.css('visibility', 'visible');
+					if( $('html').hasClass('touch') )
+						prompt.length != 0  ? elm.css('display', 'block') : elm.css('display', 'none');
 			});
-		}	
+		},
+		
+		placeholder: function() {
+			$(document).ready(function() {
+				$("input").each(function() {
+					if($(this).val() == "" && $(this).attr("placeholder") != "") {
+						$(this).val($(this).attr("placeholder"));
+						
+						$(this).focus(function() {
+							if($(this).val()==$(this).attr("placeholder")) $(this).val("");
+						});
+						
+						$(this).blur(function() {
+							if($(this).val() == "")
+								$(this).val($(this).attr("placeholder"));
+						});
+					}
+				});
+			});		
+		}
 	};
 } (jQuery));
 
