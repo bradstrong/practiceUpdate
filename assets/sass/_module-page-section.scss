@@ -26,18 +26,5 @@
   }
 }
 
-.section-grid{
-  @extend .block-grid;
-  @extend .two-up;
-  @extend .mobile-one-up;
-}
-
-.section-grid-item{
-  padding: 0 !important;
-  &.padded{
-    padding: 7px 15px !important;
-  }
-}
-
-.slide, .small-title{}
-.tn-title, .tiny-title{}
+// .slide, .small-title{}
+// .tn-title, .tiny-title{}

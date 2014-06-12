@@ -8,6 +8,7 @@
   font-size: 17px;
   line-height: 1.2;
   padding: 14px 7px;
+  @include innerRow(collapse);
 }
 .current-filter-banner{
   font-family: $serifFontFamily;

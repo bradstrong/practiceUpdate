@@ -1,5 +1,9 @@
 /* item card */
 
+.stream-item.in-stream{
+  margin:0 -15px;
+}
+
 .item-header-container{@include column(12);}
 .item-header{
   @include innerRow();

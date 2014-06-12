@@ -84,7 +84,7 @@
 /* !Single Item */
 .single-item-container{@include column(7); @include mobileRow();}
 
-/* !Explore Layout */
+/* !register Layout */
 .register-container{@include column(7, collapse); @include mobileRow();}
 
 /* !User Directory */

@@ -16,6 +16,19 @@
 	background:transparent;
 }
 
+.section-grid{
+  @extend .block-grid;
+  @extend .two-up;
+  @extend .mobile-one-up;
+}
+
+.section-grid-item{
+  padding: 0 !important;
+  &.padded{
+    padding: 7px 15px !important;
+  }
+}
+
 .section-grid-item {
 	.card {
 		background-color:#fff;
@@ -28,6 +41,11 @@
 			padding:21px 14px 14px;
 		}
 	}
+}
+
+.section-grid-divider{
+	display: block;
+	float: none;
 }
 
 #ps3leaderboardcontent {

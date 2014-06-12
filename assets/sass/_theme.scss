@@ -5,32 +5,12 @@ ul.checked-list{
   list-style-type: none;
 }
 
-#UpdateStream .page-section-heading{
-/*
-background-color:$white;
-@include elementBoxShadow;
-*/
-	padding-left: 14px;
-	margin-bottom: 7px;
-}
-
 //article{
 //TODO:  add background and dropshadow for .static-container. content container needs to be added to those pages.
-.in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container{
+.single-item, .user-profile, .user-group, .channel-list-container, .pref-container{
 	background-color:$white;
 	@include elementBoxShadow;
 }
-
-/* 3 dimensional "leap" for card items on hover */
-/*
-.stream-item-container:hover{
-  margin-top: -2px;
-  margin-bottom: 12px;
-}
-.in-stream:hover{
-  @include elementBoxShadow($black, 0px, 4px, 6px, 0px);
-}
-*/
 
 body{
 	color: darken($txtColor, 10%);
