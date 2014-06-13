@@ -34,7 +34,6 @@
 }
 .form-submit-case .input-group .wrap-file-upload-name {
 	overflow: hidden; 
-	padding-right: .5em;
 }
 .form-submit-case .input-group .wrap-file-upload-name input {
 	border-left: 0 none;
