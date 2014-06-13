@@ -10197,29 +10197,33 @@ channel specific styles
 .content-header-title:hover {
   cursor: pointer;
 }
+/* line 43, ../sass/_module-content-header.scss */
+.content-header-title .angle-down {
+  float: right;
+}
 
 /* .content-header-subtitle{} */
-/* line 44, ../sass/_module-content-header.scss */
+/* line 48, ../sass/_module-content-header.scss */
 .content-header-list {
   list-style-type: none;
 }
-/* line 47, ../sass/_module-content-header.scss */
+/* line 51, ../sass/_module-content-header.scss */
 .content-header-list li a {
   padding: 7px;
   display: block;
   transition: all 0.3s ease;
 }
-/* line 51, ../sass/_module-content-header.scss */
+/* line 55, ../sass/_module-content-header.scss */
 .content-header-list li a:hover {
   background-color: #029bb0;
   padding-left: 14px;
 }
 
-/* line 59, ../sass/_module-content-header.scss */
+/* line 62, ../sass/_module-content-header.scss */
 .collapse {
   display: none;
 }
-/* line 61, ../sass/_module-content-header.scss */
+/* line 64, ../sass/_module-content-header.scss */
 .collapse.in {
   display: block;
 }
