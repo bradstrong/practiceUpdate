@@ -143,3 +143,6 @@
 #submitCase .alert-danger .alert-link {
   color: #843534;
 }
+.text-center.success-mgs {
+	line-height: 18px;
+}
