@@ -121,13 +121,9 @@
                     <li>Optimal treatment for non–clear cell RCC remains a challenge because of the genetic differences and little knowledge of the dysregulated molecular biology driving these cancers. Rational preclinical and clinical testing is needed.</li>
                   </ul>
 
-                  <br>
-                  <!--div class="comment-placeholder" style="background-color:#CCC; color:#000; height:150px;">
-                    <p>Comment Interface</p>
-                  </div-->
                                                   
 									<div id="memberDiscussItem">
-										<div class="panel">
+										<div class="panel clearfix">
 											<div class="panel-heading clearfix">
 												<h3 class="panel-title">Discuss This item</h3>
 												<a href="#" class="button small success post-option j-post-option">
@@ -139,8 +135,14 @@
 												<ul class="media-list j-comments">
 													<li class="media j-comment" data-id="01">
 														<div class="media-body">
-															<span class="given-name">Liccy</span>
-															<span class="family-name">Fuentes</span>
+															<div class="commenter-name">
+																<span class="given-name">Liccy</span>
+																<span class="family-name">Fuentes</span>
+															</div>
+																
+															<div class="commenter-date">
+																<small class="family-date">June 10, 2014</small>
+															</div>
 
 															<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
 														</div>
@@ -148,8 +150,14 @@
 													
 													<li class="media owner j-comment" data-id="02">
 														<div class="media-body">
-															<span class="given-name">Brad</span>
-															<span class="family-name">Strong</span>
+															<div class="commenter-name">
+																<span class="given-name">Brad</span>
+																<span class="family-name">Strong</span>
+															</div>
+																
+															<div class="commenter-date">
+																<small class="family-date">June 11, 2014</small>
+															</div>
 
 															<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
 															<div class="btn-group-sm post-action j-post-delete-action">
@@ -169,13 +177,19 @@
 															<img class="avatar a20" src="content/img/users/Axel_Grothey_2009_REVISED_tcm8-199717.jpg" />
 														</a>
 														<div class="media-body">
-															<a class="fn n -name" href="#">
-																<!-- <span class="honorific-prefix">Dr.</span> -->
-																<span class="given-name">Mark</span>
-																<span class="additional-name">l</span>
-																<span class="family-name">Seigel</span>
-																<span class="honorific-suffix">MD</span>
-															</a>
+															<div class="commenter-name">
+																<a class="fn n -name" href="#">
+																	<!-- <span class="honorific-prefix">Dr.</span> -->
+																	<span class="given-name">Mark</span>
+																	<span class="additional-name">l</span>
+																	<span class="family-name">Seigel</span>
+																	<span class="honorific-suffix">MD</span>
+																</a>
+															</div>
+																
+															<div class="commenter-date">
+																<small class="family-date">June 11, 2014</small>
+															</div>
 
 															<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
 														</div>
@@ -183,9 +197,15 @@
 													
 													<li class="media j-comment" data-id="04">
 														<div class="media-body">
-															<span class="given-name">Mike</span>
-															<span class="family-name">Neder</span>
-
+															<div class="commenter-name">
+																<span class="given-name">Mike</span>
+																<span class="family-name">Neder</span>
+															</div>
+																
+															<div class="commenter-date">
+																<small class="family-date">June 13, 2014</small>
+															</div>
+														
 															<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
 														</div>
 													</li>
@@ -198,8 +218,15 @@
 													
 													<li class="media j-comment" data-id="05">
 														<div class="media-body">
-															<span class="given-name">Khaleesi</span>
-															<span class="family-name">Alejandra</span>
+															<div class="commenter-name">
+																<span class="given-name">Khaleesi</span>
+																<span class="family-name">Alejandra</span>
+															</div>
+																
+															<div class="commenter-date">
+																<small class="family-date">June 13, 2014</small>
+															</div>
+														
 
 															<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
 														</div>
@@ -207,9 +234,15 @@
 													
 													<li class="media owner alert alert-info j-pending-template j-comment" data-id="99" style="display:none">
 														<div class="media-body">
-															<span class="given-name">Fist</span>
-															<span class="family-name">Last</span>
-															
+															<div class="commenter-name">
+																<span class="given-name">Fist</span>
+																<span class="family-name">Last</span>
+															</div>
+																
+															<div class="commenter-date">
+																<small class="family-date">June 13, 2014</small>
+															</div>
+
 															<p class="comment-body"></p>
 															
 															<p><i>Pending Moderator approval.</i></p>
@@ -263,11 +296,13 @@
 											<div class="panel-body">
 
 												<form class="form-submit-case clearfix j-form-submit-case" action="upload_file.php" method="post" enctype="multipart/form-data">
-													<p>Submit a case to the Tumor Board and get insights from experts at the institution and nationwide as well as the insights of other practicing clinicians. Select cases may also be featured as Tumor Board at the institution and receive the same kind of multispecialty insights.</p>
+													<p>Submit a case to the Tumor Board and get insights from experts at the institution and nationwide as well as the insights of other practicing clinicians. Select cases may also be featured as Tumor Board at the institution and receive the same kind of multi-specialty insights.</p>
+													<p>*Please remove any personally identifiable information before submitting your case. In the event that your case is chosen for publication on http://PracticeUpdate.com, any content that could be deemed sensitive will be redacted by our editorial staff.*</p>
+													<p>You can submit a case by entering details in the field below, providing a file for review, or both.</p>
 		
 													<textarea class="j-textarea-field textarea-field form-control col-md-12" rows="3" name="upload-text" placeholder="Enter the details of your case"></textarea>
 
-													<span clas="help-block">You may optionally upload a file for review.</span>
+													<span clas="help-block">You may also provide one file for review. *optional*</span>
 
 													<div class="input-group">
 														<span class="input-group-btn" />

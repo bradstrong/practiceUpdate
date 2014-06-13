@@ -15,6 +15,10 @@ article.single-item #memberDiscussItem ul li {
 	position:relative;
 }
 
+#memberDiscussItem .media-body p {
+	float:left;
+}
+
 #memberDiscussItem .media-body .post-action {
 	display: none;
 	float: right;
@@ -62,6 +66,17 @@ article.single-item #memberDiscussItem ul li {
 }
 
 #memberDiscussItem .post-option {
+	float:right;
+}
+
+#memberDiscussItem .family-date {
+	color: #B8B0A4;
+}
+#memberDiscussItem .commenter-name {
+	float:left;
+}
+
+#memberDiscussItem .commenter-date {
 	float:right;
 }
 
