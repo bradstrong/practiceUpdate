@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="assets/css/fc-webicons.css">
   <link rel="stylesheet" href="assets/css/foundation-icons-general.css">
 	<link rel="stylesheet" href="assets/css/comments.css">
+	<link rel="stylesheet" href="assets/css/case-upload.css">
 
   <script src="assets/js/foundation/modernizr.foundation.js"></script>
 
@@ -253,12 +254,47 @@
 									</div>                                
 									<!--/.comments-->
 
-                  <br>
-                  <div class="upload-placeholder" style="background-color:#CCC; color:#000; height:150px;">
-                    <p>Upload Interface</p>
-                  </div>
-                  <br>
-                  <br>
+									<div id="submitCase">
+										<div class="panel">
+											<div class="panel-heading clearfix">
+												<h3 class="panel-title">Submit Your Case</h3>
+											</div>
+											
+											<div class="panel-body">
+
+												<form class="form-submit-case j-form-submit-case" action="upload_file.php" method="post" enctype="multipart/form-data">
+													<p>Submit a case to the Tumor Board and get insights from experts at the institution and nationwide as well as the insights of other practicing clinicians. Select cases may also be featured as Tumor Board at the institution and receive the same kind of multispecialty insights.</p>
+		
+													<textarea class="j-textarea-field textarea-field form-control col-md-12" rows="3" name="upload-text" placeholder="Enter the details of your case"></textarea>
+
+													<span clas="help-block">You may optionally upload a file for review.</span>
+
+													<div class="input-group">
+														<span class="input-group-btn" />
+															<span class="button small success btn-file">
+																Browse <input type="file" multiple="">
+															</span>
+														</span>
+			
+														<div class="wrap-file-upload-name">
+															<input type="text" class="form-control j-file-upload-name" placeholder="Choose file..." readonly="" />
+														</div>
+														
+														<div class="submit-btn j-submit-file">
+															<input type="submit" class="button small success post-option" name="submit" value="Submit Case" disabled="disabled">
+														</div>
+													</div>   
+												</form>
+
+											</div>
+											
+											<div class="panel-footer">
+												<span class="help-block">By submitting a case, you agree to the PracticeUpdate Terms of Service</span>
+											</div>
+											<!--/.panel-footer-->
+										</div>
+									</div> 									
+									<!--/.case-upload-->
 
                   <!-- /.els-promotion -->
                 </section>
@@ -856,6 +892,7 @@
 
 	<script src="assets/js/hammer/jquery.hammer-full.min.js"></script>
 	<script src="assets/js/comment/commenting.js"></script>
+	<script src="assets/js/case-upload/caseUpload.js"></script>
 
 </body>
 
