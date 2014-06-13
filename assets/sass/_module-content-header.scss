@@ -39,6 +39,10 @@
   &:hover{
     cursor: pointer;
   }
+
+	.angle-down {
+		float:right
+	}
 }
 /* .content-header-subtitle{} */
 .content-header-list{
@@ -54,7 +58,6 @@
       }
   }
 }
-
 
 .collapse {
   display: none;
