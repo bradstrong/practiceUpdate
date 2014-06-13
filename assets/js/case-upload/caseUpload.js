@@ -120,5 +120,5 @@ PU.caseUpload = (function ($) {
 } (jQuery));
 
 $(document).ready(function () {
-  PU.comment.init();
+  PU.caseUpload.init();
 });
