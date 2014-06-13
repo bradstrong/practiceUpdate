@@ -11338,6 +11338,11 @@ img.avatar .a50, img.avatar .as50 {
   padding: 0 0 0 30px;
 }
 
+/* line 1, ../sass/_module-living-resources.scss */
+.chapter-list {
+  margin-left: -15px;
+}
+
 /* line 3, ../sass/_module-form.scss */
 .form-title {
   padding: .25em 0;
