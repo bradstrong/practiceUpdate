@@ -20,13 +20,15 @@ PU.comment = (function ($) {
           $('li:last-child .family-name').text('Last');
           $('li:last-child .comment-body').text($(this).val());
 
-          $('.j-comments li:last').fadeIn(200);
+          //$('.j-comments li:last').fadeIn(200);
+          $('.j-comments li:last').toggleClass('is-hidden');
 
           $('.j-add-comment')
             .val('')
             .fadeOut(200);
 
-          $('.j-msg-comment').delay(280).fadeIn('slow');
+          //$('.j-msg-comment').delay(280).fadeIn('slow');
+          $('.j-msg-comment').toggleClass('is-hidden');
         }
       });
 
@@ -35,11 +37,15 @@ PU.comment = (function ($) {
       	var $this = $(this),
       			id = $this.parents('.j-comment').data('id');
       			      	
-      	$('li[data-id=' + id + '] .j-delete').fadeOut(200);
-      	$('li[data-id=' + id + '] .j-prompt-deletion').delay(280).fadeIn(200);
+      	//$('li[data-id=' + id + '] .j-delete').fadeOut(200);
+      	//$('li[data-id=' + id + '] .j-prompt-deletion').delay(280).fadeIn(200);
       	
+      	$('li[data-id=' + id + '] .j-delete').toggleClass('is-hidden');
+      	$('li[data-id=' + id + '] .j-prompt-deletion').toggleClass('is-hidden');
+      	      	
 				setTimeout(function() {
-	      	$('li[data-id=' + id + '] .j-post-delete-action').css('display', 'block');
+	      	//$('li[data-id=' + id + '] .j-post-delete-action').css('display', 'block');
+	      	$('li[data-id=' + id + '] .j-post-delete-action').removeClass('is-hidden');
 				}, 300);
       });
 
@@ -50,25 +56,34 @@ PU.comment = (function ($) {
       			$parent = $this.parents('.j-comment'),
       			id = $parent.data('id'),
       			no = function() {
-							$('li[data-id=' + id + '] .j-prompt-deletion').fadeOut(200);
-							$('li[data-id=' + id + '] .j-delete').delay(280).fadeIn('fast');     
-							$('li[data-id=' + id + '] .j-post-delete-action').removeAttr('style');						 			
+							//$('li[data-id=' + id + '] .j-prompt-deletion').fadeOut(200);
+							//$('li[data-id=' + id + '] .j-delete').delay(280).fadeIn('fast');     
+							//$('li[data-id=' + id + '] .j-post-delete-action').removeAttr('style');						 			
+
+							$('li[data-id=' + id + '] .j-prompt-deletion').toggleClass('is-hidden');
+							$('li[data-id=' + id + '] .j-delete').toggleClass('is-hidden');
+							$('li[data-id=' + id + '] .j-post-delete-action').addClass('is-hidden');     
       			},
       			yes = function() {
       				var noPending = function() {
 										$('li.media[data-id=' + id + ']').replaceWith("<li class='media coment comment-deleted alert alert-warning'><blockquote class='bq-default'>Comment deleted by User.</blockquote></li>");
 									},
 									pending = function() {
-										$parent.fadeOut(200);
-										
-										$('.j-msg-comment').fadeOut(200);
+										//$parent.fadeOut(200);
+										//$('.j-msg-comment').fadeOut(200);
+										//$('li[data-id=' + id + '] .j-prompt-deletion').hide(1);
 
-										$('li[data-id=' + id + '] .j-prompt-deletion').hide(1);
+										$parent.toggleClass('is-hidden');
+										$('.j-msg-comment').toggleClass('is-hidden');
+										$('li[data-id=' + id + '] .j-prompt-deletion').toggleClass('is-hidden');
 										
-										$('.j-add-comment')
-											.delay(580).fadeIn(200);
+										//$('.j-add-comment')
+										//	.delay(580).fadeIn(200);
 
-										$('li[data-id=' + id + '] .j-delete').delay(600).show(1);
+										$('.j-add-comment').toggleClass('is-hidden');
+
+										//$('li[data-id=' + id + '] .j-delete').delay(600).show(1);
+										$('li[data-id=' + id + '] .j-delete').toggleClass('is-hidden');
 									};
 							
 							$parent.hasClass('j-pending-template') ? pending() : noPending() ;

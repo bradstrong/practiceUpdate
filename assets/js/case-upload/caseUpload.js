@@ -106,10 +106,7 @@ PU.caseUpload = (function ($) {
 					} catch(e) {
 						alert("we can't get file size - send it to backend");
 					}
-				} else {
-					if(log) 
-						console.log(log);
-				}			
+				} 			
 			});
 			
 			$(document).on('click', '.j-file-upload-name', function() {

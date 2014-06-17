@@ -78,3 +78,19 @@
 	clear:left;
 	padding-left:50px;
 }
+
+@media(max-width:768px) {
+	.section-grid-item {
+		.card {
+			img {
+				width:40%;
+				float:left;
+				margin: 14px 10px 0px 14px;
+			}
+		
+			p {
+				padding: 10px 14px 14px;
+			}		
+		}
+	}
+}

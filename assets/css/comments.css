@@ -19,8 +19,12 @@ article.single-item #memberDiscussItem ul li {
 	float:left;
 }
 
+#memberDiscussItem .media-body .comment-body {
+	width: 100%;
+}
+
 #memberDiscussItem .media-body .post-action {
-	display: none;
+	/*display: none;*/
 	float: right;
 	position: absolute;
 	bottom:0;
@@ -32,7 +36,7 @@ article.single-item #memberDiscussItem ul li {
 }
 
 .no-touch #memberDiscussItem .media.owner:hover .post-action {
-	display: block;
+	display: block !important;
 }
 
 #memberDiscussItem .media-body .post-action p {

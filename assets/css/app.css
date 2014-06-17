@@ -13593,3 +13593,22 @@ html.lt-ie9 .brand-container {
     border-color: transparent !important;
   }
 }
+
+/* Smartphones (portrait) ----------- */
+/*@media only screen and (max-width : 320px) {*/
+@media(max-width:768px) {
+	.section-grid-item .card {
+			float: left;
+			padding-bottom: 12px;
+	}
+	.section-grid-item .card img {
+			width:40%;
+			float:left;
+			margin: 14px 10px 0px 14px;
+	}
+
+	.section-grid-item .card p {
+		padding: 10px 14px 0;
+		margin-bottom: 0;
+	}
+}
