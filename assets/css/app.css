@@ -1,3 +1,19 @@
+@media (max-width: 768px) {
+	.section-grid-item .card {
+			float: left;
+			padding-bottom: 12px;
+	}
+	.section-grid-item .card img {
+			width:40%;
+			float:left;
+			margin: 14px 10px 0px 14px;
+	}
+
+	.section-grid-item .card p {
+		padding: 10px 14px 0;
+		margin-bottom: 0;
+	}
+}
 /* !variables */
 /* $pri-orange: 	rgb(216,102,84); //# */
 /* $pri-orange: 	rgb(234,60,47); //# */
@@ -13573,9 +13589,7 @@ html.lt-ie9 .brand-container {
   }
 }
 
-/* Smartphones (portrait) ----------- */
-/*@media only screen and (max-width : 320px) {*/
-@media(max-width:768px) {
+@media (max-width: 768px) {
 	.section-grid-item .card {
 			float: left;
 			padding-bottom: 12px;
