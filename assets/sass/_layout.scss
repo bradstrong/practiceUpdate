@@ -84,6 +84,12 @@
 /* !Single Item */
 .single-item-container{@include column(7); @include mobileRow();}
 
+.single-item-container{
+	.content-header-nav {
+		margin-bottom: 0;
+	}
+}
+
 /* !register Layout */
 .register-container{@include column(7, collapse); @include mobileRow();}
 
