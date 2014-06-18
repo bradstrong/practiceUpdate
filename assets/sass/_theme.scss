@@ -5,9 +5,18 @@ ul.checked-list{
   list-style-type: none;
 }
 
+#UpdateStream .page-section-heading{
+/*
+background-color:$white;
+@include elementBoxShadow;
+*/
+	padding-left: 14px;
+	margin-bottom: 7px;
+}
+
 //article{
 //TODO:  add background and dropshadow for .static-container. content container needs to be added to those pages.
-.single-item, .user-profile, .user-group, .channel-list-container, .pref-container{
+.in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container{
 	background-color:$white;
 	@include elementBoxShadow;
 }
