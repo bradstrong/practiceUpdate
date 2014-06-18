@@ -9582,7 +9582,12 @@ nav.topic-nav .child-indicator {
   padding: 15px;
   margin-bottom: 15px;
 }
-/* line 24, ../sass/_module-page-section.scss */
+/* line 19, ../sass/_module-page-section.scss */
+.page-section.update-section.further-reading, .page-section.single-item-section.further-reading {
+  margin-top: 26px;
+  padding: 25px 15px 15px;
+}
+/* line 29, ../sass/_module-page-section.scss */
 .page-section .item-citation {
   padding-bottom: 7px;
 }
