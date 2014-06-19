@@ -4211,7 +4211,6 @@ ul.orbit-bullets li.active.has-thumb {
 /* @import "foundation/components/modules/offcanvas"; */
 /* line 1, ../sass/_explore-style.scss */
 .faculty {
-  text-align: center;
   font-weight: normal;
   font-size: 32px;
 }
@@ -4238,52 +4237,57 @@ ul.orbit-bullets li.active.has-thumb {
 .section-grid-item.padded {
   padding: 7px 15px !important;
 }
-
-/* line 33, ../sass/_explore-style.scss */
+/* line 30, ../sass/_explore-style.scss */
 .section-grid-item .card {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
-  margin-left: 7px;
-  margin-bottom: 7px;
+  *zoom: 1;
+  margin: 3px 3px 7px;
 }
-/* line 40, ../sass/_explore-style.scss */
+/* line 4, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_clearfix.scss */
+.section-grid-item .card:before, .section-grid-item .card:after {
+  content: " ";
+  display: table;
+}
+/* line 5, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/mixins/_clearfix.scss */
+.section-grid-item .card:after {
+  clear: both;
+}
+/* line 33, ../sass/_explore-style.scss */
 .section-grid-item .card p {
   padding: 21px 14px 14px;
 }
 
-/* line 46, ../sass/_explore-style.scss */
+/* line 39, ../sass/_explore-style.scss */
 .section-grid-divider {
   display: block;
   float: none;
 }
 
-/* line 52, ../sass/_explore-style.scss */
+/* line 45, ../sass/_explore-style.scss */
 #ps3leaderboardcontent div {
   border: 0pt none;
 }
 
-/* line 57, ../sass/_explore-style.scss */
+/* line 50, ../sass/_explore-style.scss */
 .explore-section-3-ul .list-header {
   margin-left: -15px;
   border-left: 2px solid #CCC;
   padding-left: 13px;
   font-size: 16px;
 }
-/* line 63, ../sass/_explore-style.scss */
+/* line 56, ../sass/_explore-style.scss */
 .explore-section-3-ul .list-header span {
   display: inline-block;
   color: #ccc;
 }
 
-/* line 70, ../sass/_explore-style.scss */
+/* line 63, ../sass/_explore-style.scss */
 .upload-placeholder {
   background-color: #CCC;
   color: #000;
   height: 150px;
 }
 
-/* line 76, ../sass/_explore-style.scss */
+/* line 69, ../sass/_explore-style.scss */
 .editor-container {
   float: left;
   clear: left;
@@ -4291,13 +4295,13 @@ ul.orbit-bullets li.active.has-thumb {
 }
 
 @media (max-width: 768px) {
-  /* line 85, ../sass/_explore-style.scss */
+  /* line 78, ../sass/_explore-style.scss */
   .section-grid-item .card img {
     width: 40%;
     float: left;
     margin: 14px 10px 0px 14px;
   }
-  /* line 91, ../sass/_explore-style.scss */
+  /* line 84, ../sass/_explore-style.scss */
   .section-grid-item .card p {
     padding: 10px 14px 14px;
   }
