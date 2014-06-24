@@ -1,5 +1,3 @@
-@import url(case-upload.css);
-@import url(comments.css);
 /* !variables */
 /* $pri-orange: 	rgb(216,102,84); //# */
 /* $pri-orange: 	rgb(234,60,47); //# */
@@ -4255,39 +4253,43 @@ ul.orbit-bullets li.active.has-thumb {
 .section-grid-item .card p {
   padding: 21px 14px 14px;
 }
+/* line 35, ../sass/_explore-style.scss */
+.section-grid-item .card p a {
+  white-space: nowrap;
+}
 
-/* line 39, ../sass/_explore-style.scss */
+/* line 40, ../sass/_explore-style.scss */
 .section-grid-divider {
   display: block;
   float: none;
 }
 
-/* line 45, ../sass/_explore-style.scss */
+/* line 46, ../sass/_explore-style.scss */
 #ps3leaderboardcontent div {
   border: 0pt none;
 }
 
-/* line 50, ../sass/_explore-style.scss */
+/* line 51, ../sass/_explore-style.scss */
 .explore-section-3-ul .list-header {
   margin-left: -15px;
   border-left: 2px solid #CCC;
   padding-left: 13px;
   font-size: 16px;
 }
-/* line 56, ../sass/_explore-style.scss */
+/* line 57, ../sass/_explore-style.scss */
 .explore-section-3-ul .list-header span {
   display: inline-block;
   color: #ccc;
 }
 
-/* line 63, ../sass/_explore-style.scss */
+/* line 64, ../sass/_explore-style.scss */
 .upload-placeholder {
   background-color: #CCC;
   color: #000;
   height: 150px;
 }
 
-/* line 69, ../sass/_explore-style.scss */
+/* line 70, ../sass/_explore-style.scss */
 .editor-container {
   float: left;
   clear: left;
@@ -4295,13 +4297,13 @@ ul.orbit-bullets li.active.has-thumb {
 }
 
 @media (max-width: 768px) {
-  /* line 78, ../sass/_explore-style.scss */
+  /* line 79, ../sass/_explore-style.scss */
   .section-grid-item .card img {
     width: 40%;
     float: left;
     margin: 14px 10px 0px 14px;
   }
-  /* line 84, ../sass/_explore-style.scss */
+  /* line 85, ../sass/_explore-style.scss */
   .section-grid-item .card p {
     padding: 10px 14px 14px;
   }
@@ -10881,14 +10883,379 @@ img.avatar .a50, img.avatar .as50 {
   right: 0px;
 }
 
+/* line 1, ../sass/_module-case-upload.scss */
+#submitCase {
+  position: relative;
+}
+
+/* line 4, ../sass/_module-case-upload.scss */
+.form-submit-case .input-group {
+  width: 100%;
+  margin-top: 12px;
+  float: left !important;
+  float: left;
+}
+
+/* line 10, ../sass/_module-case-upload.scss */
+.form-submit-case .input-group .input-group-btn {
+  float: left;
+}
+
+/* line 14, ../sass/_module-case-upload.scss */
+.form-submit-case .input-group .input-group-addon,
+.form-submit-case .input-group .input-group-btn {
+  vertical-align: top;
+}
+
+/* line 17, ../sass/_module-case-upload.scss */
+.form-submit-case .btn-file {
+  border-right-color: #196680;
+  margin-right: 0;
+  position: relative;
+  padding: 9px 14px 10px;
+}
+
+/* line 23, ../sass/_module-case-upload.scss */
+.form-submit-case .btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 100%;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  cursor: inherit;
+  display: block;
+  margin: 0;
+}
+
+/* line 35, ../sass/_module-case-upload.scss */
+.form-submit-case .input-group .wrap-file-upload-name {
+  overflow: hidden;
+}
+
+/* line 38, ../sass/_module-case-upload.scss */
+.form-submit-case .input-group .wrap-file-upload-name input {
+  border-left: 0 none;
+}
+
+/* line 41, ../sass/_module-case-upload.scss */
+.form-submit-case .input-group .form-control[readonly]:not(:first-child):not(:last-child) {
+  background-color: #ffffff;
+  cursor: pointer;
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  width: 100%;
+}
+
+/* line 49, ../sass/_module-case-upload.scss */
+.form-submit-case .submit-btn {
+  float: right !important;
+  float: right;
+  margin-top: 12px;
+}
+
+/* line 55, ../sass/_module-case-upload.scss */
+.form-submit-case .submit-btn:before,
+.form-submit-case .submit-btn:after {
+  content: " ";
+  display: table;
+}
+
+/* line 59, ../sass/_module-case-upload.scss */
+.form-submit-case .submit-btn:after {
+  clear: both;
+}
+
+/* line 63, ../sass/_module-case-upload.scss */
+.form-submit-case .submit-btn:before,
+.form-submit-case .submit-btn:after {
+  content: " ";
+  display: table;
+}
+
+/* line 67, ../sass/_module-case-upload.scss */
+.form-submit-case .submit-btn:after {
+  clear: both;
+}
+
+/* line 70, ../sass/_module-case-upload.scss */
+#submitCase .close[data-dismiss="alert"] {
+  display: none;
+}
+
+/* line 73, ../sass/_module-case-upload.scss */
+#submitCase .alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* line 79, ../sass/_module-case-upload.scss */
+#submitCase .alert h4, #submitCase .alert .channel-title {
+  margin-top: 0;
+  color: inherit;
+}
+
+/* line 83, ../sass/_module-case-upload.scss */
+#submitCase .alert .alert-link {
+  font-weight: bold;
+}
+
+/* line 87, ../sass/_module-case-upload.scss */
+#submitCase .alert > p,
+#submitCase .alert > ul {
+  margin-bottom: 0;
+}
+
+/* line 90, ../sass/_module-case-upload.scss */
+#submitCase .alert > p + p {
+  margin-top: 5px;
+}
+
+/* line 93, ../sass/_module-case-upload.scss */
+#submitCase .alert-dismissable {
+  padding-right: 35px;
+}
+
+/* line 96, ../sass/_module-case-upload.scss */
+#submitCase .alert-dismissable .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+
+/* line 102, ../sass/_module-case-upload.scss */
+#submitCase .alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+
+/* line 107, ../sass/_module-case-upload.scss */
+#submitCase .alert-success hr {
+  border-top-color: #c9e2b3;
+}
+
+/* line 110, ../sass/_module-case-upload.scss */
+#submitCase .alert-success .alert-link {
+  color: #2b542c;
+}
+
+/* line 113, ../sass/_module-case-upload.scss */
+#submitCase .alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #31708f;
+}
+
+/* line 118, ../sass/_module-case-upload.scss */
+#submitCase .alert-info hr {
+  border-top-color: #a6e1ec;
+}
+
+/* line 121, ../sass/_module-case-upload.scss */
+#submitCase .alert-info .alert-link {
+  color: #245269;
+}
+
+/* line 124, ../sass/_module-case-upload.scss */
+#submitCase .alert-warning {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;
+}
+
+/* line 129, ../sass/_module-case-upload.scss */
+#submitCase .alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+
+/* line 132, ../sass/_module-case-upload.scss */
+#submitCase .alert-warning .alert-link {
+  color: #66512c;
+}
+
+/* line 135, ../sass/_module-case-upload.scss */
+#submitCase .alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+
+/* line 140, ../sass/_module-case-upload.scss */
+#submitCase .alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+
+/* line 143, ../sass/_module-case-upload.scss */
+#submitCase .alert-danger .alert-link {
+  color: #843534;
+}
+
+/* line 146, ../sass/_module-case-upload.scss */
+.text-center.success-mgs {
+  line-height: 18px;
+}
+
+/* line 1, ../sass/_module-comments.scss */
+#memberDiscussItem .media-list {
+  margin: 0;
+}
+
+/* line 6, ../sass/_module-comments.scss */
+article.single-item #memberDiscussItem ul,
+article.single-item #memberDiscussItem ul li {
+  list-style-type: none;
+}
+
+/* line 10, ../sass/_module-comments.scss */
+#memberDiscussItem .media {
+  border-bottom: 1px solid #c9c1b8;
+}
+
+/* line 14, ../sass/_module-comments.scss */
+#memberDiscussItem .media-body {
+  position: relative;
+}
+
+/* line 18, ../sass/_module-comments.scss */
+#memberDiscussItem .media-body p {
+  float: left;
+}
+
+/* line 22, ../sass/_module-comments.scss */
+#memberDiscussItem .media-body .comment-body {
+  width: 100%;
+}
+
+/* line 26, ../sass/_module-comments.scss */
+#memberDiscussItem .media-body .post-action {
+  /*display: none;*/
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 34, ../sass/_module-comments.scss */
+#memberDiscussItem .media-body .post-action button {
+  margin-bottom: 6px;
+}
+
+/* line 38, ../sass/_module-comments.scss */
+.no-touch #memberDiscussItem .media.owner:hover .post-action {
+  display: block !important;
+}
+
+/* line 42, ../sass/_module-comments.scss */
+#memberDiscussItem .media-body .post-action p {
+  font-size: 12px;
+  float: left;
+  margin: 5px 6px 0 0;
+}
+
+/* line 48, ../sass/_module-comments.scss */
+#memberDiscussItem .prompt-deletion {
+  background: #faf9f4;
+  padding: 4px 4px 0;
+  -webkit-transition: background .5s ease-out;
+  -moz-transition: background .5s ease-out;
+  -o-transition: background .5s ease-out;
+  transition: background .5s ease-out;
+}
+
+/* line 57, ../sass/_module-comments.scss */
+#memberDiscussItem .panel-footer {
+  margin-top: 16px;
+}
+
+/* line 61, ../sass/_module-comments.scss */
+#memberDiscussItem .panel.abstract, #memberDiscussItem .abstract.query-no-results, #memberDiscussItem .abstract.cta {
+  background: #fff;
+}
+
+/* line 65, ../sass/_module-comments.scss */
+#memberDiscussItem .panel-heading {
+  width: 100%;
+}
+
+/* line 68, ../sass/_module-comments.scss */
+#memberDiscussItem .panel-title {
+  float: left;
+}
+
+/* line 72, ../sass/_module-comments.scss */
+#memberDiscussItem .post-option {
+  float: right;
+}
+
+/* line 76, ../sass/_module-comments.scss */
+#memberDiscussItem .family-date {
+  color: #B8B0A4;
+}
+
+/* line 79, ../sass/_module-comments.scss */
+#memberDiscussItem .commenter-name {
+  float: left;
+}
+
+/* line 83, ../sass/_module-comments.scss */
+#memberDiscussItem .commenter-date {
+  float: right;
+}
+
+/* line 87, ../sass/_module-comments.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 96, ../sass/_module-comments.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 100, ../sass/_module-comments.scss */
+html[xmlns] .clearfix {
+  display: block;
+}
+
+/* line 104, ../sass/_module-comments.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+@media only screen and (max-width: 1280px) {
+  /* line 109, ../sass/_module-comments.scss */
+  #memberDiscussItem .media-body .post-action p {
+    margin: 0;
+    width: 100%;
+  }
+
+  /* line 114, ../sass/_module-comments.scss */
+  .prompt-deletion button {
+    margin-left: 12px;
+    margin-top: 6px;
+    width: 50px;
+    float: right;
+  }
+}
 /* !Update Page Elements */
 /* !stream */
-/* line 26, ../sass/_module.scss */
+/* line 28, ../sass/_module.scss */
 .stream-item-container {
   margin-bottom: 10px;
 }
 
-/* line 30, ../sass/_module.scss */
+/* line 32, ../sass/_module.scss */
 .stream-header {
   *zoom: 1;
   margin-bottom: 20px;
