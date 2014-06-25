@@ -158,6 +158,18 @@ PU.caseUpload = (function ($) {
 					}
 				});
 			});
+			
+			$('.j-title-field').unbind('keyup change input paste').bind('keyup change input paste',function(e){
+					var $this = $(this),
+							val = $this.val(),
+							valLength = val.length,
+							maxCount = $this.attr('maxlength');
+							
+					if( valLength>maxCount )
+						$this.val($this.val().substring(0,maxCount));
+
+			}); 
+			
 		},
 	};
 } (jQuery));
