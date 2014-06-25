@@ -11184,58 +11184,64 @@ article.single-item #memberDiscussItem ul li {
   margin: 0;
 }
 
-/* line 61, ../sass/_module-comments.scss */
+/* line 60, ../sass/_module-comments.scss */
+#memberDiscussItem textarea {
+  resize: none;
+  height: 30px;
+}
+
+/* line 64, ../sass/_module-comments.scss */
 #memberDiscussItem .comment-form button {
   float: right;
 }
 
-/* line 65, ../sass/_module-comments.scss */
+/* line 68, ../sass/_module-comments.scss */
 #memberDiscussItem .commit-follow a {
   float: none;
   line-height: normal;
 }
 
-/* line 70, ../sass/_module-comments.scss */
+/* line 73, ../sass/_module-comments.scss */
 #memberDiscussItem .panel-footer {
   margin-top: 16px;
 }
 
-/* line 74, ../sass/_module-comments.scss */
+/* line 77, ../sass/_module-comments.scss */
 #memberDiscussItem .panel.abstract, #memberDiscussItem .abstract.query-no-results, #memberDiscussItem .abstract.cta {
   background: #fff;
 }
 
-/* line 78, ../sass/_module-comments.scss */
+/* line 81, ../sass/_module-comments.scss */
 #memberDiscussItem .panel-heading {
   width: 100%;
 }
 
-/* line 81, ../sass/_module-comments.scss */
+/* line 84, ../sass/_module-comments.scss */
 #memberDiscussItem .panel-title {
   float: left;
 }
 
-/* line 85, ../sass/_module-comments.scss */
+/* line 88, ../sass/_module-comments.scss */
 #memberDiscussItem .post-option {
   float: right;
 }
 
-/* line 89, ../sass/_module-comments.scss */
+/* line 92, ../sass/_module-comments.scss */
 #memberDiscussItem .family-date {
   color: #B8B0A4;
 }
 
-/* line 92, ../sass/_module-comments.scss */
+/* line 95, ../sass/_module-comments.scss */
 #memberDiscussItem .commenter-name {
   float: left;
 }
 
-/* line 96, ../sass/_module-comments.scss */
+/* line 99, ../sass/_module-comments.scss */
 #memberDiscussItem .commenter-date {
   float: right;
 }
 
-/* line 100, ../sass/_module-comments.scss */
+/* line 103, ../sass/_module-comments.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -11245,29 +11251,29 @@ article.single-item #memberDiscussItem ul li {
   height: 0;
 }
 
-/* line 109, ../sass/_module-comments.scss */
+/* line 112, ../sass/_module-comments.scss */
 .clearfix {
   display: inline-block;
 }
 
-/* line 113, ../sass/_module-comments.scss */
+/* line 116, ../sass/_module-comments.scss */
 html[xmlns] .clearfix {
   display: block;
 }
 
-/* line 117, ../sass/_module-comments.scss */
+/* line 120, ../sass/_module-comments.scss */
 * html .clearfix {
   height: 1%;
 }
 
 @media only screen and (max-width: 1280px) {
-  /* line 122, ../sass/_module-comments.scss */
+  /* line 125, ../sass/_module-comments.scss */
   #memberDiscussItem .media-body .post-action p {
     margin: 0;
     width: 100%;
   }
 
-  /* line 127, ../sass/_module-comments.scss */
+  /* line 130, ../sass/_module-comments.scss */
   .prompt-deletion button {
     margin-left: 12px;
     margin-top: 6px;

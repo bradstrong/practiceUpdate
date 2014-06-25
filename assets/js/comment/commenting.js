@@ -32,15 +32,48 @@ PU.comment = (function ($) {
 				return $('<div />').append($(this).clone()).html(); 
 			}
 			
+			$.fn.growTextarea = function() {
+				return this.each(function() {
+
+					var createMirror = function(textarea) {
+						$(textarea).after('<div class="j-mirror"></div>');
+						return $(textarea).next('.j-mirror')[0];
+					}
+
+					var sendContentToMirror = function (textarea) {
+						mirror.innerHTML = String(textarea.value).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br />') + '.<br/>.';
+
+						if ($(textarea).height() != $(mirror).height())
+							$(textarea).height($(mirror).height());
+					}
+
+					var grow = function () {
+						sendContentToMirror(this);
+					}
+
+					var mirror = createMirror(this);
+		
+					mirror.style.display = 'none';
+					this.style.minHeight = "30px";
+
+					this.onkeyup = grow;
+
+					sendContentToMirror(this);
+				});
+			};
+
+			
+      $(".j-add-comment").growTextarea();
+      
       $(document.body).on('keypress', '.j-add-comment', function (e) {
 				if( $.trim( $(this).val() ) != '') {
 					$('.j-submit-commet').attr('disabled', false);
 				}
 
-        if (e.which == 13) {
+				if (e.keyCode == 13 && !event.shiftKey) {
           e.preventDefault();
 					summit();
-        }
+				}
       });
       
      	$(".j-comment-form").submit(function(e) {
@@ -55,9 +88,6 @@ PU.comment = (function ($) {
       	var $this = $(this),
       			id = $this.parents('.j-comment').data('id');
       			      	
-      	//$('li[data-id=' + id + '] .j-delete').fadeOut(200);
-      	//$('li[data-id=' + id + '] .j-prompt-deletion').delay(280).fadeIn(200);
-      	
       	$('li[data-id=' + id + '] .j-delete').toggleClass('is-hidden');
       	$('li[data-id=' + id + '] .j-prompt-deletion').toggleClass('is-hidden');
       	      	
