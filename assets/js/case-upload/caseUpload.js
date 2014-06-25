@@ -11,8 +11,8 @@ PU.caseUpload = (function ($) {
 						thefile  = myFSO.getFile(filepath),
 						size     = thefile.size;
 
-				if (size > 2621440) {
-					$.growl('Filesize must be 2.5MB or below', {
+				if (size > 5242880) {
+					$.growl('Filesize must be 5MB or below', {
 						onGrowlClosed: function() {
 								$('.j-file-upload-name').val('');
 								$('.j-submit-file input').attr("disabled", true);
@@ -35,6 +35,7 @@ PU.caseUpload = (function ($) {
 				} else {
 					if( $.trim($('.j-title-field').val()) != '' ) 
 						$('.j-submit-file input').attr("disabled", false);
+						$('.j-file-upload-remove').toggleClass('is-hidden');
 						FILEADDED = true;
 				}
 				
@@ -81,8 +82,8 @@ PU.caseUpload = (function ($) {
 							if(msie > 0) {
 								getSize();
 							} else {
-								if (this.files[0].size > 2621440) {
-									$.growl('Filesize must be 2.5MB or below', {
+								if (this.files[0].size > 5242880) {
+									$.growl('Filesize must be 5MB or below', {
 										onGrowlClosed: function() {
 												$('.j-file-upload-name').val('');
 												$('.j-submit-file input').attr("disabled", true);
@@ -106,6 +107,7 @@ PU.caseUpload = (function ($) {
 								} else {
 									if( $.trim($('.j-title-field').val()) != '' ) 
 										$('.j-submit-file input').attr("disabled", false);
+										$('.j-file-upload-remove').toggleClass('is-hidden');										
 										FILEADDED = true;
 								}
 							}
@@ -178,6 +180,13 @@ PU.caseUpload = (function ($) {
 						$('.j-submit-file input').attr("disabled", false);
 			}); 
 			
+			$(document).on('click', '.j-file-upload-remove', function(e) {
+				e.preventDefault();
+
+				$('.j-file-upload-name').val('');
+				$('.j-file-upload-remove').toggleClass('is-hidden');
+				$('.j-submit-file input').attr("disabled", true);
+			});
 		},
 	};
 } (jQuery));

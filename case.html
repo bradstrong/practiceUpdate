@@ -155,7 +155,7 @@
 										<div class="panel clearfix">
 											<div class="panel-heading clearfix">
 												<h3 class="panel-title">Discuss This item</h3>
-												<a href="#" class="button small success post-option j-post-option">
+												<a href="#" class="button small success post-option j-post-follow">
 													Follow
 												</a>
 											</div>
@@ -293,8 +293,10 @@
 											<div class="panel-footer">
 												<input class="form-control j-add-comment" type="text" placeholder="Leave a comment">
 
-												<div class="panel abstract is-hidden j-msg-comment">
-													Can only comment once at the time. Please wait for approval.
+												<div class="panel abstract msg-comment j-msg-comment is-hidden">
+													<p>Can only comment once at the time. Please wait for approval.</p>
+													<p class="j-msg-now-following">You are now following this discussion.</p>
+													<p class="j-on-commit-follow commit-follow">If you don't wish to receive updated about this discussion, <a href="#" class="button small success post-option j-post-unfollow">Unfollow</a></p>
 												</div>
 
 												<span class="help-block">By submitting a comment, you agree to the PracticeUpdate Terms of Service</span>
@@ -343,9 +345,13 @@
 														</span>
 
 														<div class="wrap-file-upload-name">
-															<input type="text" class="form-control j-file-upload-name" placeholder="Choose file..." readonly="" />
+															<input type="text" class="form-control j-file-upload-name file-upload-name" placeholder="Choose file..." readonly="" />
 														</div>
-
+														
+														<div class="file-upload-remove">
+															<a href="#" class="j-file-upload-remove is-hidden">remove file</a>
+														</div>
+														
 														<div class="submit-btn j-submit-file">
 															<input type="submit" class="button small success post-option" name="submit" value="Submit Case" disabled="disabled">
 														</div>

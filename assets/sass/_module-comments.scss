@@ -54,6 +54,14 @@ article.single-item #memberDiscussItem ul li {
   transition: background .5s ease-out;
 }
 
+#memberDiscussItem .msg-comment p {
+	margin:0;
+}
+#memberDiscussItem .commit-follow a {
+	float:none;
+	line-height: normal;
+}
+
 #memberDiscussItem .panel-footer {
 	margin-top: 16px;
 }
