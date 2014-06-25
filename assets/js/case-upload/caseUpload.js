@@ -35,6 +35,7 @@ PU.caseUpload = (function ($) {
 				} else {
 					if( $.trim($('.j-title-field').val()) != '' ) 
 						$('.j-submit-file input').attr("disabled", false);
+						$('.j-file-upload-remove').toggleClass('is-hidden');
 						FILEADDED = true;
 				}
 				
@@ -106,6 +107,7 @@ PU.caseUpload = (function ($) {
 								} else {
 									if( $.trim($('.j-title-field').val()) != '' ) 
 										$('.j-submit-file input').attr("disabled", false);
+										$('.j-file-upload-remove').toggleClass('is-hidden');										
 										FILEADDED = true;
 								}
 							}
@@ -178,6 +180,13 @@ PU.caseUpload = (function ($) {
 						$('.j-submit-file input').attr("disabled", false);
 			}); 
 			
+			$(document).on('click', '.j-file-upload-remove', function(e) {
+				e.preventDefault();
+
+				$('.j-file-upload-name').val('');
+				$('.j-file-upload-remove').toggleClass('is-hidden');
+				$('.j-submit-file input').attr("disabled", true);
+			});
 		},
 	};
 } (jQuery));
