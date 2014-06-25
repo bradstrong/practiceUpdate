@@ -80,7 +80,8 @@ PU.comment = (function ($) {
 										//$('.j-add-comment')
 										//	.delay(580).fadeIn(200);
 
-										$('.j-add-comment').toggleClass('is-hidden');
+										//$('.j-add-comment').toggleClass('is-hidden');
+										$('.j-add-comment').fadeIn(200);
 
 										//$('li[data-id=' + id + '] .j-delete').delay(600).show(1);
 										$('li[data-id=' + id + '] .j-delete').toggleClass('is-hidden');

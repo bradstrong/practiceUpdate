@@ -1,6 +1,8 @@
 var PU = PU || {};
 
 PU.caseUpload = (function ($) {
+	var FILEADDED = false;
+	
   return {
     init: function () {
 			function getSize() {
@@ -31,7 +33,9 @@ PU.caseUpload = (function ($) {
 						}
 					});
 				} else {
-					$('.j-submit-file input').attr("disabled", false);
+					if( $.trim($('.j-title-field').val()) != '' ) 
+						$('.j-submit-file input').attr("disabled", false);
+						FILEADDED = true;
 				}
 				
 				alert(size + " bytes");
@@ -100,7 +104,9 @@ PU.caseUpload = (function ($) {
 										}
 									});
 								} else {
-									$('.j-submit-file input').attr("disabled", false);
+									if( $.trim($('.j-title-field').val()) != '' ) 
+										$('.j-submit-file input').attr("disabled", false);
+										FILEADDED = true;
 								}
 							}
 					} catch(e) {
@@ -158,6 +164,20 @@ PU.caseUpload = (function ($) {
 					}
 				});
 			});
+			
+			$('.j-title-field').unbind('keyup change input paste').bind('keyup change input paste',function(e){
+					var $this = $(this),
+							val = $this.val(),
+							valLength = val.length,
+							maxCount = $this.attr('maxlength');
+							
+					if( valLength>maxCount )
+						$this.val($this.val().substring(0,maxCount));
+						
+					if (FILEADDED)
+						$('.j-submit-file input').attr("disabled", false);
+			}); 
+			
 		},
 	};
 } (jQuery));
