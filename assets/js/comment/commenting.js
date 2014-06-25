@@ -22,6 +22,8 @@ PU.comment = (function ($) {
 
           //$('.j-comments li:last').fadeIn(200);
           $('.j-comments li:last').toggleClass('is-hidden');
+          $('.j-msg-now-following').show();	
+          $('.j-on-commit-follow').show();	
 
           $('.j-add-comment')
             .val('')
@@ -29,6 +31,9 @@ PU.comment = (function ($) {
 
           //$('.j-msg-comment').delay(280).fadeIn('slow');
           $('.j-msg-comment').toggleClass('is-hidden');
+          
+          $('.j-post-option').html('Unfollow');
+          $('.j-post-option').prop('class', 'button small success post-option j-post-option j-following active');
         }
       });
 
@@ -93,15 +98,30 @@ PU.comment = (function ($) {
 				$delete == 'no' ? no() : yes();
       });
       
-      $(document.body).on('click', '.j-post-option', function (e) {
+      $(document.body).on('click', '.j-post-follow', function (e) {
       		e.preventDefault();
       		
 					var $this = $(this);
 												
-					$this.html( $this.hasClass('j-following') ? 'Follow' : 'Following' );
-					$this.toggleClass('j-following active');
+					$('.j-post-follow').html('Unfollow');
+					$('.j-post-follow').prop('class', 'button small success post-option j-post-unfollow');
+			});			
+      
+      $(document.body).on('click', '.j-post-unfollow', function (e) {
+      		e.preventDefault();
+      		
+					var $this = $(this);
+												
+					$('.j-post-unfollow').html('Follow');
+					$('.j-post-unfollow').prop('class', 'button small success post-option j-post-follow');
+
+
+					if($this.parents('.j-on-commit-follow').length) {
+						$('.j-on-commit-follow').delay(600).hide();
+						$('.j-msg-now-following').delay(600).hide();									
+					}
 			});
-			
+						
 			Hammer('.j-comment.owner').on("tap", function(e) {
 					var $this = $(this),
 							id = $this.data('id'),
