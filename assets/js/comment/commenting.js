@@ -22,7 +22,8 @@ PU.comment = (function ($) {
           
           $('.j-post-option').html('Unfollow');
           $('.j-post-option').prop('class', 'button small success post-option j-post-option j-following active');   
-          $('.j-submit-commet').hide(); 	
+          $('.j-submit-commet').hide(); 
+          $('.j-add-comment').removeAttr('style');	
     	};
     	
     	if ( $('html').hasClass('lt-ie8') )
