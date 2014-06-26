@@ -57,7 +57,10 @@ article.single-item #memberDiscussItem ul li {
 #memberDiscussItem .msg-comment p {
 	margin:0;
 }
-
+#memberDiscussItem textarea {
+    resize: none;
+    height:30px;
+}
 #memberDiscussItem .comment-form button {
 	float: right;
 }
