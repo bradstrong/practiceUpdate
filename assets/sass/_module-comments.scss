@@ -25,6 +25,7 @@ article.single-item #memberDiscussItem ul li {
 
 #memberDiscussItem .media-body .post-action {
 	/*display: none;*/
+  background: #fff;
 	float: right;
 	position: absolute;
 	bottom:0;
@@ -42,11 +43,10 @@ article.single-item #memberDiscussItem ul li {
 #memberDiscussItem .media-body .post-action p {
 	font-size: 12px;
 	float: left;
-	margin: 5px 6px 0 0;
+	padding: 5px 6px 0 5px;
 }
 
 #memberDiscussItem .prompt-deletion {
-  background: #faf9f4;
 	padding: 4px 4px 0;
   -webkit-transition: background .5s ease-out;
   -moz-transition: background .5s ease-out;
@@ -61,6 +61,10 @@ article.single-item #memberDiscussItem ul li {
     resize: none;
     height:30px;
 }
+#memberDiscussItem .comment-form{
+	@include clearfix;
+}
+
 #memberDiscussItem .comment-form button {
 	float: right;
 }
@@ -70,18 +74,16 @@ article.single-item #memberDiscussItem ul li {
 	line-height: normal;
 }
 
-#memberDiscussItem .panel-footer {
+#memberDiscussItem .page-section-footer {
 	margin-top: 16px;
+	@include clearfix();
 }
 
-#memberDiscussItem .panel.abstract {
-	background: #fff;
-}
-
-#memberDiscussItem .panel-heading {
+#memberDiscussItem .page-section-heading {
 	width:100%;
+	@include clearfix();
 }
-#memberDiscussItem .panel-title {
+#memberDiscussItem .page-section-title {
 	float:left;
 }
 
@@ -89,36 +91,16 @@ article.single-item #memberDiscussItem ul li {
 	float:right;
 }
 
-#memberDiscussItem .family-date {
+#memberDiscussItem .pub-date {
 	color: #B8B0A4;
 }
 #memberDiscussItem .commenter-name {
 	float:left;
+	font-weight: bold;
 }
 
 #memberDiscussItem .commenter-date {
 	float:right;
-}
-
-.clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
-}
- 
-.clearfix {
-	display: inline-block;
-}
- 
-html[xmlns] .clearfix {
-	display: block;
-}
- 
-* html .clearfix {
-	height: 1%;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -132,5 +114,14 @@ html[xmlns] .clearfix {
 		margin-top: 6px;
 		width:50px;
 		float:right;
+	}
+}
+
+#memberDiscussItem .comment-form .commenter-context{
+	color: #B8B0A4;
+	padding: 15px 0 5px;
+	.commenter-name{
+		color: $txtColor;
+		float: none;
 	}
 }
