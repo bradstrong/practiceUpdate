@@ -165,7 +165,7 @@ PU.caseUpload = (function ($) {
 			$(".j-form-submit-case").submit(function(e) {
 				e.preventDefault();
 
-				$('.j-progress').toggleClass('is-hidden');
+				$('.j-progress, .j-file-upload-remove').toggleClass('is-hidden');
 				$('.j-submit-file input').attr("disabled", true);
 				
 				$('.j-meter').countTo({
@@ -175,7 +175,6 @@ PU.caseUpload = (function ($) {
 					refreshInterval: 50,
 					onComplete: function(value) {
 						$('.j-progress').toggleClass('is-hidden');
-						$('.j-submit-file input').attr("disabled", false);
 						$('.j-meter').removeAttr('style');
 				
 						$.growl('Success! <br /> Thank you, we\'ve received your case and one of our editors will review it shortly. <br /> PracticeUpdate staff may contact you via email regarding questions, editing, and possible publication on http://PracticeUpdate.com', {
