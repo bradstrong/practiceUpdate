@@ -109,7 +109,7 @@ PU.caseUpload = (function ($) {
 				input.trigger('fileselect', [numFiles, label]);
 			});
 
-			$('.btn-file :file').on('fileselect', function(event, numFiles, label) {			
+			$('.btn-file :file').on('change', function(event, numFiles, label) {			
 				var input = $(this).parents('.input-group').find(':text'),
 						log   = numFiles > 1 ? numFiles + ' files selected' : label;
 		
