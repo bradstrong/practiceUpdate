@@ -57,6 +57,11 @@ article.single-item #memberDiscussItem ul li {
 #memberDiscussItem .msg-comment p {
 	margin:0;
 }
+
+#memberDiscussItem .comment-form button {
+	float: right;
+}
+
 #memberDiscussItem .commit-follow a {
 	float:none;
 	line-height: normal;

@@ -11184,53 +11184,58 @@ article.single-item #memberDiscussItem ul li {
   margin: 0;
 }
 
-/* line 60, ../sass/_module-comments.scss */
+/* line 61, ../sass/_module-comments.scss */
+#memberDiscussItem .comment-form button {
+  float: right;
+}
+
+/* line 65, ../sass/_module-comments.scss */
 #memberDiscussItem .commit-follow a {
   float: none;
   line-height: normal;
 }
 
-/* line 65, ../sass/_module-comments.scss */
+/* line 70, ../sass/_module-comments.scss */
 #memberDiscussItem .panel-footer {
   margin-top: 16px;
 }
 
-/* line 69, ../sass/_module-comments.scss */
+/* line 74, ../sass/_module-comments.scss */
 #memberDiscussItem .panel.abstract, #memberDiscussItem .abstract.query-no-results, #memberDiscussItem .abstract.cta {
   background: #fff;
 }
 
-/* line 73, ../sass/_module-comments.scss */
+/* line 78, ../sass/_module-comments.scss */
 #memberDiscussItem .panel-heading {
   width: 100%;
 }
 
-/* line 76, ../sass/_module-comments.scss */
+/* line 81, ../sass/_module-comments.scss */
 #memberDiscussItem .panel-title {
   float: left;
 }
 
-/* line 80, ../sass/_module-comments.scss */
+/* line 85, ../sass/_module-comments.scss */
 #memberDiscussItem .post-option {
   float: right;
 }
 
-/* line 84, ../sass/_module-comments.scss */
+/* line 89, ../sass/_module-comments.scss */
 #memberDiscussItem .family-date {
   color: #B8B0A4;
 }
 
-/* line 87, ../sass/_module-comments.scss */
+/* line 92, ../sass/_module-comments.scss */
 #memberDiscussItem .commenter-name {
   float: left;
 }
 
-/* line 91, ../sass/_module-comments.scss */
+/* line 96, ../sass/_module-comments.scss */
 #memberDiscussItem .commenter-date {
   float: right;
 }
 
-/* line 95, ../sass/_module-comments.scss */
+/* line 100, ../sass/_module-comments.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -11240,29 +11245,29 @@ article.single-item #memberDiscussItem ul li {
   height: 0;
 }
 
-/* line 104, ../sass/_module-comments.scss */
+/* line 109, ../sass/_module-comments.scss */
 .clearfix {
   display: inline-block;
 }
 
-/* line 108, ../sass/_module-comments.scss */
+/* line 113, ../sass/_module-comments.scss */
 html[xmlns] .clearfix {
   display: block;
 }
 
-/* line 112, ../sass/_module-comments.scss */
+/* line 117, ../sass/_module-comments.scss */
 * html .clearfix {
   height: 1%;
 }
 
 @media only screen and (max-width: 1280px) {
-  /* line 117, ../sass/_module-comments.scss */
+  /* line 122, ../sass/_module-comments.scss */
   #memberDiscussItem .media-body .post-action p {
     margin: 0;
     width: 100%;
   }
 
-  /* line 122, ../sass/_module-comments.scss */
+  /* line 127, ../sass/_module-comments.scss */
   .prompt-deletion button {
     margin-left: 12px;
     margin-top: 6px;
