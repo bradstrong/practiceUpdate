@@ -23,6 +23,10 @@
 
 .help-block{
 	display: block; padding: 6px 4px; margin-top: -($formSpacing) - 1; margin-bottom: $formSpacing; font-size: ms(0) - 2;
+	&.no-pad{
+		margin-top:0;
+		padding:0;
+	}
 }
 
 //Preferences

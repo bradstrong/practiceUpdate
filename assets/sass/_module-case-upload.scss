@@ -33,11 +33,19 @@
   margin:0;
   width:70px;
 }
+.form-submit-case .input-group-case-attach{
+  padding-bottom: $formSpacing/2;
+  .help-block{
+    padding-top: $formSpacing/2;
+  }
+}
+
 .form-submit-case .input-group .wrap-file-upload-name {
 	overflow: hidden; 
 	
 	.file-upload-name {
 		margin-bottom:0;
+    cursor: pointer;
 	}
 }
 .file-upload-remove {
