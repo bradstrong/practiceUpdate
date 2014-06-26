@@ -60,7 +60,7 @@ PU.caseUpload = (function ($) {
 						},	
 						ele: "#submitCase",
 						position: {
-								from: "top",
+								from: "bottom",
 								align: "center"
 						},
 						type: 'danger',
@@ -132,7 +132,7 @@ PU.caseUpload = (function ($) {
 										width: "400px",
 										ele: "#submitCase",
 										position: {
-												from: "top",
+												from: "bottom",
 												align: "center"
 										},
 										type: 'danger',
@@ -177,24 +177,36 @@ PU.caseUpload = (function ($) {
 						$('.j-progress').toggleClass('is-hidden');
 						$('.j-submit-file input').attr("disabled", false);
 						$('.j-meter').removeAttr('style');
-					}
-				});
 				
-				$.growl('Success! <br /> Thank you, we\'ve received your case and one of our editors will review it shortly. <br /> PracticeUpdate staff may contact you via email regarding questions, editing, and possible publication on http://PracticeUpdate.com', {
-					onGrowlClosed: function() {
-						$('.j-textarea-field, .j-file-upload-name, .j-title-field').val('');
-
-						$.growl('Your case could not be submitted, please try again.', {
+						$.growl('Success! <br /> Thank you, we\'ve received your case and one of our editors will review it shortly. <br /> PracticeUpdate staff may contact you via email regarding questions, editing, and possible publication on http://PracticeUpdate.com', {
 							onGrowlClosed: function() {
 								$('.j-textarea-field, .j-file-upload-name, .j-title-field').val('');
+
+								$.growl('Your case could not be submitted, please try again.', {
+									width: "400px",
+									ele: "#submitCase",
+									position: {
+											from: "bottom",
+											align: "center"
+									},
+									type: 'danger',
+									template: {
+											icon_type: 'class',
+											container: '<div class="col-xs-10 text-center success-mgs col-sm-10 col-md-6 alert">',
+											dismiss: '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>',
+											title: '<strong>',
+											title_divider: '',
+											message: ''
+									}
+								});
 							},	
 							width: "400px",
 							ele: "#submitCase",
 							position: {
-									from: "top",
+									from: "bottom",
 									align: "center"
 							},
-							type: 'danger',
+							type: 'success',
 							template: {
 									icon_type: 'class',
 									container: '<div class="col-xs-10 text-center success-mgs col-sm-10 col-md-6 alert">',
@@ -204,21 +216,7 @@ PU.caseUpload = (function ($) {
 									message: ''
 							}
 						});
-					},	
-					width: "400px",
-					ele: "#submitCase",
-					position: {
-							from: "top",
-							align: "center"
-					},
-					type: 'success',
-					template: {
-							icon_type: 'class',
-							container: '<div class="col-xs-10 text-center success-mgs col-sm-10 col-md-6 alert">',
-							dismiss: '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>',
-							title: '<strong>',
-							title_divider: '',
-							message: ''
+
 					}
 				});
 			});
