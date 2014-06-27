@@ -146,6 +146,32 @@ Updated Markup for MBC Zone Assets 2014-06-18
 //
 -->
 
+<div id="zonemodal"><div id="modal-video-ad" class="reveal-modal">
+  <div class="modal-body">
+    <div class="flex-video">
+      <!-- Start of Brightcove Player -->
+      <div style="display:none"></div>
+      
+      <span id="_containermyExperience3577789209001" style="display: inline-block;"><a href="http://www.adobe.com/go/getflash/" target="_blank"><img src="http://admin.brightcove.com/viewer/upgrade_flash_player2.gif" alt="Get Flash Player" width="314" height="200" border="0"></a></span>
+    </div>
+  </div>
+  <div class="modal-footer"></div>
+  <a class="close-reveal-modal">×</a>
+</div>
+<p>&nbsp;</p>
+<script>
+if( $('html').hasClass('lt-ie9') ) {
+	var PU = PU || {};
+	PU.CLONE = $("#modal-video-ad .flex-video").clone(true);
+
+	$("#modal-video-ad").on('reveal:close', function(){
+			$("#modal-video-ad .flex-video").remove();
+			$("#modal-video-ad").html(PU.CLONE);
+	});
+}
+</script>
+</div>
+
 <div id="modal-video-ad" class="reveal-modal">
   <div class="modal-body">
     <div class="flex-video">
