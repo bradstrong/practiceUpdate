@@ -74,6 +74,7 @@
               }
               table[class="body"] .container {
                 width: 95% !important;
+                padding:0 12px;
               }
               table[class="body"] .row {
                 display: block !important; width: 100% !important;
@@ -645,38 +646,38 @@
 									</td>
 								</tr>
 							</table>
-                            <table class="container ad-container ad-leaderboard" style="padding: 0; margin: 0 auto; width: 580px; text-align: inherit; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
-	                            <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
-		                            <td valign="top" align="center" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
-			                            <center style="width: 100%; min-width: 580px;">
-				                            <table class="row" style="padding: 0; width: 100%; text-align: left; border-spacing: 0; position: relative; border-collapse: collapse; display: block; vertical-align: top;">
-					                            <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
-						                            <td valign="top" class="wrapper last ad-wrapper" align="left" style="font-size: 14px; line-height: 19px; text-align: left; position: relative; hyphens: auto; word-break: break-word; margin: 0; padding: 0 0 0 0px; font-weight: normal; border-collapse: collapse !important; -moz-hyphens: auto; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; vertical-align: top; -webkit-hyphens: auto;">
-							                            <table class="twelve columns" style="padding: 0; margin: 0 auto; width: 580px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
-								                            <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
-									                            <td valign="top" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0 0px 10px; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
-										                            <table style="padding: 0; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
-											                            <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
-												                            <td valign="top" class="ad-title" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0 0px 10px; display: block; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 5px 0 5px 0px; -webkit-hyphens: auto; vertical-align: top;">
-													                            <img height="8" width="67" class="ad-notice" align="left" style="display: block; float: left; width: auto; max-width: 100%; clear: both; text-decoration: none; outline: none; -ms-interpolation-mode: bicubic;" src="@System.Configuration.ConfigurationManager.AppSettings["CloudFrontImageURL"]/punewsletter/general/ad-notice.gif" />
-												                            </td>
-											                            </tr>
-											                            <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
-												                            <td valign="top" width="100%" class="ad-content" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0 0px; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
-                                                                                @Html.Raw(ViewBag.Ad)
-												                            </td>
-											                            </tr>
-										                            </table>
-									                            </td>
-								                            </tr>
-							                            </table>
-						                            </td>
-					                            </tr>
-				                            </table>
-			                            </center>
-		                            </td>
-	                            </tr>
-                            </table>
+
+														<table class="container ad-container ad-leaderboard" border="0" cellpadding="0" cellspacing="0" style="width: 580px">
+															<tr>
+																<td>
+																	<table align="left" width="100%" border="0" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td height="5" bgcolor="#ffffff" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
+																		</tr>
+
+																		<tr>
+																			<td bgcolor="#ffffff">
+																				<img height="8" width="67" class="ad-notice" align="left" src="@System.Configuration.ConfigurationManager.AppSettings["CloudFrontImageURL"]/punewsletter/general/ad-notice.gif" />
+																			</td>
+																		</tr>
+
+																		<tr>
+																			<td bgcolor="#ffffff">
+																				@Html.Raw(ViewBag.Ad)
+																				<!--a href="http://ad.doubleclick.net/jump/els.pracupcardiologystaging/email/dailydigest;tile=;dcove=r;sz=728x90;ord=123456789?" target="_blank" name="ad_doubleclick_net_jump_els_pr">
+																					<img width="548" border="0" src="http://ad.doubleclick.net/ad/els.pracupcardiologystaging/email/dailydigest;tile=;dcove=r;sz=728x90;ord=123456789?" alt="" />
+																				</a-->
+																			</td>
+																		</tr>
+
+																		<tr>
+																			<td height="5" bgcolor="#ffffff" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+
                             @if (CustomTypeId==1)
                             {
                                 <table class="container hero" style="padding: 0; margin: 0 auto; width: 580px; text-align: inherit; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
@@ -713,66 +714,58 @@
 	                                </tr>
                                 </table>
                             }
+
                             @RenderBody()
-                            <!-- Being Job Board Ads -->
-                            <table class="container ad-container ad-classified" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px">
-                                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-                                    <td align="center" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-break: break-word" valign="top">
-                                        <center style="min-width: 580px; width: 100%">
-                                            <table class="row" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%">
-                                                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-                                                    <td class="wrapper last ad-wrapper" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 0 0 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-                                                        <table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px">
-                                                            <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-                                                                <td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 0px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-                                                                    <table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top">
-                                                                        <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-                                                                            <td class="ad-content" width="100%" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 0px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-                                                                                @Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" style=\"color: #16799a; text-decoration: none\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"100%\" border=\"0\" src=\"http://punewsletter.s3.amazonaws.com/classified/1x1.gif\" alt=\"\" style=\"-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto\" align=\"left\" /></a>")
-                                                                                @Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=1;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" style=\"color: #16799a; text-decoration: none\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"100%\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=1;tile=;sz=728x90;ord=123456789?\" alt=\"\" style=\"-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto\" align=\"left\" /></a>")
-                                                                                @if (ViewBag.SpecialtyId==2){
-                                                                                    <table class="row" style="border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; position: relative; width: 100%; display: block; padding: 0;">
-                                                                                      <tr style="text-align: left; vertical-align: top; padding: 0;" align="left">
-                                                                                        <td class="spacer" style="-webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; word-break: break-word; border-collapse: collapse !important; text-align: left; vertical-align: top; position: relative; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 5px; color: #222222; font-size: 5px; margin: 0; padding: 0 0 0 0px;" align="left" valign="top" height="5px">
-                                                                                        &nbsp;
-                                                                                        </td>
-                                                                                      </tr>
-                                                                                    </table>
-                                                                                }
-                                                                                @Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=2;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" style=\"color: #16799a; text-decoration: none\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"100%\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=2;tile=;sz=728x90;ord=123456789?\" alt=\"\" style=\"-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto\" align=\"left\" /></a>")
-                                                                                @if (ViewBag.SpecialtyId==2){
-                                                                                    <table class="row" style="border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; position: relative; width: 100%; display: block; padding: 0;">
-                                                                                      <tr style="text-align: left; vertical-align: top; padding: 0;" align="left">
-                                                                                        <td class="spacer" style="-webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; word-break: break-word; border-collapse: collapse !important; text-align: left; vertical-align: top; position: relative; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 5px; color: #222222; font-size: 5px; margin: 0; padding: 0 0 0 0px;" align="left" valign="top" height="5px">
-                                                                                        &nbsp;
-                                                                                        </td>
-                                                                                      </tr>
-                                                                                    </table>
-                                                                                }
-                                                                                @Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=3;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" style=\"color: #16799a; text-decoration: none\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"100%\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=3;tile=;sz=728x90;ord=123456789?\" alt=\"\" style=\"-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto\" align=\"left\" /></a>")
-                                                                                @if (ViewBag.SpecialtyId==2){
-                                                                                    <table class="row" style="border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; position: relative; width: 100%; display: block; padding: 0;">
-                                                                                        <tr style="text-align: left; vertical-align: top; padding: 0;" align="left">
-                                                                                        <td class="spacer" style="-webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; word-break: break-word; border-collapse: collapse !important; text-align: left; vertical-align: top; position: relative; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 5px; color: #222222; font-size: 5px; margin: 0; padding: 0 0 0 0px;" align="left" valign="top" height="5px">
-                                                                                        &nbsp;
-                                                                                        </td>
-                                                                                        </tr>
-                                                                                    </table>
-                                                                                }
-                                                                                @Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=4;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" style=\"color: #16799a; text-decoration: none\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"100%\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=4;tile=;sz=728x90;ord=123456789?\" alt=\"\" style=\"-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: left; max-width: 100%; outline: none; text-decoration: none; width: auto\" align=\"left\" /></a>")
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </center>
-                                    </td>
-                                </tr>
-                            </table>
+                            <!-- Begin Job Board Ads -->
+								<table class="container ad-container ad-classified" border="0" cellpadding="0" cellspacing="0" style="width: 580px">
+									<tr>
+										<td>
+											<table align="left" width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td bgcolor="#ffffff">
+														@Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=1;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"548\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=1;tile=;sz=728x90;ord=123456789?\" alt=\"\" /></a>")
+													</td>
+												</tr>
+
+												@if (ViewBag.SpecialtyId==2){
+												<tr>
+													<td height="5" bgcolor="#ffffff" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
+												</tr>
+												}
+
+												<tr>
+													<td bgcolor="#ffffff">
+														@Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=2;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"548\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=2;tile=;sz=728x90;ord=123456789?\" alt=\"\" /></a>")
+													</td>
+												</tr>
+
+												@if (ViewBag.SpecialtyId==2){
+												<tr>
+													<td height="5" bgcolor="#ffffff" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
+												</tr>
+												}
+
+												<tr>
+													<td bgcolor="#ffffff">
+														@Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=3;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"548\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=3;tile=;sz=728x90;ord=123456789?\" alt=\"\" /></a>")
+													</td>
+												</tr>
+
+												@if (ViewBag.SpecialtyId==2){
+												<tr>
+													<td height="5" bgcolor="#ffffff" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
+												</tr>
+												}
+
+												<tr>
+													<td bgcolor="#ffffff">
+														@Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=4;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"548\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=4;tile=;sz=728x90;ord=123456789?\" alt=\"\" /></a>")
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
                             <!-- End Job Board Ads -->
 
 							<table style="padding: 0; width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; position: relative;" class="row utility">
