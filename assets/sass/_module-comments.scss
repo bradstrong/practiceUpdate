@@ -1,106 +1,104 @@
-#memberDiscussItem .media-list {
-	margin:0;
-}
 
+// Force reset list styles in Discussion page section
 article.single-item #memberDiscussItem ul,
 article.single-item #memberDiscussItem ul li {
 	list-style-type: none;
 }
 
-#memberDiscussItem .media {
-	border-bottom: 1px solid #c9c1b8;
-}
-
-#memberDiscussItem .media-body {
-	position:relative;
-}
-
-#memberDiscussItem .media-body p {
-	float:left;
-}
-
-#memberDiscussItem .media-body .comment-body {
-	width: 100%;
-}
-
-#memberDiscussItem .media-body .post-action {
-	/*display: none;*/
-  background: #fff;
-	float: right;
-	position: absolute;
-	bottom:0;
-	right:0;
-}
-
-#memberDiscussItem .media-body .post-action button {
-	margin-bottom:6px;
-}
-
-.no-touch #memberDiscussItem .media.owner:hover .post-action {
-	display: block !important;
-}
-
-#memberDiscussItem .media-body .post-action p {
-	font-size: 12px;
-	float: left;
-	padding: 5px 6px 0 5px;
-}
-
-#memberDiscussItem .prompt-deletion {
-	padding: 4px 4px 0;
-  -webkit-transition: background .5s ease-out;
-  -moz-transition: background .5s ease-out;
-  -o-transition: background .5s ease-out;
-  transition: background .5s ease-out;
-}
-
-#memberDiscussItem .msg-comment p {
-	margin:0;
-}
-#memberDiscussItem textarea {
+#memberDiscussItem{
+	.media-list {
+		margin:0;
+	}
+	.media {
+		border-bottom: 1px solid #c9c1b8;
+		&.owner:hover .post-action {
+			display: block !important;
+		}
+	}
+	.media-body{
+		position:relative;
+		p {
+			float:left;
+		}
+		.comment-body {
+			width: 100%;
+		}
+		.post-action {
+		  background: #fff;
+			float: right;
+			position: absolute;
+			bottom:0;
+			right:0;
+			button {
+				margin-bottom:6px;
+			}
+			p {
+				font-size: 12px;
+				float: left;
+				padding: 5px 6px 0 5px;
+			}
+		}
+	}
+	.prompt-deletion {
+		padding: 4px 4px 0;
+	  -webkit-transition: background .5s ease-out;
+	  -moz-transition: background .5s ease-out;
+	  -o-transition: background .5s ease-out;
+	  transition: background .5s ease-out;
+	}
+	.msg-comment p {
+		margin:0;
+	}
+	textarea {
     resize: none;
     height:30px;
-}
-#memberDiscussItem .comment-form{
-	@include clearfix;
-}
-
-#memberDiscussItem .comment-form button {
-	float: right;
-}
-
-#memberDiscussItem .commit-follow a {
-	float:none;
-	line-height: normal;
-}
-
-#memberDiscussItem .page-section-footer {
-	margin-top: 16px;
-	@include clearfix();
-}
-
-#memberDiscussItem .page-section-heading {
-	width:100%;
-	@include clearfix();
-}
-#memberDiscussItem .page-section-title {
-	float:left;
-}
-
-#memberDiscussItem .post-option {
-	float:right;
-}
-
-#memberDiscussItem .pub-date {
-	color: #B8B0A4;
-}
-#memberDiscussItem .commenter-name {
-	float:left;
-	font-weight: bold;
-}
-
-#memberDiscussItem .commenter-date {
-	float:right;
+	}
+	.comment-form{
+		@include clearfix;
+		button {
+			float: right;
+		}
+	}
+	.commit-follow{
+		a {
+			float:none;
+			line-height: normal;
+		}
+	}
+	.page-section-footer {
+		margin-top: 16px;
+		@include clearfix();
+	}
+	.page-section-heading {
+		width:100%;
+		@include clearfix();
+		.page-section-title {
+			float:left;
+		}
+	}
+	.post-option {
+		float:right;
+	}
+	.pub-date {
+		color: #B8B0A4;
+	}
+	.commenter-name {
+		float:left;
+		font-weight: bold;
+	}
+	.commenter-date {
+		float:right;
+	}
+	.comment-form {
+		.commenter-context{
+			color: #B8B0A4;
+			padding: 15px 0 5px;
+			.commenter-name{
+				color: $txtColor;
+				float: none;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 1280px) {
@@ -114,14 +112,5 @@ article.single-item #memberDiscussItem ul li {
 		margin-top: 6px;
 		width:50px;
 		float:right;
-	}
-}
-
-#memberDiscussItem .comment-form .commenter-context{
-	color: #B8B0A4;
-	padding: 15px 0 5px;
-	.commenter-name{
-		color: $txtColor;
-		float: none;
 	}
 }
