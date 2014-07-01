@@ -21,6 +21,12 @@ background-color:$white;
 	@include elementBoxShadow;
 }
 
+article.type-static{
+  background-color:$white;
+  @include elementBoxShadow;
+  padding: 15px;
+}
+
 body{
 	color: darken($txtColor, 10%);
 	background-color: $bodyBackground;

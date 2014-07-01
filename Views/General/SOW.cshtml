@@ -1,0 +1,55 @@
+﻿@model PracticeUpdate.Web.ViewModels.SOWItemViewModel
+@{
+    Layout = null;
+}
+<style type="text/css">
+    table.gridtable {
+	    color:#333333;
+	    border-width: 1px;
+	    border-color: #666666;
+	    border-collapse: collapse;
+    }
+    table.gridtable th {
+	    border-width: 1px;
+	    padding: 8px;
+	    border-style: solid;
+	    border-color: #666666;
+	    background-color: #dedede;
+    }
+    table.gridtable td {
+	    border-width: 1px;
+	    padding: 8px;
+	    border-style: solid;
+	    border-color: #666666;
+	    background-color: #ffffff;
+    }
+</style>
+<table class="gridtable">
+    <thead>
+        <tr><th>Channel</th><th>Title</th><th>URL</th></tr>
+    </thead>
+    <tbody>   
+        @foreach (var contentitem in @Model.SOW)
+        {
+        <tr>
+            <td>@contentitem.specialtyname</td>
+            <td>@contentitem.title</td>
+            <td>
+            @{
+            switch (contentitem.contenttypeid) { 
+                case 1:
+                    @Html.Raw("http://prac.co/j/" + contentitem.contentid + "/13/" + contentitem.specialtyid);
+                    break;
+                case 2:
+                    @Html.Raw("http://prac.co/n/" + contentitem.contentid + "/13/" + contentitem.specialtyid);
+                    break;
+                case 3:
+                    @Html.Raw("http://prac.co/eo/" + contentitem.contentid + "/13/" + contentitem.specialtyid);
+                    break;
+                    }
+                }
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

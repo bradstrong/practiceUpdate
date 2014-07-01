@@ -1,0 +1,112 @@
+﻿@{
+    Layout = "~/Views/shared/_GenericBootstrapLayout.cshtml";
+    ViewBag.Title = "Refer a Friend";
+}
+@Scripts.Render("~/assets/js/Views/General/RaF")
+<script src="~/assets/js/jqueryvalidate/jquery.validate.min.js"></script>
+
+<div class="page-content-container container">
+    <div class="page-content">
+        <div class="raf-container col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
+        <div id="rafDiv">
+            <div class="panel" style="box-shadow: 0px 2px 2px rgba(0,0,0,0.2);">
+                <div class="panel-heading">
+                    <button type="button" class="close close-raf" aria-hidden="true">&times;</button>
+                    <h4 class="panel-title">Email your PracticeUpdate invitations</h4>
+                </div><!--/panel-heading-->
+                    <div class="panel-body">
+                        <p class="lead">Invite as many colleagues as you wish. We’ll notify you when someone has registered.</p>
+                        <form class="form-horizontal" role="form" id="formRaf">
+                            <div class="form-group">
+                                <label for="rafInputEmail" class="col-sm-2 control-label">To</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="rafInputEmail" name="rafInputEmail" placeholder="Type email addresses (separated by commas)" tabindex="1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="rafInputFrom" class="col-sm-2 control-label">From</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="rafInputFrom" name="rafInputFrom" placeholder="Type in your name as you would like it to appear" tabindex="2" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-2">
+                                    <a id="rafButtonSubmit" class="btn btn-primary" tabindex="3">Send</a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div id="rafAlertSent" class="alert alert-success alert-sm" style="display:none; margin-bottom:0;">Invite successfully sent.</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <p>Or spread the word by copying and pasting this link into an email to share it with your colleagues.</p>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control input-lg ignore" id="rafInputLink" name="rafInputLink" tabindex="4">
+                                </div><!--/.col-sm-12-->
+                            </div>
+                        </form>
+                    </div><!--/.panel-body-->
+                    <div class="panel-footer">
+                        <a class="btn" data-toggle="modal" data-target="#modal-raftc" target="_blank">Terms &amp; Conditions</a>
+                        <a class="btn btn-default pull-right close-raf" aria-hidden="true"><i class="fa fa-arrow-left"></i> cancel</a>
+                    </div><!--.panel-footer-->
+                </div><!--/.panel-->
+            </div><!--/#rafDiv-->
+        </div><!--/.raf-container-->
+    </div><!--/.page-content-->
+</div><!--/.page-content-container-->
+<div class="is-hidden hide">
+    <input type="text" id="siteuserid" value="@ViewBag.siteuserid" />
+    <input type="text" id="firstname" value="@ViewBag.firstname" />
+    <input type="text" id="lastname" value="@ViewBag.lastname" />
+    <input type="text" id="CustomAnalyticsPageName" value="RAF" />
+</div>
+<!-- modal-raftc -->
+<div class="modal fade" id="modal-raftc" tabindex="-1" role="dialog" aria-labelledby="modal-raf-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="modal-raf-label">PracticeUpdate Refer A Colleague Promotion Official Rules</h4>
+            </div>
+            <div class="modal-body">
+                <p>PracticeUpdate Refer A Colleague Promotion Official Rules</p>
+                <p>Sponsor: Elsevier Inc., 360 Park Avenue South, New York, NY 10010</p>
+                <p>Eligibility: The PracticeUpdate Refer A Colleague Promotion (the &quot;Promotion&quot;) is open to physicians practicing within the fifty (50) United States and the District of Columbia who are registered users of PracticeUpdate. Employees of Sponsor and its parents, subsidiaries, affiliated companies and agents, and their immediate families or those living in the same household, are not eligible to enter. VOID IN PUERTO RICO, CANADA AND WHERE PROHIBITED OR RESTRICTED.</p>
+                <p>Promotion Period: The Promotion shall commence at 12:01:01 AM EDT on February 1, 2014 and shall end at 11:59:59 PM EDT on December 31, 2014 (&quot;Promotion Period&quot;). Sponsor's server is the official clock for the Promotion.</p>
+                <p>How to Enter: To participate in the Promotion, registered users of PracticeUpdate may refer their colleagues through the link within the &quot;Refer-A-Friend&quot; email communication by providing valid email address(es). Each colleague can be referred only once.</p>
+                <p>Incentive: For every referred colleague who registers for their own PracticeUpdate accounts within three (3) months of referral by entrant, entrant will be eligible to receive a one-time discount code for twenty percent (20%) off select Elsevier products available at <a href="http://www.us.elsevierhealth.com" target="_blank">www.us.elsevierhealth.com</a>. Upon certification by Sponsor as an eligible entrant, the entrant will receive the discount code. No assignment or transfer of discount incentive is permitted.</p>
+                <p>Consent to Use of Personal Information: Submission of referral constitutes entrant's consent for Sponsor to use entrant's email address for purposes of marketing and promotion of Sponsor's products and services. By accepting the discount incentive, the entrant acknowledges compliance with these Official Rules and agrees to permit Sponsor to use their name in any media for any commercial, advertising, publicity or promotional purpose, without limitation or additional compensation or permission, unless prohibited by law.</p>
+                <p>Limitations of Liability/Reserved Rights: Neither Sponsor, its parent, subsidiary or affiliated companies, nor its advertising or promotional agencies shall have any obligation, liability or responsibility with regard to (i) referrals that contain incorrect or inaccurate information or do not comply with these Official Rules, (ii) referrals that are lost, late, incomplete, illegible, unintelligible, damaged or otherwise not received by the Sponsor, in whole or in part, due to computer, technical or other error of any kind, (iii) telephone, electronic, hardware, software, network, Internet or computer malfunctions, failures or difficulties, or (iv) any damages or losses of any kind caused by any incentive or resulting from participation in the Promotion, accessing, uploading or downloading data in connection with the Promotion, or acceptance, possession or use of any incentive. Sponsor, in its sole discretion, further reserves the right to cancel, terminate, suspend or modify the Promotion if the Promotion cannot be completed as planned.</p>
+                <p>Release: BY ENTERING THE PROMOTION, THE ENTRANT AGREES TO RELEASE AND HOLD HARMLESS SPONSOR AND ITS PARENT, SUBSIDIARY, AND AFFILIATED COMPANIES, AND EACH OF THEIR DIRECTORS, OFFICERS, EMPLOYEES, REPRESENTATIVES, VENDORS, AND AGENCIES, FROM ANY AND ALL LIABILITY WHATSOEVER, AND WAIVE ANY AND ALL CAUSES OF ACTION, RELATED TO ANY CLAIMS, COSTS, INJURIES, LOSSES, LIABILITIES, OR DAMAGES OF ANY KIND (INCLUDING, WITHOUT LIMITATION, PERSONAL INJURY, DEATH, DAMAGE TO OR DESTRUCTION OF PROPERTY, RIGHTS OF PUBLICITY OR PRIVACY, DEFAMATION OR PORTRAYAL IN A FALSE LIGHT, WHETHER INTENTIONAL OR UNINTENTIONAL) ARISING OUT OF OR IN CONNECTION WITH THE PROMOTION OR THE ACCEPTANCE, POSSESSION, OR USE OF ANY INCENTIVE, WHETHER UNDER A THEORY OF CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE, WHETHER ACTIVE, PASSIVE, OR IMPUTED), STRICT LIABILITY, PRODUCT LIABILITY, CONTRIBUTION, OR ANY OTHER THEORY, TO THE EXTENT PERMITTED BY LAW.</p>
+                <p>Construction: The construction, validity, interpretation and enforceability of these Official Rules shall be governed by and construed in accordance with the laws of the State of New York, without giving effect to its conflicts of law principles.</p>
+                <p>Rules: By entering the Promotion, entrant agrees to abide by the terms and conditions of these Official Rules, which are final on all matters pertaining to the Promotion, and warrants that he/she is eligible to participate in the Promotion.</p>
+                <p>Elsevierhealth.com Disclaimer</p>
+                <p>20% discount offer applies to all Medicine Reference and Textbooks including print books, PDF, VST &amp; ePub ebooks, as well as Clinics Review Articles subscriptions and individual issues. This offer is not valid on Institutional Video Series, Pageburst titles, HESI Products, Kindle or Nook e-books, select Nursing, Dentistry and Veterinary textbooks, ClincalKey packages, mobile apps, medical clothing or accessories, previous or bulk purchases, clearance titles or in combination with any other promotion. This Special Offer and FREE Shipping only valid for purchases by individual U.S. customers at <a href="http://www.elsevierhealth.com" target="_blank">www.us.elsevierhealth.com.</a> Current prices and offers subject to change without notice.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/#modal-raftc-->
+
+<!-- modal-raftc -->
+<div class="modal fade" id="modal-rafcomplete" tabindex="-1" role="dialog" aria-labelledby="modal-raf-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-raf-label">Your referral has been sent!</h4>
+            </div>
+            <div class="modal-body">
+                <p class="lead text-center">Once one of your colleagues has joined, we will email you a coupon to claim your 20% off.</p>
+                <p class="text-center">
+                    <a class="btn btn-primary btn-lg close-raf" title="Close window and Return to PracticeUpdate">Close this window and<br><strong>Return to PracticeUpdate</strong></a>
+                </p>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>

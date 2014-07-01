@@ -1,0 +1,392 @@
+﻿@model PracticeUpdate.Web.ViewModels.DailyDigestContentListModel
+@{
+    Layout = "~/Views/Shared/_NewsletterLayout.cshtml";
+    ViewBag.NewsletterTitle = "Daily Digest";
+    ViewBag.ViewOnWebPath = "/dailydigest/";
+    ViewBag.SpecialtyName = Model.SpecialtyName;
+    ViewBag.SpecialtyId = Model.SpecialtyId;
+    ViewBag.querystring = Model.querystring;
+    if (System.Configuration.ConfigurationManager.AppSettings["Environment"] == "Prod") {
+        ViewBag.Ad = @Model.Ad;
+        ViewBag.AdZone = @Model.SpecialtyName.Replace(" ", "").ToLower();
+    }
+    else{
+        ViewBag.Ad = @Model.Ad.Replace("/email", "staging/email");
+        ViewBag.AdZone = @Model.SpecialtyName.Replace(" ", "").ToLower() + "staging";
+    }
+    if (Model.ScheduledTagContents != null) {
+        ViewBag.Ad = ViewBag.Ad.Replace("/email/dailydigest", "/email/" + Model.UserTagName.Replace(" ", "").ToLower());
+    }
+    var itemcounter = 0;
+    var authortypeid = 0;
+    var authortext = "";
+}
+@if (Model.ScheduledTagContents != null)
+{
+    itemcounter = 0;
+    <table class="row topic-highlight-header" style="border-spacing: 0; text-align: left; width: 100%; position: relative; background: #d9f6ff; border-collapse: collapse; padding: 0; margin-top: 10px; vertical-align: top;">
+        <tbody>
+            <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+                <td valign="top" class="center" align="center" style="line-height: 19px; font-size: 14px; text-align: center; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+                    <center style="width: 100%; min-width: 580px;">
+						<table class="container" style="padding: 0; margin: 0 auto; width: 580px; text-align: inherit; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
+							<tbody>
+								<tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+									<td valign="top" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+										<table class="row" style="padding: 0; width: 100%; text-align: left; border-spacing: 0; position: relative; border-collapse: collapse; display: block; vertical-align: top;">
+											<tbody>
+												<tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+													<td valign="top" class="wrapper last" align="left" style="font-size: 14px; line-height: 19px; text-align: left; position: relative; hyphens: auto; word-break: break-word; margin: 0; padding: 10px 0 0 0px; font-weight: normal; border-collapse: collapse !important; -moz-hyphens: auto; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; vertical-align: top; -webkit-hyphens: auto;">
+														<table class="twelve columns" style="padding: 0; margin: 0 auto; width: 580px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
+															<tbody>
+																<tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+																	<td valign="top" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0 0px 10px; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+																		<h3 class="highlight-header" align="left" style="line-height: 1.3; font-size: 18px; text-align: left; word-break: normal; font-weight: normal; padding: 0; margin: 0; font-family: 'Helvetica', 'Arial', sans-serif; color: #776f67;">
+																			Highlights from @Model.UserTagName
+																		</h3>
+																	</td>
+																	<td valign="top" class="expander" align="left" style="font-size: 14px; line-height: 19px; width: 0; text-align: left; visibility: hidden; hyphens: auto; word-break: break-word; margin: 0; padding: 0; font-weight: normal; border-collapse: collapse !important; -moz-hyphens: auto; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; vertical-align: top; -webkit-hyphens: auto;">
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="row topic-highlight" style="border-spacing: 0; text-align: left; width: 100%; position: relative; background: #F2FCFF; border-collapse: collapse; padding: 0; vertical-align: top;">
+        <tbody>
+            <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+                <td valign="top" class="center" align="center" style="line-height: 19px; font-size: 14px; text-align: center; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+                    <center style="width: 100%; min-width: 580px;">
+						<table class="container" style="padding: 0; margin: 0 auto; width: 580px; text-align: inherit; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
+							<tbody>
+								<tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+									<td valign="top" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+										<table class="row" style="padding: 0; width: 100%; text-align: left; border-spacing: 0; position: relative; border-collapse: collapse; display: block; vertical-align: top;">
+											<tbody>
+												<tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+													<td valign="top" class="wrapper last" align="left" style="font-size: 14px; line-height: 19px; text-align: left; position: relative; hyphens: auto; word-break: break-word; margin: 0; padding: 10px 0 0 0px; font-weight: normal; border-collapse: collapse !important; -moz-hyphens: auto; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; vertical-align: top; -webkit-hyphens: auto;">
+														<table class="twelve columns" style="padding: 0; margin: 0 auto; width: 580px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
+															<tbody>
+																<tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+																	<td valign="top" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0 0px 10px; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+                                                                        @foreach (var contentType in @Model.ScheduledTagContents)
+                                                                        {
+                                                                            itemcounter += 1;
+															                <p align="left" style="line-height: 19px; font-size: 14px; text-align: left; font-weight: normal; padding: 0; color: #776f67; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 10px;">
+                                                                                <a href="@contentType.Url@Html.Raw("/2/")@Model.SpecialtyId@Html.Raw("/?")@Model.querystring" class="item-title" style="text-decoration: none; color: #16799a;">
+                                                                                    @contentType.Title
+																                </a><br/>
+																                <span class="item-citation" style="font-size: 11px; color: #776f67;">
+																	                @contentType.Citation
+																                </span>
+															                </p>
+                                                                            foreach (var ei in contentType.EditorialItems)
+                                                                            {
+                                                                                authortypeid = 0;
+                                                                                authortext = "";
+                                                                                if (ei.editorialtypeid != 1 && ei.publish)
+                                                                                {
+								                                                <p class="author-group" align="left" style="line-height: 19px; font-size: 14px; text-align: left; font-weight: normal; padding: 0; color: #776f67; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 10px;">
+                                                                                    @foreach (var eia in ei.authors)
+                                                                                    {
+                                                                                        if (eia.authortypeid != authortypeid)
+                                                                                        {
+                                                                                            if (authortext != "")
+                                                                                            {
+                                                                                                authortext += "<br><br>";
+                                                                                            }
+                                                                                            if ((eia.authortypeid == 1) && (ei.editorialtypeid == 2))
+                                                                                            {
+                                                                                                authortext += "<span class=\"author-group-text\" style=\"font-style: italic; color: #776f67;\">Commentary by</span> ";
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                authortext += "<span class=\"author-group-text\" style=\"font-style: italic; color: #776f67;\">" + @eia.displaytext + "</span> ";
+                                                                                            }
+                                                                                        }
+                                                                                        authortext += "<span style=\"color: #776f67;\" class=\"author\">";
+                                                                                        if (eia.userimageid != null)
+                                                                                        {
+                                                                                            authortext += "<img height=\"26\" width=\"26\" class=\"author-image\" align=\"none\" style=\"text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; width: auto; clear: both; max-width: 26px; display: inline-block; outline: none; vertical-align: middle; float: none;\" src=\"" + @System.Configuration.ConfigurationManager.AppSettings["CloudFrontImageURL"] + "/contentimage/" + eia.userimageid + ".jpg\" alt=\"" + eia.firstname + eia.lastname + "\" />";
+                                                                                        }
+                                                                                        else
+                                                                                        {
+                                                                                            authortext += "<img height=\"26\" width=\"26\" class=\"author-image\" align=\"none\" style=\"text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; width: auto; clear: both; max-width: 26px; display: inline-block; outline: none; vertical-align: middle; float: none;\" src=\"" + @System.Configuration.ConfigurationManager.AppSettings["CloudFrontImageURL"] + "/contentimage/user-no-photo.png\" alt=\"" + eia.firstname + eia.lastname + "\" />";
+                                                                                        }
+                                                                                        authortext += @Html.Raw("&nbsp;") + @eia.firstname + @Html.Raw("&nbsp;") + @eia.lastname + @Html.Raw("&nbsp;") + @eia.suffix + @Html.Raw("&nbsp;") + @Html.Raw("&nbsp;") + @Html.Raw("&nbsp;");
+                                                                                        authortext += "</span>";
+                                                                                        authortypeid = eia.authortypeid;
+                                                                                    }
+                                                                                    <span style="color: #776f67;" class="authors">
+                                                                                        @Html.Raw(authortext)
+                                                                                    </span>
+								                                                </p>
+                                                                                }
+                                                                            }
+                                                                            if (@itemcounter < @Model.ScheduledTagContents.Count)
+                                                                            {
+                                                                                <hr style="height: 1px; color: #d9d9d9; background: #d9d9d9; border: none;" />
+                                                                            }
+                                                                        }
+																        <p class="highlight-read-more" align="right" style="line-height: 19px; font-size: 14px; text-align: right; font-weight: normal; padding: 0; color: #776f67; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 10px;">
+																	        <a href="@System.Configuration.ConfigurationManager.AppSettings["SiteUrl"]@Html.Raw("/explore/tag/ut")@Model.UserTagId-@Model.SpecialtyId@Html.Raw("?")@Model.querystring" class="rm-link" style="text-decoration: none; color: #16799a;">
+																		        Read More →
+																	        </a><br>
+																        </p>
+																	</td>
+																	<td valign="top" class="expander" align="left" style="font-size: 14px; line-height: 19px; width: 0; text-align: left; visibility: hidden; hyphens: auto; word-break: break-word; margin: 0; padding: 0; font-weight: normal; border-collapse: collapse !important; -moz-hyphens: auto; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; vertical-align: top; -webkit-hyphens: auto;">
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+}
+<table class="container" style="padding: 0; margin: 0 auto; width: 580px; text-align: inherit; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
+    <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+        <td valign="top" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+            <table class="row" style="padding: 0; width: 100%; text-align: left; border-spacing: 0; position: relative; border-collapse: collapse; display: block; vertical-align: top;">
+                <tr class="row" align="left" style="text-align: left; padding: 0; vertical-align: top;">
+                    <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+                        <td valign="top" class="wrapper last" align="left" style="font-size: 14px; line-height: 19px; text-align: left; position: relative; hyphens: auto; word-break: break-word; margin: 0; padding: 10px 0 0 0px; font-weight: normal; border-collapse: collapse !important; -moz-hyphens: auto; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; vertical-align: top; -webkit-hyphens: auto;">
+                            <table class="twelve columns" style="padding: 0; margin: 0 auto; width: 580px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;">
+                                <tr align="left" style="text-align: left; padding: 0; vertical-align: top;">
+                                    <td valign="top" align="left" style="line-height: 19px; font-size: 14px; text-align: left; hyphens: auto; word-break: break-word; border-collapse: collapse !important; font-weight: normal; padding: 0 0px 10px; -moz-hyphens: auto; font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; margin: 0; -webkit-hyphens: auto; vertical-align: top;">
+                                        @if ((Model.ExpertOpinion != null) && (Model.ExpertOpinion.Count > 0))
+                                        {
+                                            itemcounter = 0;
+                                            <br />
+                                            <h3 class="section-header" align="left" style="line-height: 1.3; font-size: 18px; text-align: left; word-break: normal; font-weight: normal; font-family: 'Helvetica', 'Arial', sans-serif; color: #ffffff; padding: 0 0 0 7px; background: #9594a0; margin: 0;">// EXPERT OPINION
+                                            </h3>
+                                            <br />
+                                            foreach (var contentType in @Model.ExpertOpinion)
+                                            {
+                                                itemcounter += 1;
+                                            <p align="left" style="line-height: 19px; font-size: 14px; text-align: left; font-weight: normal; padding: 0; color: #776f67; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 10px;">
+                                                <a href="@contentType.Url@Html.Raw("/2/")@Model.SpecialtyId@Html.Raw("/?")@Model.querystring" class="item-title" style="text-decoration: none; color: #16799a;">
+                                                    @contentType.Title
+                                                </a>
+                                                <br />
+                                                <span class="item-citation" style="font-size: 11px; color: #776f67;">
+                                                    @contentType.Citation
+                                                </span>
+                                            </p>
+                                                foreach (var ei in contentType.EditorialItems)
+                                                {
+                                                    authortypeid = 0;
+                                                    authortext = "";
+                                                    if (ei.editorialtypeid != 1 && ei.publish)
+                                                    {
+                                            <p class="author-group" align="left" style="line-height: 19px; font-size: 14px; text-align: left; font-weight: normal; padding: 0; color: #776f67; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 10px;">
+                                                @foreach (var eia in ei.authors)
+                                                {
+                                                    if (eia.authortypeid != authortypeid)
+                                                    {
+                                                        if (authortext != "")
+                                                        {
+                                                            authortext += "<br><br>";
+                                                        }
+                                                        if ((eia.authortypeid == 1) && (ei.editorialtypeid == 2))
+                                                        {
+                                                            authortext += "<span class=\"author-group-text\" style=\"font-style: italic; color: #776f67;\">Commentary by</span> ";
+                                                        }
+                                                        else
+                                                        {
+                                                            authortext += "<span class=\"author-group-text\" style=\"font-style: italic; color: #776f67;\">" + @eia.displaytext + "</span> ";
+                                                        }
+                                                    }
+                                                    authortext += "<span style=\"color: #776f67;\" class=\"author\">";
+                                                    if (eia.userimageid != null)
+                                                    {
+                                                        authortext += "<img height=\"26\" width=\"26\" class=\"author-image\" align=\"none\" style=\"text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; width: auto; clear: both; max-width: 26px; display: inline-block; outline: none; vertical-align: middle; float: none;\" src=\"" + @System.Configuration.ConfigurationManager.AppSettings["CloudFrontImageURL"] + "/contentimage/" + eia.userimageid + ".jpg\" alt=\"" + eia.firstname + eia.lastname + "\" />";
+                                                    }
+                                                    else
+                                                    {
+                                                        authortext += "<img height=\"26\" width=\"26\" class=\"author-image\" align=\"none\" style=\"text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; width: auto; clear: both; max-width: 26px; display: inline-block; outline: none; vertical-align: middle; float: none;\" src=\"" + @System.Configuration.ConfigurationManager.AppSettings["CloudFrontImageURL"] + "/contentimage/user-no-photo.png\" alt=\"" + eia.firstname + eia.lastname + "\" />";
+                                                    }
+                                                    authortext += @Html.Raw("&nbsp;") + @eia.firstname + @Html.Raw("&nbsp;") + @eia.lastname + @Html.Raw("&nbsp;") + @eia.suffix + @Html.Raw("&nbsp;") + @Html.Raw("&nbsp;") + @Html.Raw("&nbsp;");
+                                                    authortext += "</span>";
+                                                    authortypeid = eia.authortypeid;
+                                                }
+                                                <span style="color: #776f67;" class="authors">
+                                                    @Html.Raw(authortext)
+                                                </span>
+                                            </p>
+                                                    }
+                                                }
+                                                if (itemcounter < Model.ExpertOpinion.Count)
+                                                {
+                                            <hr style="height: 1px; color: #d9d9d9; background: #d9d9d9; border: none;" />
+                                                }
+                                            }
+                                        }
+                                        @if ((Model.JournalScans != null) && (Model.JournalScans.Count > 0))
+                                        {
+                                            itemcounter = 0;
+                                            <br />
+                                            <h3 class="section-header" align="left" style="line-height: 1.3; font-size: 18px; text-align: left; word-break: normal; font-weight: normal; font-family: 'Helvetica', 'Arial', sans-serif; color: #ffffff; padding: 0 0 0 7px; background: #9594a0; margin: 0;">// JOURNAL SCANS
+                                            </h3>
+                                            <br />
+                                            foreach (var contentType in @Model.JournalScans)
+                                            {
+                                                itemcounter += 1;
+                                            <p align="left" style="line-height: 19px; font-size: 14px; text-align: left; font-weight: normal; padding: 0; color: #776f67; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 10px;">
+                                                <a href="@contentType.Url@Html.Raw("/2/")@Model.SpecialtyId@Html.Raw("/?")@Model.querystring" class="item-title" style="text-decoration: none; color: #16799a;">
+                                                    @contentType.Title
+                                                </a>
+                                                <br />
+                                                <span class="item-citation" style="font-size: 11px; color: #776f67;">
+                                                    @contentType.Citation
+                                                </span>
+                                            </p>
+                                                foreach (var ei in contentType.EditorialItems)
+                                                {
+                                                    authortypeid = 0;
+                                                    authortext = "";
+                                                    if (ei.editorialtypeid != 1 && ei.publish)
+                                                    {
+                                            <p class="author-group" align="left" style="line-height: 19px; font-size: 14px; text-align: left; font-weight: normal; padding: 0; color: #776f67; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 10px;">
+                                                @foreach (var eia in ei.authors)
+                                                {
+                                                    if (eia.authortypeid != authortypeid)
+                                                    {
+                                                        if (authortext != "")
+                                                        {
+                                                            authortext += "<br><br>";
+                                                        }
+                                                        if ((eia.authortypeid == 1) && (ei.editorialtypeid == 2))
+                                                        {
+                                                            authortext += "<span class=\"author-group-text\" style=\"font-style: italic; color: #776f67;\">Commentary by</span> ";
+                                                        }
+                                                        else
+                                                        {
+                                                            authortext += "<span class=\"author-group-text\" style=\"font-style: italic; color: #776f67;\">" + @eia.displaytext + "</span> ";
+                                                        }
+                                                    }
+                                                    authortext += "<span style=\"color: #776f67;\" class=\"author\">";
+                                                    if (eia.userimageid != null)
+                                                    {
+                                                        authortext += "<img height=\"26\" width=\"26\" class=\"author-image\" align=\"none\" style=\"text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; width: auto; clear: both; max-width: 26px; display: inline-block; outline: none; vertical-align: middle; float: none;\" src=\"" + @System.Configuration.ConfigurationManager.AppSettings["CloudFrontImageURL"] + "/contentimage/" + eia.userimageid + ".jpg\" alt=\"" + eia.firstname + eia.lastname + "\" />";
+                                                    }
+                                                    else
+                                                    {
+                                                        authortext += "<img height=\"26\" width=\"26\" class=\"author-image\" align=\"none\" style=\"text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; width: auto; clear: both; max-width: 26px; display: inline-block; outline: none; vertical-align: middle; float: none;\" src=\"" + @System.Configuration.ConfigurationManager.AppSettings["CloudFrontImageURL"] + "/contentimage/user-no-photo.png\" alt=\"" + eia.firstname + eia.lastname + "\" />";
+                                                    }
+                                                    authortext += @Html.Raw("&nbsp;") + @eia.firstname + @Html.Raw("&nbsp;") + @eia.lastname + @Html.Raw("&nbsp;") + @eia.suffix + @Html.Raw("&nbsp;") + @Html.Raw("&nbsp;") + @Html.Raw("&nbsp;");
+                                                    authortext += "</span>";
+                                                    authortypeid = eia.authortypeid;
+                                                }
+                                                <span style="color: #776f67;" class="authors">
+                                                    @Html.Raw(authortext)
+                                                </span>
+                                            </p>
+                                                    }
+                                                }
+                                                if (itemcounter < Model.JournalScans.Count)
+                                                {
+                                            <hr style="height: 1px; color: #d9d9d9; background: #d9d9d9; border: none;" />
+                                                }
+                                            }
+                                        }
+                                        @if ((Model.News != null) && (Model.News.Count > 0))
+                                        {
+                                            itemcounter = 0;                                                                        
+                                            <br />
+                                            <h3 class="section-header" align="left" style="line-height: 1.3; font-size: 18px; text-align: left; word-break: normal; font-weight: normal; font-family: 'Helvetica', 'Arial', sans-serif; color: #ffffff; padding: 0 0 0 7px; background: #9594a0; margin: 0;">// NEWS
+                                            </h3>
+                                            <br />
+                                            foreach (var contentType in @Model.News)
+                                            {
+                                                itemcounter += 1;
+                                            <p align="left" style="line-height: 19px; font-size: 14px; text-align: left; font-weight: normal; padding: 0; color: #776f67; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 10px;">
+                                                <a href="@contentType.Url@Html.Raw("/2/")@Model.SpecialtyId@Html.Raw("/?")@Model.querystring" class="item-title" style="text-decoration: none; color: #16799a;">
+                                                    @contentType.Title
+                                                </a>
+                                                <br />
+                                                <span class="item-citation" style="font-size: 11px; color: #776f67;">
+                                                    @contentType.Citation
+                                                </span>
+                                            </p>
+                                                foreach (var ei in contentType.EditorialItems)
+                                                {
+                                                    authortypeid = 0;
+                                                    authortext = "";
+                                                    if (ei.editorialtypeid != 1 && ei.publish)
+                                                    {
+                                            <p class="author-group" align="left" style="line-height: 19px; font-size: 14px; text-align: left; font-weight: normal; padding: 0; color: #776f67; font-family: 'Helvetica', 'Arial', sans-serif; margin: 0 0 10px;">
+                                                @foreach (var eia in ei.authors)
+                                                {
+                                                    if (eia.authortypeid != authortypeid)
+                                                    {
+                                                        if (authortext != "")
+                                                        {
+                                                            authortext += "<br><br>";
+                                                        }
+                                                        if ((eia.authortypeid == 1) && (ei.editorialtypeid == 2))
+                                                        {
+                                                            authortext += "<span class=\"author-group-text\" style=\"font-style: italic; color: #776f67;\">Commentary by</span> ";
+                                                        }
+                                                        else
+                                                        {
+                                                            authortext += "<span class=\"author-group-text\" style=\"font-style: italic; color: #776f67;\">" + @eia.displaytext + "</span> ";
+                                                        }
+                                                    }
+                                                    authortext += "<span style=\"color: #776f67;\" class=\"author\">";
+                                                    if (eia.userimageid != null)
+                                                    {
+                                                        authortext += "<img height=\"26\" width=\"26\" class=\"author-image\" align=\"none\" style=\"text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; width: auto; clear: both; max-width: 26px; display: inline-block; outline: none; vertical-align: middle; float: none;\" src=\"" + @System.Configuration.ConfigurationManager.AppSettings["CloudFrontImageURL"] + "/contentimage/" + eia.userimageid + ".jpg\" alt=\"" + eia.firstname + eia.lastname + "\" />";
+                                                    }
+                                                    else
+                                                    {
+                                                        authortext += "<img height=\"26\" width=\"26\" class=\"author-image\" align=\"none\" style=\"text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; width: auto; clear: both; max-width: 26px; display: inline-block; outline: none; vertical-align: middle; float: none;\" src=\"" + @System.Configuration.ConfigurationManager.AppSettings["CloudFrontImageURL"] + "/contentimage/user-no-photo.png\" alt=\"" + eia.firstname + eia.lastname + "\" />";
+                                                    }
+                                                    authortext += @Html.Raw("&nbsp;") + @eia.firstname + @Html.Raw("&nbsp;") + @eia.lastname + @Html.Raw("&nbsp;") + @eia.suffix + @Html.Raw("&nbsp;") + @Html.Raw("&nbsp;") + @Html.Raw("&nbsp;");
+                                                    authortext += "</span>";
+                                                    authortypeid = eia.authortypeid;
+                                                }
+                                                <span style="color: #776f67;" class="authors">
+                                                    @Html.Raw(authortext)
+                                                </span>
+                                            </p>
+                                                    }
+                                                }
+                                                if (itemcounter < Model.News.Count)
+                                                {
+                                            <hr style="height: 1px; color: #d9d9d9; background: #d9d9d9; border: none;" />
+                                                }
+                                            }
+                                        }
+                                    </td>
+                                    <td valign="top" class="expander" align="left" style="font-size: 14px; line-height: 19px; width: 0; text-align: left; visibility: hidden; hyphens: auto; word-break: break-word; margin: 0; padding: 0; font-weight: normal; border-collapse: collapse !important; -moz-hyphens: auto; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; vertical-align: top; -webkit-hyphens: auto;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

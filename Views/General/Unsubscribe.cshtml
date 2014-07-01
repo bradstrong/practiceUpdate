@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Unsubscribe";
+    ViewBag.ShowAds = 0;
+    ViewBag.ShowNav = 0;
+    ViewBag.ShowFullPage = 1;
+    ViewBag.BodyClass = "page-landing utility page-landing-unsubscribe";
+}
+@Scripts.Render("~/assets/js/Views/General/Unsubscribe")
+@model PracticeUpdate.Web.ViewModels.UnsubscribeNewsLetterDetailModel
+<div class="is-hidden">
+    <input id="newsletterid" type="text" value="@Model.NEWSLETTERID" />
+</div>
+<div class="landing-page-container">
+    <div class="row">
+        <div class="eight columns push-two">
+            <div class="row">
+                <div class="two columns hide-for-small"></div>
+                <div class="eight columns">
+                    <div class="landing-card">
+                        <div class="row">
+                            <div class="twelve columns">
+                                <div class="landing-card-content">
+                                    <div class="row unsubscribe-request">
+                                        <div class="twelve columns">
+                                            <h1>Too much email? <br><small>We hate to see you go, but we understand.</small></h1>
+                                            <p>Please enter the email address you'd like to remove from the <b>@Model.SPECIALTYNAME: @Model.NEWSLETTERNAME</b> mailing list.</p>
+                                            <form id="form-pu-unsubscribe">
+                                                <input type="email" placeholder="Email address" value="" id="email">
+                                                <small id="emailerror" class="error is-hidden"></small>
+                                            </form>
+                                            <div class="left"><p><a id="unsubscribe" class="button" href="javascript:void(0);">Unsubscribe me</a></p></div>
+                                        </div>
+                                    </div>
+                                    <div class="row unsubscribe-success is-hidden">
+                                        <div class="twelve columns">
+                                            <div class="panel">
+                                                <h1>Taken care of!</h1>
+                                                <p>You will no longer receive <b>@Model.SPECIALTYNAME: @Model.NEWSLETTERNAME</b> at <b><span id="emaildisplay"></span></b>.<br><em>Please allow up to 24 hours for this change to take effect.</em></p>
+                                                <div class="pu-unsubscribe-feedback">
+                                                    <hr>
+                                                    <p><a href="/" class="button success">Go to PracticeUpdate</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row unsubscribe-footer">
+                                        <div class="twelve columns">
+                                            <p>To adjust your subscription preferences for all PracticeUpdate newsletters, please visit the <a href="/User/Preferences/?id=4">Subscriptions</a> section of your <a href="/User/Preferences/">Profile & Settings</a> page.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="two columns hide-for-small"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-footer-container footer-compact">
+	<footer class="page-footer">
+	</footer><!-- /.page-footer -->
+</div>
