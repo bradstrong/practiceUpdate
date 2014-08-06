@@ -427,3 +427,11 @@ $(document.body).on('click', '.content-header-list a', function(e) {
 	$('.content-header-content .content-header-subtitle').html($curSubhead);
 	$('.content-header-list').slideToggle("slow");
 });
+
+if( $('#reveal-ad').length ) {
+	function loadAd() {
+		$('#reveal-ad').reveal();
+	}
+
+	setTimeout(loadAd, 10000)
+}

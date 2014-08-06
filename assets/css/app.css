@@ -14417,6 +14417,10 @@ html.lt-ie9 .brand-container {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+/* line 2, ../sass/_modal-ad.scss */
+.ad-modal {
+	width:360px;
+}
 
 @media (max-width: 1250px) {
   /* line 320, ../sass/_dropdown.scss */
