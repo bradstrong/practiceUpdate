@@ -14419,21 +14419,17 @@ html.lt-ie9 .brand-container {
 }
 /* line 2, ../sass/_modal-ad.scss */
 .ad-modal {
-	width:340px;
-	padding: 20px;
+    padding: 0;
+    background: transparent;
+    border: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
-/* line 5, ../sass/_modal-ad.scss */
-.ad-modal img {
-	max-width:300px;
-	width:300px;
-	height:250px;
-}
-
-/* line 12, ../sass/_modal-ad.scss */
-@media only screen and (max-width: 767px) {
-	.ad-modal {
-		margin-left: -43%;
-	}
+/* line 8, ../sass/_modal-ad.scss */
+.ad-modal .reveal-modal-inner {
+    margin: 0 auto;
+    position: relative;
+    max-width: 300px;
 }
 
 @media (max-width: 1250px) {

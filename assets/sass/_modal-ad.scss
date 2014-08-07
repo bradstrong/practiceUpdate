@@ -1,17 +1,14 @@
-.ad-modal {
-	width:340px;
-	padding: 20px;
-	
-	img {
-		max-width:300px;
-		width:300px;
-		height:250px;	
-	}
-}
 
-@media only screen and (max-width: 767px) {
-	.ad-modal {
-		margin-left: -43%;
-	}
-}
-	
+.ad-modal {
+    padding: 0;
+    background: transparent;
+    border: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+		.reveal-modal-inner {
+				margin: 0 auto;
+				position: relative;
+				max-width: 300px;
+		}
+}	
