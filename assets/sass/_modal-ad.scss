@@ -8,3 +8,10 @@
 		height:250px;	
 	}
 }
+
+@media only screen and (max-width: 767px) {
+	.ad-modal {
+		margin-left: -43%;
+	}
+}
+	

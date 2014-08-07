@@ -14429,6 +14429,13 @@ html.lt-ie9 .brand-container {
 	height:250px;
 }
 
+/* line 12, ../sass/_modal-ad.scss */
+@media only screen and (max-width: 767px) {
+	.ad-modal {
+		margin-left: -43%;
+	}
+}
+
 @media (max-width: 1250px) {
   /* line 320, ../sass/_dropdown.scss */
   .content-header-title-nav {
