@@ -14419,7 +14419,14 @@ html.lt-ie9 .brand-container {
 }
 /* line 2, ../sass/_modal-ad.scss */
 .ad-modal {
-	max-width:345px;
+	width:340px;
+	padding: 20px;
+}
+/* line 5, ../sass/_modal-ad.scss */
+.ad-modal img {
+	max-width:300px;
+	width:300px;
+	height:250px;
 }
 
 @media (max-width: 1250px) {
