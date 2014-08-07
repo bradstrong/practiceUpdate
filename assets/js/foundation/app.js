@@ -433,5 +433,6 @@ if( $('#reveal-ad').length ) {
 		$('#reveal-ad').reveal();
 	}
 
-	setTimeout(loadAd, 10000)
+	//setTimeout(loadAd, 5000)
+	loadAd();
 }
