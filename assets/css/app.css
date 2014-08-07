@@ -14424,8 +14424,9 @@ html.lt-ie9 .brand-container {
     border: 0px;
     -webkit-box-shadow: none;
     box-shadow: none;
+    position : fixed;
 }
-/* line 8, ../sass/_modal-ad.scss */
+/* line 9, ../sass/_modal-ad.scss */
 .ad-modal .reveal-modal-inner {
     margin: 0 auto;
     position: relative;
