@@ -436,3 +436,60 @@ if( $('#reveal-ad').length ) {
 	//setTimeout(loadAd, 5000)
 	loadAd();
 }
+
+//fit-row for gallery.    
+if( $('.j-layout-grid').length != 0 ) {
+  var tallestElm = 0,
+    currentRowStart = 0,
+    rowDivs = new Array();
+
+  function setConformingHeight(el, newHeight) {
+    el.data("originalHeight", (el.data("originalHeight") == undefined) ? (el.height()) : (el.data("originalHeight")));
+    el.height(newHeight);
+  }
+
+  function getOriginalHeight(el) {
+    return (el.data("originalHeight") == undefined) ? (el.height()) : (el.data("originalHeight"));
+  }
+
+  function columnConform() {
+    $elm = $('.j-layout-grid > .clearing-featured-img');
+
+    $elm.each(function () {
+      var $el = $(this);
+
+      var topPosition = $el.position().top;
+
+      if (currentRowStart != topPosition) {
+        for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) setConformingHeight(rowDivs[currentDiv], tallestElm);
+
+        rowDivs.length = 0;
+        currentRowStart = topPosition;
+        tallestElm = getOriginalHeight($el);
+        rowDivs.push($el);
+      } else {
+        rowDivs.push($el);
+        tallestElm = (tallestElm < getOriginalHeight($el)) ? (getOriginalHeight($el)) : (tallestElm);
+      }
+
+      for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) setConformingHeight(rowDivs[currentDiv], tallestElm);
+    });
+
+  }
+
+  $(window).resize(function () {
+    if ($(window).width() < 990 && !$('.j-layout-grid').hasClass('gallery')) {
+      $('.j-layout-grid > .clearing-featured-img').removeAttr('style');
+    } else {
+      setTimeout(function(){columnConform()}, 50);
+    }
+  });
+
+  $(function () {
+    if ($(window).width() < 990 && !$('.j-layout-grid').hasClass('gallery')) {
+      $('.j-layout-grid > .clearing-featured-img').removeAttr('style');
+    } else {
+      setTimeout(function(){columnConform()}, 50);
+    }
+  });
+}
