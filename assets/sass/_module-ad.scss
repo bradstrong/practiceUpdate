@@ -1,12 +1,12 @@
 .widget{
 	/* !Ads */
 	&.ad{
-		object, embed{
+		object, embed{ //to overrise styles for flash based ads
   		display:block;
   		height: 100%;
   		width: 100%;
   	}
-		.ad-container{
+		.ad-container{ // wraps both ad-title and a-content
 			text-align: center;
 			.ad-title{
   			background-color: #afa298;
@@ -24,7 +24,7 @@
 					text-transform:uppercase;
 				}
 			}
-			.ad-content{
+			.ad-content{ // contains the actual ad image/swf/iframe
 				background:transparent;
 				overflow:hidden;
     		// &>a{}
@@ -94,6 +94,10 @@
 
 #boombox2{max-width: 300px;}
 #boombox2content{max-width: 300px; margin: 0 auto; max-height: 250px;}
+
+//presitial boombox 300x250
+#presitial{max-width: 300px;}
+#presitialcontent{max-width: 300px; margin: 0 auto; max-height: 250px;}
 
 //skyscraper 160x600
 #skyscraper{max-width: 160px;}
