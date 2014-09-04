@@ -53,3 +53,28 @@
   margin-left: 0;
   list-style: none;
 }
+
+// Textbook for mobile
+// -------------------------
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .els-promotion-container{
+	ul.no-bullet {
+	  margin:0;
+	  
+	  .media > .pull-left {
+	    width:100%;
+	    
+	    img {
+	      margin: 0 auto;
+	    }
+	  }	  
+	  
+	  .media-body {
+	    margin-top:12px;
+	    float:left;
+	  }
+	}
+  }
+}
