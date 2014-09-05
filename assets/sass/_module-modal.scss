@@ -49,3 +49,10 @@ html.lt-ie9 {
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
   }
 }
+
+@media (max-width: 480px) {
+  .reveal-modal {
+    width: 100%;
+    margin-left: -49.5%;
+  }
+}

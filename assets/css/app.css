@@ -12032,6 +12032,13 @@ html.lt-ie9 .prestitial-modal .prestitial-modal-inner .close-reveal-modal {
   color: #fff;
 }
 
+@media (max-width: 480px) {
+  /* line 54, ../sass/_module-modal.scss */
+  .reveal-modal {
+    width: 100%;
+    margin-left: -49.5%;
+  }
+}
 /* line 3, ../sass/_module-prompt.scss */
 .eic-welcome .alert-header-text {
   font-size: 23px;
