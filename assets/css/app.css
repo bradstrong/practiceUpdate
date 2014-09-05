@@ -11978,7 +11978,14 @@ html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
   cursor: pointer;
 }
 
-/* line 19, ../sass/_module-modal.scss */
+/* line 22, ../sass/_module-modal.scss */
+html.lt-ie9 .prestitial-modal .prestitial-modal-inner .close-reveal-modal {
+  top: -268px;
+  right: 1px;
+  color: #fff;
+}
+
+/* line 31, ../sass/_module-modal.scss */
 .prestitial-modal {
   padding: 0;
   background: transparent;
@@ -11986,7 +11993,7 @@ html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 26, ../sass/_module-modal.scss */
+/* line 38, ../sass/_module-modal.scss */
 .prestitial-modal .prestitial-modal-inner {
   margin: 0 auto;
   position: relative;
@@ -11994,7 +12001,7 @@ html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
-/* line 27, ../sass/_module-modal.scss */
+/* line 39, ../sass/_module-modal.scss */
 .prestitial-modal .prestitial-modal-inner .close-reveal-modal {
   top: 0px;
   right: 1px;
