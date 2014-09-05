@@ -428,9 +428,9 @@ $(document.body).on('click', '.content-header-list a', function(e) {
 	$('.content-header-list').slideToggle("slow");
 });
 
-if( $('#reveal-ad').length ) {
+if( $('#PrestitialAd').length ) {
 	function loadAd() {
-		$('#reveal-ad').reveal();
+		$('#PrestitialAd').reveal();
 	}
 
 	//setTimeout(loadAd, 5000)

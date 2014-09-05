@@ -50,6 +50,7 @@ function LoadDARTAds() {
             InitAdSlot(10, 'sidekick', '300x250', 0, DARTTag, 1);
             InitAdSlot(11, 'buttontext', '120x90', 0, DARTTag, 1);
             InitAdSlot(12, 'slider', '950x90', 0, DARTTag, 1);
+            InitAdSlot(15, 'prestitial', '300x250', 0, DARTTag, 1);
         }
 
         $('.ad-content').dfp({
@@ -66,6 +67,10 @@ function LoadDARTAds() {
                     adtrackid = parseInt($(adUnit).data('adtrackid'));
                     $('#ads').append($('<option></option>').val(adtrackid).html(adtrackid));
                     refreshad = $(adUnit).data('refreshad');
+                    
+                    if( !$('#PresitialAd .widget.presitial').hasClass('is-hidden') )
+                        loadPresitial();
+                    
                     if (parseInt(refreshad) > 0) {
                         $(adUnit).data('refreshad', '0');
                         refreshad = refreshad * 10000;
@@ -173,4 +178,10 @@ function TrackViewPortAds(id) {
         }
     });
 }
+//----------------------------------------------------------------------------------------------------
+
+function loadPresitial() {
+    $('#PresitialAd').reveal();
+}
+
 //----------------------------------------------------------------------------------------------------
