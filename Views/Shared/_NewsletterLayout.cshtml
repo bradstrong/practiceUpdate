@@ -1,4 +1,5 @@
 ﻿@{
+    var AllowWebView = ViewBag.AllowWebView;
     var WebView = Request.QueryString["WebView"];
     int CustomTypeId = ViewBag.CustomTypeId;
     var allowUnsubscribe = true;
@@ -716,58 +717,6 @@
                             }
 
                             @RenderBody()
-                            <!-- Begin Job Board Ads -->
-								<table class="container ad-container ad-classified" border="0" cellpadding="0" cellspacing="0" style="width: 580px">
-									<tr>
-										<td>
-											<table align="left" width="100%" border="0" cellpadding="0" cellspacing="0">
-												<tr>
-													<td bgcolor="#ffffff">
-														@Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=1;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"548\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=1;tile=;sz=728x90;ord=123456789?\" alt=\"\" /></a>")
-													</td>
-												</tr>
-
-												@if (ViewBag.SpecialtyId==2){
-												<tr>
-													<td height="5" bgcolor="#ffffff" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
-												</tr>
-												}
-
-												<tr>
-													<td bgcolor="#ffffff">
-														@Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=2;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"548\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=2;tile=;sz=728x90;ord=123456789?\" alt=\"\" /></a>")
-													</td>
-												</tr>
-
-												@if (ViewBag.SpecialtyId==2){
-												<tr>
-													<td height="5" bgcolor="#ffffff" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
-												</tr>
-												}
-
-												<tr>
-													<td bgcolor="#ffffff">
-														@Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=3;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"548\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=3;tile=;sz=728x90;ord=123456789?\" alt=\"\" /></a>")
-													</td>
-												</tr>
-
-												@if (ViewBag.SpecialtyId==2){
-												<tr>
-													<td height="5" bgcolor="#ffffff" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
-												</tr>
-												}
-
-												<tr>
-													<td bgcolor="#ffffff">
-														@Html.Raw("<a href=\"http://ad.doubleclick.net/jump/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=4;tile=;sz=728x90;ord=123456789?\" target=\"_blank\" name=\"ad_doubleclick_net_jump_els_pr\" id=\"ad_doubleclick_net_jump_els_pr\"><img width=\"548\" border=\"0\" src=\"http://ad.doubleclick.net/ad/els.pracup")@ViewBag.AdZone@Html.Raw("/email/ehealthcareers;dcove=r;pos=4;tile=;sz=728x90;ord=123456789?\" alt=\"\" /></a>")
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-                            <!-- End Job Board Ads -->
-
 							<table style="padding: 0; width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; position: relative;" class="row utility">
 								<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
 									<td valign="top" align="center" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0; margin: 0; -webkit-hyphens: auto; border-collapse: collapse !important; text-align: center; vertical-align: top; font-size: 14px;" class="center">
@@ -783,7 +732,7 @@
 																			<small style="color: #776f67; font-size: 10px;">
 																				@SubscriptionReason
 																			</small><br/>
-                                                                            @if (WebView != "1")
+                                                                            @if ((WebView != "1") && (AllowWebView==1))
                                                                             {
 																			<p align="center" style="font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; color: #776f67; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: center; font-size: 14px;">
 																				If you are having trouble viewing this message,
@@ -831,75 +780,82 @@
 									</td>
 								</tr>
 							</table>
-							<table style="padding: 0; width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; position: relative;" class="row social">
-								<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
-									<td valign="top" align="center" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0; margin: 0; -webkit-hyphens: auto; border-collapse: collapse !important; text-align: center; vertical-align: top; font-size: 14px;" class="center">
-										<center style="width: 100%; min-width: 580px;">
-											<table style="margin: 0 auto; padding: 0; width: 580px; text-align: inherit; border-spacing: 0; border-collapse: collapse; vertical-align: top;" class="container">
-												<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
-													<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 10px 20px 0 0px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; position: relative; font-size: 14px;" class="wrapper">
-														<table style="margin: 0 auto; padding: 0; width: 180px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;" class="four columns">
-															<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
-																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0 0px 10px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; font-size: 14px;">
-																	<table style="width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; padding: 0; overflow: hidden;" class="tiny-button radius secondary">
-																		<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
-																			<td valign="top" align="center" style="-webkit-border-radius: 3px; font-family: 'Helvetica', 'Arial', sans-serif; color: #555; hyphens: auto; font-weight: normal; -moz-hyphens: auto; word-break: break-word; border: 1px solid #d0d0d0; background: #e9e9e9; margin: 0; padding: 5px 0 4px; display: block; line-height: 19px; -webkit-hyphens: auto; width: auto !important; text-align: center; border-collapse: collapse !important; -moz-border-radius: 3px; vertical-align: top; border-radius: 3px; font-size: 14px;">
-																				<a href="http://www.facebook.com/practiceupdate" style="font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #555; text-decoration: none; font-size: 12px;">
-																					facebook
-																				</a>
-																			</td>
-																		</tr>
-																	</table>
-																</td>
-																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; -webkit-hyphens: auto; visibility: hidden; width: 0; text-align: left; padding: 0; margin: 0; border-collapse: collapse !important; vertical-align: top; font-size: 14px;" class="expander">
-																</td>
-															</tr>
-														</table>
-													</td>
-													<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 10px 20px 0 0px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; position: relative; font-size: 14px;" class="wrapper">
-														<table style="margin: 0 auto; padding: 0; width: 180px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;" class="four columns">
-															<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
-																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0 0px 10px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; font-size: 14px;">
-																	<table style="width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; padding: 0; overflow: hidden;" class="tiny-button radius secondary">
-																		<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
-																			<td valign="top" align="center" style="-webkit-border-radius: 3px; font-family: 'Helvetica', 'Arial', sans-serif; color: #555; hyphens: auto; font-weight: normal; -moz-hyphens: auto; word-break: break-word; border: 1px solid #d0d0d0; background: #e9e9e9; margin: 0; padding: 5px 0 4px; display: block; line-height: 19px; -webkit-hyphens: auto; width: auto !important; text-align: center; border-collapse: collapse !important; -moz-border-radius: 3px; vertical-align: top; border-radius: 3px; font-size: 14px;">
-																				<a href="http://www.twitter.com/practiceupdate" style="font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #555; text-decoration: none; font-size: 12px;">
-																					twitter
-																				</a>
-																			</td>
-																		</tr>
-																	</table>
-																</td>
-																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; -webkit-hyphens: auto; visibility: hidden; width: 0; text-align: left; padding: 0; margin: 0; border-collapse: collapse !important; vertical-align: top; font-size: 14px;" class="expander">
-																</td>
-															</tr>
-														</table>
-													</td>
-													<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 10px 0 0 0px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; position: relative; font-size: 14px;" class="wrapper last">
-														<table style="margin: 0 auto; padding: 0; width: 180px; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top;" class="four columns">
-															<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
-																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 0 0px 10px; margin: 0; -webkit-hyphens: auto; text-align: left; border-collapse: collapse !important; vertical-align: top; font-size: 14px;">
-																	<table style="width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; padding: 0; overflow: hidden;" class="tiny-button radius secondary">
-																		<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
-																			<td valign="top" align="center" style="-webkit-border-radius: 3px; font-family: 'Helvetica', 'Arial', sans-serif; color: #555; hyphens: auto; font-weight: normal; -moz-hyphens: auto; word-break: break-word; border: 1px solid #d0d0d0; background: #e9e9e9; margin: 0; padding: 5px 0 4px; display: block; line-height: 19px; -webkit-hyphens: auto; width: auto !important; text-align: center; border-collapse: collapse !important; -moz-border-radius: 3px; vertical-align: top; border-radius: 3px; font-size: 14px;">
-																				<a href="http://plus.google.com/+practiceupdate" style="font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #555; text-decoration: none; font-size: 12px;">
-																					google+
-																				</a>
-																			</td>
-																		</tr>
-																	</table>
-																</td>
-																<td valign="top" align="left" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; -webkit-hyphens: auto; visibility: hidden; width: 0; text-align: left; padding: 0; margin: 0; border-collapse: collapse !important; vertical-align: top; font-size: 14px;" class="expander">
-																</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-										</center>
-									</td>
-								</tr>
-							</table>
+              <table class="row social" style="border-collapse: collapse; border-spacing: 0; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%">
+                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                  <td class="center" align="center" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: center; vertical-align: top; word-break: break-word" valign="top">
+                    <center style="min-width: 580px; width: 100%">
+                      <table class="container" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px">
+                        <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                          <td class="wrapper" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 20px 0 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                            <table class="three columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 130px">
+                              <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                                <td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 0px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                                  <table class="tiny-button radius secondary" style="border-collapse: collapse; border-spacing: 0; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%">
+                                    <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                                      <td style="-moz-border-radius: 3px; -moz-hyphens: auto; -webkit-border-radius: 3px; -webkit-hyphens: auto; background: #e9e9e9; border-collapse: collapse !important; border-radius: 3px; border: 1px solid #d0d0d0; color: #555; display: block; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 5px 0 4px; text-align: center; vertical-align: top; width: auto !important; word-break: break-word" align="center" bgcolor="#e9e9e9" valign="top">
+                                        <a href="https://www.facebook.com/practiceupdate" style="color: #555; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; text-decoration: none">facebook</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td class="expander" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0; word-break: break-word" align="left" valign="top"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="wrapper" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 20px 0 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                            <table class="three columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 130px">
+                              <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                                <td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 0px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                                  <table class="tiny-button radius secondary" style="border-collapse: collapse; border-spacing: 0; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%">
+                                    <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                                      <td style="-moz-border-radius: 3px; -moz-hyphens: auto; -webkit-border-radius: 3px; -webkit-hyphens: auto; background: #e9e9e9; border-collapse: collapse !important; border-radius: 3px; border: 1px solid #d0d0d0; color: #555; display: block; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 5px 0 4px; text-align: center; vertical-align: top; width: auto !important; word-break: break-word" align="center" bgcolor="#e9e9e9" valign="top">
+                                        <a href="https://www.twitter.com/practiceupdate" style="color: #555; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; text-decoration: none">twitter</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td class="expander" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0; word-break: break-word" align="left" valign="top"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="wrapper" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 20px 0 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                            <table class="three columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 130px">
+                              <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                                <td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 0px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                                  <table class="tiny-button radius secondary" style="border-collapse: collapse; border-spacing: 0; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%">
+                                    <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                                      <td style="-moz-border-radius: 3px; -moz-hyphens: auto; -webkit-border-radius: 3px; -webkit-hyphens: auto; background: #e9e9e9; border-collapse: collapse !important; border-radius: 3px; border: 1px solid #d0d0d0; color: #555; display: block; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 5px 0 4px; text-align: center; vertical-align: top; width: auto !important; word-break: break-word" align="center" bgcolor="#e9e9e9" valign="top">
+                                        <a href="https://plus.google.com/+practiceupdate" style="color: #555; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; text-decoration: none">google+</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td class="expander" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0; word-break: break-word" align="left" valign="top"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="wrapper last" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 0 0 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                            <table class="three columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 130px">
+                              <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                                <td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 0px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                                  <table class="tiny-button radius secondary" style="border-collapse: collapse; border-spacing: 0; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%">
+                                    <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                                      <td style="-moz-border-radius: 3px; -moz-hyphens: auto; -webkit-border-radius: 3px; -webkit-hyphens: auto; background: #e9e9e9; border-collapse: collapse !important; border-radius: 3px; border: 1px solid #d0d0d0; color: #555; display: block; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 5px 0 4px; text-align: center; vertical-align: top; width: auto !important; word-break: break-word" align="center" bgcolor="#e9e9e9" valign="top">
+                                        <a href="https://www.linkedin.com/company/5143038" style="color: #555; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; text-decoration: none">LinkedIn</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td class="expander" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0; word-break: break-word" align="left" valign="top"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </center>
+                  </td>
+                </tr>
+              </table>
 							<table style="color: #ffffff; width: 100%; text-align: left; border-spacing: 0; border-collapse: collapse; vertical-align: top; background: #9594a0; position: relative; padding: 0;" class="row footer-corporate">
 								<tr align="left" style="text-align: left; vertical-align: top; padding: 0;">
 									<td valign="top" align="center" style="font-family: 'Helvetica', 'Arial', sans-serif; color: #222222; font-weight: normal; hyphens: auto; -moz-hyphens: auto; word-break: break-word; line-height: 19px; padding: 10px 0 0 0px; margin: 0; -webkit-hyphens: auto; border-collapse: collapse !important; text-align: center; vertical-align: top; position: relative; font-size: 14px;" class="wrapper last center">
