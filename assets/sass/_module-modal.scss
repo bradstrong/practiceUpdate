@@ -16,6 +16,18 @@ html.lt-ie9 {
   }
 }
 
+html.lt-ie9 {
+  .prestitial-modal {
+    .prestitial-modal-inner {
+	  .close-reveal-modal {
+	    top: -268px;
+	    right: 1px;
+	    color: #fff;
+	  }
+    }
+  }
+}
+
 .prestitial-modal {
   padding: 0;
   background: transparent;
