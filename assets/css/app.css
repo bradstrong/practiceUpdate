@@ -11994,6 +11994,11 @@ html.lt-ie9 .reveal-modal a.close-reveal-modal:hover {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
+/* line 27, ../sass/_module-modal.scss */
+.prestitial-modal .prestitial-modal-inner .close-reveal-modal {
+  top: -18px;
+  right: -16px;
+}
 
 /* line 3, ../sass/_module-prompt.scss */
 .eic-welcome .alert-header-text {
