@@ -10734,6 +10734,25 @@ article.single-item .item-footer .copyright-text {
   list-style: none;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 63, ../sass/_module-media.scss */
+  .els-promotion-container ul.no-bullet {
+    margin: 0;
+  }
+  /* line 66, ../sass/_module-media.scss */
+  .els-promotion-container ul.no-bullet .media > .pull-left {
+    width: 100%;
+  }
+  /* line 69, ../sass/_module-media.scss */
+  .els-promotion-container ul.no-bullet .media > .pull-left img {
+    margin: 0 auto;
+  }
+  /* line 74, ../sass/_module-media.scss */
+  .els-promotion-container ul.no-bullet .media-body {
+    margin-top: 12px;
+    float: left;
+  }
+}
 /* line 1, ../sass/_module-button.scss */
 .button.full, .full.form-submit, .full.load-more-button {
   width: 100%;
