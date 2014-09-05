@@ -1,0 +1,15 @@
+
+.ad-modal {
+    padding: 0;
+    background: transparent;
+    border: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    position : fixed;
+
+		.reveal-modal-inner {
+				margin: 0 auto;
+				position: relative;
+				max-width: 300px;
+		}
+}	
