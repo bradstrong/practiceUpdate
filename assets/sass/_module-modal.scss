@@ -24,6 +24,12 @@ html.lt-ie9 {
   box-shadow: none;
   
   .prestitial-modal-inner {
+    .close-reveal-modal {
+	  top: 0px;
+	  right: 1px;
+	  color: #fff;
+	}
+	
 	margin: 0 auto;
     position: relative;
     max-width: 300px;
