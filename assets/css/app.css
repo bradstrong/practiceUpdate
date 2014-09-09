@@ -14719,20 +14719,34 @@ html.lt-ie9 .brand-container {
 }
 
 /* line 17, ../sass/_webinar.scss */
+.webinar .media {
+  margin-bottom: 24px;
+}
+/* line 20, ../sass/_webinar.scss */
+.webinar .media h4, .webinar .media .channel-title {
+  margin: 0;
+}
+/* line 24, ../sass/_webinar.scss */
+.webinar .media .text-success {
+  color: #3c763d;
+  margin-bottom: 6px;
+}
+
+/* line 32, ../sass/_webinar.scss */
 .webinar.panel.footer .panel-body, .webinar.footer.query-no-results .panel-body, .webinar.footer.cta .panel-body {
   text-align: center;
 }
-/* line 20, ../sass/_webinar.scss */
+/* line 35, ../sass/_webinar.scss */
 .webinar.panel.footer .panel-body a, .webinar.footer.query-no-results .panel-body a, .webinar.footer.cta .panel-body a {
   width: 100%;
   margin-bottom: 12px;
 }
-/* line 25, ../sass/_webinar.scss */
+/* line 40, ../sass/_webinar.scss */
 .webinar.panel.footer .panel-body p, .webinar.footer.query-no-results .panel-body p, .webinar.footer.cta .panel-body p {
   padding: 0;
 }
 
-/* line 33, ../sass/_webinar.scss */
+/* line 48, ../sass/_webinar.scss */
 .panel.panel-success .panel-heading .panel-title, .panel-success.query-no-results .panel-heading .panel-title, .panel-success.cta .panel-heading .panel-title {
   color: #249948;
   font-size: 22px;
